@@ -1,0 +1,159 @@
+{
+  "revisionGuid": "00000000-0000-4000-8000-000000000002",
+  "surveyGuid": "00000000-0000-4000-8000-000000000001",
+  "draft": false,
+  "name": { "en": "Fixture survey", "fi": "Testikysely", "sv": "Testenkät" },
+  "description": { "en": "Every question type once.", "fi": "Jokainen kysymystyyppi kerran.", "sv": "Varje frågetyp en gång." },
+  "createdDt": "2026-05-07T11:03:41.840Z",
+  "createdBy": { "upn": "author@example.org", "name": "Fixture Author", "practitionerId": 1 },
+  "questions": [
+    {
+      "questionId": "00000000-0000-4000-8000-000000000101",
+      "questionText": { "en": "Instructions", "fi": "Ohjeet", "sv": "Instruktioner" },
+      "printText": { "en": "", "fi": "", "sv": "" },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "00000000-0000-4000-8000-000000000011",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "00000000-0000-4000-8000-000000000102",
+      "questionText": { "en": "Do you smoke?", "fi": "Tupakoitko?", "sv": "Röker du?" },
+      "printText": { "en": "", "fi": "", "sv": "" },
+      "description": { "en": "", "fi": "", "sv": "" },
+      "answers": [
+        {
+          "answerId": "00000000-0000-4000-8000-000000000201",
+          "answerText": { "en": "Yes", "fi": "Kyllä", "sv": "Ja" },
+          "printText": { "en": "", "fi": "", "sv": "" },
+          "question": [
+            {
+              "questionId": "00000000-0000-4000-8000-000000000103",
+              "questionText": { "en": "How much?", "fi": "Kuinka paljon?", "sv": "Hur mycket?" },
+              "printText": { "en": "", "fi": "", "sv": "" },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "00000000-0000-4000-8000-000000000012",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": true
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "00000000-0000-4000-8000-000000000202",
+          "answerText": { "en": "No", "fi": "Ei", "sv": "Nej" },
+          "printText": { "en": "", "fi": "", "sv": "" },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "00000000-0000-4000-8000-000000000012",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        { "points": 1, "answerId": "00000000-0000-4000-8000-000000000201" },
+        { "points": 0, "answerId": "00000000-0000-4000-8000-000000000202" }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "00000000-0000-4000-8000-000000000104",
+      "questionText": { "en": "Which apply?", "fi": "Mitkä pätevät?", "sv": "Vilka gäller?" },
+      "printText": { "en": "", "fi": "", "sv": "" },
+      "answers": [
+        {
+          "answerId": "00000000-0000-4000-8000-000000000203",
+          "answerText": { "en": "Asthma", "fi": "Astma", "sv": "Astma" },
+          "printText": { "en": "", "fi": "", "sv": "" },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "00000000-0000-4000-8000-000000000012",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": true
+    },
+    {
+      "questionId": "00000000-0000-4000-8000-000000000105",
+      "questionText": { "en": "Pain now (0–10)", "fi": "Kipu nyt (0–10)", "sv": "Smärta nu (0–10)" },
+      "printText": { "en": "", "fi": "", "sv": "" },
+      "answers": [],
+      "type": "number",
+      "categoryId": "00000000-0000-4000-8000-000000000012",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false,
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false
+    },
+    {
+      "questionId": "00000000-0000-4000-8000-000000000106",
+      "questionText": { "en": "Date of your last period", "fi": "Viimeisten kuukautisten alkamispäivä", "sv": "Datum för senaste menstruation" },
+      "printText": { "en": "", "fi": "", "sv": "" },
+      "answers": [],
+      "type": "date",
+      "categoryId": "00000000-0000-4000-8000-000000000012",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "00000000-0000-4000-8000-000000000011",
+      "name": { "en": "Instruction", "fi": "Ohje", "sv": "Instruktion", "ru": "Инструкция" },
+      "subcategories": []
+    },
+    {
+      "categoryId": "00000000-0000-4000-8000-000000000012",
+      "name": { "en": "Questions", "fi": "Kysymykset", "sv": "Frågor" },
+      "subcategories": []
+    }
+  ],
+  "meta": { "owners": [] },
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [{ "companyId": 6, "companyPayerType": "primary-healthcare", "internalName": "Anonymous" }]
+  },
+  "schemaVersion": "1.2.0",
+  "scoreCalculations": [
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 1,
+      "title": { "en": "Points", "fi": "Pisteet", "sv": "Poäng" },
+      "summaries": [
+        {
+          "min": 0,
+          "max": 1,
+          "title": { "en": "Low", "fi": "Matala", "sv": "Låg" },
+          "description": { "en": "Low score", "fi": "Matala pistemäärä", "sv": "Låg poäng" }
+        }
+      ]
+    }
+  ],
+  "scoringEnabled": true,
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "type": "form"
+}

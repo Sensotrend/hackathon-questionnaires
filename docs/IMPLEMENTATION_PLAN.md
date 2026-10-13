@@ -44,7 +44,7 @@ Survey
   questions[] Question
 
 Question
-  questionId, categoryId, type, questionText{fi,sv,en}, description?{…}, printText{…} (always empty), isOptional,
+  questionId, categoryId, type, questionText{fi,sv,en}, description?{…} (always empty, sometimes `{}`), printText{…} (always empty), isOptional,
   scoringEnabled, scores[] { answerId, points }, tags[] (always empty), numericTagConditions[] (always empty),
   minValue, maxValue, minValueOrUnder, maxValueOrOver   (only for type "number")
   answers[] { answerId, answerText{…}, printText{…} (always empty), tags[], question[] Question  ← follow-up questions }
@@ -67,7 +67,9 @@ Question `type` values: `select` (370), `freetext` (237), `heading` (30), `multi
 ```
 Esitieto_lomakkeet_hackathon_json/   source exports (input, read-only)
 converter/                           TypeScript, run with Node (tsx)
-  src/source-types.ts                types for §2.1
+  src/source/schema.ts               zod schema and types for §2.1 (strict: unknown or unsupported content fails loading)
+  src/source/integrity.ts            cross-reference checks (unique ids, scores ↔ answers, categories)
+  src/source/loader.ts               loads the directory, drops identical duplicate exports
   src/convert.ts                     Survey → Questionnaire
   src/overrides/<surveyGuid>.json    per-questionnaire overrides: retyping, codes, population (§5.6, §7)
   src/report.ts                      conversion report: warnings and data-quality findings
@@ -153,7 +155,7 @@ Finnish goes in the base element (`text`, `title`, `display`). Swedish and Engli
 | `date` | `date` | |
 
 - `isOptional: false` → `required: true` (never set on `display` or `group`).
-- `description` → a child `display` item with `itemControl` = `help` if it is short guidance, otherwise a plain child `display` item. The choice is made per text length and is listed in the report.
+- `description` and `printText` are empty in every export, so they are not mapped. The loader rejects non-empty values, so a future export that uses them can't lose content silently.
 - Text formatting: `\n` and trailing double spaces are kept in `text`. A `rendering-markdown` extension carries the Markdown-normalised version, so renderers that understand it get line breaks and plain ones still get readable text.
 - Option-level answer codes are local (`answerId`). Mapping options to Finnish national or international codes (§7.3) happens only through overrides, where population needs it (milestone 10).
 
@@ -297,3 +299,20 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
 - The duplicate export (§2) is noted in the README. The loader deduplicates it by `revisionGuid` in milestone 1.
 - `converter/src/cli.ts` is a placeholder that lists the source files. `app/` renders a placeholder page.
 - Verified: `npm run check` passes (lint clean, both workspaces type-check, the converter's smoke test finds the 15 source files), `npm run convert` runs, `npm run build` produces `app/dist/`, and the dev server serves the page at http://localhost:5173 with no console errors.
+
+### Milestone 1 — Source model & loader ✅
+
+- `converter/src/source/schema.ts`: a zod schema for the export format, with the TypeScript types derived from it.
+  - Objects are strict, so an unknown key fails loading with its path, e.g. `questions[1].answers[0]: Unrecognized key: "unexpected"`.
+  - Fields that are always empty (`printText`, question `description`, `tags`, `numericTagConditions`, `subcategories`, a true `minValueOrUnder`/`maxValueOrOver`) must stay empty, because the converter has no mapping for them.
+  - Localized texts need `fi`, `sv` and `en`, and may carry more languages.
+- `converter/src/source/integrity.ts`: checks the schema can't express, all reported together with their paths:
+  - unique `questionId`s and `answerId`s across the survey, including follow-ups
+  - known categories, and follow-ups in the same category as their parent
+  - answers only on `select`/`multiselect`, and those always have at least one
+  - range fields only (and always) on `number`, with min < max
+  - scored questions are `select` and every answer has exactly one score
+  - score calculations exist exactly when `scoringEnabled` is true
+- `converter/src/source/loader.ts`: loads the directory in file-name order and derives the slug from the file name. An export identical to an earlier one of the same revision is skipped and listed as a duplicate. These are errors: differing content under one `revisionGuid`, two revisions of one survey, a slug collision.
+- Found while doing this: question `description` is present on 199 questions but empty everywhere, and in one case it is `{}`. §2.1 and §5.4 are updated.
+- Verified: 30 tests pass, against a fixture with every question type, a follow-up, a scored question, an extra language and a score band, plus temporary directories for the duplicate rules. All 15 real files load as 14 surveys plus the one known duplicate. `npm run convert` prints each survey's question and score counts. Lint and type checks are clean.
