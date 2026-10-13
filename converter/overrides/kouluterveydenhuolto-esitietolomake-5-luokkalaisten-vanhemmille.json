@@ -1,7 +1,8 @@
 {
   "$comment": [
     "Texts: the sv text of the answer option 'ei mitään ylläolevista' is untranslated Finnish; translated here.",
-    "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text."
+    "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text.",
+    "Population (milestone 10): only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). Collections: active Conditions, active AllergyIntolerances, active MedicationStatements and MedicationRequests (medicationCodeableConcept only), completed Immunizations, final Observations."
   ],
   "texts": {
     "b3f8168a-56e3-423d-ac77-597e1a336716": {
@@ -42,6 +43,57 @@
       "unit": "ug",
       "minValue": 0,
       "maxValue": 250
+    },
+    "9efeeb4b-d734-4f55-ad72-470a33e7f764": {
+      "$comment": "Long-term illness: any active diagnosis",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "conditions"
+        }
+      }
+    },
+    "432ec79e-05d8-431d-851b-153e816e1cc1": {
+      "$comment": "Which illness",
+      "populate": {
+        "list": {
+          "in": "conditions"
+        }
+      }
+    },
+    "05d7eeee-ccb3-462b-b255-095fdba81336": {
+      "$comment": "Allergy: any active allergy",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "allergies"
+        }
+      }
+    },
+    "eb6fd3a3-7c51-4419-a6ae-2d28680133ea": {
+      "$comment": "Which allergy",
+      "populate": {
+        "list": {
+          "in": "allergies"
+        }
+      }
+    },
+    "f6b4127b-41f0-498c-8d99-47743978aedc": {
+      "$comment": "Medication: any active medication",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications"
+        }
+      }
+    },
+    "f10b152e-5685-43a7-8c39-b1a8014dceba": {
+      "$comment": "Which medication",
+      "populate": {
+        "list": {
+          "in": "medications"
+        }
+      }
     }
   }
 }

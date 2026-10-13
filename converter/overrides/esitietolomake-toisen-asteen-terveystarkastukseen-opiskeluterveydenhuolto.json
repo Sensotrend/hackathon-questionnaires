@@ -1,5 +1,8 @@
 {
-  "$comment": "Texts: the en texts of the follow-up question on alcohol portions and of its options are untranslated Finnish; translated here.",
+  "$comment": [
+    "Texts: the en texts of the follow-up question on alcohol portions and of its options are untranslated Finnish; translated here.",
+    "Population (milestone 10): only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). Collections: active Conditions, active AllergyIntolerances, active MedicationStatements and MedicationRequests (medicationCodeableConcept only), completed Immunizations, final Observations."
+  ],
   "texts": {
     "c35c2a6a-f989-48d0-b16c-ac2ab8048c4f": {
       "en": "How many drinks of alcohol have you usually had on the days when you drank alcohol? One drink is 1 bottle of medium-strength beer or cider, 1 glass (12 cl) of wine or a restaurant measure (4 cl) of spirits."
@@ -18,6 +21,59 @@
     },
     "85693a4c-ad3c-400b-89b1-83ec7a5dc67b": {
       "en": "10 drinks or more"
+    }
+  },
+  "items": {
+    "3b936a15-4afe-4d31-b23e-4f252dcd1578": {
+      "$comment": "Permanent or long-term illness: any active diagnosis",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "conditions"
+        }
+      }
+    },
+    "8f6af2c1-5fc6-4485-93cd-516e8e3af165": {
+      "$comment": "Which illness",
+      "populate": {
+        "list": {
+          "in": "conditions"
+        }
+      }
+    },
+    "bc4e7413-ee4f-4a50-b97b-9d7d5f13e0f7": {
+      "$comment": "Allergies: any active allergy",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "allergies"
+        }
+      }
+    },
+    "01ce6459-8532-421e-8fe8-bc6ce4d62d63": {
+      "$comment": "Which allergies (how they are taken into account is left to the person)",
+      "populate": {
+        "list": {
+          "in": "allergies"
+        }
+      }
+    },
+    "275ab27b-a540-4c14-8bd4-3d9e92c20e94": {
+      "$comment": "Medication: any active medication",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications"
+        }
+      }
+    },
+    "081265e8-af50-454a-93a5-25dd28329694": {
+      "$comment": "Which medication",
+      "populate": {
+        "list": {
+          "in": "medications"
+        }
+      }
     }
   }
 }

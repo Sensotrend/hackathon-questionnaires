@@ -1,0 +1,35 @@
+{
+  "$comment": "Population (milestone 10): only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). Collections: active Conditions, active AllergyIntolerances, active MedicationStatements and MedicationRequests (medicationCodeableConcept only), completed Immunizations, final Observations.",
+  "items": {
+    "0645be3b-6853-4985-9fce-31c9426230b9": {
+      "$comment": "Long-term illness (a free-text question): the names of the active diagnoses",
+      "populate": {
+        "list": {
+          "in": "conditions"
+        }
+      }
+    },
+    "4a4425c8-7723-45d4-a7ad-8d97b4f454ea": {
+      "$comment": "Allergies (a free-text question): the names of the active allergies",
+      "populate": {
+        "list": {
+          "in": "allergies"
+        }
+      }
+    },
+    "61985fb8-bbba-4c07-b417-feb2fa90b692": {
+      "$comment": "Vitamin D: an active vitamin D medication",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "A11CC"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

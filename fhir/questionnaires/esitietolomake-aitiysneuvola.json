@@ -1547,7 +1547,16 @@
             ]
           },
           "type": "text",
-          "required": true
+          "required": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.contact.first().select(iif(name.text.exists(), name.text, name.given.first() + ' ' + name.family) + iif(relationship.text.exists(), ', ' + relationship.text.first(), ''))"
+              }
+            }
+          ]
         },
         {
           "linkId": "2a56afb9-1b2f-4dad-a3c2-ea2c0ca80551",
@@ -1583,7 +1592,16 @@
             ]
           },
           "type": "text",
-          "required": true
+          "required": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.contact.first().telecom.where(system = 'phone').value.first()"
+              }
+            }
+          ]
         },
         {
           "linkId": "9733f082-b2f8-4f15-a3b9-bc4a18459900",
@@ -1810,6 +1828,21 @@
                     "code": "radio-button"
                   }
                 ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "%observations.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'http://loinc.org' and (code = '11977-6'))).exists()).where((value.ofType(integer) | value.ofType(Quantity).value).first() > 0)"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), '6ddd25a3-3a60-47ab-b916-a67b662ef365')"
               }
             }
           ],
@@ -2096,9 +2129,25 @@
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
                   "valueInteger": 30
+                },
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+                  "valueDuration": {
+                    "value": 2,
+                    "unit": "a",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "a"
+                  }
                 }
               ],
               "required": true,
+              "code": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11977-6",
+                  "display": "[#] Parity"
+                }
+              ],
               "enableWhen": [
                 {
                   "question": "886e1458-5df1-41e5-b928-ac4fce486ea9",
@@ -2962,7 +3011,25 @@
             ]
           },
           "type": "date",
-          "required": true
+          "required": true,
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "8665-2",
+              "display": "Last menstrual period start date"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 10,
+                "unit": "mo",
+                "system": "http://unitsofmeasure.org",
+                "code": "mo"
+              }
+            }
+          ]
         },
         {
           "linkId": "c5a4e4f8-62ca-40ff-b23a-8a8bfbacaf8a",
@@ -4661,9 +4728,40 @@
                   ]
                 }
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 5,
+                "unit": "a",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
             }
           ],
-          "required": true
+          "required": true,
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            },
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "8302-2",
+              "display": "Pituus"
+            },
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3137-7",
+              "display": "Pituus, mitattu"
+            },
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3138-5",
+              "display": "Pituus, ilmoitettu"
+            }
+          ]
         },
         {
           "linkId": "8196e6f6-779d-415b-94fc-5cad668dd7f5",
@@ -4758,9 +4856,25 @@
                   ]
                 }
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod",
+              "valueDuration": {
+                "value": 1,
+                "unit": "a",
+                "system": "http://unitsofmeasure.org",
+                "code": "a"
+              }
             }
           ],
-          "required": true
+          "required": true,
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "56077-1",
+              "display": "Body weight --pre current pregnancy"
+            }
+          ]
         },
         {
           "linkId": "48d57788-3aa9-478a-9ec5-bbf69683c52a",
@@ -6130,6 +6244,21 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('B03BB')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), '083a07f6-d305-4b91-b3c6-b1aa63487609')"
+              }
             }
           ],
           "required": true,
@@ -6254,6 +6383,21 @@
                     "code": "radio-button"
                   }
                 ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A11CC')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), '6b33ac10-5a46-42b3-992b-3020d18b8048')"
               }
             }
           ],
@@ -6380,6 +6524,21 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A12AA')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), 'd336971b-bdb1-40aa-a833-f19fe5d089b7')"
+              }
             }
           ],
           "required": true,
@@ -6505,6 +6664,21 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('B03BA')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), 'a92d577f-23e4-4845-99cd-5d9cae1f4f9b')"
+              }
             }
           ],
           "required": true,
@@ -6629,6 +6803,21 @@
                     "code": "radio-button"
                   }
                 ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A11A') or code.startsWith('A11B')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), '7d9c207f-b794-4641-8f7a-3756c1162193')"
               }
             }
           ],
@@ -7805,6 +7994,101 @@
                     "code": "check-box"
                   }
                 ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence1",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E10') or code.startsWith('E11') or code.startsWith('E12') or code.startsWith('E13') or code.startsWith('E14')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence2",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I05') or code.startsWith('I06') or code.startsWith('I07') or code.startsWith('I08') or code.startsWith('I09') or code.startsWith('I20') or code.startsWith('I21') or code.startsWith('I22') or code.startsWith('I23') or code.startsWith('I24') or code.startsWith('I25') or code.startsWith('I34') or code.startsWith('I35') or code.startsWith('I36') or code.startsWith('I37') or code.startsWith('I42') or code.startsWith('I47') or code.startsWith('I48') or code.startsWith('I49') or code.startsWith('I50') or code.startsWith('Q20') or code.startsWith('Q21') or code.startsWith('Q22') or code.startsWith('Q23') or code.startsWith('Q24')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence3",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I10') or code.startsWith('I11') or code.startsWith('I12') or code.startsWith('I13') or code.startsWith('I15')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence4",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('J45') or code.startsWith('J46')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence5",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('G40') or code.startsWith('G41')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence6",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('N03') or code.startsWith('N04') or code.startsWith('N05') or code.startsWith('N07') or code.startsWith('N08') or code.startsWith('N11') or code.startsWith('N18') or code.startsWith('N19')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence7",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('K70') or code.startsWith('K71') or code.startsWith('K72') or code.startsWith('K73') or code.startsWith('K74') or code.startsWith('K75') or code.startsWith('K76') or code.startsWith('K77')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence8",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('K50') or code.startsWith('K51') or code.startsWith('K58') or code.startsWith('K90')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence9",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I26') or code.startsWith('I80') or code.startsWith('I82')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence10",
+                "language": "text/fhirpath",
+                "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E00') or code.startsWith('E01') or code.startsWith('E02') or code.startsWith('E03') or code.startsWith('E04') or code.startsWith('E05') or code.startsWith('E06') or code.startsWith('E07')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence11",
+                "language": "text/fhirpath",
+                "expression": "%allergies"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence1.exists(), 'a8e74cbd-6812-4ae5-a021-92cccd908f2c') | iif(%evidence2.exists(), '797b524a-ce0a-43df-91d9-9ba1d7df576d') | iif(%evidence3.exists(), 'f29b4ed9-9af9-4f9e-afb2-e891607bf514') | iif(%evidence4.exists(), '6c94ba52-7a1c-4f0e-9b70-29eac19c28b9') | iif(%evidence5.exists(), '903298bd-84d7-49c8-ac82-19cc6884c577') | iif(%evidence6.exists(), '8164840a-acb8-4712-a517-0fbcaf17bdae') | iif(%evidence7.exists(), 'fa3aea57-cf5c-4055-9785-173a5b79d9b8') | iif(%evidence8.exists(), '4705d512-703a-45dd-9425-52797122e5e3') | iif(%evidence9.exists(), '64ead24c-7aa4-48e2-b0df-5ca911b819eb') | iif(%evidence10.exists(), '62ed5fe9-862d-4b8a-9c0f-08bfd1b902b9') | iif(%evidence11.exists(), '9fd8dd80-1ed0-4377-bb5f-02f1b0f434b3')"
               }
             }
           ],
@@ -9463,6 +9747,21 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "(%immunizations.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('J07BK') or code.startsWith('J07BD54')))).exists())) | (%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('B01')))).exists()))"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), '55767202-0cbc-43bd-a8c0-cf9aae953ff3')"
+              }
             }
           ],
           "required": true,
@@ -9624,6 +9923,21 @@
                     "code": "radio-button"
                   }
                 ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "%immunizations.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('J07BD52') or code.startsWith('J07BD54')))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), '752db804-2346-4d34-aa98-20d9e11846a7')"
               }
             }
           ],
@@ -10333,6 +10647,21 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "evidence",
+                "language": "text/fhirpath",
+                "expression": "%medications"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%evidence.exists(), '51fd5d86-a466-43ff-96d7-58482eae35a6')"
+              }
             }
           ],
           "required": true,
@@ -10852,6 +11181,116 @@
           "required": true
         }
       ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
+      "extension": [
+        {
+          "url": "name",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+            "code": "patient"
+          }
+        },
+        {
+          "url": "type",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "description",
+          "valueString": "The person the questionnaire is about"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "conditionSearch",
+        "language": "application/x-fhir-query",
+        "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "conditions",
+        "language": "text/fhirpath",
+        "expression": "%conditionSearch.entry.resource"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "allergySearch",
+        "language": "application/x-fhir-query",
+        "expression": "AllergyIntolerance?patient={{%patient.id}}&clinical-status=active"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "allergies",
+        "language": "text/fhirpath",
+        "expression": "%allergySearch.entry.resource"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "medicationStatementSearch",
+        "language": "application/x-fhir-query",
+        "expression": "MedicationStatement?patient={{%patient.id}}&status=active"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "medicationRequestSearch",
+        "language": "application/x-fhir-query",
+        "expression": "MedicationRequest?patient={{%patient.id}}&status=active"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "medications",
+        "language": "text/fhirpath",
+        "expression": "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "immunizationSearch",
+        "language": "application/x-fhir-query",
+        "expression": "Immunization?patient={{%patient.id}}&status=completed"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "immunizations",
+        "language": "text/fhirpath",
+        "expression": "%immunizationSearch.entry.resource"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "observationSearch",
+        "language": "application/x-fhir-query",
+        "expression": "Observation?patient={{%patient.id}}&status=final,amended,corrected"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "observations",
+        "language": "text/fhirpath",
+        "expression": "%observationSearch.entry.resource"
+      }
     }
   ]
 }

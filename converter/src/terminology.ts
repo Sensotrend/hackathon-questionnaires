@@ -9,7 +9,7 @@
 
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { loadOverrides, type Evidence, type Overrides } from "./overrides.ts";
+import { evidenceList, loadOverrides, type AnyEvidence, type Overrides } from "./overrides.ts";
 import { FHIR_DIR } from "./paths.ts";
 import { loadSources } from "./source/loader.ts";
 
@@ -28,9 +28,11 @@ export function codeUses(slug: string, overrides: Overrides): CodeUse[] {
   for (const coding of overrides.code ?? []) {
     uses.push({ ...coding, usedIn: `${slug}: Questionnaire.code` });
   }
-  const evidenceCodes = (evidence: Evidence, where: string) => {
-    for (const [system, codes] of Object.entries(evidence.codes ?? {})) {
-      for (const code of codes) uses.push({ system, code, usedIn: where });
+  const evidenceCodes = (evidence: AnyEvidence, where: string) => {
+    for (const one of evidenceList(evidence)) {
+      for (const [system, codes] of Object.entries(one.codes ?? {})) {
+        for (const code of codes) uses.push({ system, code, usedIn: where });
+      }
     }
   };
   for (const [linkId, item] of Object.entries(overrides.items ?? {})) {
@@ -70,6 +72,15 @@ async function getJson(url: string): Promise<{ status: number; body: unknown }> 
   }
 }
 
+/** Prefix-matched systems, as in convert/population.ts: ICD-10 and ATC. */
+const PREFIX_SYSTEMS = new Set(["urn:oid:1.2.246.537.6.1", "urn:oid:1.2.246.537.6.32"]);
+
+function thlName(concept: unknown): string | undefined {
+  const attributes = (concept as { attributes?: { attributeName: string; attributeValue?: string[] }[] }).attributes ?? [];
+  const attribute = (name: string) => attributes.find((a) => a.attributeName === name)?.attributeValue?.[0];
+  return attribute("LongName") ?? attribute("ShortName");
+}
+
 function fhirDisplay(body: unknown): string | undefined {
   const parameters = (body as { parameter?: { name: string; valueString?: string }[] }).parameter ?? [];
   return parameters.find((parameter) => parameter.name === "display")?.valueString;
@@ -79,12 +90,27 @@ export async function lookup(system: string, code: string): Promise<Lookup> {
   try {
     if (system.startsWith("urn:oid:1.2.246.537.6.")) {
       const classification = system.slice("urn:oid:".length);
-      const { status, body } = await getJson(`${THL}/${classification}/conceptcodes/${encodeURIComponent(code)}`);
       const source = "THL code server";
-      if (status !== 200) return { found: false, source, error: `HTTP ${status}` };
-      const attributes = (body as { attributes?: { attributeName: string; attributeValue?: string[] }[] }).attributes ?? [];
-      const attribute = (name: string) => attributes.find((a) => a.attributeName === name)?.attributeValue?.[0];
-      return { found: true, display: attribute("LongName") ?? attribute("ShortName"), source };
+      const { status, body } = await getJson(`${THL}/${classification}/conceptcodes/${encodeURIComponent(code)}`);
+      if (status === 200) return { found: true, display: thlName(body), source };
+      if (!PREFIX_SYSTEMS.has(system)) return { found: false, source, error: `HTTP ${status}` };
+      // A prefix (plan §7.3): the Finnish ICD-10 marks codes with # and *
+      // (N03#, K77*, K77.0*B25.1), so a category may exist only as such codes.
+      const search = await getJson(
+        `${THL}/${classification}/conceptcodes?qfield=conceptCodeId&qvalue=${encodeURIComponent(code)}*&pageSize=100`,
+      );
+      const concepts = ((search.body as { conceptCodes?: { conceptCodeId: string }[] }).conceptCodes ?? []).filter(
+        (concept) => concept.conceptCodeId.length > code.length && /^[#*.0-9A-Z]/.test(concept.conceptCodeId.slice(code.length)) && concept.conceptCodeId.startsWith(code),
+      );
+      if (concepts.length === 0) return { found: false, source, error: `HTTP ${status}, and no codes start with it` };
+      const head =
+        (concepts as { conceptCodeId: string }[]).find((concept) => ["#", "*"].includes(concept.conceptCodeId.slice(code.length))) ??
+        concepts[0]!;
+      return {
+        found: true,
+        display: `${thlName(head) ?? ""} (as ${head.conceptCodeId}; ${concepts.length} codes start with ${code})`.trim(),
+        source,
+      };
     }
     if (system === "http://loinc.org") {
       const url = `${TX}/CodeSystem/$lookup?system=${encodeURIComponent(system)}&code=${encodeURIComponent(code)}`;

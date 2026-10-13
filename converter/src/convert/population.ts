@@ -5,7 +5,7 @@
 // records an answer came from are exactly those that matched.
 
 import type { Extension, QuestionnaireItem } from "fhir/r4";
-import type { Evidence, ItemOverride } from "../overrides.ts";
+import { evidenceList, type AnyEvidence, type Evidence, type ItemOverride } from "../overrides.ts";
 
 export const SDC = {
   launchContext: "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
@@ -59,7 +59,13 @@ const initialExpression = (expression: string): Extension => ({
 });
 const quote = (text: string) => `'${text.replace(/\\/g, "\\\\").replace(/'/g, "\\'")}'`;
 
-/** The FHIRPath selecting the records that are evidence. */
+/** The FHIRPath selecting the records that are evidence, of one kind or of several. */
+export function anyEvidenceExpression(evidence: AnyEvidence): string {
+  const parts = evidenceList(evidence).map(evidenceExpression);
+  return parts.length === 1 ? parts[0]! : parts.map((part) => `(${part})`).join(" | ");
+}
+
+/** The FHIRPath selecting the records that are evidence of one kind. */
 export function evidenceExpression(evidence: Evidence): string {
   let expression = `%${evidence.in}`;
   if (evidence.codes) {
@@ -109,29 +115,29 @@ export function populateItem(item: QuestionnaireItem, override: ItemOverride, co
 
   const rule = override.populate;
   if (rule) {
-    const use = (evidence: Evidence) => context.collections.add(evidence.in);
+    const use = (evidence: AnyEvidence) => evidenceList(evidence).forEach((one) => context.collections.add(one.in));
     context.usesPatient.value = true;
     if ("answer" in rule) {
       if (item.type !== "choice" || item.repeats) throw new Error(`question ${item.linkId}: "answer" needs a single-choice question`);
       use(rule.when);
-      added.push(variable("evidence", evidenceExpression(rule.when)));
+      added.push(variable("evidence", anyEvidenceExpression(rule.when)));
       added.push(initialExpression(`iif(%evidence.exists(), ${quote(optionCode(item, rule.answer))})`));
-      described.push(`"${rule.answer}" when there are ${rule.when.in} as evidence`);
+      described.push(`"${rule.answer}" when there are ${evidenceList(rule.when).map((one) => one.in).join(" or ")} as evidence`);
     } else if ("list" in rule) {
       if (item.type !== "text" && item.type !== "string") throw new Error(`question ${item.linkId}: "list" needs a text question`);
       use(rule.list);
-      added.push(variable("evidence", evidenceExpression(rule.list)));
+      added.push(variable("evidence", anyEvidenceExpression(rule.list)));
       added.push(
         initialExpression(
           `iif(%evidence.exists(), %evidence.select((${CODE}.text | ${CODE}.coding.display).first()).join(', '))`,
         ),
       );
-      described.push(`the names of the ${rule.list.in}`);
+      described.push(`the names of the ${evidenceList(rule.list).map((one) => one.in).join(" and ")}`);
     } else if ("options" in rule) {
       if (item.type !== "choice" || !item.repeats) throw new Error(`question ${item.linkId}: "options" needs a repeating choice question`);
       const parts = Object.entries(rule.options).map(([display, evidence], index) => {
         use(evidence);
-        added.push(variable(`evidence${index + 1}`, evidenceExpression(evidence)));
+        added.push(variable(`evidence${index + 1}`, anyEvidenceExpression(evidence)));
         return `iif(%evidence${index + 1}.exists(), ${quote(optionCode(item, display))})`;
       });
       added.push(initialExpression(parts.join(" | ")));

@@ -83,6 +83,28 @@ describe("population overrides", () => {
     ]);
   });
 
+  it("accept evidence of several kinds", () => {
+    const result = convert({
+      [id(102)]: {
+        populate: {
+          answer: "Kyllä",
+          when: [
+            { in: "immunizations", codes: { [ATC]: ["J07BK"] } },
+            { in: "conditions", codes: { [ICD10]: ["B01"] } },
+          ],
+        },
+      },
+    });
+    const [evidence] = expressions(item(result, 102).extension);
+    expect(evidence![1]).toMatch(/^\(%immunizations\.where\(.*'J07BK'.*\)\) \| \(%conditions\.where\(.*'B01'.*\)\)$/);
+    expect(expressions(result.questionnaire.extension).map(([name]) => name)).toEqual([
+      "conditionSearch",
+      "conditions",
+      "immunizationSearch",
+      "immunizations",
+    ]);
+  });
+
   it("list the names of the evidence in a text question", () => {
     const result = convert({ [id(103)]: { populate: { list: { in: "allergies" } } } });
     expect(expressions(item(result, 103).extension)).toEqual([

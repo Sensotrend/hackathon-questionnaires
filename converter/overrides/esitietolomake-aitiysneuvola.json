@@ -1,5 +1,8 @@
 {
-  "$comment": "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text.",
+  "$comment": [
+    "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text.",
+    "Population (milestone 10): only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). Collections: active Conditions, active AllergyIntolerances, active MedicationStatements and MedicationRequests (medicationCodeableConcept only), completed Immunizations, final Observations."
+  ],
   "items": {
     "49eabd07-47e1-4b34-98d3-f33a52ea5d04": {
       "type": "integer",
@@ -13,9 +16,21 @@
       "maxValue": 45
     },
     "0c89ddd8-3c96-4a46-b72d-f3956e576c45": {
+      "$comment": "Number of childbirths: the recorded parity",
       "type": "integer",
       "minValue": 0,
-      "maxValue": 30
+      "maxValue": 30,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "11977-6",
+          "display": "[#] Parity"
+        }
+      ],
+      "observationLinkPeriod": {
+        "value": 2,
+        "unit": "a"
+      }
     },
     "13025756-15f8-437f-a70d-8dcdf58f4f55": {
       "type": "integer",
@@ -39,16 +54,55 @@
       "maxValue": 60
     },
     "68be95fd-e362-40a8-ac2f-3b1a4b9c3fc8": {
+      "$comment": "Height",
       "type": "decimal",
       "unit": "cm",
       "minValue": 100,
-      "maxValue": 250
+      "maxValue": 250,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "8302-2",
+          "display": "Pituus"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "3137-7",
+          "display": "Pituus, mitattu"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "3138-5",
+          "display": "Pituus, ilmoitettu"
+        }
+      ],
+      "observationLinkPeriod": {
+        "value": 5,
+        "unit": "a"
+      }
     },
     "8196e6f6-779d-415b-94fc-5cad668dd7f5": {
+      "$comment": "Weight before pregnancy",
       "type": "decimal",
       "unit": "kg",
       "minValue": 30,
-      "maxValue": 300
+      "maxValue": 300,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "56077-1",
+          "display": "Body weight --pre current pregnancy"
+        }
+      ],
+      "observationLinkPeriod": {
+        "value": 1,
+        "unit": "a"
+      }
     },
     "48d57788-3aa9-478a-9ec5-bbf69683c52a": {
       "type": "integer",
@@ -77,6 +131,317 @@
       "type": "integer",
       "minValue": 1950,
       "maxValue": 2100
+    },
+    "866c93c6-e4db-4056-a4e3-4a702fb75c25": {
+      "$comment": "Date of the last menstrual period",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8665-2",
+          "display": "Last menstrual period start date"
+        }
+      ],
+      "observationLinkPeriod": {
+        "value": 10,
+        "unit": "mo"
+      }
+    },
+    "886e1458-5df1-41e5-b928-ac4fce486ea9": {
+      "$comment": "Previously pregnant: yes when a recorded parity is above zero (gravidity is not used: it may include the current pregnancy)",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "observations",
+          "codes": {
+            "http://loinc.org": [
+              "11977-6"
+            ]
+          },
+          "where": "(value.ofType(integer) | value.ofType(Quantity).value).first() > 0"
+        }
+      }
+    },
+    "e665d3a7-cc88-4e2b-9821-b93c12bbfecf": {
+      "$comment": "Diagnosed illnesses: by active diagnoses (ICD-10 categories) and allergies. Not mapped: thrombophilia (the Finnish ICD-10 has no D68.5/D68.6, checked at THL's code server), congenital malformation (Q00–Q99, too wide to list), occupational risks, other, and 'no illnesses' (never filled from an absence of records).",
+      "populate": {
+        "options": {
+          "diabetes": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "E10",
+                "E11",
+                "E12",
+                "E13",
+                "E14"
+              ]
+            }
+          },
+          "sydänvika tai -sairaus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "I05",
+                "I06",
+                "I07",
+                "I08",
+                "I09",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24",
+                "I25",
+                "I34",
+                "I35",
+                "I36",
+                "I37",
+                "I42",
+                "I47",
+                "I48",
+                "I49",
+                "I50",
+                "Q20",
+                "Q21",
+                "Q22",
+                "Q23",
+                "Q24"
+              ]
+            }
+          },
+          "verenpainetauti": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "I10",
+                "I11",
+                "I12",
+                "I13",
+                "I15"
+              ]
+            }
+          },
+          "astma": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "J45",
+                "J46"
+              ]
+            }
+          },
+          "epilepsia": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "G40",
+                "G41"
+              ]
+            }
+          },
+          "munuaistauti": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "N03",
+                "N04",
+                "N05",
+                "N07",
+                "N08",
+                "N11",
+                "N18",
+                "N19"
+              ]
+            }
+          },
+          "maksasairaus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "K70",
+                "K71",
+                "K72",
+                "K73",
+                "K74",
+                "K75",
+                "K76",
+                "K77"
+              ]
+            }
+          },
+          "suolistosairaus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "K50",
+                "K51",
+                "K58",
+                "K90"
+              ]
+            }
+          },
+          "veritulppa (tromboembolia)": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "I26",
+                "I80",
+                "I82"
+              ]
+            }
+          },
+          "kilpirauhasen toimintahäiriö": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "E00",
+                "E01",
+                "E02",
+                "E03",
+                "E04",
+                "E05",
+                "E06",
+                "E07"
+              ]
+            }
+          },
+          "allergiat (ml. lääkeaineallergiat)": {
+            "in": "allergies"
+          }
+        }
+      }
+    },
+    "49556984-1532-4cac-8574-de5453ccb877": {
+      "$comment": "Varicella: a varicella or MMRV vaccination, or a past chickenpox diagnosis",
+      "populate": {
+        "answer": "Kyllä",
+        "when": [
+          {
+            "in": "immunizations",
+            "codes": {
+              "urn:oid:1.2.246.537.6.32": [
+                "J07BK",
+                "J07BD54"
+              ]
+            }
+          },
+          {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "B01"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "0c644616-dbe9-4fea-975a-ed6d4d582842": {
+      "$comment": "MMR vaccination: an MMR or MMRV vaccination",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "immunizations",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "J07BD52",
+              "J07BD54"
+            ]
+          }
+        }
+      }
+    },
+    "82b179aa-6845-4160-be9f-01412a09f50f": {
+      "$comment": "Prescribed medication: any active medication (FHIR doesn't tell prescribed and over-the-counter apart reliably, so the over-the-counter question isn't mapped)",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications"
+        }
+      }
+    },
+    "8120b4a7-739e-441a-870b-1e038331bd60": {
+      "$comment": "Folic acid during pregnancy",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "B03BB"
+            ]
+          }
+        }
+      }
+    },
+    "836dd534-f43c-47e5-97d1-783b0a9a3018": {
+      "$comment": "Vitamin D during pregnancy",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "A11CC"
+            ]
+          }
+        }
+      }
+    },
+    "30aa0618-bae0-4ca5-adf1-04a1c1124fb2": {
+      "$comment": "Calcium during pregnancy",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "A12AA"
+            ]
+          }
+        }
+      }
+    },
+    "06a41017-dec4-458b-8c87-68000f1b65bc": {
+      "$comment": "Vitamin B12 during pregnancy",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "B03BA"
+            ]
+          }
+        }
+      }
+    },
+    "f00a0014-256d-4658-a807-8ba7ee872859": {
+      "$comment": "Multivitamins during pregnancy",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "A11A",
+              "A11B"
+            ]
+          }
+        }
+      }
+    },
+    "f847604c-d848-4c5e-b927-cb58486b4e0f": {
+      "$comment": "Contact person: name and relationship from Patient.contact",
+      "populate": {
+        "expression": "%patient.contact.first().select(iif(name.text.exists(), name.text, name.given.first() + ' ' + name.family) + iif(relationship.text.exists(), ', ' + relationship.text.first(), ''))"
+      }
+    },
+    "2a56afb9-1b2f-4dad-a3c2-ea2c0ca80551": {
+      "$comment": "Contact person's phone number from Patient.contact",
+      "populate": {
+        "expression": "%patient.contact.first().telecom.where(system = 'phone').value.first()"
+      }
     }
   }
 }

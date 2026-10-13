@@ -46,14 +46,19 @@ export const Evidence = z.strictObject({
 });
 export type Evidence = z.infer<typeof Evidence>;
 
+/** Evidence of one kind, or of any of several (e.g. a varicella vaccination or a past chickenpox diagnosis). */
+const AnyEvidence = z.union([Evidence, z.array(Evidence).min(1)]);
+export type AnyEvidence = z.infer<typeof AnyEvidence>;
+export const evidenceList = (evidence: AnyEvidence): Evidence[] => (Array.isArray(evidence) ? evidence : [evidence]);
+
 /** How a question is filled in from patient data, beyond observation-based population (plan §7.2). */
 export const Populate = z.union([
   /** A choice question: the option (by its Finnish text) when there is evidence. Nothing when there isn't. */
-  z.strictObject({ answer: z.string().min(1), when: Evidence }),
+  z.strictObject({ answer: z.string().min(1), when: AnyEvidence }),
   /** A text question: the names of the evidence's resources, comma-separated. */
-  z.strictObject({ list: Evidence }),
+  z.strictObject({ list: AnyEvidence }),
   /** A repeating choice question: each option (by its Finnish text) that has evidence. */
-  z.strictObject({ options: z.record(z.string().min(1), Evidence) }),
+  z.strictObject({ options: z.record(z.string().min(1), AnyEvidence) }),
   /** Anything else: a FHIRPath initialExpression over %patient and the collections. */
   z.strictObject({ expression: z.string().min(1) }),
 ]);

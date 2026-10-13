@@ -1,7 +1,8 @@
 {
   "$comment": [
     "Texts: the en description is untranslated Finnish; translated here after the en name and the sv description.",
-    "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text."
+    "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text.",
+    "Population (milestone 10): only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). Collections: active Conditions, active AllergyIntolerances, active MedicationStatements and MedicationRequests (medicationCodeableConcept only), completed Immunizations, final Observations."
   ],
   "texts": {
     "description": {
@@ -16,16 +17,375 @@
       "maxValue": 36500
     },
     "3ac062e0-82f1-4634-aa4a-5681d2dff4ce": {
+      "$comment": "Height",
       "type": "decimal",
       "unit": "cm",
       "minValue": 100,
-      "maxValue": 250
+      "maxValue": 250,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "8302-2",
+          "display": "Pituus"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "3137-7",
+          "display": "Pituus, mitattu"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "3138-5",
+          "display": "Pituus, ilmoitettu"
+        }
+      ],
+      "observationLinkPeriod": {
+        "value": 5,
+        "unit": "a"
+      }
     },
     "ae88f684-fb70-4fd8-bdc4-7a86e4a824e4": {
+      "$comment": "Weight",
       "type": "decimal",
       "unit": "kg",
       "minValue": 20,
-      "maxValue": 300
+      "maxValue": 300,
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body weight"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "29463-7",
+          "display": "Paino"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "3141-9",
+          "display": "Paino, mitattu"
+        },
+        {
+          "system": "urn:oid:1.2.246.537.6.96",
+          "code": "3142-7",
+          "display": "Paino, ilmoitettu"
+        }
+      ],
+      "observationLinkPeriod": {
+        "value": 1,
+        "unit": "a"
+      }
+    },
+    "36c778a4-7022-470d-a87c-40f590f7133b": {
+      "$comment": "Basic diseases: the names of the active diagnoses",
+      "populate": {
+        "list": {
+          "in": "conditions"
+        }
+      }
+    },
+    "c3348bab-626d-4e34-900c-dd3936c70a7a": {
+      "$comment": "Diseases and symptoms: by active diagnoses (ICD-10 categories). Not mapped: 'other heart disease' and 'other long-term illness' (no definition to match), cancer in the last 5 years (C00–C97 without C44, too wide to list here), and 'no other illnesses' (never filled from an absence of records).",
+      "populate": {
+        "options": {
+          "Korkea verenpaine": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "I10",
+                "I11",
+                "I12",
+                "I13",
+                "I15"
+              ]
+            }
+          },
+          "Korkea kolesteroli": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "E78"
+              ]
+            }
+          },
+          "Reumasairaus (nivelreuma, fibromyalgia, lupus) muu kuin nivelrikko": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "M05",
+                "M06",
+                "M32",
+                "M79.7"
+              ]
+            }
+          },
+          "Osteoporoosi": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "M80",
+                "M81",
+                "M82"
+              ]
+            }
+          },
+          "Selkäkipu": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "M54"
+              ]
+            }
+          },
+          "Käden tai sormien nivelrikko": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "M15",
+                "M18"
+              ]
+            }
+          },
+          "Krooninen sydämen vajaatoiminta": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "I50"
+              ]
+            }
+          },
+          "Iskeeminen sydänsairaus (sepelvaltimotauti, sydänkohtaus, pallolaajennus, ohitusleikkaus)": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24",
+                "I25"
+              ]
+            }
+          },
+          "Jalkojen verenkierron ongelma (esim. ateroskelroosi)": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "I70",
+                "I73"
+              ]
+            }
+          },
+          "Anemia tai muu veritauti": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "D50",
+                "D51",
+                "D52",
+                "D53",
+                "D55",
+                "D56",
+                "D57",
+                "D58",
+                "D59",
+                "D60",
+                "D61",
+                "D62",
+                "D63",
+                "D64"
+              ]
+            }
+          },
+          "Aivoverenkiertohäiriö": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "G45",
+                "I60",
+                "I61",
+                "I62",
+                "I63",
+                "I64",
+                "I69"
+              ]
+            }
+          },
+          "Parkinsonin tauti": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "G20"
+              ]
+            }
+          },
+          "Muistisairaus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "F00",
+                "F01",
+                "F02",
+                "F03",
+                "G30",
+                "G31"
+              ]
+            }
+          },
+          "Muu neurologinen sairaus (esim. MS, epilepsia, migreeni)": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "G35",
+                "G40",
+                "G41",
+                "G43"
+              ]
+            }
+          },
+          "1-tyypin diabetes": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "E10"
+              ]
+            }
+          },
+          "2-tyypin diabetes": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "E11"
+              ]
+            }
+          },
+          "Aineenvaihdunnan sairaus (esim. hypo/hypertyreoosi)": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "E03",
+                "E05"
+              ]
+            }
+          },
+          "Munuaissairaus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "N03",
+                "N04",
+                "N05",
+                "N07",
+                "N08",
+                "N11",
+                "N18",
+                "N19"
+              ]
+            }
+          },
+          "Mahahaava tai muu vatsaongelma kuten refluksi": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "K21",
+                "K25",
+                "K26",
+                "K27"
+              ]
+            }
+          },
+          "Suolistosairaus (Crohnin tauti, ärtyneen suolen oireyhtymä, krooninen koliitti)": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "K50",
+                "K51",
+                "K58"
+              ]
+            }
+          },
+          "Maksasairaus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "K70",
+                "K71",
+                "K72",
+                "K73",
+                "K74",
+                "K75",
+                "K76",
+                "K77"
+              ]
+            }
+          },
+          "Keuhkoahtaumatauti (COPD)": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "J44"
+              ]
+            }
+          },
+          "Astma/ Muu keuhkosairaus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "J45",
+                "J46",
+                "J84"
+              ]
+            }
+          },
+          "Masennus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "F32",
+                "F33"
+              ]
+            }
+          },
+          "Ahdistuneisuus": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "F41"
+              ]
+            }
+          },
+          "Psoriasis": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "L40"
+              ]
+            }
+          },
+          "Ylipaino": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "E66"
+              ]
+            }
+          },
+          "Krooninen väsymysoireyhtymä, myalginen ensefaliitti (ME)": {
+            "in": "conditions",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "G93.3"
+              ]
+            }
+          }
+        }
+      }
     }
   }
 }
