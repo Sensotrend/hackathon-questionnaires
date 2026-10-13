@@ -60,7 +60,7 @@ Question `type` values: `select` (370), `freetext` (237), `heading` (30), `multi
 - **Most "numeric" data is free text.** Height (cm), weight (kg), number of pregnancies, the year of the last childbirth and similar are all `freetext`. Only the four pain/EQ-VAS scales are `number`. Pre-population needs proper types, so the converter must be able to retype items through overrides (§5.6).
 - **Formatting lives in the text**: `\n` line breaks, Markdown-style trailing double spaces, and headings embedded in the first line of a question (e.g. "My health information␤What is your height (cm)?").
 - **Data-quality problems** must be reported, not silently "fixed". For example, the AUDIT score titles are shifted between languages, so the `sv` title of one sum is the `fi` title of the next.
-- **`createdBy` contains staff names and e-mail addresses.** Neither these nor `tenant`, `restrictions` or `meta` belong in a published Questionnaire, so they are dropped.
+- **`createdBy`, `tenant`, `restrictions` and `meta`** describe the source system, not the questionnaire, so they are not carried into the Questionnaire. The source files are a public data set and are committed unchanged.
 
 ## 3. Architecture & tech stack
 
@@ -86,7 +86,7 @@ docs/                                this plan, conversion notes
 - **`fhirpath`** (fhirpath.js, with the R4 model) for `enableWhenExpression`, `calculatedExpression` and population expressions.
 - **`@types/fhir`** for R4 resource types.
 - **HL7 FHIR Validator** (`validator_cli.jar`, Java) run from an npm script to validate the generated output against R4 and the SDC IG.
-- **A custom renderer** rather than adopting LHC-Forms or CSIRO Smart Forms (`@aehrc/smart-forms-renderer`, `@aehrc/sdc-populate`). The needed subset is small, and owning it keeps the trilingual UI and the population provenance (§7.4) under our control. Both external renderers are still used as **conformance checks**: if our Questionnaires render correctly there too, the conversion is sound.
+- **A custom renderer** rather than adopting LHC-Forms or CSIRO Smart Forms (`@aehrc/smart-forms-renderer`, `@aehrc/sdc-populate`). The needed subset is small, and owning it keeps the trilingual UI and the population provenance (§7.5) under our control. Both external renderers are still used as **conformance checks**: if our Questionnaires render correctly there too, the conversion is sound.
 
 ## 4. Milestones
 
@@ -98,7 +98,7 @@ Each milestone ends with tests passing, a short "what was verified" note added t
 | 1 | Source model & loader | typed loader for all 15 files; duplicates detected by `revisionGuid`; fixture-based tests |
 | 2 | Core conversion | metadata, translations, groups, `display`/`choice`/`open-choice`/`string`/`text`/`integer`/`date` items, `required` |
 | 3 | Follow-ups & conditionality | nested follow-ups with `enableWhen`; rules for interleaved categories |
-| 4 | Scoring | `ordinalValue` on answer options; hidden calculated score items; score bands |
+| 4 | Scoring | `ordinalValue` on answer options; visible calculated score items; score bands |
 | 5 | Validation & report | FHIR Validator clean (errors = 0) on all 14; conversion report generated; outputs committed |
 | 6 | Renderer basics | app lists the questionnaires and renders every item type; fi/sv/en switch |
 | 7 | Renderer behaviour | enableWhen, repeats, required, min/max; live scores; QuestionnaireResponse view and download |
@@ -116,7 +116,7 @@ Milestones 0–7 deliver the converter and the app. 8–10 are the pre-populatio
 | FHIR element | Source |
 |---|---|
 | `id` | `surveyGuid` |
-| `url` | `{BASE}/Questionnaire/{surveyGuid}`. `BASE` is a single placeholder constant until a real canonical base is chosen (open question Q1). |
+| `url` | `{BASE}/Questionnaire/{surveyGuid}`, where `BASE` = `https://sensotrend.com/fhir` (one constant in the converter) |
 | `identifier` | `urn:uuid:{surveyGuid}` |
 | `version` | `revisionGuid` |
 | `name` | PascalCase from the English name, e.g. `PHQ9DepressionSurvey` |
@@ -155,17 +155,17 @@ Finnish goes in the base element (`text`, `title`, `display`). Swedish and Engli
 - `isOptional: false` → `required: true` (never set on `display` or `group`).
 - `description` → a child `display` item with `itemControl` = `help` if it is short guidance, otherwise a plain child `display` item. The choice is made per text length and is listed in the report.
 - Text formatting: `\n` and trailing double spaces are kept in `text`. A `rendering-markdown` extension carries the Markdown-normalised version, so renderers that understand it get line breaks and plain ones still get readable text.
-- Option-level answer codes are local (`answerId`). Mapping options to SNOMED CT/LOINC answer codes happens only through overrides, where population needs it (milestone 10).
+- Option-level answer codes are local (`answerId`). Mapping options to Finnish national or international codes (§7.3) happens only through overrides, where population needs it (milestone 10).
 
 ### 5.5 Follow-ups and scoring
 
 - **Follow-ups**: `answers[a].question[]` becomes child items **nested under the parent question item** (FHIR allows children under a question), each with `enableWhen { question: parentLinkId, operator: "=", answerCoding: <coding of a> }`. For a `multiselect` parent, `=` matches if any selected value equals the coding, which is the intended meaning. Deeper levels recurse. `enableBehavior` is unnecessary because each follow-up depends on exactly one answer. If a future export puts the same follow-up under several answers, the converter merges them into one item with several `enableWhen` and `enableBehavior: any`.
 - **Answer scores**: `scores[].points` → the `http://hl7.org/fhir/StructureDefinition/ordinalValue` extension on the matching `answerOption.valueCoding`. The SDC `itemWeight` extension gets the same value so that newer tools also see it.
-- **Score calculations** → one hidden, read-only `decimal` item per calculation at the end of the questionnaire (or of its category's group), with:
+- **Score calculations** → one visible, read-only `decimal` item per calculation at the end of the questionnaire (or of its category's group), with:
   - `linkId` = `score-total` / `score-{categoryId}`
   - `text` = the calculation's `title` + translations
   - `sdc-questionnaire-calculatedExpression` = a FHIRPath sum of `ordinal()` over the answers of the scored items in scope (the whole survey, or the category)
-  - `questionnaire-hidden` false (scores are shown to the user in this app), `readOnly: true`
+  - `readOnly: true` and never `questionnaire-hidden`: in all of these questionnaires the patient sees the score and its band
   - `summaries` (bands) are kept on the item as a custom extension `{BASE}/StructureDefinition/score-interpretation` (`min`, `max`, `title`, `description` + translations), because core FHIR has no standard extension for this. The renderer shows the band the score falls in.
 - `min`/`max` of the calculation become `minValue`/`maxValue`. The converter checks that the sum of the per-question maximum points equals `max` and reports any mismatch.
 
@@ -206,7 +206,7 @@ The converter validates overrides: an unknown `linkId` or an incompatible retypi
 - **Item rendering**: group (section heading), display, choice (radio buttons, or a dropdown for long option lists), repeating choice (checkboxes), string, text (textarea), integer/decimal (with unit and min/max), slider, date, read-only calculated score.
 - **Conditionality**: `enableWhen` / `enableBehavior`. Disabled items are hidden and their answers are dropped from the response (SDC default).
 - **Validation**: required, min/max, and a summary of missing answers when the user presses "Done".
-- **Scores** recalculated live from `ordinalValue`, with the interpretation band shown. The calculation runs through the same `calculatedExpression` via fhirpath.js, so the expression in the Questionnaire is what gets tested.
+- **Scores**, always shown to the patient, recalculated live from `ordinalValue`, with the interpretation band shown. The calculation runs through the same `calculatedExpression` via fhirpath.js, so the expression in the Questionnaire is what gets tested.
 - **QuestionnaireResponse**: built live and shown in a JSON panel with a download button. Status `in-progress` / `completed`.
 
 ### 6.2 Design
@@ -231,28 +231,36 @@ Two SDC population methods are supported. Both are declared in the Questionnaire
 2. **Expression-based** (`sdc-questionnaire-initialExpression`, FHIRPath): for everything that isn't a single Observation value. The Questionnaire declares `sdc-questionnaire-launchContext` `patient`, and a `sdc-questionnaire-variable` per resource type is resolved against the local store instead of a server. Only `x-fhir-query` of the form `{Type}?patient={{%patient.id}}` (optionally with `code=`) is supported. Examples:
    - "Do you have any medication prescribed by a doctor?" → `yes` if `%medications` has an active `MedicationStatement`/`MedicationRequest`
    - "Do you have any allergies?" → `yes` if `%allergies` has an active `AllergyIntolerance`
-   - Multiselect "Have you been diagnosed with any of the following illnesses?" → every option whose SNOMED CT / ICD-10 value set matches an active `Condition` (the option→code mapping lives in overrides)
+   - Multiselect "Have you been diagnosed with any of the following illnesses?" → every option whose value set (§7.3) matches an active `Condition` (the option→code mapping lives in overrides)
    - MMR / varicella vaccination → `Immunization` with the matching vaccine code
    - Contact person's name and phone → `Patient.contact`
 
 The `x-fhir-query` resolver is deliberately tiny and isolated (`populate/localQuery.ts`), so it can later be swapped for a real FHIR server client without touching the rest.
 
-### 7.3 Rules
+### 7.3 Finnish profiles and code systems
+
+The patient data is expected to follow the Finnish national FHIR specifications, and the population mappings match Finnish codes first:
+
+- **Profiles.** Input Bundles are expected to conform to **FinnishCore** (Finnish Base Profiles, `hl7.fhir.fi.base`) and, for patient-entered measurements, the **Kanta PHR** (Omatietovaranto) profiles. The Patient is identified by the Finnish personal identity code (`urn:oid:1.2.246.21`). Milestone 9 checks whether FinnishCore or Kanta PHR defines Questionnaire / QuestionnaireResponse profiles. If they do, the converter output and the generated QuestionnaireResponse conform to them, and §5 is adjusted.
+- **Code systems.** Population value sets list the **Finnish national codes from THL's code server** (Koodistopalvelu): the Finnish ICD-10 edition for diagnoses, THL's vaccine codes for immunizations, ATC (Fimea) for medications, and the measurement codes Kanta PHR uses. Where Finnish data commonly also carries international codes (LOINC, SNOMED CT), they are listed alongside, so Bundles coded either way are matched. Every code-system URI and OID is looked up from the THL code server or the published IGs when the mapping is written, never typed from memory, and the source is noted next to it in the override file.
+- **Validation.** The sample Bundles (§7.6) are validated with the FHIR Validator with the FinnishCore and Kanta PHR packages loaded, so the test data is realistic Finnish data and not just valid R4.
+
+### 7.4 Rules
 
 - **Never overwrite** an answer the user has already given. Only empty items are filled.
 - **Only fill enabled items**, iterating to a fixed point: filling a parent answer may enable follow-ups that can then be filled too.
 - Type mismatches and unconvertible units are skipped and logged, never guessed.
 - Population is pure: `(Questionnaire, store, currentState) → { newState, provenance[] }`. Unit tests cover each mechanism against the sample Bundles.
 
-### 7.4 Provenance in the UI
+### 7.5 Provenance in the UI
 
 Every pre-filled answer gets a "from record" badge showing the source resource (type, date, display) and the raw JSON on demand. Editing the answer removes the badge. The QuestionnaireResponse records the source with the SDC `itemPopulationContext`-style approach: an `extension` on the answer referencing the source resource.
 
-### 7.5 Sample data
+### 7.6 Sample data
 
-`samples/bundles/` holds **synthetic** patients only: a pregnant adult for the maternity form, an 8th-grade pupil, a 2-year-old with a parent as `RelatedPerson`, and an adult for the physiotherapy form. Each Bundle is designed to exercise both population paths, including deliberate edge cases: an out-of-period Observation, the wrong unit, an inactive Condition, and two Patients. No real patient data is ever committed.
+`samples/bundles/` holds **synthetic** patients only, conforming to FinnishCore and using personal identity codes from the test range (individual number 900–999): a pregnant adult for the maternity form, an 8th-grade pupil, a 2-year-old with a parent as `RelatedPerson`, and an adult for the physiotherapy form. Each Bundle is designed to exercise both population paths, including deliberate edge cases: an out-of-period Observation, the wrong unit, an inactive Condition, and two Patients. No real patient data is ever committed.
 
-### 7.6 Mapping coverage (milestone 10)
+### 7.7 Mapping coverage (milestone 10)
 
 Start with the items that have obvious codes, then extend:
 
@@ -271,10 +279,10 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
 - App: reducer, enableWhen, scoring, QuestionnaireResponse, and population tests in Vitest; a manual browser check for each milestone with screenshots noted in the milestone's "verified" entry.
 - Cross-check: open three representative Questionnaires (PHQ-9, ADHD-RS, maternity) in LHC-Forms and Smart Forms once, in milestone 11.
 
-## 9. Open questions
+## 9. Decisions
 
-- **Q1 Canonical base URL** for `Questionnaire.url` and the local CodeSystem. Until decided: `https://example.org/fhir` in one constant.
-- **Q2 Finnish profiles.** Should the Questionnaires or the expected Bundles follow Finnish national profiles (FinnishCore / Kanta PHR) or the Finnish THL code systems, instead of / in addition to LOINC and SNOMED CT? This affects which codes the population mappings match on.
-- **Q3 Source data in git.** The exports contain staff names and e-mail addresses in `createdBy`. Should they be committed as is, or committed with `createdBy` stripped?
-- **Q4 Free-text retyping.** Retyping e.g. "number of pregnancies" from text to integer changes what a user can enter. Is that acceptable for the hackathon, or must the original free-text behaviour be preserved (and population write text)?
-- **Q5 Scores visible to the patient?** The source has `scoringEnabled`, but it's unclear whether patients should see their score and band. The plan shows them, with a toggle to hide them.
+- **Canonical base URL**: `https://sensotrend.com/fhir` for `Questionnaire.url`, the local answer CodeSystems and the custom extension.
+- **Source data in git**: committed unchanged. It is a public data set, so `createdBy` is not stripped.
+- **Finnish profiles and code systems**: used for the input Bundles and the population mappings (§7.3).
+- **Free-text retyping**: free-text fields that hold numbers (height, weight, counts, years) are retyped to numeric items through overrides (§5.6).
+- **Scores**: shown to the patient in every scored questionnaire, with the interpretation band.
