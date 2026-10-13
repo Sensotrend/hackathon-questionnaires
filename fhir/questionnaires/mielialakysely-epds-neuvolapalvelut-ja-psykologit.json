@@ -1,0 +1,2224 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/Questionnaire/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a"
+    }
+  ],
+  "version": "2ba3946b-333a-4508-95cd-dc897dd42ed5",
+  "name": "MoodQuestionnaireEPDSChildHealthClinicServicesAndPsychologists",
+  "title": "Mielialakysely (EPDS) - Neuvolapalvelut ja psykologit",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Sinnetämningsenkät (EPDS) – Rådgivningstjänster och psykologer"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Mood Questionnaire (EPDS) – Child Health Clinic Services and Psychologists"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2026-05-08T05:26:03.300Z",
+  "description": "Mielialalomake (Edinburgh postnatal depression scale, EPDS) on tarkoitettu raskausajan ja synnytyksen jälkeisen masennuksen ja ahdistuneisuusoireiden tunnistamiseksi.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Sinnestämningsenkäten (Edinburgh postnatal depression scale, EPDS) är avsett för att identifiera symtom på depression och ångest under graviditeten och efter förlossningen."
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Mood questionnaire (Edinburgh Postnatal Depression Scale, EPDS) is intended to identify symptoms of depression and anxiety during pregnancy and postpartum."
+          }
+        ]
+      }
+    ]
+  },
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "71354-5",
+      "display": "Edinburgh Postnatal Depression Scale [EPDS]"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "868229b5-8b6f-4414-ac3d-a0380ac3e7c4",
+      "text": "Ohje",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Instruktion"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Instruction"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "7be3a685-09fc-426f-94df-c8aaf65dccf3",
+          "text": "Tämä lomake on tarkoitettu täytettäväksi ennen sovittua neuvolakäyntiä. Sinua on ohjattu täyttämään se ajanvarauksen yhteydessä tai edellisellä neuvolakäynnillä. Antamasi tiedot tallentuvat Lunnaan, josta kyseisen neuvolakäynnin hoitava terveydenhoitaja löytää sen. Huomioithan, että lomakkeen täyttäminen muussa yhteydessä ei päädy ammattilaiselle eikä toimi yhteydenottokanavana neuvolaan.",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Denna blanketten är avsett att fyllas i före det avtalade besöket på rådgivningen. Du har blivit ombedd att fylla i det vid bokningen eller vid det föregående besöket på rådgivningen. Den information du lämnar kommer att lagras på Lunna, där den yrkespersonen som ansvarar för det aktuella besöket på rådgivningen kan hitta den. Observera att ifyllandet av blanketten vid andra tillfällen inte kommer att nå en professionell och inte fungerar som en kontaktkanal till rådgivningen."
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "This form is intended to be filled out before the scheduled clinic visit. You have been instructed to complete it during the appointment booking or at the previous clinic visit. The information you provide will be stored on Lunna, where the professional responsible for the clinic visit can find it. Please note that completing the form in other context will not reach a professional and does not serve as a communication channel to the clinic"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "display"
+        },
+        {
+          "linkId": "828438bb-0ffd-4057-9a80-16335c583204",
+          "text": "Ole hyvä ja valitse vaihtoehto, joka parhaiten vastaa Sinun tuntemuksiasi viimeisen kuluneen viikon aikana, ei vain tämänhetkisiä tuntemuksiasi.\n\nViimeisten seitsemän päivän aikana:",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Var snäll och ringa in det alternativ som bäst stämmer överens med hur du känt dig under den senaste veckan, inte bara hur du mår idag.\n\nUnder de senaste sju dagarna:"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Please select the answer that comes closest to how you have felt in the past 7 days:"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "linkId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "text": "Mieliala",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Humör"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Mood"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "ab64ffcf-1084-4be4-ac38-ab51d7544168",
+          "text": "Olen pystynyt nauramaan ja näkemään asioiden hauskan puolen",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har jag kunnat skratta och se tillvaron från den ljusa sidan"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "I have been able to laugh and see the funny side of things"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "45a916d8-57f1-41a0-94e8-defb6ef772e9",
+                "display": "Yhtä paljon kuin aina ennenkin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Lika mycket som vanligt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "As much as I always could"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "c8c7fe45-743c-4a4c-a3c7-728d2e86c273",
+                "display": "En aivan yhtä paljon kuin ennen",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte riktigt lika mycket som vanligt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not quite so much now"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "2d1b56e7-6323-4da5-86d2-c88ca5120ba6",
+                "display": "Selvästi vähemmän kuin ennen",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Mycket mindre än vanligt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Definitely not so much now"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "259dce4d-cb3d-4bfb-b66f-41697f4fb22b",
+                "display": "En ollenkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ca4eb258-15bf-4701-b2a4-bee43e5de051",
+          "text": "Olen odotellut mielihyvällä tulevia tapahtumia",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har jag glatt mig åt saker som ska hända"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "I have looked forward with enjoyment to things"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "ac3d7fdf-ed58-4df3-b232-19b3c2a6fe71",
+                "display": "Yhtä paljon kuin aina ennenkin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Lika mycket som vanligt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "As much as I ever did"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "0657cbe4-25d3-4357-ab4c-f1a742697f84",
+                "display": "Hiukan vähemmän kuin aikaisemmin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte riktigt lika mycket som vanligt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rather less than I used to"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "a7eccb77-4c10-48ff-a725-453329556175",
+                "display": "Selvästi vähemmän kuin aikaisemmin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Mycket mindre än vanligt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Definitely less than I used to"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "2ad45623-e232-4677-ad82-bcb3a751167a",
+                "display": "Tuskin lainkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Hardly at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "86b9334e-37e8-4d8b-b3b0-79d8093d74b8",
+          "text": "Olen syyttänyt tarpeettomasti itseäni, kun asiat ovat menneet vikaan",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har jag onödigt mycket lagt skulden på mig själv för att saker gått snett"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "I have blamed myself unnecessarily when things  went wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "f01e3ace-24bb-4b73-81ef-f15013fce2aa",
+                "display": "Kyllä, useimmiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, för det mesta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, most of the time"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "a14e2bde-e9b2-428e-9262-ccbb9fbe635a",
+                "display": "Kyllä, joskus",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ibland"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, some of the time"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "c6aa07e1-1ce5-4d1f-bf9f-13fa592151a5",
+                "display": "En kovin usein",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte så ofta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not very often"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "82c4e596-b650-47cb-ba86-d64637255aa5",
+                "display": "En koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "dc932496-2861-41a8-b973-d508e4430c22",
+          "text": "Olen ollut ahdistunut tai huolestunut ilman selvää syytä",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har jag varit ångestfylld eller orolig utan någon egentlig anledning"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "I have been anxious or worried for no good reason"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "dfc3f194-edd8-43ec-8894-ea51662701b7",
+                "display": "Ei, en ollenkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "440afcbc-996e-4a31-8280-e6ac709f83b1",
+                "display": "Tuskin koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Knappast alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Hardly ever"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "4922f857-6c1d-40b9-9952-faceab9a6e7a",
+                "display": "Kyllä, joskus",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ibland"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, sometimes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "353a585e-23bf-436d-a4f6-8aaa39adbd4c",
+                "display": "Kyllä, hyvin usein",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, mycket ofta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, very often"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "21f5538e-07f7-4254-b0e2-cfbd51e14c88",
+          "text": "Olen ollut peloissani tai hädissäni ilman erityistä selvää syytä",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har jag varit rädd eller ängslig utan någon egentlig anledning"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "I have felt scared or panicky for no very good reason"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "5b2770a0-5037-4e3e-950a-089d8e2b6baf",
+                "display": "Kyllä, aika paljon",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ganska ofta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, quite a lot"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "9a48a866-6a62-414f-8dfb-0cfe817ff344",
+                "display": "Kyllä, joskus",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ibland"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, sometimes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "01ee93b4-af5a-4b3a-a8a2-16cd30ae7984",
+                "display": "Ei, en paljonkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, ganska sällan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, not much"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "96017374-69e0-4bf5-9a9b-c8065dd6d3e0",
+                "display": "Ei, en ollenkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "dec1d597-713f-4c19-889d-b133a8c918d0",
+          "text": "Asiat kasautuvat päälleni",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har det kört ihop sig för mig och blivit för mycket"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Things have been getting on top of me"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "a8416359-40b6-48e8-bce7-e6e08ac0c193",
+                "display": "Kyllä, useimmiten en ole pystynyt selviytymään niistä ollenkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, för det mesta har jag inte kunnat ta itu med något alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, most of the time I haven't been able to cope at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "eb6685b5-f83e-4425-bb2c-b45c1f3963a8",
+                "display": "Kyllä, toisinaan en ole selviytynyt niistä yhtä hyvin kuin tavallisesti",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ibland har jag inte kunnat ta itu med saker lika bra som vanligt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, sometimes I haven't been coping as well as usual"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "396199ba-ab8e-4491-86ba-25b9e0e3b00d",
+                "display": "Ei, useimmiten olen selviytynyt melko hyvin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, för det mesta har jag kunnat ta itu med saker ganska bra"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, most of the time I have coped quite well"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "d15be234-216e-4e33-b2c8-5ee86213090a",
+                "display": "Ei, olen selviytynyt niistä yhtä hyvin kuin aina ennenkin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, jag har kunnat ta itu med saker precis som vanligt"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, I have been coping as well as ever"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "46d5727e-62a8-4539-800c-8def68a8c039",
+          "text": "Olen ollut niin onneton, että minulla on ollut univaikeuksia",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har jag känt mig så olycklig att jag har haft svårt att sova"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "I have been so unhappy that I have had difficulty sleeping"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "36ddb04d-7b4d-4a1f-ab1a-8f220550e973",
+                "display": "Kyllä, useimmiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, för det mesta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, most of the time"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "cc8d169c-25ee-42cc-b1b5-dc245d41d512",
+                "display": "Kyllä, toisinaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ibland"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, sometimes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "06f60657-aa21-4a9d-90fd-aca727810e1e",
+                "display": "Ei, en kovin usein",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, inte så ofta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not very often"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "1dc8f305-1e6a-4c58-86da-a0ffa1ab7bb1",
+                "display": "Ei, en ollenkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "137aea4d-edc2-4164-aeee-8578efe322d2",
+          "text": "Olen tuntenut oloni surulliseksi ja kurjaksi",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har jag känt mig ledsen eller nere"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "I have felt sad or miserable"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "cea77e00-ff97-41c4-9901-d1daac697b69",
+                "display": "Kyllä, useimmiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, för det mesta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, most of the time"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "8958d327-495f-4179-b030-90f429762333",
+                "display": "Kyllä, melko usein",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ganska ofta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, sometimes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "b535ca61-5a45-432d-a320-c04116c47701",
+                "display": "En, kovin usein",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte så ofta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Only occasionally"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "62330d71-a5d7-4b66-ae6c-25b4cc4099e2",
+                "display": "Ei, en ollenkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "efb7da7b-a0a1-4eaa-93be-78e61a694950",
+          "text": "Olen ollut niin onneton, että olen itkeskellyt",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har jag känt mig så olycklig att jag har gråtit"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "I have been so unhappy that I have been crying"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "c1655bc3-f7c3-4478-bc3e-eb5de49d40be",
+                "display": "Kyllä, useimmiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, för det mesta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, most of the time"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "8904a763-c8a9-4e64-8f63-426c4e8b219e",
+                "display": "Kyllä, melko usein",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ganska ofta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, quite often"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "e760fd77-e6ab-466c-867b-09016577dee4",
+                "display": "Vain silloin tällöin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Bara då och då"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Only occasionally"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "f242a6d7-c1fb-4d9f-aa3e-714c94576a24",
+                "display": "Ei, en koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No, never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "618c6636-3b10-463a-ab80-4c4128ce4fe0",
+          "text": "Ajatus itseni vahingoittamisesta on tullut mieleeni",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har tankar om att göra mig själv illa förekommit"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The thought of harming myself has occurred to me"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "a7121ccc-5483-432b-9a93-cf14df657d27",
+                "display": "Kyllä, melko usein",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ganska ofta"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, quite often"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "5e6d6cc1-de1d-4ef0-ac02-fc8b278a3eb5",
+                "display": "Joskus",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja, ibland"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "fcd63b45-937f-4b4d-85c1-fa99618878ba",
+                "display": "Tuskin koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nästan aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Hardly ever"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+                "code": "42e31797-99fa-4650-ba3c-1cf4f4440693",
+                "display": "Ei koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej, aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

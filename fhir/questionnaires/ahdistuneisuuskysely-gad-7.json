@@ -1,0 +1,1627 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/Questionnaire/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:afd52bcb-1e90-42c4-9c28-2cdbc63d699d"
+    }
+  ],
+  "version": "31885ff4-d356-4b7d-a50d-c49198566af8",
+  "name": "AnxietyQuestionnaireGAD7",
+  "title": "Ahdistuneisuuskysely (GAD-7)",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Ångestenkät (GAD‑7)"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Anxiety Questionnaire (GAD-7)"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2026-05-07T11:12:08.845Z",
+  "description": "Tällä kyselyllä voit arvioida ahdistuneisuusoireitasi. Kysely perustuu DSM-5 järjestelmän yleistyneen ahdistuneisuushäiriön diagnostisiin kriteereihin. Kyselyn voit täyttää riippumatta siitä, onko sinulla ahdistuneisuushäiriön diagnoosia.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Använd dessa frågor för att bedöma dina ångestsymtom. Frågorna baserar sig på DSM-5-systemets diagnostiska kriterier för generaliserat ångestsyndrom. Du kan besvara frågorna oavsett om du har fått en diagnos på ångestsyndrom eller inte."
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "This questionnaire will help you assess the severity of your anxiety symptoms. The questionnaire is based on the DSM-5 diagnostic criteria for Generalised Anxiety Disorder. You can answer the questionnaire regardless of whether you have a diagnosis of an anxiety disorder."
+          }
+        ]
+      }
+    ]
+  },
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "69737-5",
+      "display": "Generalized anxiety disorder 7 item (GAD-7)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "4b29affd-0642-4689-9d19-f551c24f1ee3",
+      "text": "Ohje",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Instruktion"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Instruction"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "8060799f-336b-40d3-9d94-88311cbe2e47",
+          "text": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form."
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "linkId": "62d4c8d8-0dee-418c-bcfc-3c71dd9438e7",
+      "text": "GAD-7 kysely",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "GAD-7 enkät"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "GAD-7 survey"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "6257b216-9e90-4fc7-aaf2-c81baf7e2d79",
+          "text": "Arvioi jokaisen väittämän kohdalla, kuinka usein seuraavat ongelmat ovat vaivanneet sinua kyselyn täyttöä edeltäneen kahden viikon aikana.",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har du under de senaste två veckorna besvärats av något av detta?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Over the last 2 weeks, how often have you been bothered by the following problems?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "display"
+        },
+        {
+          "linkId": "36e47612-0c0c-4b48-b72e-2c1f7aae1cc8",
+          "text": "1. Hermostuneisuuden, ahdistuneisuuden tai kireyden tunne",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "1. Känt mig nervös, orolig, spänd"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "1. Feeling nervous, anxious or on edge"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "17c28d8b-6522-4455-b26c-587453dc297c",
+                "display": "Ei lainkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "9a2494bf-c016-47af-b43e-95d781794ca3",
+                "display": "Useana päivänä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flera dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Several days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "df04efe6-e4a3-4624-9f5b-718c3d9cc7a5",
+                "display": "Suurimpana osana päivistä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flertalet dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "More than half the days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "3ecab84a-cfaf-49f7-9653-1064d1dacb1c",
+                "display": "Lähes joka päivä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nästan varje dag"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nearly every day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "cec6f13c-50ad-4c39-93b5-ca0c7359c29d",
+          "text": "2. En ole voinut lopettaa tai hallita huolestumistani",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "2. Inte kunnat låta bli att ängslas"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "2. Not being able to stop or control worrying"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "f7f3d91e-ac2c-488d-82aa-eb835295c557",
+                "display": "Ei lainkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "ab0592f6-ed6a-43a5-9f42-335f6a6ea43b",
+                "display": "Useana päivänä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flera dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Several days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "bf5efd41-9d32-4423-8b1b-eddb5ab4c838",
+                "display": "Suurimpana osana päivistä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flertalet dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "More than half the days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "97b3f291-14ec-485a-8028-3c40a6289b2b",
+                "display": "Lähes joka päivä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nästan varje dag"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nearly every day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "b6c4ceca-1666-4a59-acba-2aa12c63a2c7",
+          "text": "3. Liiallinen huolestuneisuus erilaisista asioista",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "3. Ängslats för mycket för olika saker"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "3. Worrying too much about different things"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "90074ca4-107e-46f4-b2e9-d4efbc2a4d62",
+                "display": "Ei lainkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "12238dd2-38c8-4b41-ac1f-680b0b5fb59c",
+                "display": "Useana päivänä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flera dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Several days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "50589344-1dab-4d92-8422-a2b3cc77c00a",
+                "display": "Suurimpana osana päivistä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flertalet dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "More than half the days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "416472c0-65ea-4924-a2c5-932e2680575f",
+                "display": "Lähes joka päivä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nästan varje dag"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nearly every day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "65d55870-cb71-41a6-b466-a9b7b7c5f4ea",
+          "text": "4. Vaikeus rentoutua",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "4. Haft svårt att koppla av"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "4. Trouble relaxing"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "e523e12a-7b38-44f8-955a-92a44984863c",
+                "display": "Ei lainkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "4e87d095-0495-4349-a770-0c8dbdef12fd",
+                "display": "Useana päivänä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flera dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Several days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "dc7626c0-bb71-4a1d-9fbd-f68a9b224725",
+                "display": "Suurimpana osana päivistä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flertalet dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "More than half the days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "8bfeb8b2-0f14-4eb1-a2c1-8db55c02d2fe",
+                "display": "Lähes joka päivä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nästan varje dag"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nearly every day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "879d7541-fd6c-4d30-8320-7f71dbe2e73a",
+          "text": "5. Niin levoton olo, että on vaikea pysyä aloillaan",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "5. Varit så rastlös att det varit svårt att sitta still"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "5. Being so restless that it is hard to sit still"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "bbe98709-4a35-4482-a2ff-14e19c0f6802",
+                "display": "Ei lainkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "421ebe38-42e8-4c22-9864-ed6ea4f81b66",
+                "display": "Useana päivänä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flera dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Several days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "b7f8bc70-0728-4883-a8de-00ddbd14e75e",
+                "display": "Suurimpana osana päivistä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flertalet dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "More than half the days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "15440343-9023-4e3d-8de1-3501303a849e",
+                "display": "Lähes joka päivä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nästan varje dag"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nearly every day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "333d66c9-f264-4bc6-86f0-023002b211ae",
+          "text": "6. Taipumus harmistua tai ärsyyntyä helposti",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "6. Varit retlig och lättstörd"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "6. Becoming easily annoyed or irritable"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "287c639d-8b21-4477-b466-03e91b2b12ad",
+                "display": "Ei lainkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "3f78e68f-50d4-4a3c-89f9-56ab6656c3b8",
+                "display": "Useana päivänä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flera dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Several days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "9d8744c2-d172-4a40-94eb-e4af8dcbe3cf",
+                "display": "Suurimpana osana päivistä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flertalet dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "More than half the days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "1fb903de-eb90-4481-ab8a-3aafef2347ba",
+                "display": "Lähes joka päivä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nästan varje dag"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nearly every day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "0d88a828-804e-48da-8d56-8bf21d8ee141",
+          "text": "7. Pelko siitä, että jotakin kauheaa saattaisi tapahtua",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "7. Varit rädd, som om något förfärligt skulle kunna hända"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "7. Feeling afraid as if something awful might happen"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "dff8be88-98c8-488a-bf98-fe6f13937a40",
+                "display": "Ei lainkaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inte alls"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "ee6e9288-e0f2-477b-bf7c-64ad9aa2328d",
+                "display": "Useana päivänä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flera dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Several days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "e02e83a2-abd4-4f7a-bd0a-cbdbdebc5d4d",
+                "display": "Suurimpana osana päivistä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Flertalet dagar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "More than half the days"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+                "code": "3e796835-cc96-4bdc-9784-ff1c0a8139ac",
+                "display": "Lähes joka päivä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nästan varje dag"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nearly every day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

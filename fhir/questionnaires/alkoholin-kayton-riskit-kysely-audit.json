@@ -1,0 +1,2594 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/Questionnaire/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:dd7998f8-9c5a-408b-ab46-dce7a02f47d9"
+    }
+  ],
+  "version": "5f17a968-1678-4fdd-b4b6-ab42174aa46f",
+  "name": "AlcoholRisksOfUseAUDIT",
+  "title": "Alkoholin käytön riskit - kysely (AUDIT)",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Alkohol– risker med bruk (AUDIT)"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Alcohol – Risks of Use (AUDIT)"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2026-05-07T11:00:41.428Z",
+  "description": "Tällä AUDIT-lomakkeella voidaan kartoittaa alkoholin käyttöäsi ja siihen liittyviä tottumuksia.\n(AUDIT=Alcohol Use Disorders Identification Test)",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Med denna AUDIT-blankett kan vi kartlägga din alkoholkonsumtion och dina vanor kring alkohol.\n(AUDIT=Alcohol Use Disorders Identification Test)"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "This AUDIT form can be used to assess your alcohol consumption and related habits.\n(AUDIT=Alcohol Use Disorders Identification Test)"
+          }
+        ]
+      }
+    ]
+  },
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "72110-0",
+      "display": "Alcohol Use Disorder Identification Test [AUDIT]"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "40f2cdc7-b3c7-449e-b103-4a4c45b054f7",
+      "text": "Ohje",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Instruktion"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Instruction"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "b372d59d-f957-43fd-941f-a93bdac7a109",
+          "text": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form."
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "linkId": "1ac2d399-5575-409c-bb0e-7f99ba19a95d",
+      "text": "Audit",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Audit"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Audit"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "acfcca54-f1ac-4b1a-a3e4-e8d56ed6988e",
+          "text": "Vastaa kysymyksiin alkoholinkäytöstäsi kuluneen vuoden aikana.",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Var vänlig och besvara några frågor kring din användning av alkoholhaltiga drycker under det gångna året."
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Please answer the following questions about your use of alcoholic beverages during this past year."
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "linkId": "44748566-42d8-4051-90fd-200e0b7464fd",
+      "text": "Alkoholin kulutus (summa, kysymykset 1-3)",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Alkoholin kulutus (keskiarvo, kysymykset 1-3)"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Alkoholin kulutus (keskiarvo, kysymykset 1-3)"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "06b14120-fccc-4302-8454-5edda0849c7f",
+          "text": "1. Kuinka usein juot olutta, viiniä tai muita alkoholijuomia? Ota mukaan myös ne kerrat, jolloin juot vain pieniä määriä, esimerkiksi pullon keskiolutta tai tilkan viiniä.",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "1. Hur ofta dricker du öl, vin eller andra alkoholdrycker? Räkna också med de gånger då du endast dricker små mängder, till exempel en flaska mellanöl eller lite vin."
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "1. How often do you have a drink containing alcohol?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "674b350f-f11b-43b3-9fb2-0e6269f2c8ec",
+                "display": "En koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "ae8df7cd-e5dc-46c5-bc96-70973eddf0b8",
+                "display": "Kerran kuussa tai harvemmin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "cirka en gång i månaden eller mer sällan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Monthly or less"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "7c17b128-1fb5-461b-8120-89c71f47d194",
+                "display": "2 - 4 kertaa kuukaudessa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "2 - 4 kertaa kuukaudessa"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "2 - 4 times a month"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "4e3a9c3e-1fe9-4a2a-bee9-6af30569ea77",
+                "display": "2 - 3 kertaa viikossa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "2–3 gånger i veckan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "2 - 3 times a week"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "ffb9b00b-a4a8-4d92-826f-50524222cc2a",
+                "display": "Neljä kertaa viikossa tai useammin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "4 gånger i veckan eller oftare"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "4 or more times a week"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "bc382696-5efb-43fb-b7e3-2afb9fc32bfc",
+          "text": "2. Kuinka monta alkoholiannosta tavallisesti otat niinä päivinä, jolloin juot alkoholia? (1 annos = 12 cl mietoa viiniä, 8 cl väkevää viiniä, 4 cl viinaa tai muuta väkevää juomaa. 1.25 annos = pullo A-olutta, pullo Alkon siideriä tai pullo long drinkkiä.)",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "2. Hur många portioner alkohol har du vanligen druckit de dagar då du använt alkohol? (1 portion = 12 cl svagvin, 8 cl starkvin, 4 cl sprit. 1.25 portion = en flaska mellanöl, en flaska Alkos cider, en flaska long drink.)"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "2. How many drinks containing alcohol do you have on a typical day when you are drinking?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "a34af5c3-c6f8-47df-a341-0037bd23b1bc",
+                "display": "1 - 2 annosta päivässä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "1-2 portioner"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "1 or 2 drinks per day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "e88ff9e6-e3f6-4951-a5b9-8ae1f10673ad",
+                "display": "3 - 4 annosta päivässä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "3-4 portioner"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "3 or 4 drinks per day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "8d58c4b2-c01f-4869-90c0-bf1e5ad97abb",
+                "display": "5 - 6 annosta päivässä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "5-6 portioner"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "5 or 6 drinks per day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "cbc12bd7-f01f-49be-8d9d-ac94a0a54eeb",
+                "display": "7 - 9 annosta päivässä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "7-9 portioner"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "7 to 9 drinks per day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "2bf5954f-9666-4187-96c8-90f9a1829f81",
+                "display": "10 annosta/päivä tai enemmän",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "10 portioner eller mera"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "10 or more drinks per day"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "25c4a5b9-f537-4d85-8769-536438cf5c0d",
+                "display": "En käytä alkoholia",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Jag använder inte alkohol"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "I don't use alcohol"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2e90344e-ad06-4862-9eb4-acb9ee53a6d6",
+          "text": "3. Kuinka usein juot yhdellä juomakerralla kuusi tai useampia alkoholiannoksia?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "3. Hur ofta har du druckit sex alkoholportioner eller mer på gång?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "3. How often do you have six or more drinks on one occasion?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "47bab1c4-da58-4776-a1b1-9c62de63f160",
+                "display": "En koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "57a0c4ef-4283-40a4-8653-5eb92c8a9d8d",
+                "display": "Harvemmin kuin kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "cirka en gång i månaden eller mer sällan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Less than monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "dd5eb752-bdf6-497e-90ca-2bedea82f6b8",
+                "display": "Kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "c03bb8e0-34f1-4428-8a39-ac0254348c9b",
+                "display": "Kerran viikossa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i veckan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Weekly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "f11df044-d3b6-41be-b2da-109583a84064",
+                "display": "Päivittäin tai lähes päivittäin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "dagligen eller nästan dagligen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Daily or almost daily"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "37651d97-7321-4ede-89ae-52b7981fbdb7",
+      "text": "Alkoholiriippuvuus (summa, kysymykset 4-6)",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Alkoholiriippuvuus (keskiarvo, kysymykset 4-6)"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Alkoholiriippuvuus (keskiarvo, kysymykset 4-6)"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1e0cca3b-dc93-4af0-995a-9bfe0e31ba14",
+          "text": "4. Kuinka usein viimeksi kuluneen vuoden aikana sinulle on käynyt niin, että et ole pystynyt lopettamaan alkoholin juomista, kun kerran olit sen aloittanut?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "4. Hur ofta under det senaste året har det hänt att du inte har kunnat sluta dricka när du väl börjat dricka alkohol?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "4. How often during the last year have you found that you were not able to stop drinking once you had started?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "f0b19774-0096-4db4-a43d-9376ed31c806",
+                "display": "Ei koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "15fcc6d3-5c61-46db-b394-75176170d3a5",
+                "display": "Harvemmin kuin kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "mer sällan än en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Less than monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "5e6dd79b-7540-4005-9dde-97410130315d",
+                "display": "Kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "2a102037-adc7-4c4c-a187-3c745dfb2165",
+                "display": "Kerran viikossa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i veckan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Weekly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "f6fe21ac-2893-492b-86bb-1ea43d7ff65c",
+                "display": "Päivittäin tai lähes päivittäin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "dagligen eller nästan dagligen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Daily or almost daily"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "d04b2de0-5e35-4907-95fd-0901022c1558",
+          "text": "5. Kuinka usein viimeksi kuluneen vuoden aikana sinulta on juomisesi vuoksi jäänyt hoitamatta jokin asia, joka sinun tavallisesti olisi kuulunut hoitaa?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "5. Hur ofta har du under det senaste året på grund av ditt drickande inte skött något som du vanligtvis borde ha skött?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "5. How often during the last year have you failed to do what was normally expected of you because of drinking?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "dc39e42a-c653-46b2-afde-87e3e685d340",
+                "display": "Ei koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "cfd8df15-4448-4916-a49a-9b3314ef353d",
+                "display": "Harvemmin kuin kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "mer sällan än en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Less than monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "818b239f-45e2-492f-8cb4-2876be5a94b0",
+                "display": "Kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "74cbe9d5-30f6-43c9-8448-f2d4277a7548",
+                "display": "Kerran viikossa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i veckan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Weekly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "df80f33b-cf7d-4555-aaa4-308ad27e69b6",
+                "display": "Päivittäin tai lähes päivittäin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "dagligen eller nästan dagligen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Daily or almost daily"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "d6ec7c77-57e8-4781-bb84-ca6209592115",
+          "text": "6. Kuinka usein viimeksi kuluneen vuoden aikana olet tarvinnut runsaan juomisen jälkeisenä aamuna annoksen alkoholia saadaksesi itsesi liikkeelle?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "6. Hur ofta har du under det senaste året behövt en portion alkohol för att komma igång på morgonen efter att du druckit rikligt?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "6. How often during the last year have you needed a first drink in the morning to get yourself going after a heavy drinking session?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "4c1e30a1-04c8-421a-8441-ab641319ab76",
+                "display": "En koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "991fd57a-98c1-451b-a0fd-3ef3dcb58f38",
+                "display": "Harvemmin kuin kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "mer sällan än en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Less than monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "3e7e0e1c-441a-49ee-9d60-2dcff556342b",
+                "display": "Kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "8ca01e75-9f06-485c-aaeb-4b73759b105b",
+                "display": "Kerran viikossa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i veckan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Weekly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "4d0e9025-8685-4d9a-b8b6-1ffe2149d377",
+                "display": "Päivittäin tai lähes päivittäin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "dagligen eller nästan dagligen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Daily or almost daily"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "16ff59b0-7a45-43b5-a580-31d8584e5b9a",
+      "text": "Alkoholin haitat (summa, kysymykset 7-10)",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Alkoholin haitat (keskiarvo, kysymykset 7-10)"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Alkoholin haitat (keskiarvo, kysymykset 7-10)"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "e47f9bb5-71ec-470b-8cd8-26805a30decd",
+          "text": "7. Kuinka usein viimeisen vuoden aikana olet tuntenut syyllisyyttä tai katumusta juomisen jälkeen?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "7. Hur ofta under det senaste året har du haft skuldkänslor eller ångrat dig när du druckit?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "7. How often during the last year have you had a feeling of guilt or remorse after drinking?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "038e1ab4-b955-44e2-a3b7-b036cfbe4c84",
+                "display": "En koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "82ed70bf-cb9c-42d5-8af9-07e3e15ba33f",
+                "display": "Harvemmin kuin kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "mer sällan än en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Less than monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "708ffb83-3ec1-4cd7-bb4e-f4848210b586",
+                "display": "Kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "a60d0e73-41c2-4435-9f54-40473d36d01b",
+                "display": "Kerran viikossa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i veckan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Weekly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "339a4b94-8ce1-4fd6-82ba-7ba5c8925f24",
+                "display": "Päivittäin tai lähes päivittäin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "dagligen eller nästan dagligen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Daily or almost daily"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2429dac0-cd41-4742-aa4b-7aecd1a7960d",
+          "text": "8. Kuinka usein viimeksi kuluneen vuoden aikana sinulle on käynyt niin, että et ole seuraavana päivänä pystynyt muistamaan edellisen illan tapahtumia, koska olit juonut alkoholia?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "8. Hur ofta har det under det senaste året gått så att du inte kommit ihåg vad som hänt kvällen innan på grund av att du druckit alkohol?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "8. How often during the last year have you been unable to remember what happened the night before because of your drinking?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "7c222e9e-51eb-4d91-8e74-1f123d6303af",
+                "display": "Ei koskaan",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "aldrig"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "04346990-4870-464e-85a3-c813e01a44f1",
+                "display": "Harvemmin kuin kerran kuukaudessa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "mer sällan än en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Less than monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "281d4c83-4cbd-495c-9e89-122dd3a98b46",
+                "display": "Kerran kuussa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i månaden"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Monthly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "67768bdb-1426-4bb8-9f08-2029fd6fdc86",
+                "display": "Kerran viikossa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "en gång i veckan"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Weekly"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "669648fd-3609-4273-bdfb-0b6c72389465",
+                "display": "Päivittäin tai lähes päivittäin",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "dagligen eller nästan dagligen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Daily or almost daily"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "23091cc5-9bc8-487b-bebd-97a0f59a5098",
+          "text": "9. Oletko itse tai onko joku muu vahingoittunut alkoholinkäyttösi vuoksi?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "9. Är du själv eller har någon annan skadats på grund av din alkoholkonsumtion?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "9. Have you or someone else been injured because of your drinking?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "a2135cc2-4c68-49a4-a541-c9e2eff66faf",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "baf5d245-304c-432e-ad5e-3028505b366e",
+                "display": "Kyllä, mutta ei viimeksi kuluneen vuoden aikana",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "ja, men inte under det senaste året"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, but not in the last year"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "1dab0a85-796e-43a6-9627-bcd197f68a0d",
+                "display": "Kyllä, viimeksi kuluneen vuoden aikana",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "ja, under det senaste året"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, during the last year"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "3ed34f36-803a-45e2-acd2-10c149770f6a",
+          "text": "10. Onko joku läheisesi tai ystäväsi, lääkäri tai joku muu terveydenhuollon työntekijä ollut huolissaan alkoholinkäytöstäsi tai ehdottanut, että vähentäisit juomista?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "10. Har någon av dina närstående eller vänner, en läkare eller någon annan varit orolig för din alkoholkonsumtion eller föreslagit att du ska minska ditt drickande eller sluta dricka?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "10. Has a relative, friend, doctor, or other health care worker been concerned about your drinking or suggested you cut down?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "0f975b18-a9f1-4c22-b4fa-7c2bcab4663a",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "d648a896-fba0-4cb4-a23b-acedf9585f1e",
+                "display": "Kyllä, mutta ei viimeksi kuluneen vuoden aikana",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "ja, men inte under det senaste året"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, but not in the last year"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+                "code": "4bf6cb39-6dee-4ec4-b406-cb6079f85822",
+                "display": "Kyllä, viimeksi kuluneen vuoden aikana",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "ja, under det senaste året"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes, during the last year"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

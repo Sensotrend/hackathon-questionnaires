@@ -1,0 +1,4 @@
+{
+  "$comment": "Questionnaire.code checked with CodeSystem/$lookup on tx.fhir.org (LOINC 2.82), 2026-10-13.",
+  "code": [{ "system": "http://loinc.org", "code": "44249-1", "display": "PHQ-9 quick depression assessment panel [Reported.PHQ]" }]
+}

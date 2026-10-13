@@ -8,6 +8,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
+    "@types/fhir": "0.0.44",
     "@types/node": "^26.6.5",
     "tsx": "^4.23.15",
     "typescript": "~6.0.3",

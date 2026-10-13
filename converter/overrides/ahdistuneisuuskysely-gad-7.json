@@ -1,0 +1,4 @@
+{
+  "$comment": "Questionnaire.code checked with CodeSystem/$lookup on tx.fhir.org (LOINC 2.82), 2026-10-13.",
+  "code": [{ "system": "http://loinc.org", "code": "69737-5", "display": "Generalized anxiety disorder 7 item (GAD-7)" }]
+}

@@ -1,0 +1,4059 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/Questionnaire/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:faa23a83-0b38-4689-8407-ec4cc8fcb1a7"
+    }
+  ],
+  "version": "674b1773-08ec-4b68-bb9b-790b7e8484b6",
+  "name": "MaternityAndChildHealthClinicsBackgroundInformationQuestionnaireForChildrenAged5Years",
+  "title": "Neuvolapalvelut - Esitietolomake 5v. ikäisen lapsen vanhemmille",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Rådgivning - Blankett för förhandsuppgifter barn 5 år"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Maternity and Child health clinics - Background information questionnaire for children aged 5 years"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2025-06-16T12:42:43.312Z",
+  "description": "Terveystarkastuksen esitietolomake 5v. ikäisen lapsen vanhemmille",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Hälsoundersökningens förhandsuppgiftsblankett för föräldrar till ett barn på 5 år"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Preliminary information form for the health examination for parents of a 5-year-old child"
+          }
+        ]
+      }
+    ]
+  },
+  "item": [
+    {
+      "linkId": "e528c92f-45f6-44b7-a5c3-1b7a8ef3bf4c",
+      "text": "Ohje",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Instruktion"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Instruction"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "e7b2ca31-f9c6-4b86-bc8f-14142f06a086",
+          "text": "Tämä lomake on tarkoitettu täytettäväksi ennen sovittua neuvolakäyntiä. Sinua on ohjattu täyttämään se ajanvarauksen yhteydessä tai edellisellä neuvolakäynnillä. Antamasi tiedot tallentuvat Lunnaan, josta kyseisen neuvolakäynnin hoitava terveydenhoitaja löytää sen. Huomioithan, että lomakkeen täyttäminen muussa yhteydessä ei päädy ammattilaiselle eikä toimi yhteydenottokanavana neuvolaan.",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Den här blanketten är avsedd att fyllas i före det överenskomna rådgivningsbesöket. Du har blivit instruerad att fylla i den i samband med tidsbokningen eller vid det föregående rådgivningsbesöket. De uppgifter du lämnar sparas på Lunna, där den hälsovårdare som ansvarar för det aktuella rådgivningsbesöket hittar den. Observera att om du fyller i blanketten vid ett annat tillfälle kommer den inte att nå hälsovårdaren och fungerar inte som en kontaktkanal till rådgivningen."
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "This form is intended to be filled out before the scheduled clinic visit. You have been instructed to complete it during the appointment booking or at the previous clinic visit. The information you provide will be stored on Lunna, where the professional responsible for the clinic visit can find it. Please note that completingthe form in other context will not reach a professional and does not serve as a communication channel to the clinic."
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "display"
+        }
+      ]
+    },
+    {
+      "linkId": "1a98fa58-7a0d-40bc-b785-07d24f2a70f9",
+      "text": "Perhe",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Familjen"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Family"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "994ee508-b902-4ce9-a5a4-cccbfe8cea02",
+          "text": "Muutoksia perheen rakenteessa?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Förändringar i familjestrukturen"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Changes in family composition"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "02bb2348-9440-49c4-a18b-f21980f01ec2",
+          "text": "Onko lapsella sisaruksia?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har barnet syskon?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Does the child have siblings?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "7b9639b7-761e-4862-9d80-fb594ef1b12e",
+          "text": "Muut perheeseen tai samaan talouteen kuuluvat henkilöt?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Anda personer i familjen eller i samma hushåll?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Other family/household members"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "77f1d11e-72dd-4aad-a62c-d47c07c005d6",
+      "text": "Lapsen hoitojärjestelyt",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Barnets vårdarrangemang"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Care arrangements"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "646feebc-7e45-4639-a4e1-92d077a9984c",
+          "text": "Lapsen hoitojärjestelyt",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnets vårdarrangemang"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The child's care arrangements"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "3232b45a-e997-4517-90e2-083f2c2d6394",
+                "display": "Kotihoito",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Hemvård"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Homecare"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "599d4e9a-0519-4846-b33b-c5c64e814fcd",
+                "display": "Päivähoito",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Dagvård"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Daycare"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "5cfc4572-388c-4143-98fc-fbc175c01937",
+              "text": "Kuinka lapsi viihtyy päivähoidossa, jääkö mielellään hoitoon?",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "sv"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Hur trivs barnet i dagvården, stannar han/hon gärna kvar?"
+                      }
+                    ]
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "en"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "How does yous child feel about daycare? Are they happy  to go?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": "text",
+              "required": true,
+              "enableWhen": [
+                {
+                  "question": "646feebc-7e45-4639-a4e1-92d077a9984c",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                    "code": "599d4e9a-0519-4846-b33b-c5c64e814fcd"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "03a75ed9-02cf-41ec-839c-193debc77713",
+      "text": "lapsen terveys ja hyvinvointi",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Barnets hälsa och välbefinnande"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Child's health and wellbeing"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "ef657d22-55c0-4fad-97d5-9ebf932c9a24",
+          "text": "Millaiseksi arvioitte lapsenne nykyisen terveydentilan?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hur bedömer du barnets nuvarande hälsotillstånd?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "How would you assess your child's current health?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "92219439-673b-42ec-88f3-9970c01425da",
+          "text": "Onko lapsella jokin pitkäaikainen (fyysinen tai psyykkinen) sairaus tai vamma?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har barnet något långvarig symtom, en sjukdom eller funktionsnedsättning?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Does you child have any long-term illnesses or disabilities (physical or psychological)?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "7deea841-ff5b-4572-a1f1-4c3788c493e5",
+          "text": "Onko lapsella allergioita?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har barnet allergier?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Does your child have allergies?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "2ba527ea-01ed-4bb9-9c61-8501f4eefaa0",
+          "text": "Onko lapsella ollut toistuvasti viimeisen vuoden aikana:",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har barnet inom det senaste året återkommande varit"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "In the past year, has your child repeatedly shown/experienced"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "repeats": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "44db99d7-4dc3-4423-88de-67adffcab23f",
+                "display": "Väsymystä tai uniongelmia",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "trött eller haft sömnproblem"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Fatigue or sleep problems"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "61d06681-ff0e-4825-bfbf-cdfdc8a6d0b3",
+                "display": "Väkivaltaisuutta, aggressiivisuutta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "våldsam, aggressiv"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Violent or aggressive behaviour"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "0054c361-66f0-4219-9347-308398ca3260",
+                "display": "Pelkoja, ahdistuneisuutta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "rädd, haft ångest"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Fears, anxiety"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "38f2398f-69fc-4586-a42a-6b4c7e066478",
+                "display": "Arkuutta tai jännittyneisyyttä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "blyg eller nervös"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Shyness or nervousness"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "0f5d9250-60ff-496c-9e56-78a2b51cf46c",
+                "display": "Levottomuutta, keskittymisvaikeuksia",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "rastlös, haft koncentrationssvårigheter"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Restlessness, trouble concentrating"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "89d2a6a6-604b-4412-ab8a-a8a127d8f53d",
+                "display": "Alakuloisuutta, vetäytyneisyyttä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "nedstämd, tillbakadragen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Low mood, social withdrawal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "2fd5971a-046c-4420-b06f-a97e4dfec01b",
+                "display": "Tapaturma",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "råkat ut för olycksfall"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Any incidents or accidents"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "a3f2fa08-ab2d-465d-bdf1-529e11c31708",
+                "display": "Muita oireita, vaivoja tai kipuja",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "haft andra symtom, besvär eller smärtor"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Any other symptoms, discomforts, or pain"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "910dc1a0-b21e-41f5-ad7f-5d5de572e9f0",
+                "display": "Ei mitään ylläolevista",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "inget av ovanstående"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "None of the above"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "f0a025aa-de5d-4ab9-881d-6e7e66e89b38",
+      "text": "Ruokailu",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Måltider"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Eating habits"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "52debe72-2ce1-4096-869a-d5d9cc3915eb",
+          "text": "Lapsi syö monipuolisesti",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnet äter mångsidigt"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The child eats a varied diet"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "5efff1cd-d790-4d97-924c-15c1585f56ee",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "057ead3e-3f33-4039-b6fe-fa8a2b626a12",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "00f2d060-ff4a-4c81-88cc-f0c023c4afae",
+          "text": "Lapsi syö pääosin siististi",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnet äter huvudsakligen fint utan att stöka till omgivningen"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The child eats tidily most of the time"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "860b3f98-aaa9-49f5-91b2-4e111abf4489",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "c2d1a29a-bef6-4936-9ae5-09b18722b2a4",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "89616599-2f0a-48e2-840a-a0bd1d2bf671",
+          "text": "Lapsi syö D-vitamiinilisää",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnet äter d-vitamintillskott"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The child takes vitamin D supplementation"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "f646b77d-b94a-4e89-8fa4-017bfd900987",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "6773edd7-1124-41dc-bd67-addef4cb7ace",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "9e536713-ab5d-4792-a233-84ac9822cf4e",
+          "text": "Lapsi juo maitoa tai maitojuomia",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnet dricker mjölk eller mjölkdryck"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The child drinks milk or milk-based drinks"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "02de8aa7-a5fe-4c61-a4cd-324c43c54b6a",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "21aa7346-3b8e-4d72-a290-ebf5e842c928",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "cc4b806c-ce16-4e37-8c01-13bc4a2c0bc0",
+          "text": "Lapsi käyttää muita maitotuotteita /  lapsella on muita kalsiuminlähteitä",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnet använder andra mjölkprodukter eller andra källor av kalcium"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The child uses other milk products or sources of calcium"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "f5a9d0c9-7eda-4d7c-af9a-8758c212d9ac",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "26bcabd0-5dd0-4b2a-b1fc-da2b2a03f063",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "7edfe767-a22a-4cf1-98b1-73d985c99ad3",
+              "text": "Mitä muita maitotuotteita / muita kalsiuminlähteitä?",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "sv"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Vad?"
+                      }
+                    ]
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "en"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Please specify"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": "text",
+              "required": true,
+              "enableWhen": [
+                {
+                  "question": "cc4b806c-ce16-4e37-8c01-13bc4a2c0bc0",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                    "code": "f5a9d0c9-7eda-4d7c-af9a-8758c212d9ac"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "89cf4ad6-d8fc-4ba2-bfb7-b7fa95d4117f",
+          "text": "Onko lapsella erityisruokavalio?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har barnet en specialkost?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Does the child have special dietary needs?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "00909aa4-579e-4d5b-bd7a-ad10762182a2",
+          "text": "Lapsi pukee ja riisuu pääosin itse",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnet kär av och på sig"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Can your child dress and undress by themselves"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "94700ff0-c556-4e68-b12e-1fddcb9b9cb9",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "7e291caa-1e5c-4f88-9fb6-9ab0f51554b6",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "48e38077-ca47-45e6-b922-d56b7ed3aa99",
+          "text": "Esiintyykö kastelua",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Förekommer enures (dag och/eller nattvättning)?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Does your child experience wetting?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "592d257c-2db1-4631-932b-3cf3ea985fbb",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "ef04ede0-b8ec-4c1b-8ad8-86368acbae68",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "27667c56-fec0-4ee2-8c5a-058783e727fc",
+          "text": "Lapsi käy omatoimisesti wc:ssä",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnet går sjänv på toaletten"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Does your child use the toilet by themselves?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "4c09a98f-6338-47cb-a4ab-b7d0518840fb",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "32d44a8a-ef5d-4e00-bfb0-ffb1005c7ef0",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "e10bd705-3a09-4701-8fd5-70d009451a86",
+          "text": "Esiintyykö tuhrimista?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Förekommer problem med avföring"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Does your child experience fecal incontinence?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "a3e420e9-2751-4fc0-aa5d-a3a6b3a4f9c6",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "d39869a0-6351-4110-8368-9ca25ccae7cc",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "41712a49-b8dc-4900-867e-821170b43c33",
+      "text": "Iltarutiinit, liikunta ja ulkoilu",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Kvällsrutiner, motion och utomhusaktiviteter"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Evening routines, physical activity, and outdoor time"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "0c6070c8-cec0-4cc0-8be6-cce80236c953",
+          "text": "Iltarutiinit, nukkumaanmenoaika, nukahtaminen ja unen laatu",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Kvällsrutiner, läggdags, insomning och sömnkvalitet"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Evening routines, beedtime, falling asleep, quality of sleep"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "28cc1b28-753f-423b-bc75-509e224a94ee",
+          "text": "Liikkuminen ja ulkoilu",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Motion och utomhusaktiviteter"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Physical activity and time spent outdoors"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "e4f9a3ad-1f40-4d27-9259-289fbb1d24cd",
+      "text": "Lapsen vuorovaikutustaidot (3-6 -vuotias)",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Barnets interaktionsfärdigheter"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Communication skills"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "74a3d6f9-a65e-4015-8195-b5e6ac4ec50c",
+          "text": "Valitse alta lastasi kuvaavat väittämät.\nLapseni:",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnet"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "The child"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "repeats": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "8f275578-f4d3-4a6b-a9e2-539d4f9e4cd9",
+                "display": "Ilmaisee tunteitaan sanallisesti",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Uttrycker sina känslor med ord"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Expresses feelings verbally"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "77f883fc-fb69-4a06-895f-42e5986725a8",
+                "display": "Leikkii mielellään toisten lasten kanssa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Gillar leka med andra barn"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Enjoys playing with other children"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "4fdc7f75-4061-4be8-992c-2817928e87ef",
+                "display": "Ymmärtää tavallista puhetta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Förstår vanligt tilltal"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Understands normal speech"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "5c0c928c-e394-49f1-ad8b-0c3f7889cb10",
+                "display": "Osaa odottaa vuoroaan hetken",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Kan vänta på sin tur en stund"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Can wait for their turn for a moment"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "21f5eee6-f8b5-4ced-8cba-b45c70a7563a",
+                "display": "Leikkii jonkinlaisia roolileikkejä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Leker någon form av rollspel"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Engage in some types of role-playing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "c61aa1e4-450a-467a-a5d2-6a0549f2dfc1",
+                "display": "Puhe on selkeää lausepuhetta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Pratar i meningar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Speaks in clear sentences"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "93caf7e8-a52d-4a5d-9b71-8a63f5247eb7",
+                "display": "Osaa huomioida toisia lapsia",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Kan ta hänsyn till andra barn"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Considers other children in their actions"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "cf7050c2-3a29-43f5-a276-4eaaf79d12b1",
+                "display": "Leikkii leikin loppuun",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Leker leken till slut"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "When playing finishes what they start"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "3e206707-e19d-4c4d-b767-12b841ed2d15",
+                "display": "Jaksaa kuunnella satuja",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Orkar lyssna på sagor"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Listens to fairytales/stories without losing interest"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "a2e01195-50b3-4611-afdb-9729768d8856",
+                "display": "Ei mitään ylläolevista",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inget av ovanstående"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "None of the above"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "f50c988a-5e50-4d80-8619-c5f13d02290c",
+          "text": "Miten lapsi tulee toimeen sisarustensa/toisten lasten kanssa? Kaverisuhteet?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hur kommer barnet överens med sina syskon/andra barn? Kamratrelationer?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "How does your child get along with siblings and other children? Friendships?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "9b5dc553-e95f-4590-88cd-3cc153856ef2",
+          "text": "Minkälaisista leikeistä lapsi pitää? Erityisiä kiinnostuksen kohteita?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hurdana lekar gillar barnet? Har barnet några intressen?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "What types of games or play does your child enjoy? Any particular interests?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "afe4e60a-91a1-4ce1-a318-da81d263c6f0",
+          "text": "Kuinka paljon lapsella on ruutuaikaa päivässä? Minkälaisia sääntöjä/ohjeista teillä on ruutuajasta?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hur mycket skärmtid har barnet per dag? Hurdana regler har ni om skärmtid?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "How much screen time does your child have each day? What rules or instructions have you set?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "f1fb9bf0-2a24-446e-ac35-7e5a97dc289d",
+      "text": "Perheen arki",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Familjens vardag"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Family life"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "group",
+      "item": [
+        {
+          "linkId": "a878c3c5-868e-4fca-83b8-ef5febbbf6bc",
+          "text": "Onko perheellänne riittävästi yhteistä aikaa?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Har din familj tillräckligt med tid tillsammans?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Does you family spend enough time together?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "1052d9f7-e5c8-45e3-94b9-151788f184fb",
+          "text": "Kuinka vietätte yhteistä aikaa?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hur tillbringar ni den?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "How do you typically spend time as a family?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "bd354eb9-d189-470e-8fcd-8c4f4b8ee497",
+          "text": "Koetteko tarvitsevanne tukea lapsen kasvatukseen liittyvissä asioissa?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Upplever du att du behöver stöd i frågor som berör barnuppfostran?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Do you feel like you need support with parenting?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "a67f5415-b048-4f02-8b2e-2078525a3ddb",
+          "text": "Saamme jo tukea/olemme aikaisemmin saaneet tukea",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Min familj får redan stöd/har tidigare fått stöd"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "We already receive support/we have previously received support"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "dbca97bf-71ae-43a0-8f67-cc1104783c1f",
+                "display": "Kyllä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ja"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Yes"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "40dc4dc5-cb51-4faa-b61b-b9c9494e604b",
+                "display": "Ei",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nej"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "a49ec2e6-4c60-4f8b-87eb-1acb6d59ccd5",
+              "text": "Mistä olette saaneet tukea?",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "sv"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Varifrån?"
+                      }
+                    ]
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "en"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "From where?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": "text",
+              "required": true,
+              "enableWhen": [
+                {
+                  "question": "a67f5415-b048-4f02-8b2e-2078525a3ddb",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                    "code": "dbca97bf-71ae-43a0-8f67-cc1104783c1f"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "88ce03ce-35a5-40cc-a9dd-edbd677c5e19",
+          "text": "Miten perheessänne ratkaistaan haastavat tilanteet/erimielisyydet?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Hur hanterar din familj utmanande situationer/meninsskiljaktigheter?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "How are difficult situations of conflicts resolved within your family?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        },
+        {
+          "linkId": "c6822933-63ad-4fb2-a2e1-984d6a7286b9",
+          "text": "Lapsen hyvinvointiin vaikuttavat perheen voimavarat sekä mahdolliset huolet ja muutokset.\n\nValitse alta väittämät jotka sopivat perheeseenne tilanteeseen.\nPerheessämme on:",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Barnets välbefinnande påverkas av familjens resurser och eventuella bekymmer eller förändringar. Finn det i familjen?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Are there any ongoing concerns in your family, such ass"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "repeats": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "18fdcda6-3c54-4f57-8db2-095e517979e7",
+                "display": "Pitkäaikaissairautta (fyysistä tai psyykkistä)",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Långvarig sjukdom (fysisk eller psykisk)"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Long term illness (physical or psychological)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "a2452d1d-9331-4957-9df3-b0c9474faff6",
+                "display": "Jaksamisvaikeuksia, uupumista tai masennusta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Svårigheter att orka, utmattning, depression"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Exhaustion, burnout or depression"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "c183d0e5-d603-4264-a5b5-56b095976aec",
+                "display": "Turvattomuutta tai väkivaltaisuutta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Otrygghet eller våld"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Unsafety or violence"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "7b333911-2c7d-41b3-9127-0fad409b3045",
+                "display": "Päihdeongelmia tai -riippuvuutta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Missbruksproblem eller beroende"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Substance abuse or addiction"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "bf92ec34-9171-47c5-9a0d-6b97b7fc09d1",
+                "display": "Ongelmia perheenjäsenten välisissä suhteissa",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Problem i relationerna mellan familjemedlemmar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Relationship problems among family members"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "e78c029f-9504-4500-84c3-8b81c7599cb0",
+                "display": "Taloudellisia huolia",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ekonomiska bekymmer"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Financial concerns"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "b6201ebf-5c2a-46ca-8d2b-54a153b6e8fa",
+                "display": "Surua tai menetyksiä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sorg eller förlust"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Grief or loss"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "4e3fbcd2-e02c-4f84-a91f-ca86a17c2070",
+                "display": "Jotain muuta ajankohtaista",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Någor annat"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Any other concerns"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "391f01e6-e82b-453b-8c3c-bc6ee0062336",
+                "display": "Ei mitään ylläolevista",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Inget av ovanstående"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "None of the above"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "99c2a8c2-7a51-4037-89ac-7c2c30b78e0c",
+              "text": "Mitä muuta ajankohtaista?",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "sv"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Vad?"
+                      }
+                    ]
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "en"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Please specify"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": "text",
+              "required": true,
+              "enableWhen": [
+                {
+                  "question": "c6822933-63ad-4fb2-a2e1-984d6a7286b9",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                    "code": "4e3fbcd2-e02c-4f84-a91f-ca86a17c2070"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "5df196ae-a7ec-480c-a94a-ef87788750e4",
+          "text": "Keneltä saatte tarvittaessa tukea perheenne arjen sujumiseen?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Vem kan du vända dig till för att få stöd i vardagen?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Who are the people you can turn to for support in your family's daily life?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "choice",
+          "repeats": true,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "check-box"
+                  }
+                ]
+              }
+            }
+          ],
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "122b6f94-a818-4467-a7e5-fc28393bebcb",
+                "display": "Isovanhemmilta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Mor- och farföräldrar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Grandparents"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "800e819b-23ef-4f21-9989-928581975264",
+                "display": "Entisiltä puolisoilta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Före detta make/maka"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ex-partners"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "4d521a7c-57e2-4087-8d44-0d16f43566a8",
+                "display": "Naapureilta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Grannar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Neighbours"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "8716aabe-65ac-454f-be71-07d8eaa9fad1",
+                "display": "Ystäviltä",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Vänner"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Friends"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "1f4cf133-df7a-4e17-8977-6dfd43da71dc",
+                "display": "Muilta",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Andra"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Others"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+                "code": "a1e29e33-7078-40aa-830d-e58ed7aa1785",
+                "display": "Ei keneltäkään",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ingen"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "No one"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "18ab081f-621a-4874-af81-f02774ec501e",
+          "text": "Onko teillä jotain erityistä, josta haluaisitte keskustella neuvolakäynnillä?",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "sv"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Finns det något särskillt du vill diskutera under hälsovårdsbesöket?"
+                  }
+                ]
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Is there a particular issue or concern you would like to discuss during your visit to the child and maternity health clinic?"
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

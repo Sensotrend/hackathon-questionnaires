@@ -1,0 +1,7 @@
+{
+  "$comment": [
+    "The two categories (inattention, hyperactivity/impulsivity) alternate question by question: they are the scoring sub-scales, not sections, so no groups.",
+    "No Questionnaire.code: LOINC has no ADHD-RS panel (searched on tx.fhir.org, LOINC 2.82, 2026-10-13)."
+  ],
+  "structure": "flat"
+}

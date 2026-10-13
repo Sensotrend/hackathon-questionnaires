@@ -1,0 +1,3770 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/Questionnaire/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:d92c50a7-40f7-44a7-ac25-682f5a5946a3"
+    }
+  ],
+  "version": "0f6c4d54-22fd-4259-8804-9e3c986a81ef",
+  "name": "ADHDSymptomQuestionnaireForAChildOrYouthADHDRS",
+  "title": "Lapsen tai nuoren ADHD oirekysely (ADHD-RS)",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "ADHD‑symtomenkät för barn eller unga (ADHD‑RS)"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "ADHD Symptom Questionnaire for a child or youth(ADHD-RS)"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2026-05-07T10:51:07.185Z",
+  "description": "Aktiivisuuden ja tarkkaavuuden häiriön oirekysely",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "sv"
+          },
+          {
+            "url": "content",
+            "valueString": "Symtomfrågeformulär för aktivitets- och uppmärksamhetsstörning"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Symptom Questionnaire for Attention Deficit and Hyperactivity Disorder"
+          }
+        ]
+      }
+    ]
+  },
+  "item": [
+    {
+      "linkId": "8950a8b9-02ec-45a4-80aa-6af2a32a736c",
+      "text": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form."
+              }
+            ]
+          }
+        ]
+      },
+      "type": "display"
+    },
+    {
+      "linkId": "5a8c855f-d785-43f5-8895-0c6d5034b332",
+      "text": "Valitse seuraavien kysymyksien vastauksista se vaihtoehto, joka parhaiten kuvaa lapsen käyttäytymistä viimeisten 6 kuukauden aikana.",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Välj det alternativ som bäst beskriver barnets beteende under de senaste 6 månaderna"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Select the option that best describes the child's behavior over the past 6 months."
+              }
+            ]
+          }
+        ]
+      },
+      "type": "display"
+    },
+    {
+      "linkId": "422a1934-4a6c-460e-941c-85893f55387e",
+      "text": "1. Jättää huomiotta yksityiskohtia tai tekee huolimattomuusvirheitä koulutehtävissä",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "1. Är ouppmärksam på detaljer eller gör slarvfel i skolarbetet"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "1. Fails to give close attention to details or makes careless mistakes in schoolwork"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "bfc28ece-fefa-4433-95bc-a19aba167321",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "965f69a4-9d33-468e-8010-0e71b1db140b",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "aea4e8c3-379b-4fba-b428-81d40c7d5230",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "6a011603-3c42-4bad-8db1-da10a8321e70",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "6a36686d-9a33-42d0-be01-f07468f40b57",
+      "text": "2. Liikuttelee käsiään tai jalkojaan levottomasti tai kiemurtelee istuessaan",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "2. Har svårt att vara stilla med händer eller fötter eller kan inte sitta still på stolen"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "2. Fidgets with hands or feet or squirms in seat"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "39ea04db-73c7-4043-8616-e31e523d07b5",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "0091151c-411a-4414-98bb-186de23c2c94",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "9a7b40ca-b869-47f2-8a0b-201d3daabbad",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "0e53a636-8086-460f-b981-96f3e6f12af0",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "b0fd271c-071b-41c3-8412-714d2b3ad9a3",
+      "text": "3. Keskittyminen pitkäjänteisesti tehtäviin tai leikkeihin on vaikeaa",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "3. Har ofta svårt att bibehålla uppmärksamheten inför uppgifter eller lekar"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "3. Has difficulty sustaining attention in tasks or play activities"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "91bf40e3-4a6a-43a6-a0d8-253a6e3ba5c1",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "736dfaff-6e5f-4b73-b649-6538d108f570",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "29e91455-62eb-4ef6-a97e-c21cfa6f1d0b",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "36e2b1b7-bb8b-4b53-ab93-324408c2f2bd",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3dd2451e-9d9e-4e4d-9047-ec7afcff8664",
+      "text": "4. Poistuu paikaltaan luokassa tai muissa tilanteissa, joissa odotetaan paikallaan istumista",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "4. Lämnar sin plats i klassrummet eller andra situationer då man förväntas sitta kvar en längre stund"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "4. Leaves seat in classroom or in other situations in which remaining seated is expected"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "55275488-f08f-42ae-8cbd-6a51ebb40111",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "447931f7-ac8c-44aa-bd0e-14859b34e04c",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "0039f0e9-2918-435c-b8f8-9201c09f8894",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "8557c94d-3c7a-49da-b32a-05f11c965b3c",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "a51bbabe-cded-49c3-b328-773278a9b7d1",
+      "text": "5. Vaikuttaa siltä, että ei kuuntele, kun hänelle puhutaan",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "5. Verkar som att hen inte lyssnar vid tilltal"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "5. Does not seem to listen when spoken to directly"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "81c384ee-257a-4fd1-913c-ca78cd74987a",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "3b8f78d2-047e-46c1-ae50-737b71ab7cf0",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "4dd26f69-7bb8-4aa0-a7cd-91265dee62df",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "f5b982e9-a919-4f74-b427-94b316f43e45",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "6b6811ef-0a75-451b-b9e5-c7ea900efe42",
+      "text": "6. Juoksentelee tai kiipeilee tilanteissa, joissa se ei kuulu asiaan",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "6. Springer omkring, klänger eller klättrar i situationer där det inte kan anses lämpligt"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "6. Runs about or climbs excessively in situations in which it is inappropriate"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "f196e77c-dcf1-46c2-8b6a-803a96d0daae",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "2d5dd592-49cd-439c-8166-d441b1fd11d2",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "e10acb6f-edcc-4f16-98da-b589b360820b",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "fa13f88a-85cf-404e-b180-5e32fdf95cfd",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "8ad9c88c-86f4-4985-ba76-d27051515b93",
+      "text": "7. Ohjeiden noudattaminen ja tehtävien tekeminen loppuun asti epäonnistuvat",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "7. Följer inte givna instruktioner och misslyckas med att genomföra uppgifter"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "7. Does not follow through on instructions and fails to finish work"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "dadd57b5-5da6-42dc-ac1a-6b79c69af490",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "8be1d647-8c71-454a-84e9-fa6808796678",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "f29946e6-b566-4aad-8d2d-07dc8fb53f60",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "c79851b9-4091-4f03-9241-cdb720a1f669",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2d758970-78ab-40cd-a78f-2af27aadb7d8",
+      "text": "8. Rauhallinen leikkiminen tai harrastuksiin osallistuminen on vaikeaa",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "8. Svårt att leka eller delta i aktivitet lugnt och stilla"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "8. Has difficulty playing or engaging in leisure activities quietly"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "71f72fc6-298e-4c53-b287-55618c78a41c",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "9737b289-1a72-49e3-b782-ce8aa7ea80f2",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "246c7407-48f7-4507-9635-e74644c91bdd",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "7bfce52e-fe49-4536-9ec5-c3fb4f9c5a2c",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "901d42fd-00a7-41f7-a95b-d06ba11fc9b7",
+      "text": "9. Tehtävien ja toimintojen suunnittelussa ja järjestämisessä on vaikeuksia",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "9. Svårigheter i planeringen och organiseringen av uppgifter och aktiviteter"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "9. Has difficulty organizing tasks and activities"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "177a2416-120e-4f3f-8f93-28095d3c0146",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "46fe0907-ea79-4789-9727-af71fd61fe67",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "d926d75b-a46b-48bb-82c9-14760f0d6002",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "462ebda1-96fd-4d19-9299-91c3459f099d",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "cc29fd9e-a32b-4f3e-b3d9-63586157ff2d",
+      "text": "10. Puuhaa jatkuvasti jotain tai toimii ”kuin moottorin ajamana ”",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "10. Sysslar hela tiden med något eller går på ”som med en motor”"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "10. Is “on the go” or acts as if “driven by a motor”"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "fe5825af-b460-4000-8fe9-99345e3b22af",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "ef52ae64-ffe3-47e9-8063-4dc080efc656",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "c9792baa-4710-4321-9fe7-964de96d9df6",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "8fe9783f-474e-4d42-93c6-67a56eb2b927",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "6795c248-1cba-4463-aba6-5fed425c873a",
+      "text": "11. Välttelee tehtäviä (esimerkiksi koulutehtäviä tai läksyjä), jotka vaativat pitkäkestoista ponnistelua",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "11. Undviker uppgifter (till exempel skoluppgifter eller läxor) som kräver långvariga ansträngningar"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "11. Avoids tasks (eg, schoolwork, homework) that require sustained mental effort"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "3e8be569-89ba-4278-a93a-b4b2d1ba6bb0",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "ccc8ed85-9ecb-4eb3-9b2a-bf2b395f9545",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "c1cf2897-af8b-4c6b-8989-308b003c5bed",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "169af63b-2367-4313-b592-04ddd1899943",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "69fcf5fb-aa7a-40b1-bd38-3096deaa1d3b",
+      "text": "12. Puhuu ylenmääräisen paljon",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "12. Pratar överdrivet mycket"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "12. Talks excessively"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "f32b7c23-c9e7-4431-8110-86f5d1488aae",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "00f4e83e-144b-4795-80be-1c716bc50349",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "5140a061-1dab-428c-bb98-9f04653cf9fb",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "affa040e-f918-4bad-a9b5-61f60e03dff4",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "cedee02b-de09-4b8b-b356-4b2b510a4efc",
+      "text": "13. Kadottaa tehtävissä tai toimissa tarvittavia välineitä",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "13. Tappar verktyg som behövs för uppgifter eller aktiviteter"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "13. Loses things necessary for tasks or activities"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "27cb27ae-1d85-4122-8ed0-c8542d77f6d3",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "a3b7f029-6e99-46aa-84ac-76402eee9570",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "ab038a28-d319-4789-8c25-179765f0298f",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "4fdb551c-baa2-411d-8fc6-8383c8ba9d41",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "e6cf1232-5625-4227-a3b3-c77a23556737",
+      "text": "14. Tokaisee vastauksen ennen kuin kysymys on kokonaan esitetty",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "14. Kastar ur sig svar på frågor innan frågeställaren är färdig"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "14. Blurts out answers before questions have been completed"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "7577fc44-79f8-4258-be4d-1d422f424143",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "22989596-1e38-4530-98ca-b066f1cce48e",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "dd6f4843-38df-4d76-b58b-354067e8d28d",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "46956efe-1e18-473f-83e4-691db4437e7a",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "a7e6dea9-31e2-40b2-9036-457854c0afd4",
+      "text": "15. Häiriintyy helposti",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "15. Blir lätt distraherad"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "15. Is easily distracted"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "ad21039b-c140-4cca-9270-2f60d1b239d9",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "8d04645c-3940-4c74-ab7b-ff3f3503b85c",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "6223a8ba-4f54-4f7f-adb8-b738374bb70f",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "e39d8eef-5af8-499f-93f0-1d37b877ce33",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "5521fbc8-467d-402b-b784-2ae624b8793f",
+      "text": "16. Vuoron odottaminen on vaikeaa",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "16. Har svårt att vänta på sin tur"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "16. Has difficulty awaiting turn"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "c05d7126-7612-4005-a9c9-da592a45ec4b",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "aab16991-b308-4865-a319-84c697d1e76e",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "9828c4a3-c292-40df-a85d-52d002932caa",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "051b4c2b-6646-4f1c-a600-0d69a0ad2c88",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "0b42c075-e134-458b-a028-cc5baa1537f9",
+      "text": "17. Unohtelee asioita päivittäisissä toimissa",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "17. Är glömsk i det dagliga livet"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "17. Is forgetful in daily activities"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "461d42cb-9d30-4abe-bfd3-e10ef1e98104",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "96cf7e88-b026-4d15-8f6a-402e0e90d877",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "968238bb-28c6-4a26-84e6-231abf5f5e97",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "c43dc80d-91dc-4c9c-8906-57fa17a9ab6a",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "9b06d2d6-02cd-4901-89b4-e171ace32394",
+      "text": "18. Keskeyttää toiset tai on tunkeileva",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "18. Avbryter eller inkräktar på andra"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "18. Interrupts or intrudes on others"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ],
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "47e287ea-4666-45f8-af0e-efc8e48284c1",
+            "display": "Ei koskaan",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Aldrig"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Never"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "8f48ff98-56fb-46a8-8ac4-a8294b2f10aa",
+            "display": "Joskus",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ibland"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Sometimes"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "ee1c1020-9076-4d2b-a58f-73ac8c0d0456",
+            "display": "Usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://sensotrend.com/fhir/CodeSystem/d92c50a7-40f7-44a7-ac25-682f5a5946a3",
+            "code": "cc632516-1f1d-450c-b0e6-1603248c73ad",
+            "display": "Hyvin usein",
+            "_display": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "sv"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mycket ofta"
+                    }
+                  ]
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "en"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Very often"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "7eed5b75-d15e-4f3a-bcbd-d2ff338d36f6",
+      "text": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form."
+              }
+            ]
+          }
+        ]
+      },
+      "type": "display"
+    }
+  ]
+}

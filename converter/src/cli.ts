@@ -1,17 +1,25 @@
-import { loadSources, SourceError } from "./source/loader.ts";
+import { convertSurvey } from "./convert/questionnaire.ts";
+import { writeQuestionnaires } from "./output.ts";
+import { loadOverrides, unusedOverrideFiles } from "./overrides.ts";
+import { OUTPUT_DIR } from "./paths.ts";
+import { loadSources } from "./source/loader.ts";
 
-// Until milestone 2 this only loads and validates the sources.
 try {
   const { surveys, duplicates } = loadSources();
-  for (const { slug, survey } of surveys) {
-    console.log(`${slug}: ${survey.questions.length} top-level questions, score calculations: ${survey.scoreCalculations.length}`);
+  const unused = unusedOverrideFiles(surveys.map((source) => source.slug));
+  if (unused.length > 0) throw new Error(`Override files that match no survey: ${unused.join(", ")}`);
+
+  const converted = surveys.map((source) => ({ slug: source.slug, ...convertSurvey(source, loadOverrides(source.slug)) }));
+  writeQuestionnaires(OUTPUT_DIR, converted);
+
+  for (const { slug, questionnaire, notes } of converted) {
+    console.log(`${slug}: ${questionnaire.item?.length ?? 0} top-level items`);
+    for (const note of notes) console.log(`  - ${note}`);
   }
-  for (const { file, duplicateOf } of duplicates) {
-    console.log(`skipped ${file}: identical to ${duplicateOf}`);
-  }
-  console.log(`${surveys.length} surveys loaded. Conversion is not implemented yet (milestones 2–5).`);
+  for (const { file, duplicateOf } of duplicates) console.log(`skipped ${file}: identical to ${duplicateOf}`);
+  console.log(`${converted.length} Questionnaires written to ${OUTPUT_DIR}`);
 } catch (error) {
-  if (!(error instanceof SourceError)) throw error;
+  if (!(error instanceof Error)) throw error;
   console.error(error.message);
   process.exitCode = 1;
 }

@@ -71,7 +71,8 @@ converter/                           TypeScript, run with Node (tsx)
   src/source/integrity.ts            cross-reference checks (unique ids, scores ↔ answers, categories)
   src/source/loader.ts               loads the directory, drops identical duplicate exports
   src/convert.ts                     Survey → Questionnaire
-  src/overrides/<surveyGuid>.json    per-questionnaire overrides: retyping, codes, population (§5.6, §7)
+  src/convert/                       Survey → Questionnaire
+  overrides/<slug>.json              per-questionnaire overrides: codes, structure, retyping, population (§5.6, §7)
   src/report.ts                      conversion report: warnings and data-quality findings
 fhir/questionnaires/                 GENERATED Questionnaire JSON, one file per questionnaire + index.json
 app/                                 Vite + React + TypeScript single-page app
@@ -98,8 +99,8 @@ Each milestone ends with tests passing, a short "what was verified" note added t
 |---|---|---|
 | 0 | Repo setup | git repo, workspace, lint/test scripts; source data committed; duplicate export noted |
 | 1 | Source model & loader | typed loader for all 15 files; duplicates detected by `revisionGuid`; fixture-based tests |
-| 2 | Core conversion | metadata, translations, groups, `display`/`choice`/`open-choice`/`string`/`text`/`integer`/`date` items, `required` |
-| 3 | Follow-ups & conditionality | nested follow-ups with `enableWhen`; rules for interleaved categories |
+| 2 | Core conversion | metadata, translations, groups, `display`/`choice`/`text`/`integer`/`date` items, `required`, follow-ups with `enableWhen`; output written and committed |
+| 3 | ~~Follow-ups & conditionality~~ | merged into milestone 2, since the conversion is recursive and follow-ups without `enableWhen` would have been wrong output |
 | 4 | Scoring | `ordinalValue` on answer options; visible calculated score items; score bands |
 | 5 | Validation & report | FHIR Validator clean (errors = 0) on all 14; conversion report generated; outputs committed |
 | 6 | Renderer basics | app lists the questionnaires and renders every item type; fi/sv/en switch |
@@ -128,8 +129,8 @@ Milestones 0–7 deliver the converter and the app. 8–10 are the pre-populatio
 | `date` | `createdDt` |
 | `language` | `fi` |
 | `subjectType` | `Patient` |
-| `code` | for the validated instruments, the LOINC panel code where one exists (PHQ-9 44249-1, GAD-7 69737-5, AUDIT 72110-9, EPDS 71354-5; confirm the rest in milestone 2) |
-| `useContext` / extension | `type: careplan` is kept as a `useContext` (task) so the information is not lost |
+| `code` | for the validated instruments, the LOINC panel code where one exists set by overrides: PHQ-9 44249-1, GAD-7 69737-5, AUDIT 72110-0, EPDS 71354-5, each checked with `$lookup` on tx.fhir.org (LOINC 2.82). None for BDI-21 (the export doesn't say whether it is BDI-I or BDI-II, and only BDI-II has a panel, 89210-9), Fagerström/HSI or ADHD-RS (no LOINC panel), or the pre-visit forms |
+| `useContext` | `type: careplan` becomes a `useContext` with code `task` and `valueCodeableConcept.text` `careplan`, so the information is not lost. `form` is the default and gets nothing. |
 | dropped | `createdBy`, `tenant`, `meta`, `restrictions`, `showOnTasks`, `printText` (always empty), `tags` and `numericTagConditions` (always empty) |
 
 ### 5.2 Languages
@@ -138,9 +139,10 @@ Finnish goes in the base element (`text`, `title`, `display`). Swedish and Engli
 
 ### 5.3 Structure
 
-- **Contiguous categories** (13 questionnaires): each category becomes a `group` item (`linkId` = `categoryId`, `text` = category name) holding its questions in their original order.
-- **Interleaved categories** (ADHD-RS, the split run in the 8th-grade form): questions stay flat in their original order, and the category is recorded only as a scoring sub-scale membership (§5.5). The rule is generic: if a category's questions are not contiguous, it is not turned into a group. The report lists every case.
-- **Single-question instruction categories** (e.g. "Ohje"/Instruction) become a group with a `display` item, so the text keeps its own section.
+- **Each contiguous run of a category's questions becomes a `group`** (`linkId` = `categoryId`, `text` = category name) holding the questions in their original order. This includes the one-question "Ohje"/Instruction categories, which become a group with a `display` item.
+- **A category split into several runs gives several groups** with the same title; the second gets `linkId` `{categoryId}-2`, and so on. The only case is the 8th-grade form, where "Päihdetottumukseni" (substance use) sits in the middle of "Terveys ja terveystottumukset" (health and health habits). Flattening the health category instead would have taken 37 questions out of their section. The conversion notes list every split.
+- **Categories that are scoring sub-scales, not sections** (ADHD-RS, where the two categories alternate question by question) are handled by the override `"structure": "flat"`: no groups, the questions stay in their original order, and the categories matter only for scoring (§5.5). This is an explicit override and not a heuristic, because the export can't tell the two cases apart.
+- Several forms repeat the section name in the first question's text ("Koulu ja vapaa-aika:\n\nLuokka"). That text is kept as is, because removing it would mean guessing.
 - `linkId` = `questionId` / `categoryId`. They are stable, unique (verified: no duplicate `questionId` within any survey) and survive reconversion.
 
 ### 5.4 Item types
@@ -156,7 +158,7 @@ Finnish goes in the base element (`text`, `title`, `display`). Swedish and Engli
 
 - `isOptional: false` → `required: true` (never set on `display` or `group`).
 - `description` and `printText` are empty in every export, so they are not mapped. The loader rejects non-empty values, so a future export that uses them can't lose content silently.
-- Text formatting: `\n` and trailing double spaces are kept in `text`. A `rendering-markdown` extension carries the Markdown-normalised version, so renderers that understand it get line breaks and plain ones still get readable text.
+- Text formatting: line breaks are kept. Trailing whitespace on each line and around the whole text is removed: the trailing double spaces are Markdown hard breaks, and they mean nothing in plain text. No text contains other markup, so there's no `rendering-markdown`. Renderers show the line breaks (`white-space: pre-line`).
 - Option-level answer codes are local (`answerId`). Mapping options to Finnish national or international codes (§7.3) happens only through overrides, where population needs it (milestone 10).
 
 ### 5.5 Follow-ups and scoring
@@ -173,7 +175,7 @@ Finnish goes in the base element (`text`, `title`, `display`). Swedish and Engli
 
 ### 5.6 Overrides
 
-`converter/src/overrides/{surveyGuid}.json` holds the **only hand-maintained input**. It is keyed by `linkId`:
+`converter/overrides/{slug}.json` holds the **only hand-maintained input**. It's named after the slug so it's readable. A file whose slug matches no survey fails the conversion. Milestone 2 implements `code` and `structure`, and the per-item part below comes in milestone 8. Items are keyed by `linkId`:
 
 ```json
 {
@@ -197,7 +199,7 @@ The converter validates overrides: an unknown `linkId` or an incompatible retypi
 - `fhir/questionnaires/{slug}.json`, where the slug comes from the source filename without the guid and timestamp, e.g. `masennuskysely-phq-9.json`.
 - `fhir/questionnaires/index.json`: an R4 `Bundle` of type `collection` with all of them, which the app loads.
 - `fhir/conversion-report.md`: per questionnaire, the item counts by type, interleaved categories, score max checks, data-quality findings and applied overrides.
-- `npm run convert` regenerates all of it. CI (or a pre-commit check) runs the conversion and fails if the committed output differs.
+- `npm run convert` regenerates all of it. A test (`converter/src/output.test.ts`) regenerates everything in memory and fails if the committed output differs, so a converter change without `npm run convert` fails `npm test`.
 
 ## 6. The renderer app
 
@@ -316,3 +318,15 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
 - `converter/src/source/loader.ts`: loads the directory in file-name order and derives the slug from the file name. An export identical to an earlier one of the same revision is skipped and listed as a duplicate. These are errors: differing content under one `revisionGuid`, two revisions of one survey, a slug collision.
 - Found while doing this: question `description` is present on 199 questions but empty everywhere, and in one case it is `{}`. §2.1 and §5.4 are updated.
 - Verified: 30 tests pass, against a fixture with every question type, a follow-up, a scored question, an extra language and a score band, plus temporary directories for the duplicate rules. All 15 real files load as 14 surveys plus the one known duplicate. `npm run convert` prints each survey's question and score counts. Lint and type checks are clean.
+
+### Milestone 2 — Core conversion ✅ (milestone 3 merged in)
+
+- `converter/src/convert/questionnaire.ts` converts each survey: the metadata (§5.1), the groups (§5.3, as revised above), every item type (§5.4), `required`, and follow-ups nested under their question with `enableWhen` on the answer's coding (§5.5).
+- `converter/src/convert/text.ts`: Finnish in the element itself, Swedish and English (then any extra languages) as `translation` extensions; whitespace normalised; an empty Finnish text is an error.
+- `converter/overrides/`: LOINC codes for PHQ-9, GAD-7, AUDIT and EPDS, and `structure: flat` for ADHD-RS. Each file says where its content comes from. The AUDIT code in the original plan (72110-9) doesn't exist; the right one is 72110-0.
+- `npm run convert` writes `fhir/questionnaires/{slug}.json` and `index.json` (a collection Bundle), and prints notes per questionnaire. The only notes are the 8th-grade split category and the ADHD-RS flat structure.
+- Scoring (`ordinalValue`, score items) is still missing; it's milestone 4.
+- Verified:
+  - 52 tests pass. They cover every mapping rule on the fixture, the override loading, the output writer, a check that the committed output is identical to a fresh conversion, and unique `linkId`s in every Questionnaire.
+  - Item counts in the output match the 14 unique source surveys exactly: 351 choice (323 select + 28 multiselect, 28 of them repeating), 219 text, 28 display, 4 integer, 1 date, 117 follow-ups with `enableWhen`, 575 required, and 66 groups, which is the sum of the category runs.
+  - FHIR Validator validation is milestone 5.
