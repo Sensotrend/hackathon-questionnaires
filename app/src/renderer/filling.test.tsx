@@ -125,3 +125,30 @@ describe("number fields", () => {
     expect(responseJson().item).toEqual([{ linkId: "count", text: "Lukumäärä", answer: [{ valueInteger: 2 }] }]);
   });
 });
+
+describe("retyped questions", () => {
+  it("take a height in cm, check its range, and answer with a decimal", async () => {
+    const user = userEvent.setup();
+    const maternity = bySlug("esitietolomake-aitiysneuvola");
+    const height = allItems(maternity.item).find((item) => item.text?.includes("Mikä on pituutesi (cm)?"))!;
+    render(<QuestionnaireForm questionnaire={maternity} lang="fi" />);
+    const field = screen.getByRole("textbox", { name: /Mikä on pituutesi \(cm\)\?/ });
+    expect(field).toHaveAccessibleDescription("cm Sallittu väli 100–250 cm");
+
+    await user.type(field, "1655");
+    await user.click(screen.getByRole("button", { name: "Valmis" }));
+    expect(field).toHaveAccessibleDescription("cm Sallittu väli 100–250 cm Suurin sallittu arvo on 250.");
+
+    await user.clear(field);
+    await user.type(field, "165,5");
+    expect(field).not.toHaveAttribute("aria-invalid");
+    const answered = JSON.stringify(responseJson());
+    expect(answered).toContain(`"linkId":"${height.linkId}"`);
+    expect(answered).toContain('"answer":[{"valueDecimal":165.5}]');
+  });
+
+  it("show units in the chosen language", () => {
+    render(<QuestionnaireForm questionnaire={bySlug("esitietolomake-aitiysneuvola")} lang="sv" />);
+    expect(screen.getAllByText("timmar").length).toBeGreaterThan(0);
+  });
+});

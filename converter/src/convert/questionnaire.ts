@@ -2,7 +2,8 @@
 
 import type { CodeSystem, Coding, Extension, Questionnaire, QuestionnaireItem, QuestionnaireItemAnswerOption } from "fhir/r4";
 import { answerSystem, BASE, EXT, ITEM_CONTROL_SYSTEM, USAGE_CONTEXT_TYPE_SYSTEM } from "../constants.ts";
-import type { Overrides } from "../overrides.ts";
+import type { ItemOverride, Overrides } from "../overrides.ts";
+import { UCUM, UNITS } from "../units.ts";
 import type { SourceFile } from "../source/loader.ts";
 import type { Category, Question, Survey } from "../source/schema.ts";
 import { answerCodeSystem } from "./codesystem.ts";
@@ -63,13 +64,17 @@ export function convertSurvey(source: SourceFile, overrides: Overrides = {}): Co
  * the same title; the `flat` override skips groups altogether.
  */
 function convertStructure(survey: Survey, overrides: Overrides, notes: string[]): QuestionnaireItem[] {
-  const toItem = (question: Question) => convertQuestion(question, survey);
+  const retyped = new Set<string>();
+  const context: ItemContext = { survey, items: overrides.items ?? {}, retyped, notes };
+  const toItem = (question: Question) => convertQuestion(question, context);
   const flat = overrides.structure === "flat";
   if (flat) notes.push("No groups (override `structure: flat`): the categories are scoring sub-scales, not sections.");
   const scores = scoreItems(survey, overrides.scores ?? {}, notes);
 
   if (flat) {
-    return [...survey.questions.map(toItem), ...scores.map((score) => score.item)];
+    const items = [...survey.questions.map(toItem), ...scores.map((score) => score.item)];
+    checkItemOverrides(context);
+    return items;
   }
 
   const runs: { category: Category; questions: Question[] }[] = [];
@@ -117,10 +122,21 @@ function convertStructure(survey: Survey, overrides: Overrides, notes: string[])
     else groups[lastRun]!.item!.push(item);
   }
 
+  checkItemOverrides(context);
   return [...groups, ...atEnd];
 }
 
-function convertQuestion(question: Question, survey: Survey): QuestionnaireItem {
+interface ItemContext {
+  survey: Survey;
+  /** Item overrides by linkId. */
+  items: Record<string, ItemOverride>;
+  /** linkIds of the item overrides applied, to catch overrides that match nothing. */
+  retyped: Set<string>;
+  notes: string[];
+}
+
+function convertQuestion(question: Question, context: ItemContext): QuestionnaireItem {
+  const { survey } = context;
   const text = localize(question.questionText, `question ${question.questionId}`);
   const item: QuestionnaireItem = {
     linkId: question.questionId,
@@ -140,6 +156,7 @@ function convertQuestion(question: Question, survey: Survey): QuestionnaireItem 
       break;
     case "freetext":
       item.type = "text";
+      retype(item, context);
       break;
     case "number":
       // The loader has checked that number questions have both bounds.
@@ -182,7 +199,7 @@ function convertQuestion(question: Question, survey: Survey): QuestionnaireItem 
   // `=` holds when any of the chosen answers matches.
   const followUps = question.answers.flatMap((answer) =>
     answer.question.map((followUp) => {
-      const child = convertQuestion(followUp, survey);
+      const child = convertQuestion(followUp, context);
       child.enableWhen = [
         {
           question: question.questionId,
@@ -196,6 +213,52 @@ function convertQuestion(question: Question, survey: Survey): QuestionnaireItem 
   if (followUps.length > 0) item.item = followUps;
 
   return withoutUndefined(item);
+}
+
+/** Applies the item override of a free-text question, if there is one (plan §5.6). */
+function retype(item: QuestionnaireItem, { items, retyped, notes }: ItemContext) {
+  const override = items[item.linkId];
+  if (override === undefined) return;
+  retyped.add(item.linkId);
+  item.type = override.type;
+
+  const number = (value: number): Extension =>
+    override.type === "integer" ? { url: "", valueInteger: value } : { url: "", valueDecimal: value };
+  const extension: Extension[] = [];
+  if (override.minValue !== undefined) extension.push({ ...number(override.minValue), url: EXT.minValue });
+  if (override.maxValue !== undefined) extension.push({ ...number(override.maxValue), url: EXT.maxValue });
+  if (override.unit !== undefined) {
+    // The display must be UCUM's own (the code); the words shown next to the
+    // field go in translations, Finnish included.
+    const labels = Object.entries(UNITS[override.unit]).map(([lang, label]) => ({
+      url: EXT.translation,
+      extension: [
+        { url: "lang", valueCode: lang },
+        { url: "content", valueString: label },
+      ],
+    }));
+    extension.push({
+      url: EXT.unit,
+      valueCoding: { system: UCUM, code: override.unit, display: override.unit, _display: { extension: labels } },
+    });
+  }
+  if (extension.length > 0) item.extension = extension;
+
+  const range =
+    override.minValue !== undefined || override.maxValue !== undefined
+      ? `, ${override.minValue ?? ""}–${override.maxValue ?? ""}`
+      : "";
+  const text = item.text!.replace(/\s+/g, " ");
+  notes.push(
+    `Retyped "${text.length > 60 ? `${text.slice(0, 59)}…` : text}" from free text to ${override.type}${override.unit ? ` in ${override.unit}` : ""}${range}.`,
+  );
+}
+
+function checkItemOverrides({ items, retyped }: ItemContext) {
+  const unused = Object.keys(items).filter((linkId) => !retyped.has(linkId));
+  if (unused.length > 0) {
+    throw new Error(`item overrides for questions that don't exist or aren't free text: ${unused.join(", ")}`);
+  }
 }
 
 function itemControl(code: string): Extension {

@@ -319,9 +319,15 @@ fieldset {
   resize: vertical;
 }
 
+.number-row {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-right: 0.75rem;
+}
+
 .field input[inputmode] {
   width: 8rem;
-  margin-right: 0.5rem;
 }
 
 .other {

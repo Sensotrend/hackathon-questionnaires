@@ -1,0 +1,57 @@
+{
+  "$comment": "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text.",
+  "items": {
+    "912fac74-7b0c-4c3b-b308-62c13b73abea": {
+      "type": "integer",
+      "minValue": 4,
+      "maxValue": 10
+    },
+    "02e19c11-cb77-4acb-b1d3-ee0f38c5f033": {
+      "type": "integer",
+      "minValue": 4,
+      "maxValue": 10
+    },
+    "53cee790-7e00-43ff-9aec-d1af95f3f2f1": {
+      "type": "decimal",
+      "unit": "h",
+      "minValue": 0,
+      "maxValue": 24
+    },
+    "b9999f10-1648-4d85-b484-de0f3d089ddf": {
+      "type": "decimal",
+      "unit": "h",
+      "minValue": 0,
+      "maxValue": 24
+    },
+    "8d47194d-ad06-4423-b8f0-958fd835017f": {
+      "type": "decimal",
+      "unit": "ug",
+      "minValue": 0,
+      "maxValue": 250
+    },
+    "dbea29ac-a81e-426e-b4ad-8ec0441a3850": {
+      "type": "decimal",
+      "unit": "ug",
+      "minValue": 0,
+      "maxValue": 250
+    },
+    "bebdb145-3790-4973-9d7d-ceef6f6f656d": {
+      "type": "integer",
+      "unit": "a",
+      "minValue": 5,
+      "maxValue": 25
+    },
+    "b44352c3-cc4a-4b3d-8918-956decf26348": {
+      "type": "integer",
+      "unit": "d",
+      "minValue": 10,
+      "maxValue": 90
+    },
+    "735eba18-76e2-4cb7-b19b-dc50ad05156a": {
+      "type": "integer",
+      "unit": "d",
+      "minValue": 1,
+      "maxValue": 30
+    }
+  }
+}

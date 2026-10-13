@@ -10,6 +10,7 @@ export const EXT = {
   sliderStepValue: "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
   minValue: "http://hl7.org/fhir/StructureDefinition/minValue",
   maxValue: "http://hl7.org/fhir/StructureDefinition/maxValue",
+  unit: "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
   ordinalValue: "http://hl7.org/fhir/StructureDefinition/ordinalValue",
   itemWeight: "http://hl7.org/fhir/StructureDefinition/itemWeight",
   calculatedExpression: "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",

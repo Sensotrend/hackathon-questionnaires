@@ -1,0 +1,82 @@
+{
+  "$comment": "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text.",
+  "items": {
+    "49eabd07-47e1-4b34-98d3-f33a52ea5d04": {
+      "type": "integer",
+      "minValue": 0,
+      "maxValue": 30
+    },
+    "a87cd96a-5c16-45fc-a55c-26e6a23241cd": {
+      "type": "integer",
+      "unit": "wk",
+      "minValue": 1,
+      "maxValue": 45
+    },
+    "0c89ddd8-3c96-4a46-b72d-f3956e576c45": {
+      "type": "integer",
+      "minValue": 0,
+      "maxValue": 30
+    },
+    "13025756-15f8-437f-a70d-8dcdf58f4f55": {
+      "type": "integer",
+      "minValue": 1950,
+      "maxValue": 2100
+    },
+    "3c0a31fd-a16e-4ee3-91e3-522147d6571d": {
+      "type": "integer",
+      "minValue": 0,
+      "maxValue": 10
+    },
+    "c5a4e4f8-62ca-40ff-b23a-8a8bfbacaf8a": {
+      "type": "integer",
+      "minValue": 1950,
+      "maxValue": 2100
+    },
+    "abc7a1e0-0b47-4c5d-955a-523ca26207f8": {
+      "type": "integer",
+      "unit": "a",
+      "minValue": 18,
+      "maxValue": 60
+    },
+    "68be95fd-e362-40a8-ac2f-3b1a4b9c3fc8": {
+      "type": "decimal",
+      "unit": "cm",
+      "minValue": 100,
+      "maxValue": 250
+    },
+    "8196e6f6-779d-415b-94fc-5cad668dd7f5": {
+      "type": "decimal",
+      "unit": "kg",
+      "minValue": 30,
+      "maxValue": 300
+    },
+    "48d57788-3aa9-478a-9ec5-bbf69683c52a": {
+      "type": "integer",
+      "unit": "a",
+      "minValue": 5,
+      "maxValue": 25
+    },
+    "64b97fb2-dff2-410a-afd4-9f4c44c09531": {
+      "type": "integer",
+      "minValue": 0,
+      "maxValue": 20
+    },
+    "af9f584b-5cf6-4f68-ae37-f4f0665cbc08": {
+      "type": "decimal",
+      "unit": "h",
+      "minValue": 0,
+      "maxValue": 100
+    },
+    "be7ea1e9-97aa-48f9-a917-c6ad2317167d": {
+      "type": "decimal",
+      "unit": "h",
+      "minValue": 0,
+      "maxValue": 24
+    },
+    "756de16a-ea7f-452e-88b8-4c3bb63ace48": {
+      "type": "integer",
+      "minValue": 1950,
+      "maxValue": 2100
+    }
+  }
+}

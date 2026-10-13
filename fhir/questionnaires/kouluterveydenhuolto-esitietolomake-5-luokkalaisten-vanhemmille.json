@@ -900,7 +900,17 @@
                   }
                 ]
               },
-              "type": "text",
+              "type": "integer",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                  "valueInteger": 1950
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                  "valueInteger": 2100
+                }
+              ],
               "required": true,
               "enableWhen": [
                 {
@@ -1081,7 +1091,17 @@
                   }
                 ]
               },
-              "type": "text",
+              "type": "integer",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                  "valueInteger": 1950
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                  "valueInteger": 2100
+                }
+              ],
               "required": true,
               "enableWhen": [
                 {
@@ -4031,7 +4051,68 @@
               }
             ]
           },
-          "type": "text",
+          "type": "decimal",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueDecimal": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueDecimal": 24
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "h",
+                "display": "h",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fi"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "tuntia"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "timmar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "hours"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
           "required": true
         },
         {
@@ -4067,7 +4148,68 @@
               }
             ]
           },
-          "type": "text",
+          "type": "decimal",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueDecimal": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueDecimal": 24
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "h",
+                "display": "h",
+                "_display": {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "fi"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "tuntia"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "sv"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "timmar"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "hours"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
           "required": true
         },
         {
@@ -5825,7 +5967,68 @@
                   }
                 ]
               },
-              "type": "text",
+              "type": "decimal",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                  "valueDecimal": 0
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                  "valueDecimal": 250
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "ug",
+                    "display": "ug",
+                    "_display": {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                          "extension": [
+                            {
+                              "url": "lang",
+                              "valueCode": "fi"
+                            },
+                            {
+                              "url": "content",
+                              "valueString": "µg"
+                            }
+                          ]
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                          "extension": [
+                            {
+                              "url": "lang",
+                              "valueCode": "sv"
+                            },
+                            {
+                              "url": "content",
+                              "valueString": "µg"
+                            }
+                          ]
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                          "extension": [
+                            {
+                              "url": "lang",
+                              "valueCode": "en"
+                            },
+                            {
+                              "url": "content",
+                              "valueString": "µg"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
               "required": true,
               "enableWhen": [
                 {
@@ -5871,7 +6074,68 @@
                   }
                 ]
               },
-              "type": "text",
+              "type": "decimal",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                  "valueDecimal": 0
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                  "valueDecimal": 250
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "ug",
+                    "display": "ug",
+                    "_display": {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                          "extension": [
+                            {
+                              "url": "lang",
+                              "valueCode": "fi"
+                            },
+                            {
+                              "url": "content",
+                              "valueString": "µg"
+                            }
+                          ]
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                          "extension": [
+                            {
+                              "url": "lang",
+                              "valueCode": "sv"
+                            },
+                            {
+                              "url": "content",
+                              "valueString": "µg"
+                            }
+                          ]
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                          "extension": [
+                            {
+                              "url": "lang",
+                              "valueCode": "en"
+                            },
+                            {
+                              "url": "content",
+                              "valueString": "µg"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
               "required": true,
               "enableWhen": [
                 {

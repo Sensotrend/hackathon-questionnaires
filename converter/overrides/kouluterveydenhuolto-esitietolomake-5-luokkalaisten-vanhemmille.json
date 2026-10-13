@@ -1,8 +1,47 @@
 {
-  "$comment": "Texts: the sv text of the answer option 'ei mitään ylläolevista' is untranslated Finnish; translated here.",
+  "$comment": [
+    "Texts: the sv text of the answer option 'ei mitään ylläolevista' is untranslated Finnish; translated here.",
+    "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text."
+  ],
   "texts": {
     "b3f8168a-56e3-423d-ac77-597e1a336716": {
       "sv": "inget av ovanstående"
+    }
+  },
+  "items": {
+    "818270fd-913e-4be2-8906-6c4774299faa": {
+      "type": "integer",
+      "minValue": 1950,
+      "maxValue": 2100
+    },
+    "b8396ab2-2cbf-4d9e-a3ce-862cdfa4728a": {
+      "type": "integer",
+      "minValue": 1950,
+      "maxValue": 2100
+    },
+    "04b9621f-a59f-43da-a024-f7e55c496f0f": {
+      "type": "decimal",
+      "unit": "h",
+      "minValue": 0,
+      "maxValue": 24
+    },
+    "4befc828-48ae-4d0d-b2ea-c134ba0a1702": {
+      "type": "decimal",
+      "unit": "h",
+      "minValue": 0,
+      "maxValue": 24
+    },
+    "3e828d0c-9d9f-436c-bcd0-5f8e47efd4e7": {
+      "type": "decimal",
+      "unit": "ug",
+      "minValue": 0,
+      "maxValue": 250
+    },
+    "589fd575-c792-4c71-9005-f151e9a6c2b7": {
+      "type": "decimal",
+      "unit": "ug",
+      "minValue": 0,
+      "maxValue": 250
     }
   }
 }

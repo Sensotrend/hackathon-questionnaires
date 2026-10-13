@@ -10,6 +10,7 @@ export const EXT = {
   calculatedExpression: "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
   scoreInterpretation: "https://sensotrend.com/fhir/StructureDefinition/score-interpretation",
   hidden: "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+  unit: "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
   usageContextType: "http://terminology.hl7.org/CodeSystem/usage-context-type",
 } as const;
 
@@ -26,6 +27,7 @@ const numberValue = (extension: Extension | undefined) =>
 export const minValue = (item: QuestionnaireItem) => numberValue(find(item, EXT.minValue));
 export const maxValue = (item: QuestionnaireItem) => numberValue(find(item, EXT.maxValue));
 export const sliderStep = (item: QuestionnaireItem) => numberValue(find(item, EXT.sliderStepValue));
+export const unit = (item: QuestionnaireItem) => find(item, EXT.unit)?.valueCoding;
 export const isHidden = (item: QuestionnaireItem) => find(item, EXT.hidden)?.valueBoolean === true;
 
 export function calculatedExpression(item: QuestionnaireItem): string | undefined {

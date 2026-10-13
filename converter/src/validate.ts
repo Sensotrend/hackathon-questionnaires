@@ -20,9 +20,9 @@ const ACCEPTED: { pattern: RegExp; reason: string }[] = [
       "No narrative: the resources are generated and read by software; a narrative would only repeat the title. Best practice, not a rule.",
   },
   {
-    pattern: /^There are no valid display names found for the code http:\/\/loinc\.org#.* for language\(s\) 'fi'/,
+    pattern: /^There are no valid display names found for the code http:\/\/(loinc\.org|unitsofmeasure\.org)#.* for language\(s\) 'fi'/,
     reason:
-      "The Questionnaires are in Finnish, and LOINC has no Finnish display for the instrument panels, so the English display is used.",
+      "The Questionnaires are in Finnish, and LOINC and UCUM have no Finnish displays, so their default display is used (unit words for each language are translations).",
   },
 ];
 

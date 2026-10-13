@@ -1,8 +1,31 @@
 {
-  "$comment": "Texts: the en description is untranslated Finnish; translated here after the en name and the sv description.",
+  "$comment": [
+    "Texts: the en description is untranslated Finnish; translated here after the en name and the sv description.",
+    "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text."
+  ],
   "texts": {
     "description": {
       "en": "Physiotherapy - Lower back questionnaire, baseline"
+    }
+  },
+  "items": {
+    "0b889727-d664-4f3e-aaac-a89478926dd9": {
+      "type": "integer",
+      "unit": "d",
+      "minValue": 0,
+      "maxValue": 36500
+    },
+    "3ac062e0-82f1-4634-aa4a-5681d2dff4ce": {
+      "type": "decimal",
+      "unit": "cm",
+      "minValue": 100,
+      "maxValue": 250
+    },
+    "ae88f684-fb70-4fd8-bdc4-7a86e4a824e4": {
+      "type": "decimal",
+      "unit": "kg",
+      "minValue": 20,
+      "maxValue": 300
     }
   }
 }

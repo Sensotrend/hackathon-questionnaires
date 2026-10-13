@@ -188,7 +188,7 @@ Finnish goes in the base element (`text`, `title`, `display`). Swedish and Engli
 
 ### 5.6 Overrides
 
-`converter/overrides/{slug}.json` holds the **only hand-maintained input**. It's named after the slug so it's readable. A file whose slug matches no survey fails the conversion. Milestone 2 implements `code` and `structure`, and the per-item part below comes in milestone 8. Items are keyed by `linkId`:
+`converter/overrides/{slug}.json` holds the **only hand-maintained input**. It's named after the slug so it's readable. A file whose slug matches no survey fails the conversion. Milestone 2 implements `code` and `structure`. Milestone 8 implements the per-item `type`, `unit`, `minValue` and `maxValue`; `code` and `observationLinkPeriod` come with population in milestones 9–10. Items are keyed by `linkId`:
 
 ```json
 {
@@ -435,3 +435,21 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - In the browser, with no errors on a fresh load:
     - all 14 questionnaires opened, answered with each question's first option, and Done pressed: the 7 screening forms complete (EPDS 21 and Fagerström 3, since their first options carry points); the pre-visit forms list their remaining required free-text questions
     - AUDIT's three sub-scores sit in their sections and add up to the total (8 + 12 + 16 = 36; the last option of question 2, "I don't drink alcohol", scores 0)
+
+### Milestone 8 — Retyping overrides ✅
+
+- **The override:** `items.{linkId}` takes `type` (integer, decimal, string, date), `unit` (a UCUM code from `converter/src/units.ts`: cm, kg, g, ug, h, d, wk, a), `minValue` and `maxValue`.
+  - Only free-text questions can be retyped. An override for anything else, or for a linkId that doesn't exist, fails the conversion.
+  - The shape is checked: min below max; unit and limits only on numbers; whole-number limits on integers.
+- **Units in the output:** the core `questionnaire-unit` extension with UCUM's own display (the code). The words shown next to the field (cm, vuotta / år / years, …) are `translation` extensions, Finnish included. The first validation run showed why: a Coding's display must be the code system's display, so "viikkoa" as the display was an error.
+- **32 questions retyped:**
+  - maternity: 14 (counts, years, ages, gestational weeks, height, pre-pregnancy weight, hours of activity and sleep)
+  - low-back physiotherapy: 3 (pain duration in days, height, weight)
+  - 5th grade: 6 (years of family changes, screen time, vitamin D µg)
+  - 8th grade: 9 (school grades 4–10, screen time, vitamin D µg, menarche age, cycle and bleeding days)
+- **Kept as free text on purpose:** answers that may hold several values (twins' birth weights, years of several miscarriages or abortions, breastfeeding months, sleep from–to) and clock times. Limits are generous, to catch typos like 1655 cm rather than to judge answers. Years are 1950–2100.
+- **Renderer:** the unit goes next to the field and the allowed range below it ("Sallittu väli 100–250 cm"). Both are tied to the field with `aria-describedby`, so screen readers hear them, followed by any error.
+- Verified:
+  - 91 converter tests and 65 app tests pass. The new tests cover retyping with unit, limits and translated unit words; string and date retyping; rejected overrides; every schema rule; and in the app, the maternity height question: description, the max error for 1655, `valueDecimal` 165.5 from "165,5", and Swedish unit words.
+  - `npm run validate`: 0 errors. The new warnings, no Finnish display for UCUM codes, are accepted like the LOINC ones.
+  - In the browser, the maternity form shows units and ranges in Finnish for its retyped top-level questions.

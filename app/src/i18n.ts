@@ -36,6 +36,7 @@ const strings = {
   notAnswered: { fi: "Ei vastattu", sv: "Inte besvarad", en: "Not answered" },
   clear: { fi: "Tyhjennä", sv: "Rensa", en: "Clear" },
   scale: { fi: "Asteikko", sv: "Skala", en: "Scale" },
+  range: { fi: "Sallittu väli", sv: "Tillåtet intervall", en: "Allowed range" },
   noScore: { fi: "–", sv: "–", en: "–" },
   unsupported: { fi: "Kysymystyyppiä ei tueta", sv: "Frågetypen stöds inte", en: "Unsupported item type" },
   issueRequired: { fi: "Vastaa tähän kysymykseen.", sv: "Besvara frågan.", en: "Please answer this question." },

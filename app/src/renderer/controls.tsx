@@ -4,7 +4,7 @@
 import type { QuestionnaireItem } from "fhir/r4";
 import { useState, type ReactNode } from "react";
 import type { Extension } from "fhir/r4";
-import { bands, itemControl, maxValue, minValue, sliderStep } from "../fhir/items.ts";
+import { bands, itemControl, maxValue, minValue, sliderStep, unit } from "../fhir/items.ts";
 import { localized } from "../fhir/text.ts";
 import { t } from "../i18n.ts";
 import { useForm } from "./context.ts";
@@ -191,6 +191,12 @@ export function NumberControl({ item, label }: ControlProps) {
   const integer = item.type === "integer";
   const value = integer ? current[0]?.valueInteger : current[0]?.valueDecimal;
   const [min, max] = [minValue(item), maxValue(item)];
+  const unitCoding = unit(item);
+  const unitText = unitCoding ? localized(unitCoding.display ?? unitCoding.code, unitCoding._display, lang) : "";
+  const hintId =
+    [unitText && `${fieldId(item)}-unit`, (min !== undefined || max !== undefined) && `${fieldId(item)}-range`]
+      .filter(Boolean)
+      .join(" ") || undefined;
   const toAnswer = (number: number): Answer => (integer ? { valueInteger: number } : { valueDecimal: number });
 
   if (itemControl(item) === "slider" && min !== undefined && max !== undefined) {
@@ -237,10 +243,18 @@ export function NumberControl({ item, label }: ControlProps) {
   return (
     <div className="field">
       <Label item={item} label={label} />
-      <NumberInput item={item} value={value} hasRange={min !== undefined || max !== undefined} />
+      <span className="number-row">
+        <NumberInput item={item} value={value} describedBy={hintId} />
+        {unitText && (
+          <span className="unit" id={`${fieldId(item)}-unit`}>
+            {unitText}
+          </span>
+        )}
+      </span>
       {(min !== undefined || max !== undefined) && (
         <span id={`${fieldId(item)}-range`} className="hint">
-          {min ?? ""}–{max ?? ""}
+          {t("range", lang)} {min ?? ""}–{max ?? ""}
+          {unitText && ` ${unitText}`}
         </span>
       )}
     </div>
@@ -252,11 +266,11 @@ export function NumberControl({ item, label }: ControlProps) {
  * `<input type=number>` would throw away "1," or "-" half-way through. Text
  * that is no valid answer is flagged in the form state, so validation sees it.
  */
-function NumberInput(props: { item: QuestionnaireItem; value: number | undefined; hasRange: boolean }) {
-  const { item, value, hasRange } = props;
+function NumberInput(props: { item: QuestionnaireItem; value: number | undefined; describedBy?: string }) {
+  const { item, value, describedBy } = props;
   const { state, dispatch } = useForm();
   const [text, setText] = useState(value === undefined ? "" : String(value));
-  const issueProps = useIssueProps(item, hasRange ? `${fieldId(item)}-range` : undefined);
+  const issueProps = useIssueProps(item, describedBy);
   const parse = (raw: string) => {
     const number = raw.trim() === "" ? undefined : Number(raw.replace(",", "."));
     const valid = number !== undefined && !Number.isNaN(number) && (item.type !== "integer" || Number.isInteger(number));

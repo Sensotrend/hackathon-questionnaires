@@ -5,6 +5,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import { OVERRIDES_DIR } from "./paths.ts";
+import { UNITS, type Unit } from "./units.ts";
 
 const LocalizedText = z.strictObject({ fi: z.string().min(1), sv: z.string().min(1), en: z.string().min(1) });
 
@@ -31,6 +32,33 @@ export const TextFix: z.ZodType<TextFix> = z
   })
   .catchall(z.string().min(1)) as z.ZodType<TextFix>;
 
+/**
+ * A free-text question retyped to what its answers really are, e.g. height
+ * in cm as a decimal (plan §5.6). Only free-text questions can be retyped.
+ */
+export const ItemOverride = z
+  .strictObject({
+    $comment: z.string().optional(),
+    type: z.enum(["integer", "decimal", "string", "date"]),
+    unit: z.enum(Object.keys(UNITS) as [Unit, ...Unit[]]).optional(),
+    minValue: z.number().optional(),
+    maxValue: z.number().optional(),
+  })
+  .refine((item) => item.minValue === undefined || item.maxValue === undefined || item.minValue < item.maxValue, {
+    message: "minValue must be below maxValue",
+  })
+  .refine(
+    (item) =>
+      ["integer", "decimal"].includes(item.type) ||
+      (item.unit === undefined && item.minValue === undefined && item.maxValue === undefined),
+    { message: "unit, minValue and maxValue need type integer or decimal" },
+  )
+  .refine(
+    (item) => item.type !== "integer" || [item.minValue, item.maxValue].every((value) => value === undefined || Number.isInteger(value)),
+    { message: "an integer item needs whole-number limits" },
+  );
+export type ItemOverride = z.infer<typeof ItemOverride>;
+
 export const Overrides = z.strictObject({
   /** Free-form notes: where codes come from, why an override exists. */
   $comment: z.union([z.string(), z.array(z.string())]).optional(),
@@ -52,6 +80,8 @@ export const Overrides = z.strictObject({
    * category, question or answer id. Applied before conversion.
    */
   texts: z.record(z.string(), TextFix).optional(),
+  /** Retyped free-text questions, keyed by linkId (questionId). */
+  items: z.record(z.string(), ItemOverride).optional(),
 });
 export type Overrides = z.infer<typeof Overrides>;
 
