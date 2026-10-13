@@ -76,7 +76,9 @@ export function PrintSummary({ questionnaire, response, lang, provenance, patien
     });
 
   return (
-    <section className="print-summary">
+    // Hidden for everyone on screen, assistive technology included; the print
+    // styles show it (author CSS overrides the browser's display: none for [hidden]).
+    <section className="print-summary" hidden>
       <h1>{title}</h1>
       <p>
         {patient && (

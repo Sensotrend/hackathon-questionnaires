@@ -41,7 +41,7 @@ async function fillFromMaija(lang: Lang) {
 describe("the print summary", () => {
   it("has the patient, the answered questions, units and where answers came from", async () => {
     await fillFromMaija("fi");
-    expect(summary().getByRole("heading", { level: 1 })).toHaveTextContent("Esitietolomake - Äitiysneuvola");
+    expect(summary().getByRole("heading", { level: 1, hidden: true })).toHaveTextContent("Esitietolomake - Äitiysneuvola");
     expect(summary().getByText(/Maija Esimerkki, syntynyt 1994-03-12, 120394-912U/)).toBeInTheDocument();
     expect(summary().getByText(/Tila: kesken/)).toBeInTheDocument();
     const height = summary().getByText(/Mikä on pituutesi \(cm\)\?/).closest(".print-answer")!;

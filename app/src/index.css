@@ -640,7 +640,7 @@ fieldset[aria-invalid="true"] {
 
 /* Print: the summary instead of the interactive page */
 
-.print-summary {
+.print-summary[hidden] {
   display: none;
 }
 
@@ -671,7 +671,7 @@ fieldset[aria-invalid="true"] {
     padding: 0;
   }
 
-  .print-summary {
+  .print-summary[hidden] {
     display: block;
   }
 
