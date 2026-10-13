@@ -228,7 +228,7 @@ The converter validates overrides: an unknown `linkId` or an incompatible retypi
 - **Questionnaire list**: title, description and kind (screening / pre-visit / care plan). Any Questionnaire JSON can also be opened from a file, so the renderer isn't tied to our own output.
 - **Language switch** fi / sv / en for the UI and the questionnaire texts (translation extensions, falling back to the base text).
 - **Item rendering**: group (section heading), display, choice (radio buttons, or a dropdown for long option lists), repeating choice (checkboxes), string, text (textarea), integer/decimal (with unit and min/max), slider, date, read-only calculated score.
-- **Conditionality**: `enableWhen` / `enableBehavior`. Disabled items are hidden and their answers are dropped from the response (SDC default).
+- **Conditionality**: `enableWhen` / `enableBehavior`. Disabled items are hidden and their answers are dropped from the response and from validation (SDC default). They stay in the form state, so they come back if the item is enabled again.
 - **Validation**: required, min/max, and a summary of missing answers when the user presses "Done".
 - **Scores**, always shown to the patient, recalculated live by evaluating each score item's `calculatedExpression` with fhirpath.js, so the expression in the Questionnaire is what gets tested. `%resource` and `%questionnaire` are supplied, and an empty result is shown as "–". The band the score falls in is shown with it (its title and description).
 - **QuestionnaireResponse**: built live and shown in a JSON panel with a download button. Status `in-progress` / `completed`.
@@ -412,3 +412,26 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - Two bugs found in the browser and fixed:
     - a page opened from far down the list kept its scroll position
     - the fix's `useEffect(() => window.scrollTo(…))` crashed React, because newer Chromium returns a Promise from `scrollTo`
+
+### Milestone 7 — Renderer behaviour ✅
+
+- **Conditionality** (`app/src/renderer/enable.ts`):
+  - R4 `enableWhen` with all operators (`exists`, `=`, `!=` (true also with no answer), `>`, `<`, `>=`, `<=`), and `enableBehavior`.
+  - An item is enabled when its parent is and its conditions hold on the answers of enabled items. This repeats to a fixed point, so conditions may point forward, and hiding a question also hides what depends on it. Endless flipping is cut off after 100 rounds.
+- **Response** (`response.ts`):
+  - Derived from the state. It mirrors the questionnaire: groups only when they have answers; no display items; each follow-up under the answer that satisfies its condition (with a repeating parent, the right one of several); children of an unanswered question under the item itself.
+  - `questionnaire` = `url|version`. `status` is `completed` after a successful Done while the form stays valid, otherwise `in-progress`. `authored` is set when completed.
+- **Scores** (`scores.ts`): each item's `calculatedExpression` is evaluated with fhirpath.js on the response so far, with `%resource` and `%questionnaire`. Shown live with the band, and included in the response as `valueDecimal`.
+- **Validation** (`validation.ts`):
+  - Covers required questions and groups, min/max, and text in a number field that isn't a valid (whole) number. The field's text is flagged in the form state, so the response and validation agree with what is on screen.
+  - Issues show after the first Done: inline messages tied with `aria-describedby`/`aria-invalid`, and a summary (`role=alert`) that gets focus and links each issue to its question.
+- **Actions:** Done; Clear answers with an inline confirmation (no browser dialog); a collapsible JSON view of the response with its status, which opens on completion; Download as `QuestionnaireResponse-<id>.json`.
+- **Bundle size:** fhirpath.js and its R4 model are 1.2 MB, so the form is lazy-loaded (`React.lazy`). The list page stays at 73 kB gzipped; the form chunk is 233 kB gzipped and loads when a questionnaire is opened.
+- **Found in the browser and fixed:** focus didn't move to the issue summary while the page wasn't being painted, because it waited for `requestAnimationFrame`. It now moves in an effect after render.
+- Verified:
+  - 63 app tests pass:
+    - logic: every operator, chains, `any`/`all`, forward references, flipping conditions; response structure including follow-ups under the right answer of a repeating question; every validation rule
+    - end to end on real questionnaires: PHQ-9 from empty, through the 10-item summary with focus and links, to score 27 and a completed response with `authored`, the score answer, download and reset with confirmation; a maternity follow-up appearing for its answer only and leaving the response when hidden; invalid number text flagged and then fixed
+  - In the browser, with no errors on a fresh load:
+    - all 14 questionnaires opened, answered with each question's first option, and Done pressed: the 7 screening forms complete (EPDS 21 and Fagerström 3, since their first options carry points); the pre-visit forms list their remaining required free-text questions
+    - AUDIT's three sub-scores sit in their sections and add up to the total (8 + 12 + 16 = 36; the last option of question 2, "I don't drink alcohol", scores 0)

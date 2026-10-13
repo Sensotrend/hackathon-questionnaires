@@ -127,7 +127,7 @@ describe("QuestionnaireForm", () => {
     expect(within(screen.getByRole("group", { name: "Onko?" })).getAllByRole("radio")).toHaveLength(2);
     expect(screen.getByRole("textbox", { name: "Sivu" })).toHaveAttribute("type", "url");
     expect(screen.getByText(/Kysymystyyppiä ei tueta: attachment/)).toBeInTheDocument();
-    expect(screen.getByRole("status", { name: "Pisteet" })).toHaveTextContent("–");
+    expect(screen.getByRole("status", { name: "Pisteet" })).toHaveTextContent("0");
     expect(screen.getByText("Asteikko 0–27")).toBeInTheDocument();
   });
 
@@ -194,14 +194,15 @@ describe("QuestionnaireForm", () => {
 
 describe("every real questionnaire", () => {
   it.each(realQuestionnaires.map(({ slug, questionnaire }) => [slug, questionnaire] as const))(
-    "%s renders every item, in every language",
+    "%s renders every item without a condition, and none with one, in every language",
     (_slug, questionnaire) => {
       for (const lang of ["fi", "sv", "en"] as const) {
         const { container, unmount } = render(<QuestionnaireForm questionnaire={questionnaire} lang={lang} />);
         for (const item of allItems(questionnaire.item)) {
           const element = container.querySelector(`[id="item-${item.linkId}"]`);
           if (item.type === "group" && !item.text) continue;
-          expect(element, `${lang} ${item.type} ${item.linkId}`).not.toBeNull();
+          if (item.enableWhen) expect(element, `${lang} follow-up ${item.linkId}`).toBeNull();
+          else expect(element, `${lang} ${item.type} ${item.linkId}`).not.toBeNull();
         }
         expect(container.querySelector(".unsupported"), lang).toBeNull();
         unmount();

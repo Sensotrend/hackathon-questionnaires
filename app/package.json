@@ -10,6 +10,7 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
+    "fhirpath": "5.2.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },

@@ -1,10 +1,15 @@
 import type { Questionnaire } from "fhir/r4";
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { lazy, Suspense, useEffect, useState, useSyncExternalStore } from "react";
 import { loadBundledQuestionnaires, questionnairesIn } from "./data/questionnaires.ts";
 import { kindOf, questionCount } from "./fhir/items.ts";
 import { LANGUAGES, localized, type Lang } from "./fhir/text.ts";
 import { LANGUAGE_NAMES, t } from "./i18n.ts";
-import { QuestionnaireForm } from "./renderer/QuestionnaireForm.tsx";
+
+// The form brings fhirpath.js and its R4 model (most of the JavaScript), so
+// it loads when a questionnaire is opened, not with the list.
+const QuestionnaireForm = lazy(() =>
+  import("./renderer/QuestionnaireForm.tsx").then((module) => ({ default: module.QuestionnaireForm })),
+);
 
 interface Entry {
   /** The route key: the Questionnaire's id, or a generated one for files. */
@@ -112,7 +117,9 @@ export function App() {
               ← {t("back", lang)}
             </a>
             {open ? (
-              <QuestionnaireForm key={open.key} questionnaire={open.questionnaire} lang={lang} />
+              <Suspense fallback={<p>{t("loading", lang)}</p>}>
+                <QuestionnaireForm key={open.key} questionnaire={open.questionnaire} lang={lang} />
+              </Suspense>
             ) : bundled.status === "loading" ? (
               <p>{t("loading", lang)}</p>
             ) : (

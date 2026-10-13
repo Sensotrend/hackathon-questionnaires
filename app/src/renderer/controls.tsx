@@ -3,10 +3,13 @@
 
 import type { QuestionnaireItem } from "fhir/r4";
 import { useState, type ReactNode } from "react";
-import { itemControl, maxValue, minValue, sliderStep } from "../fhir/items.ts";
+import type { Extension } from "fhir/r4";
+import { bands, itemControl, maxValue, minValue, sliderStep } from "../fhir/items.ts";
+import { localized } from "../fhir/text.ts";
 import { t } from "../i18n.ts";
 import { useForm } from "./context.ts";
 import { fieldId } from "./ids.ts";
+import { useIssueProps } from "./IssueMessage.tsx";
 import { optionAnswer, optionLabel } from "./options.ts";
 import { answerKey, type Answer } from "./state.ts";
 
@@ -42,7 +45,7 @@ function Label({ item, label }: ControlProps) {
 /** A fieldset with the question text as legend, for groups of radio buttons or checkboxes. */
 function Fieldset({ item, label, children }: ControlProps & { children: ReactNode }) {
   return (
-    <fieldset id={fieldId(item)} aria-required={item.required || undefined}>
+    <fieldset id={fieldId(item)} aria-required={item.required || undefined} {...useIssueProps(item)}>
       <legend className="question-text text">
         {label}
         <RequiredMark item={item} />
@@ -53,8 +56,8 @@ function Fieldset({ item, label, children }: ControlProps & { children: ReactNod
 }
 
 function useAnswers(item: QuestionnaireItem) {
-  const { answers, dispatch, lang } = useForm();
-  const current = answers[item.linkId] ?? [];
+  const { state, dispatch, lang } = useForm();
+  const current = state.answers[item.linkId] ?? [];
   const set = (next: Answer[]) => dispatch({ type: "set", linkId: item.linkId, answers: next });
   const toggle = (answer: Answer) => dispatch({ type: "toggle", linkId: item.linkId, answer });
   return { current, set, toggle, lang };
@@ -62,6 +65,7 @@ function useAnswers(item: QuestionnaireItem) {
 
 export function ChoiceControl({ item, label }: ControlProps) {
   const { current, set, toggle, lang } = useAnswers(item);
+  const issueProps = useIssueProps(item);
   const options = item.answerOption ?? [];
   const selected = new Set(current.map(answerKey));
   const control = itemControl(item);
@@ -101,6 +105,7 @@ export function ChoiceControl({ item, label }: ControlProps) {
           id={fieldId(item)}
           value={value}
           aria-required={item.required || undefined}
+          {...issueProps}
           onChange={(event) => {
             const option = options.find((candidate) => answerKey(optionAnswer(candidate)) === event.target.value);
             set(option ? [optionAnswer(option)] : []);
@@ -148,6 +153,7 @@ export function ChoiceControl({ item, label }: ControlProps) {
 
 export function TextControl({ item, label }: ControlProps) {
   const { current, set } = useAnswers(item);
+  const issueProps = useIssueProps(item);
   const value = current[0]?.valueString ?? current[0]?.valueUri ?? "";
   const key = item.type === "url" ? "valueUri" : "valueString";
   const onChange = (next: string) => set(next === "" ? [] : [{ [key]: next }]);
@@ -160,6 +166,7 @@ export function TextControl({ item, label }: ControlProps) {
           rows={3}
           value={value}
           aria-required={item.required || undefined}
+          {...issueProps}
           maxLength={item.maxLength}
           onChange={(event) => onChange(event.target.value)}
         />
@@ -169,6 +176,7 @@ export function TextControl({ item, label }: ControlProps) {
           type={item.type === "url" ? "url" : "text"}
           value={value}
           aria-required={item.required || undefined}
+          {...issueProps}
           maxLength={item.maxLength}
           onChange={(event) => onChange(event.target.value)}
         />
@@ -179,6 +187,7 @@ export function TextControl({ item, label }: ControlProps) {
 
 export function NumberControl({ item, label }: ControlProps) {
   const { current, set, lang } = useAnswers(item);
+  const issueProps = useIssueProps(item);
   const integer = item.type === "integer";
   const value = integer ? current[0]?.valueInteger : current[0]?.valueDecimal;
   const [min, max] = [minValue(item), maxValue(item)];
@@ -204,6 +213,7 @@ export function NumberControl({ item, label }: ControlProps) {
             value={value ?? (min + max) / 2}
             aria-valuetext={value === undefined ? t("notAnswered", lang) : String(value)}
             aria-required={item.required || undefined}
+            {...issueProps}
             onChange={(event) => choose(event.target.value)}
             // A click on the thumb where it already is sets no new value; still count it as an answer.
             onClick={(event) => value === undefined && choose(event.currentTarget.value)}
@@ -227,12 +237,7 @@ export function NumberControl({ item, label }: ControlProps) {
   return (
     <div className="field">
       <Label item={item} label={label} />
-      <NumberInput
-        item={item}
-        value={value}
-        hasRange={min !== undefined || max !== undefined}
-        onChange={(number) => set(number === undefined ? [] : [toAnswer(number)])}
-      />
+      <NumberInput item={item} value={value} hasRange={min !== undefined || max !== undefined} />
       {(min !== undefined || max !== undefined) && (
         <span id={`${fieldId(item)}-range`} className="hint">
           {min ?? ""}–{max ?? ""}
@@ -244,26 +249,24 @@ export function NumberControl({ item, label }: ControlProps) {
 
 /**
  * A number field that keeps what is typed until it is a number: a controlled
- * `<input type=number>` would throw away "1," or "-" half-way through.
+ * `<input type=number>` would throw away "1," or "-" half-way through. Text
+ * that is no valid answer is flagged in the form state, so validation sees it.
  */
-function NumberInput(props: {
-  item: QuestionnaireItem;
-  value: number | undefined;
-  hasRange: boolean;
-  onChange: (value: number | undefined) => void;
-}) {
-  const { item, value, hasRange, onChange } = props;
+function NumberInput(props: { item: QuestionnaireItem; value: number | undefined; hasRange: boolean }) {
+  const { item, value, hasRange } = props;
+  const { state, dispatch } = useForm();
   const [text, setText] = useState(value === undefined ? "" : String(value));
+  const issueProps = useIssueProps(item, hasRange ? `${fieldId(item)}-range` : undefined);
   const parse = (raw: string) => {
     const number = raw.trim() === "" ? undefined : Number(raw.replace(",", "."));
     const valid = number !== undefined && !Number.isNaN(number) && (item.type !== "integer" || Number.isInteger(number));
     return valid ? number : undefined;
   };
-  // Show what is typed while it agrees with the answer: the same number, or
-  // something that is no number yet and no answer. Otherwise the answer was
-  // changed elsewhere (a reset, pre-population), and that wins.
+  // Show what is typed while the state agrees with it: the same number, or
+  // text flagged as invalid. Otherwise the answer was changed elsewhere (a
+  // reset, pre-population), and that wins.
   const parsed = parse(text);
-  const agrees = parsed === undefined ? value === undefined : parsed === value;
+  const agrees = parsed === undefined ? value === undefined && (text.trim() === "" || state.invalid[item.linkId]) : parsed === value;
   const shown = agrees ? text : value === undefined ? "" : String(value);
   return (
     <input
@@ -272,10 +275,17 @@ function NumberInput(props: {
       inputMode={item.type === "integer" ? "numeric" : "decimal"}
       value={shown}
       aria-required={item.required || undefined}
-      aria-describedby={hasRange ? `${fieldId(item)}-range` : undefined}
+      {...issueProps}
       onChange={(event) => {
-        setText(event.target.value);
-        onChange(parse(event.target.value));
+        const raw = event.target.value;
+        const number = parse(raw);
+        setText(raw);
+        if (number !== undefined) {
+          dispatch({ type: "set", linkId: item.linkId, answers: [item.type === "integer" ? { valueInteger: number } : { valueDecimal: number }] });
+        } else {
+          dispatch({ type: "set", linkId: item.linkId, answers: [] });
+          dispatch({ type: "invalid", linkId: item.linkId, invalid: raw.trim() !== "" });
+        }
       }}
     />
   );
@@ -283,6 +293,7 @@ function NumberInput(props: {
 
 export function DateControl({ item, label }: ControlProps) {
   const { current, set } = useAnswers(item);
+  const issueProps = useIssueProps(item);
   const [type, key] =
     item.type === "dateTime"
       ? (["datetime-local", "valueDateTime"] as const)
@@ -298,6 +309,7 @@ export function DateControl({ item, label }: ControlProps) {
         type={type}
         value={value}
         aria-required={item.required || undefined}
+        {...issueProps}
         onChange={(event) => set(event.target.value === "" ? [] : [{ [key]: event.target.value }])}
       />
     </div>
@@ -321,21 +333,29 @@ export function BooleanControl({ item, label }: ControlProps) {
   );
 }
 
-/** A calculated score. The value arrives in milestone 7; until then it shows the scale. */
+/** A calculated score, with the band it falls in. */
 export function ScoreOutput({ item, label }: ControlProps) {
-  const { lang } = useForm();
+  const { lang, scores } = useForm();
   const [min, max] = [minValue(item), maxValue(item)];
+  const value = scores.get(item.linkId);
+  const band = value === undefined ? undefined : bands(item).find((candidate) => value >= candidate.min && value <= candidate.max);
+  const bandText = (part: Extension | undefined) => (part ? localized(part.valueString, part._valueString, lang) : "");
   return (
     <div className="field score">
       <span className="question-text text" id={`${fieldId(item)}-label`}>
         {label}
       </span>
-      <output id={fieldId(item)} aria-labelledby={`${fieldId(item)}-label`} className="score-value">
-        {t("noScore", lang)}
+      <output id={fieldId(item)} aria-labelledby={`${fieldId(item)}-label`} aria-live="polite" className="score-value">
+        {value ?? t("noScore", lang)}
       </output>
       {min !== undefined && max !== undefined && (
         <span className="score-scale">
           {t("scale", lang)} {min}–{max}
+        </span>
+      )}
+      {band && (bandText(band.title) || bandText(band.description)) && (
+        <span className="score-band text">
+          {[bandText(band.title), bandText(band.description)].filter(Boolean).join(": ")}
         </span>
       )}
     </div>

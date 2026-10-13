@@ -17,6 +17,7 @@ import {
   TextControl,
 } from "./controls.tsx";
 import { fieldId } from "./ids.ts";
+import { IssueMessage } from "./IssueMessage.tsx";
 
 export function Items({ items, depth }: { items: QuestionnaireItem[] | undefined; depth: number }) {
   return (
@@ -29,8 +30,8 @@ export function Items({ items, depth }: { items: QuestionnaireItem[] | undefined
 }
 
 export function Item({ item, depth }: { item: QuestionnaireItem; depth: number }) {
-  const { lang } = useForm();
-  if (isHidden(item)) return null;
+  const { lang, enabled } = useForm();
+  if (isHidden(item) || !enabled.has(item.linkId)) return null;
   const text = localized(item.text, item._text, lang);
 
   if (item.type === "group") {
@@ -42,6 +43,7 @@ export function Item({ item, depth }: { item: QuestionnaireItem; depth: number }
             {text}
           </Heading>
         )}
+        <IssueMessage item={item} />
         <Items items={item.item} depth={depth + 1} />
       </section>
     );
@@ -58,6 +60,7 @@ export function Item({ item, depth }: { item: QuestionnaireItem; depth: number }
   return (
     <div className={`question question-${item.type}`} data-link-id={item.linkId}>
       {control(item, text)}
+      <IssueMessage item={item} />
       {item.item && item.item.length > 0 && (
         <div className="follow-ups">
           <Items items={item.item} depth={depth + 1} />

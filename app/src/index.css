@@ -392,3 +392,118 @@ fieldset {
 .unsupported {
   color: var(--muted);
 }
+
+.score-band {
+  flex-basis: 100%;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Validation */
+
+.field-error {
+  margin: 0.35rem 0 0;
+  color: var(--error);
+  font-weight: 600;
+}
+
+[aria-invalid="true"]:is(input, select, textarea) {
+  border-color: var(--error);
+  box-shadow: 0 0 0 1px var(--error);
+}
+
+fieldset[aria-invalid="true"] {
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--error);
+}
+
+.issue-summary {
+  margin: 1.5rem 0 1rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--error);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.issue-summary p {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.issue-summary ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.issue-summary .link-button {
+  text-align: left;
+}
+
+.completed {
+  margin: 1.5rem 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+/* Actions and the response */
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.form-actions button,
+.response button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.form-actions button.primary {
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
+.confirm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.response {
+  margin: 1.5rem 0 3rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.response summary {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.response button {
+  margin: 0 1rem 0.75rem;
+}
+
+.response pre {
+  margin: 0;
+  padding: 1rem;
+  max-height: 32rem;
+  overflow: auto;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  white-space: pre;
+}

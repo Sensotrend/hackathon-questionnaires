@@ -1,27 +1,42 @@
 import { describe, expect, it } from "vitest";
-import { answerKey, answersReducer } from "./state.ts";
+import { answerKey, emptyForm, formReducer } from "./state.ts";
 
 const yes = { valueCoding: { system: "s", code: "yes", display: "Kyllä" } };
 const no = { valueCoding: { system: "s", code: "no", display: "Ei" } };
 
-describe("answersReducer", () => {
+describe("formReducer", () => {
   it("sets and clears an item's answers", () => {
-    const set = answersReducer({}, { type: "set", linkId: "a", answers: [yes] });
-    expect(set).toEqual({ a: [yes] });
-    expect(answersReducer(set, { type: "set", linkId: "a", answers: [] })).toEqual({});
+    const set = formReducer(emptyForm, { type: "set", linkId: "a", answers: [yes] });
+    expect(set.answers).toEqual({ a: [yes] });
+    expect(formReducer(set, { type: "set", linkId: "a", answers: [] }).answers).toEqual({});
   });
 
   it("toggles answers of a repeating item, removing it when the last goes", () => {
-    let state = answersReducer({}, { type: "toggle", linkId: "a", answer: yes });
-    state = answersReducer(state, { type: "toggle", linkId: "a", answer: no });
-    expect(state).toEqual({ a: [yes, no] });
-    state = answersReducer(state, { type: "toggle", linkId: "a", answer: { valueCoding: { system: "s", code: "yes" } } });
-    expect(state).toEqual({ a: [no] });
-    expect(answersReducer(state, { type: "toggle", linkId: "a", answer: no })).toEqual({});
+    let state = formReducer(emptyForm, { type: "toggle", linkId: "a", answer: yes });
+    state = formReducer(state, { type: "toggle", linkId: "a", answer: no });
+    expect(state.answers).toEqual({ a: [yes, no] });
+    state = formReducer(state, { type: "toggle", linkId: "a", answer: { valueCoding: { system: "s", code: "yes" } } });
+    expect(state.answers).toEqual({ a: [no] });
+    expect(formReducer(state, { type: "toggle", linkId: "a", answer: no }).answers).toEqual({});
+  });
+
+  it("flags invalid text until a valid answer replaces it", () => {
+    let state = formReducer(emptyForm, { type: "invalid", linkId: "n", invalid: true });
+    expect(state.invalid).toEqual({ n: true });
+    state = formReducer(state, { type: "set", linkId: "n", answers: [] });
+    expect(state.invalid).toEqual({ n: true });
+    state = formReducer(state, { type: "set", linkId: "n", answers: [{ valueInteger: 2 }] });
+    expect(state.invalid).toEqual({});
+    state = formReducer(state, { type: "invalid", linkId: "m", invalid: true });
+    expect(formReducer(state, { type: "invalid", linkId: "m", invalid: false }).invalid).toEqual({});
   });
 
   it("resets everything", () => {
-    expect(answersReducer({ a: [yes], b: [{ valueString: "x" }] }, { type: "reset" })).toEqual({});
+    const state = formReducer(
+      formReducer(emptyForm, { type: "set", linkId: "a", answers: [yes] }),
+      { type: "invalid", linkId: "n", invalid: true },
+    );
+    expect(formReducer(state, { type: "reset" })).toEqual(emptyForm);
   });
 });
 
