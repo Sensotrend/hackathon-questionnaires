@@ -103,7 +103,7 @@ Notes:
 - Retyped "Uni ja lepo Kuinka monta tuntia nukut vuorokaudessa?" from free text to decimal in h, 0–24.
 - Retyped "Milloin kävit viimeksi hammaslääkärin tai suuhygienistin su…" from free text to integer, 1950–2100.
 - Filled in from patient data: "Sairaudet ja lääkitys Onko sinulla todettu jokin seuraavist…" ← options "diabetes", "sydänvika tai -sairaus", "verenpainetauti", "astma", "epilepsia", "munuaistauti", "maksasairaus", "suolistosairaus", "veritulppa (tromboembolia)", "kilpirauhasen toimintahäiriö", "allergiat (ml. lääkeaineallergiat)" by evidence.
-- Filled in from patient data: "Oletko sairastanut vesirokon tai saanut vesirokkorokotteen?" ← "Kyllä" when there are immunizations or conditions as evidence.
+- Filled in from patient data: "Oletko sairastanut vesirokon tai saanut vesirokkorokotteen?" ← "Kyllä" when there are immunizations or conditionHistory as evidence.
 - Filled in from patient data: "Oletko saanut tuhkarokko-vihurirokko-sikotauti-rokotteen?" ← "Kyllä" when there are immunizations as evidence.
 - Filled in from patient data: "Onko sinulla jokin lääkärin määräämä lääkitys?" ← "Kyllä" when there are medications as evidence.
 

@@ -1,0 +1,668 @@
+{
+  "resourceType": "Bundle",
+  "id": "aitiysneuvola-maija",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "type": "collection",
+  "timestamp": "2026-10-13T12:00:00+03:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "maija",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.246.21",
+            "value": "120394-912U"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Esimerkki",
+            "given": [
+              "Maija"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1994-03-12",
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "N",
+                    "display": "Next-of-Kin"
+                  }
+                ],
+                "text": "puoliso"
+              }
+            ],
+            "name": {
+              "family": "Esimerkki",
+              "given": [
+                "Matti"
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "040 000 0000"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0865e32b-1ba6-5830-b266-33bb6fd63513",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "maija-height",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3137-7",
+              "display": "Pituus, mitattu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "effectiveDateTime": "2026-09-15",
+        "valueQuantity": {
+          "value": 166,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7f2900c5-2049-55fb-aba1-284a37c56659",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "maija-height-2019",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3137-7",
+              "display": "Pituus, mitattu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "effectiveDateTime": "2019-05-02",
+        "valueQuantity": {
+          "value": 164,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:414a20f3-4188-5ac3-b567-8971a1fdc9b6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "maija-weight-before",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "56077-1",
+              "display": "Body weight --pre current pregnancy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "effectiveDateTime": "2026-09-15",
+        "valueQuantity": {
+          "value": 63.5,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c37ad022-bfce-5b93-b7f6-042c2710ef9e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "maija-lmp",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8665-2",
+              "display": "Last menstrual period start date"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "effectiveDateTime": "2026-09-15",
+        "valueDateTime": "2026-08-20"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a329b9b1-8b1e-5e91-9e22-a3c13e1ec856",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "maija-parity",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "exam"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11977-6",
+              "display": "[#] Parity"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "effectiveDateTime": "2026-09-15",
+        "valueInteger": 1
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:26124cb5-1e0d-5eb7-9d69-c76d7c18c5f6",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "maija-asthma",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "PYS",
+              "display": "Pysyväisluonteinen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "J45.0",
+              "display": "Allerginen astma"
+            }
+          ],
+          "text": "Allerginen astma"
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b7999e3c-eb47-5c66-8480-207bdb8c82c7",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "maija-hypothyroidism",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "PYS",
+              "display": "Pysyväisluonteinen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "E03.9",
+              "display": "Määrittämätön kilpirauhasen vajaatoiminta"
+            }
+          ],
+          "text": "Kilpirauhasen vajaatoiminta"
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b576c5d5-4811-53ae-a40e-eaff4c84417f",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "maija-bronchitis",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "KER",
+              "display": "Määräaikainen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "J20.9",
+              "display": "Määrittämätön akuutti keuhkoputkitulehdus"
+            }
+          ],
+          "text": "Akuutti keuhkoputkitulehdus"
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:37ed3267-87bc-5270-b1d5-2bc3f9f7a537",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "maija-chickenpox",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "B01.9",
+              "display": "Vesirokko ilman komplikaatioita"
+            }
+          ],
+          "text": "Vesirokko lapsena"
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "onsetDateTime": "2001-02-01",
+        "abatementString": "parantunut"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:818ce9fb-4d0d-55f5-8b04-3667f2500d6f",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "maija-penicillin",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "text": "Penisilliini"
+        },
+        "patient": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "recordedDate": "2020-03-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:25fc31ae-f68f-55fd-b0bc-f04ede14aa5c",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "maija-levothyroxine",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "H03AA01",
+              "display": "levothyroxine sodium"
+            }
+          ],
+          "text": "Levotyroksiini 75 µg"
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "effectiveDateTime": "2021-04-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aa108b0c-b698-5e6b-8777-d7333bb3f163",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "maija-folic-acid",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.32",
+              "code": "B03BB01",
+              "display": "foolihappo"
+            }
+          ],
+          "text": "Foolihappo 0,4 mg"
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "effectiveDateTime": "2026-06-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d9db4fab-a213-54f6-aa3b-e02874327b91",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "maija-vitamin-d",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.32",
+              "code": "A11CC05",
+              "display": "kolekalsiferoli (vitamiini D3)"
+            }
+          ],
+          "text": "D-vitamiini 10 µg"
+        },
+        "subject": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "effectiveDateTime": "2026-06-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:de08e3f5-e7e2-5457-a45c-96e9a9927f45",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "maija-mmr",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-immunization"
+          ]
+        },
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.32",
+              "version": "2007",
+              "code": "J07BD52",
+              "display": "tuhkarokko-sikotauti-vihurirokkorokote, elävä heikennetty virus"
+            }
+          ],
+          "text": "MPR-rokote"
+        },
+        "patient": {
+          "reference": "urn:uuid:83389bb3-6c4f-59b0-ab76-81dc152441de"
+        },
+        "occurrenceDateTime": "1995-09-01",
+        "primarySource": false
+      }
+    }
+  ]
+}

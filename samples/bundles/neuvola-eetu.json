@@ -1,0 +1,196 @@
+{
+  "resourceType": "Bundle",
+  "id": "neuvola-eetu",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "type": "collection",
+  "timestamp": "2026-10-13T12:00:00+03:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:91b5ac43-ab8d-55cc-9520-cc9862a86234",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "eetu",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.246.21",
+            "value": "010624A951B"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Esimerkki",
+            "given": [
+              "Eetu"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2024-06-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:715bfd7e-61c4-5278-adce-751f203098a1",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "eetu-mother",
+        "patient": {
+          "reference": "urn:uuid:91b5ac43-ab8d-55cc-9520-cc9862a86234"
+        },
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code": "MTH",
+                "display": "mother"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "family": "Esimerkki",
+            "given": [
+              "Laura"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ad89e3a5-ec8d-5e09-bd1e-35a99beff95d",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "eetu-eczema",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "PYS",
+              "display": "Pysyväisluonteinen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "L20.9",
+              "display": "Määrittämätön atooppinen ihottuma"
+            }
+          ],
+          "text": "Atooppinen ihottuma"
+        },
+        "subject": {
+          "reference": "urn:uuid:91b5ac43-ab8d-55cc-9520-cc9862a86234"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8f6d3d04-6a30-5c2e-a8ca-9b36f9247d3e",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "eetu-milk",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "text": "Lehmänmaito"
+        },
+        "patient": {
+          "reference": "urn:uuid:91b5ac43-ab8d-55cc-9520-cc9862a86234"
+        },
+        "recordedDate": "2020-03-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4abfb9f5-4423-5a66-af5b-5ddbf66289f6",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "eetu-vitamin-d",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.32",
+              "code": "A11CC05",
+              "display": "kolekalsiferoli (vitamiini D3)"
+            }
+          ],
+          "text": "D-vitamiinitipat 10 µg"
+        },
+        "subject": {
+          "reference": "urn:uuid:91b5ac43-ab8d-55cc-9520-cc9862a86234"
+        },
+        "effectiveDateTime": "2024-06-15"
+      }
+    }
+  ]
+}

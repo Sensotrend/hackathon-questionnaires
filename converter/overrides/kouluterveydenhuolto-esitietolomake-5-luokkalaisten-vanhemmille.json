@@ -45,11 +45,12 @@
       "maxValue": 250
     },
     "9efeeb4b-d734-4f55-ad72-470a33e7f764": {
-      "$comment": "Long-term illness: any active diagnosis",
+      "$comment": "Long-term illness: any long-term diagnosis (marked permanent, or unmarked on the problem list)",
       "populate": {
         "answer": "Kyllä",
         "when": {
-          "in": "conditions"
+          "in": "conditions",
+          "longTerm": true
         }
       }
     },
@@ -57,7 +58,8 @@
       "$comment": "Which illness",
       "populate": {
         "list": {
-          "in": "conditions"
+          "in": "conditions",
+          "longTerm": true
         }
       }
     },

@@ -13,6 +13,8 @@ Converts the Lunna survey exports in `Esitieto_lomakkeet_hackathon_json/` into H
   - `definitions/`: the project's own extension (score bands)
   - `conversion-report.md`: what each questionnaire contains and every correction the conversion made
   - `validation.md`: the last `npm run validate` result
+  - `terminology-check.md`: the last `npm run verify-codes` result
+- `samples/bundles/`: synthetic patients (FinnishCore, test-range personal identity codes) to fill the forms in from.
 - `docs/`: the implementation plan.
 
 ## Scripts
@@ -26,7 +28,8 @@ npm install
 | Command | What it does |
 |---|---|
 | `npm run convert` | regenerate `fhir/` from the source exports and the overrides |
-| `npm run validate` | run the HL7 FHIR Validator over `fhir/` and update `fhir/validation.md`; fails on errors |
+| `npm run validate` | run the HL7 FHIR Validator over `fhir/` and `samples/` and update `fhir/validation.md`; fails on errors |
+| `npm run verify-codes` | look every code in the overrides and samples up at its source (THL's code server, tx.fhir.org, the Nordic server) and update `fhir/terminology-check.md`; fails on any code not found |
 | `npm run dev` | start the app at http://localhost:5173 |
 | `npm run build` | type-check and build the app into `app/dist/` |
 | `npm run lint` | ESLint over the whole repo |

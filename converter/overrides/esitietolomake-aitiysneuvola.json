@@ -312,7 +312,7 @@
       }
     },
     "49556984-1532-4cac-8574-de5453ccb877": {
-      "$comment": "Varicella: a varicella or MMRV vaccination, or a past chickenpox diagnosis",
+      "$comment": "Varicella: a varicella or MMRV vaccination, or a chickenpox diagnosis at any time (resolved ones included)",
       "populate": {
         "answer": "Kyllä",
         "when": [
@@ -326,7 +326,7 @@
             }
           },
           {
-            "in": "conditions",
+            "in": "conditionHistory",
             "codes": {
               "urn:oid:1.2.246.537.6.1": [
                 "B01"

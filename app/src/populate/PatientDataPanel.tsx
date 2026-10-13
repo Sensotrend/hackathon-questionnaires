@@ -5,6 +5,7 @@ import type { Patient } from "fhir/r4";
 import { useState, type ReactNode } from "react";
 import type { Lang } from "../fhir/text.ts";
 import { t } from "../i18n.ts";
+import { SAMPLES } from "./samples.ts";
 import { addDocument, HETU, patientName, patients, type PatientData } from "./store.ts";
 
 export interface PatientDataProps {
@@ -78,6 +79,27 @@ export function PatientDataPanel({ lang, data, onChange, patient, onSelectPatien
         >
           {t("add", lang)}
         </button>
+      </div>
+      <div className="samples">
+        <span className="hint">{t("samples", lang)}</span>
+        {SAMPLES.map((sample) => (
+          <button
+            key={sample.name}
+            type="button"
+            className="link-button"
+            onClick={async () => {
+              try {
+                const response = await fetch(sample.url);
+                if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+                add([{ name: `${sample.name}.json`, text: await response.text() }]);
+              } catch (cause) {
+                setError(`${t("dataError", lang)}: ${cause instanceof Error ? cause.message : String(cause)}`);
+              }
+            }}
+          >
+            {sample.label(lang)}
+          </button>
+        ))}
       </div>
       {error && (
         <p role="alert" className="error">

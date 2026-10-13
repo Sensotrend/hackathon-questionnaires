@@ -18,12 +18,28 @@ export const ICD10 = "urn:oid:1.2.246.537.6.1";
 export const ATC = "urn:oid:1.2.246.537.6.32";
 /** Hierarchical code systems, where a code matches its more detailed codes as a prefix. */
 const PREFIX_SYSTEMS = new Set([ICD10, ATC]);
+/**
+ * Other URIs data uses for the same codes: FinnishCore's own examples code
+ * ATC as the THL OID (Immunization) and as WHO's URI (MedicationStatement);
+ * international data codes ICD-10 categories with HL7's URI.
+ */
+const ALIASES: Record<string, string[]> = {
+  [ATC]: ["http://www.whocc.no/atc"],
+  [ICD10]: ["http://hl7.org/fhir/sid/icd-10"],
+};
+export const PERMANENCE = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence";
+export const PERMANENCE_SYSTEM = "urn:oid:1.2.246.537.5.40003";
 
 /** The searches behind each collection, and the FHIRPath that takes the resources out of them. */
 const COLLECTIONS: Record<Evidence["in"], { searches: Record<string, string>; resources: string }> = {
   conditions: {
     searches: { conditionSearch: "Condition?patient={{%patient.id}}&clinical-status=active" },
     resources: "%conditionSearch.entry.resource",
+  },
+  conditionHistory: {
+    searches: { conditionHistorySearch: "Condition?patient={{%patient.id}}" },
+    resources:
+      "%conditionHistorySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty())",
   },
   allergies: {
     searches: { allergySearch: "AllergyIntolerance?patient={{%patient.id}}&clinical-status=active" },
@@ -73,9 +89,16 @@ export function evidenceExpression(evidence: Evidence): string {
       const test = PREFIX_SYSTEMS.has(system)
         ? codes.map((code) => `code.startsWith(${quote(code)})`)
         : codes.map((code) => `code = ${quote(code)}`);
-      return `(system = ${quote(system)} and (${test.join(" or ")}))`;
+      const systems = [system, ...(ALIASES[system] ?? [])].map((uri) => `system = ${quote(uri)}`);
+      return `((${systems.join(" or ")}) and (${test.join(" or ")}))`;
     });
     expression += `.where(${CODE}.coding.where(${clauses.join(" or ")}).exists())`;
+  }
+  if (evidence.longTerm) {
+    const permanence = `extension.where(url = ${quote(PERMANENCE)})`;
+    expression +=
+      `.where(${permanence}.value.code = 'PYS' or ` +
+      `(${permanence}.empty() and category.coding.where(code = 'problem-list-item').exists()))`;
   }
   if (evidence.where) expression += `.where(${evidence.where})`;
   return expression;

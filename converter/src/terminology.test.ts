@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { codeUses, report, type Checked } from "./terminology.ts";
+import { codeUses, report, sampleCodeUses, type Checked } from "./terminology.ts";
 
 describe("codeUses", () => {
   it("collects the codes of Questionnaire.code, item codes and every kind of evidence", () => {
@@ -45,5 +45,22 @@ describe("report", () => {
     expect(text).toContain("| J45 | Astma | x | ✓ |");
     expect(text).toContain("| J99X |  | y | **HTTP 404** |");
     expect(text).toContain('| 8302-2 | Body height | z | **display "Height" differs** |');
+  });
+});
+
+describe("sampleCodeUses", () => {
+  it("collects the codings of known systems, exact, with THL displays only", () => {
+    const uses = sampleCodeUses("s", {
+      resourceType: "Bundle",
+      entry: [
+        { resource: { id: "c1", code: { coding: [{ system: "urn:oid:1.2.246.537.6.1", code: "J45.0", display: "Allerginen astma" }] } } },
+        { resource: { id: "m1", medicationCodeableConcept: { coding: [{ system: "http://www.whocc.no/atc", code: "H03AA01", display: "levothyroxine" }] } } },
+        { resource: { id: "x", category: [{ coding: [{ system: "http://terminology.hl7.org/CodeSystem/condition-category", code: "problem-list-item" }] }] } },
+      ],
+    });
+    expect(uses).toEqual([
+      { system: "urn:oid:1.2.246.537.6.1", code: "J45.0", display: "Allerginen astma", usedIn: "sample s: c1", exact: true },
+      { system: "urn:oid:1.2.246.537.6.32", code: "H03AA01", usedIn: "sample s: m1", exact: true },
+    ]);
   });
 });

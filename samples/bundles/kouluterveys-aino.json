@@ -1,0 +1,282 @@
+{
+  "resourceType": "Bundle",
+  "id": "kouluterveys-aino",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "type": "collection",
+  "timestamp": "2026-10-13T12:00:00+03:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:22d0c80b-22f9-5e54-8a8f-1766d9c8090e",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "aino",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.246.21",
+            "value": "040512A935V"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Esimerkki",
+            "given": [
+              "Aino"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2012-05-04"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ef2753df-e44f-5f6e-8227-c2b79232698b",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "aino-rhinitis",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "J30.10",
+              "display": "Siitepölyn aiheuttama allerginen nuha"
+            }
+          ],
+          "text": "Siitepölyallerginen nuha"
+        },
+        "subject": {
+          "reference": "urn:uuid:22d0c80b-22f9-5e54-8a8f-1766d9c8090e"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c7541bec-3241-5051-95ea-066ec05a840d",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "aino-eczema",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "PYS",
+              "display": "Pysyväisluonteinen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "L20.8",
+              "display": "Muu atooppinen ihottuma"
+            }
+          ],
+          "text": "Atooppinen ihottuma"
+        },
+        "subject": {
+          "reference": "urn:uuid:22d0c80b-22f9-5e54-8a8f-1766d9c8090e"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8842d80d-f22a-51da-a14f-a3ad9bf3a1a5",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "aino-otitis",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "KER",
+              "display": "Määräaikainen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "H66.0",
+              "display": "Akuutti märkäinen välikorvan tulehdus"
+            }
+          ],
+          "text": "Välikorvatulehdus"
+        },
+        "subject": {
+          "reference": "urn:uuid:22d0c80b-22f9-5e54-8a8f-1766d9c8090e"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:02b62474-1a38-54f2-be52-8d0f9e5936fd",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "aino-birch",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "text": "Koivun siitepöly"
+        },
+        "patient": {
+          "reference": "urn:uuid:22d0c80b-22f9-5e54-8a8f-1766d9c8090e"
+        },
+        "recordedDate": "2020-03-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:394a8033-fa8c-5cf7-84da-0e94dd959e03",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "aino-cetirizine",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.32",
+              "code": "R06AE07",
+              "display": "setiritsiini"
+            }
+          ],
+          "text": "Setiritsiini 10 mg tarvittaessa"
+        },
+        "subject": {
+          "reference": "urn:uuid:22d0c80b-22f9-5e54-8a8f-1766d9c8090e"
+        },
+        "effectiveDateTime": "2024-04-15"
+      }
+    }
+  ]
+}

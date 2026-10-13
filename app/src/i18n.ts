@@ -117,6 +117,11 @@ const strings = {
   fromRecord: { fi: "Potilastiedoista", sv: "Från patientuppgifterna", en: "From patient data" },
   derived: { fi: "päätelty potilastiedoista", sv: "härlett från patientuppgifterna", en: "derived from the patient data" },
   showSource: { fi: "Näytä lähdetiedot", sv: "Visa källuppgifterna", en: "Show the source data" },
+  samples: {
+    fi: "Tai kokeile esimerkkipotilaalla (keksittyjä tietoja):",
+    sv: "Eller prova med en exempelpatient (påhittade uppgifter):",
+    en: "Or try a sample patient (made-up data):",
+  },
   kind_screening: { fi: "Seulontakysely", sv: "Screeningenkät", en: "Screening" },
   kind_previsit: { fi: "Esitietolomake", sv: "Förhandsformulär", en: "Pre-visit form" },
   kind_careplan: { fi: "Hoitosuunnitelma", sv: "Vårdplan", en: "Care plan" },

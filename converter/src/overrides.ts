@@ -34,8 +34,12 @@ export const TextFix: z.ZodType<TextFix> = z
 
 /** What the patient data must hold for an answer (plan §7.2). */
 export const Evidence = z.strictObject({
-  /** The collection: active conditions, allergies or medications, completed immunizations, final observations. */
-  in: z.enum(["conditions", "allergies", "medications", "immunizations", "observations"]),
+  /**
+   * The collection: active conditions, every condition but refuted ones
+   * (conditionHistory, for "have you had …"), active allergies and
+   * medications, completed immunizations, final observations.
+   */
+  in: z.enum(["conditions", "conditionHistory", "allergies", "medications", "immunizations", "observations"]),
   /**
    * Codes by system. ICD-10 and ATC codes match as prefixes (E11 matches
    * E11.9), since both are hierarchical by code; other systems match exactly.
@@ -43,6 +47,13 @@ export const Evidence = z.strictObject({
   codes: z.record(z.url().or(z.string().startsWith("urn:oid:")), z.array(z.string().regex(/^[A-Za-z0-9.-]+$/)).min(1)).optional(),
   /** An extra FHIRPath condition on each resource, e.g. `value.value > 0`. */
   where: z.string().min(1).optional(),
+  /**
+   * Long-term conditions only: marked permanent (FinnishCore
+   * condition-permanence PYS), or unmarked and on the problem list.
+   */
+  longTerm: z.literal(true).optional(),
+}).refine((evidence) => !evidence.longTerm || evidence.in === "conditions" || evidence.in === "conditionHistory", {
+  message: "longTerm applies to conditions",
 });
 export type Evidence = z.infer<typeof Evidence>;
 

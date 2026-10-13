@@ -25,11 +25,12 @@
   },
   "items": {
     "3b936a15-4afe-4d31-b23e-4f252dcd1578": {
-      "$comment": "Permanent or long-term illness: any active diagnosis",
+      "$comment": "Permanent or long-term illness: any long-term diagnosis (marked permanent, or unmarked on the problem list)",
       "populate": {
         "answer": "Kyllä",
         "when": {
-          "in": "conditions"
+          "in": "conditions",
+          "longTerm": true
         }
       }
     },
@@ -37,7 +38,8 @@
       "$comment": "Which illness",
       "populate": {
         "list": {
-          "in": "conditions"
+          "in": "conditions",
+          "longTerm": true
         }
       }
     },

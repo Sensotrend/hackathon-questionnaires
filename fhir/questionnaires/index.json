@@ -7639,7 +7639,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%observations.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'http://loinc.org' and (code = '11977-6'))).exists()).where((value.ofType(integer) | value.ofType(Quantity).value).first() > 0)"
+                      "expression": "%observations.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'http://loinc.org') and (code = '11977-6'))).exists()).where((value.ofType(integer) | value.ofType(Quantity).value).first() > 0)"
                     }
                   },
                   {
@@ -12054,7 +12054,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('B03BB')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('B03BB')))).exists())"
                     }
                   },
                   {
@@ -12194,7 +12194,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A11CC')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists())"
                     }
                   },
                   {
@@ -12334,7 +12334,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A12AA')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A12AA')))).exists())"
                     }
                   },
                   {
@@ -12474,7 +12474,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('B03BA')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('B03BA')))).exists())"
                     }
                   },
                   {
@@ -12614,7 +12614,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A11A') or code.startsWith('A11B')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11A') or code.startsWith('A11B')))).exists())"
                     }
                   },
                   {
@@ -13805,7 +13805,7 @@
                     "valueExpression": {
                       "name": "evidence1",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E10') or code.startsWith('E11') or code.startsWith('E12') or code.startsWith('E13') or code.startsWith('E14')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('E10') or code.startsWith('E11') or code.startsWith('E12') or code.startsWith('E13') or code.startsWith('E14')))).exists())"
                     }
                   },
                   {
@@ -13813,7 +13813,7 @@
                     "valueExpression": {
                       "name": "evidence2",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I05') or code.startsWith('I06') or code.startsWith('I07') or code.startsWith('I08') or code.startsWith('I09') or code.startsWith('I20') or code.startsWith('I21') or code.startsWith('I22') or code.startsWith('I23') or code.startsWith('I24') or code.startsWith('I25') or code.startsWith('I34') or code.startsWith('I35') or code.startsWith('I36') or code.startsWith('I37') or code.startsWith('I42') or code.startsWith('I47') or code.startsWith('I48') or code.startsWith('I49') or code.startsWith('I50') or code.startsWith('Q20') or code.startsWith('Q21') or code.startsWith('Q22') or code.startsWith('Q23') or code.startsWith('Q24')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('I05') or code.startsWith('I06') or code.startsWith('I07') or code.startsWith('I08') or code.startsWith('I09') or code.startsWith('I20') or code.startsWith('I21') or code.startsWith('I22') or code.startsWith('I23') or code.startsWith('I24') or code.startsWith('I25') or code.startsWith('I34') or code.startsWith('I35') or code.startsWith('I36') or code.startsWith('I37') or code.startsWith('I42') or code.startsWith('I47') or code.startsWith('I48') or code.startsWith('I49') or code.startsWith('I50') or code.startsWith('Q20') or code.startsWith('Q21') or code.startsWith('Q22') or code.startsWith('Q23') or code.startsWith('Q24')))).exists())"
                     }
                   },
                   {
@@ -13821,7 +13821,7 @@
                     "valueExpression": {
                       "name": "evidence3",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I10') or code.startsWith('I11') or code.startsWith('I12') or code.startsWith('I13') or code.startsWith('I15')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('I10') or code.startsWith('I11') or code.startsWith('I12') or code.startsWith('I13') or code.startsWith('I15')))).exists())"
                     }
                   },
                   {
@@ -13829,7 +13829,7 @@
                     "valueExpression": {
                       "name": "evidence4",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('J45') or code.startsWith('J46')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('J45') or code.startsWith('J46')))).exists())"
                     }
                   },
                   {
@@ -13837,7 +13837,7 @@
                     "valueExpression": {
                       "name": "evidence5",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('G40') or code.startsWith('G41')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('G40') or code.startsWith('G41')))).exists())"
                     }
                   },
                   {
@@ -13845,7 +13845,7 @@
                     "valueExpression": {
                       "name": "evidence6",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('N03') or code.startsWith('N04') or code.startsWith('N05') or code.startsWith('N07') or code.startsWith('N08') or code.startsWith('N11') or code.startsWith('N18') or code.startsWith('N19')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('N03') or code.startsWith('N04') or code.startsWith('N05') or code.startsWith('N07') or code.startsWith('N08') or code.startsWith('N11') or code.startsWith('N18') or code.startsWith('N19')))).exists())"
                     }
                   },
                   {
@@ -13853,7 +13853,7 @@
                     "valueExpression": {
                       "name": "evidence7",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('K70') or code.startsWith('K71') or code.startsWith('K72') or code.startsWith('K73') or code.startsWith('K74') or code.startsWith('K75') or code.startsWith('K76') or code.startsWith('K77')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('K70') or code.startsWith('K71') or code.startsWith('K72') or code.startsWith('K73') or code.startsWith('K74') or code.startsWith('K75') or code.startsWith('K76') or code.startsWith('K77')))).exists())"
                     }
                   },
                   {
@@ -13861,7 +13861,7 @@
                     "valueExpression": {
                       "name": "evidence8",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('K50') or code.startsWith('K51') or code.startsWith('K58') or code.startsWith('K90')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('K50') or code.startsWith('K51') or code.startsWith('K58') or code.startsWith('K90')))).exists())"
                     }
                   },
                   {
@@ -13869,7 +13869,7 @@
                     "valueExpression": {
                       "name": "evidence9",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I26') or code.startsWith('I80') or code.startsWith('I82')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('I26') or code.startsWith('I80') or code.startsWith('I82')))).exists())"
                     }
                   },
                   {
@@ -13877,7 +13877,7 @@
                     "valueExpression": {
                       "name": "evidence10",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E00') or code.startsWith('E01') or code.startsWith('E02') or code.startsWith('E03') or code.startsWith('E04') or code.startsWith('E05') or code.startsWith('E06') or code.startsWith('E07')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('E00') or code.startsWith('E01') or code.startsWith('E02') or code.startsWith('E03') or code.startsWith('E04') or code.startsWith('E05') or code.startsWith('E06') or code.startsWith('E07')))).exists())"
                     }
                   },
                   {
@@ -15557,7 +15557,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "(%immunizations.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('J07BK') or code.startsWith('J07BD54')))).exists())) | (%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('B01')))).exists()))"
+                      "expression": "(%immunizations.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('J07BK') or code.startsWith('J07BD54')))).exists())) | (%conditionHistory.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('B01')))).exists()))"
                     }
                   },
                   {
@@ -15734,7 +15734,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%immunizations.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('J07BD52') or code.startsWith('J07BD54')))).exists())"
+                      "expression": "%immunizations.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('J07BD52') or code.startsWith('J07BD54')))).exists())"
                     }
                   },
                   {
@@ -17022,6 +17022,22 @@
               "name": "conditions",
               "language": "text/fhirpath",
               "expression": "%conditionSearch.entry.resource"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "conditionHistorySearch",
+              "language": "application/x-fhir-query",
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "conditionHistory",
+              "language": "text/fhirpath",
+              "expression": "%conditionHistorySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty())"
             }
           },
           {
@@ -18693,7 +18709,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%conditions"
+                      "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                     }
                   },
                   {
@@ -18823,7 +18839,7 @@
                         "valueExpression": {
                           "name": "evidence",
                           "language": "text/fhirpath",
-                          "expression": "%conditions"
+                          "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                         }
                       },
                       {
@@ -27306,7 +27322,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%conditions"
+                      "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                     }
                   },
                   {
@@ -27370,7 +27386,7 @@
                     "valueExpression": {
                       "name": "evidence1",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I10') or code.startsWith('I11') or code.startsWith('I12') or code.startsWith('I13') or code.startsWith('I15')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('I10') or code.startsWith('I11') or code.startsWith('I12') or code.startsWith('I13') or code.startsWith('I15')))).exists())"
                     }
                   },
                   {
@@ -27378,7 +27394,7 @@
                     "valueExpression": {
                       "name": "evidence2",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E78')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('E78')))).exists())"
                     }
                   },
                   {
@@ -27386,7 +27402,7 @@
                     "valueExpression": {
                       "name": "evidence3",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('M05') or code.startsWith('M06') or code.startsWith('M32') or code.startsWith('M79.7')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('M05') or code.startsWith('M06') or code.startsWith('M32') or code.startsWith('M79.7')))).exists())"
                     }
                   },
                   {
@@ -27394,7 +27410,7 @@
                     "valueExpression": {
                       "name": "evidence4",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('M80') or code.startsWith('M81') or code.startsWith('M82')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('M80') or code.startsWith('M81') or code.startsWith('M82')))).exists())"
                     }
                   },
                   {
@@ -27402,7 +27418,7 @@
                     "valueExpression": {
                       "name": "evidence5",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('M54')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('M54')))).exists())"
                     }
                   },
                   {
@@ -27410,7 +27426,7 @@
                     "valueExpression": {
                       "name": "evidence6",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('M15') or code.startsWith('M18')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('M15') or code.startsWith('M18')))).exists())"
                     }
                   },
                   {
@@ -27418,7 +27434,7 @@
                     "valueExpression": {
                       "name": "evidence7",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I50')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('I50')))).exists())"
                     }
                   },
                   {
@@ -27426,7 +27442,7 @@
                     "valueExpression": {
                       "name": "evidence8",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I20') or code.startsWith('I21') or code.startsWith('I22') or code.startsWith('I23') or code.startsWith('I24') or code.startsWith('I25')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('I20') or code.startsWith('I21') or code.startsWith('I22') or code.startsWith('I23') or code.startsWith('I24') or code.startsWith('I25')))).exists())"
                     }
                   },
                   {
@@ -27434,7 +27450,7 @@
                     "valueExpression": {
                       "name": "evidence9",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('I70') or code.startsWith('I73')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('I70') or code.startsWith('I73')))).exists())"
                     }
                   },
                   {
@@ -27442,7 +27458,7 @@
                     "valueExpression": {
                       "name": "evidence10",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('D50') or code.startsWith('D51') or code.startsWith('D52') or code.startsWith('D53') or code.startsWith('D55') or code.startsWith('D56') or code.startsWith('D57') or code.startsWith('D58') or code.startsWith('D59') or code.startsWith('D60') or code.startsWith('D61') or code.startsWith('D62') or code.startsWith('D63') or code.startsWith('D64')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('D50') or code.startsWith('D51') or code.startsWith('D52') or code.startsWith('D53') or code.startsWith('D55') or code.startsWith('D56') or code.startsWith('D57') or code.startsWith('D58') or code.startsWith('D59') or code.startsWith('D60') or code.startsWith('D61') or code.startsWith('D62') or code.startsWith('D63') or code.startsWith('D64')))).exists())"
                     }
                   },
                   {
@@ -27450,7 +27466,7 @@
                     "valueExpression": {
                       "name": "evidence11",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('G45') or code.startsWith('I60') or code.startsWith('I61') or code.startsWith('I62') or code.startsWith('I63') or code.startsWith('I64') or code.startsWith('I69')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('G45') or code.startsWith('I60') or code.startsWith('I61') or code.startsWith('I62') or code.startsWith('I63') or code.startsWith('I64') or code.startsWith('I69')))).exists())"
                     }
                   },
                   {
@@ -27458,7 +27474,7 @@
                     "valueExpression": {
                       "name": "evidence12",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('G20')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('G20')))).exists())"
                     }
                   },
                   {
@@ -27466,7 +27482,7 @@
                     "valueExpression": {
                       "name": "evidence13",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('F00') or code.startsWith('F01') or code.startsWith('F02') or code.startsWith('F03') or code.startsWith('G30') or code.startsWith('G31')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('F00') or code.startsWith('F01') or code.startsWith('F02') or code.startsWith('F03') or code.startsWith('G30') or code.startsWith('G31')))).exists())"
                     }
                   },
                   {
@@ -27474,7 +27490,7 @@
                     "valueExpression": {
                       "name": "evidence14",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('G35') or code.startsWith('G40') or code.startsWith('G41') or code.startsWith('G43')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('G35') or code.startsWith('G40') or code.startsWith('G41') or code.startsWith('G43')))).exists())"
                     }
                   },
                   {
@@ -27482,7 +27498,7 @@
                     "valueExpression": {
                       "name": "evidence15",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E10')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('E10')))).exists())"
                     }
                   },
                   {
@@ -27490,7 +27506,7 @@
                     "valueExpression": {
                       "name": "evidence16",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E11')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('E11')))).exists())"
                     }
                   },
                   {
@@ -27498,7 +27514,7 @@
                     "valueExpression": {
                       "name": "evidence17",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E03') or code.startsWith('E05')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('E03') or code.startsWith('E05')))).exists())"
                     }
                   },
                   {
@@ -27506,7 +27522,7 @@
                     "valueExpression": {
                       "name": "evidence18",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('N03') or code.startsWith('N04') or code.startsWith('N05') or code.startsWith('N07') or code.startsWith('N08') or code.startsWith('N11') or code.startsWith('N18') or code.startsWith('N19')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('N03') or code.startsWith('N04') or code.startsWith('N05') or code.startsWith('N07') or code.startsWith('N08') or code.startsWith('N11') or code.startsWith('N18') or code.startsWith('N19')))).exists())"
                     }
                   },
                   {
@@ -27514,7 +27530,7 @@
                     "valueExpression": {
                       "name": "evidence19",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('K21') or code.startsWith('K25') or code.startsWith('K26') or code.startsWith('K27')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('K21') or code.startsWith('K25') or code.startsWith('K26') or code.startsWith('K27')))).exists())"
                     }
                   },
                   {
@@ -27522,7 +27538,7 @@
                     "valueExpression": {
                       "name": "evidence20",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('K50') or code.startsWith('K51') or code.startsWith('K58')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('K50') or code.startsWith('K51') or code.startsWith('K58')))).exists())"
                     }
                   },
                   {
@@ -27530,7 +27546,7 @@
                     "valueExpression": {
                       "name": "evidence21",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('K70') or code.startsWith('K71') or code.startsWith('K72') or code.startsWith('K73') or code.startsWith('K74') or code.startsWith('K75') or code.startsWith('K76') or code.startsWith('K77')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('K70') or code.startsWith('K71') or code.startsWith('K72') or code.startsWith('K73') or code.startsWith('K74') or code.startsWith('K75') or code.startsWith('K76') or code.startsWith('K77')))).exists())"
                     }
                   },
                   {
@@ -27538,7 +27554,7 @@
                     "valueExpression": {
                       "name": "evidence22",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('J44')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('J44')))).exists())"
                     }
                   },
                   {
@@ -27546,7 +27562,7 @@
                     "valueExpression": {
                       "name": "evidence23",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('J45') or code.startsWith('J46') or code.startsWith('J84')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('J45') or code.startsWith('J46') or code.startsWith('J84')))).exists())"
                     }
                   },
                   {
@@ -27554,7 +27570,7 @@
                     "valueExpression": {
                       "name": "evidence24",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('F32') or code.startsWith('F33')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('F32') or code.startsWith('F33')))).exists())"
                     }
                   },
                   {
@@ -27562,7 +27578,7 @@
                     "valueExpression": {
                       "name": "evidence25",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('F41')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('F41')))).exists())"
                     }
                   },
                   {
@@ -27570,7 +27586,7 @@
                     "valueExpression": {
                       "name": "evidence26",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('L40')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('L40')))).exists())"
                     }
                   },
                   {
@@ -27578,7 +27594,7 @@
                     "valueExpression": {
                       "name": "evidence27",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('E66')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('E66')))).exists())"
                     }
                   },
                   {
@@ -27586,7 +27602,7 @@
                     "valueExpression": {
                       "name": "evidence28",
                       "language": "text/fhirpath",
-                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.1' and (code.startsWith('G93.3')))).exists())"
+                      "expression": "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('G93.3')))).exists())"
                     }
                   },
                   {
@@ -37850,7 +37866,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%conditions"
+                      "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                     }
                   },
                   {
@@ -37980,7 +37996,7 @@
                         "valueExpression": {
                           "name": "evidence",
                           "language": "text/fhirpath",
-                          "expression": "%conditions"
+                          "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                         }
                       },
                       {
@@ -51552,7 +51568,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%conditions"
+                      "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                     }
                   },
                   {
@@ -51682,7 +51698,7 @@
                         "valueExpression": {
                           "name": "evidence",
                           "language": "text/fhirpath",
-                          "expression": "%conditions"
+                          "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                         }
                       },
                       {
@@ -79436,7 +79452,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%conditions"
+                      "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                     }
                   },
                   {
@@ -80224,7 +80240,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A11CC')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists())"
                     }
                   },
                   {
@@ -83216,7 +83232,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%conditions"
+                      "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                     }
                   },
                   {
@@ -84004,7 +84020,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A11CC')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists())"
                     }
                   },
                   {

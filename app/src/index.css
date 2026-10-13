@@ -624,3 +624,11 @@ fieldset[aria-invalid="true"] {
   border-radius: 6px;
   font-size: 0.75rem;
 }
+
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}

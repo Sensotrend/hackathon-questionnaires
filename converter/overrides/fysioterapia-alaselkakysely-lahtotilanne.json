@@ -83,10 +83,11 @@
       }
     },
     "36c778a4-7022-470d-a87c-40f590f7133b": {
-      "$comment": "Basic diseases: the names of the active diagnoses",
+      "$comment": "Basic diseases: the names of the long-term diagnoses",
       "populate": {
         "list": {
-          "in": "conditions"
+          "in": "conditions",
+          "longTerm": true
         }
       }
     },

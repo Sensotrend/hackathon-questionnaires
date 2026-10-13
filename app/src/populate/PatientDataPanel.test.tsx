@@ -80,3 +80,21 @@ describe("the patient data panel", () => {
     expect(responseJson().subject).toBeUndefined();
   });
 });
+
+describe("the sample patients", () => {
+  it("are offered, and one loads with a click", async () => {
+    const user = userEvent.setup();
+    const { readFileSync } = await import("node:fs");
+    const { resolve } = await import("node:path");
+    const { vi } = await import("vitest");
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => new Response(readFileSync(resolve(process.cwd(), "../samples/bundles/neuvola-eetu.json"), "utf8"))),
+    );
+    render(<Harness />);
+    expect(screen.getAllByRole("button", { name: /Maija|Aino|Eetu|Pekka/ })).toHaveLength(4);
+    await user.click(screen.getByRole("button", { name: "Eetu, 2 v (lastenneuvola)" }));
+    expect(screen.getByText("Eetu Esimerkki, syntynyt 2024-06-01, 010624A951B")).toBeInTheDocument();
+    vi.unstubAllGlobals();
+  });
+});

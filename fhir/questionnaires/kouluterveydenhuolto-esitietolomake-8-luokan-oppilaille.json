@@ -3102,7 +3102,7 @@
               "valueExpression": {
                 "name": "evidence",
                 "language": "text/fhirpath",
-                "expression": "%conditions"
+                "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
               }
             },
             {
@@ -3232,7 +3232,7 @@
                   "valueExpression": {
                     "name": "evidence",
                     "language": "text/fhirpath",
-                    "expression": "%conditions"
+                    "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
                   }
                 },
                 {

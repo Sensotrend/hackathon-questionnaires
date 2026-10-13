@@ -618,7 +618,7 @@
               "valueExpression": {
                 "name": "evidence",
                 "language": "text/fhirpath",
-                "expression": "%conditions"
+                "expression": "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or (extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and category.coding.where(code = 'problem-list-item').exists()))"
               }
             },
             {
@@ -1406,7 +1406,7 @@
               "valueExpression": {
                 "name": "evidence",
                 "language": "text/fhirpath",
-                "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where((system = 'urn:oid:1.2.246.537.6.32' and (code.startsWith('A11CC')))).exists())"
+                "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists())"
               }
             },
             {

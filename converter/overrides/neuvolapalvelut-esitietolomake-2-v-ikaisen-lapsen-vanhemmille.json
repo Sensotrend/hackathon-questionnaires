@@ -2,10 +2,11 @@
   "$comment": "Population (milestone 10): only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). Collections: active Conditions, active AllergyIntolerances, active MedicationStatements and MedicationRequests (medicationCodeableConcept only), completed Immunizations, final Observations.",
   "items": {
     "0645be3b-6853-4985-9fce-31c9426230b9": {
-      "$comment": "Long-term illness (a free-text question): the names of the active diagnoses",
+      "$comment": "Long-term illness (a free-text question): the names of the long-term diagnoses",
       "populate": {
         "list": {
-          "in": "conditions"
+          "in": "conditions",
+          "longTerm": true
         }
       }
     },

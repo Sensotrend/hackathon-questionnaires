@@ -269,7 +269,12 @@ The patient data is expected to follow the Finnish national FHIR specifications,
 - **Questionnaire and QuestionnaireResponse profiles (checked in milestone 9).** FinnishCore 2.0.0 has none. Kanta PHR has the Finnish PHR Questionnaire and QuestionnaireResponse profiles (1.1.0, R4). [Kanta's developer page](https://kanta.fi/en/system-developers/questionnaires) (updated 14.11.2023) says the R4 versions are not yet in production and no application uses them yet.
   - **Questionnaire profile: not adopted.** It requires a `code` from the Finnish PHR Questionnaire Code value set, which is assigned per questionnaire, and outside sandboxes only Kela stores Questionnaires in Kanta PHR. It also says `language` must be left out when one resource holds several languages, whereas ours declare `fi` and carry sv/en translations. Our Questionnaires therefore don't claim the profile. They already have its other required elements: url, identifier, version, name, title, status, date, description, item.
   - **QuestionnaireResponse profile: followed where possible.** It requires `language`, a narrative (`text`) with the questions and answers, one globally unique `identifier`, `questionnaire`, `status` (not `entered-in-error`), `subject` (a Patient in Kanta PHR), `authored` and `source`. The app's response has all of these, but `subject`/`source` only once patient data identifies the person, and `authored` only once the response is completed. It doesn't set `meta.profile`, since the subject isn't a Kanta PHR Patient.
-- **Code systems.** Population value sets list the **Finnish national codes from THL's code server** (Koodistopalvelu): the Finnish ICD-10 edition for diagnoses, THL's vaccine codes for immunizations, ATC (Fimea) for medications, and the measurement codes Kanta PHR uses. Where Finnish data commonly also carries international codes (LOINC, SNOMED CT), they are listed alongside, so Bundles coded either way are matched. Every code-system URI and OID is looked up from the THL code server or the published IGs when the mapping is written, never typed from memory, and the source is noted next to it in the override file.
+- **Code systems (as found in milestone 10).** The URIs come from FinnishCore 2.0.0 and THL's code server. The codes are checked by `npm run verify-codes` against THL's code server REST API (`/codeserver/csapi/v8`), tx.fhir.org (LOINC) and the Nordic server (SNOMED CT, Finnish edition):
+  - **Diagnoses: Finnish ICD-10, `urn:oid:1.2.246.537.6.1`** (version 1999), as in FinnishCore's Reason for Care profile. It marks codes with `#` and `*` (N03#, K77*, K77.0*B25.1) and has 5-character codes (J30.10), so mappings name categories that match as prefixes. Some WHO codes don't exist in it (D68.5, D68.6).
+  - **Medicines and vaccines: ATC, `urn:oid:1.2.246.537.6.32`** (Fimea), prefix-matched. FinnishCore's own examples also code ATC as `http://www.whocc.no/atc`, so both are matched; likewise `http://hl7.org/fhir/sid/icd-10` for ICD-10 categories.
+  - **Measurements: LOINC, and THL's FinLOINC `urn:oid:1.2.246.537.6.96`** (LOINC's codes with Finnish names), both on each measurement item.
+  - **Permanence of a diagnosis:** FinnishCore's `condition-permanence` extension (THL `urn:oid:1.2.246.537.5.40003`: PYS permanent, KER time-limited, ALU preliminary) decides "long-term".
+  - **SNOMED CT is not used for matching.** Finnish diagnosis data is ICD-10, and matching a SNOMED concept's descendants needs subsumption from a terminology server, which the local queries don't have. THL's vaccine codes (`.6.610`) aren't used either, since FinnishCore's Immunization slices ATC and VNR.
 - **Validation.** The sample Bundles (§7.6) are validated with the FHIR Validator with the FinnishCore and Kanta PHR packages loaded, so the test data is realistic Finnish data and not just valid R4.
 
 ### 7.4 Rules
@@ -285,7 +290,7 @@ Every pre-filled answer gets a "from patient data" badge showing its source reso
 
 ### 7.6 Sample data
 
-`samples/bundles/` holds **synthetic** patients only, conforming to FinnishCore and using personal identity codes from the test range (individual number 900–999): a pregnant adult for the maternity form, an 8th-grade pupil, a 2-year-old with a parent as `RelatedPerson`, and an adult for the physiotherapy form. Each Bundle is designed to exercise both population paths, including deliberate edge cases: an out-of-period Observation, the wrong unit, an inactive Condition, and two Patients. No real patient data is ever committed.
+`samples/bundles/` holds **synthetic** patients only, conforming to FinnishCore 2.0.0 (validated) and using personal identity codes from the test range (individual number 900–999, with correct check characters). Built in milestone 10: a pregnant adult for the maternity form, an 8th-grade pupil, a 2-year-old with a parent as `RelatedPerson`, and an adult for the physiotherapy form. Each Bundle is designed to exercise both population paths, including deliberate edge cases: an out-of-period Observation, the wrong unit, an inactive Condition, and two Patients. No real patient data is ever committed.
 
 ### 7.7 Mapping coverage (milestone 10)
 
@@ -483,3 +488,49 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - `npm run validate` (30 files with the new definition): 0 errors.
   - A filled-in response checked separately with the validator found the narrative missing `lang`/`xml:lang`, now fixed. It also confirmed that a SNOMED code with a Finnish display is an error. **For milestone 10:** answer options keep their local codes; national codes go in the matching, not in the answers.
   - In the browser, the test questionnaire and Bundle were loaded through the file inputs and the patient chosen. The fill gave 9 answers with badges and sources and the 3 expected skips, with no errors.
+
+### Milestone 10 — Population mappings ✅
+
+- **10a: converter support.**
+  - Item overrides take `code` + `observationLinkPeriod` and a `populate` rule:
+    - `answer` + `when`: a single-choice option when there is evidence
+    - `list`: the names of the evidence, for a text question
+    - `options`: each option of a repeating question that has evidence
+    - `expression`: free FHIRPath
+  - Evidence is a collection: active `conditions`; `conditionHistory` (every condition but refuted ones); active `allergies` and `medications` (MedicationStatement and MedicationRequest, `medicationCodeableConcept` only); completed `immunizations`; final `observations`. It can be narrowed by codes (ICD-10 and ATC as prefixes, under their aliases), `longTerm`, or a FHIRPath `where`, and several kinds can be combined.
+  - The converter writes the SDC launch context, collection variables (`x-fhir-query`, then the resources out of the searchset), an item-level `evidence` variable, and an `initialExpression`. Because the evidence is a variable, the sources of an answer are exactly the records that matched.
+  - Option texts are resolved to their codes, and a rule that doesn't fit the question is an error.
+  - `npm run verify-codes` writes `fhir/terminology-check.md`. Override codes are checked as prefixes and sample codes exactly; declared displays must match the source.
+- **10b: mappings.** 42 questions in the 7 pre-visit forms (every rule has a `$comment` in its override file):
+  - **Maternity:** height and pre-pregnancy weight, the last period, previous pregnancy (parity > 0) and number of births, 11 illness options by ICD-10 plus allergies, varicella (vaccination or a chickenpox diagnosis at any time), MMR, prescribed medication, folic acid, vitamin D, calcium, B12, multivitamins, and the contact person's name and phone.
+  - **Physiotherapy:** height, weight, a list of long-term diagnoses, and 28 of the 32 checklist options.
+  - **School and student forms:** long-term illness, allergies and medication, each with its "which?".
+  - **Child health clinic:** illnesses and allergies as text, and vitamin D.
+  - **Rule: only positive evidence fills an answer.** An absence of records never answers "no", "none" or "no illnesses".
+  - **Not mapped, with the reason in the file:** over-the-counter medication, "other vaccinations up to date", sexually transmitted infections, congenital malformations and cancer (too wide to list), "other …" options, thrombophilia (no such codes in the Finnish ICD-10), gravidity (may include the current pregnancy), vitamin D frequency.
+- **10c: samples, checks, app.**
+  - **Four sample Bundles:**
+    - Maija, pregnant
+    - Aino, 14
+    - Eetu, 2, with his mother as RelatedPerson
+    - Pekka and Seppo together, which needs the patient choice
+  - **Their edge cases:** an out-of-period height, an older weight, a time-limited (KER) diagnosis, a resolved chickenpox that must count for varicella, a resolved asthma that must not count as active, ATC under WHO's URI, a height in inches.
+  - **Checks:** `npm run validate` covers them with FinnishCore loaded. Two more warning kinds are accepted with reasons: THL code systems unknown to the validator, and observations without a performer.
+  - **In the app:** the panel offers the samples as one-click links, labelled in three languages and marked as made-up data.
+  - **Sources:** a value computed from the patient's own details cites the Patient.
+- **Found while doing this, and fixed:**
+  - Displays I had written into the samples from memory were wrong (e.g. M54.5 is "Lanneselän kipu"), and J30.1 isn't a recordable Finnish code (J30.10 is). The verifier now requires exact codes for data.
+  - Thrombophilia codes don't exist in the Finnish edition.
+  - A resolved chickenpox would have been missed by the active-only collection, hence `conditionHistory`.
+- Verified:
+  - 111 converter and 117 app tests pass. The end-to-end tests fill each mapped form from its sample with fixed "now" and assert every answer and its sources:
+    - maternity from Maija: 13 answers, nothing filled without evidence
+    - 8th grade from Aino: the time-limited ear infection doesn't count as long-term
+    - physiotherapy from Pekka: the resolved asthma isn't listed; Seppo's 70 in is 177.8 cm
+    - the child forms from Eetu
+  - `npm run verify-codes`: 247 code uses, 0 problems. `npm run validate`: 34 files, 0 errors, no unaccepted warning.
+  - In the browser, the maternity form, Maija by one click, and Fill gave 13 answers with their sources and no errors.
+- **Limits:**
+  - "Long-term" relies on FinnishCore's permanence mark or the problem list.
+  - `medicationReference` isn't resolved.
+  - The samples' dates are fixed around 2026-10-13, so with the real clock the observation-based answers fall out of their periods in time: the last period after 10 months, the other measurements after 1–5 years. The tests use a fixed "now".

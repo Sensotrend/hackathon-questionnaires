@@ -31,10 +31,24 @@ describe("evidenceExpression", () => {
       }),
     ).toBe(
       "%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(" +
-        `(system = '${ICD10}' and (code.startsWith('E10') or code.startsWith('E11'))) or ` +
-        "(system = 'http://snomed.info/sct' and (code = '73211009'))).exists()).where(onset.exists())",
+        `((system = '${ICD10}' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('E10') or code.startsWith('E11'))) or ` +
+        "((system = 'http://snomed.info/sct') and (code = '73211009'))).exists()).where(onset.exists())",
     );
     expect(evidenceExpression({ in: "allergies" })).toBe("%allergies");
+  });
+
+  it("matches ATC under WHO's URI too", () => {
+    expect(evidenceExpression({ in: "medications", codes: { [ATC]: ["A11CC"] } })).toContain(
+      `(system = '${ATC}' or system = 'http://www.whocc.no/atc')`,
+    );
+  });
+
+  it("keeps long-term conditions: marked permanent, or unmarked on the problem list", () => {
+    expect(evidenceExpression({ in: "conditions", longTerm: true })).toBe(
+      "%conditions.where(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').value.code = 'PYS' or " +
+        "(extension.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence').empty() and " +
+        "category.coding.where(code = 'problem-list-item').exists()))",
+    );
   });
 });
 

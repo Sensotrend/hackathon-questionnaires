@@ -11,5 +11,8 @@ export const OVERRIDES_DIR = `${repoRoot}converter/overrides/`;
 /** Where the generated FHIR resources and reports go (§5.7 of the plan). */
 export const FHIR_DIR = `${repoRoot}fhir/`;
 
+/** Synthetic patient data for pre-population (plan §7.6). */
+export const SAMPLES_DIR = `${repoRoot}samples/bundles/`;
+
 /** The HL7 FHIR Validator; not committed, see the README. */
 export const VALIDATOR_JAR = `${repoRoot}tools/validator_cli.jar`;

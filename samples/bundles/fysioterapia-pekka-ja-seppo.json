@@ -1,0 +1,496 @@
+{
+  "resourceType": "Bundle",
+  "id": "fysioterapia-pekka-ja-seppo",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "type": "collection",
+  "timestamp": "2026-10-13T12:00:00+03:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:283bdb90-07ab-56e7-b2db-97d2f773d0e3",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pekka",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.246.21",
+            "value": "231168-978T"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Esimerkki",
+            "given": [
+              "Pekka"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1968-11-23"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8e2f058-d81f-50f3-8ea0-69aa4fa2bdec",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "pekka-height",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3138-5",
+              "display": "Pituus, ilmoitettu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:283bdb90-07ab-56e7-b2db-97d2f773d0e3"
+        },
+        "effectiveDateTime": "2026-08-01",
+        "valueQuantity": {
+          "value": 182,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d85e853f-c0dd-52b4-b794-c589bd4e2970",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "pekka-weight",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3141-9",
+              "display": "Paino, mitattu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:283bdb90-07ab-56e7-b2db-97d2f773d0e3"
+        },
+        "effectiveDateTime": "2026-09-20",
+        "valueQuantity": {
+          "value": 91.4,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ae8f736d-3dc5-5844-bbf8-c74276b0e685",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "pekka-weight-2024",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3141-9",
+              "display": "Paino, mitattu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:283bdb90-07ab-56e7-b2db-97d2f773d0e3"
+        },
+        "effectiveDateTime": "2024-09-20",
+        "valueQuantity": {
+          "value": 95,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8832fe5f-f203-5d6a-990e-e0a3ee924d37",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "pekka-hypertension",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "PYS",
+              "display": "Pysyväisluonteinen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "I10",
+              "display": "Essentiaalinen (primaarinen) verenpainetauti"
+            }
+          ],
+          "text": "Verenpainetauti"
+        },
+        "subject": {
+          "reference": "urn:uuid:283bdb90-07ab-56e7-b2db-97d2f773d0e3"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b61a9e69-d86e-5a2d-adde-8d2484991706",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "pekka-diabetes",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "PYS",
+              "display": "Pysyväisluonteinen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "E11.9",
+              "display": "Aikuistyypin diabetes ilman komplikaatioita"
+            }
+          ],
+          "text": "Tyypin 2 diabetes"
+        },
+        "subject": {
+          "reference": "urn:uuid:283bdb90-07ab-56e7-b2db-97d2f773d0e3"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:96e5faed-af30-5bb6-98f2-a0f951a79810",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "pekka-back-pain",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "M54.5",
+              "display": "Lanneselän kipu"
+            }
+          ],
+          "text": "Alaselkäkipu"
+        },
+        "subject": {
+          "reference": "urn:uuid:283bdb90-07ab-56e7-b2db-97d2f773d0e3"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:be7f78f7-53c2-5034-ae58-07b43693cfbe",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "pekka-asthma",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "J45.9",
+              "display": "Määrittämätön astma"
+            }
+          ],
+          "text": "Lapsuusiän astma"
+        },
+        "subject": {
+          "reference": "urn:uuid:283bdb90-07ab-56e7-b2db-97d2f773d0e3"
+        },
+        "abatementString": "parantunut"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4007d95e-3227-5675-96ba-89b542f432a9",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "seppo",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.246.21",
+            "value": "300159-990A"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Esimerkki",
+            "given": [
+              "Seppo"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1959-01-30"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ff5e1d5c-902b-5156-87a4-7077fa350bd9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "seppo-height",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3138-5",
+              "display": "Pituus, ilmoitettu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:4007d95e-3227-5675-96ba-89b542f432a9"
+        },
+        "effectiveDateTime": "2026-07-01",
+        "valueQuantity": {
+          "value": 70,
+          "unit": "[in_i]",
+          "system": "http://unitsofmeasure.org",
+          "code": "[in_i]"
+        }
+      }
+    }
+  ]
+}

@@ -183,6 +183,12 @@ export function fromExpression(
     for (const resource of variableResources(expression.expression, env)) {
       if (resource.resourceType !== "Patient") sources.set(`${resource.resourceType}/${resource.id}`, answerSource(resource));
     }
+    // A value computed from the patient's own details (a contact's name and
+    // relationship) comes from the Patient, when nothing else is cited.
+    const patient = env.patient as FhirResource | undefined;
+    if (sources.size === 0 && patient && /%patient\b/.test(expression.expression)) {
+      sources.set(`Patient/${patient.id}`, answerSource(patient));
+    }
   }
   if (!item.repeats && answers.length > 1) {
     return { skipped: `initialExpression gave ${answers.length} different values for a question with one answer` };
