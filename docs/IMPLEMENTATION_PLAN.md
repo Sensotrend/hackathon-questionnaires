@@ -535,7 +535,7 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - `medicationReference` isn't resolved.
   - The samples' dates are fixed around 2026-10-13, so with the real clock the observation-based answers fall out of their periods in time: the last period after 10 months, the other measurements after 1–5 years. The tests use a fixed "now".
 
-### Milestone 11 — Polish (in progress)
+### Milestone 11 — Polish ✅
 
 - **11a: accessibility.** axe-core 4.11.0 runs in the tests (`app/src/a11y.test.tsx`) over the list, all 14 questionnaires, a form showing its errors, and a form filled in from a sample with a source and the response JSON open. jsdom can't check colour contrast, so axe also ran in the browser, with contrast, in light and dark mode, on desktop and at 375 px.
   - **Fixed:**
@@ -561,3 +561,26 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
     - it fills a `date` question only from an Observation's `valueDate`, which R4 Observations don't have, so the date of the last period stays empty there (ours converts `valueDateTime`)
     - it keeps a converted quantity's significant digits: Seppo's 70 in is 180 cm there and 177.8 cm here
     - its patient-scoped searches go through fhirclient's `client.patient.request`, so the mock provides that
+- **11c, continued: public demo sites, with the Questionnaires only** (as agreed: never patient data, not even the synthetic samples).
+  - **CSIRO Smart Forms playground** (smartforms.csiro.au, renderer 1.5.0):
+    - PHQ-9: renders, and computes 27 from our `calculatedExpression` with every highest answer, the same as ours and LHC-Forms'.
+    - The maternity form (a Finnish-only copy, since the playground needs no translations): renders with sections; follow-ups hidden until "Kyllä" is chosen; retyped questions as number fields with their units.
+    - It shows the units as UCUM codes ("wk", "h"), because it doesn't read our translations of the unit display; our app shows "viikkoa", "tuntia". The question texts already name the unit.
+    - Not pre-populated there: its population would ask the playground's own FHIR server, not our samples.
+    - The playground keeps the editor's contents in local storage; that was cleared afterwards.
+  - **Public LHC-Forms demo: not used.** The local run used the same library (44.1.0) and went further (pre-population).
+  - **Getting files in:** the playground can't fetch from the local dev server across origins, and opening the dev server to other origins would expose the repository. So the JSON was handed to the page directly, gzip-compressed, in SHA-256-checked chunks. A first, unchecked attempt failed on a transcription error, which is why the chunks are checked.
+- **11d: README.** Rewritten as a complete guide: what the project does, getting started (including pre-populating from a sample), the repository, the scripts, how the pieces fit, the validator, the cross-check, and the known limits.
+- Verified: `npm run check` (111 converter and 138 app tests) and `npm run validate` (34 files, 0 errors) pass; axe finds no violations in the tests or in the browser.
+
+## 11. Open items
+
+Things the project knowingly leaves for someone to decide or do:
+
+- **Clinical review** of the pre-population mappings (`converter/overrides/`), especially which ICD-10 categories count for each illness option, and of the Swedish and English texts the overrides correct.
+- **Interpretation bands:** the exports' score bands cover the whole range, so they interpret nothing. Real cut-offs (e.g. PHQ-9's 5/10/15/20) would have to come from the instruments' owners.
+- **Required free-text questions:** the source makes most free-text questions in the pre-visit forms required. Kept as in the source; easy to relax by override if it's too strict in practice.
+- **BDI version:** BDI-21 has no LOINC code, because the export doesn't say whether it is BDI-I or BDI-II.
+- **Kanta PHR:** our Questionnaires can't carry Kanta's Questionnaire profile (a code from Kanta's value set, published by Kela). The responses follow the QuestionnaireResponse profile where possible, but don't claim it.
+- **Sample dates:** the samples are fixed around 2026-10-13, so they should be refreshed if the demo is used much later.
+- **Screen readers:** checked with axe-core, not yet tested with a screen reader by a person.
