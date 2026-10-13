@@ -385,3 +385,30 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - Upper-secondary health check: the control character (U+0002) stripped automatically from a sv text
   - Found by scanning all texts for sv or en identical to fi, extra languages, and control characters. The conversion report lists 36 notes in all.
 - Verified: 81 tests pass. New tests cover the fixes (each override form and each rejection), the CodeSystem (also checked against every answer option of every real Questionnaire), the report, the validator output parsing and summary, and the writer, which leaves `validation.md` alone. `npm run validate` passes.
+
+### Milestone 6 — Renderer basics ✅
+
+- **List:** `app/` fetches `fhir/questionnaires/index.json` as a separate asset (3.5 MB, 211 kB gzipped; the JavaScript is 74 kB gzipped) and lists the questionnaires with title, first line of the description, kind and question count. Kind is care plan from `useContext`, screening if the questionnaire has score items, pre-visit otherwise.
+- **Opening files:** the list can also open any Questionnaire, or a Bundle of them, from a file.
+- **Routing:** a `#/q/<id>` hash route; no router library. A new page scrolls to the top.
+- **Language:** a fi / sv / en switch for the app's texts and the questionnaire texts (translation extensions, falling back to the base text). It is remembered in `localStorage` (guarded, since storage may be unavailable). The first default comes from the browser's language, then Finnish. Switching keeps the answers.
+- **Rendering every item type:**
+  - group as a section with a heading; display as a paragraph; line breaks kept
+  - choice as radio buttons, or check boxes when repeating, or a drop-down when the item control says so (or more than 10 options without one); open-choice adds "Other"
+  - string, url, text (textarea), date, dateTime, time, boolean (yes/no)
+  - integer and decimal as text fields that keep what is typed until it's a valid number; a slider when the item control says so and a range is given. An unanswered slider shows "–" and a dimmed thumb, and gets a Clear button once answered.
+  - calculated scores as a read-only output with the scale (the value comes in milestone 7)
+  - anything else is named as unsupported
+- **Accessibility:** choices are `fieldset`/`legend`, single controls have labels, and required questions show `*` with the word ("pakollinen") for screen readers.
+- **State:** the answers live in a reducer keyed by `linkId` (`app/src/renderer/state.ts`).
+- **Not yet (milestone 7):** follow-ups are always shown, nothing is validated, scores show "–", and there is no QuestionnaireResponse.
+- Verified:
+  - 35 app tests pass (Vitest + jsdom + Testing Library): the reducer, localization, list classification, every control type and its interactions, language switching keeping answers, App routing, language memory, load errors, and opening files. Every one of the 14 real Questionnaires renders an element for every item in all three languages, with nothing unsupported.
+  - Checked in the browser:
+    - list, navigation, PHQ-9 and maternity forms (8 sections, follow-up blocks, date field)
+    - answering and switching to Finnish keeps the answer
+    - the physiotherapy sliders at 375 px wide with no horizontal scroll
+    - dark mode
+  - Two bugs found in the browser and fixed:
+    - a page opened from far down the list kept its scroll position
+    - the fix's `useEffect(() => window.scrollTo(…))` crashed React, because newer Chromium returns a Promise from `scrollTo`

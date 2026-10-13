@@ -1,23 +1,394 @@
 :root {
-  font-family: system-ui, sans-serif;
+  --bg: #fafaf8;
+  --surface: #ffffff;
+  --text: #1c1c1a;
+  --muted: #5d5d58;
+  --border: #d9d8d2;
+  --accent: #1d5fa8;
+  --accent-text: #ffffff;
+  --accent-soft: #e6eef8;
+  --error: #b42318;
+  --focus: #1d5fa8;
+  --radius: 8px;
+  color-scheme: light;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   line-height: 1.5;
-  color: #1a1a1a;
-  background: #fff;
+  color: var(--text);
+  background: var(--bg);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #eee;
-    background: #161616;
+    --bg: #151515;
+    --surface: #1f1f1e;
+    --text: #ececea;
+    --muted: #a9a9a3;
+    --border: #3a3a37;
+    --accent: #7fb0ea;
+    --accent-text: #0e1b2b;
+    --accent-soft: #1f2d3d;
+    --error: #ff8a80;
+    --focus: #7fb0ea;
+    color-scheme: dark;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background: var(--bg);
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Questionnaire texts keep their line breaks. */
+.text {
+  white-space: pre-line;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.error {
+  color: var(--error);
+}
+
+/* Header */
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.app-title {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.language-switch {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.language-switch button,
+.button,
+.link-button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.language-switch button {
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.language-switch button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
 }
 
 main {
   max-width: 48rem;
   margin: 0 auto;
   padding: 1rem;
+}
+
+/* List */
+
+.intro {
+  margin-top: 0;
+}
+
+.open-file {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent);
+  background: var(--surface);
+}
+
+.button:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.questionnaire-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.card-description {
+  color: var(--muted);
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.badge {
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+/* Form */
+
+.back {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.questionnaire h1 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.description {
+  color: var(--muted);
+}
+
+.group {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.group > h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem;
+}
+
+.group .group {
+  padding: 0.75rem;
+}
+
+.group h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+}
+
+.display {
+  margin: 0 0 1rem;
+}
+
+.question {
+  margin: 0 0 1.25rem;
+}
+
+.question:last-child {
+  margin-bottom: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.question-text {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  padding: 0;
+}
+
+.required {
+  color: var(--error);
+}
+
+.options {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.options-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+}
+
+.option {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  padding: 0.15rem 0;
+  cursor: pointer;
+}
+
+.option input {
+  margin: 0.3rem 0 0;
+  flex: none;
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--accent);
+}
+
+.field input[type="text"],
+.field input[type="url"],
+.field input[type="date"],
+.field input[type="time"],
+.field input[type="datetime-local"],
+.field textarea,
+.field select,
+.other input {
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.55rem;
+  max-width: 100%;
+}
+
+.field textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.field input[inputmode] {
+  width: 8rem;
+  margin-right: 0.5rem;
+}
+
+.other {
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.slider-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.slider-row input[type="range"] {
+  flex: 1 1 12rem;
+  accent-color: var(--accent);
+}
+
+.slider-row input.unanswered {
+  opacity: 0.45;
+}
+
+.slider-value {
+  min-width: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.link-button {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.follow-ups {
+  margin: 0.75rem 0 0 0.4rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent-soft);
+}
+
+.score {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  align-items: baseline;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+}
+
+.score .question-text {
+  margin: 0;
+}
+
+.score-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.score-scale {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.unsupported {
+  color: var(--muted);
 }
