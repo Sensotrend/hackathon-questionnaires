@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LHC-Forms cross-check</title>
+    <!-- Served by the app's dev server (npm run dev) at /@fs/<repo>/crosscheck/lhc-forms.html -->
+    <link rel="stylesheet" href="node_modules/lforms/dist/lforms/webcomponent/styles.css" />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 1rem; }
+      #controls { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: end; margin-bottom: 1rem; }
+      #report { white-space: pre-wrap; font: 0.8rem ui-monospace, monospace; background: #f4f4f4; padding: 0.5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>LHC-Forms cross-check</h1>
+    <p>
+      Renders a converted Questionnaire in LHC-Forms, optionally pre-populated from a sample patient through a FHIR
+      client that answers searches from the sample Bundle (nothing leaves this machine).
+    </p>
+    <div id="controls">
+      <label>Questionnaire <select id="questionnaire"></select></label>
+      <label>Sample <select id="sample"><option value="">(none)</option></select></label>
+      <label>Patient id <input id="patient" size="8" /></label>
+      <button id="render">Render</button>
+    </div>
+    <pre id="report"></pre>
+    <div id="form"></div>
+    <!-- After the body exists: LHC-Forms appends a screen-reader log to it when it loads. -->
+    <script src="node_modules/lforms/dist/lforms/webcomponent/assets/lib/zone.min.js"></script>
+    <script src="node_modules/lforms/dist/lforms/webcomponent/lhc-forms.js"></script>
+    <script src="node_modules/lforms/dist/lforms/fhir/R4/lformsFHIR.min.js"></script>
+    <script type="module">
+      const repo = location.pathname.replace(/\/crosscheck\/lhc-forms\.html$/, "");
+      const questionnaires = [
+        "masennuskysely-phq-9", "lapsen-tai-nuoren-adhd-oirekysely-adhd-rs", "esitietolomake-aitiysneuvola",
+        "fysioterapia-alaselkakysely-lahtotilanne", "kouluterveydenhuolto-esitietolomake-8-luokan-oppilaille",
+        "neuvolapalvelut-esitietolomake-2-v-ikaisen-lapsen-vanhemmille", "alkoholin-kayton-riskit-kysely-audit",
+      ];
+      const samples = { "aitiysneuvola-maija": "maija", "kouluterveys-aino": "aino", "neuvola-eetu": "eetu", "fysioterapia-pekka-ja-seppo": "pekka" };
+      const $ = (id) => document.getElementById(id);
+      for (const slug of questionnaires) $("questionnaire").add(new Option(slug, slug));
+      for (const name of Object.keys(samples)) $("sample").add(new Option(name, name));
+      $("sample").onchange = () => ($("patient").value = samples[$("sample").value] ?? "");
+      const params = new URLSearchParams(location.search);
+      if (params.get("q")) $("questionnaire").value = params.get("q");
+      if (params.get("sample")) { $("sample").value = params.get("sample"); $("patient").value = params.get("patient") ?? samples[params.get("sample")]; }
+
+      /** A FHIR client that answers searches from the loaded resources, like a server would. */
+      function localClient(resources) {
+        const refersTo = (resource, patientId) =>
+          ["subject", "patient"].some((key) => {
+            const ref = resource[key]?.reference ?? "";
+            return ref === `Patient/${patientId}` || ref.endsWith(`/${patientId}`) || ref === `urn:uuid:${resource.__patientUuid}`;
+          });
+        const fullUrls = new Map();
+        return {
+          log: [],
+          getFhirVersion: async () => "4.0.1",
+          async request(url) {
+            this.log.push(url);
+            const [path, search = ""] = String(url).replace(/^.*?\/(?=[A-Z][A-Za-z]+(\?|\/|$))/, "").split("?");
+            const type = path.split("/")[0];
+            const query = new URLSearchParams(search);
+            let found = resources.filter((r) => r.resourceType === type);
+            for (const [name, value] of query) {
+              const tokens = value.split(",");
+              const codeMatches = (codings = []) => tokens.some((t) => { const [s, c] = t.includes("|") ? t.split("|") : [null, t]; return codings.some((x) => x.code === c && (!s || x.system === s)); });
+              if (name === "patient" || name === "subject") found = found.filter((r) => patientOf(r) === value.replace(/^Patient\//, ""));
+              else if (name === "code") found = found.filter((r) => codeMatches((r.code ?? r.vaccineCode ?? r.medicationCodeableConcept)?.coding));
+              else if (name === "status") found = found.filter((r) => tokens.includes(r.status));
+              else if (name === "clinical-status") found = found.filter((r) => codeMatches(r.clinicalStatus?.coding));
+              else if (name === "date") {
+                // ge/gt/le/lt prefixes, as LHC-Forms sends for observationLinkPeriod.
+                const [, prefix = "eq", when] = /^(ge|gt|le|lt|eq)?(.*)$/.exec(value);
+                const compare = { ge: (x) => x >= when, gt: (x) => x > when, le: (x) => x <= when, lt: (x) => x < when, eq: (x) => x.startsWith(when) }[prefix];
+                found = found.filter((r) => r.effectiveDateTime && compare(new Date(r.effectiveDateTime).toISOString()));
+              } else if (name === "_sort" && value === "-date") found = [...found].sort((a, b) => (b.effectiveDateTime ?? "").localeCompare(a.effectiveDateTime ?? ""));
+              else if (name === "_count") found = found.slice(0, Number(value));
+              else this.log.push(`  ignored ${name}=${value}`);
+            }
+            return { resourceType: "Bundle", type: "searchset", total: found.length, entry: found.map((resource) => ({ resource })) };
+          },
+        };
+        function patientOf(resource) {
+          const ref = resource.subject?.reference ?? resource.patient?.reference ?? "";
+          const target = resources.find((r) => r.resourceType === "Patient" && (ref === `Patient/${r.id}` || ref === r.__fullUrl));
+          return target?.id;
+        }
+      }
+
+      async function render() {
+        const report = [];
+        const slug = $("questionnaire").value;
+        const questionnaire = await (await fetch(`${repo}/fhir/questionnaires/${slug}.json`)).json();
+        const options = {};
+        let client;
+        if ($("sample").value) {
+          const bundle = await (await fetch(`${repo}/samples/bundles/${$("sample").value}.json`)).json();
+          const resources = bundle.entry.map((entry) => Object.assign(entry.resource, { __fullUrl: entry.fullUrl }));
+          const patient = resources.find((r) => r.resourceType === "Patient" && r.id === $("patient").value);
+          client = localClient(resources);
+          // fhirclient's patient-scoped API, which LHC-Forms uses for observationLinkPeriod.
+          client.patient = {
+            id: patient.id,
+            read: async () => patient,
+            request: (url) => client.request(`${url}${url.includes("?") ? "&" : "?"}patient=${patient.id}`),
+          };
+          LForms.Util.setFHIRContext(client, { patient });
+          options.prepopulate = true;
+        }
+        $("form").innerHTML = "";
+        const started = performance.now();
+        try {
+          await LForms.Util.addFormToPage(questionnaire, $("form"), options);
+        } catch (error) {
+          report.push(`addFormToPage failed: ${error?.message ?? error}`);
+        }
+        const response = LForms.Util.getFormFHIRData("QuestionnaireResponse", "R4", $("form"));
+        const answers = [];
+        const walk = (items = [], depth = 0) => items.forEach((item) => {
+          if (item.answer) answers.push(`${"  ".repeat(depth)}${item.linkId.slice(0, 8)} ${(item.text ?? "").replace(/\s+/g, " ").slice(0, 50)} = ${item.answer.map((a) => a.valueCoding?.display ?? a.valueDecimal ?? a.valueInteger ?? a.valueString ?? a.valueDate ?? JSON.stringify(a)).join("; ")}`);
+          walk(item.item, depth + 1);
+          (item.answer ?? []).forEach((a) => walk(a.item, depth + 1));
+        });
+        walk(response?.item);
+        report.push(`${slug}: rendered in ${Math.round(performance.now() - started)} ms; ${document.querySelectorAll("#form lhc-item").length} items on the page.`);
+        if (client) report.push(`Requests: ${client.log.length}\n  ${client.log.join("\n  ")}`);
+        report.push(`Answers in LHC-Forms' QuestionnaireResponse (${answers.length}):\n${answers.join("\n")}`);
+        $("report").textContent = report.join("\n\n");
+        window.crosscheck = { response, answers, requests: client?.log ?? [] };
+      }
+      $("render").onclick = render;
+      if (params.get("auto")) render();
+    </script>
+  </body>
+</html>

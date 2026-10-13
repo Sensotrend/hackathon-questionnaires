@@ -83,7 +83,10 @@ describe("population overrides", () => {
     });
     expect(expressions(item(result, 102).extension)).toEqual([
       ["evidence", expect.stringMatching(/^%medications\.where\(.*code\.startsWith\('N07BA'\)/)],
-      ["initial", `iif(%evidence.exists(), '${id(201)}')`],
+      [
+        "initial",
+        `iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '${id(102)}').answerOption.valueCoding.where(code = '${id(201)}'))`,
+      ],
     ]);
     const extensions = result.questionnaire.extension!;
     expect(extensions[0]).toMatchObject({
@@ -135,7 +138,10 @@ describe("population overrides", () => {
     const result = convert({ [id(104)]: { populate: { options: { Astma: { in: "conditions", codes: { [ICD10]: ["J45"] } } } } } });
     expect(expressions(item(result, 104).extension)).toEqual([
       ["evidence1", expect.stringContaining("code.startsWith('J45')")],
-      ["initial", `iif(%evidence1.exists(), '${id(203)}')`],
+      [
+        "initial",
+        `iif(%evidence1.exists(), %questionnaire.repeat(item).where(linkId = '${id(104)}').answerOption.valueCoding.where(code = '${id(203)}'))`,
+      ],
     ]);
   });
 

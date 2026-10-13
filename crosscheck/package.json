@@ -1,0 +1,8 @@
+{
+  "name": "crosscheck",
+  "private": true,
+  "description": "Renders the converted Questionnaires in LHC-Forms (milestone 11): npm install here, then open lhc-forms.html through the app's dev server.",
+  "dependencies": {
+    "lforms": "44.1.0"
+  }
+}

@@ -1842,7 +1842,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '6ddd25a3-3a60-47ab-b916-a67b662ef365')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '886e1458-5df1-41e5-b928-ac4fce486ea9').answerOption.valueCoding.where(code = '6ddd25a3-3a60-47ab-b916-a67b662ef365'))"
               }
             }
           ],
@@ -6257,7 +6257,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '083a07f6-d305-4b91-b3c6-b1aa63487609')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '8120b4a7-739e-441a-870b-1e038331bd60').answerOption.valueCoding.where(code = '083a07f6-d305-4b91-b3c6-b1aa63487609'))"
               }
             }
           ],
@@ -6397,7 +6397,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '6b33ac10-5a46-42b3-992b-3020d18b8048')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '836dd534-f43c-47e5-97d1-783b0a9a3018').answerOption.valueCoding.where(code = '6b33ac10-5a46-42b3-992b-3020d18b8048'))"
               }
             }
           ],
@@ -6537,7 +6537,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), 'd336971b-bdb1-40aa-a833-f19fe5d089b7')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '30aa0618-bae0-4ca5-adf1-04a1c1124fb2').answerOption.valueCoding.where(code = 'd336971b-bdb1-40aa-a833-f19fe5d089b7'))"
               }
             }
           ],
@@ -6677,7 +6677,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), 'a92d577f-23e4-4845-99cd-5d9cae1f4f9b')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '06a41017-dec4-458b-8c87-68000f1b65bc').answerOption.valueCoding.where(code = 'a92d577f-23e4-4845-99cd-5d9cae1f4f9b'))"
               }
             }
           ],
@@ -6817,7 +6817,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '7d9c207f-b794-4641-8f7a-3756c1162193')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = 'f00a0014-256d-4658-a807-8ba7ee872859').answerOption.valueCoding.where(code = '7d9c207f-b794-4641-8f7a-3756c1162193'))"
               }
             }
           ],
@@ -8088,7 +8088,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence1.exists(), 'a8e74cbd-6812-4ae5-a021-92cccd908f2c') | iif(%evidence2.exists(), '797b524a-ce0a-43df-91d9-9ba1d7df576d') | iif(%evidence3.exists(), 'f29b4ed9-9af9-4f9e-afb2-e891607bf514') | iif(%evidence4.exists(), '6c94ba52-7a1c-4f0e-9b70-29eac19c28b9') | iif(%evidence5.exists(), '903298bd-84d7-49c8-ac82-19cc6884c577') | iif(%evidence6.exists(), '8164840a-acb8-4712-a517-0fbcaf17bdae') | iif(%evidence7.exists(), 'fa3aea57-cf5c-4055-9785-173a5b79d9b8') | iif(%evidence8.exists(), '4705d512-703a-45dd-9425-52797122e5e3') | iif(%evidence9.exists(), '64ead24c-7aa4-48e2-b0df-5ca911b819eb') | iif(%evidence10.exists(), '62ed5fe9-862d-4b8a-9c0f-08bfd1b902b9') | iif(%evidence11.exists(), '9fd8dd80-1ed0-4377-bb5f-02f1b0f434b3')"
+                "expression": "iif(%evidence1.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = 'a8e74cbd-6812-4ae5-a021-92cccd908f2c')) | iif(%evidence2.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = '797b524a-ce0a-43df-91d9-9ba1d7df576d')) | iif(%evidence3.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = 'f29b4ed9-9af9-4f9e-afb2-e891607bf514')) | iif(%evidence4.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = '6c94ba52-7a1c-4f0e-9b70-29eac19c28b9')) | iif(%evidence5.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = '903298bd-84d7-49c8-ac82-19cc6884c577')) | iif(%evidence6.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = '8164840a-acb8-4712-a517-0fbcaf17bdae')) | iif(%evidence7.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = 'fa3aea57-cf5c-4055-9785-173a5b79d9b8')) | iif(%evidence8.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = '4705d512-703a-45dd-9425-52797122e5e3')) | iif(%evidence9.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = '64ead24c-7aa4-48e2-b0df-5ca911b819eb')) | iif(%evidence10.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = '62ed5fe9-862d-4b8a-9c0f-08bfd1b902b9')) | iif(%evidence11.exists(), %questionnaire.repeat(item).where(linkId = 'e665d3a7-cc88-4e2b-9821-b93c12bbfecf').answerOption.valueCoding.where(code = '9fd8dd80-1ed0-4377-bb5f-02f1b0f434b3'))"
               }
             }
           ],
@@ -9760,7 +9760,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '55767202-0cbc-43bd-a8c0-cf9aae953ff3')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '49556984-1532-4cac-8574-de5453ccb877').answerOption.valueCoding.where(code = '55767202-0cbc-43bd-a8c0-cf9aae953ff3'))"
               }
             }
           ],
@@ -9937,7 +9937,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '752db804-2346-4d34-aa98-20d9e11846a7')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '0c644616-dbe9-4fea-975a-ed6d4d582842').answerOption.valueCoding.where(code = '752db804-2346-4d34-aa98-20d9e11846a7'))"
               }
             }
           ],
@@ -10660,7 +10660,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '51fd5d86-a466-43ff-96d7-58482eae35a6')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '82b179aa-6845-4160-be9f-01412a09f50f').answerOption.valueCoding.where(code = '51fd5d86-a466-43ff-96d7-58482eae35a6'))"
               }
             }
           ],

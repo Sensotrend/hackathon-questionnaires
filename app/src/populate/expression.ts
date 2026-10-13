@@ -81,7 +81,13 @@ function evaluateTraced(expression: string, env: Environment): Traced[] {
     let resource: FhirResource | undefined;
     for (let current = node; current && typeof current === "object" && "parentResNode" in current; current = current.parentResNode) {
       const data = current.data as FhirResource | undefined;
-      if (data && typeof data === "object" && "resourceType" in data && data.resourceType !== "Bundle") {
+      // The Questionnaire (an option's Coding) and the response so far are no patient data.
+      if (
+        data &&
+        typeof data === "object" &&
+        "resourceType" in data &&
+        !["Bundle", "Questionnaire", "QuestionnaireResponse"].includes(data.resourceType)
+      ) {
         resource = data;
         break;
       }

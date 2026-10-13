@@ -534,3 +534,30 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - "Long-term" relies on FinnishCore's permanence mark or the problem list.
   - `medicationReference` isn't resolved.
   - The samples' dates are fixed around 2026-10-13, so with the real clock the observation-based answers fall out of their periods in time: the last period after 10 months, the other measurements after 1–5 years. The tests use a fixed "now".
+
+### Milestone 11 — Polish (in progress)
+
+- **11a: accessibility.** axe-core 4.11.0 runs in the tests (`app/src/a11y.test.tsx`) over the list, all 14 questionnaires, a form showing its errors, and a form filled in from a sample with a source and the response JSON open. jsdom can't check colour contrast, so axe also ran in the browser, with contrast, in light and dark mode, on desktop and at 375 px.
+  - **Fixed:**
+    - single-choice and yes/no questions are `radiogroup`s, since `aria-required` isn't allowed on a plain group; for check-box groups the legend's "(pakollinen)" says it
+    - sections are no longer landmarks: there are dozens of them, some with the same title (`landmark-unique`)
+    - the list page has an `<h1>`
+    - the scrolling JSON boxes are focusable, named regions (`scrollable-region-focusable`)
+  - **Result:** no violations left.
+- **11b: print view.**
+  - A Print button, and a print-only summary (`PrintSummary.tsx`) in the chosen language: the patient, date and status; the answered questions under their section headings; answers with units and score bands; and which answers came from patient data, with their sources. Unanswered questions are left out.
+  - The summary has the `hidden` attribute and the print styles override it, so on screen it's hidden for assistive technology too. The first version hid it with CSS only, which left 4 tests failing in a commit; fixed in the next one.
+  - Checked in the browser by applying the page's own `@media print` rules on screen.
+  - The print view showed two more source-text errors in the maternity form, now corrected by override: a category name shifted between languages (fi in English, en in Swedish), and an untranslated "Ohje".
+- **11c: cross-check in LHC-Forms 44.1.0, locally** (`crosscheck/`: its own pinned `lforms`; `crosscheck/lhc-forms.html` through the dev server). LHC-Forms is pre-populated through a mock FHIR client that answers searches from a sample Bundle, so nothing leaves the machine.
+  - **Scores:** LHC-Forms evaluates our `calculatedExpression`s with `weight()` itself and gets the same results: PHQ-9 27 with every highest answer; ADHD-RS 27, 27 and 54.
+  - **Population:** LHC-Forms runs our launch context, `x-fhir-query` variables, `observationLinkPeriod` searches and `initialExpression`s with its own engine.
+    - maternity from Maija: 12 of our 13 answers, identical, including the follow-up enabled by a filled answer
+    - physiotherapy from Pekka: 4 of 4
+    - 8th grade from Aino: 4 of 4 (the long-term rule with the permanence extension, and `join`)
+    - 2-year form from Eetu: 3 of 3
+  - **Found and fixed: a conformance gap in my generated expressions.** Choice answers returned the option's code as a string, which our engine accepted leniently. LHC-Forms, rightly per SDC (a value of the item's type), ignored them. They now return the option's Coding from `%questionnaire`, and our engine doesn't count the Questionnaire as a source.
+  - **Differences that are LHC-Forms' behaviour, left as they are:**
+    - it fills a `date` question only from an Observation's `valueDate`, which R4 Observations don't have, so the date of the last period stays empty there (ours converts `valueDateTime`)
+    - it keeps a converted quantity's significant digits: Seppo's 70 in is 180 cm there and 177.8 cm here
+    - its patient-scoped searches go through fhirclient's `client.patient.request`, so the mock provides that

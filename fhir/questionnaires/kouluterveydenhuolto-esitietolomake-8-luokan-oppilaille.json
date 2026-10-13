@@ -3109,7 +3109,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '5d944584-3089-4b7c-a2f4-0bd129e30e47')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '74261e1e-0815-4c2f-9937-2ae06a5d6177').answerOption.valueCoding.where(code = '5d944584-3089-4b7c-a2f4-0bd129e30e47'))"
               }
             }
           ],
@@ -3673,7 +3673,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), 'd42c9d28-937e-4db4-9049-8dfe6964e160')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '7806e00f-02a1-4e2e-a958-ad8325e99fd8').answerOption.valueCoding.where(code = 'd42c9d28-937e-4db4-9049-8dfe6964e160'))"
               }
             }
           ],

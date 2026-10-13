@@ -111,6 +111,15 @@ export interface PopulationContext {
   usesPatient: { value: boolean };
 }
 
+/**
+ * FHIRPath giving the Coding of a choice item's option, taken from the
+ * Questionnaire itself: an initialExpression must give a value of the
+ * item's type (SDC), which for a choice is a Coding, not the code alone.
+ */
+function optionCoding(item: QuestionnaireItem, display: string): string {
+  return `%questionnaire.repeat(item).where(linkId = ${quote(item.linkId)}).answerOption.valueCoding.where(code = ${quote(optionCode(item, display))})`;
+}
+
 /** The option code of a choice item's answer, by the option's Finnish text. */
 function optionCode(item: QuestionnaireItem, display: string): string {
   const matches = (item.answerOption ?? []).filter((option) => option.valueCoding?.display === display);
@@ -144,7 +153,7 @@ export function populateItem(item: QuestionnaireItem, override: ItemOverride, co
       if (item.type !== "choice" || item.repeats) throw new Error(`question ${item.linkId}: "answer" needs a single-choice question`);
       use(rule.when);
       added.push(variable("evidence", anyEvidenceExpression(rule.when)));
-      added.push(initialExpression(`iif(%evidence.exists(), ${quote(optionCode(item, rule.answer))})`));
+      added.push(initialExpression(`iif(%evidence.exists(), ${optionCoding(item, rule.answer)})`));
       described.push(`"${rule.answer}" when there are ${evidenceList(rule.when).map((one) => one.in).join(" or ")} as evidence`);
     } else if ("list" in rule) {
       if (item.type !== "text" && item.type !== "string") throw new Error(`question ${item.linkId}: "list" needs a text question`);
@@ -161,7 +170,7 @@ export function populateItem(item: QuestionnaireItem, override: ItemOverride, co
       const parts = Object.entries(rule.options).map(([display, evidence], index) => {
         use(evidence);
         added.push(variable(`evidence${index + 1}`, anyEvidenceExpression(evidence)));
-        return `iif(%evidence${index + 1}.exists(), ${quote(optionCode(item, display))})`;
+        return `iif(%evidence${index + 1}.exists(), ${optionCoding(item, display)})`;
       });
       added.push(initialExpression(parts.join(" | ")));
       described.push(`options ${Object.keys(rule.options).map((display) => `"${display}"`).join(", ")} by evidence`);

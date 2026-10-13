@@ -1765,7 +1765,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '2bfe76b4-978c-4f5c-bba9-e3c13abe6559')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '9efeeb4b-d734-4f55-ad72-470a33e7f764').answerOption.valueCoding.where(code = '2bfe76b4-978c-4f5c-bba9-e3c13abe6559'))"
               }
             }
           ],
@@ -2016,7 +2016,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), 'b48863f0-9f97-432f-ac82-29aa10152ab5')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '05d7eeee-ccb3-462b-b255-095fdba81336').answerOption.valueCoding.where(code = 'b48863f0-9f97-432f-ac82-29aa10152ab5'))"
               }
             }
           ],
@@ -2394,7 +2394,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), 'b4331498-58d1-4bf0-9b92-49b42a36b788')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = 'f6b4127b-41f0-498c-8d99-47743978aedc').answerOption.valueCoding.where(code = 'b4331498-58d1-4bf0-9b92-49b42a36b788'))"
               }
             }
           ],

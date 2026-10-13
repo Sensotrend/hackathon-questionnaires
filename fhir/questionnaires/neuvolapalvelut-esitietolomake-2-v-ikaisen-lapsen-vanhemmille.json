@@ -1312,7 +1312,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), '44cf180e-67c7-4904-8742-fc340f7a54b8')"
+                "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '61985fb8-bbba-4c07-b417-feb2fa90b692').answerOption.valueCoding.where(code = '44cf180e-67c7-4904-8742-fc340f7a54b8'))"
               }
             }
           ],
