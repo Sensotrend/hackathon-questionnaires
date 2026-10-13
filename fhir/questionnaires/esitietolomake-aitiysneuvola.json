@@ -93,7 +93,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Ohje"
+                "valueString": "Instruktion"
               }
             ]
           },
@@ -106,7 +106,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Ohje"
+                "valueString": "Instruction"
               }
             ]
           }
@@ -1751,7 +1751,7 @@
     },
     {
       "linkId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
-      "text": "Previous pregnancies and childbirths",
+      "text": "Aikaisemmat raskaudet ja synnytykset",
       "_text": {
         "extension": [
           {
@@ -1776,7 +1776,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Tidigare graviditeter och förlossningar"
+                "valueString": "Previous pregnancies and childbirths"
               }
             ]
           }

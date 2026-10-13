@@ -9,6 +9,7 @@ import { enabledAnswers, enabledItems } from "./enable.ts";
 import { focusItem } from "./ids.ts";
 import { issueText } from "./IssueMessage.tsx";
 import { Items } from "./Item.tsx";
+import { PrintSummary } from "./PrintSummary.tsx";
 import { itemLabel } from "./labels.ts";
 import { buildResponse } from "./response.ts";
 import { calculateScores } from "./scores.ts";
@@ -192,6 +193,9 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
             <button type="submit" className="primary">
               {t("done", lang)}
             </button>
+            <button type="button" onClick={() => window.print()}>
+              {t("print", lang)}
+            </button>
             {confirmingReset ? (
               <span className="confirm" role="group" aria-label={t("confirmReset", lang)}>
                 {t("confirmReset", lang)}{" "}
@@ -220,6 +224,13 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
           </div>
         </form>
 
+        <PrintSummary
+          questionnaire={questionnaire}
+          response={response}
+          lang={lang}
+          provenance={state.provenance}
+          patient={patient}
+        />
         <details className="response" open={completed || undefined}>
           <summary>
             {t("response", lang)} · {t("status", lang)}: {t(`status_${response.status as "in-progress" | "completed"}`, lang)}

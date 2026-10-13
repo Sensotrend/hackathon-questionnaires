@@ -1,7 +1,8 @@
 {
   "$comment": [
     "Items: free-text questions whose answer is one number (counts, years, ages, durations, height, weight, doses) are retyped to integer or decimal, with a UCUM unit and generous limits that catch typos. Free-text questions that may hold several values (e.g. twins' birth weights, years of several miscarriages, sleep from–to) or clock times stay free text.",
-    "Population (milestone 10): only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). Collections: active Conditions, active AllergyIntolerances, active MedicationStatements and MedicationRequests (medicationCodeableConcept only), completed Immunizations, final Observations."
+    "Population (milestone 10): only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). Collections: active Conditions, active AllergyIntolerances, active MedicationStatements and MedicationRequests (medicationCodeableConcept only), completed Immunizations, final Observations.",
+    "Texts (found in the print view, milestone 11): the category 'Previous pregnancies and childbirths' has its fi text in English and its en text in Swedish; the fi text is taken from the first question under it ('Aikaisemmat raskaudet ja synnytykset'). The 'Ohje' category is untranslated in sv and en; translated as in the other forms."
   ],
   "items": {
     "49eabd07-47e1-4b34-98d3-f33a52ea5d04": {
@@ -442,6 +443,16 @@
       "populate": {
         "expression": "%patient.contact.first().telecom.where(system = 'phone').value.first()"
       }
+    }
+  },
+  "texts": {
+    "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c": {
+      "fi": "Aikaisemmat raskaudet ja synnytykset",
+      "en": "Previous pregnancies and childbirths"
+    },
+    "7ca2d898-63f9-4cb8-a210-ba170b18e09a": {
+      "sv": "Instruktion",
+      "en": "Instruction"
     }
   }
 }
