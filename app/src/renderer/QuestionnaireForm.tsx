@@ -19,6 +19,8 @@ export function QuestionnaireForm({ questionnaire, lang }: { questionnaire: Ques
   /** When the response was last completed. */
   const [authored, setAuthored] = useState<string>();
   const [confirmingReset, setConfirmingReset] = useState(false);
+  /** Identifies this response: one per opened form (a reset starts a new one). */
+  const [responseId, setResponseId] = useState(() => crypto.randomUUID());
   const summaryRef = useRef<HTMLDivElement>(null);
   /** Counts presses of Done that found issues; each moves focus to the summary once it has rendered. */
   const [failedDone, setFailedDone] = useState(0);
@@ -38,6 +40,7 @@ export function QuestionnaireForm({ questionnaire, lang }: { questionnaire: Ques
     status: completed ? "completed" : "in-progress",
     authored: completed ? authored : undefined,
     scores,
+    id: responseId,
   });
   const shownIssues = new Map(submitted ? issues.map((issue) => [issue.linkId, issue]) : []);
 
@@ -119,6 +122,7 @@ export function QuestionnaireForm({ questionnaire, lang }: { questionnaire: Ques
                     setSubmitted(false);
                     setAuthored(undefined);
                     setConfirmingReset(false);
+                    setResponseId(crypto.randomUUID());
                   }}
                 >
                   {t("reset", lang)}

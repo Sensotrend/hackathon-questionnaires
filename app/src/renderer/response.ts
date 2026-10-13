@@ -2,9 +2,10 @@
 // mirrors the Questionnaire's structure: groups hold their items, and a
 // question's follow-ups go under the answer that enables them.
 
-import type { Questionnaire, QuestionnaireItem, QuestionnaireResponse, QuestionnaireResponseItem } from "fhir/r4";
+import type { Questionnaire, QuestionnaireItem, QuestionnaireResponse, QuestionnaireResponseItem, Reference } from "fhir/r4";
 import { calculatedExpression } from "../fhir/items.ts";
 import { conditionHolds } from "./enable.ts";
+import { responseNarrative } from "./narrative.ts";
 import type { Answers } from "./state.ts";
 
 export interface ResponseOptions {
@@ -13,6 +14,10 @@ export interface ResponseOptions {
   authored?: string;
   /** Values of calculated items, by linkId. */
   scores?: ReadonlyMap<string, number | undefined>;
+  /** A UUID identifying this response; it stays the same while the form is filled in. */
+  id?: string;
+  /** The person the answers are about, once known (from patient data). */
+  subject?: Reference;
 }
 
 /** `answers` must hold only enabled items' answers, and `enabled` the enabled linkIds. */
@@ -53,11 +58,19 @@ export function buildResponse(
   const canonical = questionnaire.url
     ? `${questionnaire.url}${questionnaire.version ? `|${questionnaire.version}` : ""}`
     : undefined;
+  // The elements the Kanta PHR QuestionnaireResponse profile requires (plan
+  // §7.3): language, narrative, identifier, questionnaire, status, subject
+  // (and source) once known, authored once completed.
+  const item = toItems(questionnaire.item);
   return {
     resourceType: "QuestionnaireResponse",
+    language: questionnaire.language ?? "fi",
+    text: responseNarrative(questionnaire.title, item),
+    ...(options.id && { identifier: { system: "urn:ietf:rfc:3986", value: `urn:uuid:${options.id}` } }),
     ...(canonical && { questionnaire: canonical }),
     status: options.status,
+    ...(options.subject && { subject: options.subject, source: options.subject }),
     ...(options.authored && { authored: options.authored }),
-    item: toItems(questionnaire.item),
+    item,
   };
 }

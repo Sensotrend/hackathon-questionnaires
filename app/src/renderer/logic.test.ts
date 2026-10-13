@@ -136,6 +136,8 @@ describe("buildResponse", () => {
     expect(respond({ smoke: [yes, no], amount: [{ valueString: "5" }], always: [{ valueString: "x" }] }, new Map([["score", 3]])))
       .toEqual({
         resourceType: "QuestionnaireResponse",
+        language: "fi",
+        text: { status: "generated", div: expect.stringMatching(/^<div xmlns="http:\/\/www.w3.org\/1999\/xhtml">/) },
         questionnaire: "https://example.org/Questionnaire/q|1",
         status: "in-progress",
         item: [
@@ -168,6 +170,23 @@ describe("buildResponse", () => {
     expect(response.item?.[0]?.item).toEqual([
       { linkId: "smoke", text: "SMOKE", item: [{ linkId: "always", text: "Aina", answer: [{ valueString: "x" }] }] },
     ]);
+  });
+
+  it("carries the identifier, subject and source when given", () => {
+    const enabled = enabledItems(form, {});
+    const subject = { reference: "Patient/p1", display: "Maija Meikäläinen" };
+    const response = buildResponse(form, {}, enabled, { status: "in-progress", id: "1234", subject });
+    expect(response.identifier).toEqual({ system: "urn:ietf:rfc:3986", value: "urn:uuid:1234" });
+    expect(response.subject).toEqual(subject);
+    expect(response.source).toEqual(subject);
+  });
+
+  it("writes every answered question into the narrative, escaped", () => {
+    const response = respond({ smoke: [yes], always: [{ valueString: "<b>x & y</b>" }] });
+    expect(response.text?.div).toBe(
+      '<div xmlns="http://www.w3.org/1999/xhtml"><ul><li><b>Ryhmä</b><ul><li><b>SMOKE</b>: Kyllä' +
+        "<ul><li><b>Aina</b>: &lt;b&gt;x &amp; y&lt;/b&gt;</li></ul></li></ul></li></ul></div>",
+    );
   });
 
   it("does not change the answers in the state", () => {
