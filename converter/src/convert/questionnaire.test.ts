@@ -84,6 +84,7 @@ describe("convertSurvey", () => {
     expect(questionnaire.item?.map(({ linkId, type, text }) => ({ linkId, type, text }))).toEqual([
       { linkId: id(11), type: "group", text: "Ohje" },
       { linkId: id(12), type: "group", text: "Kysymykset" },
+      { linkId: "score-total", type: "decimal", text: "Pisteet" },
     ]);
     expect(questionnaire.item?.[0]?._text?.extension?.map((ext) => ext.extension?.[0]?.valueCode)).toEqual([
       "sv",
@@ -102,6 +103,7 @@ describe("convertSurvey", () => {
       [id(11), "Ohje"],
       [id(12), "Kysymykset"],
       [`${id(11)}-2`, "Ohje"],
+      ["score-total", "Pisteet"],
     ]);
     expect(notes).toEqual(['Category "Ohje" is split into 2 runs, so it became 2 groups with the same title.']);
   });
@@ -114,7 +116,14 @@ describe("convertSurvey", () => {
 
   it("keeps the questions flat with the flat override", () => {
     const { questionnaire, notes } = convertSurvey(source(), { structure: "flat" });
-    expect(questionnaire.item?.map((item) => item.linkId)).toEqual([id(101), id(102), id(104), id(105), id(106)]);
+    expect(questionnaire.item?.map((item) => item.linkId)).toEqual([
+      id(101),
+      id(102),
+      id(104),
+      id(105),
+      id(106),
+      "score-total",
+    ]);
     expect(notes).toHaveLength(1);
   });
 
@@ -135,7 +144,8 @@ describe("convertSurvey", () => {
     const select = itemById(item, id(102));
     expect(select).toMatchObject({ type: "choice", required: true, extension: [radio] });
     expect(select.repeats).toBeUndefined();
-    expect(select.answerOption).toEqual([
+    // The fixture's select is scored; scoring.test.ts covers the score extensions.
+    expect(select.answerOption).toMatchObject([
       { valueCoding: { system: SYSTEM, code: id(201), display: "Kyllä", _display: translations("Ja", "Yes") } },
       { valueCoding: { system: SYSTEM, code: id(202), display: "Ei", _display: translations("Nej", "No") } },
     ]);

@@ -5,6 +5,7 @@ import { answerSystem, BASE, EXT, ITEM_CONTROL_SYSTEM, USAGE_CONTEXT_TYPE_SYSTEM
 import type { Overrides } from "../overrides.ts";
 import type { SourceFile } from "../source/loader.ts";
 import type { Category, Question, Survey } from "../source/schema.ts";
+import { answerScore, scoreItems } from "./scoring.ts";
 import { localize, PRIMARY_LANGUAGE } from "./text.ts";
 
 export interface Conversion {
@@ -56,10 +57,12 @@ export function convertSurvey({ slug, survey }: SourceFile, overrides: Overrides
  */
 function convertStructure(survey: Survey, overrides: Overrides, notes: string[]): QuestionnaireItem[] {
   const toItem = (question: Question) => convertQuestion(question, survey);
+  const flat = overrides.structure === "flat";
+  if (flat) notes.push("No groups (override `structure: flat`): the categories are scoring sub-scales, not sections.");
+  const scores = scoreItems(survey, overrides.scores ?? {}, notes);
 
-  if (overrides.structure === "flat") {
-    notes.push("No groups (override `structure: flat`): the categories are scoring sub-scales, not sections.");
-    return survey.questions.map(toItem);
+  if (flat) {
+    return [...survey.questions.map(toItem), ...scores.map((score) => score.item)];
   }
 
   const runs: { category: Category; questions: Question[] }[] = [];
@@ -75,7 +78,7 @@ function convertStructure(survey: Survey, overrides: Overrides, notes: string[])
   }
 
   const seen = new Map<string, number>();
-  const groups = runs.map(({ category, questions }) => {
+  const groups: QuestionnaireItem[] = runs.map(({ category, questions }) => {
     const count = (seen.get(category.categoryId) ?? 0) + 1;
     seen.set(category.categoryId, count);
     const text = localize(category.name, `category ${category.categoryId}`);
@@ -98,7 +101,16 @@ function convertStructure(survey: Survey, overrides: Overrides, notes: string[])
     if (!seen.has(category.categoryId)) notes.push(`Category "${category.name.fi}" has no questions and was dropped.`);
   }
 
-  return groups;
+  // A category's score goes at the end of its (last) group, right after its
+  // questions; whole-survey scores go at the end.
+  const atEnd: QuestionnaireItem[] = [];
+  for (const { categoryId, item } of scores) {
+    const lastRun = runs.findLastIndex((run) => run.category.categoryId === categoryId);
+    if (categoryId === undefined || lastRun === -1) atEnd.push(item);
+    else groups[lastRun]!.item!.push(item);
+  }
+
+  return [...groups, ...atEnd];
 }
 
 function convertQuestion(question: Question, survey: Survey): QuestionnaireItem {
@@ -141,13 +153,20 @@ function convertQuestion(question: Question, survey: Survey): QuestionnaireItem 
   if (question.answers.length > 0) {
     item.answerOption = question.answers.map((answer) => {
       const display = localize(answer.answerText, `answer ${answer.answerId}`);
-      const valueCoding: Coding = {
+      const valueCoding: Coding = withoutUndefined({
         system: answerSystem(survey.surveyGuid),
         code: answer.answerId,
         display: display.value,
         _display: display.element,
-      };
-      return { valueCoding } satisfies QuestionnaireItemAnswerOption;
+      });
+      // The loader has checked that a scored question scores every answer.
+      const points = question.scoringEnabled
+        ? question.scores.find((score) => score.answerId === answer.answerId)!.points
+        : undefined;
+      if (points === undefined) return { valueCoding } satisfies QuestionnaireItemAnswerOption;
+      const score = answerScore(points);
+      valueCoding.extension = [score.coding];
+      return { extension: [score.option], valueCoding } satisfies QuestionnaireItemAnswerOption;
     });
   }
 

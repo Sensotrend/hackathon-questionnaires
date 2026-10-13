@@ -1,4 +1,43 @@
 {
-  "$comment": "Questionnaire.code checked with CodeSystem/$lookup on tx.fhir.org (LOINC 2.82), 2026-10-13.",
-  "code": [{ "system": "http://loinc.org", "code": "72110-0", "display": "Alcohol Use Disorder Identification Test [AUDIT]" }]
+  "$comment": [
+    "Questionnaire.code checked with CodeSystem/$lookup on tx.fhir.org (LOINC 2.82), 2026-10-13.",
+    "Score titles: in the source the sv titles are shifted by one score (each holds the next score's Finnish category name) and the en titles are Finnish. fi is kept; sv and en are translated here, sv 'Enkätens totalpoäng' as in the PHQ-9 export."
+  ],
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "72110-0",
+      "display": "Alcohol Use Disorder Identification Test [AUDIT]"
+    }
+  ],
+  "scores": {
+    "score-total": {
+      "title": {
+        "fi": "Kyselyn kokonaispistemäärä",
+        "sv": "Enkätens totalpoäng",
+        "en": "Total score"
+      }
+    },
+    "score-44748566-42d8-4051-90fd-200e0b7464fd": {
+      "title": {
+        "fi": "Alkoholin kulutus",
+        "sv": "Alkoholkonsumtion",
+        "en": "Alcohol consumption"
+      }
+    },
+    "score-37651d97-7321-4ede-89ae-52b7981fbdb7": {
+      "title": {
+        "fi": "Alkoholiriippuvuus",
+        "sv": "Alkoholberoende",
+        "en": "Alcohol dependence"
+      }
+    },
+    "score-16ff59b0-7a45-43b5-a580-31d8584e5b9a": {
+      "title": {
+        "fi": "Alkoholin haitat",
+        "sv": "Alkoholrelaterade skador",
+        "en": "Alcohol-related harm"
+      }
+    }
+  }
 }

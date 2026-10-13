@@ -278,6 +278,12 @@
           "required": true,
           "answerOption": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 0
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "17c28d8b-6522-4455-b26c-587453dc297c",
@@ -311,10 +317,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "9a2494bf-c016-47af-b43e-95d781794ca3",
@@ -348,10 +366,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "df04efe6-e4a3-4624-9f5b-718c3d9cc7a5",
@@ -385,10 +415,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "3ecab84a-cfaf-49f7-9653-1064d1dacb1c",
@@ -422,7 +464,13 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ]
               }
             }
           ]
@@ -477,6 +525,12 @@
           "required": true,
           "answerOption": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 0
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "f7f3d91e-ac2c-488d-82aa-eb835295c557",
@@ -510,10 +564,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "ab0592f6-ed6a-43a5-9f42-335f6a6ea43b",
@@ -547,10 +613,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "bf5efd41-9d32-4423-8b1b-eddb5ab4c838",
@@ -584,10 +662,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "97b3f291-14ec-485a-8028-3c40a6289b2b",
@@ -621,7 +711,13 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ]
               }
             }
           ]
@@ -676,6 +772,12 @@
           "required": true,
           "answerOption": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 0
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "90074ca4-107e-46f4-b2e9-d4efbc2a4d62",
@@ -709,10 +811,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "12238dd2-38c8-4b41-ac1f-680b0b5fb59c",
@@ -746,10 +860,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "50589344-1dab-4d92-8422-a2b3cc77c00a",
@@ -783,10 +909,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "416472c0-65ea-4924-a2c5-932e2680575f",
@@ -820,7 +958,13 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ]
               }
             }
           ]
@@ -875,6 +1019,12 @@
           "required": true,
           "answerOption": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 0
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "e523e12a-7b38-44f8-955a-92a44984863c",
@@ -908,10 +1058,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "4e87d095-0495-4349-a770-0c8dbdef12fd",
@@ -945,10 +1107,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "dc7626c0-bb71-4a1d-9fbd-f68a9b224725",
@@ -982,10 +1156,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "8bfeb8b2-0f14-4eb1-a2c1-8db55c02d2fe",
@@ -1019,7 +1205,13 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ]
               }
             }
           ]
@@ -1074,6 +1266,12 @@
           "required": true,
           "answerOption": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 0
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "bbe98709-4a35-4482-a2ff-14e19c0f6802",
@@ -1107,10 +1305,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "421ebe38-42e8-4c22-9864-ed6ea4f81b66",
@@ -1144,10 +1354,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "b7f8bc70-0728-4883-a8de-00ddbd14e75e",
@@ -1181,10 +1403,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "15440343-9023-4e3d-8de1-3501303a849e",
@@ -1218,7 +1452,13 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ]
               }
             }
           ]
@@ -1273,6 +1513,12 @@
           "required": true,
           "answerOption": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 0
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "287c639d-8b21-4477-b466-03e91b2b12ad",
@@ -1306,10 +1552,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "3f78e68f-50d4-4a3c-89f9-56ab6656c3b8",
@@ -1343,10 +1601,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "9d8744c2-d172-4a40-94eb-e4af8dcbe3cf",
@@ -1380,10 +1650,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "1fb903de-eb90-4481-ab8a-3aafef2347ba",
@@ -1417,7 +1699,13 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ]
               }
             }
           ]
@@ -1472,6 +1760,12 @@
           "required": true,
           "answerOption": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 0
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "dff8be88-98c8-488a-bf98-fe6f13937a40",
@@ -1505,10 +1799,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 0
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "ee6e9288-e0f2-477b-bf7c-64ad9aa2328d",
@@ -1542,10 +1848,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 1
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "e02e83a2-abd4-4f7a-bd0a-cbdbdebc5d4d",
@@ -1579,10 +1897,22 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 2
+                  }
+                ]
               }
             },
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ],
               "valueCoding": {
                 "system": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
                 "code": "3e796835-cc96-4bdc-9784-ff1c0a8139ac",
@@ -1616,12 +1946,152 @@
                       ]
                     }
                   ]
-                }
+                },
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                    "valueDecimal": 3
+                  }
+                ]
               }
             }
           ]
         }
       ]
+    },
+    {
+      "linkId": "score-total",
+      "text": "Tulos",
+      "type": "decimal",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.repeat(item | answer.item).where(linkId in ('36e47612-0c0c-4b48-b72e-2c1f7aae1cc8' | 'cec6f13c-50ad-4c39-93b5-ca0c7359c29d' | 'b6c4ceca-1666-4a59-acba-2aa12c63a2c7' | '65d55870-cb71-41a6-b466-a9b7b7c5f4ea' | '879d7541-fd6c-4d30-8320-7f71dbe2e73a' | '333d66c9-f264-4bc6-86f0-023002b211ae' | '0d88a828-804e-48da-8d56-8bf21d8ee141')).answer.value.weight().sum()"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueDecimal": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueDecimal": 21
+        },
+        {
+          "url": "https://sensotrend.com/fhir/StructureDefinition/score-interpretation",
+          "extension": [
+            {
+              "url": "min",
+              "valueDecimal": 0
+            },
+            {
+              "url": "max",
+              "valueDecimal": 21
+            },
+            {
+              "url": "title",
+              "valueString": "Tulos",
+              "_valueString": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "sv"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Resultat"
+                      }
+                    ]
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "en"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Result"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "url": "description",
+              "valueString": "Tulos",
+              "_valueString": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "sv"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Resultat"
+                      }
+                    ]
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "en"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "Result"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "sv"
+              },
+              {
+                "url": "content",
+                "valueString": "Resultat"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Result"
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }

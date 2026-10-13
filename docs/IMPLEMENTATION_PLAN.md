@@ -164,14 +164,22 @@ Finnish goes in the base element (`text`, `title`, `display`). Swedish and Engli
 ### 5.5 Follow-ups and scoring
 
 - **Follow-ups**: `answers[a].question[]` becomes child items **nested under the parent question item** (FHIR allows children under a question), each with `enableWhen { question: parentLinkId, operator: "=", answerCoding: <coding of a> }`. For a `multiselect` parent, `=` matches if any selected value equals the coding, which is the intended meaning. Deeper levels recurse. `enableBehavior` is unnecessary because each follow-up depends on exactly one answer. If a future export puts the same follow-up under several answers, the converter merges them into one item with several `enableWhen` and `enableBehavior: any`.
-- **Answer scores**: `scores[].points` → the `http://hl7.org/fhir/StructureDefinition/ordinalValue` extension on the matching `answerOption.valueCoding`. The SDC `itemWeight` extension gets the same value so that newer tools also see it.
-- **Score calculations** → one visible, read-only `decimal` item per calculation at the end of the questionnaire (or of its category's group), with:
+- **Answer scores**: `scores[].points` go in two places, because tools look for them in different ones:
+  - the R4 core `ordinalValue` extension on `answerOption.valueCoding`
+  - the SDC `itemWeight` extension on the `answerOption` itself, which is where fhirpath.js's `weight()` reads it
+- **Score calculations** → one visible, read-only `decimal` item per calculation. A category's score goes at the end of that category's (last) group, right after its questions. Whole-survey scores, and all scores in a flat questionnaire, go at the end of the questionnaire. Each has:
   - `linkId` = `score-total` / `score-{categoryId}`
-  - `text` = the calculation's `title` + translations
-  - `sdc-questionnaire-calculatedExpression` = a FHIRPath sum of `ordinal()` over the answers of the scored items in scope (the whole survey, or the category)
-  - `readOnly: true` and never `questionnaire-hidden`: in all of these questionnaires the patient sees the score and its band
-  - `summaries` (bands) are kept on the item as a custom extension `{BASE}/StructureDefinition/score-interpretation` (`min`, `max`, `title`, `description` + translations), because core FHIR has no standard extension for this. The renderer shows the band the score falls in.
-- `min`/`max` of the calculation become `minValue`/`maxValue`. The converter checks that the sum of the per-question maximum points equals `max` and reports any mismatch.
+  - `text` = the calculation's `title` + translations, unless an override corrects it (below)
+  - `sdc-questionnaire-calculatedExpression`: `%resource.repeat(item | answer.item).where(linkId in (…)).answer.value.weight().sum()` over the scored questions in scope (the whole survey, or the category). The evaluator must supply `%resource` (the QuestionnaireResponse) and `%questionnaire`. With nothing answered the result is empty, not 0.
+  - `readOnly: true` and never `questionnaire-hidden`: in all of these questionnaires the patient sees the score
+  - `minValue`/`maxValue` from the calculation's `min`/`max`
+  - `summaries` (bands) as the project's own complex extension `{BASE}/StructureDefinition/score-interpretation` (`min`, `max`, `title`, `description` + translations), because core FHIR has no standard extension for this. **In the current exports every band covers the whole range**, so a band works as a caption, not an interpretation. The conversion notes say so.
+- The converter recomputes each score's range from the per-question minimum and maximum points and notes any mismatch (there are none).
+- **Score title corrections** (override `scores.{linkId}.title`). The fixes are listed in the conversion notes with the original texts:
+  - AUDIT: the sv titles are shifted by one score and the en titles are Finnish.
+  - ADHD-RS: the en titles are "Points" or Finnish.
+  - Fagerström: the fi title is English.
+  - The corrected sv/en texts are our translations. The EPDS score title is a sentence ("A professional will discuss the results with you"); it's odd but not wrong, so it's kept.
 
 ### 5.6 Overrides
 
@@ -210,7 +218,7 @@ The converter validates overrides: an unknown `linkId` or an incompatible retypi
 - **Item rendering**: group (section heading), display, choice (radio buttons, or a dropdown for long option lists), repeating choice (checkboxes), string, text (textarea), integer/decimal (with unit and min/max), slider, date, read-only calculated score.
 - **Conditionality**: `enableWhen` / `enableBehavior`. Disabled items are hidden and their answers are dropped from the response (SDC default).
 - **Validation**: required, min/max, and a summary of missing answers when the user presses "Done".
-- **Scores**, always shown to the patient, recalculated live from `ordinalValue`, with the interpretation band shown. The calculation runs through the same `calculatedExpression` via fhirpath.js, so the expression in the Questionnaire is what gets tested.
+- **Scores**, always shown to the patient, recalculated live by evaluating each score item's `calculatedExpression` with fhirpath.js, so the expression in the Questionnaire is what gets tested. `%resource` and `%questionnaire` are supplied, and an empty result is shown as "–". The band the score falls in is shown with it (its title and description).
 - **QuestionnaireResponse**: built live and shown in a JSON panel with a download button. Status `in-progress` / `completed`.
 
 ### 6.2 Design
@@ -330,3 +338,16 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - 52 tests pass. They cover every mapping rule on the fixture, the override loading, the output writer, a check that the committed output is identical to a fresh conversion, and unique `linkId`s in every Questionnaire.
   - Item counts in the output match the 14 unique source surveys exactly: 351 choice (323 select + 28 multiselect, 28 of them repeating), 219 text, 28 display, 4 integer, 1 date, 117 follow-ups with `enableWhen`, 575 required, and 66 groups, which is the sum of the category runs.
   - FHIR Validator validation is milestone 5.
+
+### Milestone 4 — Scoring ✅
+
+- `converter/src/convert/scoring.ts` implements the scoring rules of §5.5 (as revised above): answer scores, score items with their FHIRPath, ranges and bands, and placement.
+- Score title corrections are in the AUDIT, ADHD-RS and Fagerström override files, each with a `$comment` describing the source error.
+- **Found and left for milestone 5** (data-quality fixes and the report):
+  - AUDIT's sv/en category names are untranslated Finnish and say "keskiarvo" (mean) where the fi says "summa" (sum).
+  - ADHD-RS's en category names are Finnish.
+  - Fagerström's category name has copies of the English text under ar/de/et/it/ru.
+- Verified:
+  - 68 tests pass.
+  - Unit tests on the fixture cover both score extensions, the score item, placement in groups, at the end, and flat, title overrides, unknown override keys, and the range and band notes.
+  - For all 7 scored questionnaires (12 scores), a test builds QuestionnaireResponses and evaluates each `calculatedExpression` with fhirpath.js 5.2.0. The highest answers give exactly `maxValue`, the lowest give `minValue`, and an empty response gives no value.

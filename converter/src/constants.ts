@@ -10,6 +10,11 @@ export const EXT = {
   sliderStepValue: "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
   minValue: "http://hl7.org/fhir/StructureDefinition/minValue",
   maxValue: "http://hl7.org/fhir/StructureDefinition/maxValue",
+  ordinalValue: "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+  itemWeight: "http://hl7.org/fhir/StructureDefinition/itemWeight",
+  calculatedExpression: "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+  /** The project's own extension for score bands (plan §5.5). */
+  scoreInterpretation: `${BASE}/StructureDefinition/score-interpretation`,
 } as const;
 
 export const ITEM_CONTROL_SYSTEM = "http://hl7.org/fhir/questionnaire-item-control";

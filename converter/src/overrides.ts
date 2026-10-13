@@ -6,6 +6,8 @@ import { join } from "node:path";
 import { z } from "zod";
 import { OVERRIDES_DIR } from "./paths.ts";
 
+const LocalizedText = z.strictObject({ fi: z.string().min(1), sv: z.string().min(1), en: z.string().min(1) });
+
 const Coding = z.strictObject({
   system: z.url(),
   code: z.string().min(1),
@@ -23,6 +25,11 @@ export const Overrides = z.strictObject({
    * (plan §5.3).
    */
   structure: z.literal("flat").optional(),
+  /**
+   * Corrections to score items, keyed by their linkId (`score-total`,
+   * `score-{categoryId}`), for score titles that are wrong in the source.
+   */
+  scores: z.record(z.string(), z.strictObject({ $comment: z.string().optional(), title: LocalizedText })).optional(),
 });
 export type Overrides = z.infer<typeof Overrides>;
 

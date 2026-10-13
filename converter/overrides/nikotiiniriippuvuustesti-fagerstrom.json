@@ -1,0 +1,12 @@
+{
+  "$comment": "Score title: in the source the fi title is in English ('Nicotine dependency'). sv and en are kept; fi is translated here.",
+  "scores": {
+    "score-total": {
+      "title": {
+        "fi": "Nikotiiniriippuvuus",
+        "sv": "Nikotinberoende",
+        "en": "Nicotine dependency"
+      }
+    }
+  }
+}
