@@ -1,0 +1,4539 @@
+{
+  "revisionGuid": "0980da67-4f21-460d-9077-90b7f7d15e9c",
+  "surveyGuid": "36e87238-a4f8-46c7-ad2c-1f29875a273d",
+  "draft": false,
+  "name": {
+    "en": "Background Information Form – Maternity Clinic",
+    "fi": "Esitietolomake - Äitiysneuvola",
+    "sv": "Förhandsuppgifter– Mödrarådgivningen"
+  },
+  "description": {
+    "en": "Background information questionnaire for maternity clinics",
+    "fi": "Äitiysneuvolan esitietolomake",
+    "sv": "Blankett med förhandsuppgifter för mödrarådgivningen"
+  },
+  "createdDt": "2026-05-08T05:58:23.127Z",
+  "createdBy": {
+    "upn": "suvi.viitanen@luvn.fi",
+    "name": "Suvi Viitanen",
+    "practitionerId": 8
+  },
+  "questions": [
+    {
+      "questionId": "21580850-b9ce-4c04-91c2-9ced42a82842",
+      "questionText": {
+        "en": "This form is intended to be filled out before the scheduled clinic visit. You have been instructed to complete it during the appointment booking or at the previous clinic visit. The information you provide will be stored on Lunna, where the professional responsible for the clinic visit can find it. Please note that completing the form in other context will not reach a professional and does not serve as a communicaton channel to the clinic.",
+        "fi": "Tämä lomake on tarkoitettu täytettäväksi ennen sovittua neuvolakäyntiä. Sinua on ohjattu täyttämään se ajanvarauksen yhteydessä tai edellisellä neuvolakäynnillä. Antamasi tiedot tallentuvat Lunnaan, josta kyseisen neuvolakäynnin hoitava terveydenhoitaja löytää sen. Huomioithan, että lomakkeen täyttäminen muussa yhteydessä ei päädy ammattilaiselle eikä toimi yhteydenottokanavana neuvolaan.",
+        "sv": "Den här blanketten är avsedd att fyllas i före det överenskomna rådgivningsbesöket. Du har blivit instruerad att fylla i den i samband med tidsbokningen eller vid det föregående rådgivningsbesöket. De uppgifter du lämnar sparas på Lunna, där den hälsovårdare som ansvarar för det aktuella rådgivningsbesöket hittar den. Observera att om du fyller i blanketten vid ett annat tillfälle kommer den inte att nå hälsovårdaren och fungerar inte som en kontaktkanal till rådgivningen"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "7ca2d898-63f9-4cb8-a210-ba170b18e09a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "c6e11023-a811-4b19-9695-55fad8350acf",
+      "questionText": {
+        "en": "Basic information\n\nFirst language",
+        "fi": "Perustiedot\n\nÄidinkieli",
+        "sv": "Basuppgifter\n\nModersmål"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "edae9c86-9b99-42e7-b778-9654a63e5a38",
+      "questionText": {
+        "en": "Preferred language",
+        "fi": "Asiointikieli",
+        "sv": "Kontaktspråk"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "4250b919-d99d-4af5-9c58-85f3a0c2df88",
+          "answerText": {
+            "en": "English",
+            "fi": "Suomi",
+            "sv": "Finska"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b0b94f40-c01d-4116-9ffe-3fc9597074f8",
+          "answerText": {
+            "en": "Swedish",
+            "fi": "Ruotsi",
+            "sv": "Svenska"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1ffd1058-0e93-4659-97d1-5b5db0c25cd3",
+          "answerText": {
+            "en": "English",
+            "fi": "Englanti",
+            "sv": "Engelska"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b9e2b78b-1ef2-41f4-ba4e-3e998987af49",
+          "answerText": {
+            "en": "Sámi",
+            "fi": "Saamen kieli",
+            "sv": "Samiska"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "e0f47859-8ffd-425e-875b-615a955f4cc0",
+              "questionText": {
+                "en": "What?",
+                "fi": "Mikä?",
+                "sv": "Vilket?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "bd08721b-d008-420c-8e6f-3ed228119af3",
+          "answerText": {
+            "en": "Other",
+            "fi": "Muu",
+            "sv": "Annat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "5212a16d-2046-44da-8e6d-a7efbd72260c",
+              "questionText": {
+                "en": "Please specify (need for an interpreter)?",
+                "fi": "Mikä (tulkkaustarve)?",
+                "sv": "Vilket (tolkningsbehov)?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "5b9c8c32-65af-4627-9c73-2e4cfe71bd7c",
+      "questionText": {
+        "en": "Marital status",
+        "fi": "Sivilisääty",
+        "sv": "Civilstånd"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ede87d5b-46bc-468b-966e-6d366c1dea3a",
+          "answerText": {
+            "en": "single",
+            "fi": "Naimaton",
+            "sv": "ogift"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4f77f561-75ed-47ae-b6f0-216d7acfd19c",
+          "answerText": {
+            "en": "married",
+            "fi": "Naimisissa",
+            "sv": "gift"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ebde3c76-a6cd-4fdd-a884-944da235b889",
+          "answerText": {
+            "en": "cohabiting",
+            "fi": "Avoliitossa",
+            "sv": "i ett samboförhållande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a39c106d-5616-40ef-9927-eb6bc24afa9c",
+          "answerText": {
+            "en": "separated",
+            "fi": "Asumuserossa",
+            "sv": "separerad"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "737ed9d4-dd70-4f7c-94c4-0d2753141a94",
+          "answerText": {
+            "en": "divorced",
+            "fi": "Eronnut",
+            "sv": "frånskild"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "11f09c9f-022b-4621-acb4-450a03d2bf29",
+          "answerText": {
+            "en": "widowed",
+            "fi": "Leski",
+            "sv": "änka"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e89da7e0-dff3-4ad7-933d-e1442fc70030",
+          "answerText": {
+            "en": "registered partnership",
+            "fi": "Rekisteröidyssä parisuhteessa",
+            "sv": "registrerat partnerskap"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b1c6ac67-7a75-436b-a785-d3d38a446a8e",
+          "answerText": {
+            "en": "separated from a registered partnership",
+            "fi": "Eronnut rekisteröidystä parisuhteesta",
+            "sv": "frånskild från registrerat partnerskap"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a7be09ea-596f-4bbb-a80a-3b49cefff050",
+          "answerText": {
+            "en": "widowed after a registered partnership",
+            "fi": "Leski rekisteröidyn parisuhteen jälkeen",
+            "sv": "änka efter registrerat partnerskap"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d7691a6f-20f0-4e56-8dee-d740761cc3b3",
+          "answerText": {
+            "en": "unknown",
+            "fi": "Tuntematon",
+            "sv": "okänt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "7355887d-7d68-4ac4-b4ec-86e4135a77dc",
+      "questionText": {
+        "en": "Citizenship and year of entry into Finland",
+        "fi": "Kansalaisuus ja maahantulovuosi",
+        "sv": "Medborgarskap och inreseå"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "3c3a1188-d835-4084-8b69-2693e6efa9a9",
+      "questionText": {
+        "en": "Occupation",
+        "fi": "Ammatti",
+        "sv": "Yrke"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f9e704df-9570-4d39-85ca-2f768ba2a876",
+      "questionText": {
+        "en": "Arbete",
+        "fi": "Työssäkäynti",
+        "sv": "Arbete"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "135e63ed-a965-46df-b864-7e0e52b951d8",
+          "answerText": {
+            "en": "full-time",
+            "fi": "Kokoaikatyötä tekevä",
+            "sv": "heltidsanställd"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a5541bd0-0d3b-438e-91fe-1a3b13a60cd4",
+          "answerText": {
+            "en": "part-time",
+            "fi": "Osa-aikatyötä tekevä",
+            "sv": "deltidsanställd"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c605020b-8d5a-472c-9ed8-d7a9b183412b",
+          "answerText": {
+            "en": "temporary",
+            "fi": "Keikkatyötä tekevä",
+            "sv": "korttidsarbete"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "82e90c7e-74ec-4db6-9c0f-2e175dee6088",
+          "answerText": {
+            "en": "entrepreneur",
+            "fi": "Yrittäjä",
+            "sv": "företagare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4d7009a8-5a40-4c82-9b39-841b5a478f35",
+          "answerText": {
+            "en": "unemployed jobseeker",
+            "fi": "Työtön työnhakija",
+            "sv": "arbetslös arbetssökande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a83cd263-6e60-42fd-bc1e-38fe594dafca",
+          "answerText": {
+            "en": "long-term unemployed",
+            "fi": "Pitkäaikaistyötön",
+            "sv": "långtidsarbetslös"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9c45aee1-a0da-4ec5-a433-d2cefbdec5b1",
+          "answerText": {
+            "en": "student",
+            "fi": "Opiskelija",
+            "sv": "studerande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1b513a23-4579-425e-b3a7-0ffb22da6495",
+          "answerText": {
+            "en": "family leave or staying at home",
+            "fi": "Perhevapaalla oleva tai kotitalouttaan hoitava",
+            "sv": "familjeledig eller person som sköter sitt eget hushåll"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a901ea0a-2083-41c5-87ab-d566160b4257",
+          "answerText": {
+            "en": "other",
+            "fi": "Jokin muu",
+            "sv": "något annat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "fc7ab613-2f37-47d7-b8ec-dcef452e4017",
+              "questionText": {
+                "en": "Please specify",
+                "fi": "Mikä?",
+                "sv": "Vilket"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "811f4981-d3d4-4782-b512-4e0bb4d85f9b",
+      "questionText": {
+        "en": "Who are your family members? (spouse, children, other)",
+        "fi": "Keitä perheeseesi kuuluu? (puoliso, lapset, muu)",
+        "sv": "Vilka hör till din familj? (make, barn, annat)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f847604c-d848-4c5e-b927-cb58486b4e0f",
+      "questionText": {
+        "en": "Contact person’s name: and your relationship with the contact person",
+        "fi": "Yhteyshenkilön nimi ja suhteesi yhteyshenkilöön",
+        "sv": "Kontaktpersonens namn och din relation till kontaktpersonen"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "2a56afb9-1b2f-4dad-a3c2-ea2c0ca80551",
+      "questionText": {
+        "en": "Spouse/contact person’s phone number",
+        "fi": "Puolison/yhteyshenkilön puhelinnumero",
+        "sv": "Makens/kontaktpersonens telefonnummer"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "9733f082-b2f8-4f15-a3b9-bc4a18459900",
+      "questionText": {
+        "en": "Spouse/contact person’s mother tongue",
+        "fi": "Puolison/yhteyshenkilön äidinkieli",
+        "sv": "Makens/kontaktpersonens modersmå"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "92481a42-c5b1-443c-9ab3-8901f518826c",
+      "questionText": {
+        "en": "Spouse/contact person’s language to be interpreted",
+        "fi": "Puolison/yhteyshenkilön tulkattava kieli",
+        "sv": "Makens/kontaktpersonens språk som ska tolkas"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0e49563e-177b-4fce-9fc6-c486996e0b17",
+      "questionText": {
+        "en": "Spouse’s occupation/position",
+        "fi": "Puolison/yhteyshenkilön ammatti/työ",
+        "sv": "Makens yrke/arbete"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "849a7561-b492-414d-96dd-1ba7c0d2d6bd",
+      "questionText": {
+        "en": "Other members of the family",
+        "fi": "Perheeseen kuuluvat muut henkilöt",
+        "sv": "Andra personer som hör till familjen"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "886e1458-5df1-41e5-b928-ac4fce486ea9",
+      "questionText": {
+        "en": "Previous pregnancies and childbirths\n\nHave you been previously pregnant?",
+        "fi": "Aikaisemmat raskaudet ja synnytykset\n\nOletko ollut aikaisemmin raskaana?",
+        "sv": "Tidigare graviditeter och förlossningar\n\nHar du varit gravid tidigare?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "6ddd25a3-3a60-47ab-b916-a67b662ef365",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "49eabd07-47e1-4b34-98d3-f33a52ea5d04",
+              "questionText": {
+                "en": "How many pregnancies have you had (number)?",
+                "fi": "Montako raskautta sinulla on ollut (lukumäärä)?",
+                "sv": "Hur många graviditeter har du genomgått (antal)?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "a87cd96a-5c16-45fc-a55c-26e6a23241cd",
+              "questionText": {
+                "en": "Duration of your last pregnancy in gestational weeks",
+                "fi": "Viimeisimmän raskauden kesto raskausviikkoina",
+                "sv": "Den senaste graviditetens längd i graviditetsveckor"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "0c89ddd8-3c96-4a46-b72d-f3956e576c45",
+              "questionText": {
+                "en": "How many childbirths have you had (number)?",
+                "fi": "Montako synnytystä sinulla on ollut (lukumäärä)?",
+                "sv": "Hur många förlossningar har du genomgått (antal)?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "13025756-15f8-437f-a70d-8dcdf58f4f55",
+              "questionText": {
+                "en": "The year of the last childbirth?",
+                "fi": "Viimeisimmän synnytyksen vuosiluku?",
+                "sv": "Årtal för den senaste förlossningen?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "695eed8b-6db1-49bf-b8ab-8f230a4af111",
+              "questionText": {
+                "en": "What was your previous childbirth like?",
+                "fi": "Millainen oli aiempi synnytyksesi?",
+                "sv": "Hur var din tidigare förlossning?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "3c0a31fd-a16e-4ee3-91e3-522147d6571d",
+              "questionText": {
+                "en": "Number of children born of your last pregnancy",
+                "fi": "Viimeisimmästä raskaudesta syntyneiden lasten lukumäärä",
+                "sv": "Antal barn födda under den senaste graviditeten"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "b955614f-ab7d-42b2-b8f1-5bc00c3ab606",
+              "questionText": {
+                "en": "Birth weight of the child/children in grams",
+                "fi": "Lapsen/lasten syntymäpaino grammoina",
+                "sv": "Barnets/barnens födelsevikt i gram"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "598fa6e3-6695-4d9b-a43a-a0141aba93ad",
+              "questionText": {
+                "en": "Previous breastfeeding - did you breastfeed?",
+                "fi": "Edellinen imetys - imetitkö?",
+                "sv": "Föregående amning - ammade du?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [
+                {
+                  "answerId": "09f12ee1-6ab9-45e0-88d4-9b0959474260",
+                  "answerText": {
+                    "en": "Yes",
+                    "fi": "Kyllä",
+                    "sv": "Ja"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "b2ea9769-6f34-46b5-a29c-2696b94a97ea",
+                  "answerText": {
+                    "en": "No",
+                    "fi": "Ei",
+                    "sv": "Nej"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [
+                    {
+                      "questionId": "f4ad49e9-77f1-49c6-8d1b-f5284a7be054",
+                      "questionText": {
+                        "en": "Record the duration of exclusive breastfeeding in months and the total duration of breastfeeding in months/years",
+                        "fi": "Kirjaa täysimetyksen kesto kuukausina ja koko imetysajan kesto kuukausina/vuosina",
+                        "sv": "Anteckna hela amningens längd i månader och hela amningsperiodens längd i månader/år"
+                      },
+                      "printText": {
+                        "en": "",
+                        "fi": "",
+                        "sv": ""
+                      },
+                      "description": {
+                        "en": "",
+                        "fi": "",
+                        "sv": ""
+                      },
+                      "answers": [],
+                      "type": "freetext",
+                      "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+                      "numericTagConditions": [],
+                      "tags": [],
+                      "scoringEnabled": false,
+                      "scores": [],
+                      "isOptional": false
+                    }
+                  ],
+                  "tags": []
+                }
+              ],
+              "type": "select",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "7bb9baef-8e38-4a60-8440-b981226b9482",
+              "questionText": {
+                "en": "How did you feel being pregnant, giving birth and after the baby was born (e.g., were you afraid of giving birth or did you have postnatal depression)?",
+                "fi": "Miten koit aiemman raskauden, synnytyksen ja synnytyksen jälkeisen ajan (koitko esimerkiksi synnytyspelkoa tai synnytyksen jälkeistä masennusta)?",
+                "sv": "Hur upplevde du en tidigare graviditet, förlossning och tiden efter förlossningen (upplevde du t.ex. förlossningsrädsla eller förlossningsdepression)?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "43d200ba-1552-4782-a99d-c8946f62093c",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0230adb0-04b7-4a0e-8be1-17a8749b19c2",
+      "questionText": {
+        "en": "Have you had miscarriages?",
+        "fi": "Onko sinulla ollut keskenmenoja?",
+        "sv": "Har du haft missfall?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "8333a82a-7dba-4461-a8b0-8beaa9c6a5b1",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "60a3a9e9-dcbb-4e0d-a802-b32207bf7027",
+              "questionText": {
+                "en": "Year?",
+                "fi": "Vuosiluku",
+                "sv": "Årtal?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "e52b4c28-3469-4915-a280-ee9f180af7de",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "dc91f11d-0ba1-496d-89bf-cc7faef770ae",
+      "questionText": {
+        "en": "Have you had abortions?",
+        "fi": "Onko sinulle tehty raskauden keskeytyksiä?",
+        "sv": "Har du genomgått abort?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "84cebb59-be9a-4aeb-b79d-23152d2d14f7",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "dd0b02fb-0a41-4b1e-8433-9cfc2850e77c",
+              "questionText": {
+                "en": "Year?",
+                "fi": "Vuosiluku",
+                "sv": "Årtal?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "6f53d7d9-b22e-4bb4-8fc0-c624d4e2f63e",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "866c93c6-e4db-4056-a4e3-4a702fb75c25",
+      "questionText": {
+        "en": "Current pregnancy\n\nYour last period started on",
+        "fi": "Nykyraskaus\n\nViimeisten kuukautisten alkamispäivä",
+        "sv": "Nuvarande graviditet\n\nDatum då den senaste menstruationen började"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "date",
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "c5a4e4f8-62ca-40ff-b23a-8a8bfbacaf8a",
+      "questionText": {
+        "en": "Last papa screening (year)",
+        "fi": "Viimeisin papa-näyte (vuosi)",
+        "sv": "Senaste papa-prov (år)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "4a82d180-14b0-497f-b1e5-a94ffe820470",
+      "questionText": {
+        "en": "Was any further action taken?",
+        "fi": "Aiheuttiko jatkotoimenpiteitä",
+        "sv": "Föranledde det fortsatta åtgärder?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "88e9b875-5580-4e87-8647-74204708d00e",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "beb65a5c-a277-4626-a8b3-b6dad207e857",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c5ad01d4-8d8c-4fcf-bf16-9e16b519927d",
+          "answerText": {
+            "en": "I don't remember",
+            "fi": "En muista",
+            "sv": "Jag minns inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "94168ace-7c6b-4746-8358-afbb4a2585e5",
+      "questionText": {
+        "en": "Contraception before pregnancy",
+        "fi": "Raskautta edeltänyt ehkäisy",
+        "sv": "Preventivmedel före graviditeten"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "4e599096-21fb-4936-8d5b-11b2bbb13a96",
+          "answerText": {
+            "en": "combined oral contraceptive",
+            "fi": "yhdistelmätabletit",
+            "sv": "kombinationstabletter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c1111371-839b-4340-85af-ecb8ca29e61f",
+          "answerText": {
+            "en": "vaginal contraceptive ring",
+            "fi": "emätinrengas",
+            "sv": "p-ring"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "660ec4c1-248c-4832-b625-39c064a3e017",
+          "answerText": {
+            "en": "contraceptive patch",
+            "fi": "ehkäisylaastari",
+            "sv": "p-plåster"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a35f38ee-5a96-4b6f-8ac5-d75048cb983f",
+          "answerText": {
+            "en": "progestin pills",
+            "fi": "progestiinitabletit",
+            "sv": "progestintabletter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "192584bb-9695-435a-88f6-54ee97f8196f",
+          "answerText": {
+            "en": "contraceptive capsule",
+            "fi": "ehkäisykapseli",
+            "sv": "p-stav"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3a147507-381b-4d20-ad74-899192e2b035",
+          "answerText": {
+            "en": "hormonal intrauterine contraceptive device",
+            "fi": "kohdunsisäinen hormoniehkäisin",
+            "sv": "intrauterin hormonspiral"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "daf4577e-2247-4423-bcd1-2ed2880bb3f1",
+          "answerText": {
+            "en": "other intrauterine contraceptive device",
+            "fi": "muu kohdunsisäinen ehkäisin",
+            "sv": "annat intrauterint preventivmedel"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "11fc13b0-e59e-48ec-ba10-5cdebd1fcfbb",
+          "answerText": {
+            "en": "condom",
+            "fi": "kondomi",
+            "sv": "kondom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f8669cb3-090a-42f5-a404-480a21fbc363",
+          "answerText": {
+            "en": "sterilisation (female)",
+            "fi": "steriloiminen (naisen)",
+            "sv": "sterilisering (av kvinna)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "413899ea-76d7-45eb-b00d-a2f925eb4ab4",
+          "answerText": {
+            "en": "sterilisation (male)",
+            "fi": "steriloiminen (miehen)",
+            "sv": "sterilisering (av man)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "132c23cc-3803-4f17-8af4-066de2369015",
+          "answerText": {
+            "en": "other type of contraception",
+            "fi": "joku muu ehkäisy",
+            "sv": "något annat preventivmedel"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f7ae9ebf-7bd7-438d-9606-8c83a875ee93",
+          "answerText": {
+            "en": "no contraception",
+            "fi": "ei ehkäisyä",
+            "sv": "inget"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ada5ea55-1a57-42c1-97da-77d9db8b7762",
+      "questionText": {
+        "en": "When contraception was discontinued?",
+        "fi": "Milloin raskauden ehkäisy lopetettiin?",
+        "sv": "När avslutades preventivmedlet?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "74dcbad4-2b8a-4a20-81d2-68d5d4c08ea4",
+      "questionText": {
+        "en": "Have you used postcoital contraception?",
+        "fi": "Oletko käyttänyt jälkiehkäisyä?",
+        "sv": "Har du använt akutpreventivmedel?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "131f939b-8a86-44fe-9e37-de454eb5c575",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "108750b9-3a6a-4b9c-9f49-32c8155e4d9f",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "58186d6b-e011-4d9d-a49a-0490d196d154",
+      "questionText": {
+        "en": "Have you undergone fertility treatments?",
+        "fi": "Onko käytetty hedelmöityshoitoa?",
+        "sv": "Har fertilitetsbehandling använts?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c0a7f481-f556-44ca-bd34-d421e88afda2",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "d7d31234-25c1-45a2-b630-98971735ce6b",
+              "questionText": {
+                "en": "What kind of fertility treatment??",
+                "fi": "Mikä hedelmöityshoito?",
+                "sv": "Vilken fertilitetsbehandling?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [
+                {
+                  "answerId": "957821bf-03f8-487b-b305-e9517aff7409",
+                  "answerText": {
+                    "en": "ovulation induction",
+                    "fi": "munarakkulan kypsytyshoito",
+                    "sv": "mognadsbehandling av äggblåsa"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "600dbdd4-d32d-4a68-9ea2-e7357661510a",
+                  "answerText": {
+                    "en": "insemination (injection of sperm into the uterus",
+                    "fi": "inseminaatio (siittiöiden ruiskutus kohtuun)",
+                    "sv": "insemination (injektion av spermier i livmodern)"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "279adf46-21c5-496a-97cd-79d477e1331e",
+                  "answerText": {
+                    "en": " IVF (in vitro fertility treatment)",
+                    "fi": " IVF (koeputkihedelmöitys)",
+                    "sv": " IVF (provrörsbefruktning)"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "60c6d0fd-66d5-4e85-bda8-7a76e9564942",
+                  "answerText": {
+                    "en": " ICSI (intracytoplasmic sperm injection)",
+                    "fi": "ICSI (mikrohedelmöityshoito)",
+                    "sv": "ICSI (mikroinjektion)"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "cb893986-ecd0-4292-bc6d-ea5a816e9d34",
+                  "answerText": {
+                    "en": "frozen embryo transfer (FET/PAS)",
+                    "fi": "pakastetun alkion siirto (FET/PAS)",
+                    "sv": "överföring av djupfryst embryo (FET/PAS)"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "75376721-04ab-4a03-ad18-d3ad47d26e27",
+                  "answerText": {
+                    "en": "blastocyst culture (extended embryo culture)",
+                    "fi": "blastokystiviljely (alkioiden pitkä viljely)",
+                    "sv": "blastocystodling (lång odling av embryon)"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "11d38076-ad14-4c09-8dc6-18301e8a112f",
+                  "answerText": {
+                    "en": "preimplantation genetic testing",
+                    "fi": "alkiodianostiikka",
+                    "sv": "embryodiagnostik"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "db83efc6-42fe-42f0-bd5f-5c4e76725a00",
+                  "answerText": {
+                    "en": "donated egg or embryo",
+                    "fi": "luovutettu sukusolu tai alkio",
+                    "sv": "donerad könscell eller donerat embryo"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "02088034-71ac-4613-99a2-e9b06625a2cd",
+                  "answerText": {
+                    "en": "no information on the type of treatment",
+                    "fi": "ei tietoa hoidon tyypistä",
+                    "sv": "inga uppgifter om behandlingens typ"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "63c34054-83f6-4351-9dea-a21e233cd66c",
+                  "answerText": {
+                    "en": "other",
+                    "fi": "joku muu",
+                    "sv": "någon annan"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [
+                    {
+                      "questionId": "bc3ef7cd-c8c9-4e37-bba9-7f5fc7456c69",
+                      "questionText": {
+                        "en": "Please specify?",
+                        "fi": "Mikä?",
+                        "sv": "Vilken?"
+                      },
+                      "printText": {
+                        "en": "",
+                        "fi": "",
+                        "sv": ""
+                      },
+                      "description": {
+                        "en": "",
+                        "fi": "",
+                        "sv": ""
+                      },
+                      "answers": [],
+                      "type": "freetext",
+                      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+                      "numericTagConditions": [],
+                      "tags": [],
+                      "scoringEnabled": false,
+                      "scores": [],
+                      "isOptional": false
+                    }
+                  ],
+                  "tags": []
+                }
+              ],
+              "type": "select",
+              "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "65bb15ee-8290-4058-9f6a-2827c6874204",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "abc7a1e0-0b47-4c5d-955a-523ca26207f8",
+      "questionText": {
+        "en": "Age of the egg donor at the time of donation (years)",
+        "fi": "Munasolun luovuttajan ikä luovutushetkellä (vuosina)",
+        "sv": "Äggcellsdonatorns ålder vid tidpunkten för donationen (i år)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "68be95fd-e362-40a8-ac2f-3b1a4b9c3fc8",
+      "questionText": {
+        "en": "My health information\n\nWhat is your height (cm)?",
+        "fi": "Omat terveystiedot\n\nMikä on pituutesi (cm)?",
+        "sv": "Egna hälsouppgifter\n\nDin längd (cm)?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "3492836d-2c52-44e4-b63e-204585bc2701",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8196e6f6-779d-415b-94fc-5cad668dd7f5",
+      "questionText": {
+        "en": "What was your weight before pregnancy (kg)?",
+        "fi": "Mikä oli painosi ennen raskautta (kg)?",
+        "sv": "Din vikt före graviditeten (kg)?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "3492836d-2c52-44e4-b63e-204585bc2701",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "48d57788-3aa9-478a-9ec5-bbf69683c52a",
+      "questionText": {
+        "en": "At what age did you get your first period?",
+        "fi": "Minkä ikäisenä kuukautesi alkoivat?",
+        "sv": "Ålder då du började menstruera?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "3492836d-2c52-44e4-b63e-204585bc2701",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f6581450-3772-466d-81cc-c7ac92414c6c",
+      "questionText": {
+        "en": "Lifestyle affecting health\n\nNutrition\n\nDo you have a special diet?",
+        "fi": "Terveyteen vaikuttavat elintavat\n\nRavitsemus\n\nOnko sinulla jokin erityisruokavalio?",
+        "sv": "Levnadsvanor som påverkar hälsan\n\nNäring\n\nHar du någon specialdiet?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "53faec87-ccf0-4a15-9930-bb0863c0c440",
+          "answerText": {
+            "en": "lactose-free or low-lactose diet",
+            "fi": "laktoositon tai vähälaktoosinen ruokavalio",
+            "sv": "laktosfri eller laktosfattig kost"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c997226f-8e08-4bdd-874c-8bf7b9a3def7",
+          "answerText": {
+            "en": "gluten-free diet",
+            "fi": "gluteeniton ruokavalio",
+            "sv": "glutenfri kost"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c47cd986-85e5-4510-8610-817b44c64671",
+          "answerText": {
+            "en": "vegetarian diet including dairy products and/or eggs",
+            "fi": "kasvisruokavalio jossa maitovalmisteita ja/tai kananmunaa",
+            "sv": "vegetarisk kost med mjölkprodukter \noch/eller ägg"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "aaa59582-871d-46b5-8838-9935a053a2a7",
+          "answerText": {
+            "en": "vegetarian diet including fish",
+            "fi": "kasvisruokavalio jossa kalaa",
+            "sv": "vegetarisk kost med fisk"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8da75efd-329f-431a-8eef-e5e7f52b1826",
+          "answerText": {
+            "en": "vegan diet",
+            "fi": "vegaaniruokavalio",
+            "sv": "vegankost"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fa1382ae-3e20-4775-9cee-b50709315b6c",
+          "answerText": {
+            "en": "grain allergy diet",
+            "fi": "vilja-allergisen ruokavalio",
+            "sv": "kost för spannmålsallergiker"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f89e38eb-7e22-459f-b39f-4d263b8bcc83",
+          "answerText": {
+            "en": "milk allergy diet",
+            "fi": "maitoallergisen ruokavalio",
+            "sv": "kost för mjölkallergiker"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "90f2ef46-ed1e-4db6-b33c-c7c628b47ec5",
+          "answerText": {
+            "en": "other diet due to a food allergy",
+            "fi": "muu ruoka-aineallergian ruokavalio",
+            "sv": "annan kost vid födoämnesallergier"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9b0ee29b-63a8-4543-ad12-65fb2020d770",
+          "answerText": {
+            "en": "other special diet",
+            "fi": "muu eritysruokavalio",
+            "sv": "annan specialkost"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c256cb2b-fd71-4bdc-a1c9-7e4b7377cbad",
+          "answerText": {
+            "en": "no special diet",
+            "fi": "ei erityisruokavaliota",
+            "sv": "ingen specialdiet"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a62e2a28-5d05-47c6-87c2-9e8d2b4b35e8",
+      "questionText": {
+        "en": "Use and amount of dairy products or similar supplemented plant-based products (e.g., soy or oat) per day",
+        "fi": "Maitovalmisteiden tai vastaavien täydennettyjen kasvipohjaisten (esimerkiksi soija tai kaura) valmisteiden käyttö ja käyttömäärät/päivä",
+        "sv": "Användning av mjölkprodukter eller motsvarande kompletterade växtbaserade preparat (t.ex. soja eller havre) och användningsmängd/dag"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "64b97fb2-dff2-410a-afd4-9f4c44c09531",
+      "questionText": {
+        "en": "How many meals do you eat per day (number)?",
+        "fi": "Kuinka monta ateriaa syöt päivittäin (lukumäärä)?",
+        "sv": "Hur många måltider äter du dagligen (antal)?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "df1408b6-d64a-44ad-90b5-007f73a5620a",
+      "questionText": {
+        "en": "How many times a day do you eat vegetables (other than potatoes), fruit and berries?",
+        "fi": "Kuinka monta kertaa päivässä syöt kasviksia (ei perunaa), hedelmiä ja marjoja?",
+        "sv": "Hur många gånger om dagen äter du grönsaker (inte potatis), frukt och bär?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "472ae1cb-33ab-4bfe-a8a1-57a1a9cc3f92",
+          "answerText": {
+            "en": "not every day",
+            "fi": "En syö joka päivä",
+            "sv": "Jag äter inte det varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d2543716-5ccd-4b2f-ac86-eef42522d993",
+          "answerText": {
+            "en": "1–2 times a day",
+            "fi": "1-2 kertaa päivässä",
+            "sv": "1–2 gånger per dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ee626d9f-5896-4dac-acd8-dcaa5a77f9c5",
+          "answerText": {
+            "en": "3–4 times a day",
+            "fi": "3-4 kertaa päivässä",
+            "sv": "3–4 gånger per dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c0b46cc9-fcee-4a64-9d1f-d6a0f341fb36",
+          "answerText": {
+            "en": "5 times a day",
+            "fi": "5 kertaa päivässä tai enemmän",
+            "sv": "5 gånger per dag eller mer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "597a1ac5-5011-4839-9e6c-c216c842d3cc",
+      "questionText": {
+        "en": "How many times a week do you eat fish?",
+        "fi": "Kuinka monta kertaa viikossa syöt kalaruokia?",
+        "sv": "Hur många gånger i veckan äter du fisk?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "4648ac08-c983-4727-bb6e-49b81f4dbb68",
+          "answerText": {
+            "en": "not every week",
+            "fi": "En syö joka viikko",
+            "sv": "jag äter inte det varje vecka"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a6e01dff-2710-4e22-8be6-0f79459c0c1e",
+          "answerText": {
+            "en": "once a week",
+            "fi": "Kerran viikossa",
+            "sv": "en gång i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6d4bf044-5b5b-4007-963f-d6588ecbf8f8",
+          "answerText": {
+            "en": "at least twice a week",
+            "fi": "Vähintään 2 kertaa viikossa",
+            "sv": "minst 2 gånger i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "85b4d62b-e83f-43d0-a10e-a56497e2e83f",
+      "questionText": {
+        "en": "How often do you consume juices, soft drinks or energy drinks and coffee or tea that contains caffeine?",
+        "fi": "Kuinka usein käytät mehuja, virvoitus- tai energiajuomia sekä kahvia tai kofeiinipitoista teetä?",
+        "sv": "Hur ofta dricker du saft, läsk eller energidrycker samt kaffe eller koffeinhaltigt te?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "6e5dce5f-0994-4e53-a326-707acf3672a9",
+          "answerText": {
+            "en": "3 times or more a day",
+            "fi": "3 kertaa tai useammin päivän aikana",
+            "sv": "3 gånger eller mer under en dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "efb41fa0-bf48-459f-9e16-0a2a1eb10f95",
+          "answerText": {
+            "en": "1–2 times a day",
+            "fi": "1-2 kertaa päivässä",
+            "sv": "1-2 gånger per dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "eac48119-70c4-4eeb-a34f-ccdd0369e809",
+          "answerText": {
+            "en": "less frequently than daily",
+            "fi": "harvemmin kuin päivittäin",
+            "sv": "mer sällan än dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f2845afe-d722-4238-8b0d-afcb0833ebaf",
+          "answerText": {
+            "en": "never",
+            "fi": "en käytä ollenkaan",
+            "sv": "jag dricker inte sådant alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "79ad3ffb-9aaa-492d-9072-5d3da87dc072",
+      "questionText": {
+        "en": "Nutritional supplements\n\nDid you use folic acid supplement regularly before pregnancy?",
+        "fi": "Ravintolisät\n\nKäytitkö foolihappolisävalmistetta säännöllisesti ennen raskautta?",
+        "sv": "Kosttillskott\n\nAnvände du folsyratillskott regelbundet före graviditeten?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "1c7c483e-c3cc-4af6-a570-6ff95a4bc662",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "90b6d3dd-dc01-47f5-a528-af12a3f62679",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8120b4a7-739e-441a-870b-1e038331bd60",
+      "questionText": {
+        "en": "Do you use folic acid products during pregnancy?",
+        "fi": "Käytätkö foolihappoa sisältäviä valmisteita raskauden aikana?",
+        "sv": "Använder du preparat som innehåller folsyra under graviditeten?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "083a07f6-d305-4b91-b3c6-b1aa63487609",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "bf2c715e-f1ed-4530-9a58-a4c5cfbd5da5",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "836dd534-f43c-47e5-97d1-783b0a9a3018",
+      "questionText": {
+        "en": "Do you use vitamin D products during pregnancy?",
+        "fi": "Käytätkö D-vitamiinia sisältäviä valmisteita raskauden aikana?",
+        "sv": "Använder du preparat som innehåller D-vitamin under graviditeten?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "6b33ac10-5a46-42b3-992b-3020d18b8048",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "78c2bcce-0482-48df-91b3-3bc3e2c52482",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "30aa0618-bae0-4ca5-adf1-04a1c1124fb2",
+      "questionText": {
+        "en": "Do you use calcium products during pregnancy?",
+        "fi": "Käytätkö kalsiumia sisältäviä valmisteita raskauden aikana?",
+        "sv": "Använder du kalciumhaltiga preparat under graviditeten?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "d336971b-bdb1-40aa-a833-f19fe5d089b7",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "caae47d7-34db-4d15-8528-531ece203bca",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "06a41017-dec4-458b-8c87-68000f1b65bc",
+      "questionText": {
+        "en": "Do you use vitamin B12 products during pregnancy?",
+        "fi": "Käytätkö B12-vitamiinia sisältäviä valmisteita raskauden aikana?",
+        "sv": "Använder du preparat som innehåller B12-vitamin under graviditeten?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a92d577f-23e4-4845-99cd-5d9cae1f4f9b",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4aede2af-b177-4657-9048-7b4eb1dd79ca",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f00a0014-256d-4658-a807-8ba7ee872859",
+      "questionText": {
+        "en": "Do you use multivitamin supplements during pregnancy?",
+        "fi": "Käytätkö monivitamiinilisiä raskauden aikana?",
+        "sv": "Använder du multivitamintillskott under graviditeten?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7d9c207f-b794-4641-8f7a-3756c1162193",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cb0dd79f-31fa-479f-91cc-f16dc2c2fec8",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "736cd55d-854d-43d9-b1b3-6ce253de90ab",
+      "questionText": {
+        "en": "Do you use herbal supplements during pregnancy?",
+        "fi": "Käytätkö luontaistuotteita raskauden aikana?",
+        "sv": "Använder du naturprodukter under graviditeten?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "937fc18a-9484-4da8-bf67-297662e55c4d",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0f70d7a4-bf64-482f-9210-2f71d4a51ea2",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "af9f584b-5cf6-4f68-ae37-f4f0665cbc08",
+      "questionText": {
+        "en": "Physical activity\n\nHow many hours per week do you engage in brisk physical activity (hours)?",
+        "fi": "Liikunta\n\nKuinka monta tuntia viikossa harrastat reipasta liikuntaa (tunteina)?",
+        "sv": "Motion\n\nHur många timmar i veckan motionerar du raskt (i timmar)?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "fb199b3b-eb98-4341-a56b-9e2e0dfa37a6",
+      "questionText": {
+        "en": "Physical activity",
+        "fi": "Liikunnan harrastaminen",
+        "sv": "Motion"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "2c991932-c3a4-4115-b29a-ca4ebf3fb361",
+          "answerText": {
+            "en": "competitive sports",
+            "fi": "kilpaurheilu",
+            "sv": "tävlingsidrott"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "dff5e456-49d4-46a2-99f9-020e2f625603",
+          "answerText": {
+            "en": "goal-oriented hobbyist",
+            "fi": "tavoitteellinen harrastaja",
+            "sv": "målinriktad idrottsutövare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "609eaa8c-d2ff-4b08-8b80-457c3cf857a9",
+          "answerText": {
+            "en": "hobbyist",
+            "fi": "harrastaja",
+            "sv": "idrottsutövare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "af1c06e3-54dc-4462-9755-399af76ebee1",
+          "answerText": {
+            "en": "everyday physical activity",
+            "fi": "arkiliikkuja",
+            "sv": "vardagsmotioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "38022246-d1f7-4d0b-b65f-56f3ebc112cb",
+          "answerText": {
+            "en": "I don’t participate in physical activity",
+            "fi": "en harrasta liikuntaa",
+            "sv": "jag motionerar inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "be7ea1e9-97aa-48f9-a917-c6ad2317167d",
+      "questionText": {
+        "en": "Sleep/rest\n\nHow many hours per day do you sleep?",
+        "fi": "Uni ja lepo\n\nKuinka monta tuntia nukut vuorokaudessa?",
+        "sv": "Sömn/vila\n\nHur många timmar sover du per dygn?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "c45cf497-61de-4967-b383-62148bdde977",
+      "questionText": {
+        "en": "Do you feel that you get enough sleep and rest?",
+        "fi": "Koetko saavasi riittävästi unta ja lepoa?",
+        "sv": "Upplever du att du får tillräckligt med sömn och vila?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "6a56223d-dc49-430d-bd83-63c466999876",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "df069d7c-8f0b-442c-a985-b4077be0abd9",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "c5f81e3f-4ce8-4a70-9a31-82b64f5865f6",
+      "questionText": {
+        "en": "Oral healthcare\n\nHow many times a day do you brush your teeth?",
+        "fi": "Suun terveydenhuolto\n\nKuinka monta kertaa päivässä harjaat hampaasi?",
+        "sv": "Mun- och tandvård\n\nHur många gånger om dagen borstar du tänderna?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "dff5e258-d3df-4207-8607-0a0fe2d5c6e2",
+          "answerText": {
+            "en": "2 times a day",
+            "fi": "2 kertaa tai enemmän",
+            "sv": "2 gånger eller fler"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "52c6e48d-abd7-4722-a335-09c874dc9540",
+          "answerText": {
+            "en": "once a day",
+            "fi": "kerran päivässä",
+            "sv": "en gång om dagen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "748a022f-b37a-4649-8030-7284aaee34b1",
+          "answerText": {
+            "en": "less often than once a day",
+            "fi": "harvemmin kuin kerran päivässä",
+            "sv": "mer sällan än en gång om dagen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "36bcdd1d-3421-45c9-ac71-ab2d512aab9b",
+      "questionText": {
+        "en": "Do you use fluoride toothpaste when brushing your teeth?",
+        "fi": "Käytätkö hampaiden harjaamisen yhteydessä fluorihammastahnaa?",
+        "sv": "Använder du fluortandkräm vid tandborstning?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "db150b6a-7d62-4900-95d9-5d2db6aa2be1",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e2b644a0-4c1c-4089-b89f-c1f9d26aba5d",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "756de16a-ea7f-452e-88b8-4c3bb63ace48",
+      "questionText": {
+        "en": "When was the last time you had a dentist’s or dental hygienist’s examination? (specify the year)",
+        "fi": "Milloin kävit viimeksi hammaslääkärin tai suuhygienistin suorittamassa tarkastuksessa? (merkitse vastaukseksi vuosiluku)",
+        "sv": "När besökte du senast tandläkare eller munhygienist för undersökning? (ange årtalet som svar)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "e665d3a7-cc88-4e2b-9821-b93c12bbfecf",
+      "questionText": {
+        "en": "Illnesses and medication\n\nHave you been diagnosed with any of the following illnesses or risks? (You may select more than one option)",
+        "fi": "Sairaudet ja lääkitys\n\nOnko sinulla todettu jokin seuraavista sairauksista tai riskeistä? (voit valita useamman vaihtoehdon)",
+        "sv": "Sjukdomar och medicinering\n\nHar du konstaterats ha någon av följande sjukdomar eller risker? (du kan välja flera alternativ)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a8e74cbd-6812-4ae5-a021-92cccd908f2c",
+          "answerText": {
+            "en": "diabetes",
+            "fi": "diabetes",
+            "sv": "diabetes"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "797b524a-ce0a-43df-91d9-9ba1d7df576d",
+          "answerText": {
+            "en": "heart defect or disease",
+            "fi": "sydänvika tai -sairaus",
+            "sv": "hjärtfel eller -sjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f29b4ed9-9af9-4f9e-afb2-e891607bf514",
+          "answerText": {
+            "en": "hypertension",
+            "fi": "verenpainetauti",
+            "sv": "hypertoni"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6c94ba52-7a1c-4f0e-9b70-29eac19c28b9",
+          "answerText": {
+            "en": "asthma",
+            "fi": "astma",
+            "sv": "astma"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "903298bd-84d7-49c8-ac82-19cc6884c577",
+          "answerText": {
+            "en": "epilepsy",
+            "fi": "epilepsia",
+            "sv": "epilepsi"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8164840a-acb8-4712-a517-0fbcaf17bdae",
+          "answerText": {
+            "en": "kidney disease",
+            "fi": "munuaistauti",
+            "sv": "njursjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fa3aea57-cf5c-4055-9785-173a5b79d9b8",
+          "answerText": {
+            "en": "liver disease",
+            "fi": "maksasairaus",
+            "sv": "leversjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4705d512-703a-45dd-9425-52797122e5e3",
+          "answerText": {
+            "en": "bowel disease",
+            "fi": "suolistosairaus",
+            "sv": "tarmsjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "64ead24c-7aa4-48e2-b0df-5ca911b819eb",
+          "answerText": {
+            "en": "thromboembolism",
+            "fi": "veritulppa (tromboembolia)",
+            "sv": "blodpropp (tromboemboli)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1458329b-1458-4b94-b5d1-3597f06d2125",
+          "answerText": {
+            "en": "blood coagulation disorder (thrombophilia)",
+            "fi": "veren hyytymishäiriö (trombofilia)",
+            "sv": "koagulationsstörning i blodet (trombofili)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "62ed5fe9-862d-4b8a-9c0f-08bfd1b902b9",
+          "answerText": {
+            "en": "thyroid disorder",
+            "fi": "kilpirauhasen toimintahäiriö",
+            "sv": "funktionsstörning i sköldkörteln"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9fd8dd80-1ed0-4377-bb5f-02f1b0f434b3",
+          "answerText": {
+            "en": "allergies (incl. allergies to medicines)",
+            "fi": "allergiat (ml. lääkeaineallergiat)",
+            "sv": "allergier (inkl. läkemedelsallergier)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "364f54ca-9ad6-42de-921f-351c17071ff3",
+          "answerText": {
+            "en": "congenital malformation",
+            "fi": "synnynnäinen epämuodostuma",
+            "sv": "medfödd missbildning"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c4a3636a-ce7f-4992-a755-c74f82acedfe",
+          "answerText": {
+            "en": "occupational risks",
+            "fi": "työperäiset riskit",
+            "sv": "arbetsrelaterade risker"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ee423a0b-7e25-4b19-86ab-29d9dbfd1bd8",
+          "answerText": {
+            "en": "other",
+            "fi": " jokin muu?",
+            "sv": " något annat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "24e2727e-69ab-460e-811b-17700cfe55f8",
+              "questionText": {
+                "en": "Vad?",
+                "fi": "Mikä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "3153ef36-2c37-4a5b-a578-02cea427f294",
+          "answerText": {
+            "en": "No medical conditions or medications",
+            "fi": "Ei sairauksia tai lääkityksiä",
+            "sv": "Inga sjukdomar eller medicineringar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "4e5a04a1-7d9f-4df7-aba9-3aa3b2e940f8",
+      "questionText": {
+        "en": "Have you undergone any of the following?",
+        "fi": "Onko sinulle tehty jokin seuraavista toimenpiteistä?",
+        "sv": "Har du genomgått något av följande ingrepp?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "91662891-785b-42cb-ba07-b16d9268ad72",
+          "answerText": {
+            "en": "abdominal surgery",
+            "fi": "vatsan alueen leikkaus",
+            "sv": "operation i buken"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "06a86e8e-0929-4c8c-bc69-2136291d24d8",
+          "answerText": {
+            "en": "Caesarean section",
+            "fi": "keisarinleikkaus",
+            "sv": "kejsarsnitt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6ea86c4a-f964-43b1-ba1d-bcb104f8702e",
+          "answerText": {
+            "en": "other operation on the uterus",
+            "fi": "muu kohtuun kohdistunut leikkaus",
+            "sv": "annan operation i livmodern"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6e5c5ac3-c6b0-4c5c-96cc-a5c539278784",
+          "answerText": {
+            "en": " operation on the uterine cervix",
+            "fi": "kohdun kaulaan kohdistunut leikkaus",
+            "sv": "operation av livmoderhalsen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "71ada64e-48cf-46f7-b05c-0e26f0e5bc31",
+          "answerText": {
+            "en": "weight loss operation",
+            "fi": "lihavuuden leikkaushoito",
+            "sv": "operativ behandling av fetma"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "51c49117-30e5-49a5-b1d6-3f0bbdcea67b",
+          "answerText": {
+            "en": "breast surgery",
+            "fi": "rintoihin kohdistunut leikkaus",
+            "sv": "bröstoperation"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6b2aae00-d8c3-40bf-906e-4e7fc8390eb0",
+          "answerText": {
+            "en": "circumcision",
+            "fi": "ympärileikkaus",
+            "sv": "omskärelse"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ff058280-d791-40db-820c-3b72b48a6d10",
+          "answerText": {
+            "en": "reconstructive surgery after circumcision",
+            "fi": "ympärileikkauksen avaus",
+            "sv": "korrigering av omskärelse"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7f5985f2-f4c4-4d50-86e0-2db9362f24b6",
+          "answerText": {
+            "en": "blood transfusion",
+            "fi": "verensiirto",
+            "sv": "blodtransfusion"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fbcad2c3-a04b-4bfe-bea2-d06d61f022cb",
+          "answerText": {
+            "en": "procedure, surgery or hospitalisation abroad in the last 12 months",
+            "fi": "toimenpide leikkaus sairaalahoito ulkomailla viimeisen 12 kuukauden aikana",
+            "sv": "ingrepp, operation, sjukhusvård utomlands under de senaste 12 månaderna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e8c6cf73-6064-4367-aa78-85e7e50bf275",
+          "answerText": {
+            "en": "other",
+            "fi": "jokin muu",
+            "sv": "något annat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "ddf1f6c2-37db-47b3-986a-54c4948decea",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mikä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "ee867a04-6c6d-4e2e-a590-1fdf68d71b44",
+          "answerText": {
+            "en": "No medical procedures performed",
+            "fi": "Ei tehtyjä toimenpiteitä",
+            "sv": "Inga utförda åtgärder"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "6ae88f5d-b13c-4c73-a434-f9a924eac71d",
+      "questionText": {
+        "en": "Have you been diagnosed with any of the following illnesses?",
+        "fi": "Onko sinulla todettu jokin seuraavista sairauksista?",
+        "sv": "Har du konstaterats ha någon av följande sjukdomar?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a36eef20-190d-41dd-91e1-cd552041cd1b",
+          "answerText": {
+            "en": "condyloma",
+            "fi": "kondylooma",
+            "sv": "kondylom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0db12724-807b-490b-8623-c41007dc216b",
+          "answerText": {
+            "en": "gonorrhoea",
+            "fi": "tippuri",
+            "sv": "gonorré"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "83929f3b-f6c9-4085-82b2-ed7fd5626942",
+          "answerText": {
+            "en": "chlamydia",
+            "fi": "klamydia",
+            "sv": "klamydia"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "67385782-0cad-4ccf-aad8-7cd377592e58",
+          "answerText": {
+            "en": "syphilis",
+            "fi": "kuppa",
+            "sv": "syfilis"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "20cdfcfe-c232-4e51-bdea-fca4f2c31153",
+          "answerText": {
+            "en": "genital herpes",
+            "fi": "genitaaliherpes",
+            "sv": "genitalherpes"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6d38f6cf-eb25-4cd2-af32-ac2cec6a009b",
+          "answerText": {
+            "en": "Hepatitis C",
+            "fi": "C-hepatiitti",
+            "sv": "Hepatit C"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b8c30d01-c08e-4299-9ba7-223c244e9e5b",
+          "answerText": {
+            "en": "Hepatitis B",
+            "fi": "B-hepatiitti",
+            "sv": "Hepatit B"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7e96bb74-1850-49c8-bf69-15e2c4798014",
+          "answerText": {
+            "en": "HIV",
+            "fi": "HIV",
+            "sv": "HIV"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "44bbe68a-4d8d-45f2-b6c1-208f203d13ef",
+          "answerText": {
+            "en": "other illness or symptoms",
+            "fi": "muu sairaus tai oireilu",
+            "sv": "annan sjukdom eller andra symtom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e5160968-c18b-4e71-8080-08e2d481897e",
+          "answerText": {
+            "en": "none of the above",
+            "fi": "ei mikään ylläolevista",
+            "sv": "inget av ovanstående"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "49556984-1532-4cac-8574-de5453ccb877",
+      "questionText": {
+        "en": "Have you had chickenpox or received a chickenpox vaccine?",
+        "fi": "Oletko sairastanut vesirokon tai saanut vesirokkorokotteen?",
+        "sv": "Har du haft vattkoppor eller fått vaccin mot vattkoppor?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "55767202-0cbc-43bd-a8c0-cf9aae953ff3",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c248a4e5-0a95-4a05-8b5e-54c69511fb77",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3cab34f2-327a-4a36-9cc1-fd3956c25c8a",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0c644616-dbe9-4fea-975a-ed6d4d582842",
+      "questionText": {
+        "en": "Have you been vaccinated against measles, rubella and mumps?",
+        "fi": "Oletko saanut tuhkarokko-vihurirokko-sikotauti-rokotteen?",
+        "sv": "Har du fått vaccinet mot mässling, röda hund och påssjuka?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "752db804-2346-4d34-aa98-20d9e11846a7",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0a0a8398-5457-4229-957f-9a600ab2671d",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5db6d96c-bebc-41c3-b2ad-7fe1316fb0e8",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "7b7192c9-bb9d-4807-a1b3-48d5f1d65399",
+      "questionText": {
+        "en": "Are your other vaccinations up to date?",
+        "fi": "Ovatko muut rokotuksesi ajan tasalla? ",
+        "sv": "Är dina övriga vaccinationer uppdaterade?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7c964d67-85f4-465a-9102-8a06b373ce18",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d5f3326b-9f9c-4296-b59e-bcc908ef1ac3",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5bc88647-9f32-447f-9505-12bdb245892b",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "2f2d31be-7bfe-432c-8e5e-d331706f64c9",
+      "questionText": {
+        "en": "Have you been diagnosed with injuries or sensory disorders? (e.g., visual impairment, hearing impairment)",
+        "fi": "Onko sinulla todettu vammoja tai aistihäiriöitä? (esimerkiksi näkövamma, kuulovamma)",
+        "sv": "Har du konstaterats ha någon form av funktionsnedsättning? (t.ex. synskada, hörselskada)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "fdf3e5e9-74f6-4d0e-89ec-8a7eff6f3e2b",
+      "questionText": {
+        "en": "Have you experienced any of the following symptoms",
+        "fi": "Onko sinulla esiintynyt seuraavia oireita? ",
+        "sv": "Har du haft följande symtom?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "8a0e053e-2f03-4ec0-8fa1-b876f9340554",
+          "answerText": {
+            "en": "anxiety",
+            "fi": "Ahdistus",
+            "sv": "ångest"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e6472c74-1379-4954-aafa-be928628eeb2",
+          "answerText": {
+            "en": "depression",
+            "fi": "Masennus",
+            "sv": "depression"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f7131eb3-252a-424b-b96f-996828fd7db7",
+          "answerText": {
+            "en": "nervousness",
+            "fi": "Jännittyneisyys",
+            "sv": "nervositet"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a5c67d13-164e-439b-9bb0-dd32de9765c0",
+          "answerText": {
+            "en": "state of fear",
+            "fi": "Pelkotilat",
+            "sv": "fobier"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f87633ee-5244-47a4-815c-ef62e9c7c0ed",
+          "answerText": {
+            "en": "panic attack",
+            "fi": "Paniikkikohtaus",
+            "sv": "panikattack"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "60abacae-ea2e-4000-bda0-cdcdebd93d4a",
+          "answerText": {
+            "en": "eating disorder",
+            "fi": "Syömishäiriö",
+            "sv": "ätstörning"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2b5e353e-2a76-44df-8e28-c51025eec3a8",
+          "answerText": {
+            "en": "other mental symptoms or illness",
+            "fi": "Muu psyykkinen oireilu tai sairaus",
+            "sv": "andra psykiska symtom eller sjukdomar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c2c01b1b-bf82-427f-b228-d663e83ed7f8",
+          "answerText": {
+            "en": "none of the above",
+            "fi": "Ei mikään yllä olevista",
+            "sv": "inget av ovanstående"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "82b179aa-6845-4160-be9f-01412a09f50f",
+      "questionText": {
+        "en": "Do you have any medication prescribed by a doctor?",
+        "fi": "Onko sinulla jokin lääkärin määräämä lääkitys?",
+        "sv": "Har du någon medicinering som ordinerats av läkare??"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7d8ed10b-6b0c-444c-ae31-0f32ff1a0bd9",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "51fd5d86-a466-43ff-96d7-58482eae35a6",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "25bb48ff-3296-4904-85e7-747976e57e88",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mikä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8b6e7bf5-4f33-466e-9a4f-b6f5348eec27",
+      "questionText": {
+        "en": "Do you use any over-the-counter medications?",
+        "fi": "Onko sinulla käytössä jokin itsehoitolääke?",
+        "sv": "Använder du något egenvårdsläkemedel?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "44ef1481-0106-44a6-be94-ecde61870594",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "751ca714-218d-49c3-b24e-41d99fa763eb",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "9899b65d-808d-4857-abbd-a8f90ab8d662",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mikä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8433f2b2-f51c-402b-8a6e-cc36ff4c78bc",
+      "questionText": {
+        "en": "Family wellbeing\n\nWhat makes you joyful in life?",
+        "fi": "Perheen hyvinvointi\n\nMistä iloitset elämässä?",
+        "sv": "Familjens välbefinnande\n\nVad är du glad över i livet?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "84a58de8-dffc-4393-83cc-1fc49f77c71a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8251f401-230a-4b38-ba1e-2cdc5c96a2d7",
+      "questionText": {
+        "en": "Are you worried about something?",
+        "fi": "Oletko huolissasi jostakin asiasta?",
+        "sv": "Är du orolig för något?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "84a58de8-dffc-4393-83cc-1fc49f77c71a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "fc4fec26-7eed-43df-95c2-4d2424466900",
+      "questionText": {
+        "en": "What are the strengths of your family?",
+        "fi": "Mitkä ovat perheenne vahvuudet?",
+        "sv": "Vilka är familjens styrkor?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "84a58de8-dffc-4393-83cc-1fc49f77c71a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "502ab671-ba72-44ef-8bec-1ffc271d0807",
+      "questionText": {
+        "en": "What comes to mind when you think about pregnancy?",
+        "fi": "Mitä ajatuksia raskaus sinussa herättää?",
+        "sv": "Vilka tankar väcker graviditeten hos dig?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "84a58de8-dffc-4393-83cc-1fc49f77c71a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "dad2e744-f7f6-483b-b809-d5d6f830afdb",
+      "questionText": {
+        "en": "What do you expect from your visits to the maternity clinic?",
+        "fi": "Mitä odotat neuvolakäynneiltä?",
+        "sv": "Vad förväntar du dig av rådgivningsbesöken?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "84a58de8-dffc-4393-83cc-1fc49f77c71a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "7ca2d898-63f9-4cb8-a210-ba170b18e09a",
+      "name": {
+        "en": "Ohje",
+        "fi": "Ohje",
+        "sv": "Ohje"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "1517f3e2-9782-4e12-be9b-30442d8220ed",
+      "name": {
+        "en": "Basic information",
+        "fi": "Perustiedot",
+        "sv": "Basuppgifter"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "888f8bfd-e996-4ff2-82cb-eabd78f2cf5c",
+      "name": {
+        "en": "Tidigare graviditeter och förlossningar",
+        "fi": "Previous pregnancies and childbirths",
+        "sv": "Tidigare graviditeter och förlossningar"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "372fb2f5-41d7-4619-8e20-e22f67b6198d",
+      "name": {
+        "en": "Current pregnancy",
+        "fi": "Nykyraskaus",
+        "sv": "Nuvarande graviditet"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "3492836d-2c52-44e4-b63e-204585bc2701",
+      "name": {
+        "en": "My health information",
+        "fi": "Omat terveystiedot",
+        "sv": "Egna hälsouppgifter"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "f7bec26c-937d-4ce2-a750-1bcd188c3b30",
+      "name": {
+        "en": "Lifestyle affecting health",
+        "fi": "Terveyteen vaikuttavat elintavat",
+        "sv": "Levnadsvanor som påverkar hälsan"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "ddadfdf0-6b6a-4dc2-98ab-0e146663d3aa",
+      "name": {
+        "en": "Illnesses and medication",
+        "fi": "Sairaudet ja lääkitys",
+        "sv": "Sjukdomar och medicinering"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "84a58de8-dffc-4393-83cc-1fc49f77c71a",
+      "name": {
+        "en": "Family wellbeing",
+        "fi": "Perheen hyvinvointi",
+        "sv": "Familjens välbefinnande"
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "form",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": false,
+  "scoreCalculations": [],
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [
+      {
+        "companyId": 6,
+        "companyPayerType": "primary-healthcare",
+        "internalName": "Anonymous"
+      }
+    ]
+  }
+}

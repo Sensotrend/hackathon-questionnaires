@@ -1,0 +1,298 @@
+{
+  "revisionGuid": "3e889977-d2aa-49e7-a43d-c4d8db90ce3a",
+  "surveyGuid": "478d626b-c450-4126-b2fc-7db9c37b2f41",
+  "draft": false,
+  "name": {
+    "en": "Nicotine Dependence Test (Fagerström)",
+    "fi": "Nikotiiniriippuvuustesti (Fagerström)",
+    "sv": "Nikotinberoendetest (Fagerström)"
+  },
+  "description": {
+    "en": "This survey is designed to assess your smoking habits.\nFagerström test for nicotine dependence (HSI)  ",
+    "fi": "Tällä kyselyllä kartoitetaan tupakointitapojasi.\nFagerströmin kahden kysymyksen nikotiiniriippuvuustesti (HSI)  ",
+    "sv": "Denna blanketten kartlägger dina rökvanor. \nFagerström test av nikotinberoende (HSI)  "
+  },
+  "createdDt": "2026-05-07T11:03:41.840Z",
+  "createdBy": {
+    "upn": "suvi.viitanen@luvn.fi",
+    "name": "Suvi Viitanen",
+    "practitionerId": 8
+  },
+  "questions": [
+    {
+      "questionId": "82f13d20-5f6d-44a7-8347-3cf2620f4c88",
+      "questionText": {
+        "en": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form.",
+        "fi": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+        "sv": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "9fd9228f-77e5-495b-ab95-b8c62cae40bc",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "518c3e67-7bb2-4f1e-997c-09e72d11096c",
+      "questionText": {
+        "en": "How soon after waking up do you smoke your first cigarette?  ",
+        "fi": "Kuinka pian (minuuteissa) herättyäsi poltat ensimmäisen savukkeen?  ",
+        "sv": "Hur många minuter efter att du vaknat röker du din första cigarrett?  "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7f0a244d-a139-4040-89ee-7ff99e278809",
+          "answerText": {
+            "en": "Within 5 minutes  ",
+            "fi": "Alle 6",
+            "sv": "Under 6"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0ff88622-d3e7-46d3-9822-a0cebd13587f",
+          "answerText": {
+            "en": "6–30 minutes  ",
+            "fi": "6-30",
+            "sv": "6–30 "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c32a2297-f305-4085-a544-57bbc05ae082",
+          "answerText": {
+            "en": "31–60 minutes  ",
+            "fi": "31-60",
+            "sv": "31–60 "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "faa068a9-c845-4dd8-b21e-ccfe3d2549c7",
+          "answerText": {
+            "en": "After 60 minutes  ",
+            "fi": "Yli 60",
+            "sv": "Över 60"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "c01cff93-8a11-4c9c-bf50-2c05333c431c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 3,
+          "answerId": "7f0a244d-a139-4040-89ee-7ff99e278809"
+        },
+        {
+          "points": 2,
+          "answerId": "0ff88622-d3e7-46d3-9822-a0cebd13587f"
+        },
+        {
+          "points": 1,
+          "answerId": "c32a2297-f305-4085-a544-57bbc05ae082"
+        },
+        {
+          "points": 0,
+          "answerId": "faa068a9-c845-4dd8-b21e-ccfe3d2549c7"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "02451703-7dbf-4979-b27d-72c235a28b14",
+      "questionText": {
+        "en": "How many cigarettes do you smoke per day?",
+        "fi": "Kuinka monta savuketta poltat päivittäin?  ",
+        "sv": "Hur många cigarretter röker du per dag?  "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "0c9be4db-7f06-47ba-875f-a14c9315e7e6",
+          "answerText": {
+            "en": "10 or less  ",
+            "fi": "10 tai vähemmän",
+            "sv": "10 eller färre"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c90299d5-bde7-4ae7-96d8-f8bf137a79ff",
+          "answerText": {
+            "en": "11–20  ",
+            "fi": "11–20  ",
+            "sv": "11–20  "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "28b2f3d4-c8d4-41ba-9e84-d0fcb8b4d9cf",
+          "answerText": {
+            "en": "21–30  ",
+            "fi": "21–30  ",
+            "sv": "21–30  "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "31e57e8e-e478-4229-989e-2e681b40127b",
+          "answerText": {
+            "en": "31 or more  ",
+            "fi": "Yli 30",
+            "sv": "Över 30"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "c01cff93-8a11-4c9c-bf50-2c05333c431c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "0c9be4db-7f06-47ba-875f-a14c9315e7e6"
+        },
+        {
+          "points": 1,
+          "answerId": "c90299d5-bde7-4ae7-96d8-f8bf137a79ff"
+        },
+        {
+          "points": 2,
+          "answerId": "28b2f3d4-c8d4-41ba-9e84-d0fcb8b4d9cf"
+        },
+        {
+          "points": 3,
+          "answerId": "31e57e8e-e478-4229-989e-2e681b40127b"
+        }
+      ],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "9fd9228f-77e5-495b-ab95-b8c62cae40bc",
+      "name": {
+        "en": "Instruction",
+        "fi": "Ohje",
+        "sv": "Instruktion"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "c01cff93-8a11-4c9c-bf50-2c05333c431c",
+      "name": {
+        "ar": "Fagerström test for nicotine dependence (HSI)  ",
+        "de": "Fagerström test for nicotine dependence (HSI)  ",
+        "en": "Fagerström test for nicotine dependence (HSI)  ",
+        "et": "Fagerström test for nicotine dependence (HSI)  ",
+        "fi": "Fagerströmin kahden kysymyksen nikotiiniriippuvuustesti (HSI)  ",
+        "it": "Fagerström test for nicotine dependence (HSI)  ",
+        "ru": "Fagerström test for nicotine dependence (HSI)  ",
+        "sv": "Fagerström test av nikotinberoende (HSI)  "
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "form",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": true,
+  "scoreCalculations": [
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 6,
+      "title": {
+        "en": "Nicotine dependency",
+        "fi": "Nicotine dependency",
+        "sv": "Nikotinberoende"
+      },
+      "summaries": []
+    }
+  ],
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [
+      {
+        "companyId": 6,
+        "companyPayerType": "primary-healthcare",
+        "internalName": "Anonymous"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3831 @@
+{
+  "revisionGuid": "201825f4-88f6-4bdd-9638-768cc9d22245",
+  "surveyGuid": "fdb7b3a4-a318-4e0c-9d8b-e63ad1027c2d",
+  "draft": false,
+  "name": {
+    "en": "Physiotherapy - Lower back questionnaire",
+    "fi": "Fysioterapia - Alaselkäkysely lähtötilanne",
+    "sv": "Fysioterapi - Frågeformulär om ländryggen, utgångsläge"
+  },
+  "description": {
+    "en": "Fysioterapia - Alaselkäkysely lähtötilanne",
+    "fi": "Fysioterapia - Alaselkäkysely lähtötilanne",
+    "sv": "Fysioterapi - Frågeformulär om ländryggen, utgångsläge"
+  },
+  "createdDt": "2025-12-22T07:07:01.606Z",
+  "createdBy": {
+    "upn": "teo.mustakari@luvn.fi",
+    "name": "Teo Mustakari",
+    "practitionerId": 10
+  },
+  "questions": [
+    {
+      "questionId": "8e5aa2a9-ba20-4663-8f71-be14daca5d7b",
+      "questionText": {
+        "en": "If you have lower back pain and have been referred to the digital care pathway for lower back pain, please fill in the lower back pain form when you start the digital care pathway. By completing the form, you give permission for your questionnaire data to be used for research purposes. The aim of the research is to improve the care pathway for lower back pain in primary health care, so by giving permission for your data to be used, you are contributing to better health care. We will send you follow-up questionnaires regarding your lower back pain at 3 months and 12 months, and we hope you will be able to respond to those as well.",
+        "fi": "Jos sinulla on alaselänkipu ja sinut on ohjattu alaselkäkipuisen digihoitopolulle, täytä alaselkälomake aloittaessasi digihoitopolun. Täyttämällä lomakkeen annat luvan siihen, että sinun kyselylomakkeesi tietoja käytetään tutkimuskäyttöön. Tutkimuksen tarkoituksena on parantaa alaselkäkipuisen hoitopolkua perusterveydenhuollossa, joten antamalla luvan kyselyn käyttöön teet tärkeää työtä paremman terveydenhuollon eteen. Lähetämme sinulle jatkokyselyt alaselkäkipuusi liittyen 3kk ja 12kk kohdalla, toivottavasti pääset vastaamaan myös niihin.",
+        "sv": "Om du har ländryggsmärta och har hänvisats till den digitala vårdstigen för personer med ländryggsmärta, fyll i ländryggsenkäten när du påbörjar vårdstigen. Genom att fylla i enkäten ger du ditt samtycke till att uppgifterna i din enkät får användas för forskningsändamål. Syftet med forskningen är att förbättra vårdstigen för personer med ländryggsmärta inom primärvården, så genom att ge ditt tillstånd till att enkäten får användas gör du en viktig insats för en bättre hälso- och sjukvård. Vi kommer att skicka uppföljningsenkäter gällande din ländryggsmärta efter 3 och 12 månader, och vi hoppas att du har möjlighet att även besvara dem."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "bead5b5c-b5b1-49dd-a109-54e0b2180023",
+      "questionText": {
+        "en": "Current pain in the low back \n\nAssess the pain in numbers.\nNo pain is 0 and the worst imaginable pain 10:",
+        "fi": "Kipu tällä hetkellä alaselässä \n\nArvioi kipua numeroin.\nEi kipua on 0 ja pahin mahdollinen kuviteltavissa oleva kipu 10: ",
+        "sv": "Smärta i ländryggen för tillfället \n\nBedöm smärtan med siffror. Ingen smärta är 0 och den värsta möjliga tänkbara smärtan är 10:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    },
+    {
+      "questionId": "54e322ee-bc9c-4464-8962-f82cc344d160",
+      "questionText": {
+        "en": "Radiating pain, which radiates from the back to one leg/both legs\n\nAssess the pain in numbers.\nNo pain is 0 and the worst imaginable pain 10:",
+        "fi": "Säteilykipu, joka säteilee selästä alaraajaan/alaraajoihin\n\nArvioi kipua numeroin.\nEi kipua on 0 ja pahin mahdollinen kuviteltavissa oleva kipu 10:",
+        "sv": "Smärta som strålar ut från ryggen till de nedre extremiteterna Bedöm smärtan med siffror. Ingen smärta är 0 och den värsta möjliga tänkbara smärtan är 10:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    },
+    {
+      "questionId": "9c8cda0a-0951-4adb-bfa2-2a0621af6e5d",
+      "questionText": {
+        "en": "Average low back pain during the past two weeks \n\nAssess the pain in numbers.\nNo pain is 0 and the worst imaginable pain 10:",
+        "fi": "Keskimääräinen alaselkäkipu viimeisen kahden viikon aikana\n\nArvioi kipua numeroin. \nEi kipua on 0 ja pahin mahdollinen kuviteltavissa oleva kipu 10:",
+        "sv": "Genomsnittlig smärta i ländryggen under de senaste två veckorna Bedöm smärtan med siffror. Ingen smärta är 0 och den värsta möjliga tänkbara smärtan är 10:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    },
+    {
+      "questionId": "0b889727-d664-4f3e-aaac-a89478926dd9",
+      "questionText": {
+        "en": "For how long have you had lower back pain ? (number of days)",
+        "fi": "Kauan alaselkäkipu on jatkunut? (ilmoita tulos päivinä)",
+        "sv": "Hur länge har smärtan i ländryggen fortsatt (ange resultatet i dagar):"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "364eb8ea-3c32-42e1-ade4-3a3b06920c8a",
+      "questionText": {
+        "en": "Did you first visit a physiotherapist because of lower back pain or did you start the digital path straight away?",
+        "fi": "Kävitkö alaselkäkivun takia ensin fysioterapeutin vastaanotolla vai aloititko suoraan digipolun?",
+        "sv": "Besökte du först en fysioterapeut på grund av ländryggssmärtan eller började du direkt med digitala stigen?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "5c7d27a6-d529-4fac-b71d-e687f48deee1",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Yes"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "694a9357-4133-4c1b-8e79-e2a51a95d1f6",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "No"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f1c26c96-bbee-43d6-9152-dec77c6fbaac",
+      "questionText": {
+        "en": "What is your gender?",
+        "fi": "Mikä on sukupuolesi?",
+        "sv": "Vad är ditt kön?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "83ed4160-be80-4072-8992-6ed67ed215f3",
+          "answerText": {
+            "en": "Male",
+            "fi": "Mies",
+            "sv": "Man"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "77cb4a42-aa0f-4d45-a8ea-d970d1b97b3b",
+          "answerText": {
+            "en": "Female",
+            "fi": "Nainen",
+            "sv": "Kvinna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c4c93e54-0b35-4ba2-a411-a4aa3a092654",
+          "answerText": {
+            "en": "Other",
+            "fi": "Muu",
+            "sv": "Annat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "3ac062e0-82f1-4634-aa4a-5681d2dff4ce",
+      "questionText": {
+        "en": "What is your height?",
+        "fi": "Mikä on pituutesi?",
+        "sv": "Vad är din längd?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ae88f684-fb70-4fd8-bdc4-7a86e4a824e4",
+      "questionText": {
+        "en": "What is your weight?",
+        "fi": "Mikä on painosi?",
+        "sv": "Vad är din vikt?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "36c778a4-7022-470d-a87c-40f590f7133b",
+      "questionText": {
+        "en": "Please list all your underlying diseases.",
+        "fi": "Ole hyvä ja listaa kaikki perussairautesi. ",
+        "sv": "Var god och lista alla dina bakomliggande sjukdomar."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "c3348bab-626d-4e34-900c-dd3936c70a7a",
+      "questionText": {
+        "en": "Have you had any of the following diseases/symptoms? (select all that apply to you)",
+        "fi": "Onko sinulla jokin seuraavista sairauksista/oireista? Valitse kaikki sinua koskevat.",
+        "sv": "Har du någon av följande sjukdomar/symtom? Välj alla som gäller dig."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a43e71b8-65fb-4f80-9dc4-c14124d2e68b",
+          "answerText": {
+            "en": "I don't have any other diseases  ",
+            "fi": "Minulla ei ole muita sairauksia ",
+            "sv": "Jag har inga andra sjukdomar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0a82d895-8f34-4d1e-8c81-48b5ff48fe95",
+          "answerText": {
+            "en": "High blood pressure ",
+            "fi": "Korkea verenpaine ",
+            "sv": "Högt blodtryck "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "600c8942-fe0e-4dd3-aacd-095a750555e3",
+          "answerText": {
+            "en": "High cholesterol ",
+            "fi": "Korkea kolesteroli ",
+            "sv": "Hög kolesterol  "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "64c7f06a-52e3-4ce9-9e9e-a27498b9d367",
+          "answerText": {
+            "en": "Rheumatic disease (rheumatoid arthritis, fibromyalgia, lupus) other than osteoarthritis",
+            "fi": "Reumasairaus (nivelreuma, fibromyalgia, lupus) muu kuin nivelrikko ",
+            "sv": "Reumatisk sjukdom (ledgångsreumatism, fibromyalgi, lupus) annan än artros "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "97d2e2bf-7120-49bf-bf95-f3c697195236",
+          "answerText": {
+            "en": "Osteoporosis",
+            "fi": "Osteoporoosi",
+            "sv": "Osteoporos"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ca5560df-ad74-4324-bb60-6426649f37a4",
+          "answerText": {
+            "en": "Back pain ",
+            "fi": "Selkäkipu",
+            "sv": "Ryggsmärta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "583a22dd-cd7b-47d3-93b0-e41645f5591a",
+          "answerText": {
+            "en": "Osteoarthritis in hand or fingers ",
+            "fi": "Käden tai sormien nivelrikko",
+            "sv": "Artros i handen eller fingrarna "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "21b34019-745b-4dc8-9920-e58edc0f4785",
+          "answerText": {
+            "en": "Chronic heart failure ",
+            "fi": "Krooninen sydämen vajaatoiminta ",
+            "sv": "Kronisk hjärtsvikt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c8eb5c4c-3fe1-404c-b763-2c80bfb957ab",
+          "answerText": {
+            "en": "Ischaemic heart disease (coronary artery disease, heart attack, balloon angioplasty, coronary artery bypass surgery)",
+            "fi": "Iskeeminen sydänsairaus (sepelvaltimotauti, sydänkohtaus, pallolaajennus, ohitusleikkaus)",
+            "sv": "Ischemisk hjärtsjukdom (kranskärlssjukdom, hjärtinfarkt, ballongvidgning, bypassoperation)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9cee38ec-a74f-453b-8dc2-f0ae8efb501e",
+          "answerText": {
+            "en": "Other heart disease  ",
+            "fi": "Muu sydänsairaus ",
+            "sv": "Annan hjärtsjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9d54172f-6df1-4cb6-8106-83fad4927d68",
+          "answerText": {
+            "en": "Problem with circulation in legs (e.g., atherosclerosis)",
+            "fi": "Jalkojen verenkierron ongelma (esim. ateroskelroosi) ",
+            "sv": "Problem i benens blodcirkulation (t.ex. ateroskleros)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ab4efc35-5780-456d-9d53-4e4e3d2e5ac6",
+          "answerText": {
+            "en": "Anemia or other blood disease",
+            "fi": "Anemia tai muu veritauti",
+            "sv": "Anemi eller annan blodsjukdom "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "637c377e-2519-48fc-a440-eecb676d5796",
+          "answerText": {
+            "en": "Cerebrovascular disease ",
+            "fi": "Aivoverenkiertohäiriö",
+            "sv": "Hjärncirkulationsstörning"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4a116dc6-ba7c-430f-9b35-5190090d68bc",
+          "answerText": {
+            "en": "Parkinson's disease",
+            "fi": "Parkinsonin tauti ",
+            "sv": "Parkinsons sjukdom "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d028b611-b253-41b5-a564-d045d08cd0a2",
+          "answerText": {
+            "en": "Memory disorder ",
+            "fi": "Muistisairaus",
+            "sv": " Demenssjukdom "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d296bd37-d6ed-41d6-9674-3c832efb80e6",
+          "answerText": {
+            "en": "Other neurological disorder (e.g., MS, epilepsy, migraine) ",
+            "fi": "Muu neurologinen sairaus (esim. MS, epilepsia, migreeni) ",
+            "sv": "Annan neurologisk sjukdom (t.ex. MS, epilepsi, migrän)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "acac7a69-4b72-4fd0-a6d0-20ac6467b2c5",
+          "answerText": {
+            "en": "Type 1 diabetes",
+            "fi": "1-tyypin diabetes",
+            "sv": "Diabetes typ 1 "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1ca1617b-e678-4743-8536-3c97bbfbc585",
+          "answerText": {
+            "en": "Type 2 diabetes",
+            "fi": "2-tyypin diabetes",
+            "sv": "Diabetes typ 2"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "dfdfd4ba-9719-442c-9ea3-06851fc879ad",
+          "answerText": {
+            "en": "Metabolic disorder (e.g. hypo/hyperthyroidism) ",
+            "fi": "Aineenvaihdunnan sairaus (esim. hypo/hypertyreoosi) ",
+            "sv": "Metabol sjukdom (t.ex. hypotyreos eller hypertyreos)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "33c762b3-30b9-4572-af63-347c0202b07c",
+          "answerText": {
+            "en": "Kidney disease",
+            "fi": "Munuaissairaus",
+            "sv": "Njursjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ab8d4493-595c-46c6-acb1-b45be7f8027a",
+          "answerText": {
+            "en": "Gastric ulcer or other abdominal problem such as acid reflux",
+            "fi": "Mahahaava tai muu vatsaongelma kuten refluksi",
+            "sv": "Magsår eller annat magbesvär såsom reflux "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "49ff1791-a9fc-4837-acf6-60bee870c534",
+          "answerText": {
+            "en": "Gastrointestinal disease (Crohn’s disease, irritable bowel syndrome (IBS), chronic colitis)",
+            "fi": "Suolistosairaus (Crohnin tauti, ärtyneen suolen oireyhtymä, krooninen koliitti)",
+            "sv": "Tarmsjukdom (Crohns sjukdom, irriterade tarmens syndrom, kronisk kolit) "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "dd624acc-71b6-463d-9aa2-1710af17e952",
+          "answerText": {
+            "en": "Liver disease",
+            "fi": "Maksasairaus",
+            "sv": "Leversjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "658a8eae-c0a7-404f-be06-0037c77f8060",
+          "answerText": {
+            "en": "Chronic obstructive pulmonary disease (COPD) ",
+            "fi": "Keuhkoahtaumatauti (COPD)",
+            "sv": "Kroniskt obstruktiv lungsjukdom (COPD)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9e0d12d8-2038-484d-ae7b-d14049435888",
+          "answerText": {
+            "en": "Asthma / Other pulmonary disease",
+            "fi": "Astma/ Muu keuhkosairaus",
+            "sv": "Astma/ annan lungsjukdom "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "11a9c0b4-f1d8-47d1-b47c-ec03fa7145b9",
+          "answerText": {
+            "en": "Cancer in the past 5 years (except for mild types of skin cancer)",
+            "fi": "Syöpä viimeisen 5 vuoden aikana (pl. lievät ihosyövän tyypit)",
+            "sv": "Cancer under de senaste 5 åren (exklusive lindriga typer av hudcancer) "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d1e16a61-0ff0-49c9-be5e-a95f23bc7a71",
+          "answerText": {
+            "en": "Depression",
+            "fi": "Masennus",
+            "sv": "Depression"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9af9a308-0134-4d96-81b4-093a2a3351e0",
+          "answerText": {
+            "en": "Anxiety",
+            "fi": "Ahdistuneisuus",
+            "sv": "Ångest"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e6b02769-0a94-4a4d-84e7-2694707eefe5",
+          "answerText": {
+            "en": "Psoriasis ",
+            "fi": "Psoriasis",
+            "sv": "Psoriasis"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "98b01756-32db-42ae-bb06-750dbdcdfc41",
+          "answerText": {
+            "en": "Overweight",
+            "fi": "Ylipaino",
+            "sv": "Övervikt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4f2a0e35-712a-4fad-93b0-bf3b3d10278c",
+          "answerText": {
+            "en": "Chronic fatigue syndrome, myalgic encephalomyelitis (ME)",
+            "fi": "Krooninen väsymysoireyhtymä, myalginen ensefaliitti (ME)",
+            "sv": "Kroniskt trötthetssyndrom, myalgisk encefalomyelit (ME)"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ed014d1a-b9b3-4fdd-80f9-8beafcf69431",
+          "answerText": {
+            "en": "Other long-term illness",
+            "fi": "Muu pitkäaikaissairaus",
+            "sv": "Annan långtidssjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "098effd9-e4c3-462d-a5a9-99858d18a925",
+      "questionText": {
+        "en": "Do you smoke?",
+        "fi": "Tupakoitko?",
+        "sv": "Röker du?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "67602c78-f692-425e-baae-d5cb466c4515",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ee44072b-a078-4091-8c58-48fc5db4a18e",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0285cd82-d013-4092-893f-3f6a68450e49",
+      "questionText": {
+        "en": "How much time (in minutes) do you use for incidental exercise during a normal week? Incidental exercise is physical activity that is not actual exercise (e.g., walking, household chores, etc.)",
+        "fi": "Kuinka paljon aikaa (minuutteina) käytät tavallisen viikon aikana hyötyliikuntaan? Toisin sanoen fyysiseen aktiivisuuteen, joka ei ole varsinaista liikuntaa, kuten kävelyyn tai kotitöihin.",
+        "sv": "Hur mycket tid (i minuter) ägnar du åt vardagsmotion under en vanlig vecka? Mao. fysisk aktivitet, som inte är egentlig motion, såsom promenader, hushållsarbete osv"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c47f7f21-f2fd-4d60-aace-20f761f0e28b",
+          "answerText": {
+            "en": "Less than 30 min",
+            "fi": "Alle 30 min",
+            "sv": "Under 30 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3311d2a1-22fe-4947-8129-5ad2073101a5",
+          "answerText": {
+            "en": "30–60 min",
+            "fi": "30–60 min",
+            "sv": "30–60 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c01a1cac-919d-4b43-8678-d0c493855052",
+          "answerText": {
+            "en": "60-90 min",
+            "fi": "60-90 min",
+            "sv": "60-90 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e71a08c6-d02d-416d-ac38-d611138e15fa",
+          "answerText": {
+            "en": "90–150 min",
+            "fi": "90–150 min",
+            "sv": "90–150 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "18b9e7e6-eb60-4f57-aaa0-29838168ead0",
+          "answerText": {
+            "en": "150–300 min",
+            "fi": "150–300 min",
+            "sv": "150–300 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c1606554-9c0b-4be1-b64e-65ee43a49c28",
+          "answerText": {
+            "en": "More than 300 min",
+            "fi": "yli 300 min",
+            "sv": "Över 300 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0f3537c7-7e2d-4a40-a4e1-145a38add9ba",
+      "questionText": {
+        "en": "During a normal week, how much time (in minutes) do you spend on physical activity that makes you out of breath (e.g., running, group exercise or ball games)?",
+        "fi": "Kuinka paljon aikaa (minuutteina) käytät tavallisen viikon aikana liikuntaan, joka saa sinut hengästymään, esimerkiksi juoksuun, ryhmäliikuntaan tai pallopeleihin?",
+        "sv": "Hur mycket tid (i minuter) ägnar du under en vanlig vecka åt motion som får dig att bli andfådd, till exempel löpning, gruppträning eller bollsporter?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "5c141eab-9810-4ecd-b5b6-f208a91f8bea",
+          "answerText": {
+            "en": "Less than 30 min",
+            "fi": "Alle 30 min",
+            "sv": "Under 30 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "52c1fee4-7223-47ee-9571-1034d5e6d75a",
+          "answerText": {
+            "en": "30–60 min",
+            "fi": "30–60 min",
+            "sv": "30–60 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "af2bd42c-5164-4c4c-a0d2-93251579c769",
+          "answerText": {
+            "en": "60-90 min",
+            "fi": "60-90 min",
+            "sv": "60-90 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8bcbb460-aa06-4952-b994-5ab908b1aa0c",
+          "answerText": {
+            "en": "90–150 min",
+            "fi": "90–150 min",
+            "sv": "90–150 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "67203fab-5919-49c2-b04b-a4135c2a4d88",
+          "answerText": {
+            "en": "150–300 min",
+            "fi": "150–300 min",
+            "sv": "150–300 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "036d9055-a804-47ee-b935-cf39adaf0651",
+          "answerText": {
+            "en": "More than 300 min",
+            "fi": "yli 300 min",
+            "sv": "Över 300 min"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0bc75cf5-0ed9-4f93-beda-7f891c07df44",
+      "questionText": {
+        "en": "During a normal week, how much time (in minutes) do you spend on physical activity that makes you out of breath (e.g., running, group exercise or ball games)?",
+        "fi": "Kuinka monta kertaa viikossa teet lihaskunto- tai liikehallintaharjoitteita (esim. kuntosaliharjoittelu)?",
+        "sv": "Hur många gånger i veckan gör du övningar i styrketräning eller rörelsekontroll (t.ex. gymträning)?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7f060390-15d1-4bb0-803b-36ea8f511c26",
+          "answerText": {
+            "en": "Less than 30 min",
+            "fi": "En lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3dd3fdb1-ce30-4591-8a1c-2e1683c435d5",
+          "answerText": {
+            "en": "1-2",
+            "fi": "1-2",
+            "sv": "1-2"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0c93fec9-9030-40e2-88be-0b244e320cd0",
+          "answerText": {
+            "en": "2-3",
+            "fi": "2-3",
+            "sv": "2-3"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d4118190-e3c5-4f0a-a8a9-918e6f9ef75c",
+          "answerText": {
+            "en": "3–4",
+            "fi": "3–4",
+            "sv": "3–4"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "aacd2499-01e6-4384-8d8a-0ed03c6ab744",
+          "answerText": {
+            "en": "Yli 4",
+            "fi": "Yli 4",
+            "sv": "Över 4"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "d5a434d0-81db-43e2-9329-a8dd86ee3c0f",
+      "questionText": {
+        "en": "What is your level of education?",
+        "fi": "Mikä on koulutustasosi?",
+        "sv": "Vad är din utbildningsnivå?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "0d0c227a-43d0-4922-85b0-b0ee8a282b2b",
+          "answerText": {
+            "en": "Comprehensive school/elementary school",
+            "fi": "Peruskoulu/kansakoulu",
+            "sv": "Grundskola/folkskola"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0ed0fd6a-c6b2-4da4-94cd-6bdae8c20d87",
+          "answerText": {
+            "en": "Vocational education",
+            "fi": "Ammattikoulu",
+            "sv": "Yrkesskola"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "57909934-c24b-4b16-99d0-9304b9f1e28a",
+          "answerText": {
+            "en": "General upper secondary education/Matriculation examination",
+            "fi": "Lukio/Ylioppilas",
+            "sv": "Gymnasienivå"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3d712d3d-2272-44ad-93c8-f7c3c8eb60e3",
+          "answerText": {
+            "en": "College-level vocational education and training",
+            "fi": "Opistotason ammatillinen koulutus",
+            "sv": "Yrkesutbildning på institutnivå"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ee0f9769-220e-4c28-9e3d-d8d4614f1bbc",
+          "answerText": {
+            "en": "University of applied sciences",
+            "fi": "Ammattikorkeakoulu",
+            "sv": "Yrkeshögskola"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a0072d11-89a7-42b6-a475-0433eb5bfb29",
+          "answerText": {
+            "en": "University, bachelor’s degree",
+            "fi": "Korkeakoulu, alemman asteen tutkinto",
+            "sv": "Högskola, examen på lägre nivå"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "560ab1c7-eebb-4964-b259-6ab5bfd666cb",
+          "answerText": {
+            "en": "University, master’s degree",
+            "fi": "Korkeakoulu, ylemmän asteen tutkinto",
+            "sv": "Högskola, examen på högre nivå"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ff0c6fec-732a-4bfd-bcff-474eed2a1cde",
+      "questionText": {
+        "en": "What is your occupational group?",
+        "fi": "Mikä on ammattiryhmäsi?",
+        "sv": "Vad är din yrkesgrupp?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ccf2af4d-7dee-4c6d-a5bf-adacb215c281",
+          "answerText": {
+            "en": "In a managerial position, employed",
+            "fi": "Johtavassa asemassa toisen palveluksessa",
+            "sv": "Ledande ställning i anställning hos någon annan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "aceb332a-7bc6-4b13-8315-2822cf29e363",
+          "answerText": {
+            "en": "Senior salaried employee",
+            "fi": "Ylempi toimihenkilö",
+            "sv": "Högre tjänsteman"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fd7464ba-d55c-4837-a898-c867fd2be742",
+          "answerText": {
+            "en": "Lower-level office worker",
+            "fi": "Alempi toimihenkilö",
+            "sv": "Lägre tjänsteman"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e6ac24cb-5c46-4054-bcb1-09c77c2e1c4b",
+          "answerText": {
+            "en": "Worker",
+            "fi": "Työntekijä",
+            "sv": "Arbetstagare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "84a6e74d-e122-4635-a549-51664a36785c",
+          "answerText": {
+            "en": "Private entrepreneur",
+            "fi": "Yrittäjä",
+            "sv": "Företagare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a0ae9748-2189-4900-b41e-8e221b8322c1",
+          "answerText": {
+            "en": "Student",
+            "fi": "Opiskelija",
+            "sv": "Studerande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8f732fac-279c-403a-9112-64ff77ad54eb",
+          "answerText": {
+            "en": "Pensioner",
+            "fi": "Eläkeläinen",
+            "sv": "Pensionär"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4d7bec66-38c7-471e-bc29-e985d9f1385a",
+          "answerText": {
+            "en": "Stay-at-home mother/father",
+            "fi": "Koti-isä/äiti",
+            "sv": "Hemmamamma eller -pappa"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "77ce15b7-b5dd-43e7-b48e-b9d50e93d18b",
+          "answerText": {
+            "en": "Unemployed",
+            "fi": "Työtön",
+            "sv": "Arbetslös"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "21d8683f-8e89-4061-a5a3-0900ee827e17",
+      "questionText": {
+        "en": "What is your current work situation?",
+        "fi": "Mikä on tämänhetkinen työtilanteesi?",
+        "sv": "Vad är din aktuell arbetssituation?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "fe1035a7-a4ab-4078-8646-a1ddc838f2aa",
+          "answerText": {
+            "en": "In full-time work",
+            "fi": "Kokopäivätyössä",
+            "sv": "Heltidsarbete"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1689b0ba-8235-40c0-b46b-cb40b13e581b",
+          "answerText": {
+            "en": "In part-time work",
+            "fi": "Osa-aikatyössä",
+            "sv": "Deltidsarbete"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4ef45cb5-2a98-4787-8261-70ebefe64b6d",
+          "answerText": {
+            "en": "Unemployed",
+            "fi": "Työtön",
+            "sv": "Arbetslös"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9952e62e-73ee-4cf4-abef-f791ad546643",
+          "answerText": {
+            "en": "Student",
+            "fi": "Opiskelija",
+            "sv": "Studerande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3091897c-b10e-4d52-acd1-be04bf7e5e8a",
+          "answerText": {
+            "en": "Retired",
+            "fi": "Eläkkeellä",
+            "sv": "Pensionstagare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "60f41590-5f29-422e-a1e0-51257cdd5b56",
+          "answerText": {
+            "en": "In military or non-military service",
+            "fi": "Varusmies- tai siviilipalveluksessa",
+            "sv": "Bevärings- eller civiltjänst"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "c9d67c75-dbda-4db7-81ae-d7f89e8682eb",
+      "questionText": {
+        "en": "Keele STarT questionnaire\n\nWhen you answer the following questions, think about the past two weeks. Select the best option (one).",
+        "fi": "Keele STarT- kysely\n\nAjattele viimeksi kulunutta kahta viikkoa vastatessasi seuraaviin kysymyksiin. Valitse paras vaihtoehto (yksi).",
+        "sv": "Keele STarT Back Screening Tool\n\nTänk på de 2 senaste veckorna när du svarar på följande frågor. Välj bara den enda alternativ som passar Dig."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "50805245-6c3f-415f-84e7-9472da9acfb8",
+      "questionText": {
+        "en": "My back pain has radiated to my leg (legs) at some point in the past two weeks.",
+        "fi": "Selkäkipuni on säteillyt alaraajaani (-raajoihini) jossakin vaiheessa viimeksi kuluneen kahden viikon aikana.",
+        "sv": "Min ryggsmärta har strålat ut i mitt ben/mina ben vid något tillfälle de senaste 2 veckorna"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "17860079-6fd3-4091-a4e9-8b85296db433",
+          "answerText": {
+            "en": "Disagree",
+            "fi": "Eri mieltä",
+            "sv": "Instämmer inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "47d6dafe-8947-410f-a8e8-0c361040bc69",
+          "answerText": {
+            "en": "Agree",
+            "fi": "Samaa mieltä",
+            "sv": "Instämmer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "c65a6c47-d03c-43b6-9bc3-19eacdf58a22",
+      "questionText": {
+        "en": "I have had neck or shoulder pain in the past two weeks.",
+        "fi": "Minulla on ollut niska- tai hartiakipua viimeksi kuluneen kahden viikon aikana",
+        "sv": "Jag har haft smärt i skuldra eller nacke vid något tillfälle de senaste 2 veckorna"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "2e480ae8-6b6c-469c-9242-8016c91dbbcd",
+          "answerText": {
+            "en": "Disagree",
+            "fi": "Eri mieltä",
+            "sv": "Instämmer inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6ecc6d27-4024-4361-a1fb-060a0fc3876b",
+          "answerText": {
+            "en": "Agree",
+            "fi": "Samaa mieltä",
+            "sv": "Instämmer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "e9fb1c84-ba3a-49c0-b1bf-17ce96845677",
+      "questionText": {
+        "en": "I have walked only short distances because of my back pain.",
+        "fi": "Olen kävellyt ainoastaan lyhyitä matkoja selkäkipuni vuoksi.",
+        "sv": "Jag har bara gått korta sträckor på grund av min ryggsmärta"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "35af7738-2784-4b08-b85d-9e22f9462605",
+          "answerText": {
+            "en": "Disagree",
+            "fi": "Eri mieltä",
+            "sv": "Instämmer inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1431cc74-9086-47c6-bd5e-8d5250800915",
+          "answerText": {
+            "en": "Agree",
+            "fi": "Samaa mieltä",
+            "sv": "Instämmer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "4148e01a-e8d3-4093-85ca-14b7a420be6f",
+      "questionText": {
+        "en": "During the past two weeks, I have been slower than usual when getting dressed.",
+        "fi": "Viimeksi kuluneen kahden viikon aikana pukeutumiseni on ollut tavanomaista hitaampaa.",
+        "sv": "Under de senaste 2 veckorna har det tagit längre tid än vanligt att klä mig på grund av ryggsmärtan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "48616814-c93c-4104-9634-9cbaba56795d",
+          "answerText": {
+            "en": "Disagree",
+            "fi": "Eri mieltä",
+            "sv": "Instämmer inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3d4b6f65-4772-4d22-93bf-dd96bf229043",
+          "answerText": {
+            "en": "Agree",
+            "fi": "Samaa mieltä",
+            "sv": "Instämmer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "b4af6916-0efe-4ccc-b260-8c1de3726ad1",
+      "questionText": {
+        "en": "It is not really safe for a person with my condition to be physically active (do exercise, work).",
+        "fi": "Tällaisessa kunnossa olevan ihmisen ei oikeastaan ole turvallista olla fyysisesti aktiivinen (harrastaa liikuntaa, työskennellä)",
+        "sv": "Det kan vara skadligt för en person med mina besvär att vara fysiskt aktiv"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "8b0642e3-8014-444a-8198-b2ea2ff7cf7b",
+          "answerText": {
+            "en": "Disagree",
+            "fi": "Eri mieltä",
+            "sv": "Instämmer inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fb3d3602-1612-477f-8769-35f78be91762",
+          "answerText": {
+            "en": "Agree",
+            "fi": "Samaa mieltä",
+            "sv": "Instämmer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "77366cfa-8147-4040-9c3b-f56024ec9433",
+      "questionText": {
+        "en": "I have often been worried about my situation",
+        "fi": "Olen ollut usein huolestunut tilanteestani.",
+        "sv": "Jag har haft oroande tankar en stor del av tiden."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7f170a22-25b4-40a4-adff-6a7485426ee3",
+          "answerText": {
+            "en": "Disagree",
+            "fi": "Eri mieltä",
+            "sv": "Instämmer inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7d2dde66-be73-4a2a-b07a-64964cb05be7",
+          "answerText": {
+            "en": "Agree",
+            "fi": "Samaa mieltä",
+            "sv": "Instämmer "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "806ae6fa-a01a-4b69-b00e-44288a69e7a0",
+      "questionText": {
+        "en": "It feels that my back pain is extremely difficult and will never get better.",
+        "fi": "Minusta tuntuu, että selkäkipuni on erittäin vaikea, eikä tule koskaan paremmaksi.",
+        "sv": "Jag upplever att min ryggsmärta är fruktansvärd och att den aldrig kommer att bli bättre."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7d6ffe34-69ef-48d4-aa0a-33d2c1ef49cf",
+          "answerText": {
+            "en": "Disagree",
+            "fi": "Eri mieltä",
+            "sv": "Instämmer inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "67af01b8-9191-416f-9313-81059e7a75c3",
+          "answerText": {
+            "en": "Agree",
+            "fi": "Samaa mieltä",
+            "sv": "Instämmer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "3e7646b9-2578-4714-bb27-abb678eb8563",
+      "questionText": {
+        "en": "In general, I have not enjoyed all of the things I used to enjoy.",
+        "fi": "Yleisesti ottaen en ole nauttinut kaikista niistä asioista, joista ennen nautin.",
+        "sv": "I allmänhet har jag inte glatt mig över de saker som jag brukar glädja mig åt."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "4f243113-cc01-4ce5-bfef-19609175a9ac",
+          "answerText": {
+            "en": "Disagree",
+            "fi": "Eri mieltä",
+            "sv": "Instämmer inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "55c4c63c-29d6-467d-9964-11368108549a",
+          "answerText": {
+            "en": "Agree",
+            "fi": "Samaa mieltä",
+            "sv": "Instämmer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "2f536b7e-1ae7-49b3-9c39-cd31f46c1ccf",
+      "questionText": {
+        "en": "How bothersome has your back pain been during the past two weeks?",
+        "fi": "Kuinka haittaavaa selkäkipusi on ollut viimeksi kuluneen kahden viikon aikana?",
+        "sv": "På det stora hela, hur besvärlig har din ryggsmärta varit de senaste 2 veckorna?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "552b9b9b-adf8-411d-8ea0-0f47b1aecdff",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6b5f40e9-7583-4bc0-ab32-9700e38e8f71",
+          "answerText": {
+            "en": "Slightly",
+            "fi": "Hieman",
+            "sv": "Lätt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4e494e26-8ba6-46a6-b2d7-21920a03811a",
+          "answerText": {
+            "en": "Moderately",
+            "fi": "Kohtalaisesti",
+            "sv": "Måttligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5a0e851c-1e1d-401b-a58e-b1fecdb809c4",
+          "answerText": {
+            "en": "Very much",
+            "fi": "Paljon",
+            "sv": "Väldigt mycket"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8f7898c3-970f-4be8-a84c-0ed3126c2da2",
+          "answerText": {
+            "en": "Extremely",
+            "fi": "Erittäin paljon",
+            "sv": "Extremt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "1b1a7a1d-d385-48c7-a2d9-27317750a9d6",
+      "questionText": {
+        "en": "Oswestry symptom and discomfort survey The Oswestry survey is aimed at providing us with information about how your back pain (or problems with your legs) affect your ability to cope with your daily routines. Select one option that best describes your situation today.",
+        "fi": "Oswestry oire- ja haittakysely\n\nOswestry- kyselyn tarkoituksena on antaa meille tietoa siitä, kuinka selkävaivasi (tai alaraajavaivasi) vaikuttavat kykyysi suoriutua jokapäiväisistä toimistasi. Valitse seuraavista kysymysten vaihtoehdoista vain yksi, joka parhaiten kuvaa tilannettasi tänään.",
+        "sv": "Oswestry- Ryggfunktionsskala\n\nFöljande frågor är utformade för att ge oss information om hur Din ryggsmärta påverkar det dagliga livet. Besvara varje avsnitt och välj bara den enda alternativ som passar Dig. Vi är medvetna om att det kan vara svårt att välja mellan två närstående påståenden, men var vänlig kryssa bara i den alternativ som mest motsvarar Din situation"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "fb7d715d-7229-47a0-be43-83b7259c6d2c",
+      "questionText": {
+        "en": "Pain",
+        "fi": "Kipu",
+        "sv": "Smärtintensitet"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "448a53a9-7566-4e6f-b807-17f410f7ec09",
+          "answerText": {
+            "en": "I don't have any pain at the moment ",
+            "fi": "Minulla ei tällä hetkellä ole kipuja ",
+            "sv": "Jag har ingen smärta för närvarande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e189efea-5749-4d45-82b9-7e60ef95d232",
+          "answerText": {
+            "en": "The pain is very mild at the moment",
+            "fi": "Kipu on tällä hetkellä hyvin lievää",
+            "sv": "Jag har väldigt svag smärta för närvarande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "afd40048-da83-46a3-ab59-d10f9b4a90ab",
+          "answerText": {
+            "en": "The pain is moderate at the moment",
+            "fi": "Kipu on tällä hetkellä kohtalaista",
+            "sv": "Jag har måttlig smärta för närvarande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "dc4f63f5-cb3b-4b27-8dc9-39174ae4a1f5",
+          "answerText": {
+            "en": "The pain is rather strong at the moment",
+            "fi": "Kipu on tällä hetkellä melko voimakasta",
+            "sv": "Jag har ganska stark smärta för närvarande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b859f71f-01de-4abc-83e7-5e1276696b38",
+          "answerText": {
+            "en": "The pain is very strong at the moment",
+            "fi": "Kipu on tällä hetkellä hyvin voimakasta",
+            "sv": "Jag har väldigt stark smärta för närvarande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8a15e1e7-bcae-4c4d-a67c-6f6c6c4875c7",
+          "answerText": {
+            "en": "The pain is the worst possible at the moment",
+            "fi": "Kipu on pahin mahdollinen tällä hetkellä",
+            "sv": "Jag har helt outhärdlig smärta för närvarande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ba850e7c-66de-47f5-ba37-8aaca95bd8e2",
+      "questionText": {
+        "en": "Personal care (washing, getting dressed, etc.)",
+        "fi": "Itsestä huolehtiminen (peseytyminen, pukeutuminen jne)\t",
+        "sv": "Personlig omvårdnad"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a5dd38f5-0d02-49cf-9804-ca93be72ff46",
+          "answerText": {
+            "en": "I can take care of myself without extra pain",
+            "fi": "Pystyn huolehtimaan itsestäni normaalisti ilman ylimääräistä kipua",
+            "sv": "Jag sköter mig själv utan att få mer smärta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d824c304-e0f7-4ff4-a710-706f0fa3c77f",
+          "answerText": {
+            "en": "I can take care of myself normally, but it is very painful",
+            "fi": "Pystyn huolehtimaan itsestäni normaalisti, mutta se on hyvin kivuliasta",
+            "sv": "Jag sköter mig själv, men får mer smärta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "90a1bc95-717c-4c40-93db-778a04c94409",
+          "answerText": {
+            "en": "Taking care of myself is painful, which is why I am slow and cautious with what I do",
+            "fi": "Itsestä huolehtiminen on kivuliasta ja siksi olen hidas ja varovainen toimissani",
+            "sv": "Jag sköter mig själv, men det gör ont och jag får vara försiktig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c1c27fe9-3e0f-4d6c-afb2-b05a78956c99",
+          "answerText": {
+            "en": "I need some help, but can take care of myself to a large extent",
+            "fi": "Tarvitsen hieman apua, mutta pystyn suurelta osin huolehtimaan itsestäni",
+            "sv": "Jag behöver en viss hjälp, men klarar det mesta själv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "318d78dc-f8a9-4f4b-9966-501736058c96",
+          "answerText": {
+            "en": "I need help daily in most matters related to taking care of myself",
+            "fi": "Tarvitsen päivittäin apua useimmissa itsestäni huolehtimiseen liittyvissä asioissa",
+            "sv": "Jag behöver hjälp varje dag med det mesta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b398e07f-6571-4639-ac45-8bc561afb0ee",
+          "answerText": {
+            "en": "I don't get dressed, I wash myself with a lot of effort and stay in bed",
+            "fi": "En pukeudu, peseydyn vaivalloisesti ja pysyttelen vuoteessa",
+            "sv": "Jag klär inte på mig, har svårt att tvätta mig och ligger till sängs"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "dcd8c6e0-cd51-4b94-86c0-88d383fb4cbb",
+      "questionText": {
+        "en": "Lifting",
+        "fi": "Nostaminen",
+        "sv": "Förmåga att lyfta"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "aca3dd65-aff5-4b9e-8317-4c7f89a7e32d",
+          "answerText": {
+            "en": "I can lift heavy loads without extra pain",
+            "fi": "Pystyn nostamaan raskaita taakkoja ilman ylimääräistä kipua",
+            "sv": "Jag kan lyfta tunga saker utan att få ont"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "958be7ba-f5fd-4087-b5cf-d849e5a7a4d7",
+          "answerText": {
+            "en": "I can lift heavy loads but it causes extra pain",
+            "fi": "Pystyn nostamaan raskaita taakkoja, mutta se aiheuttaa ylimääräistä kipua",
+            "sv": "Jag kan lyfta tunga saker, men får ont"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7edb9e4b-927c-4ff0-a33e-4f8766a58b7a",
+          "answerText": {
+            "en": "Pain prevents me from lifting heavy loads from the floor, but I can do it if they have been placed conveniently, such as on a table",
+            "fi": "Kipu estää minua nostamasta raskaita taakkoja lattialta, mutta pystyn nostamaan, mutta se onnistuu, jos ne on sijoitettu sopivasti, kuten esimerkiksi pöydälle",
+            "sv": "På grund av smärta kan jag inte lyfta tunga saker från golvet, det går bra om de är bra placerade, t ex på ett bord"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "adeb1f46-5238-4e5b-bcfc-77cbc684e834",
+          "answerText": {
+            "en": "Pain prevents me from lifting heavy loads, but I can lift light or medium loads if they have been placed conveniently",
+            "fi": "Kipu estää minua nostamasta raskaita taakkoja, mutta pystyn nostamaan kevyitä tai keskiraskaita taakkoja, jos ne on sijoitettu sopivasti",
+            "sv": "På grund av smärta kan jag inte lyfta tunga saker, men klarar lätta och medeltunga saker, om de är bra placerade"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e210a585-f902-448b-8aef-38dc5af66c3a",
+          "answerText": {
+            "en": "I can lift only very light loads",
+            "fi": "Pystyn nostamaan vain hyvin kevyitä taakkoja",
+            "sv": "Jag kan bara lyfta väldigt lätta saker"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3a1fb4b7-c024-4f10-bf53-e8d64f3916e5",
+          "answerText": {
+            "en": "I cannot lift or carry anything",
+            "fi": "En pysty nostamaan enkä kantamaan mitään",
+            "sv": "Jag kan inte lyfta eller bära några saker"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "d8ca5624-c8be-4237-a0eb-c8eaffa9e836",
+      "questionText": {
+        "en": "Walking",
+        "fi": "Kävely",
+        "sv": "Gångförmåga"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "9082d25a-a7ea-4130-af16-bb59c15b3d66",
+          "answerText": {
+            "en": "Pain doesn’t limit my walking distances",
+            "fi": "Kipu ei rajoita kävelymatkaani",
+            "sv": "Smärtan hindrar mig inte från att gå hur långt som helst"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "630b9876-1adb-4fe7-bf9e-5874ad3cd233",
+          "answerText": {
+            "en": "Pain prevents me from walking distances longer than one kilometre",
+            "fi": "Kipu estää minua kävelemästä kilometriä pidempiä matkoja",
+            "sv": "Smärtan hindrar mig från att gå mer än 1 km"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "af80baf2-b06e-4fc2-a439-66cfe35d6a34",
+          "answerText": {
+            "en": "Pain prevents me from walking distances longer than 500 metres",
+            "fi": "Kipu estää minua kävelemästä 500 metriä pidempiä matkoja",
+            "sv": "Smärtan hindrar mig från att gå mer än 500 m"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b1799aa7-0ba3-4fec-b77f-cf7264a61d9c",
+          "answerText": {
+            "en": "Pain prevents me from walking distances longer than 100 metres",
+            "fi": "Kipu estää minua kävelemästä 100 metriä pidempiä matkoja",
+            "sv": "Smärtan hindrar mig från att gå mer än 100 m"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cbac2b22-b209-4fc6-b54c-53b8a122df3a",
+          "answerText": {
+            "en": "I can walk only with a stick or crutches",
+            "fi": "Pystyn kävelemään vain keppiä tai kainalosauvoja käyttäen",
+            "sv": "Jag kan bara gå om jag använder käpp eller kryckor"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d70c1a4f-9956-43cd-b931-0859c5942c70",
+          "answerText": {
+            "en": "I can walk only with a stick or crutches",
+            "fi": "Olen enimmäkseen sängyssä ja joudun konttaamaan wc:hen",
+            "sv": "Jag ligger mestadels till sängs och måste krypa till toaletten"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "d431ac7a-37d8-4104-9552-ea48616ec845",
+      "questionText": {
+        "en": "Sitting",
+        "fi": "Istuminen",
+        "sv": "Förmåga att sitta"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "5fde9eb5-7718-4851-88db-65613900b453",
+          "answerText": {
+            "en": "I can sit in any kind of chair as long as I want",
+            "fi": "Pystyn istumaan minkälaisessa tuolissa tahansa niin kauan kuin haluan",
+            "sv": "Jag kan sitta i vilken stol som helst så länge jag vill"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "22efe138-3cec-46d7-ac96-3eb999f00a96",
+          "answerText": {
+            "en": "I can sit in my favourite chair as long as I want",
+            "fi": "Pystyn istumaan lempituolissani niin kauan kuin haluan",
+            "sv": "Jag kan sitta i min favoritstol så länge jag vill"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0c763d22-bab3-4f52-b811-64fe599e6d9d",
+          "answerText": {
+            "en": "Pain prevents me from sitting longer than an hour",
+            "fi": "Kipu estää minua istumasta tuntia pitempään",
+            "sv": "Smärtan hindrar mig från att sitta mer än 1 timme"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e6aa1ab8-8f7c-4f6a-b306-a8656829dba0",
+          "answerText": {
+            "en": "Pain prevents me from sitting longer than half an hour",
+            "fi": "Kipu estää minua istumasta puolta tuntia pitempään",
+            "sv": "Smärtan hindrar mig från att sitta mer än 30 minuter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "77d685ea-efa9-48c6-b89c-cc3d7a713d46",
+          "answerText": {
+            "en": "Pain prevents me from sitting longer than 10 minutes",
+            "fi": "Kipu estää minua istumasta 10 minuuttia pitempään",
+            "sv": "Smärtan hindrar mig från att sitta mer än 10 minuter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "34d608dc-3f67-41e9-9892-8f4ff572a7ab",
+          "answerText": {
+            "en": "Pain prevents me from sitting",
+            "fi": "Kipu estää minua istumasta",
+            "sv": "Smärtan hindrar mig från att sitta över huvud taget"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "4c4a6ded-95e3-4310-a0db-6cab8fcc11f7",
+      "questionText": {
+        "en": "Standing",
+        "fi": "Seisominen",
+        "sv": "Förmåga att stå"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "42713fdd-6ec4-4a38-863a-be6fe93155b4",
+          "answerText": {
+            "en": "I can stand as long as I want without extra pain",
+            "fi": "Pystyn seisomaan niin kauan kuin haluan ilman ylimääräistä kipua",
+            "sv": "Jag kan stå så länge jag vill utan att få mer ont"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "886f92e7-b6ff-47eb-a80b-9f17a61cf7ea",
+          "answerText": {
+            "en": "I can stand as long as I want, but it causes extra pain",
+            "fi": "Pystyn seisomaan niin kauan kuin haluan, mutta se aiheuttaa ylimääräistä kipua",
+            "sv": "Jag kan stå så länge jag vill, men får mer ont"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "901b9b4b-acb9-41d1-87df-4c30cf03dc09",
+          "answerText": {
+            "en": "Pain prevents me from standing longer than an hour",
+            "fi": "Kipu estää minua seisomasta tuntia pitempään",
+            "sv": "Smärtan hindrar mig från att stå mer än 1 timme"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4d92f3b3-f2e3-4094-804d-2737e6811dd2",
+          "answerText": {
+            "en": "Pain prevents me from standing longer than half an hour",
+            "fi": "Kipu estää minua seisomasta puolta tuntia pitempään",
+            "sv": "Smärtan hindrar mig från att stå mer än 30 minuter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f9c9286b-b1ae-40cf-9084-79c9b94cedf3",
+          "answerText": {
+            "en": "Pain prevents me from standing longer than 10 minutes",
+            "fi": "Kipu estää minua seisomasta 10 minuuttia pitempään",
+            "sv": "Smärtan hindrar mig från att stå mer än 10 minuter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a6dc8435-0904-45d3-9d19-a4abefe2347e",
+          "answerText": {
+            "en": "Pain prevents me from standing",
+            "fi": "Kipu estää minua seisomasta",
+            "sv": "Smärtan hindrar mig från att stå över huvud taget"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "10d2c75d-8989-47b2-be37-eaaa858fffc7",
+      "questionText": {
+        "en": "Sleeping",
+        "fi": "Nukkuminen",
+        "sv": "Sömn"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "63086fb2-69e9-4b22-8106-b9cdd1dff8db",
+          "answerText": {
+            "en": "Pain never disturbs my sleep",
+            "fi": "Kipu ei koskaan häiritse nukkumistani",
+            "sv": "Smärtan hindrar mig inte från att sova"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "30d997b2-ef16-4b82-95ff-d801f725a4bf",
+          "answerText": {
+            "en": "Pain occasionally disturbs my sleep",
+            "fi": "Kipu häiritsee ajoittain nukkumistani",
+            "sv": "Smärtan hindrar mig ibland från att sova"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "690249db-eaa7-4493-85ca-b87600f9a5b8",
+          "answerText": {
+            "en": "Because of the pain, I sleep less than six hours",
+            "fi": "Kivun takia nukun alle kuusi tuntia",
+            "sv": "På grund av smärtan sover jag mindre än 6 timmar per natt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1c0191ad-7d53-4878-bd77-498ee3da7f65",
+          "answerText": {
+            "en": "Because of the pain, I sleep less than four hours",
+            "fi": "Kivun takia nukun alle neljä tuntia",
+            "sv": "På grund av smärtan sover jag mindre än 4 timmar per natt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c4532e5e-2370-4b62-9633-9ff14677d881",
+          "answerText": {
+            "en": "Because of the pain, I sleep less than two hours",
+            "fi": "Kivun takia nukun alle kaksi tuntia",
+            "sv": "På grund av smärtan sover jag mindre än 2 timmar per natt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2256b208-f041-44e2-a257-abf16b0f3054",
+          "answerText": {
+            "en": "Pain prevents me from sleeping",
+            "fi": "Kipu estää minua nukkumasta",
+            "sv": "Smärtan hindrar mig från att sova över huvud taget"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a7581f74-d460-4de3-9a17-e8a30e309235",
+      "questionText": {
+        "en": "Sex life",
+        "fi": "Sukupuolielämä",
+        "sv": "Sexualfunktion"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "489611bf-97d8-40f6-b45e-c19e7e4716a6",
+          "answerText": {
+            "en": "My current pain doesn’t disturb my sex life and sexual activity doesn’t cause extra pain",
+            "fi": "Nykyinen kipuni ei häiritse sukupuolielämääni eikä seksuaalinen toiminta aiheuta ylimääräistä kipua",
+            "sv": "Mitt sexualliv är normalt och orsakar inte mer smärta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8c81fb96-aa86-4c9a-b5ce-4eca60428b60",
+          "answerText": {
+            "en": "My current pain doesn’t disturb my sex life, but sexual activity causes some extra pain",
+            "fi": "Nykyinen kipuni ei häiritse sukupuolielämääni, mutta seksuaalisesta toiminnasta aiheutuu hieman ylimääräistä kipua",
+            "sv": "Mitt sexualliv är normalt men orsakar viss ökad smärta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1c0aa4c5-36df-4076-97ef-9111b8feff8b",
+          "answerText": {
+            "en": "My current pain doesn’t disturb my sex life, but sexual activity causes a lot of pain",
+            "fi": "Nykyinen kipuni ei häiritse sukupuolielämääni, mutta seksuaalisesta toiminnasta aiheutuu paljon kipua",
+            "sv": "Mitt sexualliv är nästan normalt men väldigt smärtande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a26d9ca5-13b9-46fd-b7bd-fdcaf81a4df9",
+          "answerText": {
+            "en": "Pain significantly limits my sex life",
+            "fi": "Kipu rajoittaa huomattavasti sukupuolielämääni",
+            "sv": "Mitt sexualliv är starkt begränsat på grund av smärta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d3e4071d-32df-4c7d-a9f5-40f91bac7045",
+          "answerText": {
+            "en": "My sex life is almost non-existent because of the pain",
+            "fi": "Sukupuolielämäni on lähes olematonta kivun takia",
+            "sv": "Mitt sexualliv är nästan obefintligt på grund av smärta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a16c4f69-2aff-4379-984a-cc50cc3431b1",
+          "answerText": {
+            "en": "Pain prevents me from having any kind of sex life",
+            "fi": "Kipu estää minulta kaikenlaisen sukupuolielämän",
+            "sv": "Smärtan hindrar mig från sexualliv över huvud taget"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "bcd41134-4846-4d0b-b3d1-ccc3a5cc9a0d",
+      "questionText": {
+        "en": "Social life",
+        "fi": "Sosiaalinen elämä",
+        "sv": "Socialt liv"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a4b12d24-5ecb-4221-993c-720eecda0f82",
+          "answerText": {
+            "en": "My social life is normal and moving about doesn’t cause me any extra pain",
+            "fi": "Sosiaalinen elämäni on normaalia eikä liikkuminen aiheuta minulla ylimääräistä kipua",
+            "sv": "Mitt sociala liv är normalt och ger ej ökade smärtor"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ae113cbe-a4a5-4621-a8e2-133e05321f81",
+          "answerText": {
+            "en": "My social life is normal, but moving about increases the amount of pain",
+            "fi": "Sosiaalinen elämäni on normaalia, mutta liikkuminen lisää kivun määrää",
+            "sv": "Mitt sociala liv är normalt men ökar smärtan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b1384b44-e2ba-4f53-9971-fcf10ab4704b",
+          "answerText": {
+            "en": "Pain doesn’t have a significant impact on my social life, except that it restricts activities that are more physically strenuous, such as sports, etc.",
+            "fi": "Kipu ei vaikuta merkittävästi sosiaaliseen elämääni, paitsi että se rajoittaa toimintoja, jotka ovat fyysisesti rasittavampia, kuten esimerkiksi urheilu jne",
+            "sv": "Smärtan påverkar inte mitt sociala liv nämnvärt, men förhindrar mig att utföra mer ansträngande aktiviteter, såsom dans, motion och idrott"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fe48e0a8-3a4c-4f71-8a99-5e4b0f2e8590",
+          "answerText": {
+            "en": "Pain has restricted my social life and I don’t go out as often",
+            "fi": "Kipu on rajoittanut sosiaalista elämääni enkä käy yhtä usein ulkona",
+            "sv": "Smärtan har begränsat mitt sociala liv och jag går inte ut så ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "00cbe5b5-03fa-4355-8b52-621d72833ca4",
+          "answerText": {
+            "en": "Because of the pain, my social life is limited to my home",
+            "fi": "Kivun takia sosiaalinen elämäni on rajoittunut kotiin",
+            "sv": "Smärtan har begränsat mitt sociala liv och jag måste hålla mig hemma"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f086ff9d-7d41-479d-ae49-961434336653",
+          "answerText": {
+            "en": "Because of the pain, I have no social life",
+            "fi": "Kivun takia minulla ei ole sosiaalista elämää",
+            "sv": "Jag har inget socialt liv på grund av smärtan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "45694390-ccfc-4358-9612-c3c8d78ddf60",
+      "questionText": {
+        "en": "Travelling",
+        "fi": "Matkustaminen",
+        "sv": "Resor"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "92f88718-d937-4cc2-b729-19fa0f59bc6a",
+          "answerText": {
+            "en": "I can travel anywhere I want without feeling pain",
+            "fi": "Voin matkustaa minne haluan tuntematta kipua",
+            "sv": "Jag kan resa vart som helst utan att få mer ont"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "92eba18b-9506-43db-8804-a1a57c8ced5a",
+          "answerText": {
+            "en": "I can travel anywhere, but it causes extra pain",
+            "fi": "Voin matkustaa minne tahansa, mutta se aiheuttaa ylimääräistä kipua",
+            "sv": "Jag kan resa vart som helst men får mer ont"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fc979735-5b8c-4bf2-94d8-17bcf9afa42a",
+          "answerText": {
+            "en": "The pain is strong, but I manage journeys that are longer than two hours",
+            "fi": "Kipu on voimakasta, mutta suoriudun yli kahden tunnin pituisista matkoista",
+            "sv": "Smärtan blir svår men jag klarar resor på mer än 2 timmar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "69bfed35-6e02-47e5-9d84-49b2c9a139b4",
+          "answerText": {
+            "en": "Pain limits my travelling to journeys lasting less than an hour",
+            "fi": "Kipu rajoittaa matkustamiseni alle tunnin kestäviin matkoihin",
+            "sv": "Smärtan hindrar mig från att göra resor på mer än 1 timme"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "622e5475-43c9-44d9-9154-48b265a8921e",
+          "answerText": {
+            "en": "Pain limits my travelling to necessary journeys lasting less than half an hour",
+            "fi": "Kipu rajoittaa matkustamiseni alle puoli tuntia kestäviin välttämättömiin matkoihin",
+            "sv": "Smärtan hindrar mig från att göra resor på mer än 1 timme"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c0464226-fdd7-4c18-ac90-0a2c78aa16e2",
+          "answerText": {
+            "en": "Because of the pain, I cannot travel anywhere else than to get treatment",
+            "fi": "Kivun takia en voi matkustaa minnekään muualle kuin saamaan hoitoa",
+            "sv": "Smärtan hindrar mig att göra andra resor än för att få behandling"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "597285b1-f3d1-43b3-9507-171ca5d7cf36",
+      "questionText": {
+        "en": "EQ-5D-5L Quality of life indicator\n\nUnder each heading, select the one option that best describes your health today.",
+        "fi": "EQ-5D-5L Elämänlaatumittari\n\nValitse seuraavien otsikoiden alta yksi vaihtoehto, joka parhaiten kuvaa terveyttäsi tänään.",
+        "sv": "EQ-5D-5L Hälsoenkät\n\nVälj ett alternativ under följande rubriker som bäst beskriver ditt hälsotillstånd idag."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "26c549fa-e056-43eb-ba6c-e57abe4434c2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "32cc7e8c-0d98-4d72-b7bd-73eacdfe1e8d",
+      "questionText": {
+        "en": "Mobility",
+        "fi": "Liikkuminen",
+        "sv": "Rörlighet"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "9b7b217c-4b60-40f8-9763-726bba9ebf9a",
+          "answerText": {
+            "en": "I don’t have any difficulty walking",
+            "fi": "Minulla ei ole vaikeuksia kävelemisessä",
+            "sv": "Jag går utan svårigheter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d63d993f-1e2c-4345-ba07-d4b9ae100a9b",
+          "answerText": {
+            "en": "I have slight difficulty walking",
+            "fi": "Minulla on lieviä vaikeuksia kävelemisessä",
+            "sv": "Jag har lite svårigheter med att gå"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2d722a57-d08a-4725-ba65-802f769146b5",
+          "answerText": {
+            "en": "I have moderate difficulty walking",
+            "fi": "Minulla on kohtalaisia vaikeuksia kävelemisessä",
+            "sv": "Jag har måttliga svårigheter med att gå"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a01bdea0-1acd-419f-9691-d120bd440a13",
+          "answerText": {
+            "en": "I have major difficulty walking",
+            "fi": "Minulla on suuria vaikeuksia kävelemisessä",
+            "sv": "Jag har stora svårigheter med att gå"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "93e6d72c-f5aa-4237-90a9-fa23c5e7f8cd",
+          "answerText": {
+            "en": "I'm not able to walk",
+            "fi": "En kykene kävelemään",
+            "sv": "Jag kan inte gå"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "26c549fa-e056-43eb-ba6c-e57abe4434c2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a6af432a-236c-4a1c-b785-ae403616cb9c",
+      "questionText": {
+        "en": "Personal care",
+        "fi": "Itsestään huolehtiminen",
+        "sv": "Egenvård"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "151b7061-7476-4a1a-8a3b-85eab1562bd3",
+          "answerText": {
+            "en": "I don't have any difficulty washing or getting dressed myself",
+            "fi": "Minulla ei ole vaikeuksia peseytyä tai pukeutua itse",
+            "sv": "Jag har inga svårigheter med att tvätta mig eller klä mig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1d1dbe14-46f9-4744-af62-07926c14d754",
+          "answerText": {
+            "en": "I have slight difficulty washing or getting dressed myself",
+            "fi": "Minulla on lieviä vaikeuksia peseytyä tai pukeutua itse",
+            "sv": "Jag har lite svårigheter med att tvätta mig eller klä mig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "73a29ba8-ef3c-471c-a7d7-c5079a960201",
+          "answerText": {
+            "en": "I have moderate difficulty washing or getting dressed myself",
+            "fi": "Minulla on kohtalaisia vaikeuksia peseytyä tai pukeutua itse",
+            "sv": "Jag har måttliga svårigheter med att tvätta mig eller klä mig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "84885451-e976-4590-be57-5e9e8418db27",
+          "answerText": {
+            "en": "I have major difficulty washing or getting dressed myself",
+            "fi": "Minulla on suuria vaikeuksia peseytyä tai pukeutua itse",
+            "sv": "Jag har stora svårigheter med att tvätta mig eller klä mig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cd83f807-fd7f-482a-8f8c-6d641537a63e",
+          "answerText": {
+            "en": "I cannot wash or get dressed myself",
+            "fi": "En kykene peseytymään tai pukeutumaan itse",
+            "sv": "Jag kan inte tvätta mig eller klä mig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "26c549fa-e056-43eb-ba6c-e57abe4434c2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "e4b7a044-cdfd-4acc-9c43-71e289aaae3d",
+      "questionText": {
+        "en": "Usual activities (e.g., work, study, housework or leisure activities)",
+        "fi": "Tavanomaiset toiminnot (esim. ansiotyö, opiskelu, kotityö, vapaa-ajan toiminnot)\t",
+        "sv": "Normala aktiviteter (t.ex. arbete, studier, hushållssysslor, familje- eller fritidsaktiviteter)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "37868acf-a41a-496a-a3ac-1c7a19abd760",
+          "answerText": {
+            "en": "I don’t have any difficulty doing my usual activities",
+            "fi": "Minulla ei ole vaikeuksia suorittaa tavanomaisia toimintojani",
+            "sv": "Jag har inga svårigheter med att utföra mina normala aktiviteter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1660309a-f29f-4382-a562-c3d6e21ffa13",
+          "answerText": {
+            "en": "I have slight difficulty doing my usual activities",
+            "fi": "Minulla on lieviä vaikeuksia suorittaa tavanomaisia toimintojani",
+            "sv": "Jag har lite svårigheter med att utföra mina normala aktiviteter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "516c5350-f935-4596-8da6-4edbe67c371c",
+          "answerText": {
+            "en": "I have moderate difficulty doing my usual activities",
+            "fi": "Minulla on kohtalaisia vaikeuksia suorittaa tavanomaisia toimintojani",
+            "sv": "Jag har måttliga svårigheter med att utföra mina normala aktiviteter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f6212672-ea4c-48d5-a35b-d41ec798344d",
+          "answerText": {
+            "en": "I have major difficulty doing my usual activities",
+            "fi": "Minulla on suuria vaikeuksia suorittaa tavanomaisia toimintojani",
+            "sv": "Jag har stora svårigheter med att utföra mina normala aktiviteter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "26c549fa-e056-43eb-ba6c-e57abe4434c2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "03f9df69-bc94-49cb-9a08-ec540405d9fe",
+      "questionText": {
+        "en": "Pain/discomfort",
+        "fi": "Kivut/vaivat",
+        "sv": "Smärtor/Besvär"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c77913f0-49ca-41c6-a95e-97758a5eadbd",
+          "answerText": {
+            "en": "I don't have any pain or discomfort",
+            "fi": "Minulla ei ole kipuja tai vaivoja",
+            "sv": "Jag har varken smärtor eller besvär"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f12cbeb7-82a3-4fcc-8396-04702528899e",
+          "answerText": {
+            "en": "I have slight pain or discomfort",
+            "fi": "Minulla on lieviä kipuja tai vaivoja",
+            "sv": "Jag har lätta smärtor eller besvär"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ee351f5b-904a-4ecd-b79d-0e1807684d23",
+          "answerText": {
+            "en": "I have moderate pain or discomfort",
+            "fi": "Minulla on kohtalaisia kipuja tai vaivoja",
+            "sv": "Jag har måttliga smärtor eller besvär"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "94489251-591e-439c-a708-271e2a032249",
+          "answerText": {
+            "en": "I have severe pain or discomfort",
+            "fi": "Minulla on ankaria kipuja tai vaivoja",
+            "sv": "Jag har svåra smärtor eller besvär"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "15fd7405-85e3-4a6a-9846-119a4a876ba0",
+          "answerText": {
+            "en": "I have extreme pain or discomfort",
+            "fi": "Minulla on äärimmäisiä kipuja tai vaivoja",
+            "sv": "Jag har oerhörda smärtor eller besvär"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "26c549fa-e056-43eb-ba6c-e57abe4434c2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "52e67e32-1464-4a84-b068-a18b8baf0a53",
+      "questionText": {
+        "en": "Anxiety/depression",
+        "fi": "Ahdistuneisuus/masennus",
+        "sv": "Oro/ Depressivitet"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "0c47d1cb-aa74-4e97-8b0b-e3d265dce0f0",
+          "answerText": {
+            "en": "I am not anxious or depressed",
+            "fi": "En ole ahdistunut tai masentunut",
+            "sv": "Jag är inte orolig eller depressiv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2be59d73-1934-4f76-98e5-9ab4e0dd8e0f",
+          "answerText": {
+            "en": "I am slightly anxious or depressed",
+            "fi": "Olen lievästi ahdistunut tai masentunut",
+            "sv": "Jag är lite orolig eller depressiv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ddcfd106-8898-44a6-b311-c78d01d41cab",
+          "answerText": {
+            "en": "I am rather anxious or depressed",
+            "fi": "Olen melko ahdistunut tai masentunut",
+            "sv": "Jag är måttligt orolig eller depressiv\n"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c1568cb9-407d-4a9f-b9d8-f4db56157e54",
+          "answerText": {
+            "en": "I am severely anxious or depressed",
+            "fi": "Olen erittäin ahdistunut tai masentunut",
+            "sv": "Jag är mycket orolig eller depressiv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ebaed55a-ac1c-4049-989b-8a5fd67ee52d",
+          "answerText": {
+            "en": "I am extremely anxious or depressed",
+            "fi": "Olen äärimmäisen ahdistunut tai masentunut",
+            "sv": "Jag är oerhört orolig eller depressiv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "26c549fa-e056-43eb-ba6c-e57abe4434c2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8fcd6ce5-3833-4f53-90a6-e7871cd8c0af",
+      "questionText": {
+        "en": "We would like to know how good or bad your health is today. The scale has been numbered from 0 to 100. 100 means the best health you can imagine. 0 means the worst health you can imagine. Choose a number from the scale to indicate how good or bad your health is today.",
+        "fi": "Haluaisimme tietää, miten hyvä tai huono terveytesi on tänään. \nAsteikko on numeroitu 0–100. 100 merkitsee parasta terveyttä, jonka voitte kuvitella.\n0 merkitsee huonointa terveyttä, jonka voitte kuvitella.\n\nValitse asteikolta numero osoittamaan kuinka hyvä tai huono terveytesi on tänään.",
+        "sv": "Vi vill veta bur bra eller dåligt ditt hälsotillstånd är idag. \nSkalan är numrerad från 0 till 100. 100 betyder det bästa hälsotillstånd du kan tänka dig. 0 betyder det sämsta hälsotillstånd du kan tänka dig. \n\nVälj en siffra på skalan för att ange hur bra eller dålig ditt hälsotillstånd är idag."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "26c549fa-e056-43eb-ba6c-e57abe4434c2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "minValue": 0,
+      "maxValue": 100,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "817fe3d0-d0ff-43af-bae7-668ffa3018fd",
+      "name": {
+        "en": "Pain and basic information",
+        "fi": "Kipu ja perustiedot",
+        "sv": "Smärta och grundläggande information"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "1ffafb5d-a86b-46f0-9022-c941f4ca5baf",
+      "name": {
+        "en": "Keele STarT questionnaire",
+        "fi": "Keele STarT-kysely",
+        "sv": "Keele STarT-frågeformulär"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "d00decde-653c-4be7-a5ee-b046f6f5222f",
+      "name": {
+        "en": "Oswestry symptom and disability questionnaire",
+        "fi": "Oswesry oire-ja haittakysely",
+        "sv": "Oswestry symptom- och funktionsenkät"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "26c549fa-e056-43eb-ba6c-e57abe4434c2",
+      "name": {
+        "en": "EQ-5D-5L Quality of life measure",
+        "fi": "EQ-5D-5L Elämänlaatumittari",
+        "sv": "EQ-5D-5L Livskvalitetsmätare"
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "careplan",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": false,
+  "scoreCalculations": [],
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000"
+}

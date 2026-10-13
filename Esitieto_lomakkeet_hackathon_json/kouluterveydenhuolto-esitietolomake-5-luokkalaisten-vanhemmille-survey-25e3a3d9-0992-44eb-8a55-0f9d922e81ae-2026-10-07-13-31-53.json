@@ -1,0 +1,5366 @@
+{
+  "revisionGuid": "25e3a3d9-0992-44eb-8a55-0f9d922e81ae",
+  "surveyGuid": "40496f86-312f-43b1-aec2-32954fdf1c98",
+  "draft": false,
+  "name": {
+    "en": "School Health Care - Background information questionnaire for a health examination\nfor the parents of 5th grade pupils",
+    "fi": "Kouluterveydenhuolto - Esitietolomake 5. luokkalaisten vanhemmille",
+    "sv": "Skolhälsovården - Förhandsuppgifter inför hälsoundersökning\nI femman till elevens föräldrar"
+  },
+  "description": {
+    "en": "Preliminary information form for parents of a Fifth Grader's health examination\".",
+    "fi": "Viidesluokkalaisen terveystarkastuksen esitietolomake vanhemmille",
+    "sv": "Förhandsinformationsblankett för föräldrar till en femteklassares hälsoundersökning"
+  },
+  "createdDt": "2025-09-11T11:01:05.645Z",
+  "createdBy": {
+    "upn": "kaisu.tamminen@luvn.fi",
+    "name": "Kaisu Tamminen",
+    "practitionerId": 11
+  },
+  "questions": [
+    {
+      "questionId": "14e8ae63-ec2b-45d2-ab73-fab794cd3533",
+      "questionText": {
+        "en": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form.",
+        "fi": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+        "sv": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "36db7c6e-57f6-4a11-af2d-a4dc2c136efa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "627c0a9b-bf67-4776-a0ab-411b30b24245",
+      "questionText": {
+        "en": "Your child will soon have a health examination in school health care. The extensive health examination for 5th grade pupils includes discussing the health and welfare of the child and her or his entire family. We will also consider issues related to the child’s school attendance and leisure time. We invite parents to participate in the child’s extensive health examination. Your participation is very important.We wish that you fill out this form and return it according to the instructions given. When a child lives in two homes, both homes can fill out separate forms. While the questionnaire has been planned to be filled out by parents, you may also discuss with your child when considering your answers.We will discuss the topics of the form during the examination. Your replies help us target the health examination based on your family’s needs and wishes. Your child will also fill out a separate form related to the health examination. Filling out the form and answering each individual question is voluntary. The information you provide is confidential and subject to the secrecy provisions of health care. Information regarding the health examination will be entered in patient documents, after which this form will be destroyed. School health care documents are part of the wellbeing services county’s patient register. ",
+        "fi": "Lapsenne kouluterveydenhuollon terveystarkastus lähestyy. Viidennen luokan laajassa terveystarkastuksessa keskustelemme lapsen ja koko perheen terveydestä ja hyvinvoinnista. Pohdimme myös koulunkäyntiin ja vapaa-aikaan liittyviä asioita. Kutsumme vanhemmat mukaan laajaan terveystarkastukseen. Osallistumisenne on hyvin tärkeää. Toivomme teidän täyttävän tämän lomakkeen ja palauttavan sen annettujen ohjeiden mukaisesti. Lapsen asuessa kahdessa kodissa voidaan kummassakin täyttää oma lomake. Lomake on suunniteltu vanhempien täytettäväksi, mutta vastauksia voidaan pohtia keskustellen lapsen kanssa. Keskustelemme lomakkeen aiheista terveystarkastuksessa. Vastauksenne auttavat suuntaamaan tarkastusta perheenne tarpeiden ja toiveiden mukaiseksi. Lapsenne täyttää tarkastukseen liittyen myös oman esitietolomakkeensa. Lomakkeen täyttäminen ja jokaiseen yksittäiseen kysymykseen vastaaminen on vapaaehtoista. Antamanne tiedot ovat luottamuksellisia, ja terveydenhuollon salassapitosäädökset koskevat niitä. Terveystarkastuksesta tehdään kirjaukset potilasasiakirjoihin, minkä jälkeen tämä lomake hävitetään. Kouluterveydenhuollon asiakirjat ovat osa hyvinvointialueen potilasrekisteriä.",
+        "sv": "Ert barn kommer snart att kallas till en \nhälsoundersökning inom skolhälsovården. Vid \nden omfattande hälsoundersökning som görs i \nårskurs fem diskuteras utöver barnets också hela \nfamiljens hälsa och välbefinnande. Också frågor \nsom gäller barnets skolgång och fritid behandlas. \nBarnets föräldrar ombeds att delta i den omfattande \nhälsoundersökningen. Det är mycket viktigt att ni \ndeltar. \nFyll vänligen i denna blankett. Om barnet har två hem, kan \nvartdera hemmet fylla i en blankett. Det är meningen \natt föräldrarna ska fylla i blanketten, men svaren kan \ndiskuteras tillsammans med barnet. \nDe teman som finns på blanketten diskuteras vid \nundersökningen. Era svar hjälper oss att tillgodose \nfamiljens behov och önskemål i samband med \nhälsoundersökningen. Barnet fyller också i \nen egen blankett med förhandsuppgifter inför \nhälsoundersökningen. \nDet är frivilligt att fylla i blanketten och att \nbesvara de enskilda frågorna. Alla uppgifter är \nkonfidentiella och omfattas av hälso- och sjukvårdens \nsekretessbestämmelser. Anteckningar om \nhälsoundersökningen görs i patientjournalerna och \ndärefter förstörs denna blankett. Skolhälsovårdens \nhandlingar är en del av välfärdsområdets \npatientregister."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "36db7c6e-57f6-4a11-af2d-a4dc2c136efa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8dd7eb7e-c25e-4e36-8eb8-64e718a3aa86",
+      "questionText": {
+        "en": "Pupil's class",
+        "fi": "Oppilaan luokka",
+        "sv": "Elevens klass"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "36db7c6e-57f6-4a11-af2d-a4dc2c136efa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ec1959a7-267b-432b-ac5f-2a78b09086f0",
+      "questionText": {
+        "en": "Language(s) used at home",
+        "fi": "Kodin kieli/kielet",
+        "sv": "Hemmets språk (ett eller flera)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "36db7c6e-57f6-4a11-af2d-a4dc2c136efa",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8382ed60-fc45-40cb-b0ae-f88f4d97613b",
+      "questionText": {
+        "en": "Parents/guardians:\n\nParents'/guardians' names and telephone numbers of where they can be reached during the day",
+        "fi": "Huoltajan/huoltajien nimet ja puhelinnumerot, joista tavoittaa päivisin",
+        "sv": "Föräldrar/vårdnadshavare: \n\n1. förälderns namn och telefonnummer dagtid\n2. förälderns namn och telefonnummer dagtid"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "fa90e61e-78b0-43dd-9f8c-16347c07451f",
+      "questionText": {
+        "en": "The child lives",
+        "fi": "Lapsi asuu",
+        "sv": "Barnet bor tillsammans med "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "b3085c57-fdde-4f32-bda3-b611d7ed7aa8",
+          "answerText": {
+            "en": "with two parents",
+            "fi": "Kahden vanhemman kanssa",
+            "sv": "två föräldrar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "43870ec2-f2bf-4a75-9946-24ddf5f1b552",
+          "answerText": {
+            "en": "with one parent",
+            "fi": "Yhden vanhemman kanssa",
+            "sv": " en förälder"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "6345a9e8-6320-4e42-a505-472f00a59748",
+              "questionText": {
+                "en": "Visiting / alternating residence arrangements if the parents live separately",
+                "fi": "Tapaamis-/vuoroasumisjärjestelyt vanhempien asuessa erillään",
+                "sv": "Arrangemang för umgänge/växelvist boende när föräldrarna bor separat "
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "cdfe5ec8-890f-43b1-b3f3-cffcd05d695c",
+          "answerText": {
+            "en": "alternating residence",
+            "fi": "Vuoroasuminen",
+            "sv": " växelvist boende"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "4d9a7823-69fa-4eb7-8e9f-93322d453cbf",
+              "questionText": {
+                "en": "Visiting / alternating residence arrangements if the parents live separately",
+                "fi": "Tapaamis-/vuoroasumisjärjestelyt vanhempien asuessa erillään",
+                "sv": "Arrangemang för umgänge/växelvist boende när föräldrarna bor separat"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "811cb2da-cf39-4c8f-8f0f-315f5e6be120",
+          "answerText": {
+            "en": "other arrangement",
+            "fi": "Muu järjestely",
+            "sv": "annat arrangemang"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "12851778-9c72-49c0-88be-48ec31fcab63",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mikä?",
+                "sv": "Hurdant?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a07cfa25-2f80-4c49-bbc2-e8f5a72ad068",
+      "questionText": {
+        "en": "Changes in the family structure after the child started school",
+        "fi": "Muutokset perherakenteessa",
+        "sv": "Förändringar i familjestrukturen efter att skolan inletts"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "9f1e34f1-bb30-4aff-8ff0-1d133e705d67",
+          "answerText": {
+            "en": "no changes",
+            "fi": "Ei muutoksia",
+            "sv": "inga förändringar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0b0b166f-8137-49e7-b801-53984eedf4af",
+          "answerText": {
+            "en": "separated/divorced",
+            "fi": "Avo/avioero",
+            "sv": "separation/skilsmässa"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "818270fd-913e-4be2-8906-6c4774299faa",
+              "questionText": {
+                "en": "Year",
+                "fi": "Vuonna",
+                "sv": "Årtal"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "9b9cecfe-fbc8-4d19-aaa0-ed94c25023ce",
+              "questionText": {
+                "en": "joint custody; single parent ",
+                "fi": "Yhteishuoltajuus; yksinhuoltajuus",
+                "sv": "Gemensam vårdnad; ensam vårdnad"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [
+                {
+                  "answerId": "3d4f3120-1ff7-4468-a592-a806f3a30ce4",
+                  "answerText": {
+                    "en": "joint custody;",
+                    "fi": "Yhteishuoltajuus",
+                    "sv": "Gemensam vårdnad"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                },
+                {
+                  "answerId": "a0107b18-2d6f-4f4c-b637-d4949f904900",
+                  "answerText": {
+                    "en": "single parent ",
+                    "fi": "Yksinhuoltajuus",
+                    "sv": "Ensam vårdnad"
+                  },
+                  "printText": {
+                    "en": "",
+                    "fi": "",
+                    "sv": ""
+                  },
+                  "question": [],
+                  "tags": []
+                }
+              ],
+              "type": "select",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "edaa5055-9a64-4bbf-b4a4-28de0b9377e6",
+          "answerText": {
+            "en": "new cohabitation relationship/marriage",
+            "fi": "Uusi avo/avioliitto",
+            "sv": "nytt samboförhållande/äktenskap"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "b8396ab2-2cbf-4d9e-a3ce-862cdfa4728a",
+              "questionText": {
+                "en": "Year",
+                "fi": "Vuonna",
+                "sv": "Årtal"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "5400d80f-0061-4118-9939-45bea28ead72",
+          "answerText": {
+            "en": "other",
+            "fi": "Muu",
+            "sv": "annat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "8818d947-8551-47e8-ad84-a4d11a391fb8",
+              "questionText": {
+                "en": "What?",
+                "fi": "Mikä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "af73ef43-22cb-488b-8408-9d1745a917a6",
+      "questionText": {
+        "en": "Does your child have siblings?",
+        "fi": "Onko lapsellanne sisaruksia?",
+        "sv": "Har barnet syskon?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "08ebcbae-17e8-4435-b1c5-37ddc9cc6176",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "12448d3b-308f-4111-b7e4-50951236953b",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "5ad716ed-2d21-41fd-a2d2-f9a891934ece",
+              "questionText": {
+                "en": "first names and years of birth",
+                "fi": "Etunimet ja syntymävuodet",
+                "sv": "Förnamn och födelseår"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "79305eca-bd57-4dc1-8b98-e19dac777212",
+      "questionText": {
+        "en": "Are there other people in the family or household?",
+        "fi": "Kuuluuko perheeseen tai samaan talouteen muita henkilöitä?",
+        "sv": "Ingår det andra personer i familjen eller samma hushåll?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "d438f6bf-49b7-4b77-9e68-0d7941641309",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ec2cd5fe-20eb-4b12-9fb1-e5409206de77",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "4239c723-e069-46eb-b690-f72a904bc6a1",
+              "questionText": {
+                "en": "Other persons belonging to the family or same household",
+                "fi": "Muut perheeseen tai samaan talouteen kuuluvat henkilöt",
+                "sv": "Övriga personer i samma familj eller hushåll "
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "12062cc5-c178-4327-b074-cdad6823b97c",
+      "questionText": {
+        "en": "How would you assess your child’s current health?",
+        "fi": "Millaiseksi arvioitte lapsenne nykyisen terveydentilan?",
+        "sv": "Barnets hälsa och välbefinnande:\n\nHurdant är barnets nuvarande hälsotillstånd? "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "99710557-dda6-4c5f-9f25-a06bdbd12d73",
+          "answerText": {
+            "en": "Good",
+            "fi": "Hyvä",
+            "sv": "bra"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "14434fc5-3356-465b-b361-a10fb09df7c2",
+          "answerText": {
+            "en": "Average",
+            "fi": "Keskinkertainen",
+            "sv": " medelmåttigt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "65b43951-3191-423d-a5e1-3cdd4b983c2c",
+          "answerText": {
+            "en": "Poor",
+            "fi": "Huono",
+            "sv": "dåligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "9efeeb4b-d734-4f55-ad72-470a33e7f764",
+      "questionText": {
+        "en": "Does your child have some long-term (physical or mental) symptom, illness or disability?",
+        "fi": "Onko lapsellanne jokin pitkäaikainen (fyysinen tai psyykkinen) oire, sairaus tai vamma?",
+        "sv": "Har barnet långvariga (fysiska eller psykiska) symtom, sjukdomar eller handikapp?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "83c61273-b493-4619-a00b-01a61c864458",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2bfe76b4-978c-4f5c-bba9-e3c13abe6559",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "432ec79e-05d8-431d-851b-153e816e1cc1",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mikä?",
+                "sv": "Vilka?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            },
+            {
+              "questionId": "1d2cba34-4c4c-4b6a-a820-9e7dea489901",
+              "questionText": {
+                "en": "Care provider, and current treatments and limitations",
+                "fi": "Hoitotaho ja nykyiset hoidot sekä rajoitteet",
+                "sv": "Vårdinstans, nuvarande vård och begränsningar"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "05d7eeee-ccb3-462b-b255-095fdba81336",
+      "questionText": {
+        "en": "Does your child have any allergies? ",
+        "fi": "Onko lapsellanne allergia?",
+        "sv": "har ditt barn någon allergi?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "bc73547f-11f7-45da-a5ef-7bb774206886",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b48863f0-9f97-432f-ac82-29aa10152ab5",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "eb6fd3a3-7c51-4419-a6ae-2d28680133ea",
+              "questionText": {
+                "en": "What?",
+                "fi": "Mikä?",
+                "sv": "Vilken?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "341ad412-13a6-410c-b224-148973c01dcd",
+      "questionText": {
+        "en": "Does your child have a special diet?",
+        "fi": "Onko lapsellanne erityisruokavalio?",
+        "sv": "har ditt barn någon specialdiet?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "d6e86de8-fde1-4ecc-bd15-2668e1bbaaca",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b16d45f8-9b3b-4361-b06a-4f1f89087d14",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "a1516c06-3cf3-4f42-b5e3-cdcdf8f5092d",
+              "questionText": {
+                "en": "What?",
+                "fi": "Mikä?",
+                "sv": "Vilken?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f6b4127b-41f0-498c-8d99-47743978aedc",
+      "questionText": {
+        "en": "Is your child using any medication?",
+        "fi": "Onko lapsellanne käytössä lääkkeitä?",
+        "sv": "har ditt barn någon medicinering?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ce7c219a-7fe8-4c53-a511-16b2569b32a0",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b4331498-58d1-4bf0-9b92-49b42a36b788",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "f10b152e-5685-43a7-8c39-b1a8014dceba",
+              "questionText": {
+                "en": "What?",
+                "fi": "Mitä?",
+                "sv": "Vilken?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "5e40de8e-bd56-4772-9c33-d8d4359c0af1",
+      "questionText": {
+        "en": "During the past year, has your child repeatedly suffered from",
+        "fi": "Onko lapsellanne ollut viimeisen vuoden aikana toistuvasti jotain seuraavista?",
+        "sv": "Har något av följande förekommit hos barnet upprepade gånger under det senaste året?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a8a18b9c-0c54-45c6-9673-46553bf806bf",
+          "answerText": {
+            "en": " tiredness or sleeping difficulties",
+            "fi": "väsymystä ja uniongelmia",
+            "sv": "trötthet eller sömnproblem"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "86fb3021-35e4-4d45-a340-62ae2c0afd1f",
+              "questionText": {
+                "en": " tiredness or sleeping difficulties - please specify?",
+                "fi": "väsymystä ja uniongelmia: kuvaile?",
+                "sv": "trötthet eller sömnproblem"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "d84d626b-9c76-4132-928e-0627c6cb84f9",
+          "answerText": {
+            "en": "timidity or tension",
+            "fi": "arkuutta tai jännittyneisyyttä",
+            "sv": "skygghet eller spändhet"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "5030da85-f841-4360-9fc7-73ab3463d87e",
+              "questionText": {
+                "en": "timidity or tension - please specify?",
+                "fi": "arkuutta tai jännittyneisyyttä: kuvaile?",
+                "sv": "skygghet eller spändhet, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "34070815-594d-4636-ae7c-1036a60acc38",
+          "answerText": {
+            "en": "violent behaviour, aggressiveness",
+            "fi": "väkivaltaisuutta, aggressiivisuutta",
+            "sv": "våldsamhet, aggressivitet"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "66de3cad-1608-4d2e-8dab-88395d1dd339",
+              "questionText": {
+                "en": "violent behaviour, aggressiveness  - please specify?",
+                "fi": "väkivaltaisuutta, aggressiivisuutta: kuvaile?",
+                "sv": "våldsamhet, aggressivitet, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "a22f0777-3ac5-470b-83fa-2d7b418c7641",
+          "answerText": {
+            "en": "restlessness, difficulties concentrating",
+            "fi": "levottomuutta, keskittymisvaikeuksia",
+            "sv": "rastlöshet, koncentrationssvårigheter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "5352aba3-dde7-40c4-b597-e5138573582c",
+              "questionText": {
+                "en": "restlessness, difficulties concentrating - please specify?",
+                "fi": "levottomuutta, keskittymisvaikeuksia: kuvaile?",
+                "sv": "rastlöshet, koncentrationssvårigheter, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "0b5b72e0-3de7-418b-8448-e591f5776f2b",
+          "answerText": {
+            "en": "fears, anxiety",
+            "fi": "pelkoja, ahdistuneisuutta",
+            "sv": "rädsla, ångest"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "0de3f9da-ee0e-4797-b843-f0ecdf5987c7",
+              "questionText": {
+                "en": "fears, anxiety - please specify?",
+                "fi": "pelkoja, ahdistuneisuutta: kuvaile?",
+                "sv": "rädsla, ångest, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "0c24363b-bb81-4940-8b84-be5ca832e884",
+          "answerText": {
+            "en": "melancholy, isolation from others",
+            "fi": "alakuloisuutta, vetäytyneisyyttä",
+            "sv": "nedstämdhet, tillbakadragenhet"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "e07e0aea-687c-4fb7-a3ee-e49b8c9df4f7",
+              "questionText": {
+                "en": "melancholy, isolation from others - please specify?",
+                "fi": "alakuloisuutta, vetäytyneisyyttä: kuvaile?",
+                "sv": "nedstämdhet, tillbakadragenhet, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "e1638fd3-5251-4bee-bd7e-74877773bef5",
+          "answerText": {
+            "en": "bedtime or daytime wetting",
+            "fi": "yö- tai päiväkastelua",
+            "sv": "sängvätning eller inkontinens på dagen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "52ae1893-0e58-4211-a6b5-bb2a01f95cdc",
+              "questionText": {
+                "en": "bedtime or daytime wetting - please specify?",
+                "fi": "yö- tai päiväkastelua: kuvaile?",
+                "sv": "sängvätning eller inkontinens på dagen, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "717c75f2-42c2-4f48-8086-7bfb50771bb5",
+          "answerText": {
+            "en": "pain under physical strain",
+            "fi": "kipuja rasituksen yhteydessä",
+            "sv": "smärtor vid belastning"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "81995feb-4635-44cd-8770-068de60e0cf9",
+              "questionText": {
+                "en": "pain under physical strain - please specify?",
+                "fi": "kipuja rasituksen yhteydessä: kuvaile?",
+                "sv": "smärtor vid belastning, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "2007a1de-5a51-44cd-8d6a-851a875ed787",
+          "answerText": {
+            "en": "other symptoms, ailments or pains",
+            "fi": "muita oireita, vaivoja tai kipuja",
+            "sv": "andra symtom, besvär eller smärtor"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "a95c1d96-1a79-47bf-a157-c001d7de34d4",
+              "questionText": {
+                "en": "other symptoms, ailments or pains - please specify?",
+                "fi": "muita oireita, vaivoja tai kipuja: kuvaile?",
+                "sv": "andra symtom, besvär eller smärtor, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "a88bab9b-9571-44da-8fc4-ffd3ef90a619",
+          "answerText": {
+            "en": "accidents",
+            "fi": "tapaturmia",
+            "sv": "olycksfall"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "d3e29cc6-d62e-4c71-ac0c-c2bc52912fa2",
+              "questionText": {
+                "en": "accidents - please specify?",
+                "fi": "tapaturmia: kuvaile?",
+                "sv": "olycksfall, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "b3f8168a-56e3-423d-ac77-597e1a336716",
+          "answerText": {
+            "en": "nothing above",
+            "fi": "ei mitään ylläolevista",
+            "sv": "ei mitään ylläolevista"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "e5a75ebe-ebee-4899-b59d-88cac862ff3c",
+      "questionText": {
+        "en": "Has your child ever lost consciousness while lying down or under physical strain?",
+        "fi": "Onko lapsellanne ollut koskaan tajuttomuuskohtauksia makuulla tai rasituksessa?",
+        "sv": "Har barnet någonsin haft medvetslöshetsepisoder i liggande ställning eller under belastning?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "826f801f-51cd-4d47-beed-b4d172c9d711",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "791a8ab0-fb64-467b-a390-8dff07f3595d",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "b9e7cc61-1056-47d1-b273-6465a9652f8c",
+      "questionText": {
+        "en": "Does your child’s family have any history of sudden deaths at the age of under 50 or hereditary or recurring illnesses?",
+        "fi": "Onko lapsenne suvussa äkkikuolemia alle 50-vuotiaana tai perinnöllisiä tai toistuvia sairauksia?",
+        "sv": "Finns det i barnets släkt plötsliga dödsfall i en ålder under 50 år eller ärftliga eller återkommande sjukdomar?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "24d92c66-3049-47bb-a634-6d48162c2dd0",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1aa41165-6f23-459f-b8c9-9622c6fa997a",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "c87598ca-e682-42fc-9651-89581698ed11",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ec583144-92c3-4900-bfa4-5a25445bd4be",
+      "questionText": {
+        "en": "Have you noticed any changes related to puberty in your child? Please specify.",
+        "fi": "Oletteko huomannut lapsessanne murrosiän kehitykseen liittyviä muutoksia? Mitä?",
+        "sv": "Har ni märkt pubertetsförändringar hos barnet? Hurdana?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "6a5cf175-bff9-4cb2-887b-1e2ead064390",
+      "questionText": {
+        "en": "Have you discussed puberty with your child?",
+        "fi": "Oletteko keskustelleet lapsenne kanssa murrosiästä?",
+        "sv": "Har ni diskuterat puberteten med barnet?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "02ad559b-8d34-43ed-8879-7dc3b443b5d7",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7024b8f0-d799-4360-adf6-416c21b9a15f",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "8dd52a67-b20e-4348-9cc3-c4ec44e4fbb3",
+              "questionText": {
+                "en": "Which themes?",
+                "fi": "Mistä teemoista?",
+                "sv": " Vilka teman? "
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "e720be99-6099-4476-91ec-b9a12817d284",
+      "questionText": {
+        "en": "Our child sleeps on school days (from-to)",
+        "fi": "Lapsemme nukkuu arkena (kellonajat mistä mihin)",
+        "sv": "Vårt barn sover på vardagar (kl.)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "70650db6-ce8c-4ddf-b0a9-b7d648f57b3e",
+      "questionText": {
+        "en": "Our child sleeps on weekends (from-to)",
+        "fi": "Lapsemme nukkuu viikonloppuna (kellonajat mistä mihin)",
+        "sv": "Vårt barn sover under veckoslut (kl.)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "dc17af8f-32cc-44f3-bbf1-e2d166a9cc02",
+      "questionText": {
+        "en": "Our child engages in physical activity (physical education classes, getting to and from school, outdoor activities, hobbies) ",
+        "fi": "Lapsemme liikkuu (koululiikunta ja -matkat, ulkoilu ja harrastukset) päivittäin noin (tuntia)",
+        "sv": "Vårt barn  rör på sig (skolväg och -gymnastik, utomhusvistelse, hobbyn) dagligen cirka"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "04b9621f-a59f-43da-a024-f7e55c496f0f",
+      "questionText": {
+        "en": "Our child screen time on school days (mobile phone, computer, gaming consoles, TV etc.)",
+        "fi": "Ruutuaika arkena tuntia/päivä (kännykkä, tietokone, pelikoneet, TV ym.) (tuntia)",
+        "sv": "Sitter framför skärm på vardagar (telefon, dator, spelkonsol, tv m.m.) (timmar/dag)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "4befc828-48ae-4d0d-b2ea-c134ba0a1702",
+      "questionText": {
+        "en": "Our child screen time on weekends (mobile phone, computer, gaming consoles, TV etc.)",
+        "fi": "Ruutuaika viikonloppuna tuntia/päivä (kännykkä, tietokone, pelikoneet, TV ym.) (tuntia)",
+        "sv": "sitter framför skärm under veckoslut (telefon, dator, spelkonsol, tv m.m.) (timmar/dag)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "6f91ed51-bc96-4fac-b060-162ce7f7c630",
+      "questionText": {
+        "en": "Do you know what your child does online and on social media?",
+        "fi": "Tiedättekö, mitä lapsenne tekee netissä ja sosiaalisessa mediassa?",
+        "sv": "Vet ni vad barnet gör på nätet och i sociala medier?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7e5969f3-8621-4020-97d7-f17d139c1005",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "97e550e4-f808-4680-a6d5-f009bc989e51",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f333b6f3-aea5-42bb-88a3-de54303f07b2",
+      "questionText": {
+        "en": "What is good in our family's eating habits?",
+        "fi": "Perheemme ruokatottumuksissa on hyvää",
+        "sv": "Familjens måltidsvanor vi är nöjda med:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "d073da38-7af3-4228-abd8-31a050a13d23",
+      "questionText": {
+        "en": "What should be developed in our family's eating habits?",
+        "fi": "Perheemme ruokatottumuksissa on kehitettävää",
+        "sv": "Familjens måltidsvanor kunde förbättras:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "b279fce9-f1a9-4948-8742-d61176ae2105",
+      "questionText": {
+        "en": "Our child’s meals:\n\nbreakfast",
+        "fi": "Lapsemme ateriat:\n\nAamupala",
+        "sv": "Barnets måltider:\n\nfrukost"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "e35e06c6-fad6-4f17-bdb0-4a86379a5298",
+          "answerText": {
+            "en": "on school days",
+            "fi": "Arkena",
+            "sv": "på vardagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "39b1d69f-5da1-424f-acb7-0bbf241d2b66",
+          "answerText": {
+            "en": " on weekends",
+            "fi": "Viikonloppuna",
+            "sv": " under veckoslut"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2b1081f4-0974-4343-b6bc-4455b5c5a637",
+          "answerText": {
+            "en": "not at all",
+            "fi": "Ei lainkaan",
+            "sv": "inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "e1ec8ad8-4aa0-43c1-adad-e9e4939ad9fa",
+      "questionText": {
+        "en": "school meal/lunch",
+        "fi": "Kouluruoka, lounas",
+        "sv": "Skolmat/lunch"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "714a8710-238a-4f42-8003-38abcb377b18",
+          "answerText": {
+            "en": "on school days",
+            "fi": "Arkena",
+            "sv": "på vargagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "715795f8-ad50-4e51-8ee1-3ed3442d4681",
+          "answerText": {
+            "en": " on weekends",
+            "fi": "Viikonloppuna",
+            "sv": "under veckoslut"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ac472b02-a507-48a3-861b-cd24dda8b1dd",
+          "answerText": {
+            "en": "not at all",
+            "fi": "Ei lainkaan",
+            "sv": "inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "596e8a66-1c7a-4466-b5ec-ec1bf9f87eda",
+      "questionText": {
+        "en": "afternoon snack",
+        "fi": "Iltapäivän välipala",
+        "sv": "mellanmål på eftermiddagen"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7012cd99-f981-4018-b68d-b66d9dfa9fb8",
+          "answerText": {
+            "en": "on school days",
+            "fi": "Arkena",
+            "sv": "på vardagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fa102cb5-23cc-4fd3-aec9-6f38cc7ee26f",
+          "answerText": {
+            "en": " on weekends",
+            "fi": "Viikonloppuna",
+            "sv": "under veckoslut"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "27900970-dae0-41db-93d4-0e7fde80092a",
+          "answerText": {
+            "en": "not at all",
+            "fi": "Ei lainkaan",
+            "sv": "inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "03366611-9694-4d48-a7c7-5144f6bf7ab3",
+      "questionText": {
+        "en": "dinner",
+        "fi": "Päivällinen",
+        "sv": "middag"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ae5b009a-1575-4256-afef-65186bd35152",
+          "answerText": {
+            "en": "on school days",
+            "fi": "Arkena",
+            "sv": "på vardagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "97688eb1-1e2d-4b75-8dd0-18718e7dd7d4",
+          "answerText": {
+            "en": " on weekends",
+            "fi": "Viikonloppuna",
+            "sv": "under veckoslut"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2287089d-bc57-4fc2-9464-356f26626fb0",
+          "answerText": {
+            "en": "not at all",
+            "fi": "Ei lainkaan",
+            "sv": "inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "affc0893-3fae-4896-a8ce-84aed7f76af2",
+      "questionText": {
+        "en": "bedtime snack",
+        "fi": "Iltapala",
+        "sv": "kvällsmål"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "10488256-7342-4974-bdcd-d9e2e0be48db",
+          "answerText": {
+            "en": "on school days",
+            "fi": "Arkena",
+            "sv": "på vardagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "32e0e0c5-682a-4d52-bfeb-9ae5ec890748",
+          "answerText": {
+            "en": " on weekends",
+            "fi": "Viikonloppuna",
+            "sv": "under veckoslut"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fe13811d-f926-485a-8a54-ae16e311c3e6",
+          "answerText": {
+            "en": "not at all",
+            "fi": "Ei lainkaan",
+            "sv": "inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0792468c-0634-43e4-895e-980bf70bb0b0",
+      "questionText": {
+        "en": "Our child’s diet includes:\n\nmilk or so-called plant-based milk or products made from these",
+        "fi": "Lapsemme ruokavalio sisältää:\n\nMaitoa tai ns. kasvimaitoa tai näistä valmistettuja tuotteita",
+        "sv": "Vårt barns kost innehåller:\n\nmjölk eller så kallad vegetabilisk mjölk eller produkter som tillverkats av dessa"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a85aeb98-d817-4ca9-85cc-e826caf78073",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "57a765e7-4f8f-4c3d-8055-339a8cf3310b",
+              "questionText": {
+                "en": "Please speficy?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "4f8db6df-6302-4877-b213-3509202e6815",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f9921b7b-00ad-4c62-8f90-210a0f267744",
+      "questionText": {
+        "en": "vegetables and/or fruits",
+        "fi": "Vihanneksia ja/tai hedelmiä",
+        "sv": "grönsaker och/eller frukter"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "b1a4070c-fc42-424b-b91b-af7110f48257",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "93d95832-d6e5-426d-aa93-8f5b5cd11cfb",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "6e5a3d5a-cd24-49ca-a4c4-40ce851f01a5",
+      "questionText": {
+        "en": "Meat",
+        "fi": "Lihaa",
+        "sv": "Kött"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "dcb03466-aab1-411a-9478-a4834cd4f27b",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f0134e23-5881-479b-b69d-8ac65022f663",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "01ec2bbe-3dd0-4924-9b99-a492cd35812b",
+      "questionText": {
+        "en": "Fish",
+        "fi": "Kalaa",
+        "sv": "Fisk"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "cd85f2b3-d57d-4ed2-af7f-9ae661d245d5",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4e92dd5e-fcc3-436e-8012-5d58b728c42a",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "27ea0f25-03ff-4924-84e0-1714cb756044",
+      "questionText": {
+        "en": "Our child uses a vitamin D supplement",
+        "fi": "Lapsemme käyttää d-vitamiinilisää",
+        "sv": "Vårt barn använder D-vitamintillskott"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a33f6bd2-6925-46f1-b303-b488e5c28837",
+          "answerText": {
+            "en": "Daily",
+            "fi": "Päivittäin",
+            "sv": " dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "3e828d0c-9d9f-436c-bcd0-5f8e47efd4e7",
+              "questionText": {
+                "en": "daily dose/ micrograms",
+                "fi": "Vuorokausiannos per/mikrogrammaa",
+                "sv": "dygnsdos/mikrogram"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "d7129cd9-1328-4e31-8fdc-e7af9e7660c2",
+          "answerText": {
+            "en": "Occasionally",
+            "fi": "Satunnaisesti",
+            "sv": "sporadiskt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "589fd575-c792-4c71-9005-f151e9a6c2b7",
+              "questionText": {
+                "en": "daily dose/ micrograms",
+                "fi": "Vuorokausiannos per/mikrogrammaa",
+                "sv": "dygnsdos/mikrogram"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "930ae179-5cce-400d-8019-d81b020336e9",
+          "answerText": {
+            "en": "Never",
+            "fi": "Ei lainkaan",
+            "sv": " inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0068fc52-0e02-49fa-bc8c-0844677c01c6",
+      "questionText": {
+        "en": "Use of tobacco products and intoxicants in our family:\n\ntobacco",
+        "fi": "Perheemme tupakkatuotteiden ja päihteiden käyttö:\n\nTupakka",
+        "sv": "Användningen av tobaksprodukter, alkohol och andra droger i familjen:\n\ntobak"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "fb77539b-98c5-48e4-8c70-7231019eb3d6",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "bb2013ee-1888-4969-b5fa-bc99771c4772",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "6df6f29e-86c1-4364-9721-03168ae47deb",
+              "questionText": {
+                "en": "Please specify",
+                "fi": "Kerro tarkemmin",
+                "sv": "Berätta mer"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8cbb16f1-a782-4533-b397-cbb3fb812c8d",
+      "questionText": {
+        "en": "snus (Swedish type moist snuff)",
+        "fi": "Nuuska",
+        "sv": "snus"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "3f9f6b4a-3122-466c-84da-aec1a83065a3",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fa032feb-df79-4b47-909d-22ef1fc19f97",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "40dae9ed-c314-41a4-9c8c-aafe3f2c087d",
+              "questionText": {
+                "en": "Please specify",
+                "fi": "Kerro tarkemmin",
+                "sv": "Berätta mer"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "77c35eb0-7cb9-4506-bf74-f344dd245b9d",
+      "questionText": {
+        "en": "alcohol",
+        "fi": "Alkoholi",
+        "sv": "Alkohol"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "6abb7bfe-5efd-4d2d-bf41-551747ceaf11",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c3000cd3-fc07-4dd7-9e1e-536bc863ddfe",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "0cfbe44f-6a04-4280-b1c4-8b2e66dff47a",
+              "questionText": {
+                "en": "Please specify",
+                "fi": "Kerro tarkemmin",
+                "sv": "Berätta mer"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "6e5e1c78-98a2-4cbc-8d8e-45a5807ab45e",
+      "questionText": {
+        "en": "drugs",
+        "fi": "Huumeet",
+        "sv": "narkotika"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "752dc33f-5357-4a30-879b-c79b6397f51b",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b1cf4b5c-d3b8-46f3-8679-b6cb4bf500fe",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "7b02ad9f-f24a-4214-8a4a-44aa91d21c59",
+              "questionText": {
+                "en": "Please specify",
+                "fi": "Kerro tarkemmin",
+                "sv": "Berätta mer"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0939b6ea-751e-4129-a079-0a352b5ad2fd",
+      "questionText": {
+        "en": "Have you talked about tobacco, snus and intoxicants with your child?",
+        "fi": "Oletteko keskustelleet lapsenne kanssa tupakasta, nuuskasta ja päihteistä?",
+        "sv": "Har ni talat med barnet om tobak, snus, alkohol och droger?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "9a0fc4de-9486-4183-a8c9-186b6dd5be22",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9109ecb1-6279-4c08-a1be-de80f1ea744d",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "afd5554f-d48b-46ec-a193-00402c0e18f3",
+      "questionText": {
+        "en": "Personal hygiene:\n\nHow often does your child brush her/his teeth?",
+        "fi": "Henkilökohtainen hygienia:\n\nKuinka usein lapsenne harjaa hampaat?",
+        "sv": "Personlig hygien:\n\nHur ofta borstar barnet tänderna?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "48848102-8dd8-45b9-ade5-1c997c76a732",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "60f72481-a286-4835-9672-63ed6a2c36c9",
+      "questionText": {
+        "en": "How does your child take care of her/his personal hygiene? (showering, changing clothes etc.)",
+        "fi": "Miten lapsenne huolehtii henkilökohtaisesta hygieniasta? (suihku, vaatteiden vaihto ym.)",
+        "sv": "Hur sköter barnet sin personliga hygien? (dusch, klädbyte m.m.)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "48848102-8dd8-45b9-ade5-1c997c76a732",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "2c1c1929-cb68-482b-976e-02f749e1616f",
+      "questionText": {
+        "en": "School:\n\nHow is your child’s school attendance and homework going?",
+        "fi": "Koulunkäynti:\n\nMiten koulunkäynti ja kotitehtävät sujuvat?",
+        "sv": "Skolan:\n\nHur går det för barnet i skolan och med hemläxorna?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "d7ea91d0-d34f-441a-af7b-acc5730e34bb",
+      "questionText": {
+        "en": "What are your child’s strengths at school?",
+        "fi": "Mitkä ovat lapsenne vahvuudet koulussa?",
+        "sv": "Vilka är barnets starka sidor i skolan?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ea808917-b1d7-484e-853f-4ae9b5a4a57a",
+      "questionText": {
+        "en": "Is your child’s learning supported? (remedial teaching, small group, special needs education, etc.)",
+        "fi": "Saako lapsenne tukea oppimiseen? (tukiopetus, pienryhmä, erityisopetus ym.)",
+        "sv": "Får barnet stöd för lärandet? (stödundervisning, arbete i smågrupper, specialundervisning osv.)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "0c03c914-b5e6-41f1-b3f7-cb719a6bceaf",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "23aedb4a-b57f-4061-a08a-11e34e43eecb",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "4aee38d8-7908-4a85-9a71-3aa54394a50f",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Hurdant?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0b6fddb8-6d63-4287-b6f9-a76cd607da7c",
+      "questionText": {
+        "en": "Is your child seeing/has your child been seeing a school social worker or a school psychologist?",
+        "fi": "Tapaako lapsenne / onko lapsenne tavannut koulukuraattoria tai koulupsykologia?",
+        "sv": "Går barnet / har barnet gått hos en skolkurator eller en skolpsykolog?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "86f90c97-6d75-4c55-93c3-b7215cb6f63a",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "bf4764ef-96d9-4c5a-807a-d1bdc048c3b0",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "4ebff870-76bb-45dd-a00e-65f649ab3f99",
+              "questionText": {
+                "en": "Why?",
+                "fi": "Miksi?",
+                "sv": "Varför?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "7c948db5-74e2-46a9-b344-000845b0752a",
+      "questionText": {
+        "en": "How do you feel the cooperation between home and school is going?",
+        "fi": "Miten mielestänne kodin ja koulun yhteistyö sujuu?",
+        "sv": "Hur tycker ni att samarbetet mellan hem och skola har fungerat? "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "bb393cdd-6d5d-4966-886d-9f16cd2d8865",
+      "questionText": {
+        "en": "Does your child enjoy attending school?",
+        "fi": "Onko koulunkäynti lapsellenne mieluisaa?",
+        "sv": "Tycker barnet om att gå i skolan?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "3d931645-1d7f-4a2f-8d80-be87ac1bfdc4",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "88fcf69d-6417-4747-98d4-d95adb017ba5",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "de82e24a-bc2e-4da7-b153-a17673e268e9",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "0aa58566-a3b2-405e-a147-5774f6fdcb3d",
+      "questionText": {
+        "en": "Does your child have friends at school?",
+        "fi": "Onko lapsellanne kavereita koulussa?",
+        "sv": "Har barnet kompisar i skolan?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "64b1b59e-cb73-46c4-bb31-136a515f358d",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "279b6abb-7dd9-4bec-b420-42672dc48ac8",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "92f06a7f-687e-461e-ae37-910e6e211bb3",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "21994af2-e62b-4483-8e8c-f38c4ebea436",
+      "questionText": {
+        "en": "Is your child being bullied at school?",
+        "fi": "Kiusataanko lastanne koulussa?",
+        "sv": "Mobbas barnet i skolan?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "60b41984-897c-451d-a2b5-655f07720ba6",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2be8caad-475f-4ffd-9af0-c3d1a0ab9754",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "29c8b755-a571-46ed-866c-8af6d233065c",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "e39737f2-d54a-4c42-84f0-9325d3589ad6",
+      "questionText": {
+        "en": "Has your child been involved in bullying anyone at school?",
+        "fi": "Onko lapsenne osallistunut kiusaamiseen koulussa?",
+        "sv": "Har barnet medverkat i mobbning i skolan?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a2c076ff-f3a3-4e6c-b86b-1fddf4f6225b",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7f576d4f-2d1e-4000-911f-7ab51b3740e3",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "137a7b08-208b-4546-91c9-0e37c344aff6",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "aac3f507-e466-4e95-be65-f88b6f152def",
+      "questionText": {
+        "en": "Leisure time:\n\nWhat does your child do during her/his leisure time? (alone/together with friends/family or in hobbies)",
+        "fi": "Vapaa-aika:\n\nMitä lapsenne tekee vapaa-aikana? (yksin/kavereiden/perheen kanssa tai harrastuksissa)",
+        "sv": "Fritiden:\n\nVad gör barnet på fritiden? (ensamt/med kompisarna/med familjen eller i fritidsintressen)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "cc4aa88e-34a3-489d-b5a3-3e7b0342a79b",
+      "questionText": {
+        "en": "Our child’s curfew on school days is at",
+        "fi": "Lapsemme kotiintuloaika on arkisin klo",
+        "sv": "Barnets hemkomsttid på vardagar är kl"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "2922ed2c-97a5-4e97-9c13-b3e140abd84e",
+      "questionText": {
+        "en": "Our child’s curfew on weekends is at",
+        "fi": "Lapsemme kotiintuloaika on viikonloppuna klo",
+        "sv": "Barnets hemkomsttid under veckoslut kl"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f2246633-c3b5-4454-aa78-b5c67522e2b9",
+      "questionText": {
+        "en": "Does your child have friends during leisure time?",
+        "fi": "Onko lapsellanne kavereita vapaa-ajalla?",
+        "sv": "Har barnet kompisar på fritiden?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "45ee8db4-c9fd-49e4-b843-a91d5751a930",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8f62b1e0-fb5f-4cff-af75-9f96327ff884",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5f958dbf-1eb4-493f-be0f-2ef8d0750a84",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "97bb1035-1532-4579-bf0c-a5c51600f9bf",
+      "questionText": {
+        "en": "Do you know any of your child’s friends?",
+        "fi": "Tunnetteko lapsenne kavereita?",
+        "sv": "Känner ni barnets kompisar?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "8c1ec7b4-523d-4d08-a4bb-7c38db2969b7",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5faeb98e-bbb9-4f02-af89-006bd183b31b",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "fb6e71ad-f4aa-4f16-aa60-94b8ead12f7c",
+      "questionText": {
+        "en": "Is your child being bullied during leisure time?",
+        "fi": "Kiusataanko lastanne vapaa-ajalla?",
+        "sv": "Mobbas barnet på fritiden?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "17c82060-8152-4fd9-a336-599f7faed363",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3417641f-72ad-4ecd-b1ed-ab00f25f67cc",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "69cf5815-3047-4fb1-832c-3d2c92d6532d",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "858366d1-994b-457d-9861-17a51d6ae7da",
+      "questionText": {
+        "en": "Has your child been involved in bullying anyone during leisure time?",
+        "fi": "Onko lapsenne osallistunut kiusaamiseen vapaa-ajalla?",
+        "sv": "Har barnet medverkat i mobbning på fritiden?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "1ec53344-42fd-4af8-8323-1ed27ba43df2",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "557b7a71-20f8-447d-a93e-007c28325ab5",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4aba8b3a-9aee-4261-855d-716ea2b6628b",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "9cc6e91f-9968-4e44-9e68-666b4c72892c",
+      "questionText": {
+        "en": "Do you know where and with whom your child spends her/his leisure time?",
+        "fi": "Tiedättekö, missä ja kenen kanssa lapsenne viettää vapaa-aikaansa?",
+        "sv": "Vet ni var och med vem barnet tillbringar sin fritid?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c2779e2c-dae0-4a7c-b808-bb08d10b0708",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c9e21dd6-91e5-4599-a62f-7e07f5164baa",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "44196e02-0483-481f-a3e5-391b27d45969",
+      "questionText": {
+        "en": "Family:\n\nDoes your family spend enough time together?",
+        "fi": "Perhe:\n\nOnko perheellänne riittävästi yhteistä aikaa?",
+        "sv": "Familjen:\n\nHar familjen tillräckligt med gemensam tid?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "0a95c0f1-94a3-4193-aaac-4240d1e69d9c",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3397f58f-56b4-4366-947e-b160e1653044",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "990e9d86-fc9e-45aa-b408-c8781ab92792",
+      "questionText": {
+        "en": "How do you spend it?",
+        "fi": "Kuinka vietätte perheen yhteistä aikaa?",
+        "sv": "Hur tillbringar ni den gemensamma tiden?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "b25853d8-8ebd-4813-8cd3-cba355fa4d04",
+      "questionText": {
+        "en": "Our family:\n\ntends to give encouragement and positive feedback",
+        "fi": "Perheessämme:\n\n- on tapana kannustaa ja antaa positiivista palautetta",
+        "sv": "I vår familj:\n\nbrukar vi uppmuntra varandra och ge positiv respons"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "6e824a05-13cd-49e0-af87-0e823f70d431",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f9deea0c-2749-48c0-8fd4-5ab7373fe941",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "1849ac65-0fe4-4ce9-b9ac-a941398bd765",
+      "questionText": {
+        "en": "shares household chores",
+        "fi": "- jaetaan kotityöt",
+        "sv": "delar vi på hemsysslorna"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "540e969c-b433-42d5-9ea1-cc345b866dde",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cbfec340-8921-4ea6-8521-4f8651529eec",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "d8d60eac-b03f-4dd0-bb71-e6963e25c93a",
+      "questionText": {
+        "en": "is safe for everyone and has a generally amicable atmosphere",
+        "fi": "- on turvallista kaikille ja yleensä sopuisa ilmapiiri",
+        "sv": "känner sig alla trygga och stämningen är vanligen harmonisk"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "9e2ac010-6ef7-4774-8cea-3d5fd80aea9e",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0ff3151a-b88d-4171-b653-0e2f318591d8",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a901d661-617d-4253-83ac-3116dd766b09",
+      "questionText": {
+        "en": "tends to share what has happened during the day",
+        "fi": "- on tapana kertoa päivän tapahtumista",
+        "sv": "brukar vi berätta vad som har hänt under dagen"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "bb025fa9-b25d-4d0e-b981-7970fea9cb40",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a178450a-7f56-4ccd-b8a5-6dfd4a2355a0",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "2b07d50c-1d1b-4fb5-a44a-ec88d0dae828",
+      "questionText": {
+        "en": "has agreed on rules together",
+        "fi": "- on sovittu säännöistä yhdessä",
+        "sv": "har vi tillsammans kommit överens om reglerna"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "647d3550-8c10-4294-b6ee-49253c701625",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a7f5b32c-ae22-4448-95a3-4d1c0fc99b75",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "9b7809a7-c71c-48c6-9add-ad00f174a610",
+      "questionText": {
+        "en": "eats a meal together every day",
+        "fi": "- on yhteinen ruokahetki päivittäin",
+        "sv": "äter vi varje dag tillsammans"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "dd595d80-ef99-497b-bfe2-d4ea8377ef91",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5c17c063-06d9-4c36-94f3-85abe3012da0",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "692f4535-b943-48a0-b8dd-f12c6ad49459",
+      "questionText": {
+        "en": "How does your family solve situations where a child has broken agreed rules or is misbehaving?",
+        "fi": "Miten perheessänne ratkaistaan tilanteet, joissa lapsi on rikkonut sovittuja sääntöjä tai käyttäytyy huonosti?",
+        "sv": "Hur löser familjen situationer där barnet har brutit mot överenskomna regler eller beter sig illa?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "9b3d0a1e-7acb-4128-9290-05c68ee5d7d7",
+      "questionText": {
+        "en": "Do you feel you need help in matters concerning your child’s upbringing?",
+        "fi": "Koetteko tarvitsevanne apua lapsen kasvatukseen liittyvissä asioissa?",
+        "sv": "Upplever ni att ni behöver hjälp i frågor som gäller barnets fostran?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "06a67c25-690f-4965-8d11-44852dbbcb28",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5e660443-cc89-4a54-96c8-3d657ae86268",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "2aed550d-6832-473a-b2a8-b0a61842a84c",
+              "questionText": {
+                "en": "What kind of help?",
+                "fi": "Millaista?",
+                "sv": "Hurdan?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "ce99d66c-6f21-4df7-8bbf-5c0fc18241ba",
+          "answerText": {
+            "en": "we are already receiving/have received support",
+            "fi": "Saamme jo tukea/olemme saaneet tukea",
+            "sv": "vi får hjälp redan nu/vi har fått hjälp tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "453de4af-8cae-4ec8-a6ee-82953b0467a3",
+              "questionText": {
+                "en": "From whom? (e.g. a child guidance and family counselling clinic) ",
+                "fi": "Mistä? (esim. kasvatus- ja perheneuvola)",
+                "sv": "Varifrån? (t.ex. familjerådgivning)"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "415cfb4d-2a54-4af7-bedf-a23a426278a5",
+      "questionText": {
+        "en": "All worries, issues taking up resources and changes in the family affect the pupil’s welfare and coping \nat school. In your family, is there:\n\nlong-term illnesses (physical or mental)",
+        "fi": "Oppilaan hyvinvointiin ja kouluselviytymiseen vaikuttavat kaikki perheen huolet, voimavaroja vievät asiat ja muutokset. Onko teidän perheessänne:\n\n- pitkäaikaissairauksia (fyysisiä tai psyykkisiä)",
+        "sv": "Bekymmer i familjen och olika förändringar i livet påverkar elevens välmående och skolframgång.\nFörekommer något av följande i er familj?\n\nkronisk sjukdom (fysisk eller psykisk)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7a7c074a-197a-45c4-915e-49a7bbc354a7",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0a6a660f-1da3-439e-846f-ff1719cd3dc0",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "18b0de90-2984-4c57-9cfa-e93f51c69f6b",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "8825c1e2-a429-4f63-a0b6-22fa1f87ef4b",
+      "questionText": {
+        "en": "difficulties coping, exhaustion or depression",
+        "fi": "- jaksamisvaikeuksia, uupumista tai masennusta",
+        "sv": "svårigheter med att orka, utmattning eller depression"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "43f79b6d-51af-4e60-a9c9-46d8f9d0d67b",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7984456c-f77c-419a-a86e-662c38c3a35b",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "a8036709-71fe-4aa3-8f30-4f1c85d2c251",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "69ca5f30-ee2f-4b83-afe8-883d2c7e7943",
+      "questionText": {
+        "en": "insecurity or violence",
+        "fi": "- turvattomuutta tai väkivaltaisuutta",
+        "sv": "otrygghet eller våld"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "e84731f2-dd8e-4dc6-ba4e-b0eb7facc00e",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "41640a6e-882a-45b7-9231-efc787f2e8db",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "74a7e793-ed75-425e-bc0e-9c0743e7c0d5",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "89a5fc53-5031-4375-b9b3-852e3c86666d",
+      "questionText": {
+        "en": "issues related to use of intoxicants or addiction",
+        "fi": "- päihdeongelmia tai -riippuvuutta",
+        "sv": "missbruk, alkohol- eller drogberoende"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "eca660af-23cd-4d13-8d1b-667a6a38ab8f",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fc5b60fb-fbda-4d05-88cc-85281597f597",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "3547efe1-d05f-4db4-aef4-4043c8776204",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "708f1e09-0445-4b60-ae83-26b2b92d359f",
+      "questionText": {
+        "en": "problems in relationships between family members",
+        "fi": "- ongelmia perheenjäsenten välisissä suhteissa",
+        "sv": "problem i förhållandet mellan familjemedlemmarna"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "980f2741-7c90-4660-821c-056fdac196b7",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1a8558ab-888e-41e8-a630-cfd1f42315e2",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "6acdf8dd-ec10-438f-a173-1ca4fe775154",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "565e04e5-fbf5-4e99-b425-5ff119a908c6",
+      "questionText": {
+        "en": "financial worries",
+        "fi": "- taloudellisia huolia",
+        "sv": "ekonomiska bekymmer"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c94eccf8-a722-436b-bbde-1923bb343e65",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f944c147-2e00-44b3-af37-6ddb3b434984",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "603deada-be8d-4f69-a553-6270e930038a",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f7c61ab3-5341-4abb-b457-806dbafffbd8",
+      "questionText": {
+        "en": "grief or losses",
+        "fi": "- surua tai menetyksiä",
+        "sv": "sorg eller förluster"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "53205260-ea31-4c25-9943-468490326fdb",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "874f67f7-2fa0-4edc-814e-6c7532f1ae5e",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "d7f17892-67ae-48d6-b957-19598f81bfa4",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "46a1be11-293f-4e17-b66b-fe0765770fc4",
+      "questionText": {
+        "en": "some other current issues",
+        "fi": "- jotakin muuta ajankohtaista?",
+        "sv": "något annat aktuellt"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "8b2755f5-d4da-407f-b577-5d6c322f8def",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "aa5edc41-f3b0-44d8-b74c-3f33a7ecc777",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "7e36f866-e478-4941-b319-f13e0f2658c8",
+              "questionText": {
+                "en": "Please specify?",
+                "fi": "Mitä muuta ajankohtaista?",
+                "sv": "Vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {},
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f12c1f50-555a-47e7-b83e-61fa20320015",
+      "questionText": {
+        "en": "Who supports you in making your family’s daily life run smoothly if necessary?",
+        "fi": "Keneltä saatte tarvittaessa tukea perheenne arjen sujumiseen?",
+        "sv": "Vem ger vid behov stöd i familjens vardag?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "32d6647d-2a68-4701-b7c9-1471ace11157",
+          "answerText": {
+            "en": "grandparents",
+            "fi": "Isovanhemmilta",
+            "sv": "mor-/farföräldrar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ca443e10-cb4f-4c48-801d-b7f6db623b7a",
+          "answerText": {
+            "en": "ex-spouse",
+            "fi": "Entiseltä puolisolta",
+            "sv": "före detta partner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "863a6eb1-8a67-4578-9f7d-84ebd61e2a20",
+          "answerText": {
+            "en": "neighbours",
+            "fi": "Naapureilta",
+            "sv": "grannar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b3fbcad4-7f4e-4daa-9ab4-62ad32c2ceb2",
+          "answerText": {
+            "en": "friends",
+            "fi": "Ystäviltä",
+            "sv": "vänner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "72cb727a-b1fa-4b1c-a0ea-98e32aa2d3e6",
+          "answerText": {
+            "en": " no one",
+            "fi": "Ei keneltäkään",
+            "sv": "ingen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6e652c45-8b44-46d1-bdd7-3bc46aa0f561",
+          "answerText": {
+            "en": "; others",
+            "fi": "Muilta",
+            "sv": "andra"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "09a8fe4a-f28f-4d44-b2a6-a0093ac4ec3f",
+      "questionText": {
+        "en": "Your family’s strengths",
+        "fi": "Miten kuvailet perheenne vahvuuksia?",
+        "sv": "Vilka är familjens starka sidor?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ebc9973f-a784-4f97-ba25-6889ea3c2a9e",
+      "questionText": {
+        "en": "What about your child delights you?",
+        "fi": "Mikä lapsessasi ilahduttaa sinua?",
+        "sv": "Mitt barn gör mig glad eftersom"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f17668d6-55cb-4d28-a627-f2fef3876869",
+      "questionText": {
+        "en": "Your wishes for the health examination",
+        "fi": "Toiveita terveystarkastuksen suhteen?",
+        "sv": "Önskemål som gäller hälsoundersökningen"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "eca06942-f884-4a4a-a6fb-9d93a5538c57",
+      "questionText": {
+        "en": "Signature of the person(s) who filled out the form",
+        "fi": "Lomakkeen täyttäjän/täyttäjien nimet",
+        "sv": "Underskrift av den/dem som fyllt i blanketten"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "36db7c6e-57f6-4a11-af2d-a4dc2c136efa",
+      "name": {
+        "en": "Pupil",
+        "fi": "Oppilas",
+        "sv": "Elev"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "c2aa8fc7-6cae-43d5-809b-0dad0c54658d",
+      "name": {
+        "en": "Parents/guardians",
+        "fi": "Vanhemmat",
+        "sv": "Föräldrar/vårdnadshavare"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "41d29fa6-8689-4320-91ca-f4fb26850abe",
+      "name": {
+        "en": "Child’s health and wellbeing",
+        "fi": "Lapsen terveys ja hyvinvointi",
+        "sv": "Barnets hälsa och välbefinnande"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "71ee4608-39a0-4742-a42c-f3dbb0cc811f",
+      "name": {
+        "en": "Health habits",
+        "fi": "Terveystottumukset",
+        "sv": "Hälsovanor"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "971028ec-9490-4324-af62-1d51c5dea3cf",
+      "name": {
+        "en": "Use of tobacco products and intoxicants in our family",
+        "fi": "Perheemme tupakkatuotteiden ja päihteiden käyttö",
+        "sv": "Användningen av tobaksprodukter, alkohol och andra droger i familjen"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "48848102-8dd8-45b9-ade5-1c997c76a732",
+      "name": {
+        "en": "Personal hygiene",
+        "fi": "Henkilökohtainen hygienia",
+        "sv": "Personlig hygien"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "27843d0a-804b-4234-8ee4-1e8afd7adb71",
+      "name": {
+        "en": "School",
+        "fi": "Koulu ",
+        "sv": "Skolan"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "d4cbc597-25ac-40bf-8f36-99bcb61c8f95",
+      "name": {
+        "en": "Leisure time",
+        "fi": "Vapaa-aika",
+        "sv": "Fritiden"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "5902bd65-246d-4ad4-86f6-84f3157ef8f5",
+      "name": {
+        "en": "Family",
+        "fi": "Perhe",
+        "sv": "Familjen"
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "form",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": false,
+  "scoreCalculations": [],
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [
+      {
+        "companyId": 6,
+        "companyPayerType": "primary-healthcare",
+        "internalName": "Anonymous"
+      }
+    ]
+  }
+}

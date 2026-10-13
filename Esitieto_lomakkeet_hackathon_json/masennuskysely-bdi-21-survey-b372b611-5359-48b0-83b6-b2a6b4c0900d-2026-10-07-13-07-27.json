@@ -1,0 +1,2196 @@
+{
+  "revisionGuid": "b372b611-5359-48b0-83b6-b2a6b4c0900d",
+  "surveyGuid": "2a81c844-8e43-4f20-b86e-1ab3f64905ff",
+  "draft": false,
+  "name": {
+    "en": "Depression Questionnaire (BDI-21)",
+    "fi": "Masennuskysely (BDI-21)",
+    "sv": "Depressionsenkät (BDI‑21)"
+  },
+  "description": {
+    "en": "With this Beck Depression Inventory questionnaire, you can assess your potential depression symptoms. You can complete the questionnaire regardless of whether you have a diagnosis of depression or not.",
+    "fi": "Tällä Beck Depression Inventory -masennuskyselyllä voit arvioida mahdollisia masennusoireitasi. Voit täyttää kyselyn riippumatta siitä, onko sinulla masennuksen diagnoosia vai ei.",
+    "sv": "Med depressionstestet Beck Depression Inventory kan du bedöma dina eventuella depressiva symtom. Du kan fylla i testet oavsett om du har diagnosen depression eller inte."
+  },
+  "createdDt": "2026-05-07T11:06:46.329Z",
+  "createdBy": {
+    "upn": "suvi.viitanen@luvn.fi",
+    "name": "Suvi Viitanen",
+    "practitionerId": 8
+  },
+  "questions": [
+    {
+      "questionId": "4f163bb0-0d8e-4166-99ff-eb42a9b65c52",
+      "questionText": {
+        "en": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form.",
+        "fi": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+        "sv": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "e34c5771-5dd6-44a8-a6d9-bb537568801b",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f6bc03ce-c9c4-4f60-a8d0-8432cd41a2f0",
+      "questionText": {
+        "en": "Select the option in each section that best describes your situation and feelings. Answer based on how you have felt during the past week, including today.",
+        "fi": "Valitse jokaisessa kohdassa vaihtoehto, joka kuvaa parhaiten tilannettasi ja tuntemuksiasi. Vastaa sen mukaan, miten olet tuntenut viimeisen viikon aikana, tämä päivä mukaan lukien.",
+        "sv": "Välj i varje avsnitt det alternativ som bäst beskriver din situation och dina känslor. Svara baserat på hur du har känt den senaste veckan, inklusive idag."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "e34c5771-5dd6-44a8-a6d9-bb537568801b",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "cdeff6fc-51f2-4606-9320-a0c47bffb0b3",
+      "questionText": {
+        "en": "1. Select the most appropriate option from the choices below.",
+        "fi": "1. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "1. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "e82bf2ef-dd7f-4cda-8fd1-66f615c033a9",
+          "answerText": {
+            "en": "I do not feel sad",
+            "fi": "En ole surullinen",
+            "sv": "Jag är inte sorgsen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "44e902f9-be29-4287-9450-6a9dc2338011",
+          "answerText": {
+            "en": "I feel sad",
+            "fi": "Olen alakuloinen ja surullinen",
+            "sv": "Jag är sorgsen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a512602e-7511-44e6-bdff-d4c366a1e0a5",
+          "answerText": {
+            "en": "I am sad all the time and I can't snap out of it",
+            "fi": "Olen tuskastumiseen asti surullinen ja alakuloinen",
+            "sv": "Jag är hela tiden nedstämd och sorgsen och kommer inte i från det"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f28440f0-742a-48b4-ad3d-de0207941d92",
+          "answerText": {
+            "en": "I am so sad and unhappy that I can't stand it",
+            "fi": "Olen niin onneton, etten enää kestä",
+            "sv": "Jag är så olycklig att jag inte står ut längre"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "e82bf2ef-dd7f-4cda-8fd1-66f615c033a9"
+        },
+        {
+          "points": 1,
+          "answerId": "44e902f9-be29-4287-9450-6a9dc2338011"
+        },
+        {
+          "points": 2,
+          "answerId": "a512602e-7511-44e6-bdff-d4c366a1e0a5"
+        },
+        {
+          "points": 3,
+          "answerId": "f28440f0-742a-48b4-ad3d-de0207941d92"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "5d6509bb-a2af-4060-ba68-d58ca648ca0b",
+      "questionText": {
+        "en": "2. Select the most appropriate option from the choices below.",
+        "fi": "2. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "2. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "2ba5fc2d-56b3-421b-85ec-bc22e63f6d05",
+          "answerText": {
+            "en": "I am not particularly discouraged about the future",
+            "fi": "Tulevaisuus ei masenna eikä pelota minua",
+            "sv": "Jag är inte särskilt rädd för framtiden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "be569774-4990-48b1-aaf3-c7c88afbaeb6",
+          "answerText": {
+            "en": "I feel discouraged about the future",
+            "fi": "Tulevaisuus pelottaa minua",
+            "sv": "Framtiden oroar mig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "af0a88fd-f658-4390-9e91-b2cd9f441f53",
+          "answerText": {
+            "en": "I feel I have nothing to look forward to",
+            "fi": "Minusta tuntuu, ettei tulevaisuudella ole tarjottavanaan minulle juuri mitään",
+            "sv": "Det känns som om jag inte har någonting att vänta av framtiden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c9fbe571-a88b-4d1c-bacb-d7056e4c6980",
+          "answerText": {
+            "en": "I feel the future is hopeless and that things cannot improve",
+            "fi": "Minusta tuntuu, että tulevaisuus on toivoton. En jaksa uskoa, että asiat muuttuvat tästä parempaan päin",
+            "sv": "Framtiden känns så hopplös för mig att jag inte orkar tro att det blir en vändning till det bättre"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "2ba5fc2d-56b3-421b-85ec-bc22e63f6d05"
+        },
+        {
+          "points": 1,
+          "answerId": "be569774-4990-48b1-aaf3-c7c88afbaeb6"
+        },
+        {
+          "points": 2,
+          "answerId": "af0a88fd-f658-4390-9e91-b2cd9f441f53"
+        },
+        {
+          "points": 3,
+          "answerId": "c9fbe571-a88b-4d1c-bacb-d7056e4c6980"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "56efc3f7-9bff-4968-b5f9-a222369a26ad",
+      "questionText": {
+        "en": "3. Select the most appropriate option from the choices below.",
+        "fi": "3. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "3. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "b73644a2-0deb-4a1d-b97a-f1d4957da2ea",
+          "answerText": {
+            "en": "I do not feel like a failure",
+            "fi": "En tunne epäonnistuneeni",
+            "sv": "Jag tycker inte att jag har misslyckats i livet"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2e099886-f00a-4b70-9356-baad3f6f5d0d",
+          "answerText": {
+            "en": "I feel I have failed more than the average person",
+            "fi": "Minusta tuntuu, että olen epäonnistunut useammin kuin muut ihmiset",
+            "sv": "Jag tycker att jag har misslyckats oftare än andra människor"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b4cd218d-b9af-4c1b-93de-04c03e03dd59",
+          "answerText": {
+            "en": "As I look back on my life, all I can see is a lot of failures",
+            "fi": "Elämäni on tähän saakka ollut vain sarja epäonnistumisia",
+            "sv": "Mitt liv har hittills bara varit ett enda misslyckande"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "87afd4c0-bdc3-4e78-b5f0-12e513d9dc5e",
+          "answerText": {
+            "en": "I feel I am a complete failure as a person",
+            "fi": "Minusta tuntuu, että olen täysin epäonnistunut ihmisenä",
+            "sv": "Jag känner mig fullständigt misslyckad som människa"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "b73644a2-0deb-4a1d-b97a-f1d4957da2ea"
+        },
+        {
+          "points": 1,
+          "answerId": "2e099886-f00a-4b70-9356-baad3f6f5d0d"
+        },
+        {
+          "points": 2,
+          "answerId": "b4cd218d-b9af-4c1b-93de-04c03e03dd59"
+        },
+        {
+          "points": 3,
+          "answerId": "87afd4c0-bdc3-4e78-b5f0-12e513d9dc5e"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "ea1b0b20-49ca-43d8-b5ef-91a4dd7fca6e",
+      "questionText": {
+        "en": "4. Select the most appropriate option from the choices below.",
+        "fi": "4. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "4. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7fcd5f7a-b633-4964-a322-66f1f0ed5f58",
+          "answerText": {
+            "en": "I get as much satisfaction out of things as I used to",
+            "fi": "En ole erityisen haluton",
+            "sv": "Jag är inte särskilt missnöjd"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b7e18ab6-0966-4c0d-b6f1-07d23e2730d3",
+          "answerText": {
+            "en": "I don't enjoy things the way I used to",
+            "fi": "En osaa nauttia asioista niin kuin ennen",
+            "sv": "Jag njuter inte av saker på samma sätt som förr"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a2751edd-feeb-4123-952b-6667e7542214",
+          "answerText": {
+            "en": "I don't get real satisfaction out of anything anymore",
+            "fi": "Minusta tuntuu, etten saa tyydytystä juuri mistään",
+            "sv": "Jag får inte mera verklig tillfredsställelse av någonting"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a74f9aeb-5a45-4f47-b963-e79f38e84e99",
+          "answerText": {
+            "en": "I am dissatisfied or bored with everything",
+            "fi": "Olen haluton ja tyytymätön kaikkeen",
+            "sv": "Jag är missnöjd och utled på allt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "7fcd5f7a-b633-4964-a322-66f1f0ed5f58"
+        },
+        {
+          "points": 1,
+          "answerId": "b7e18ab6-0966-4c0d-b6f1-07d23e2730d3"
+        },
+        {
+          "points": 2,
+          "answerId": "a2751edd-feeb-4123-952b-6667e7542214"
+        },
+        {
+          "points": 3,
+          "answerId": "a74f9aeb-5a45-4f47-b963-e79f38e84e99"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "b9db437f-0ce2-4380-ba46-3764b26c822b",
+      "questionText": {
+        "en": "5. Select the most appropriate option from the choices below.",
+        "fi": "5. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "5. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "1de4387b-7a56-4079-8b57-87608dfb1463",
+          "answerText": {
+            "en": "I don't feel particularly guilty",
+            "fi": "En tunne erityisemmin syyllisyyttä",
+            "sv": "Jag känner mig inte särskilt skuldmedveten för någonting"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f0327a86-1bfd-4c32-99dd-a3c9dcd72e4b",
+          "answerText": {
+            "en": "I feel guilty a good part of the time",
+            "fi": "Minusta tuntuu, että olen aika huono ja kelvoton",
+            "sv": "Jag har ofta skuldkänslor"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "622cbf59-3038-42b0-8fce-178616d137f6",
+          "answerText": {
+            "en": "I feel quite guilty most of the time",
+            "fi": "Nykyään tunnen itseni huonoksi ja kelvottomaksi melkein aina",
+            "sv": "Jag har rätt kraftiga skuldkänslor största delen av tiden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "62686011-fba4-4ec7-81e5-f526d010bcfe",
+          "answerText": {
+            "en": "I feel guilty all of the time",
+            "fi": "Tunnen olevani erittäin huono ja arvoton",
+            "sv": "Jag har skuldkänslor precis hela tiden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "1de4387b-7a56-4079-8b57-87608dfb1463"
+        },
+        {
+          "points": 1,
+          "answerId": "f0327a86-1bfd-4c32-99dd-a3c9dcd72e4b"
+        },
+        {
+          "points": 2,
+          "answerId": "622cbf59-3038-42b0-8fce-178616d137f6"
+        },
+        {
+          "points": 3,
+          "answerId": "62686011-fba4-4ec7-81e5-f526d010bcfe"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "bcd884fa-0842-4549-b87b-bc1639edd2dc",
+      "questionText": {
+        "en": "6. Select the most appropriate option from the choices below.",
+        "fi": "6. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "6. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "3afb8721-2d5e-46a3-80df-29c01d5d3932",
+          "answerText": {
+            "en": "I don't feel I am being punished",
+            "fi": "En koe, että minua rangaistaan",
+            "sv": "Jag tycker inte att jag blir bestraffad"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "27072d51-3199-4a38-85bf-ba681f222154",
+          "answerText": {
+            "en": "I feel I may be punished",
+            "fi": "Tunnen, että jotain pahaa voi sattua minulle",
+            "sv": "Jag tror att jag kanske blir bestraffad"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f110d34f-2732-42a5-b44b-c284168ed5c6",
+          "answerText": {
+            "en": "I expect to be punished",
+            "fi": "Uskon, että kohtalo rankaisee minua",
+            "sv": "Jag förvantar mig att bli bestraffad"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b456ebdc-7cba-47ab-b905-f19fa071f549",
+          "answerText": {
+            "en": "I feel I am being punished",
+            "fi": "Tunnen, että olen tehnyt sellaista, josta minua on syytäkin rangaista",
+            "sv": "Jag känner att jag nu blir bestraffad"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "3afb8721-2d5e-46a3-80df-29c01d5d3932"
+        },
+        {
+          "points": 1,
+          "answerId": "27072d51-3199-4a38-85bf-ba681f222154"
+        },
+        {
+          "points": 2,
+          "answerId": "f110d34f-2732-42a5-b44b-c284168ed5c6"
+        },
+        {
+          "points": 3,
+          "answerId": "b456ebdc-7cba-47ab-b905-f19fa071f549"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "95a7a42e-9a3c-497e-808b-e6f51ba34640",
+      "questionText": {
+        "en": "7. Select the most appropriate option from the choices below.",
+        "fi": "7. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "7. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "5ed3553b-fa2b-452b-b5b3-e20a6e48b8de",
+          "answerText": {
+            "en": "I don't feel disappointed in myself",
+            "fi": "En ole pettynyt itseeni",
+            "sv": "Jag är inte besviken på mig själv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "76c6d040-8de7-4a5f-bdaa-6c5687d7c1fd",
+          "answerText": {
+            "en": "I am disappointed in myself",
+            "fi": "Olen pettynyt itseeni",
+            "sv": "Jag är besviken på mig själv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "acda8aee-92cd-418f-9d98-1570bd54a563",
+          "answerText": {
+            "en": "I am disgusted with myself",
+            "fi": "Inhoan itseäni",
+            "sv": "Jag avskyr mig själv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7e83663f-051b-45d0-aef6-12cdba3837fa",
+          "answerText": {
+            "en": "I hate myself",
+            "fi": "Vihaan itseäni",
+            "sv": "Jag hatar mig själv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "5ed3553b-fa2b-452b-b5b3-e20a6e48b8de"
+        },
+        {
+          "points": 1,
+          "answerId": "76c6d040-8de7-4a5f-bdaa-6c5687d7c1fd"
+        },
+        {
+          "points": 2,
+          "answerId": "acda8aee-92cd-418f-9d98-1570bd54a563"
+        },
+        {
+          "points": 3,
+          "answerId": "7e83663f-051b-45d0-aef6-12cdba3837fa"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "7fa88024-3f6c-46ac-b409-c1e3f321ddf3",
+      "questionText": {
+        "en": "8. Select the most appropriate option from the choices below.",
+        "fi": "8. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "8. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "4a001e49-281f-48d3-a9a6-6004e3ce9bdb",
+          "answerText": {
+            "en": "I don't feel I am any worse than anybody else",
+            "fi": "Tunnen, että olen yhtä hyvä kuin muutkin",
+            "sv": "Jag tycker att jag är lika bra som vilken annan som helst"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7f9a5e27-1803-46ca-a305-f4efec5bee69",
+          "answerText": {
+            "en": "I am critical of myself for my weaknesses or mistakes",
+            "fi": "Kritisoin itseäni heikkouksista",
+            "sv": "Jag förhåller mig kritiskt till mig själv på grund av mina svagheter och misstag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d9623991-a682-4810-8852-00dcfede1f8d",
+          "answerText": {
+            "en": "I blame myself all the time for my faults",
+            "fi": "Moitin itseäni virheistäni",
+            "sv": "Jag klandrar mig själv för mina fel och brister"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e4fe727f-2532-4f39-8c86-e89929e42883",
+          "answerText": {
+            "en": "I blame myself for everything bad that happens",
+            "fi": "Moitin itseäni kaikesta, mikä \"menee pieleen\"",
+            "sv": "Jag anser mig själv vara helt oduglig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "4a001e49-281f-48d3-a9a6-6004e3ce9bdb"
+        },
+        {
+          "points": 1,
+          "answerId": "7f9a5e27-1803-46ca-a305-f4efec5bee69"
+        },
+        {
+          "points": 2,
+          "answerId": "d9623991-a682-4810-8852-00dcfede1f8d"
+        },
+        {
+          "points": 3,
+          "answerId": "e4fe727f-2532-4f39-8c86-e89929e42883"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "cc110d07-1bd9-4126-84d7-38acc355e39e",
+      "questionText": {
+        "en": "9. Select the most appropriate option from the choices below.",
+        "fi": "9. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "9. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ba117949-fa9c-4b83-a5d3-0632e5503eae",
+          "answerText": {
+            "en": "I don't have any thoughts of killing myself",
+            "fi": "En ole ajatellut vahingoittaa itseäni",
+            "sv": "Jag har inga tankar på självmord"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cf5fcdec-ae16-4dd2-b9e2-9dc61d711433",
+          "answerText": {
+            "en": "I have thoughts of killing myself, but I would not carry them out",
+            "fi": "Olen joskus ajatellut itseni vahingoittamista, mutten kuitenkaan tee niin",
+            "sv": "Jag har haft självmordstankar men ämnar ändå inte begå självmord"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "96e89bc6-8045-4f3c-bbcc-5005597bfe12",
+          "answerText": {
+            "en": "I would like to kill myself",
+            "fi": "Mielessäni on selvät itsemurhasuunnitelmat",
+            "sv": "Jag skulle vilja begå självmord"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3b9d83b0-a4b4-45c6-b246-f9a277ed2f37",
+          "answerText": {
+            "en": "I would kill myself if I had the chance",
+            "fi": "Tapan itseni, kun siihen tulee tilaisuus",
+            "sv": "Jag skulle begå självmord om jag fick en möjlighet till det"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "ba117949-fa9c-4b83-a5d3-0632e5503eae"
+        },
+        {
+          "points": 1,
+          "answerId": "cf5fcdec-ae16-4dd2-b9e2-9dc61d711433"
+        },
+        {
+          "points": 2,
+          "answerId": "96e89bc6-8045-4f3c-bbcc-5005597bfe12"
+        },
+        {
+          "points": 3,
+          "answerId": "3b9d83b0-a4b4-45c6-b246-f9a277ed2f37"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "dc1f9e1f-c1af-49b2-afe9-1613d1266a95",
+      "questionText": {
+        "en": "10. Select the most appropriate option from the choices below.",
+        "fi": "10. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "10. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "6d230207-8c8f-4b96-b514-b3503aa7ca57",
+          "answerText": {
+            "en": "I don't cry any more than usual",
+            "fi": "En itke tavallista enempää",
+            "sv": "Jag gråter inte mera än vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "afab686d-2535-4f60-ab21-5689403470e5",
+          "answerText": {
+            "en": "I cry more now than I used to",
+            "fi": "Itken nykyään aiempaa enemmän",
+            "sv": "Nuförtiden gråter jag mera än förr"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "43b0c538-7893-4763-8c4c-c84b7d4a9eb9",
+          "answerText": {
+            "en": "I cry all the time now",
+            "fi": "Itken nykyään jatkuvasti",
+            "sv": "Jag gråter hela tiden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f9b3d2e0-c85e-4b42-be30-12b8821605c8",
+          "answerText": {
+            "en": "I used to be able to cry, but now I can't cry even though I want to",
+            "fi": "En kykene enää itkemään, vaikka haluaisin",
+            "sv": "Förr kunde jag gråta men nu kan jag inte gråta fastän jag vill"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "6d230207-8c8f-4b96-b514-b3503aa7ca57"
+        },
+        {
+          "points": 1,
+          "answerId": "afab686d-2535-4f60-ab21-5689403470e5"
+        },
+        {
+          "points": 2,
+          "answerId": "43b0c538-7893-4763-8c4c-c84b7d4a9eb9"
+        },
+        {
+          "points": 3,
+          "answerId": "f9b3d2e0-c85e-4b42-be30-12b8821605c8"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "18d1ffc3-6656-4a38-9e07-5d72a4483017",
+      "questionText": {
+        "en": "11. Select the most appropriate option from the choices below.",
+        "fi": "11. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "11. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "95ece01c-92e9-4312-89eb-b74b953c28c2",
+          "answerText": {
+            "en": "I am no more irritated by things than I ever was",
+            "fi": "En ole sen ärtyneempi kuin ennenkään",
+            "sv": "Jag är inte mera retlig än tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "29db95e1-9c24-45d1-a256-c1a1b855eede",
+          "answerText": {
+            "en": "I am slightly more irritated now than usual",
+            "fi": "Ärsyynnyn aiempaa herkemmin",
+            "sv": "Nuförtiden blig jag lättare irriterad än tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7679bf19-0365-4d09-9983-f34b3794473b",
+          "answerText": {
+            "en": "I am quite annoyed or irritated a good deal of the time",
+            "fi": "Tunnen, että olen ärtynyt koko ajan",
+            "sv": "Jag känner mig irriterad hela tiden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2c50d191-28b1-4be7-bf1d-55237221a45d",
+          "answerText": {
+            "en": "I feel irritated all the time",
+            "fi": "Minua eivät enää liikuta asiat, joista aiemmin raivostuin",
+            "sv": "Saker som förr fick mig att bli rasande irriterar mig inte längre"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "95ece01c-92e9-4312-89eb-b74b953c28c2"
+        },
+        {
+          "points": 1,
+          "answerId": "29db95e1-9c24-45d1-a256-c1a1b855eede"
+        },
+        {
+          "points": 2,
+          "answerId": "7679bf19-0365-4d09-9983-f34b3794473b"
+        },
+        {
+          "points": 3,
+          "answerId": "2c50d191-28b1-4be7-bf1d-55237221a45d"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "cab6e36a-d924-4bc9-8ee5-55578e13c209",
+      "questionText": {
+        "en": "12. Select the most appropriate option from the choices below.",
+        "fi": "12. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "12. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ebfb2f90-bb01-40e6-9a02-2db89c7827f1",
+          "answerText": {
+            "en": "I have not lost interest in other people",
+            "fi": "Olen edelleen kiinnostunut muista ihmisistä",
+            "sv": "Jag är intresserad av andra människor"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "21450cbf-8a63-4e25-8fee-619d937a481d",
+          "answerText": {
+            "en": "I am less interested in other people than I used to be",
+            "fi": "Muut kiinnostavat minua aiempaa vähemmän",
+            "sv": "Andra människor intresserar mig inte lika mycket som tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "01caf2af-e9fb-4215-87cc-9c21cd12dd59",
+          "answerText": {
+            "en": "I have lost most of my interest in other people",
+            "fi": "Kiinnostukseni ja tunteeni muita kohtaan ovat miltei kadonneet",
+            "sv": "Jag har nästan helt förlorat mitt intresse och mina känslor för andra människor"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f7d5fdb9-c726-4384-ba42-19b72a2e76c9",
+          "answerText": {
+            "en": "I have lost all of my interest in other people",
+            "fi": "Olen menettänyt kaiken mielenkiintoni muita kohtaan, enkä välitä heistä enää lainkaan",
+            "sv": "Jag har helt förlorat intresset för andra människor"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "ebfb2f90-bb01-40e6-9a02-2db89c7827f1"
+        },
+        {
+          "points": 1,
+          "answerId": "21450cbf-8a63-4e25-8fee-619d937a481d"
+        },
+        {
+          "points": 2,
+          "answerId": "01caf2af-e9fb-4215-87cc-9c21cd12dd59"
+        },
+        {
+          "points": 3,
+          "answerId": "f7d5fdb9-c726-4384-ba42-19b72a2e76c9"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "55c4105c-c29c-4619-b71d-a4c43c47e185",
+      "questionText": {
+        "en": "13. Select the most appropriate option from the choices below.",
+        "fi": "13. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "13. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "62cac402-6098-4eb1-93c1-1c62aa5a437f",
+          "answerText": {
+            "en": "I make decisions about as well as I ever could",
+            "fi": "Pystyn tekemään päätöksiä, kuten ennenkin",
+            "sv": "Jag kan fatta beslut på samma sätt som förr"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "68f91e1b-1477-439b-9a29-96ea188f0f78",
+          "answerText": {
+            "en": "I put off making decisions more than I used to",
+            "fi": "Yritän lykätä päätöksentekoa",
+            "sv": "Jag uppskjuter mina beslut i högre grad än tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cfd8315e-80c2-4e91-9268-e2177b4df35d",
+          "answerText": {
+            "en": "I have greater difficulty in making decisions more than I used to",
+            "fi": "Minun on hyvin vaikeata tehdä päätöksiä",
+            "sv": "Det är mycket svårt för mig att fatta beslut"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2d0e49ad-4fc6-4746-8b46-087d58d5197b",
+          "answerText": {
+            "en": "I can't make decisions at all anymore",
+            "fi": "En pysty enää lainkaan tekemään päätöksiä",
+            "sv": "Jag är helt oförmögen att fatta beslut"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "62cac402-6098-4eb1-93c1-1c62aa5a437f"
+        },
+        {
+          "points": 1,
+          "answerId": "68f91e1b-1477-439b-9a29-96ea188f0f78"
+        },
+        {
+          "points": 2,
+          "answerId": "cfd8315e-80c2-4e91-9268-e2177b4df35d"
+        },
+        {
+          "points": 3,
+          "answerId": "2d0e49ad-4fc6-4746-8b46-087d58d5197b"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "4df91cd6-bfc1-4886-a824-47187e74e95b",
+      "questionText": {
+        "en": "14. Select the most appropriate option from the choices below.",
+        "fi": "14. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "14. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c2fddf59-59ba-4c0d-8429-6747beaf1626",
+          "answerText": {
+            "en": "I don't feel that I look any worse than I used to",
+            "fi": "Mielestäni ulkonäköni ei ole muuttunut",
+            "sv": "Jag tror att jag har bibehållit mitt utseende"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "147587d0-57ec-469a-9523-c7e16f707268",
+          "answerText": {
+            "en": "I am worried that I am looking old or unattractive",
+            "fi": "Olen huolissani siitä, että näytän vanhalta tai etten näytä miellyttävältä",
+            "sv": "Jag är rädd att jag ser gammal och oattraktiv ut"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ba2df1de-fd2d-4560-a85f-be402b61ef5f",
+          "answerText": {
+            "en": "I feel there are permanent changes in my appearance that make me look unattractive",
+            "fi": "Minusta tuntuu, että ulkonäköni on muuttunut pysyvästi niin, etten näytä miellyttävältä",
+            "sv": "Jag tycker att mitt utseende har förandrats bestående och att jag nu är oattraktiv"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6548ada5-e384-4d57-862d-cacf2ec34b93",
+          "answerText": {
+            "en": "I believe that I look ugly",
+            "fi": "Tunnen olevani ruma ja vastenmielisen näköinen",
+            "sv": "Jag är säker på att jag är ful"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "c2fddf59-59ba-4c0d-8429-6747beaf1626"
+        },
+        {
+          "points": 1,
+          "answerId": "147587d0-57ec-469a-9523-c7e16f707268"
+        },
+        {
+          "points": 2,
+          "answerId": "ba2df1de-fd2d-4560-a85f-be402b61ef5f"
+        },
+        {
+          "points": 3,
+          "answerId": "6548ada5-e384-4d57-862d-cacf2ec34b93"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "48644ab2-c91f-4fa3-a00c-042aea2cbd03",
+      "questionText": {
+        "en": "15. Select the most appropriate option from the choices below.",
+        "fi": "15. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "15. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "9505bd5b-96ed-4cfb-8273-01ba1a08c41f",
+          "answerText": {
+            "en": "I can work about as well as before",
+            "fi": "Työkykyni on säilynyt ennallaan",
+            "sv": "Min arbetsförmåga är ungefär som tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "df3531c1-feac-479e-94ae-abe217a0d22a",
+          "answerText": {
+            "en": "It takes an extra effort to get started at doing something",
+            "fi": "Työn aloittaminen vaatii minulta ylimääräisiä ponnistuksia",
+            "sv": "Att börja ett arbete kräver extra ansträngningar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "870e1419-9eac-49ab-9587-17b8572374b7",
+          "answerText": {
+            "en": "I have to push myself very hard to do anything",
+            "fi": "Saadakseni aikaan jotakin minun on suorastaan pakotettava itseni siihen",
+            "sv": "Jag måste tvinga mig själv för att få någonting gjort"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "153fa9ea-a0b2-4204-814a-f109bdab036c",
+          "answerText": {
+            "en": "I can't do any work at all",
+            "fi": "En kykene lainkaan tekemään työtä",
+            "sv": "Jag är totalt oförmögen att arbeta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "9505bd5b-96ed-4cfb-8273-01ba1a08c41f"
+        },
+        {
+          "points": 1,
+          "answerId": "df3531c1-feac-479e-94ae-abe217a0d22a"
+        },
+        {
+          "points": 2,
+          "answerId": "870e1419-9eac-49ab-9587-17b8572374b7"
+        },
+        {
+          "points": 3,
+          "answerId": "153fa9ea-a0b2-4204-814a-f109bdab036c"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "509b3501-9d61-46e1-8544-a2e59a93350a",
+      "questionText": {
+        "en": "16. Select the most appropriate option from the choices below.",
+        "fi": "16. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "16. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "31f061c6-e0ce-4482-8f83-84ddb8285d14",
+          "answerText": {
+            "en": "I can sleep as well as usual",
+            "fi": "Nukun yhtä hyvin kuin ennen",
+            "sv": "Jag sover lika bra som tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "954286a6-ba3f-4164-bad5-8004752385f1",
+          "answerText": {
+            "en": "I don't sleep as well as I used to",
+            "fi": "Olen aamuisin väsyneempi kuin ennen",
+            "sv": "Jag sover inte lika bra som tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d648e996-dd0f-4d22-b7f6-6fb22dd34766",
+          "answerText": {
+            "en": "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep",
+            "fi": "Herään nykyisin 1-2 tuntia normaalia aikaisemmin enkä nukahda enää uudelleen",
+            "sv": "Jag vaknar 1-2 tidigare än vanligt och har svårt att somna in på nytt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d155f5fa-9048-41ca-a968-76c9b247f479",
+          "answerText": {
+            "en": "I wake up several hours earlier than I used to and cannot get back to sleep",
+            "fi": "Herään aikaisin joka aamu, enkä pysty nukkumaan viittä tuntia pitempään yhtäjaksoisesti",
+            "sv": "Jag vaknar flera timmar tidigare än vanligt och kan inte somna in på nytt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "31f061c6-e0ce-4482-8f83-84ddb8285d14"
+        },
+        {
+          "points": 1,
+          "answerId": "954286a6-ba3f-4164-bad5-8004752385f1"
+        },
+        {
+          "points": 2,
+          "answerId": "d648e996-dd0f-4d22-b7f6-6fb22dd34766"
+        },
+        {
+          "points": 3,
+          "answerId": "d155f5fa-9048-41ca-a968-76c9b247f479"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "b9d7f9e7-97f6-4eee-aa11-42389b1bee69",
+      "questionText": {
+        "en": "17. Select the most appropriate option from the choices below.",
+        "fi": "17. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "17. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "733b1280-b025-40a9-9630-2a4cfa9a7243",
+          "answerText": {
+            "en": "I don't get more tired than usual",
+            "fi": "En väsy sen nopeammin kuin ennen",
+            "sv": "Jag är inte tröttare än vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c1a46ba4-82f9-44bb-8478-fe1ec26c7a30",
+          "answerText": {
+            "en": "I get tired more easily than I used to",
+            "fi": "Väsyn nopeammin kuin ennen",
+            "sv": "Jag blir snabbare trött än förr"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4c1d9358-623a-4c51-97c2-b5ec4394795c",
+          "answerText": {
+            "en": "I get tired from doing almost anything",
+            "fi": "Väsyn lähes tyhjästä",
+            "sv": "Också en obetydlig ansträngning gör mig trött"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0b775f19-68a4-476d-bc0d-10e7bee94bd7",
+          "answerText": {
+            "en": "I am too tired to do anything",
+            "fi": "Olen liian väsynyt tehdäkseni mitään",
+            "sv": "Jag är för trött att kunna uträtta något"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "733b1280-b025-40a9-9630-2a4cfa9a7243"
+        },
+        {
+          "points": 1,
+          "answerId": "c1a46ba4-82f9-44bb-8478-fe1ec26c7a30"
+        },
+        {
+          "points": 2,
+          "answerId": "4c1d9358-623a-4c51-97c2-b5ec4394795c"
+        },
+        {
+          "points": 3,
+          "answerId": "0b775f19-68a4-476d-bc0d-10e7bee94bd7"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "bd467137-229a-4bec-b147-c9e3f7a0cf65",
+      "questionText": {
+        "en": "18. Select the most appropriate option from the choices below.",
+        "fi": "18. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "18. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a4a4188e-0225-4b05-835a-8416959bb228",
+          "answerText": {
+            "en": "My appetite is no worse than usual",
+            "fi": "Ruokahaluni on ennallaan",
+            "sv": "Min aptit är som tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7b5a5c67-eaf3-4534-a79e-84718f070dff",
+          "answerText": {
+            "en": "My appetite is not as good as it used to be",
+            "fi": "Ruokahaluni on huonompi kuin ennen",
+            "sv": "Min aptit är inte lika god som tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d9189b69-bf38-4d3c-bace-f565073b52d2",
+          "answerText": {
+            "en": "My appetite is much worse now",
+            "fi": "Ruokahaluni on nyt paljon huonompi kuin ennen",
+            "sv": "Min aptit är mycket mindre än tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5ffb26c2-4a59-4697-b00c-d2af85544643",
+          "answerText": {
+            "en": "I have no appetite at all anymore",
+            "fi": "Minulla ei ole lainkaan ruokahalua",
+            "sv": "Jag saknar totalt aptit"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "a4a4188e-0225-4b05-835a-8416959bb228"
+        },
+        {
+          "points": 1,
+          "answerId": "7b5a5c67-eaf3-4534-a79e-84718f070dff"
+        },
+        {
+          "points": 2,
+          "answerId": "d9189b69-bf38-4d3c-bace-f565073b52d2"
+        },
+        {
+          "points": 3,
+          "answerId": "5ffb26c2-4a59-4697-b00c-d2af85544643"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "1773748d-4954-4116-811d-5fe74b753ba4",
+      "questionText": {
+        "en": "19. Select the most appropriate option from the choices below.",
+        "fi": "19. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "19. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "43abaa45-e456-4f82-8070-9dee59dbd171",
+          "answerText": {
+            "en": "I haven't lost much weight, if any, lately",
+            "fi": "Painoni on pysynyt viime aikoina ennallaan",
+            "sv": "Min vikt är som tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "11f34d37-dc84-41b8-97fe-5683b56f6b8f",
+          "answerText": {
+            "en": "I have lost more than 2,5 kg",
+            "fi": "Olen laihtunut yli 2,5 kg",
+            "sv": "Jag har magrat mer än 2,5 kg"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3942f704-82a8-47f5-975d-56cc2fb09eff",
+          "answerText": {
+            "en": "I have lost more than 5 kg",
+            "fi": "Olen laihtunut yli 5 kg",
+            "sv": "Jag har magrat mer än 5 kg"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "10cefe3e-6733-4e34-899e-685bb87771ca",
+          "answerText": {
+            "en": "I have lost more than 7,5 kg",
+            "fi": "Olen laihtunut yli 7,5 kg",
+            "sv": "Jag har magrat mer än 7,5 kg"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "43abaa45-e456-4f82-8070-9dee59dbd171"
+        },
+        {
+          "points": 1,
+          "answerId": "11f34d37-dc84-41b8-97fe-5683b56f6b8f"
+        },
+        {
+          "points": 2,
+          "answerId": "3942f704-82a8-47f5-975d-56cc2fb09eff"
+        },
+        {
+          "points": 3,
+          "answerId": "10cefe3e-6733-4e34-899e-685bb87771ca"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "265a7fbc-aa22-4a66-9216-08dcb9aed728",
+      "questionText": {
+        "en": "20. Select the most appropriate option from the choices below.",
+        "fi": "20. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "20. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "614bd6aa-b9bb-42b9-aae5-5f129d1b1441",
+          "answerText": {
+            "en": "I am no more worried about my health than usual",
+            "fi": "En ajattele terveyttäni tavallista enempää",
+            "sv": "Jag tänker inte mera än vanligt på min hälsa"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e3dda992-ebcd-45a5-97f6-0c5323a1e189",
+          "answerText": {
+            "en": "I am worried about physical problems like aches, pains, upset stomach, or constipation",
+            "fi": "Kiinnitän tavallista enemmän huomiota särkyihin ja kipuihin, vatsavaivoihin ja ummetukseen",
+            "sv": "Jag oroar mig för kroppsliga besvär såsom värk, smärtor, magbesvär eller förstoppning"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d5e9558a-bde1-4559-a658-cc6e453e1a78",
+          "answerText": {
+            "en": "I am very worried about physical problems and it's hard to think of much else",
+            "fi": "Tarkkailen ruumiintuntemuksiani niin paljon, ettei muille ajatuksille jää aikaa",
+            "sv": "Jag oroar mig så mycket för mina kroppsliga besvär att mycket lite tid blir över för andra tankar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ea184966-9157-407c-886b-cd0312785eb6",
+          "answerText": {
+            "en": "I am so worried about my physical problems that I cannot think of anything else",
+            "fi": "Terveyteni ja tuntemusteni ajatteleminen on kokonaan vallannut mieleni",
+            "sv": "Jag är så orolig för min kroppsliga besvär att jag inte förmår tänka på något annat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "614bd6aa-b9bb-42b9-aae5-5f129d1b1441"
+        },
+        {
+          "points": 1,
+          "answerId": "e3dda992-ebcd-45a5-97f6-0c5323a1e189"
+        },
+        {
+          "points": 2,
+          "answerId": "d5e9558a-bde1-4559-a658-cc6e453e1a78"
+        },
+        {
+          "points": 3,
+          "answerId": "ea184966-9157-407c-886b-cd0312785eb6"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "44df175b-1dfd-4f90-9d08-371a9bca81e5",
+      "questionText": {
+        "en": "21. Select the most appropriate option from the choices below.",
+        "fi": "21. Valitse alla olevista vaihtoehdoista sopivin vaihtoehto.",
+        "sv": "21. Välj det mest lämpliga alternativet från alternativen nedan."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "08c4d8b0-4424-4858-86dc-5941c2bf44ce",
+          "answerText": {
+            "en": "I have not noticed any recent change in my interest in sex",
+            "fi": "Kiinnostukseni sukupuolielämään on pysynyt ennallaan",
+            "sv": "Mitt intresse för sex är som tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5731b223-2a55-4f74-9817-8d0bcec6db76",
+          "answerText": {
+            "en": "I am less interested in sex than I used to be",
+            "fi": "Kiinnostukseni sukupuolielämään on vähentynyt",
+            "sv": "Jag är mindre intresserad av sex än tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cd3e21d2-c592-4559-a13c-89369550c14b",
+          "answerText": {
+            "en": "I have almost no interest in sex",
+            "fi": "Kiinnostukseni sukupuolielämään on huomattavasti vähäisempää kuin aikaisemmin",
+            "sv": "Mitt intresse för sex är mycket mindre än tidigare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "45388607-ff4a-4161-9e05-da24c560fb2c",
+          "answerText": {
+            "en": "I have lost interest in sex completely",
+            "fi": "Olen menettänyt kaiken mielenkiintoni sukupuolielämään",
+            "sv": "Jag har helt förlorat mitt intresse för sex"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "08c4d8b0-4424-4858-86dc-5941c2bf44ce"
+        },
+        {
+          "points": 1,
+          "answerId": "5731b223-2a55-4f74-9817-8d0bcec6db76"
+        },
+        {
+          "points": 2,
+          "answerId": "cd3e21d2-c592-4559-a13c-89369550c14b"
+        },
+        {
+          "points": 3,
+          "answerId": "45388607-ff4a-4161-9e05-da24c560fb2c"
+        }
+      ],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "e34c5771-5dd6-44a8-a6d9-bb537568801b",
+      "name": {
+        "en": "Instruction",
+        "fi": "Ohje",
+        "sv": "Instruktion"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "name": {
+        "en": "Beck Depression Inventory (BDI)",
+        "fi": "Masennuskysely (BDI-21)",
+        "sv": "Enkät on depressionssymtoms (BDI)"
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "form",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": true,
+  "scoreCalculations": [
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 63,
+      "title": {
+        "en": "Result",
+        "fi": "Tulos",
+        "sv": "Resultat"
+      },
+      "categoryId": "b4673c69-1a86-484e-8c11-3a80baba9f81",
+      "summaries": []
+    }
+  ],
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [
+      {
+        "companyId": 6,
+        "companyPayerType": "primary-healthcare",
+        "internalName": "Anonymous"
+      }
+    ]
+  }
+}

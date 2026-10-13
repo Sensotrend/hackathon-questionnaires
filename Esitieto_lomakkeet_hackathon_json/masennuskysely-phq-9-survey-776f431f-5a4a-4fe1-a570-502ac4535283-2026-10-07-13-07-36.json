@@ -1,0 +1,1106 @@
+{
+  "revisionGuid": "776f431f-5a4a-4fe1-a570-502ac4535283",
+  "surveyGuid": "f46213ca-9c1d-45a4-b74f-e5bae48b88ba",
+  "draft": false,
+  "name": {
+    "en": "Depression Questionnaire (PHQ-9)",
+    "fi": "Masennuskysely (PHQ-9)",
+    "sv": "Depressionsenkät (PHQ‑9)"
+  },
+  "description": {
+    "en": "This Patient Health Questionnaire (PHQ) depression survey allows you to assess potential symptoms of depression.\nPHQ-9 (Patient Health Questionnaire - 9) -kysely",
+    "fi": "Tällä Patient Health Questionnaire -masennuskyselyllä voit arvioida mahdollisia masennusoireitasi. PHQ-9 (Patient Health Questionnaire - 9) -kysely.",
+    "sv": "Med detta Patient Health Questionnaire (PHQ) kan du bedöma dina eventuella depressionssymtom.\nPHQ-9 (Patient Health Questionnaire - 9) -kysely"
+  },
+  "createdDt": "2026-05-07T11:09:51.920Z",
+  "createdBy": {
+    "upn": "suvi.viitanen@luvn.fi",
+    "name": "Suvi Viitanen",
+    "practitionerId": 8
+  },
+  "questions": [
+    {
+      "questionId": "352410f8-aaee-48f3-85e7-73dd7c1d6842",
+      "questionText": {
+        "en": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form.",
+        "fi": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+        "sv": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "5ec9e099-8e79-4027-bd6b-b159eaf232de",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "b6add853-cea3-4db4-b710-7da7aea1ae70",
+      "questionText": {
+        "en": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+        "fi": "Kuinka usein seuraavat ongelmat ovat vaivanneet teitä viimeisten 2 viikon aikana?",
+        "sv": "Under de senaste 2 veckorna, hur ofta har du besvärats av något av följande problem."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a63400cb-e719-48d7-b13e-f2f9712c6b8e",
+      "questionText": {
+        "en": "1. Little interest or pleasure in doing things",
+        "fi": "1. Asioiden tekeminen kiinnostaa hyvin vähän tai ei juuri tuota mielihyvää",
+        "sv": "1. Lite intresse eller glädje i att göra saker"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c50994cd-c66d-4c65-8a58-03db4107e7d1",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8b810ac9-b913-4b4a-80d8-a36e4fd4d381",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "96cda278-f1c8-4c05-893a-3cd059fee645",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1b37445c-d65c-40b8-8473-7350e29ce249",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "c50994cd-c66d-4c65-8a58-03db4107e7d1"
+        },
+        {
+          "points": 1,
+          "answerId": "8b810ac9-b913-4b4a-80d8-a36e4fd4d381"
+        },
+        {
+          "points": 2,
+          "answerId": "96cda278-f1c8-4c05-893a-3cd059fee645"
+        },
+        {
+          "points": 3,
+          "answerId": "1b37445c-d65c-40b8-8473-7350e29ce249"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "cb0d8de8-a75c-4283-9a4b-ba811dfdc320",
+      "questionText": {
+        "en": "2. Feeling down, depressed, or hopeless",
+        "fi": "2. Alakuloisuus, masentuneisuus tai toivottomuus",
+        "sv": "2. Känt dig nedstämd, deprimerad eller känt att framtiden ser hopplös ut"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "13686ee0-a84d-4d76-8017-f27d74d0b673",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "bf44acff-c282-4e3d-87bb-8cedf0b5b3ca",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "88a969ea-1b4a-4d00-8fcb-1ff3bca9575e",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5045e117-81a7-4c84-bfa4-b347ef79f80f",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "13686ee0-a84d-4d76-8017-f27d74d0b673"
+        },
+        {
+          "points": 1,
+          "answerId": "bf44acff-c282-4e3d-87bb-8cedf0b5b3ca"
+        },
+        {
+          "points": 2,
+          "answerId": "88a969ea-1b4a-4d00-8fcb-1ff3bca9575e"
+        },
+        {
+          "points": 3,
+          "answerId": "5045e117-81a7-4c84-bfa4-b347ef79f80f"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "7b16577d-a63c-49ec-8fba-4a4197885851",
+      "questionText": {
+        "en": "3. Trouble falling or staying asleep, or sleeping too much",
+        "fi": "3. Nukahtamis- tai nukkumisvaikeudet tai liiallinen nukkuminen",
+        "sv": "3. Problem att somna eller att du vaknat i förtid, eller sovit för mycket"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a47612c2-1d1b-4918-a86f-3b83b5c38012",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "87ba180d-a833-4933-8815-88e95e6036b2",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "68ace66c-c17c-4437-9f89-4238529f354d",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fc1d91cc-5c17-42fa-9f7f-416d303941a7",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "a47612c2-1d1b-4918-a86f-3b83b5c38012"
+        },
+        {
+          "points": 1,
+          "answerId": "87ba180d-a833-4933-8815-88e95e6036b2"
+        },
+        {
+          "points": 2,
+          "answerId": "68ace66c-c17c-4437-9f89-4238529f354d"
+        },
+        {
+          "points": 3,
+          "answerId": "fc1d91cc-5c17-42fa-9f7f-416d303941a7"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "5fb8d47d-ccf3-44db-b1a0-477d31ca9312",
+      "questionText": {
+        "en": "4. Feeling tired or having little energy",
+        "fi": "4 .Väsymys tai energian puute",
+        "sv": "4. Känt dig trött eller energilös"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ac9319ce-123e-4538-94d3-6a327123a2d8",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0cb0c4b0-e022-42ad-8d4f-b8729ac8b1fd",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d695ae8d-7c7b-4d8e-8b46-7e44035dab41",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b9836d1f-d1b0-4087-91c3-1388fd8d4986",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "ac9319ce-123e-4538-94d3-6a327123a2d8"
+        },
+        {
+          "points": 1,
+          "answerId": "0cb0c4b0-e022-42ad-8d4f-b8729ac8b1fd"
+        },
+        {
+          "points": 2,
+          "answerId": "d695ae8d-7c7b-4d8e-8b46-7e44035dab41"
+        },
+        {
+          "points": 3,
+          "answerId": "b9836d1f-d1b0-4087-91c3-1388fd8d4986"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "f5c9287d-37e0-4959-924e-bcb92112b267",
+      "questionText": {
+        "en": "5. Poor appetite or overeating",
+        "fi": "5. Huono ruokahalu tai ylensyöminen",
+        "sv": "5. Dålig aptit eller att du ätit för mycket"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "9b98748f-3b0a-468a-8421-1a2d0eb88077",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "88ed3bde-310c-47d5-98ab-514246ea932e",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0a8264e2-b989-4f0d-a196-4f86de39b60d",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f255a731-4b91-4217-8de7-ca4c873c6b44",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "9b98748f-3b0a-468a-8421-1a2d0eb88077"
+        },
+        {
+          "points": 1,
+          "answerId": "88ed3bde-310c-47d5-98ab-514246ea932e"
+        },
+        {
+          "points": 2,
+          "answerId": "0a8264e2-b989-4f0d-a196-4f86de39b60d"
+        },
+        {
+          "points": 3,
+          "answerId": "f255a731-4b91-4217-8de7-ca4c873c6b44"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "5c3f4e5b-fbe1-4e92-bec4-eed0ed30f2ac",
+      "questionText": {
+        "en": "6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
+        "fi": "6. Tyytymättömyys omaan itseen – tai tunne, että olen epäonnistunut tai laiminlyönyt itseäni tai perhettäni",
+        "sv": "6. Dålig självkänsla - eller att du känt dig misslyckad eller att du svikit dig själv eller din familj"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "9b5fbf0a-e1a8-4df9-9d8e-1c155aab9357",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "69ae0d3c-0e9b-4299-b1fc-c6fcac870823",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fcfdbeaf-ad74-43d4-b12a-417236089115",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9ec2bd8b-44c1-4c34-9479-44264d7f7000",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "9b5fbf0a-e1a8-4df9-9d8e-1c155aab9357"
+        },
+        {
+          "points": 1,
+          "answerId": "69ae0d3c-0e9b-4299-b1fc-c6fcac870823"
+        },
+        {
+          "points": 2,
+          "answerId": "fcfdbeaf-ad74-43d4-b12a-417236089115"
+        },
+        {
+          "points": 3,
+          "answerId": "9ec2bd8b-44c1-4c34-9479-44264d7f7000"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "51de8f74-a7da-4bf6-88b0-bb5989bcb3a0",
+      "questionText": {
+        "en": "7. Trouble concentrating on things, such as reading the newspaper or watching television",
+        "fi": "7. Vaikeus keskittyä asioihin, kuten lehden lukemiseen tai television katseluun",
+        "sv": "7. Svårigheter att koncentrera dig, till exempel när du läst tidningen eller sett på TV"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "2d3c9712-aa4f-4186-9cd5-d97d4d7d1a72",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "72638d51-0822-4109-b082-17b590202c33",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6d761f2b-3344-4155-8d0c-35893644f96a",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "dde93d2a-b5e7-4dfe-a52f-5d116aa85aa4",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "2d3c9712-aa4f-4186-9cd5-d97d4d7d1a72"
+        },
+        {
+          "points": 1,
+          "answerId": "72638d51-0822-4109-b082-17b590202c33"
+        },
+        {
+          "points": 2,
+          "answerId": "6d761f2b-3344-4155-8d0c-35893644f96a"
+        },
+        {
+          "points": 3,
+          "answerId": "dde93d2a-b5e7-4dfe-a52f-5d116aa85aa4"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "bea012e3-0010-44b7-81cf-7608ecd58035",
+      "questionText": {
+        "en": "8. Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+        "fi": "8. Liikutko tai puhutko niin hitaasti, että muut ihmiset ovat saattaneet huomata? Tai päinvastoin – oletko ollut niin hermostunut tai levoton, että olet liikkunut paljon tavallista enemmän?",
+        "sv": "8. Att du rört dig eller talat så långsamt att andra noterat det? Eller motsatsen – att du varit så nervös eller rastlös att du rört dig mer än vanligt"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "26f42c8d-96d5-43e0-9d77-b32dff8723c3",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6ee570fd-fb37-4085-bbb6-cc31762b8e59",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "26d2248c-234c-43ad-8728-ac51f5a269f4",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "bbd877b4-7ea7-4233-98c2-494701978703",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "26f42c8d-96d5-43e0-9d77-b32dff8723c3"
+        },
+        {
+          "points": 1,
+          "answerId": "6ee570fd-fb37-4085-bbb6-cc31762b8e59"
+        },
+        {
+          "points": 2,
+          "answerId": "26d2248c-234c-43ad-8728-ac51f5a269f4"
+        },
+        {
+          "points": 3,
+          "answerId": "bbd877b4-7ea7-4233-98c2-494701978703"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "b353f4ca-16d2-4d79-8fa2-f9f519bef3a1",
+      "questionText": {
+        "en": "9. Thoughts that you would be better off dead or of hurting yourself in some way",
+        "fi": "9. Ajatukset, että voisi olla yhtä hyvin kuollut tai, että voisi vahingoittaa itseään jollakin tavalla",
+        "sv": "9. Tankar att det skulle vara bättre om du var död eller att du skulle skada dig på något sätt"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "f4510fdd-9259-417b-97d2-0e7d959e4891",
+          "answerText": {
+            "en": "Not at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cfc42a8c-4ae5-40fe-9480-4accb9ac4e2f",
+          "answerText": {
+            "en": "Several days",
+            "fi": "Useina päivinä",
+            "sv": "Flera dagar"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "955bd0d2-e639-44f1-b4ea-4ccb968c012e",
+          "answerText": {
+            "en": "More than half the days",
+            "fi": "Useammin kuin puolet ajasta",
+            "sv": "Mer än hälften av dagarna"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5e59e8f4-bc80-471a-8a08-4c293eb3e69e",
+          "answerText": {
+            "en": "Nearly every day",
+            "fi": "Lähes joka päivä",
+            "sv": "Nästan varje dag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "f4510fdd-9259-417b-97d2-0e7d959e4891"
+        },
+        {
+          "points": 1,
+          "answerId": "cfc42a8c-4ae5-40fe-9480-4accb9ac4e2f"
+        },
+        {
+          "points": 2,
+          "answerId": "955bd0d2-e639-44f1-b4ea-4ccb968c012e"
+        },
+        {
+          "points": 3,
+          "answerId": "5e59e8f4-bc80-471a-8a08-4c293eb3e69e"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "1d824dc6-d7e3-44a2-a165-32475fd98a6b",
+      "questionText": {
+        "en": "10. If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+        "fi": "Jos sinulla on ollut jokin ongelma, niin kuinka vaikeaa sinun on ollut huolehtia työstäsi, kotiasioista tai tulla toimeen muiden ihmisten kanssa näiden ongelmien vuoksi?",
+        "sv": "10. Om du kryssat för att du haft något av dessa problem, hur stora svårigheter har dessa problem förorsakat dig på arbetet, eller för att ta hand om sysslor hemma, eller i kontakten med andra människor?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "5577c9b8-8ae4-437f-a3b3-2915be6f1199",
+          "answerText": {
+            "en": "Not difficult at all",
+            "fi": "Ei lainkaan",
+            "sv": "Inga svårigheter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b9d5beeb-5b01-424a-bde7-350746ab3dc2",
+          "answerText": {
+            "en": "Somewhat difficult",
+            "fi": "Hieman vaikeaa",
+            "sv": "Vissa svårigheter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3a35ebd1-29df-46bc-b02d-541d0df37041",
+          "answerText": {
+            "en": "Very difficult",
+            "fi": "Hyvin vaikeaa",
+            "sv": "Stora svårigheter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "bd652575-b754-4e68-816f-739e1abfc34e",
+          "answerText": {
+            "en": "Extremely difficult",
+            "fi": "Erittäin vaikeaa",
+            "sv": "Extrema svårigheter"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "5577c9b8-8ae4-437f-a3b3-2915be6f1199"
+        },
+        {
+          "points": 0,
+          "answerId": "b9d5beeb-5b01-424a-bde7-350746ab3dc2"
+        },
+        {
+          "points": 0,
+          "answerId": "3a35ebd1-29df-46bc-b02d-541d0df37041"
+        },
+        {
+          "points": 0,
+          "answerId": "bd652575-b754-4e68-816f-739e1abfc34e"
+        }
+      ],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "5ec9e099-8e79-4027-bd6b-b159eaf232de",
+      "name": {
+        "en": "Instruction",
+        "fi": "Ohje",
+        "sv": "Instruktion"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "b1817fbf-cba9-4e36-be25-dfab4e8c4577",
+      "name": {
+        "en": "PHQ-9 (Patient Health Questionnaire - 9)  survey",
+        "fi": "PHQ-9 (Patient Health Questionnaire - 9) -kysely",
+        "sv": "PHQ-9 (Patient Health Questionnaire - 9) -enkät"
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "form",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": true,
+  "scoreCalculations": [
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 27,
+      "title": {
+        "en": "Points",
+        "fi": "Kyselyn kokonaispistemäärä",
+        "sv": "Enkätens totalpoäng"
+      },
+      "summaries": []
+    }
+  ],
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [
+      {
+        "companyId": 6,
+        "companyPayerType": "primary-healthcare",
+        "internalName": "Anonymous"
+      }
+    ]
+  }
+}

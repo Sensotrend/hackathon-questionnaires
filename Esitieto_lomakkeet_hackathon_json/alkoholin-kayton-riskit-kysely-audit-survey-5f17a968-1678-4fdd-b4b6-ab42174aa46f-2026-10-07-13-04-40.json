@@ -1,0 +1,1362 @@
+{
+  "revisionGuid": "5f17a968-1678-4fdd-b4b6-ab42174aa46f",
+  "surveyGuid": "dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+  "draft": false,
+  "name": {
+    "en": "Alcohol – Risks of Use (AUDIT)",
+    "fi": "Alkoholin käytön riskit - kysely (AUDIT)",
+    "sv": "Alkohol– risker med bruk (AUDIT)"
+  },
+  "description": {
+    "en": "This AUDIT form can be used to assess your alcohol consumption and related habits. \n(AUDIT=Alcohol Use Disorders Identification Test)",
+    "fi": "Tällä AUDIT-lomakkeella voidaan kartoittaa alkoholin käyttöäsi ja siihen liittyviä tottumuksia.\n(AUDIT=Alcohol Use Disorders Identification Test) ",
+    "sv": "Med denna AUDIT-blankett kan vi kartlägga din alkoholkonsumtion och dina vanor kring alkohol. \n(AUDIT=Alcohol Use Disorders Identification Test)"
+  },
+  "createdDt": "2026-05-07T11:00:41.428Z",
+  "createdBy": {
+    "upn": "suvi.viitanen@luvn.fi",
+    "name": "Suvi Viitanen",
+    "practitionerId": 8
+  },
+  "questions": [
+    {
+      "questionId": "b372d59d-f957-43fd-941f-a93bdac7a109",
+      "questionText": {
+        "en": "The information you provide will be stored on Lunna, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary, unless a professional has already asked you to fill out this form.",
+        "fi": "Antamasi tiedot tallentuvat Lunnaan, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei ammattilainen ole jo pyytänyt sinua täyttämään tätä lomaketta.",
+        "sv": "De uppgifter du lämnat sparas på Lunna, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov, om inte en yrkesperson redan har bett dig att fylla i denna blanketten."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "40f2cdc7-b3c7-449e-b103-4a4c45b054f7",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "acfcca54-f1ac-4b1a-a3e4-e8d56ed6988e",
+      "questionText": {
+        "en": "Please answer the following questions about your use of alcoholic beverages during this past year.",
+        "fi": "Vastaa kysymyksiin alkoholinkäytöstäsi kuluneen vuoden aikana.",
+        "sv": "Var vänlig och besvara några frågor kring din användning av alkoholhaltiga drycker under det gångna året."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "1ac2d399-5575-409c-bb0e-7f99ba19a95d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "06b14120-fccc-4302-8454-5edda0849c7f",
+      "questionText": {
+        "en": "1. How often do you have a drink containing alcohol?",
+        "fi": "1. Kuinka usein juot olutta, viiniä tai muita alkoholijuomia? Ota mukaan myös ne kerrat, jolloin juot vain pieniä määriä, esimerkiksi pullon keskiolutta tai tilkan viiniä.",
+        "sv": "1. Hur ofta dricker du öl, vin eller andra alkoholdrycker? Räkna också med de gånger då du endast dricker små mängder, till exempel en flaska mellanöl eller lite vin."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "674b350f-f11b-43b3-9fb2-0e6269f2c8ec",
+          "answerText": {
+            "en": "Never",
+            "fi": "En koskaan",
+            "sv": "Aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ae8df7cd-e5dc-46c5-bc96-70973eddf0b8",
+          "answerText": {
+            "en": "Monthly or less",
+            "fi": "Kerran kuussa tai harvemmin",
+            "sv": "cirka en gång i månaden eller mer sällan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "7c17b128-1fb5-461b-8120-89c71f47d194",
+          "answerText": {
+            "en": "2 - 4 times a month",
+            "fi": "2 - 4 kertaa kuukaudessa",
+            "sv": "2 - 4 kertaa kuukaudessa"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4e3a9c3e-1fe9-4a2a-bee9-6af30569ea77",
+          "answerText": {
+            "en": "2 - 3 times a week",
+            "fi": "2 - 3 kertaa viikossa",
+            "sv": " 2–3 gånger i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ffb9b00b-a4a8-4d92-826f-50524222cc2a",
+          "answerText": {
+            "en": "4 or more times a week",
+            "fi": "Neljä kertaa viikossa tai useammin",
+            "sv": " 4 gånger i veckan eller oftare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "44748566-42d8-4051-90fd-200e0b7464fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "674b350f-f11b-43b3-9fb2-0e6269f2c8ec"
+        },
+        {
+          "points": 1,
+          "answerId": "ae8df7cd-e5dc-46c5-bc96-70973eddf0b8"
+        },
+        {
+          "points": 2,
+          "answerId": "7c17b128-1fb5-461b-8120-89c71f47d194"
+        },
+        {
+          "points": 3,
+          "answerId": "4e3a9c3e-1fe9-4a2a-bee9-6af30569ea77"
+        },
+        {
+          "points": 4,
+          "answerId": "ffb9b00b-a4a8-4d92-826f-50524222cc2a"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "bc382696-5efb-43fb-b7e3-2afb9fc32bfc",
+      "questionText": {
+        "en": "2. How many drinks containing alcohol do you have on a typical day when you are drinking?",
+        "fi": "2. Kuinka monta alkoholiannosta tavallisesti otat niinä päivinä, jolloin juot alkoholia? (1 annos = 12 cl mietoa viiniä, 8 cl väkevää viiniä, 4 cl viinaa tai muuta väkevää juomaa. 1.25 annos = pullo A-olutta, pullo Alkon siideriä tai pullo long drinkkiä.)",
+        "sv": "2. Hur många portioner alkohol har du vanligen druckit de dagar då du använt alkohol? (1 portion = 12 cl svagvin, 8 cl starkvin, 4 cl sprit. 1.25 portion = en flaska mellanöl, en flaska Alkos cider, en flaska long drink.)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a34af5c3-c6f8-47df-a341-0037bd23b1bc",
+          "answerText": {
+            "en": "1 or 2 drinks per day",
+            "fi": "1 - 2 annosta päivässä",
+            "sv": "1-2 portioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e88ff9e6-e3f6-4951-a5b9-8ae1f10673ad",
+          "answerText": {
+            "en": "3 or 4 drinks per day",
+            "fi": "3 - 4 annosta päivässä",
+            "sv": "3-4 portioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8d58c4b2-c01f-4869-90c0-bf1e5ad97abb",
+          "answerText": {
+            "en": "5 or 6 drinks per day",
+            "fi": "5 - 6 annosta päivässä",
+            "sv": "5-6 portioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cbc12bd7-f01f-49be-8d9d-ac94a0a54eeb",
+          "answerText": {
+            "en": "7 to 9 drinks per day",
+            "fi": "7 - 9 annosta päivässä",
+            "sv": " 7-9 portioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2bf5954f-9666-4187-96c8-90f9a1829f81",
+          "answerText": {
+            "en": "10 or more drinks per day",
+            "fi": "10 annosta/päivä tai enemmän",
+            "sv": "10 portioner eller mera"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "25c4a5b9-f537-4d85-8769-536438cf5c0d",
+          "answerText": {
+            "en": "I don't use alcohol",
+            "fi": "En käytä alkoholia",
+            "sv": "Jag använder inte alkohol"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "44748566-42d8-4051-90fd-200e0b7464fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "a34af5c3-c6f8-47df-a341-0037bd23b1bc"
+        },
+        {
+          "points": 1,
+          "answerId": "e88ff9e6-e3f6-4951-a5b9-8ae1f10673ad"
+        },
+        {
+          "points": 2,
+          "answerId": "8d58c4b2-c01f-4869-90c0-bf1e5ad97abb"
+        },
+        {
+          "points": 3,
+          "answerId": "cbc12bd7-f01f-49be-8d9d-ac94a0a54eeb"
+        },
+        {
+          "points": 4,
+          "answerId": "2bf5954f-9666-4187-96c8-90f9a1829f81"
+        },
+        {
+          "points": 0,
+          "answerId": "25c4a5b9-f537-4d85-8769-536438cf5c0d"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "2e90344e-ad06-4862-9eb4-acb9ee53a6d6",
+      "questionText": {
+        "en": "3. How often do you have six or more drinks on one occasion?",
+        "fi": "3. Kuinka usein juot yhdellä juomakerralla kuusi tai useampia alkoholiannoksia?",
+        "sv": "3. Hur ofta har du druckit sex alkoholportioner eller mer på gång?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "47bab1c4-da58-4776-a1b1-9c62de63f160",
+          "answerText": {
+            "en": "Never",
+            "fi": "En koskaan",
+            "sv": "aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "57a0c4ef-4283-40a4-8653-5eb92c8a9d8d",
+          "answerText": {
+            "en": "Less than monthly",
+            "fi": "Harvemmin kuin kerran kuussa",
+            "sv": "cirka en gång i månaden eller mer sällan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "dd5eb752-bdf6-497e-90ca-2bedea82f6b8",
+          "answerText": {
+            "en": "Monthly",
+            "fi": "Kerran kuussa",
+            "sv": "en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c03bb8e0-34f1-4428-8a39-ac0254348c9b",
+          "answerText": {
+            "en": "Weekly",
+            "fi": "Kerran viikossa",
+            "sv": "en gång i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f11df044-d3b6-41be-b2da-109583a84064",
+          "answerText": {
+            "en": "Daily or almost daily",
+            "fi": "Päivittäin tai lähes päivittäin",
+            "sv": "dagligen eller nästan dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "44748566-42d8-4051-90fd-200e0b7464fd",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "47bab1c4-da58-4776-a1b1-9c62de63f160"
+        },
+        {
+          "points": 1,
+          "answerId": "57a0c4ef-4283-40a4-8653-5eb92c8a9d8d"
+        },
+        {
+          "points": 2,
+          "answerId": "dd5eb752-bdf6-497e-90ca-2bedea82f6b8"
+        },
+        {
+          "points": 3,
+          "answerId": "c03bb8e0-34f1-4428-8a39-ac0254348c9b"
+        },
+        {
+          "points": 4,
+          "answerId": "f11df044-d3b6-41be-b2da-109583a84064"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "1e0cca3b-dc93-4af0-995a-9bfe0e31ba14",
+      "questionText": {
+        "en": "4. How often during the last year have you found that you were not able to stop drinking once you had started?",
+        "fi": "4. Kuinka usein viimeksi kuluneen vuoden aikana sinulle on käynyt niin, että et ole pystynyt lopettamaan alkoholin juomista, kun kerran olit sen aloittanut?",
+        "sv": "4. Hur ofta under det senaste året har det hänt att du inte har kunnat sluta dricka när du väl börjat dricka alkohol?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "f0b19774-0096-4db4-a43d-9376ed31c806",
+          "answerText": {
+            "en": "Never",
+            "fi": "Ei koskaan",
+            "sv": "aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "15fcc6d3-5c61-46db-b394-75176170d3a5",
+          "answerText": {
+            "en": "Less than monthly",
+            "fi": "Harvemmin kuin kerran kuussa",
+            "sv": "mer sällan än en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5e6dd79b-7540-4005-9dde-97410130315d",
+          "answerText": {
+            "en": "Monthly",
+            "fi": "Kerran kuussa",
+            "sv": "en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2a102037-adc7-4c4c-a187-3c745dfb2165",
+          "answerText": {
+            "en": "Weekly",
+            "fi": "Kerran viikossa",
+            "sv": "en gång i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f6fe21ac-2893-492b-86bb-1ea43d7ff65c",
+          "answerText": {
+            "en": "Daily or almost daily",
+            "fi": "Päivittäin tai lähes päivittäin",
+            "sv": "dagligen eller nästan dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "37651d97-7321-4ede-89ae-52b7981fbdb7",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "f0b19774-0096-4db4-a43d-9376ed31c806"
+        },
+        {
+          "points": 1,
+          "answerId": "15fcc6d3-5c61-46db-b394-75176170d3a5"
+        },
+        {
+          "points": 2,
+          "answerId": "5e6dd79b-7540-4005-9dde-97410130315d"
+        },
+        {
+          "points": 3,
+          "answerId": "2a102037-adc7-4c4c-a187-3c745dfb2165"
+        },
+        {
+          "points": 4,
+          "answerId": "f6fe21ac-2893-492b-86bb-1ea43d7ff65c"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "d04b2de0-5e35-4907-95fd-0901022c1558",
+      "questionText": {
+        "en": "5. How often during the last year have you failed to do what was normally expected of you because of drinking?",
+        "fi": "5. Kuinka usein viimeksi kuluneen vuoden aikana sinulta on juomisesi vuoksi jäänyt hoitamatta jokin asia, joka sinun tavallisesti olisi kuulunut hoitaa?",
+        "sv": "5. Hur ofta har du under det senaste året på grund av ditt drickande inte skött något som du vanligtvis borde ha skött?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "dc39e42a-c653-46b2-afde-87e3e685d340",
+          "answerText": {
+            "en": "Never",
+            "fi": "Ei koskaan",
+            "sv": "aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cfd8df15-4448-4916-a49a-9b3314ef353d",
+          "answerText": {
+            "en": "Less than monthly",
+            "fi": "Harvemmin kuin kerran kuussa",
+            "sv": "mer sällan än en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "818b239f-45e2-492f-8cb4-2876be5a94b0",
+          "answerText": {
+            "en": "Monthly",
+            "fi": "Kerran kuussa",
+            "sv": " en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "74cbe9d5-30f6-43c9-8448-f2d4277a7548",
+          "answerText": {
+            "en": "Weekly",
+            "fi": "Kerran viikossa",
+            "sv": "en gång i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "df80f33b-cf7d-4555-aaa4-308ad27e69b6",
+          "answerText": {
+            "en": "Daily or almost daily",
+            "fi": "Päivittäin tai lähes päivittäin",
+            "sv": "dagligen eller nästan dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "37651d97-7321-4ede-89ae-52b7981fbdb7",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "dc39e42a-c653-46b2-afde-87e3e685d340"
+        },
+        {
+          "points": 1,
+          "answerId": "cfd8df15-4448-4916-a49a-9b3314ef353d"
+        },
+        {
+          "points": 2,
+          "answerId": "818b239f-45e2-492f-8cb4-2876be5a94b0"
+        },
+        {
+          "points": 3,
+          "answerId": "74cbe9d5-30f6-43c9-8448-f2d4277a7548"
+        },
+        {
+          "points": 4,
+          "answerId": "df80f33b-cf7d-4555-aaa4-308ad27e69b6"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "d6ec7c77-57e8-4781-bb84-ca6209592115",
+      "questionText": {
+        "en": "6. How often during the last year have you needed a first drink in the morning to get yourself going after a heavy drinking session?",
+        "fi": "6. Kuinka usein viimeksi kuluneen vuoden aikana olet tarvinnut runsaan juomisen jälkeisenä aamuna annoksen alkoholia saadaksesi itsesi liikkeelle?",
+        "sv": "6. Hur ofta har du under det senaste året behövt en portion alkohol för att komma igång på morgonen efter att du druckit rikligt?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "4c1e30a1-04c8-421a-8441-ab641319ab76",
+          "answerText": {
+            "en": "Never",
+            "fi": "En koskaan",
+            "sv": "aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "991fd57a-98c1-451b-a0fd-3ef3dcb58f38",
+          "answerText": {
+            "en": "Less than monthly",
+            "fi": "Harvemmin kuin kerran kuussa",
+            "sv": "mer sällan än en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3e7e0e1c-441a-49ee-9d60-2dcff556342b",
+          "answerText": {
+            "en": "Monthly",
+            "fi": "Kerran kuussa",
+            "sv": "en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8ca01e75-9f06-485c-aaeb-4b73759b105b",
+          "answerText": {
+            "en": "Weekly",
+            "fi": "Kerran viikossa",
+            "sv": "en gång i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4d0e9025-8685-4d9a-b8b6-1ffe2149d377",
+          "answerText": {
+            "en": "Daily or almost daily",
+            "fi": "Päivittäin tai lähes päivittäin",
+            "sv": "dagligen eller nästan dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "37651d97-7321-4ede-89ae-52b7981fbdb7",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "4c1e30a1-04c8-421a-8441-ab641319ab76"
+        },
+        {
+          "points": 1,
+          "answerId": "991fd57a-98c1-451b-a0fd-3ef3dcb58f38"
+        },
+        {
+          "points": 2,
+          "answerId": "3e7e0e1c-441a-49ee-9d60-2dcff556342b"
+        },
+        {
+          "points": 3,
+          "answerId": "8ca01e75-9f06-485c-aaeb-4b73759b105b"
+        },
+        {
+          "points": 4,
+          "answerId": "4d0e9025-8685-4d9a-b8b6-1ffe2149d377"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "e47f9bb5-71ec-470b-8cd8-26805a30decd",
+      "questionText": {
+        "en": "7. How often during the last year have you had a feeling of guilt or remorse after drinking?",
+        "fi": "7. Kuinka usein viimeisen vuoden aikana olet tuntenut syyllisyyttä tai katumusta juomisen jälkeen?",
+        "sv": "7. Hur ofta under det senaste året har du haft skuldkänslor eller ångrat dig när du druckit?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "038e1ab4-b955-44e2-a3b7-b036cfbe4c84",
+          "answerText": {
+            "en": "Never",
+            "fi": "En koskaan",
+            "sv": "aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "82ed70bf-cb9c-42d5-8af9-07e3e15ba33f",
+          "answerText": {
+            "en": "Less than monthly",
+            "fi": "Harvemmin kuin kerran kuussa",
+            "sv": "mer sällan än en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "708ffb83-3ec1-4cd7-bb4e-f4848210b586",
+          "answerText": {
+            "en": "Monthly",
+            "fi": "Kerran kuussa",
+            "sv": " en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a60d0e73-41c2-4435-9f54-40473d36d01b",
+          "answerText": {
+            "en": "Weekly",
+            "fi": "Kerran viikossa",
+            "sv": "en gång i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "339a4b94-8ce1-4fd6-82ba-7ba5c8925f24",
+          "answerText": {
+            "en": "Daily or almost daily",
+            "fi": "Päivittäin tai lähes päivittäin",
+            "sv": "dagligen eller nästan dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "16ff59b0-7a45-43b5-a580-31d8584e5b9a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "038e1ab4-b955-44e2-a3b7-b036cfbe4c84"
+        },
+        {
+          "points": 1,
+          "answerId": "82ed70bf-cb9c-42d5-8af9-07e3e15ba33f"
+        },
+        {
+          "points": 2,
+          "answerId": "708ffb83-3ec1-4cd7-bb4e-f4848210b586"
+        },
+        {
+          "points": 3,
+          "answerId": "a60d0e73-41c2-4435-9f54-40473d36d01b"
+        },
+        {
+          "points": 4,
+          "answerId": "339a4b94-8ce1-4fd6-82ba-7ba5c8925f24"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "2429dac0-cd41-4742-aa4b-7aecd1a7960d",
+      "questionText": {
+        "en": "8. How often during the last year have you been unable to remember what happened the night before because of your drinking?",
+        "fi": "8. Kuinka usein viimeksi kuluneen vuoden aikana sinulle on käynyt niin, että et ole seuraavana päivänä pystynyt muistamaan edellisen illan tapahtumia, koska olit juonut alkoholia?",
+        "sv": "8. Hur ofta har det under det senaste året gått så att du inte kommit ihåg vad som hänt kvällen innan på grund av att du druckit alkohol?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7c222e9e-51eb-4d91-8e74-1f123d6303af",
+          "answerText": {
+            "en": "Never",
+            "fi": "Ei koskaan",
+            "sv": "aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "04346990-4870-464e-85a3-c813e01a44f1",
+          "answerText": {
+            "en": "Less than monthly",
+            "fi": "Harvemmin kuin kerran kuukaudessa",
+            "sv": "mer sällan än en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "281d4c83-4cbd-495c-9e89-122dd3a98b46",
+          "answerText": {
+            "en": "Monthly",
+            "fi": "Kerran kuussa",
+            "sv": "en gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "67768bdb-1426-4bb8-9f08-2029fd6fdc86",
+          "answerText": {
+            "en": "Weekly",
+            "fi": "Kerran viikossa",
+            "sv": "en gång i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "669648fd-3609-4273-bdfb-0b6c72389465",
+          "answerText": {
+            "en": "Daily or almost daily",
+            "fi": "Päivittäin tai lähes päivittäin",
+            "sv": "dagligen eller nästan dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "16ff59b0-7a45-43b5-a580-31d8584e5b9a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "7c222e9e-51eb-4d91-8e74-1f123d6303af"
+        },
+        {
+          "points": 1,
+          "answerId": "04346990-4870-464e-85a3-c813e01a44f1"
+        },
+        {
+          "points": 2,
+          "answerId": "281d4c83-4cbd-495c-9e89-122dd3a98b46"
+        },
+        {
+          "points": 3,
+          "answerId": "67768bdb-1426-4bb8-9f08-2029fd6fdc86"
+        },
+        {
+          "points": 4,
+          "answerId": "669648fd-3609-4273-bdfb-0b6c72389465"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "23091cc5-9bc8-487b-bebd-97a0f59a5098",
+      "questionText": {
+        "en": "9. Have you or someone else been injured because of your drinking?",
+        "fi": "9. Oletko itse tai onko joku muu vahingoittunut alkoholinkäyttösi vuoksi?",
+        "sv": "9. Är du själv eller har någon annan skadats på grund av din alkoholkonsumtion?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a2135cc2-4c68-49a4-a541-c9e2eff66faf",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "baf5d245-304c-432e-ad5e-3028505b366e",
+          "answerText": {
+            "en": "Yes, but not in the last year",
+            "fi": "Kyllä, mutta ei viimeksi kuluneen vuoden aikana",
+            "sv": "ja, men inte under det senaste året"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1dab0a85-796e-43a6-9627-bcd197f68a0d",
+          "answerText": {
+            "en": "Yes, during the last year",
+            "fi": "Kyllä, viimeksi kuluneen vuoden aikana",
+            "sv": "ja, under det senaste året"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "16ff59b0-7a45-43b5-a580-31d8584e5b9a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "a2135cc2-4c68-49a4-a541-c9e2eff66faf"
+        },
+        {
+          "points": 2,
+          "answerId": "baf5d245-304c-432e-ad5e-3028505b366e"
+        },
+        {
+          "points": 4,
+          "answerId": "1dab0a85-796e-43a6-9627-bcd197f68a0d"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "3ed34f36-803a-45e2-acd2-10c149770f6a",
+      "questionText": {
+        "en": "10. Has a relative, friend, doctor, or other health care worker been concerned about your drinking or suggested you cut down?",
+        "fi": "10. Onko joku läheisesi tai ystäväsi, lääkäri tai joku muu terveydenhuollon työntekijä ollut huolissaan alkoholinkäytöstäsi tai ehdottanut, että vähentäisit juomista?",
+        "sv": "10. Har någon av dina närstående eller vänner, en läkare eller någon annan varit orolig för din alkoholkonsumtion eller föreslagit att du ska minska ditt drickande eller sluta dricka?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "0f975b18-a9f1-4c22-b4fa-7c2bcab4663a",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d648a896-fba0-4cb4-a23b-acedf9585f1e",
+          "answerText": {
+            "en": "Yes, but not in the last year",
+            "fi": "Kyllä, mutta ei viimeksi kuluneen vuoden aikana",
+            "sv": "ja, men inte under det senaste året"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4bf6cb39-6dee-4ec4-b406-cb6079f85822",
+          "answerText": {
+            "en": "Yes, during the last year",
+            "fi": "Kyllä, viimeksi kuluneen vuoden aikana",
+            "sv": "ja, under det senaste året"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "16ff59b0-7a45-43b5-a580-31d8584e5b9a",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "0f975b18-a9f1-4c22-b4fa-7c2bcab4663a"
+        },
+        {
+          "points": 2,
+          "answerId": "d648a896-fba0-4cb4-a23b-acedf9585f1e"
+        },
+        {
+          "points": 4,
+          "answerId": "4bf6cb39-6dee-4ec4-b406-cb6079f85822"
+        }
+      ],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "40f2cdc7-b3c7-449e-b103-4a4c45b054f7",
+      "name": {
+        "en": "Instruction",
+        "fi": "Ohje",
+        "sv": "Instruktion"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "1ac2d399-5575-409c-bb0e-7f99ba19a95d",
+      "name": {
+        "en": "Audit",
+        "fi": "Audit",
+        "sv": "Audit"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "44748566-42d8-4051-90fd-200e0b7464fd",
+      "name": {
+        "en": "Alkoholin kulutus (keskiarvo, kysymykset 1-3)",
+        "fi": "Alkoholin kulutus (summa, kysymykset 1-3)",
+        "sv": "Alkoholin kulutus (keskiarvo, kysymykset 1-3)"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "37651d97-7321-4ede-89ae-52b7981fbdb7",
+      "name": {
+        "en": "Alkoholiriippuvuus (keskiarvo, kysymykset 4-6)",
+        "fi": "Alkoholiriippuvuus (summa, kysymykset 4-6)",
+        "sv": "Alkoholiriippuvuus (keskiarvo, kysymykset 4-6)"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "16ff59b0-7a45-43b5-a580-31d8584e5b9a",
+      "name": {
+        "en": "Alkoholin haitat (keskiarvo, kysymykset 7-10)",
+        "fi": "Alkoholin haitat (summa, kysymykset 7-10)",
+        "sv": "Alkoholin haitat (keskiarvo, kysymykset 7-10)"
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "form",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": true,
+  "scoreCalculations": [
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 40,
+      "title": {
+        "en": "Kokonaispistemäärä",
+        "fi": "Kyselyn kokonaispistemäärä",
+        "sv": "Alkoholin kulutus (keskiarvo, kysymykset 1-3)"
+      },
+      "summaries": [
+        {
+          "title": {
+            "en": "Kyselyn kokonaispistemäärä",
+            "fi": "Kyselyn kokonaispistemäärä",
+            "sv": "Kyselyn kokonaispistemäärä"
+          },
+          "description": {
+            "en": "Kokonaispisteiden vaihteluväli on 0-40. Riskikäytön rajana pidetään naisilla 6 ja miehillä 8 pistettä.",
+            "fi": "Kokonaispisteiden vaihteluväli on 0-40.",
+            "sv": "Kokonaispisteiden vaihteluväli on 0-40. Riskikäytön rajana pidetään naisilla 6 ja miehillä 8 pistettä."
+          },
+          "min": 0,
+          "max": 40
+        }
+      ]
+    },
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 12,
+      "title": {
+        "en": "Alkoholin kulutus (keskiarvo, kysymykset 1-3)",
+        "fi": "Alkoholin kulutus",
+        "sv": "Alkoholiriippuvuus (keskiarvo, kysymykset 4-6)"
+      },
+      "categoryId": "44748566-42d8-4051-90fd-200e0b7464fd",
+      "summaries": [
+        {
+          "title": {
+            "en": "Keskiarvo",
+            "fi": "Alkoholin kulutus",
+            "sv": "Keskiarvo"
+          },
+          "description": {
+            "en": "Keskiarvo",
+            "fi": "Summa",
+            "sv": "Keskiarvo"
+          },
+          "min": 0,
+          "max": 12
+        }
+      ]
+    },
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 12,
+      "title": {
+        "en": "Alkoholiriippuvuus (keskiarvo, kysymykset 4-6)",
+        "fi": "Alkoholiriippuvuus",
+        "sv": "Alkoholin haitat (keskiarvo, kysymykset 7-10)"
+      },
+      "categoryId": "37651d97-7321-4ede-89ae-52b7981fbdb7",
+      "summaries": [
+        {
+          "title": {
+            "en": "Alkoholiriippuvuus",
+            "fi": "Alkoholiriippuvuus",
+            "sv": "Alkoholiriippuvuus"
+          },
+          "description": {
+            "en": "Keskiarvo",
+            "fi": "Summa",
+            "sv": "Keskiarvo"
+          },
+          "min": 0,
+          "max": 12
+        }
+      ]
+    },
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 16,
+      "title": {
+        "en": "Alkoholin haitat (keskiarvo, kysymykset 7-10)",
+        "fi": "Alkoholin haitat",
+        "sv": "Alkoholin haitat"
+      },
+      "categoryId": "16ff59b0-7a45-43b5-a580-31d8584e5b9a",
+      "summaries": [
+        {
+          "title": {
+            "en": "Alkoholin haitat",
+            "fi": "Alkoholin haitat",
+            "sv": "Alkoholin haitat"
+          },
+          "description": {
+            "en": "Keskiarvo",
+            "fi": "Summa",
+            "sv": "Keskiarvo"
+          },
+          "min": 0,
+          "max": 16
+        }
+      ]
+    }
+  ],
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [
+      {
+        "companyId": 6,
+        "companyPayerType": "primary-healthcare",
+        "internalName": "Anonymous"
+      }
+    ]
+  }
+}

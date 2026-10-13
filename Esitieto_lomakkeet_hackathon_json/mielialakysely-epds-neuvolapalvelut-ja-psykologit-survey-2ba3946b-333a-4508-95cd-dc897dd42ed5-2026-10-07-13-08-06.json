@@ -1,0 +1,1106 @@
+{
+  "revisionGuid": "2ba3946b-333a-4508-95cd-dc897dd42ed5",
+  "surveyGuid": "b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+  "draft": false,
+  "name": {
+    "en": "Mood Questionnaire (EPDS) – Child Health Clinic Services and Psychologists",
+    "fi": "Mielialakysely (EPDS) - Neuvolapalvelut ja psykologit",
+    "sv": "Sinnetämningsenkät (EPDS) – Rådgivningstjänster och psykologer"
+  },
+  "description": {
+    "en": "Mood questionnaire (Edinburgh Postnatal Depression Scale, EPDS) is intended to identify symptoms of depression and anxiety during pregnancy and postpartum.",
+    "fi": "Mielialalomake (Edinburgh postnatal depression scale, EPDS) on tarkoitettu raskausajan ja synnytyksen jälkeisen masennuksen ja ahdistuneisuusoireiden tunnistamiseksi. ",
+    "sv": "Sinnestämningsenkäten (Edinburgh postnatal depression scale, EPDS) är avsett för att identifiera symtom på depression och ångest under graviditeten och efter förlossningen."
+  },
+  "createdDt": "2026-05-08T05:26:03.300Z",
+  "createdBy": {
+    "upn": "suvi.viitanen@luvn.fi",
+    "name": "Suvi Viitanen",
+    "practitionerId": 8
+  },
+  "questions": [
+    {
+      "questionId": "7be3a685-09fc-426f-94df-c8aaf65dccf3",
+      "questionText": {
+        "en": "This form is intended to be filled out before the scheduled clinic visit. You have been instructed to complete it during the appointment booking or at the previous clinic visit. The information you provide will be stored on Lunna, where the professional responsible for the clinic visit can find it. Please note that completing the form in other context will not reach a professional and does not serve as a communication channel to the clinic",
+        "fi": "Tämä lomake on tarkoitettu täytettäväksi ennen sovittua neuvolakäyntiä. Sinua on ohjattu täyttämään se ajanvarauksen yhteydessä tai edellisellä neuvolakäynnillä. Antamasi tiedot tallentuvat Lunnaan, josta kyseisen neuvolakäynnin hoitava terveydenhoitaja löytää sen. Huomioithan, että lomakkeen täyttäminen muussa yhteydessä ei päädy ammattilaiselle eikä toimi yhteydenottokanavana neuvolaan.",
+        "sv": "Denna blanketten är avsett att fyllas i före det avtalade besöket på rådgivningen. Du har blivit ombedd att fylla i det vid bokningen eller vid det föregående besöket på rådgivningen. Den information du lämnar kommer att lagras på Lunna, där den yrkespersonen som ansvarar för det aktuella besöket på rådgivningen kan hitta den. Observera att ifyllandet av blanketten vid andra tillfällen inte kommer att nå en professionell och inte fungerar som en kontaktkanal till rådgivningen."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "868229b5-8b6f-4414-ac3d-a0380ac3e7c4",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "828438bb-0ffd-4057-9a80-16335c583204",
+      "questionText": {
+        "en": "Please select the answer that comes closest to how you have felt in the past 7 days:",
+        "fi": "Ole hyvä ja valitse vaihtoehto, joka parhaiten vastaa Sinun tuntemuksiasi viimeisen kuluneen viikon aikana, ei vain tämänhetkisiä tuntemuksiasi.\n\nViimeisten seitsemän päivän aikana:",
+        "sv": "Var snäll och ringa in det alternativ som bäst stämmer överens med hur du känt dig under den senaste veckan, inte bara hur du mår idag. \n\nUnder de senaste sju dagarna:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "868229b5-8b6f-4414-ac3d-a0380ac3e7c4",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "ab64ffcf-1084-4be4-ac38-ab51d7544168",
+      "questionText": {
+        "en": "I have been able to laugh and see the funny side of things",
+        "fi": "Olen pystynyt nauramaan ja näkemään asioiden hauskan puolen",
+        "sv": "Har jag kunnat skratta och se tillvaron från den ljusa sidan"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "45a916d8-57f1-41a0-94e8-defb6ef772e9",
+          "answerText": {
+            "en": "As much as I always could",
+            "fi": "Yhtä paljon kuin aina ennenkin",
+            "sv": "Lika mycket som vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c8c7fe45-743c-4a4c-a3c7-728d2e86c273",
+          "answerText": {
+            "en": "Not quite so much now",
+            "fi": "En aivan yhtä paljon kuin ennen",
+            "sv": "Inte riktigt lika mycket som vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2d1b56e7-6323-4da5-86d2-c88ca5120ba6",
+          "answerText": {
+            "en": "Definitely not so much now",
+            "fi": "Selvästi vähemmän kuin ennen",
+            "sv": "Mycket mindre än vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "259dce4d-cb3d-4bfb-b66f-41697f4fb22b",
+          "answerText": {
+            "en": " Not at all",
+            "fi": "En ollenkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "45a916d8-57f1-41a0-94e8-defb6ef772e9"
+        },
+        {
+          "points": 1,
+          "answerId": "c8c7fe45-743c-4a4c-a3c7-728d2e86c273"
+        },
+        {
+          "points": 2,
+          "answerId": "2d1b56e7-6323-4da5-86d2-c88ca5120ba6"
+        },
+        {
+          "points": 3,
+          "answerId": "259dce4d-cb3d-4bfb-b66f-41697f4fb22b"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "ca4eb258-15bf-4701-b2a4-bee43e5de051",
+      "questionText": {
+        "en": "I have looked forward with enjoyment to things",
+        "fi": "Olen odotellut mielihyvällä tulevia tapahtumia",
+        "sv": "Har jag glatt mig åt saker som ska hända"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ac3d7fdf-ed58-4df3-b232-19b3c2a6fe71",
+          "answerText": {
+            "en": "As much as I ever did",
+            "fi": "Yhtä paljon kuin aina ennenkin",
+            "sv": "Lika mycket som vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0657cbe4-25d3-4357-ab4c-f1a742697f84",
+          "answerText": {
+            "en": "Rather less than I used to",
+            "fi": "Hiukan vähemmän kuin aikaisemmin",
+            "sv": "Inte riktigt lika mycket som vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a7eccb77-4c10-48ff-a725-453329556175",
+          "answerText": {
+            "en": "Definitely less than I used to",
+            "fi": "Selvästi vähemmän kuin aikaisemmin",
+            "sv": "Mycket mindre än vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2ad45623-e232-4677-ad82-bcb3a751167a",
+          "answerText": {
+            "en": " Hardly at all",
+            "fi": "Tuskin lainkaan",
+            "sv": "Inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "ac3d7fdf-ed58-4df3-b232-19b3c2a6fe71"
+        },
+        {
+          "points": 1,
+          "answerId": "0657cbe4-25d3-4357-ab4c-f1a742697f84"
+        },
+        {
+          "points": 2,
+          "answerId": "a7eccb77-4c10-48ff-a725-453329556175"
+        },
+        {
+          "points": 3,
+          "answerId": "2ad45623-e232-4677-ad82-bcb3a751167a"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "86b9334e-37e8-4d8b-b3b0-79d8093d74b8",
+      "questionText": {
+        "en": "I have blamed myself unnecessarily when things  went wrong",
+        "fi": "Olen syyttänyt tarpeettomasti itseäni, kun asiat ovat menneet vikaan",
+        "sv": "Har jag onödigt mycket lagt skulden på mig själv för att saker gått snett"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "f01e3ace-24bb-4b73-81ef-f15013fce2aa",
+          "answerText": {
+            "en": "Yes, most of the time",
+            "fi": "Kyllä, useimmiten",
+            "sv": "Ja, för det mesta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a14e2bde-e9b2-428e-9262-ccbb9fbe635a",
+          "answerText": {
+            "en": "Yes, some of the time",
+            "fi": "Kyllä, joskus",
+            "sv": "Ja, ibland"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "c6aa07e1-1ce5-4d1f-bf9f-13fa592151a5",
+          "answerText": {
+            "en": "Not very often",
+            "fi": "En kovin usein",
+            "sv": "Inte så ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "82c4e596-b650-47cb-ba86-d64637255aa5",
+          "answerText": {
+            "en": "No, never",
+            "fi": "En koskaan",
+            "sv": "Nej, aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 3,
+          "answerId": "f01e3ace-24bb-4b73-81ef-f15013fce2aa"
+        },
+        {
+          "points": 2,
+          "answerId": "a14e2bde-e9b2-428e-9262-ccbb9fbe635a"
+        },
+        {
+          "points": 1,
+          "answerId": "c6aa07e1-1ce5-4d1f-bf9f-13fa592151a5"
+        },
+        {
+          "points": 0,
+          "answerId": "82c4e596-b650-47cb-ba86-d64637255aa5"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "dc932496-2861-41a8-b973-d508e4430c22",
+      "questionText": {
+        "en": "I have been anxious or worried for no good reason",
+        "fi": "Olen ollut ahdistunut tai huolestunut ilman selvää syytä",
+        "sv": "Har jag varit ångestfylld eller orolig utan någon egentlig anledning"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "dfc3f194-edd8-43ec-8894-ea51662701b7",
+          "answerText": {
+            "en": "No, not at all",
+            "fi": "Ei, en ollenkaan",
+            "sv": "Nej, inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "440afcbc-996e-4a31-8280-e6ac709f83b1",
+          "answerText": {
+            "en": "Hardly ever",
+            "fi": "Tuskin koskaan",
+            "sv": "Knappast alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4922f857-6c1d-40b9-9952-faceab9a6e7a",
+          "answerText": {
+            "en": "Yes, sometimes",
+            "fi": "Kyllä, joskus",
+            "sv": "Ja, ibland "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "353a585e-23bf-436d-a4f6-8aaa39adbd4c",
+          "answerText": {
+            "en": " Yes, very often",
+            "fi": "Kyllä, hyvin usein",
+            "sv": "Ja, mycket ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "dfc3f194-edd8-43ec-8894-ea51662701b7"
+        },
+        {
+          "points": 1,
+          "answerId": "440afcbc-996e-4a31-8280-e6ac709f83b1"
+        },
+        {
+          "points": 2,
+          "answerId": "4922f857-6c1d-40b9-9952-faceab9a6e7a"
+        },
+        {
+          "points": 3,
+          "answerId": "353a585e-23bf-436d-a4f6-8aaa39adbd4c"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "21f5538e-07f7-4254-b0e2-cfbd51e14c88",
+      "questionText": {
+        "en": "I have felt scared or panicky for no very good reason",
+        "fi": "Olen ollut peloissani tai hädissäni ilman erityistä selvää syytä",
+        "sv": "Har jag varit rädd eller ängslig utan någon egentlig anledning"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "5b2770a0-5037-4e3e-950a-089d8e2b6baf",
+          "answerText": {
+            "en": "Yes, quite a lot",
+            "fi": "Kyllä, aika paljon",
+            "sv": "Ja, ganska ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9a48a866-6a62-414f-8dfb-0cfe817ff344",
+          "answerText": {
+            "en": "Yes, sometimes",
+            "fi": "Kyllä, joskus",
+            "sv": "Ja, ibland"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "01ee93b4-af5a-4b3a-a8a2-16cd30ae7984",
+          "answerText": {
+            "en": "No, not much",
+            "fi": "Ei, en paljonkaan",
+            "sv": "Nej, ganska sällan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "96017374-69e0-4bf5-9a9b-c8065dd6d3e0",
+          "answerText": {
+            "en": " No, not at all",
+            "fi": "Ei, en ollenkaan",
+            "sv": "Nej, inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 3,
+          "answerId": "5b2770a0-5037-4e3e-950a-089d8e2b6baf"
+        },
+        {
+          "points": 2,
+          "answerId": "9a48a866-6a62-414f-8dfb-0cfe817ff344"
+        },
+        {
+          "points": 1,
+          "answerId": "01ee93b4-af5a-4b3a-a8a2-16cd30ae7984"
+        },
+        {
+          "points": 0,
+          "answerId": "96017374-69e0-4bf5-9a9b-c8065dd6d3e0"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "dec1d597-713f-4c19-889d-b133a8c918d0",
+      "questionText": {
+        "en": "Things have been getting on top of me",
+        "fi": "Asiat kasautuvat päälleni",
+        "sv": "Har det kört ihop sig för mig och blivit för mycket"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a8416359-40b6-48e8-bce7-e6e08ac0c193",
+          "answerText": {
+            "en": "Yes, most of the time I haven't been able to cope at all",
+            "fi": "Kyllä, useimmiten en ole pystynyt selviytymään niistä ollenkaan",
+            "sv": "Ja, för det mesta har jag inte kunnat ta itu med något alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "eb6685b5-f83e-4425-bb2c-b45c1f3963a8",
+          "answerText": {
+            "en": "Yes, sometimes I haven't been coping as well as usual",
+            "fi": "Kyllä, toisinaan en ole selviytynyt niistä yhtä hyvin kuin tavallisesti",
+            "sv": "Ja, ibland har jag inte kunnat ta itu med saker lika bra som vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "396199ba-ab8e-4491-86ba-25b9e0e3b00d",
+          "answerText": {
+            "en": "No, most of the time I have coped quite well",
+            "fi": "Ei, useimmiten olen selviytynyt melko hyvin",
+            "sv": "Nej, för det mesta har jag kunnat ta itu med saker ganska bra"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d15be234-216e-4e33-b2c8-5ee86213090a",
+          "answerText": {
+            "en": "No, I have been coping as well as ever",
+            "fi": "Ei, olen selviytynyt niistä yhtä hyvin kuin aina ennenkin",
+            "sv": "Nej, jag har kunnat ta itu med saker precis som vanligt"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 3,
+          "answerId": "a8416359-40b6-48e8-bce7-e6e08ac0c193"
+        },
+        {
+          "points": 2,
+          "answerId": "eb6685b5-f83e-4425-bb2c-b45c1f3963a8"
+        },
+        {
+          "points": 1,
+          "answerId": "396199ba-ab8e-4491-86ba-25b9e0e3b00d"
+        },
+        {
+          "points": 0,
+          "answerId": "d15be234-216e-4e33-b2c8-5ee86213090a"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "46d5727e-62a8-4539-800c-8def68a8c039",
+      "questionText": {
+        "en": "I have been so unhappy that I have had difficulty sleeping",
+        "fi": "Olen ollut niin onneton, että minulla on ollut univaikeuksia",
+        "sv": "Har jag känt mig så olycklig att jag har haft svårt att sova"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "36ddb04d-7b4d-4a1f-ab1a-8f220550e973",
+          "answerText": {
+            "en": "Yes, most of the time",
+            "fi": "Kyllä, useimmiten",
+            "sv": "Ja, för det mesta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "cc8d169c-25ee-42cc-b1b5-dc245d41d512",
+          "answerText": {
+            "en": "Yes, sometimes",
+            "fi": "Kyllä, toisinaan",
+            "sv": "Ja, ibland"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "06f60657-aa21-4a9d-90fd-aca727810e1e",
+          "answerText": {
+            "en": "Not very often",
+            "fi": "Ei, en kovin usein",
+            "sv": "Nej, inte så ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1dc8f305-1e6a-4c58-86da-a0ffa1ab7bb1",
+          "answerText": {
+            "en": " No, not at all",
+            "fi": "Ei, en ollenkaan",
+            "sv": "Nej, inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 3,
+          "answerId": "36ddb04d-7b4d-4a1f-ab1a-8f220550e973"
+        },
+        {
+          "points": 2,
+          "answerId": "cc8d169c-25ee-42cc-b1b5-dc245d41d512"
+        },
+        {
+          "points": 1,
+          "answerId": "06f60657-aa21-4a9d-90fd-aca727810e1e"
+        },
+        {
+          "points": 0,
+          "answerId": "1dc8f305-1e6a-4c58-86da-a0ffa1ab7bb1"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "137aea4d-edc2-4164-aeee-8578efe322d2",
+      "questionText": {
+        "en": "I have felt sad or miserable",
+        "fi": "Olen tuntenut oloni surulliseksi ja kurjaksi",
+        "sv": "Har jag känt mig ledsen eller nere"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "cea77e00-ff97-41c4-9901-d1daac697b69",
+          "answerText": {
+            "en": "Yes, most of the time",
+            "fi": "Kyllä, useimmiten",
+            "sv": "Ja, för det mesta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8958d327-495f-4179-b030-90f429762333",
+          "answerText": {
+            "en": "Yes, sometimes",
+            "fi": "Kyllä, melko usein",
+            "sv": "Ja, ganska ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b535ca61-5a45-432d-a320-c04116c47701",
+          "answerText": {
+            "en": "Only occasionally",
+            "fi": "En, kovin usein",
+            "sv": "Inte så ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "62330d71-a5d7-4b66-ae6c-25b4cc4099e2",
+          "answerText": {
+            "en": " No, never",
+            "fi": "Ei, en ollenkaan",
+            "sv": " Nej, inte alls"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 3,
+          "answerId": "cea77e00-ff97-41c4-9901-d1daac697b69"
+        },
+        {
+          "points": 2,
+          "answerId": "8958d327-495f-4179-b030-90f429762333"
+        },
+        {
+          "points": 1,
+          "answerId": "b535ca61-5a45-432d-a320-c04116c47701"
+        },
+        {
+          "points": 0,
+          "answerId": "62330d71-a5d7-4b66-ae6c-25b4cc4099e2"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "efb7da7b-a0a1-4eaa-93be-78e61a694950",
+      "questionText": {
+        "en": "I have been so unhappy that I have been crying",
+        "fi": "Olen ollut niin onneton, että olen itkeskellyt",
+        "sv": "Har jag känt mig så olycklig att jag har gråtit"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c1655bc3-f7c3-4478-bc3e-eb5de49d40be",
+          "answerText": {
+            "en": " Yes, most of the time",
+            "fi": "Kyllä, useimmiten",
+            "sv": "Ja, för det mesta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8904a763-c8a9-4e64-8f63-426c4e8b219e",
+          "answerText": {
+            "en": "Yes, quite often",
+            "fi": "Kyllä, melko usein",
+            "sv": "Ja, ganska ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e760fd77-e6ab-466c-867b-09016577dee4",
+          "answerText": {
+            "en": " Only occasionally",
+            "fi": "Vain silloin tällöin",
+            "sv": "Bara då och då"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f242a6d7-c1fb-4d9f-aa3e-714c94576a24",
+          "answerText": {
+            "en": "No, never",
+            "fi": "Ei, en koskaan",
+            "sv": "Nej, aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 3,
+          "answerId": "c1655bc3-f7c3-4478-bc3e-eb5de49d40be"
+        },
+        {
+          "points": 2,
+          "answerId": "8904a763-c8a9-4e64-8f63-426c4e8b219e"
+        },
+        {
+          "points": 1,
+          "answerId": "e760fd77-e6ab-466c-867b-09016577dee4"
+        },
+        {
+          "points": 0,
+          "answerId": "f242a6d7-c1fb-4d9f-aa3e-714c94576a24"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "618c6636-3b10-463a-ab80-4c4128ce4fe0",
+      "questionText": {
+        "en": "The thought of harming myself has occurred to me",
+        "fi": "Ajatus itseni vahingoittamisesta on tullut mieleeni",
+        "sv": "Har tankar om att göra mig själv illa förekommit"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a7121ccc-5483-432b-9a93-cf14df657d27",
+          "answerText": {
+            "en": "Yes, quite often",
+            "fi": "Kyllä, melko usein",
+            "sv": "Ja, ganska ofta"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5e6d6cc1-de1d-4ef0-ac02-fc8b278a3eb5",
+          "answerText": {
+            "en": "Sometimes",
+            "fi": "Joskus",
+            "sv": "Ja, ibland"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fcd63b45-937f-4b4d-85c1-fa99618878ba",
+          "answerText": {
+            "en": "Hardly ever",
+            "fi": "Tuskin koskaan",
+            "sv": "Nästan aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "42e31797-99fa-4650-ba3c-1cf4f4440693",
+          "answerText": {
+            "en": " Never",
+            "fi": "Ei koskaan",
+            "sv": "Nej, aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 3,
+          "answerId": "a7121ccc-5483-432b-9a93-cf14df657d27"
+        },
+        {
+          "points": 2,
+          "answerId": "5e6d6cc1-de1d-4ef0-ac02-fc8b278a3eb5"
+        },
+        {
+          "points": 1,
+          "answerId": "fcd63b45-937f-4b4d-85c1-fa99618878ba"
+        },
+        {
+          "points": 0,
+          "answerId": "42e31797-99fa-4650-ba3c-1cf4f4440693"
+        }
+      ],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "868229b5-8b6f-4414-ac3d-a0380ac3e7c4",
+      "name": {
+        "en": "Instruction",
+        "fi": "Ohje",
+        "sv": "Instruktion"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "4c3e701d-c504-4f5a-9a91-e6f04837bba1",
+      "name": {
+        "en": "Mood",
+        "fi": "Mieliala",
+        "sv": "Humör"
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "form",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": true,
+  "scoreCalculations": [
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 30,
+      "title": {
+        "en": "A professional will discuss the survey results with you.",
+        "fi": "Ammattilainen käsittelee kyselyn tulokset kanssasi",
+        "sv": "En professionell kommer att diskutera undersökningsresultaten med dig"
+      },
+      "summaries": []
+    }
+  ],
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [
+      {
+        "companyId": 6,
+        "companyPayerType": "primary-healthcare",
+        "internalName": "Anonymous"
+      }
+    ]
+  }
+}
