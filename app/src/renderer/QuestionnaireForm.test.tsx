@@ -107,13 +107,13 @@ describe("QuestionnaireForm", () => {
     render(<QuestionnaireForm questionnaire={everyType} lang="fi" />);
     expect(screen.getByRole("heading", { level: 1, name: "Kaikki tyypit" })).toBeInTheDocument();
     expect(screen.getByText(/Rivi 1/)).toHaveTextContent("Rivi 1 Rivi 2");
-    expect(screen.getByRole("region", { name: "Ryhmä" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 2, name: "Ryhmä" })).toBeInTheDocument();
     expect(screen.getByText("Ohje")).toBeInTheDocument();
   });
 
   it("renders a control for every item type, and names the unsupported one", () => {
     render(<QuestionnaireForm questionnaire={everyType} lang="fi" />);
-    expect(within(screen.getByRole("group", { name: /Tupakoitko/ })).getAllByRole("radio")).toHaveLength(2);
+    expect(within(screen.getByRole("radiogroup", { name: /Tupakoitko/ })).getAllByRole("radio")).toHaveLength(2);
     expect(within(screen.getByRole("group", { name: "Sairaudet" })).getAllByRole("checkbox")).toHaveLength(2);
     expect(within(screen.getByRole("combobox", { name: "Maa" })).getAllByRole("option")).toHaveLength(12);
     expect(screen.getByRole("textbox", { name: "Nimi" })).toBeInTheDocument();
@@ -124,7 +124,7 @@ describe("QuestionnaireForm", () => {
     expect(screen.getByLabelText("Päivä")).toHaveAttribute("type", "date");
     expect(screen.getByLabelText("Aika")).toHaveAttribute("type", "datetime-local");
     expect(screen.getByLabelText("Kello")).toHaveAttribute("type", "time");
-    expect(within(screen.getByRole("group", { name: "Onko?" })).getAllByRole("radio")).toHaveLength(2);
+    expect(within(screen.getByRole("radiogroup", { name: "Onko?" })).getAllByRole("radio")).toHaveLength(2);
     expect(screen.getByRole("textbox", { name: "Sivu" })).toHaveAttribute("type", "url");
     expect(screen.getByText(/Kysymystyyppiä ei tueta: attachment/)).toBeInTheDocument();
     expect(screen.getByRole("status", { name: "Pisteet" })).toHaveTextContent("0");
@@ -134,7 +134,7 @@ describe("QuestionnaireForm", () => {
   it("marks required questions for sight and for screen readers", () => {
     render(<QuestionnaireForm questionnaire={everyType} lang="fi" />);
     // The asterisk is aria-hidden; screen readers hear the word instead.
-    const group = screen.getByRole("group", { name: /^Tupakoitko\?\s*\(pakollinen\)$/ });
+    const group = screen.getByRole("radiogroup", { name: /^Tupakoitko\?\s*\(pakollinen\)$/ });
     expect(group).toHaveAttribute("aria-required", "true");
     expect(group).toHaveTextContent("Tupakoitko? *");
   });
@@ -143,7 +143,7 @@ describe("QuestionnaireForm", () => {
     const user = userEvent.setup();
     render(<QuestionnaireForm questionnaire={everyType} lang="fi" />);
 
-    const smoke = within(screen.getByRole("group", { name: /Tupakoitko/ }));
+    const smoke = within(screen.getByRole("radiogroup", { name: /Tupakoitko/ }));
     await user.click(smoke.getByRole("radio", { name: "Kyllä" }));
     await user.click(smoke.getByRole("radio", { name: "Ei" }));
     expect(smoke.getByRole("radio", { name: "Ei" })).toBeChecked();
@@ -164,8 +164,8 @@ describe("QuestionnaireForm", () => {
     await user.type(screen.getByRole("textbox", { name: "Nimi" }), "Maija");
     expect(screen.getByRole("textbox", { name: "Nimi" })).toHaveValue("Maija");
 
-    await user.click(within(screen.getByRole("group", { name: "Onko?" })).getByRole("radio", { name: "Kyllä" }));
-    expect(within(screen.getByRole("group", { name: "Onko?" })).getByRole("radio", { name: "Kyllä" })).toBeChecked();
+    await user.click(within(screen.getByRole("radiogroup", { name: "Onko?" })).getByRole("radio", { name: "Kyllä" }));
+    expect(within(screen.getByRole("radiogroup", { name: "Onko?" })).getByRole("radio", { name: "Kyllä" })).toBeChecked();
   });
 
   it("keeps what is typed in a number field even before it is a valid number", async () => {
@@ -182,10 +182,10 @@ describe("QuestionnaireForm", () => {
   it("switches language without losing answers", async () => {
     const user = userEvent.setup();
     const { rerender } = render(<QuestionnaireForm questionnaire={everyType} lang="fi" />);
-    await user.click(within(screen.getByRole("group", { name: /Tupakoitko/ })).getByRole("radio", { name: "Kyllä" }));
+    await user.click(within(screen.getByRole("radiogroup", { name: /Tupakoitko/ })).getByRole("radio", { name: "Kyllä" }));
     rerender(<QuestionnaireForm questionnaire={everyType} lang="sv" />);
     expect(screen.getByRole("heading", { level: 1, name: "Alla typer" })).toBeInTheDocument();
-    const smoke = within(screen.getByRole("group", { name: /^Röker du\?\s*\(obligatorisk\)$/ }));
+    const smoke = within(screen.getByRole("radiogroup", { name: /^Röker du\?\s*\(obligatorisk\)$/ }));
     expect(smoke.getByRole("radio", { name: "Ja" })).toBeChecked();
     // Untranslated texts fall back to the questionnaire's own language.
     expect(screen.getByText("Ohje")).toBeInTheDocument();

@@ -127,6 +127,11 @@ main {
 
 /* List */
 
+.list-title {
+  font-size: 1.5rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
 .intro {
   margin-top: 0;
 }

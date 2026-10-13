@@ -24,14 +24,14 @@ describe("filling in PHQ-9", () => {
     expect(summary).toHaveTextContent(`Lomakkeesta puuttuu vielä ${required} kohtaa:`);
     expect(within(summary).getAllByRole("listitem")).toHaveLength(required);
     expect(summary).toHaveFocus();
-    const first = screen.getAllByRole("group").find((group) => group.getAttribute("aria-invalid") === "true")!;
+    const first = screen.getAllByRole("radiogroup").find((group) => group.getAttribute("aria-invalid") === "true")!;
     expect(first).toHaveAccessibleDescription("Vastaa tähän kysymykseen.");
 
     // The summary moves focus to the question.
     await user.click(within(summary).getAllByRole("button")[0]!);
     expect(document.activeElement).toBe(within(first).getAllByRole("radio")[0]);
 
-    for (const group of screen.getAllByRole("group")) {
+    for (const group of screen.getAllByRole("radiogroup")) {
       const radios = within(group).queryAllByRole("radio");
       if (radios.length > 0) await user.click(radios.at(-1)!);
     }

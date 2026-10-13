@@ -173,6 +173,7 @@ function QuestionnaireList(props: {
 
   return (
     <>
+      <h1 className="list-title">{t("listTitle", lang)}</h1>
       <p className="intro">{t("intro", lang)}</p>
       <div className="open-file">
         <label className="button">

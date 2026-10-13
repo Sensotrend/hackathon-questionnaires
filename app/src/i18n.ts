@@ -4,6 +4,7 @@ import type { Lang } from "./fhir/text.ts";
 
 const strings = {
   appTitle: { fi: "Esitietolomakkeet", sv: "Förhandsformulär", en: "Pre-visit questionnaires" },
+  listTitle: { fi: "Valitse lomake", sv: "Välj formulär", en: "Choose a questionnaire" },
   intro: {
     fi: "Valitse lomake täytettäväksi. Vastauksia ei tallenneta eikä lähetetä minnekään.",
     sv: "Välj ett formulär att fylla i. Svaren sparas inte och skickas ingenstans.",

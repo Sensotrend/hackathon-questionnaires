@@ -24,7 +24,12 @@ export function FromRecord({ item }: { item: QuestionnaireItem }) {
           <button type="button" className="link-button" aria-expanded={open} onClick={() => setOpen(!open)}>
             {t("showSource", lang)}
           </button>
-          {open && <pre className="source-json">{JSON.stringify(provenance.sources.map((source) => source.resource), null, 2)}</pre>}
+          {open && (
+            // Focusable and named, so the scrolling JSON can be read with a keyboard.
+            <pre className="source-json" tabIndex={0} role="region" aria-label={t("showSource", lang)}>
+              {JSON.stringify(provenance.sources.map((source) => source.resource), null, 2)}
+            </pre>
+          )}
         </>
       )}
     </div>

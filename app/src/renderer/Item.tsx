@@ -38,7 +38,9 @@ export function Item({ item, depth }: { item: QuestionnaireItem; depth: number }
   if (item.type === "group") {
     const Heading = depth === 0 ? "h2" : "h3";
     return (
-      <section className="group" aria-labelledby={fieldId(item)}>
+      // Not a landmark: questionnaires have dozens of sections, some with the
+      // same title; the headings give the structure.
+      <section className="group">
         {text && (
           <Heading id={fieldId(item)} className="text">
             {text}

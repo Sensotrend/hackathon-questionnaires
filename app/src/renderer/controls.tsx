@@ -42,10 +42,20 @@ function Label({ item, label }: ControlProps) {
   );
 }
 
-/** A fieldset with the question text as legend, for groups of radio buttons or checkboxes. */
+/**
+ * A fieldset with the question text as legend, for groups of radio buttons
+ * or checkboxes. Radio buttons make a radiogroup, which can be marked
+ * required; for checkboxes the legend's "(required)" says it.
+ */
 function Fieldset({ item, label, children }: ControlProps & { children: ReactNode }) {
+  const single = !item.repeats;
   return (
-    <fieldset id={fieldId(item)} aria-required={item.required || undefined} {...useIssueProps(item)}>
+    <fieldset
+      id={fieldId(item)}
+      role={single ? "radiogroup" : undefined}
+      aria-required={(single && item.required) || undefined}
+      {...useIssueProps(item)}
+    >
       <legend className="question-text text">
         {label}
         <RequiredMark item={item} />

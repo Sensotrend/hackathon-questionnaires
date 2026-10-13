@@ -227,7 +227,9 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
           <button type="button" onClick={download}>
             {t("download", lang)}
           </button>
-          <pre>{json}</pre>
+          <pre tabIndex={0} role="region" aria-label={t("response", lang)}>
+            {json}
+          </pre>
         </details>
       </article>
     </FormContext>
