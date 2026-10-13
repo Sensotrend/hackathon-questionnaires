@@ -2,7 +2,8 @@
   "$comment": [
     "The two categories (inattention, hyperactivity/impulsivity) alternate question by question: they are the scoring sub-scales, not sections, so no groups.",
     "No Questionnaire.code: LOINC has no ADHD-RS panel (searched on tx.fhir.org, LOINC 2.82, 2026-10-13).",
-    "Score titles: in the source the en titles are 'Points' or Finnish. fi and sv are kept; en is translated here, keeping the T and YI abbreviations the fi and sv titles use."
+    "Score titles: in the source the en titles are 'Points' or Finnish. fi and sv are kept; en is translated here, keeping the T and YI abbreviations the fi and sv titles use.",
+    "Texts: the en category names are untranslated Finnish; translated here."
   ],
   "structure": "flat",
   "scores": {
@@ -26,6 +27,14 @@
         "sv": "Alla poäng sammanlagt",
         "en": "Total score"
       }
+    }
+  },
+  "texts": {
+    "75e1dd33-8ff3-4054-bca9-9361db377b49": {
+      "en": "Inattention"
+    },
+    "a29bc566-50c1-4ad5-8ea9-0daa7c5305e4": {
+      "en": "Hyperactivity/impulsivity"
     }
   }
 }

@@ -1,0 +1,1192 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "2a81c844-8e43-4f20-b86e-1ab3f64905ff",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/2a81c844-8e43-4f20-b86e-1ab3f64905ff",
+  "version": "b372b611-5359-48b0-83b6-b2a6b4c0900d",
+  "name": "DepressionQuestionnaireBDI21AnswerOptions",
+  "status": "active",
+  "date": "2026-05-07T11:06:46.329Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/2a81c844-8e43-4f20-b86e-1ab3f64905ff: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 84,
+  "concept": [
+    {
+      "code": "e82bf2ef-dd7f-4cda-8fd1-66f615c033a9",
+      "display": "En ole surullinen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är inte sorgsen"
+        },
+        {
+          "language": "en",
+          "value": "I do not feel sad"
+        }
+      ]
+    },
+    {
+      "code": "44e902f9-be29-4287-9450-6a9dc2338011",
+      "display": "Olen alakuloinen ja surullinen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är sorgsen"
+        },
+        {
+          "language": "en",
+          "value": "I feel sad"
+        }
+      ]
+    },
+    {
+      "code": "a512602e-7511-44e6-bdff-d4c366a1e0a5",
+      "display": "Olen tuskastumiseen asti surullinen ja alakuloinen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är hela tiden nedstämd och sorgsen och kommer inte i från det"
+        },
+        {
+          "language": "en",
+          "value": "I am sad all the time and I can't snap out of it"
+        }
+      ]
+    },
+    {
+      "code": "f28440f0-742a-48b4-ad3d-de0207941d92",
+      "display": "Olen niin onneton, etten enää kestä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är så olycklig att jag inte står ut längre"
+        },
+        {
+          "language": "en",
+          "value": "I am so sad and unhappy that I can't stand it"
+        }
+      ]
+    },
+    {
+      "code": "2ba5fc2d-56b3-421b-85ec-bc22e63f6d05",
+      "display": "Tulevaisuus ei masenna eikä pelota minua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är inte särskilt rädd för framtiden"
+        },
+        {
+          "language": "en",
+          "value": "I am not particularly discouraged about the future"
+        }
+      ]
+    },
+    {
+      "code": "be569774-4990-48b1-aaf3-c7c88afbaeb6",
+      "display": "Tulevaisuus pelottaa minua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Framtiden oroar mig"
+        },
+        {
+          "language": "en",
+          "value": "I feel discouraged about the future"
+        }
+      ]
+    },
+    {
+      "code": "af0a88fd-f658-4390-9e91-b2cd9f441f53",
+      "display": "Minusta tuntuu, ettei tulevaisuudella ole tarjottavanaan minulle juuri mitään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Det känns som om jag inte har någonting att vänta av framtiden"
+        },
+        {
+          "language": "en",
+          "value": "I feel I have nothing to look forward to"
+        }
+      ]
+    },
+    {
+      "code": "c9fbe571-a88b-4d1c-bacb-d7056e4c6980",
+      "display": "Minusta tuntuu, että tulevaisuus on toivoton. En jaksa uskoa, että asiat muuttuvat tästä parempaan päin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Framtiden känns så hopplös för mig att jag inte orkar tro att det blir en vändning till det bättre"
+        },
+        {
+          "language": "en",
+          "value": "I feel the future is hopeless and that things cannot improve"
+        }
+      ]
+    },
+    {
+      "code": "b73644a2-0deb-4a1d-b97a-f1d4957da2ea",
+      "display": "En tunne epäonnistuneeni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag tycker inte att jag har misslyckats i livet"
+        },
+        {
+          "language": "en",
+          "value": "I do not feel like a failure"
+        }
+      ]
+    },
+    {
+      "code": "2e099886-f00a-4b70-9356-baad3f6f5d0d",
+      "display": "Minusta tuntuu, että olen epäonnistunut useammin kuin muut ihmiset",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag tycker att jag har misslyckats oftare än andra människor"
+        },
+        {
+          "language": "en",
+          "value": "I feel I have failed more than the average person"
+        }
+      ]
+    },
+    {
+      "code": "b4cd218d-b9af-4c1b-93de-04c03e03dd59",
+      "display": "Elämäni on tähän saakka ollut vain sarja epäonnistumisia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt liv har hittills bara varit ett enda misslyckande"
+        },
+        {
+          "language": "en",
+          "value": "As I look back on my life, all I can see is a lot of failures"
+        }
+      ]
+    },
+    {
+      "code": "87afd4c0-bdc3-4e78-b5f0-12e513d9dc5e",
+      "display": "Minusta tuntuu, että olen täysin epäonnistunut ihmisenä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag känner mig fullständigt misslyckad som människa"
+        },
+        {
+          "language": "en",
+          "value": "I feel I am a complete failure as a person"
+        }
+      ]
+    },
+    {
+      "code": "7fcd5f7a-b633-4964-a322-66f1f0ed5f58",
+      "display": "En ole erityisen haluton",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är inte särskilt missnöjd"
+        },
+        {
+          "language": "en",
+          "value": "I get as much satisfaction out of things as I used to"
+        }
+      ]
+    },
+    {
+      "code": "b7e18ab6-0966-4c0d-b6f1-07d23e2730d3",
+      "display": "En osaa nauttia asioista niin kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag njuter inte av saker på samma sätt som förr"
+        },
+        {
+          "language": "en",
+          "value": "I don't enjoy things the way I used to"
+        }
+      ]
+    },
+    {
+      "code": "a2751edd-feeb-4123-952b-6667e7542214",
+      "display": "Minusta tuntuu, etten saa tyydytystä juuri mistään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag får inte mera verklig tillfredsställelse av någonting"
+        },
+        {
+          "language": "en",
+          "value": "I don't get real satisfaction out of anything anymore"
+        }
+      ]
+    },
+    {
+      "code": "a74f9aeb-5a45-4f47-b963-e79f38e84e99",
+      "display": "Olen haluton ja tyytymätön kaikkeen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är missnöjd och utled på allt"
+        },
+        {
+          "language": "en",
+          "value": "I am dissatisfied or bored with everything"
+        }
+      ]
+    },
+    {
+      "code": "1de4387b-7a56-4079-8b57-87608dfb1463",
+      "display": "En tunne erityisemmin syyllisyyttä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag känner mig inte särskilt skuldmedveten för någonting"
+        },
+        {
+          "language": "en",
+          "value": "I don't feel particularly guilty"
+        }
+      ]
+    },
+    {
+      "code": "f0327a86-1bfd-4c32-99dd-a3c9dcd72e4b",
+      "display": "Minusta tuntuu, että olen aika huono ja kelvoton",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har ofta skuldkänslor"
+        },
+        {
+          "language": "en",
+          "value": "I feel guilty a good part of the time"
+        }
+      ]
+    },
+    {
+      "code": "622cbf59-3038-42b0-8fce-178616d137f6",
+      "display": "Nykyään tunnen itseni huonoksi ja kelvottomaksi melkein aina",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har rätt kraftiga skuldkänslor största delen av tiden"
+        },
+        {
+          "language": "en",
+          "value": "I feel quite guilty most of the time"
+        }
+      ]
+    },
+    {
+      "code": "62686011-fba4-4ec7-81e5-f526d010bcfe",
+      "display": "Tunnen olevani erittäin huono ja arvoton",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har skuldkänslor precis hela tiden"
+        },
+        {
+          "language": "en",
+          "value": "I feel guilty all of the time"
+        }
+      ]
+    },
+    {
+      "code": "3afb8721-2d5e-46a3-80df-29c01d5d3932",
+      "display": "En koe, että minua rangaistaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag tycker inte att jag blir bestraffad"
+        },
+        {
+          "language": "en",
+          "value": "I don't feel I am being punished"
+        }
+      ]
+    },
+    {
+      "code": "27072d51-3199-4a38-85bf-ba681f222154",
+      "display": "Tunnen, että jotain pahaa voi sattua minulle",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag tror att jag kanske blir bestraffad"
+        },
+        {
+          "language": "en",
+          "value": "I feel I may be punished"
+        }
+      ]
+    },
+    {
+      "code": "f110d34f-2732-42a5-b44b-c284168ed5c6",
+      "display": "Uskon, että kohtalo rankaisee minua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag förvantar mig att bli bestraffad"
+        },
+        {
+          "language": "en",
+          "value": "I expect to be punished"
+        }
+      ]
+    },
+    {
+      "code": "b456ebdc-7cba-47ab-b905-f19fa071f549",
+      "display": "Tunnen, että olen tehnyt sellaista, josta minua on syytäkin rangaista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag känner att jag nu blir bestraffad"
+        },
+        {
+          "language": "en",
+          "value": "I feel I am being punished"
+        }
+      ]
+    },
+    {
+      "code": "5ed3553b-fa2b-452b-b5b3-e20a6e48b8de",
+      "display": "En ole pettynyt itseeni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är inte besviken på mig själv"
+        },
+        {
+          "language": "en",
+          "value": "I don't feel disappointed in myself"
+        }
+      ]
+    },
+    {
+      "code": "76c6d040-8de7-4a5f-bdaa-6c5687d7c1fd",
+      "display": "Olen pettynyt itseeni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är besviken på mig själv"
+        },
+        {
+          "language": "en",
+          "value": "I am disappointed in myself"
+        }
+      ]
+    },
+    {
+      "code": "acda8aee-92cd-418f-9d98-1570bd54a563",
+      "display": "Inhoan itseäni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag avskyr mig själv"
+        },
+        {
+          "language": "en",
+          "value": "I am disgusted with myself"
+        }
+      ]
+    },
+    {
+      "code": "7e83663f-051b-45d0-aef6-12cdba3837fa",
+      "display": "Vihaan itseäni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag hatar mig själv"
+        },
+        {
+          "language": "en",
+          "value": "I hate myself"
+        }
+      ]
+    },
+    {
+      "code": "4a001e49-281f-48d3-a9a6-6004e3ce9bdb",
+      "display": "Tunnen, että olen yhtä hyvä kuin muutkin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag tycker att jag är lika bra som vilken annan som helst"
+        },
+        {
+          "language": "en",
+          "value": "I don't feel I am any worse than anybody else"
+        }
+      ]
+    },
+    {
+      "code": "7f9a5e27-1803-46ca-a305-f4efec5bee69",
+      "display": "Kritisoin itseäni heikkouksista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag förhåller mig kritiskt till mig själv på grund av mina svagheter och misstag"
+        },
+        {
+          "language": "en",
+          "value": "I am critical of myself for my weaknesses or mistakes"
+        }
+      ]
+    },
+    {
+      "code": "d9623991-a682-4810-8852-00dcfede1f8d",
+      "display": "Moitin itseäni virheistäni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag klandrar mig själv för mina fel och brister"
+        },
+        {
+          "language": "en",
+          "value": "I blame myself all the time for my faults"
+        }
+      ]
+    },
+    {
+      "code": "e4fe727f-2532-4f39-8c86-e89929e42883",
+      "display": "Moitin itseäni kaikesta, mikä \"menee pieleen\"",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag anser mig själv vara helt oduglig"
+        },
+        {
+          "language": "en",
+          "value": "I blame myself for everything bad that happens"
+        }
+      ]
+    },
+    {
+      "code": "ba117949-fa9c-4b83-a5d3-0632e5503eae",
+      "display": "En ole ajatellut vahingoittaa itseäni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har inga tankar på självmord"
+        },
+        {
+          "language": "en",
+          "value": "I don't have any thoughts of killing myself"
+        }
+      ]
+    },
+    {
+      "code": "cf5fcdec-ae16-4dd2-b9e2-9dc61d711433",
+      "display": "Olen joskus ajatellut itseni vahingoittamista, mutten kuitenkaan tee niin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har haft självmordstankar men ämnar ändå inte begå självmord"
+        },
+        {
+          "language": "en",
+          "value": "I have thoughts of killing myself, but I would not carry them out"
+        }
+      ]
+    },
+    {
+      "code": "96e89bc6-8045-4f3c-bbcc-5005597bfe12",
+      "display": "Mielessäni on selvät itsemurhasuunnitelmat",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag skulle vilja begå självmord"
+        },
+        {
+          "language": "en",
+          "value": "I would like to kill myself"
+        }
+      ]
+    },
+    {
+      "code": "3b9d83b0-a4b4-45c6-b246-f9a277ed2f37",
+      "display": "Tapan itseni, kun siihen tulee tilaisuus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag skulle begå självmord om jag fick en möjlighet till det"
+        },
+        {
+          "language": "en",
+          "value": "I would kill myself if I had the chance"
+        }
+      ]
+    },
+    {
+      "code": "6d230207-8c8f-4b96-b514-b3503aa7ca57",
+      "display": "En itke tavallista enempää",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag gråter inte mera än vanligt"
+        },
+        {
+          "language": "en",
+          "value": "I don't cry any more than usual"
+        }
+      ]
+    },
+    {
+      "code": "afab686d-2535-4f60-ab21-5689403470e5",
+      "display": "Itken nykyään aiempaa enemmän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nuförtiden gråter jag mera än förr"
+        },
+        {
+          "language": "en",
+          "value": "I cry more now than I used to"
+        }
+      ]
+    },
+    {
+      "code": "43b0c538-7893-4763-8c4c-c84b7d4a9eb9",
+      "display": "Itken nykyään jatkuvasti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag gråter hela tiden"
+        },
+        {
+          "language": "en",
+          "value": "I cry all the time now"
+        }
+      ]
+    },
+    {
+      "code": "f9b3d2e0-c85e-4b42-be30-12b8821605c8",
+      "display": "En kykene enää itkemään, vaikka haluaisin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Förr kunde jag gråta men nu kan jag inte gråta fastän jag vill"
+        },
+        {
+          "language": "en",
+          "value": "I used to be able to cry, but now I can't cry even though I want to"
+        }
+      ]
+    },
+    {
+      "code": "95ece01c-92e9-4312-89eb-b74b953c28c2",
+      "display": "En ole sen ärtyneempi kuin ennenkään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är inte mera retlig än tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I am no more irritated by things than I ever was"
+        }
+      ]
+    },
+    {
+      "code": "29db95e1-9c24-45d1-a256-c1a1b855eede",
+      "display": "Ärsyynnyn aiempaa herkemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nuförtiden blig jag lättare irriterad än tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I am slightly more irritated now than usual"
+        }
+      ]
+    },
+    {
+      "code": "7679bf19-0365-4d09-9983-f34b3794473b",
+      "display": "Tunnen, että olen ärtynyt koko ajan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag känner mig irriterad hela tiden"
+        },
+        {
+          "language": "en",
+          "value": "I am quite annoyed or irritated a good deal of the time"
+        }
+      ]
+    },
+    {
+      "code": "2c50d191-28b1-4be7-bf1d-55237221a45d",
+      "display": "Minua eivät enää liikuta asiat, joista aiemmin raivostuin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Saker som förr fick mig att bli rasande irriterar mig inte längre"
+        },
+        {
+          "language": "en",
+          "value": "I feel irritated all the time"
+        }
+      ]
+    },
+    {
+      "code": "ebfb2f90-bb01-40e6-9a02-2db89c7827f1",
+      "display": "Olen edelleen kiinnostunut muista ihmisistä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är intresserad av andra människor"
+        },
+        {
+          "language": "en",
+          "value": "I have not lost interest in other people"
+        }
+      ]
+    },
+    {
+      "code": "21450cbf-8a63-4e25-8fee-619d937a481d",
+      "display": "Muut kiinnostavat minua aiempaa vähemmän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Andra människor intresserar mig inte lika mycket som tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I am less interested in other people than I used to be"
+        }
+      ]
+    },
+    {
+      "code": "01caf2af-e9fb-4215-87cc-9c21cd12dd59",
+      "display": "Kiinnostukseni ja tunteeni muita kohtaan ovat miltei kadonneet",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har nästan helt förlorat mitt intresse och mina känslor för andra människor"
+        },
+        {
+          "language": "en",
+          "value": "I have lost most of my interest in other people"
+        }
+      ]
+    },
+    {
+      "code": "f7d5fdb9-c726-4384-ba42-19b72a2e76c9",
+      "display": "Olen menettänyt kaiken mielenkiintoni muita kohtaan, enkä välitä heistä enää lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har helt förlorat intresset för andra människor"
+        },
+        {
+          "language": "en",
+          "value": "I have lost all of my interest in other people"
+        }
+      ]
+    },
+    {
+      "code": "62cac402-6098-4eb1-93c1-1c62aa5a437f",
+      "display": "Pystyn tekemään päätöksiä, kuten ennenkin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan fatta beslut på samma sätt som förr"
+        },
+        {
+          "language": "en",
+          "value": "I make decisions about as well as I ever could"
+        }
+      ]
+    },
+    {
+      "code": "68f91e1b-1477-439b-9a29-96ea188f0f78",
+      "display": "Yritän lykätä päätöksentekoa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag uppskjuter mina beslut i högre grad än tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I put off making decisions more than I used to"
+        }
+      ]
+    },
+    {
+      "code": "cfd8315e-80c2-4e91-9268-e2177b4df35d",
+      "display": "Minun on hyvin vaikeata tehdä päätöksiä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Det är mycket svårt för mig att fatta beslut"
+        },
+        {
+          "language": "en",
+          "value": "I have greater difficulty in making decisions more than I used to"
+        }
+      ]
+    },
+    {
+      "code": "2d0e49ad-4fc6-4746-8b46-087d58d5197b",
+      "display": "En pysty enää lainkaan tekemään päätöksiä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är helt oförmögen att fatta beslut"
+        },
+        {
+          "language": "en",
+          "value": "I can't make decisions at all anymore"
+        }
+      ]
+    },
+    {
+      "code": "c2fddf59-59ba-4c0d-8429-6747beaf1626",
+      "display": "Mielestäni ulkonäköni ei ole muuttunut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag tror att jag har bibehållit mitt utseende"
+        },
+        {
+          "language": "en",
+          "value": "I don't feel that I look any worse than I used to"
+        }
+      ]
+    },
+    {
+      "code": "147587d0-57ec-469a-9523-c7e16f707268",
+      "display": "Olen huolissani siitä, että näytän vanhalta tai etten näytä miellyttävältä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är rädd att jag ser gammal och oattraktiv ut"
+        },
+        {
+          "language": "en",
+          "value": "I am worried that I am looking old or unattractive"
+        }
+      ]
+    },
+    {
+      "code": "ba2df1de-fd2d-4560-a85f-be402b61ef5f",
+      "display": "Minusta tuntuu, että ulkonäköni on muuttunut pysyvästi niin, etten näytä miellyttävältä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag tycker att mitt utseende har förandrats bestående och att jag nu är oattraktiv"
+        },
+        {
+          "language": "en",
+          "value": "I feel there are permanent changes in my appearance that make me look unattractive"
+        }
+      ]
+    },
+    {
+      "code": "6548ada5-e384-4d57-862d-cacf2ec34b93",
+      "display": "Tunnen olevani ruma ja vastenmielisen näköinen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är säker på att jag är ful"
+        },
+        {
+          "language": "en",
+          "value": "I believe that I look ugly"
+        }
+      ]
+    },
+    {
+      "code": "9505bd5b-96ed-4cfb-8273-01ba1a08c41f",
+      "display": "Työkykyni on säilynyt ennallaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Min arbetsförmåga är ungefär som tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I can work about as well as before"
+        }
+      ]
+    },
+    {
+      "code": "df3531c1-feac-479e-94ae-abe217a0d22a",
+      "display": "Työn aloittaminen vaatii minulta ylimääräisiä ponnistuksia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Att börja ett arbete kräver extra ansträngningar"
+        },
+        {
+          "language": "en",
+          "value": "It takes an extra effort to get started at doing something"
+        }
+      ]
+    },
+    {
+      "code": "870e1419-9eac-49ab-9587-17b8572374b7",
+      "display": "Saadakseni aikaan jotakin minun on suorastaan pakotettava itseni siihen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag måste tvinga mig själv för att få någonting gjort"
+        },
+        {
+          "language": "en",
+          "value": "I have to push myself very hard to do anything"
+        }
+      ]
+    },
+    {
+      "code": "153fa9ea-a0b2-4204-814a-f109bdab036c",
+      "display": "En kykene lainkaan tekemään työtä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är totalt oförmögen att arbeta"
+        },
+        {
+          "language": "en",
+          "value": "I can't do any work at all"
+        }
+      ]
+    },
+    {
+      "code": "31f061c6-e0ce-4482-8f83-84ddb8285d14",
+      "display": "Nukun yhtä hyvin kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag sover lika bra som tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I can sleep as well as usual"
+        }
+      ]
+    },
+    {
+      "code": "954286a6-ba3f-4164-bad5-8004752385f1",
+      "display": "Olen aamuisin väsyneempi kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag sover inte lika bra som tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I don't sleep as well as I used to"
+        }
+      ]
+    },
+    {
+      "code": "d648e996-dd0f-4d22-b7f6-6fb22dd34766",
+      "display": "Herään nykyisin 1-2 tuntia normaalia aikaisemmin enkä nukahda enää uudelleen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag vaknar 1-2 tidigare än vanligt och har svårt att somna in på nytt"
+        },
+        {
+          "language": "en",
+          "value": "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep"
+        }
+      ]
+    },
+    {
+      "code": "d155f5fa-9048-41ca-a968-76c9b247f479",
+      "display": "Herään aikaisin joka aamu, enkä pysty nukkumaan viittä tuntia pitempään yhtäjaksoisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag vaknar flera timmar tidigare än vanligt och kan inte somna in på nytt"
+        },
+        {
+          "language": "en",
+          "value": "I wake up several hours earlier than I used to and cannot get back to sleep"
+        }
+      ]
+    },
+    {
+      "code": "733b1280-b025-40a9-9630-2a4cfa9a7243",
+      "display": "En väsy sen nopeammin kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är inte tröttare än vanligt"
+        },
+        {
+          "language": "en",
+          "value": "I don't get more tired than usual"
+        }
+      ]
+    },
+    {
+      "code": "c1a46ba4-82f9-44bb-8478-fe1ec26c7a30",
+      "display": "Väsyn nopeammin kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag blir snabbare trött än förr"
+        },
+        {
+          "language": "en",
+          "value": "I get tired more easily than I used to"
+        }
+      ]
+    },
+    {
+      "code": "4c1d9358-623a-4c51-97c2-b5ec4394795c",
+      "display": "Väsyn lähes tyhjästä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Också en obetydlig ansträngning gör mig trött"
+        },
+        {
+          "language": "en",
+          "value": "I get tired from doing almost anything"
+        }
+      ]
+    },
+    {
+      "code": "0b775f19-68a4-476d-bc0d-10e7bee94bd7",
+      "display": "Olen liian väsynyt tehdäkseni mitään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är för trött att kunna uträtta något"
+        },
+        {
+          "language": "en",
+          "value": "I am too tired to do anything"
+        }
+      ]
+    },
+    {
+      "code": "a4a4188e-0225-4b05-835a-8416959bb228",
+      "display": "Ruokahaluni on ennallaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Min aptit är som tidigare"
+        },
+        {
+          "language": "en",
+          "value": "My appetite is no worse than usual"
+        }
+      ]
+    },
+    {
+      "code": "7b5a5c67-eaf3-4534-a79e-84718f070dff",
+      "display": "Ruokahaluni on huonompi kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Min aptit är inte lika god som tidigare"
+        },
+        {
+          "language": "en",
+          "value": "My appetite is not as good as it used to be"
+        }
+      ]
+    },
+    {
+      "code": "d9189b69-bf38-4d3c-bace-f565073b52d2",
+      "display": "Ruokahaluni on nyt paljon huonompi kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Min aptit är mycket mindre än tidigare"
+        },
+        {
+          "language": "en",
+          "value": "My appetite is much worse now"
+        }
+      ]
+    },
+    {
+      "code": "5ffb26c2-4a59-4697-b00c-d2af85544643",
+      "display": "Minulla ei ole lainkaan ruokahalua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag saknar totalt aptit"
+        },
+        {
+          "language": "en",
+          "value": "I have no appetite at all anymore"
+        }
+      ]
+    },
+    {
+      "code": "43abaa45-e456-4f82-8070-9dee59dbd171",
+      "display": "Painoni on pysynyt viime aikoina ennallaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Min vikt är som tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I haven't lost much weight, if any, lately"
+        }
+      ]
+    },
+    {
+      "code": "11f34d37-dc84-41b8-97fe-5683b56f6b8f",
+      "display": "Olen laihtunut yli 2,5 kg",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har magrat mer än 2,5 kg"
+        },
+        {
+          "language": "en",
+          "value": "I have lost more than 2,5 kg"
+        }
+      ]
+    },
+    {
+      "code": "3942f704-82a8-47f5-975d-56cc2fb09eff",
+      "display": "Olen laihtunut yli 5 kg",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har magrat mer än 5 kg"
+        },
+        {
+          "language": "en",
+          "value": "I have lost more than 5 kg"
+        }
+      ]
+    },
+    {
+      "code": "10cefe3e-6733-4e34-899e-685bb87771ca",
+      "display": "Olen laihtunut yli 7,5 kg",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har magrat mer än 7,5 kg"
+        },
+        {
+          "language": "en",
+          "value": "I have lost more than 7,5 kg"
+        }
+      ]
+    },
+    {
+      "code": "614bd6aa-b9bb-42b9-aae5-5f129d1b1441",
+      "display": "En ajattele terveyttäni tavallista enempää",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag tänker inte mera än vanligt på min hälsa"
+        },
+        {
+          "language": "en",
+          "value": "I am no more worried about my health than usual"
+        }
+      ]
+    },
+    {
+      "code": "e3dda992-ebcd-45a5-97f6-0c5323a1e189",
+      "display": "Kiinnitän tavallista enemmän huomiota särkyihin ja kipuihin, vatsavaivoihin ja ummetukseen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag oroar mig för kroppsliga besvär såsom värk, smärtor, magbesvär eller förstoppning"
+        },
+        {
+          "language": "en",
+          "value": "I am worried about physical problems like aches, pains, upset stomach, or constipation"
+        }
+      ]
+    },
+    {
+      "code": "d5e9558a-bde1-4559-a658-cc6e453e1a78",
+      "display": "Tarkkailen ruumiintuntemuksiani niin paljon, ettei muille ajatuksille jää aikaa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag oroar mig så mycket för mina kroppsliga besvär att mycket lite tid blir över för andra tankar"
+        },
+        {
+          "language": "en",
+          "value": "I am very worried about physical problems and it's hard to think of much else"
+        }
+      ]
+    },
+    {
+      "code": "ea184966-9157-407c-886b-cd0312785eb6",
+      "display": "Terveyteni ja tuntemusteni ajatteleminen on kokonaan vallannut mieleni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är så orolig för min kroppsliga besvär att jag inte förmår tänka på något annat"
+        },
+        {
+          "language": "en",
+          "value": "I am so worried about my physical problems that I cannot think of anything else"
+        }
+      ]
+    },
+    {
+      "code": "08c4d8b0-4424-4858-86dc-5941c2bf44ce",
+      "display": "Kiinnostukseni sukupuolielämään on pysynyt ennallaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt intresse för sex är som tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I have not noticed any recent change in my interest in sex"
+        }
+      ]
+    },
+    {
+      "code": "5731b223-2a55-4f74-9817-8d0bcec6db76",
+      "display": "Kiinnostukseni sukupuolielämään on vähentynyt",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är mindre intresserad av sex än tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I am less interested in sex than I used to be"
+        }
+      ]
+    },
+    {
+      "code": "cd3e21d2-c592-4559-a13c-89369550c14b",
+      "display": "Kiinnostukseni sukupuolielämään on huomattavasti vähäisempää kuin aikaisemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt intresse för sex är mycket mindre än tidigare"
+        },
+        {
+          "language": "en",
+          "value": "I have almost no interest in sex"
+        }
+      ]
+    },
+    {
+      "code": "45388607-ff4a-4161-9e05-da24c560fb2c",
+      "display": "Olen menettänyt kaiken mielenkiintoni sukupuolielämään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har helt förlorat mitt intresse för sex"
+        },
+        {
+          "language": "en",
+          "value": "I have lost interest in sex completely"
+        }
+      ]
+    }
+  ]
+}

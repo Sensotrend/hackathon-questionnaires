@@ -8,5 +8,8 @@ export const SOURCE_DIR = `${repoRoot}Esitieto_lomakkeet_hackathon_json/`;
 /** Hand-maintained per-questionnaire overrides (§5.6 of the plan). */
 export const OVERRIDES_DIR = `${repoRoot}converter/overrides/`;
 
-/** Where the generated Questionnaires go (§5.7 of the plan). */
-export const OUTPUT_DIR = `${repoRoot}fhir/questionnaires/`;
+/** Where the generated FHIR resources and reports go (§5.7 of the plan). */
+export const FHIR_DIR = `${repoRoot}fhir/`;
+
+/** The HL7 FHIR Validator; not committed, see the README. */
+export const VALIDATOR_JAR = `${repoRoot}tools/validator_cli.jar`;

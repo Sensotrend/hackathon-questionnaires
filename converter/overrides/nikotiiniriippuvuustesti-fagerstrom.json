@@ -1,5 +1,8 @@
 {
-  "$comment": "Score title: in the source the fi title is in English ('Nicotine dependency'). sv and en are kept; fi is translated here.",
+  "$comment": [
+    "Score title: in the source the fi title is in English ('Nicotine dependency'). sv and en are kept; fi is translated here.",
+    "Texts: the category name's ar, de, et, it and ru texts are copies of the English one, so they are dropped."
+  ],
   "scores": {
     "score-total": {
       "title": {
@@ -7,6 +10,17 @@
         "sv": "Nikotinberoende",
         "en": "Nicotine dependency"
       }
+    }
+  },
+  "texts": {
+    "c01cff93-8a11-4c9c-bf50-2c05333c431c": {
+      "remove": [
+        "ar",
+        "de",
+        "et",
+        "it",
+        "ru"
+      ]
     }
   }
 }

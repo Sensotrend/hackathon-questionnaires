@@ -1,0 +1,2032 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "579efd91-a072-418c-9fa4-e311d30faac4",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/579efd91-a072-418c-9fa4-e311d30faac4",
+  "version": "344967ec-df47-4c57-8c44-aa20a3e6b786",
+  "name": "BackgroundInformationFormForUpperSecondaryHealthExaminationStudentHealthCareAnswerOptions",
+  "status": "active",
+  "date": "2026-05-08T06:26:45.014Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/579efd91-a072-418c-9fa4-e311d30faac4: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 144,
+  "concept": [
+    {
+      "code": "a1d0eb27-eac4-4cd8-9e03-d9717507dfc2",
+      "display": "Nainen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Kvinna"
+        },
+        {
+          "language": "en",
+          "value": "Female"
+        }
+      ]
+    },
+    {
+      "code": "f652d348-c385-4a07-ba22-3d17c3fa0b7e",
+      "display": "Mies",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Man"
+        },
+        {
+          "language": "en",
+          "value": "Male"
+        }
+      ]
+    },
+    {
+      "code": "fd118f5b-bfb2-427c-9760-71e6f4c093c4",
+      "display": "Muu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Annat"
+        },
+        {
+          "language": "en",
+          "value": "Other"
+        }
+      ]
+    },
+    {
+      "code": "700d2d87-5ada-4958-9383-ebbea7c87263",
+      "display": "Suomi",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Finska"
+        },
+        {
+          "language": "en",
+          "value": "Finnish"
+        }
+      ]
+    },
+    {
+      "code": "53653e7d-811e-4886-ad43-4f6fd808c424",
+      "display": "Ruotsi",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Svenska"
+        },
+        {
+          "language": "en",
+          "value": "Swedish"
+        }
+      ]
+    },
+    {
+      "code": "1179b4d4-2940-4b6a-b390-3409c161535d",
+      "display": "Englanti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Engelska"
+        },
+        {
+          "language": "en",
+          "value": "English"
+        }
+      ]
+    },
+    {
+      "code": "c6596a68-2c4f-44e3-8592-f43f976d48c6",
+      "display": "Muu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Annat"
+        },
+        {
+          "language": "en",
+          "value": "Other"
+        }
+      ]
+    },
+    {
+      "code": "babbc301-16fc-47f4-8adb-7eb59a2ee624",
+      "display": "Toisen asteen ammatillinen koulutus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "yrkesutbildningsinstitut"
+        },
+        {
+          "language": "en",
+          "value": "upper secondary vocational education and training"
+        }
+      ]
+    },
+    {
+      "code": "96d19bb0-f3a3-4df0-be3f-7db121ffa127",
+      "display": "Lukio",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "gymnasium"
+        },
+        {
+          "language": "en",
+          "value": "general upper secondary school"
+        }
+      ]
+    },
+    {
+      "code": "91d0eac0-1ead-404d-a573-d7d1296817cc",
+      "display": "Hyvin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "bra"
+        },
+        {
+          "language": "en",
+          "value": "Well"
+        }
+      ]
+    },
+    {
+      "code": "c0b5fdf3-ad3a-4c88-85e1-ce45bee666c8",
+      "display": "Kohtalaisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "måttligt bra"
+        },
+        {
+          "language": "en",
+          "value": "Fairly well"
+        }
+      ]
+    },
+    {
+      "code": "d60a4048-3ec0-46c5-88fe-ec449a4b0d10",
+      "display": "Heikosti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dåligt"
+        },
+        {
+          "language": "en",
+          "value": "Poorly"
+        }
+      ]
+    },
+    {
+      "code": "dde6e4ea-0f9d-4d23-a274-88e56ace2c09",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "0c34dc18-2d87-4c25-b5e0-11ce9e1ecadc",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "f7a131ad-067e-4d76-ace5-eddc96d0d6ed",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "66153c16-24c3-4f9d-808c-85e39d764fb8",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "db624fd4-46d9-444a-8ace-cb9ec8e0082a",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "e66b96e6-dbea-47ba-a2d6-f8ae69972a7b",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "760b512c-e2fd-4a8d-ab76-8e54dc5f33ba",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "5e3b3a82-b11c-45df-944f-7cf0e13f5b6a",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "72fd3758-1dfb-4d28-bcf3-83a170d9369e",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "59f7ad04-eff5-45a4-b63f-b56bd8fbbf10",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "J"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "d512b5de-4613-45c8-a47d-ddd146109cd6",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "14f1ffc2-d221-4c93-85ed-a3a375c8c846",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "6e1e7596-fe42-4e1b-bbfd-31d315d403cd",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "3850f278-d092-4959-b5e9-4b42e8bf7d7e",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "589ffd0e-c128-418f-9637-af133849cd09",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "2f2a928e-cd43-4711-9378-ccfb9fffb0cf",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "a5ca70e9-022c-4126-ab06-f91ef761c41a",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "c7f6d21e-be8c-4e3a-a5d5-80a17c10beb5",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "02233943-995d-4db3-ab8c-8b4b6c774649",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "c92c25b7-bdf6-4070-ac64-68805c09a232",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "94c84afd-a9e7-409a-a6ff-8371d55a113a",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "894c8fcd-8744-4f8f-a94e-27af527c0785",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "5d366fcb-fdcd-424e-9a16-0b9fcc9fa5c7",
+      "display": "sekaruokavalio",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "blandkost"
+        },
+        {
+          "language": "en",
+          "value": "omnivore"
+        }
+      ]
+    },
+    {
+      "code": "edae0d98-2212-4512-9a50-b40dbe37d094",
+      "display": "kasvisruoka",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "vegetarisk kost"
+        },
+        {
+          "language": "en",
+          "value": "vegetarian"
+        }
+      ]
+    },
+    {
+      "code": "5761696a-046b-4da4-bfd8-8f30280480c2",
+      "display": "kasvisruoka + maitotuote ja/tai kananmuna",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "vegetarisk kost + mjölkprodukter och/eller ägg"
+        },
+        {
+          "language": "en",
+          "value": "vegetarian + dairy products and/or egg"
+        }
+      ]
+    },
+    {
+      "code": "852f4eae-b894-416f-8efd-d6facc7638cc",
+      "display": "kasvisruoka + kala",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "vegetarisk kost + fisk"
+        },
+        {
+          "language": "en",
+          "value": "vegetarian + fish"
+        }
+      ]
+    },
+    {
+      "code": "b03dd633-f34e-455d-a0e8-49ab8cb93cd5",
+      "display": "vegaaninen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "vegansk kost"
+        },
+        {
+          "language": "en",
+          "value": "vegan"
+        }
+      ]
+    },
+    {
+      "code": "293100cf-ba1e-49fc-84eb-6e688c2ce2f5",
+      "display": "muu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "annan"
+        },
+        {
+          "language": "en",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "code": "a9fcf070-967b-4b2a-9bec-e5887e8df4d2",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "f2fb1dbb-4057-43c1-a444-461f11b05846",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "7ec65005-1688-4c9f-96e5-72b40ecffa55",
+      "display": "0-2 vuotta sitten",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "0–2 år sedan"
+        },
+        {
+          "language": "en",
+          "value": "0-2 years ago"
+        }
+      ]
+    },
+    {
+      "code": "0e4992c9-5c89-434b-a689-f9c8ca252451",
+      "display": "yli 2 vuotta sitten",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "över 2 år sedan"
+        },
+        {
+          "language": "en",
+          "value": "more than 2 years ago"
+        }
+      ]
+    },
+    {
+      "code": "1822cf63-0084-4cba-a4d7-c4e4fab61733",
+      "display": "yli 4 vuotta sitten",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "över 4 år sedan"
+        },
+        {
+          "language": "en",
+          "value": "more than 4 years ago"
+        }
+      ]
+    },
+    {
+      "code": "74d4f08c-a5d6-4e4d-840f-2df4015a8221",
+      "display": "2 kertaa päivässä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2 gånger per dag"
+        },
+        {
+          "language": "en",
+          "value": "twice a day"
+        }
+      ]
+    },
+    {
+      "code": "92c014d7-da2b-49f5-b2af-f242d1a94695",
+      "display": "kerran päivässä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "1 gång per dag"
+        },
+        {
+          "language": "en",
+          "value": "once a day"
+        }
+      ]
+    },
+    {
+      "code": "56f7f92a-42d3-4297-a29f-9c88e1579488",
+      "display": "harvemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan"
+        },
+        {
+          "language": "en",
+          "value": "less often"
+        }
+      ]
+    },
+    {
+      "code": "2bce8227-fd6a-4f4d-bd94-8e9ddc205295",
+      "display": "Painoni on sopiva",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Min vikt är lämplig"
+        },
+        {
+          "language": "en",
+          "value": "I am happy with my weight"
+        }
+      ]
+    },
+    {
+      "code": "e6a0d0c5-2de7-4ff0-962c-e8c7ead17966",
+      "display": "Olen liian laiha",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är för mager"
+        },
+        {
+          "language": "en",
+          "value": "I am too thin"
+        }
+      ]
+    },
+    {
+      "code": "dd820996-9b39-4d26-9d48-6cbb2b1af31d",
+      "display": "Olen liian lihava",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är för tjock"
+        },
+        {
+          "language": "en",
+          "value": "I am too fat"
+        }
+      ]
+    },
+    {
+      "code": "7ed0c00b-6f33-41ae-94ab-8beea620a82a",
+      "display": "En osaa sanoa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan inte säga"
+        },
+        {
+          "language": "en",
+          "value": "I don`t know"
+        }
+      ]
+    },
+    {
+      "code": "76c33c48-daf8-49a9-bd2e-849c738437c6",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "43b1ee39-98bc-4701-a786-daa51436200d",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "285ac99d-160a-46e3-bda6-bfb0650112fc",
+      "display": "päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "c843c691-431f-46fb-9308-db99beaf7a54",
+      "display": "1-3 kertaa viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "1–3 gånger i veckan"
+        },
+        {
+          "language": "en",
+          "value": "1-3 times a week"
+        }
+      ]
+    },
+    {
+      "code": "8c58a08a-52bc-4f8e-963b-cd5ef248e69c",
+      "display": "harvemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan"
+        },
+        {
+          "language": "en",
+          "value": "less often"
+        }
+      ]
+    },
+    {
+      "code": "524c6523-2621-4bf2-baaf-88a0d9567262",
+      "display": "en lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "inte alls"
+        },
+        {
+          "language": "en",
+          "value": "not at all"
+        }
+      ]
+    },
+    {
+      "code": "019ed740-5079-4300-9b39-7d44156b6dbb",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "e9636d85-cb52-4b6a-8ca1-d6613aad0872",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "c085ee63-5de8-4296-91c0-fc92b5db5fc6",
+      "display": "en käytä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder inte"
+        },
+        {
+          "language": "en",
+          "value": "I do not use"
+        }
+      ]
+    },
+    {
+      "code": "a0320cdd-1860-43f0-9946-71faa315ae8e",
+      "display": "olen kokeillut/käytän satunnaisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag har provat/använder sporadiskt"
+        },
+        {
+          "language": "en",
+          "value": "I have tried / use occasionally"
+        }
+      ]
+    },
+    {
+      "code": "cff4aaaa-3cc1-47de-80a7-a04c47ff147c",
+      "display": "käytän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder"
+        },
+        {
+          "language": "en",
+          "value": "I use it"
+        }
+      ]
+    },
+    {
+      "code": "b2bfe458-b6f5-4933-8fce-983fba2edcb0",
+      "display": "tuttavapiirissäni käytetään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "personer i min bekantskapskrets använder"
+        },
+        {
+          "language": "en",
+          "value": "people I know use it"
+        }
+      ]
+    },
+    {
+      "code": "c5d7944e-7515-482f-9f7e-a281508e0180",
+      "display": "en käytä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder inte"
+        },
+        {
+          "language": "en",
+          "value": "I do not use"
+        }
+      ]
+    },
+    {
+      "code": "34bdc68b-7fc1-4b72-80d1-91feba09248c",
+      "display": "olen kokeillut/käytän satunnaisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag har provat/använder sporadiskt"
+        },
+        {
+          "language": "en",
+          "value": "I have tried / use occasionally"
+        }
+      ]
+    },
+    {
+      "code": "79ca3b1a-7116-4eda-853d-d14663fadbe5",
+      "display": "käytän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder"
+        },
+        {
+          "language": "en",
+          "value": "I use it"
+        }
+      ]
+    },
+    {
+      "code": "d2ce6c8f-f60a-455f-bb36-8c898437d9ed",
+      "display": "tuttavapiirissäni käytetään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "personer i min bekantskapskrets använderen"
+        },
+        {
+          "language": "en",
+          "value": "people I know use it"
+        }
+      ]
+    },
+    {
+      "code": "4be0824f-b08b-40ac-929b-732c0ec1f4ad",
+      "display": "en käytä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder inte"
+        },
+        {
+          "language": "en",
+          "value": "I do not use"
+        }
+      ]
+    },
+    {
+      "code": "fe98409b-9cb8-40c3-ace4-b0beeb22a417",
+      "display": "olen kokeillut/käytän satunnaisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag har provat/använder sporadiskt"
+        },
+        {
+          "language": "en",
+          "value": "I have tried / use occasionally"
+        }
+      ]
+    },
+    {
+      "code": "fb03b9e8-3262-4683-a49a-dc6af6925158",
+      "display": "käytän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder"
+        },
+        {
+          "language": "en",
+          "value": "I use it"
+        }
+      ]
+    },
+    {
+      "code": "5aee0e18-8fdb-4605-ab8c-48b0e7ef3cb3",
+      "display": "tuttavapiirissäni käytetään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "personer i min bekantskapskrets använderen"
+        },
+        {
+          "language": "en",
+          "value": "people I know use it"
+        }
+      ]
+    },
+    {
+      "code": "bb0a47d9-2092-46c5-97c6-224bc10ec781",
+      "display": "en käytä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder inte"
+        },
+        {
+          "language": "en",
+          "value": "I do not use"
+        }
+      ]
+    },
+    {
+      "code": "3749173d-d70a-4dd1-9e0b-b6987f3f5fdc",
+      "display": "olen kokeillut/käytän satunnaisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag har provat/använder sporadiskt"
+        },
+        {
+          "language": "en",
+          "value": "I have tried / use occasionally"
+        }
+      ]
+    },
+    {
+      "code": "39c8360e-d0cc-4aff-854b-a9598c313491",
+      "display": "noin kerran kuussa tai harvemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "cirka en gång i månaden eller mer sällan"
+        },
+        {
+          "language": "en",
+          "value": "about once a month or less"
+        }
+      ]
+    },
+    {
+      "code": "d81f813e-bd7f-474b-b03b-ae7d1cf9e351",
+      "display": "2-4 kertaa kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2-4 gånger i månaden"
+        },
+        {
+          "language": "en",
+          "value": "2-4 times a month"
+        }
+      ]
+    },
+    {
+      "code": "1e78eabb-5ab8-46ab-b9af-5f1814f00f7b",
+      "display": "2-3 kertaa viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2-3 gånger i veckan"
+        },
+        {
+          "language": "en",
+          "value": "2-3 times a week"
+        }
+      ]
+    },
+    {
+      "code": "43145773-d1ae-48b1-887e-198466a6cfc7",
+      "display": "4 kertaa viikossa tai useammin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "4 gånger i veckan eller oftare"
+        },
+        {
+          "language": "en",
+          "value": "4 times a week or more"
+        }
+      ]
+    },
+    {
+      "code": "cbccb42b-acd6-4feb-ac9e-d48d755d3c76",
+      "display": "1-2 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "1-2 portioner"
+        },
+        {
+          "language": "en",
+          "value": "1–2 servings"
+        }
+      ]
+    },
+    {
+      "code": "c8353b2d-f5ce-4343-b529-cc2b1883d206",
+      "display": "3-4 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "3-4 portioner"
+        },
+        {
+          "language": "en",
+          "value": "3-4  servings"
+        }
+      ]
+    },
+    {
+      "code": "428b40e4-17b2-4504-b0fd-bff5ff556372",
+      "display": "5-6 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "5-6 portioner"
+        },
+        {
+          "language": "en",
+          "value": "5-6  servings"
+        }
+      ]
+    },
+    {
+      "code": "90cd9ce7-7a54-4c10-a43c-a6db06126f96",
+      "display": "7-9 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "7-9 portioner"
+        },
+        {
+          "language": "en",
+          "value": "7-9  servings"
+        }
+      ]
+    },
+    {
+      "code": "4c3b282d-600d-43cf-b6e7-f17845fe208e",
+      "display": "10 annosta tai enemmän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "10 portioner eller fler"
+        },
+        {
+          "language": "en",
+          "value": "10 or more"
+        }
+      ]
+    },
+    {
+      "code": "6b1087ae-0d61-4acd-86b4-afeb09a1bfba",
+      "display": "en koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "aldrig"
+        },
+        {
+          "language": "en",
+          "value": "never"
+        }
+      ]
+    },
+    {
+      "code": "fab827c4-a14e-4713-9ea9-acae8db23266",
+      "display": "harvemmin kuin kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan än en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "less  than once a month"
+        }
+      ]
+    },
+    {
+      "code": "574cfd4e-221f-4e48-adba-3c60cb4a8566",
+      "display": "kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "once a month"
+        }
+      ]
+    },
+    {
+      "code": "b9033773-fb5c-4337-957d-ee465aa099d8",
+      "display": "kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "once a week"
+        }
+      ]
+    },
+    {
+      "code": "790f7a0a-b7dc-455d-9538-26848f353236",
+      "display": "päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "7225a273-3bc3-4969-be45-6135d3e959db",
+      "display": "käytän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder"
+        },
+        {
+          "language": "en",
+          "value": "I use it"
+        }
+      ]
+    },
+    {
+      "code": "e6ea9484-453b-4ba3-81e3-2749c18040a3",
+      "display": "noin kerran kuussa tai harvemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "cirka en gång i månaden eller mer sällan"
+        },
+        {
+          "language": "en",
+          "value": "about once a month or less"
+        }
+      ]
+    },
+    {
+      "code": "a554410b-1882-4980-9640-069ca37f0ba0",
+      "display": "2-4 kertaa kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2-4 gånger i månaden"
+        },
+        {
+          "language": "en",
+          "value": "2-4 times a month"
+        }
+      ]
+    },
+    {
+      "code": "717e8083-eb1a-46d3-9661-4766e6f107d0",
+      "display": "2-3 kertaa viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2-3 gånger i veckan"
+        },
+        {
+          "language": "en",
+          "value": "2-3 times a week"
+        }
+      ]
+    },
+    {
+      "code": "b756601b-66d3-447c-91de-d5899719d9e6",
+      "display": "4 kertaa viikossa tai useammin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "4 gånger i veckan eller oftare"
+        },
+        {
+          "language": "en",
+          "value": "4 times a week or more"
+        }
+      ]
+    },
+    {
+      "code": "927b6271-adaf-4dbf-b2da-5995378ad3e1",
+      "display": "1-2 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "1-2 portioner"
+        },
+        {
+          "language": "en",
+          "value": "1-2 drinks"
+        }
+      ]
+    },
+    {
+      "code": "f735c64c-818b-4924-9691-ed35a813a78c",
+      "display": "3-4 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "3-4 portioner"
+        },
+        {
+          "language": "en",
+          "value": "3-4 drinks"
+        }
+      ]
+    },
+    {
+      "code": "cd08d7cd-1820-4e3c-8434-61437fdc43ab",
+      "display": "5-6 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "5-6 portioner"
+        },
+        {
+          "language": "en",
+          "value": "5-6 drinks"
+        }
+      ]
+    },
+    {
+      "code": "291db390-1453-4929-8164-b5cd0c7f9bbe",
+      "display": "7-9 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "7-9 portioner"
+        },
+        {
+          "language": "en",
+          "value": "7-9 drinks"
+        }
+      ]
+    },
+    {
+      "code": "85693a4c-ad3c-400b-89b1-83ec7a5dc67b",
+      "display": "10 annosta tai enemmän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "10 portioner eller fler"
+        },
+        {
+          "language": "en",
+          "value": "10 drinks or more"
+        }
+      ]
+    },
+    {
+      "code": "e751e930-22c7-49a5-a3d2-a40c6af50f0a",
+      "display": "en koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "aldrig"
+        },
+        {
+          "language": "en",
+          "value": "never"
+        }
+      ]
+    },
+    {
+      "code": "c2d7c546-658f-4fbf-8481-0892d75d7acb",
+      "display": "harvemmin kuin kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan än en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "less  than once a month"
+        }
+      ]
+    },
+    {
+      "code": "d59cd384-f822-4001-b1ba-d9ea70915b12",
+      "display": "kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "once a month"
+        }
+      ]
+    },
+    {
+      "code": "3bf60436-c005-46f4-bfe5-5b0797b1fe50",
+      "display": "kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "once a week"
+        }
+      ]
+    },
+    {
+      "code": "2c29ec36-5866-4049-a29d-59f5245d7899",
+      "display": "päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "c823ddb8-4d81-4ffd-a573-87f61bfd5a9f",
+      "display": "tuttavapiirissäni käytetään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "personer i min bekantskapskrets använderen"
+        },
+        {
+          "language": "en",
+          "value": "people I know use it"
+        }
+      ]
+    },
+    {
+      "code": "ceb940c9-c302-44cb-9fa8-832963534db2",
+      "display": "en käytä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder inte"
+        },
+        {
+          "language": "en",
+          "value": "I do not use"
+        }
+      ]
+    },
+    {
+      "code": "c6d93bf7-f5ba-48db-9519-62b967beb708",
+      "display": "olen kokeillut/käytän satunnaisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag har provat/använder sporadiskt"
+        },
+        {
+          "language": "en",
+          "value": "I have tried / use occasionally"
+        }
+      ]
+    },
+    {
+      "code": "ed6f57f2-93ef-4d0c-bec8-ef314612e002",
+      "display": "käytän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder"
+        },
+        {
+          "language": "en",
+          "value": "I use it"
+        }
+      ]
+    },
+    {
+      "code": "c879a8b8-3036-45bc-8721-bb968e75c4bd",
+      "display": "tuttavapiirissäni käytetään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "personer i min bekantskapskrets använderen"
+        },
+        {
+          "language": "en",
+          "value": "people I know use it"
+        }
+      ]
+    },
+    {
+      "code": "ce161d30-6d5f-4ac7-b875-7cba770ec171",
+      "display": "en käytä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder inte"
+        },
+        {
+          "language": "en",
+          "value": "I do not use"
+        }
+      ]
+    },
+    {
+      "code": "1a04735d-7d38-41fb-b5b8-67ff485f274a",
+      "display": "olen kokeillut/käytän satunnaisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag har provat/använder sporadiskt"
+        },
+        {
+          "language": "en",
+          "value": "I have tried / use occasionally"
+        }
+      ]
+    },
+    {
+      "code": "bc969c06-d030-400c-8f1b-ae7060cad237",
+      "display": "käytän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag använder"
+        },
+        {
+          "language": "en",
+          "value": "I use it"
+        }
+      ]
+    },
+    {
+      "code": "d797d21d-371c-4d70-b8b7-6d80d915470e",
+      "display": "tuttavapiirissäni käytetään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "personer i min bekantskapskrets använderen"
+        },
+        {
+          "language": "en",
+          "value": "people I know use it"
+        }
+      ]
+    },
+    {
+      "code": "1c9da9ab-4659-4bda-aa8b-1d307f9488c1",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "931346d3-28f6-424a-9317-b02adf8c580f",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "37125291-9291-4bf6-a1a3-4f996b7e23e0",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "1757a4ec-fe72-4894-bc64-2af97a4a0656",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "8dc50ca3-b0b1-465d-9188-b1965c4c4bf8",
+      "display": "en",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "e9bcb061-9a7a-40cf-ba0b-cc5effbe35b2",
+      "display": "kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "09eb1db2-fdd1-46aa-ba18-8d1ae58fe695",
+      "display": "kyllä viimeisen 6 kk aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under de senaste 6 månaderna"
+        },
+        {
+          "language": "en",
+          "value": "Yes, in the last 6 months"
+        }
+      ]
+    },
+    {
+      "code": "81572a8c-758b-4d13-87f9-f5d5161cef70",
+      "display": "en",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "fa8d30f2-7dc2-4c46-89be-4661a72c5fff",
+      "display": "kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "970bfc78-5a90-4ae6-8504-eca1467115e3",
+      "display": "kyllä viimeisen 6 kk aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under de senaste 6 månaderna"
+        },
+        {
+          "language": "en",
+          "value": "Yes, in the last 6 months"
+        }
+      ]
+    },
+    {
+      "code": "5dab30a9-9ed3-4374-b039-a201e05d60dc",
+      "display": "en",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "2f2bcf96-7424-4822-9c55-58b79bc9b03f",
+      "display": "kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "8e4a1480-18cb-4089-a7b0-d1523026512e",
+      "display": "kyllä viimeisen 6 kk aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under de senaste 6 månaderna"
+        },
+        {
+          "language": "en",
+          "value": "Yes, in the last 6 months"
+        }
+      ]
+    },
+    {
+      "code": "b589f3f5-7f90-42cb-9893-ddfa277a430c",
+      "display": "en",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "b9fe6761-3f04-4dff-bdaf-29b0c31c149f",
+      "display": "kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "20f668f0-3405-4fd9-b32d-040b0bed4991",
+      "display": "kyllä viimeisen 6 kk aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under de senaste 6 månaderna"
+        },
+        {
+          "language": "en",
+          "value": "Yes, in the last 6 months"
+        }
+      ]
+    },
+    {
+      "code": "2ca1cc10-e846-403b-b631-f1dd7d9255db",
+      "display": "en",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "ff452d2a-5202-4f14-98d0-b79fde4d6ef5",
+      "display": "kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "dd8c30cc-1557-4d9a-99bf-ad0cf633ae46",
+      "display": "kyllä viimeisen 6 kk aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under de senaste 6 månaderna"
+        },
+        {
+          "language": "en",
+          "value": "Yes, in the last 6 months"
+        }
+      ]
+    },
+    {
+      "code": "2a82aa74-70d2-4e07-b231-323b61d9792e",
+      "display": "en",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "f93ca95e-5238-4027-80fc-3ffeddfd675c",
+      "display": "kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "19d2fbe5-b27a-416e-8405-0468ed52c740",
+      "display": "kyllä viimeisen 6 kk aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under de senaste 6 månaderna"
+        },
+        {
+          "language": "en",
+          "value": "Yes, in the last 6 months"
+        }
+      ]
+    },
+    {
+      "code": "4dbefed3-7933-4c3b-bcda-9ec4cce3f604",
+      "display": "en",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "e017120d-c2dc-4077-90fd-83637d1f811e",
+      "display": "kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "cb638433-3603-4737-bcc1-2bb0598bd249",
+      "display": "kyllä viimeisen 6 kk aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under de senaste 6 månaderna"
+        },
+        {
+          "language": "en",
+          "value": "Yes, in the last 6 months"
+        }
+      ]
+    },
+    {
+      "code": "fd32be7a-8c9a-4e1a-a346-b01d39449ef5",
+      "display": "en",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "41a023fa-a282-41dc-b974-86b7533bc608",
+      "display": "kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "0c11fd36-8812-4393-bed1-b10ec090f111",
+      "display": "kyllä viimeisen 6 kk aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under de senaste 6 månaderna"
+        },
+        {
+          "language": "en",
+          "value": "Yes, in the last 6 months"
+        }
+      ]
+    },
+    {
+      "code": "ae0e7792-3d85-449a-a86f-adf78904816f",
+      "display": "Ei kiireellistä tarvetta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "jag har inget akut behov"
+        },
+        {
+          "language": "en",
+          "value": "No urgent need"
+        }
+      ]
+    },
+    {
+      "code": "a3bbb67f-6d67-4f2f-8046-4f5952b284d6",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "cf5cbdba-719e-4d98-ae16-6023fbcb1204",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "9f0dd5e8-04e0-47a6-ae7a-c53ef65770f0",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    }
+  ]
+}

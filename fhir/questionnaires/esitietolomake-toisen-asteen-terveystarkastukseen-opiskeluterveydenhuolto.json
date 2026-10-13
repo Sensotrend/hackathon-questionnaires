@@ -1553,7 +1553,7 @@
                   },
                   {
                     "url": "content",
-                    "valueString": "Har du konstaterats ha någon bestående eller långvarig (fysisk eller psykisk) sjukdom eller funktions\u0002nedsättning?"
+                    "valueString": "Har du konstaterats ha någon bestående eller långvarig (fysisk eller psykisk) sjukdom eller funktionsnedsättning?"
                   }
                 ]
               },
@@ -6212,7 +6212,7 @@
                       },
                       {
                         "url": "content",
-                        "valueString": "Kuinka monta annosta alkoholia yleensä olet ottanut niinä päivinä, jolloin käytit alkoholia? Yksi annos on 1 pullo keskiolutta tai siideriä, 1 lasillinen (12 cl) viiniä tai ravintola-annos (4 cl) väkevää alkoholia."
+                        "valueString": "How many drinks of alcohol have you usually had on the days when you drank alcohol? One drink is 1 bottle of medium-strength beer or cider, 1 glass (12 cl) of wine or a restaurant measure (4 cl) of spirits."
                       }
                     ]
                   }
@@ -6263,7 +6263,7 @@
                             },
                             {
                               "url": "content",
-                              "valueString": "1-2 annosta"
+                              "valueString": "1-2 drinks"
                             }
                           ]
                         }
@@ -6300,7 +6300,7 @@
                             },
                             {
                               "url": "content",
-                              "valueString": "3-4 annosta"
+                              "valueString": "3-4 drinks"
                             }
                           ]
                         }
@@ -6337,7 +6337,7 @@
                             },
                             {
                               "url": "content",
-                              "valueString": "5-6 annosta"
+                              "valueString": "5-6 drinks"
                             }
                           ]
                         }
@@ -6374,7 +6374,7 @@
                             },
                             {
                               "url": "content",
-                              "valueString": "7-9 annosta"
+                              "valueString": "7-9 drinks"
                             }
                           ]
                         }
@@ -6411,7 +6411,7 @@
                             },
                             {
                               "url": "content",
-                              "valueString": "10 annosta tai enemmän"
+                              "valueString": "10 drinks or more"
                             }
                           ]
                         }

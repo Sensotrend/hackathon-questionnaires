@@ -5,7 +5,8 @@
   "scripts": {
     "convert": "tsx src/cli.ts",
     "typecheck": "tsc -p .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "validate": "tsx src/validate.ts"
   },
   "devDependencies": {
     "@types/fhir": "0.0.44",

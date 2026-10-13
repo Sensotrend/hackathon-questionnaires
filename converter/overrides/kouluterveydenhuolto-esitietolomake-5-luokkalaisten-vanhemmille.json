@@ -1,0 +1,8 @@
+{
+  "$comment": "Texts: the sv text of the answer option 'ei mitään ylläolevista' is untranslated Finnish; translated here.",
+  "texts": {
+    "b3f8168a-56e3-423d-ac77-597e1a336716": {
+      "sv": "inget av ovanstående"
+    }
+  }
+}

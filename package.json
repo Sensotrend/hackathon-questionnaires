@@ -13,7 +13,8 @@
     "lint": "eslint .",
     "typecheck": "npm run typecheck --workspaces",
     "test": "npm test --workspaces",
-    "check": "npm run lint && npm run typecheck && npm test"
+    "check": "npm run lint && npm run typecheck && npm test",
+    "validate": "npm run validate --workspace converter"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

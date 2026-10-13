@@ -1,0 +1,23 @@
+{
+  "$comment": "Texts: the en texts of the follow-up question on alcohol portions and of its options are untranslated Finnish; translated here.",
+  "texts": {
+    "c35c2a6a-f989-48d0-b16c-ac2ab8048c4f": {
+      "en": "How many drinks of alcohol have you usually had on the days when you drank alcohol? One drink is 1 bottle of medium-strength beer or cider, 1 glass (12 cl) of wine or a restaurant measure (4 cl) of spirits."
+    },
+    "927b6271-adaf-4dbf-b2da-5995378ad3e1": {
+      "en": "1-2 drinks"
+    },
+    "f735c64c-818b-4924-9691-ed35a813a78c": {
+      "en": "3-4 drinks"
+    },
+    "cd08d7cd-1820-4e3c-8434-61437fdc43ab": {
+      "en": "5-6 drinks"
+    },
+    "291db390-1453-4929-8164-b5cd0c7f9bbe": {
+      "en": "7-9 drinks"
+    },
+    "85693a4c-ad3c-400b-89b1-83ec7a5dc67b": {
+      "en": "10 drinks or more"
+    }
+  }
+}

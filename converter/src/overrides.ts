@@ -14,6 +14,23 @@ const Coding = z.strictObject({
   display: z.string().min(1),
 });
 
+/**
+ * A correction to one source text: new texts for some languages, and extra
+ * languages to drop (fi, sv and en can only be replaced).
+ */
+export interface TextFix {
+  $comment?: string;
+  remove?: string[];
+  /** New text per language. */
+  [lang: string]: string | string[] | undefined;
+}
+export const TextFix: z.ZodType<TextFix> = z
+  .strictObject({
+    $comment: z.string().optional(),
+    remove: z.array(z.string().min(2)).min(1).optional(),
+  })
+  .catchall(z.string().min(1)) as z.ZodType<TextFix>;
+
 export const Overrides = z.strictObject({
   /** Free-form notes: where codes come from, why an override exists. */
   $comment: z.union([z.string(), z.array(z.string())]).optional(),
@@ -30,6 +47,11 @@ export const Overrides = z.strictObject({
    * `score-{categoryId}`), for score titles that are wrong in the source.
    */
   scores: z.record(z.string(), z.strictObject({ $comment: z.string().optional(), title: LocalizedText })).optional(),
+  /**
+   * Corrections to source texts, keyed by `name`, `description`, or a
+   * category, question or answer id. Applied before conversion.
+   */
+  texts: z.record(z.string(), TextFix).optional(),
 });
 export type Overrides = z.infer<typeof Overrides>;
 

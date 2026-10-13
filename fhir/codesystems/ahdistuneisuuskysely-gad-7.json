@@ -1,0 +1,408 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/afd52bcb-1e90-42c4-9c28-2cdbc63d699d",
+  "version": "31885ff4-d356-4b7d-a50d-c49198566af8",
+  "name": "AnxietyQuestionnaireGAD7AnswerOptions",
+  "status": "active",
+  "date": "2026-05-07T11:12:08.845Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/afd52bcb-1e90-42c4-9c28-2cdbc63d699d: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 28,
+  "concept": [
+    {
+      "code": "17c28d8b-6522-4455-b26c-587453dc297c",
+      "display": "Ei lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "9a2494bf-c016-47af-b43e-95d781794ca3",
+      "display": "Useana päivänä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flera dagar"
+        },
+        {
+          "language": "en",
+          "value": "Several days"
+        }
+      ]
+    },
+    {
+      "code": "df04efe6-e4a3-4624-9f5b-718c3d9cc7a5",
+      "display": "Suurimpana osana päivistä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flertalet dagar"
+        },
+        {
+          "language": "en",
+          "value": "More than half the days"
+        }
+      ]
+    },
+    {
+      "code": "3ecab84a-cfaf-49f7-9653-1064d1dacb1c",
+      "display": "Lähes joka päivä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nästan varje dag"
+        },
+        {
+          "language": "en",
+          "value": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "code": "f7f3d91e-ac2c-488d-82aa-eb835295c557",
+      "display": "Ei lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "ab0592f6-ed6a-43a5-9f42-335f6a6ea43b",
+      "display": "Useana päivänä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flera dagar"
+        },
+        {
+          "language": "en",
+          "value": "Several days"
+        }
+      ]
+    },
+    {
+      "code": "bf5efd41-9d32-4423-8b1b-eddb5ab4c838",
+      "display": "Suurimpana osana päivistä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flertalet dagar"
+        },
+        {
+          "language": "en",
+          "value": "More than half the days"
+        }
+      ]
+    },
+    {
+      "code": "97b3f291-14ec-485a-8028-3c40a6289b2b",
+      "display": "Lähes joka päivä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nästan varje dag"
+        },
+        {
+          "language": "en",
+          "value": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "code": "90074ca4-107e-46f4-b2e9-d4efbc2a4d62",
+      "display": "Ei lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "12238dd2-38c8-4b41-ac1f-680b0b5fb59c",
+      "display": "Useana päivänä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flera dagar"
+        },
+        {
+          "language": "en",
+          "value": "Several days"
+        }
+      ]
+    },
+    {
+      "code": "50589344-1dab-4d92-8422-a2b3cc77c00a",
+      "display": "Suurimpana osana päivistä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flertalet dagar"
+        },
+        {
+          "language": "en",
+          "value": "More than half the days"
+        }
+      ]
+    },
+    {
+      "code": "416472c0-65ea-4924-a2c5-932e2680575f",
+      "display": "Lähes joka päivä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nästan varje dag"
+        },
+        {
+          "language": "en",
+          "value": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "code": "e523e12a-7b38-44f8-955a-92a44984863c",
+      "display": "Ei lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "4e87d095-0495-4349-a770-0c8dbdef12fd",
+      "display": "Useana päivänä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flera dagar"
+        },
+        {
+          "language": "en",
+          "value": "Several days"
+        }
+      ]
+    },
+    {
+      "code": "dc7626c0-bb71-4a1d-9fbd-f68a9b224725",
+      "display": "Suurimpana osana päivistä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flertalet dagar"
+        },
+        {
+          "language": "en",
+          "value": "More than half the days"
+        }
+      ]
+    },
+    {
+      "code": "8bfeb8b2-0f14-4eb1-a2c1-8db55c02d2fe",
+      "display": "Lähes joka päivä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nästan varje dag"
+        },
+        {
+          "language": "en",
+          "value": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "code": "bbe98709-4a35-4482-a2ff-14e19c0f6802",
+      "display": "Ei lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "421ebe38-42e8-4c22-9864-ed6ea4f81b66",
+      "display": "Useana päivänä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flera dagar"
+        },
+        {
+          "language": "en",
+          "value": "Several days"
+        }
+      ]
+    },
+    {
+      "code": "b7f8bc70-0728-4883-a8de-00ddbd14e75e",
+      "display": "Suurimpana osana päivistä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flertalet dagar"
+        },
+        {
+          "language": "en",
+          "value": "More than half the days"
+        }
+      ]
+    },
+    {
+      "code": "15440343-9023-4e3d-8de1-3501303a849e",
+      "display": "Lähes joka päivä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nästan varje dag"
+        },
+        {
+          "language": "en",
+          "value": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "code": "287c639d-8b21-4477-b466-03e91b2b12ad",
+      "display": "Ei lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "3f78e68f-50d4-4a3c-89f9-56ab6656c3b8",
+      "display": "Useana päivänä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flera dagar"
+        },
+        {
+          "language": "en",
+          "value": "Several days"
+        }
+      ]
+    },
+    {
+      "code": "9d8744c2-d172-4a40-94eb-e4af8dcbe3cf",
+      "display": "Suurimpana osana päivistä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flertalet dagar"
+        },
+        {
+          "language": "en",
+          "value": "More than half the days"
+        }
+      ]
+    },
+    {
+      "code": "1fb903de-eb90-4481-ab8a-3aafef2347ba",
+      "display": "Lähes joka päivä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nästan varje dag"
+        },
+        {
+          "language": "en",
+          "value": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "code": "dff8be88-98c8-488a-bf98-fe6f13937a40",
+      "display": "Ei lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "ee6e9288-e0f2-477b-bf7c-64ad9aa2328d",
+      "display": "Useana päivänä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flera dagar"
+        },
+        {
+          "language": "en",
+          "value": "Several days"
+        }
+      ]
+    },
+    {
+      "code": "e02e83a2-abd4-4f7a-bd0a-cbdbdebc5d4d",
+      "display": "Suurimpana osana päivistä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Flertalet dagar"
+        },
+        {
+          "language": "en",
+          "value": "More than half the days"
+        }
+      ]
+    },
+    {
+      "code": "3e796835-cc96-4bdc-9784-ff1c0a8139ac",
+      "display": "Lähes joka päivä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nästan varje dag"
+        },
+        {
+          "language": "en",
+          "value": "Nearly every day"
+        }
+      ]
+    }
+  ]
+}

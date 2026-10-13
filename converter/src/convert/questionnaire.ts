@@ -1,21 +1,27 @@
 // Survey → FHIR R4 Questionnaire (plan §5).
 
-import type { Coding, Extension, Questionnaire, QuestionnaireItem, QuestionnaireItemAnswerOption } from "fhir/r4";
+import type { CodeSystem, Coding, Extension, Questionnaire, QuestionnaireItem, QuestionnaireItemAnswerOption } from "fhir/r4";
 import { answerSystem, BASE, EXT, ITEM_CONTROL_SYSTEM, USAGE_CONTEXT_TYPE_SYSTEM } from "../constants.ts";
 import type { Overrides } from "../overrides.ts";
 import type { SourceFile } from "../source/loader.ts";
 import type { Category, Question, Survey } from "../source/schema.ts";
+import { answerCodeSystem } from "./codesystem.ts";
+import { fixSurvey } from "./fixes.ts";
 import { answerScore, scoreItems } from "./scoring.ts";
 import { localize, PRIMARY_LANGUAGE } from "./text.ts";
 
 export interface Conversion {
   questionnaire: Questionnaire;
+  /** The code system of the answer options. */
+  codeSystem: CodeSystem;
   /** Decisions and oddities worth a human look; they end up in the conversion report. */
   notes: string[];
 }
 
-export function convertSurvey({ slug, survey }: SourceFile, overrides: Overrides = {}): Conversion {
+export function convertSurvey(source: SourceFile, overrides: Overrides = {}): Conversion {
   const notes: string[] = [];
+  const { slug } = source;
+  const survey = fixSurvey(source.survey, overrides.texts ?? {}, notes);
   const title = localize(survey.name, "name");
   const description = localize(survey.description, "description");
 
@@ -47,7 +53,8 @@ export function convertSurvey({ slug, survey }: SourceFile, overrides: Overrides
     item: convertStructure(survey, overrides, notes),
   };
 
-  return { questionnaire: withoutUndefined(questionnaire), notes };
+  const result = withoutUndefined(questionnaire);
+  return { questionnaire: result, codeSystem: answerCodeSystem(survey, result), notes };
 }
 
 /**

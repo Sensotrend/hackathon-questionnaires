@@ -1,0 +1,128 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "478d626b-c450-4126-b2fc-7db9c37b2f41",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/478d626b-c450-4126-b2fc-7db9c37b2f41",
+  "version": "3e889977-d2aa-49e7-a43d-c4d8db90ce3a",
+  "name": "NicotineDependenceTestFagerstromAnswerOptions",
+  "status": "active",
+  "date": "2026-05-07T11:03:41.840Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/478d626b-c450-4126-b2fc-7db9c37b2f41: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 8,
+  "concept": [
+    {
+      "code": "7f0a244d-a139-4040-89ee-7ff99e278809",
+      "display": "Alle 6",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Under 6"
+        },
+        {
+          "language": "en",
+          "value": "Within 5 minutes"
+        }
+      ]
+    },
+    {
+      "code": "0ff88622-d3e7-46d3-9822-a0cebd13587f",
+      "display": "6-30",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "6–30"
+        },
+        {
+          "language": "en",
+          "value": "6–30 minutes"
+        }
+      ]
+    },
+    {
+      "code": "c32a2297-f305-4085-a544-57bbc05ae082",
+      "display": "31-60",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "31–60"
+        },
+        {
+          "language": "en",
+          "value": "31–60 minutes"
+        }
+      ]
+    },
+    {
+      "code": "faa068a9-c845-4dd8-b21e-ccfe3d2549c7",
+      "display": "Yli 60",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Över 60"
+        },
+        {
+          "language": "en",
+          "value": "After 60 minutes"
+        }
+      ]
+    },
+    {
+      "code": "0c9be4db-7f06-47ba-875f-a14c9315e7e6",
+      "display": "10 tai vähemmän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "10 eller färre"
+        },
+        {
+          "language": "en",
+          "value": "10 or less"
+        }
+      ]
+    },
+    {
+      "code": "c90299d5-bde7-4ae7-96d8-f8bf137a79ff",
+      "display": "11–20",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "11–20"
+        },
+        {
+          "language": "en",
+          "value": "11–20"
+        }
+      ]
+    },
+    {
+      "code": "28b2f3d4-c8d4-41ba-9e84-d0fcb8b4d9cf",
+      "display": "21–30",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "21–30"
+        },
+        {
+          "language": "en",
+          "value": "21–30"
+        }
+      ]
+    },
+    {
+      "code": "31e57e8e-e478-4229-989e-2e681b40127b",
+      "display": "Yli 30",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Över 30"
+        },
+        {
+          "language": "en",
+          "value": "31 or more"
+        }
+      ]
+    }
+  ]
+}

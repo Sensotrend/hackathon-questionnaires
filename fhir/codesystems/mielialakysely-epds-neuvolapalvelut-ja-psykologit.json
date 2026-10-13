@@ -1,0 +1,576 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a",
+  "version": "2ba3946b-333a-4508-95cd-dc897dd42ed5",
+  "name": "MoodQuestionnaireEPDSChildHealthClinicServicesAndPsychologistsAnswerOptions",
+  "status": "active",
+  "date": "2026-05-08T05:26:03.300Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/b5f4b158-bd97-4c01-ab3f-ebaa8e2fb34a: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 40,
+  "concept": [
+    {
+      "code": "45a916d8-57f1-41a0-94e8-defb6ef772e9",
+      "display": "Yhtä paljon kuin aina ennenkin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Lika mycket som vanligt"
+        },
+        {
+          "language": "en",
+          "value": "As much as I always could"
+        }
+      ]
+    },
+    {
+      "code": "c8c7fe45-743c-4a4c-a3c7-728d2e86c273",
+      "display": "En aivan yhtä paljon kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte riktigt lika mycket som vanligt"
+        },
+        {
+          "language": "en",
+          "value": "Not quite so much now"
+        }
+      ]
+    },
+    {
+      "code": "2d1b56e7-6323-4da5-86d2-c88ca5120ba6",
+      "display": "Selvästi vähemmän kuin ennen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mycket mindre än vanligt"
+        },
+        {
+          "language": "en",
+          "value": "Definitely not so much now"
+        }
+      ]
+    },
+    {
+      "code": "259dce4d-cb3d-4bfb-b66f-41697f4fb22b",
+      "display": "En ollenkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "ac3d7fdf-ed58-4df3-b232-19b3c2a6fe71",
+      "display": "Yhtä paljon kuin aina ennenkin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Lika mycket som vanligt"
+        },
+        {
+          "language": "en",
+          "value": "As much as I ever did"
+        }
+      ]
+    },
+    {
+      "code": "0657cbe4-25d3-4357-ab4c-f1a742697f84",
+      "display": "Hiukan vähemmän kuin aikaisemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte riktigt lika mycket som vanligt"
+        },
+        {
+          "language": "en",
+          "value": "Rather less than I used to"
+        }
+      ]
+    },
+    {
+      "code": "a7eccb77-4c10-48ff-a725-453329556175",
+      "display": "Selvästi vähemmän kuin aikaisemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mycket mindre än vanligt"
+        },
+        {
+          "language": "en",
+          "value": "Definitely less than I used to"
+        }
+      ]
+    },
+    {
+      "code": "2ad45623-e232-4677-ad82-bcb3a751167a",
+      "display": "Tuskin lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Hardly at all"
+        }
+      ]
+    },
+    {
+      "code": "f01e3ace-24bb-4b73-81ef-f15013fce2aa",
+      "display": "Kyllä, useimmiten",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, för det mesta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, most of the time"
+        }
+      ]
+    },
+    {
+      "code": "a14e2bde-e9b2-428e-9262-ccbb9fbe635a",
+      "display": "Kyllä, joskus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ibland"
+        },
+        {
+          "language": "en",
+          "value": "Yes, some of the time"
+        }
+      ]
+    },
+    {
+      "code": "c6aa07e1-1ce5-4d1f-bf9f-13fa592151a5",
+      "display": "En kovin usein",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte så ofta"
+        },
+        {
+          "language": "en",
+          "value": "Not very often"
+        }
+      ]
+    },
+    {
+      "code": "82c4e596-b650-47cb-ba86-d64637255aa5",
+      "display": "En koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, aldrig"
+        },
+        {
+          "language": "en",
+          "value": "No, never"
+        }
+      ]
+    },
+    {
+      "code": "dfc3f194-edd8-43ec-8894-ea51662701b7",
+      "display": "Ei, en ollenkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, inte alls"
+        },
+        {
+          "language": "en",
+          "value": "No, not at all"
+        }
+      ]
+    },
+    {
+      "code": "440afcbc-996e-4a31-8280-e6ac709f83b1",
+      "display": "Tuskin koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Knappast alls"
+        },
+        {
+          "language": "en",
+          "value": "Hardly ever"
+        }
+      ]
+    },
+    {
+      "code": "4922f857-6c1d-40b9-9952-faceab9a6e7a",
+      "display": "Kyllä, joskus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ibland"
+        },
+        {
+          "language": "en",
+          "value": "Yes, sometimes"
+        }
+      ]
+    },
+    {
+      "code": "353a585e-23bf-436d-a4f6-8aaa39adbd4c",
+      "display": "Kyllä, hyvin usein",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, mycket ofta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, very often"
+        }
+      ]
+    },
+    {
+      "code": "5b2770a0-5037-4e3e-950a-089d8e2b6baf",
+      "display": "Kyllä, aika paljon",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ganska ofta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, quite a lot"
+        }
+      ]
+    },
+    {
+      "code": "9a48a866-6a62-414f-8dfb-0cfe817ff344",
+      "display": "Kyllä, joskus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ibland"
+        },
+        {
+          "language": "en",
+          "value": "Yes, sometimes"
+        }
+      ]
+    },
+    {
+      "code": "01ee93b4-af5a-4b3a-a8a2-16cd30ae7984",
+      "display": "Ei, en paljonkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, ganska sällan"
+        },
+        {
+          "language": "en",
+          "value": "No, not much"
+        }
+      ]
+    },
+    {
+      "code": "96017374-69e0-4bf5-9a9b-c8065dd6d3e0",
+      "display": "Ei, en ollenkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, inte alls"
+        },
+        {
+          "language": "en",
+          "value": "No, not at all"
+        }
+      ]
+    },
+    {
+      "code": "a8416359-40b6-48e8-bce7-e6e08ac0c193",
+      "display": "Kyllä, useimmiten en ole pystynyt selviytymään niistä ollenkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, för det mesta har jag inte kunnat ta itu med något alls"
+        },
+        {
+          "language": "en",
+          "value": "Yes, most of the time I haven't been able to cope at all"
+        }
+      ]
+    },
+    {
+      "code": "eb6685b5-f83e-4425-bb2c-b45c1f3963a8",
+      "display": "Kyllä, toisinaan en ole selviytynyt niistä yhtä hyvin kuin tavallisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ibland har jag inte kunnat ta itu med saker lika bra som vanligt"
+        },
+        {
+          "language": "en",
+          "value": "Yes, sometimes I haven't been coping as well as usual"
+        }
+      ]
+    },
+    {
+      "code": "396199ba-ab8e-4491-86ba-25b9e0e3b00d",
+      "display": "Ei, useimmiten olen selviytynyt melko hyvin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, för det mesta har jag kunnat ta itu med saker ganska bra"
+        },
+        {
+          "language": "en",
+          "value": "No, most of the time I have coped quite well"
+        }
+      ]
+    },
+    {
+      "code": "d15be234-216e-4e33-b2c8-5ee86213090a",
+      "display": "Ei, olen selviytynyt niistä yhtä hyvin kuin aina ennenkin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, jag har kunnat ta itu med saker precis som vanligt"
+        },
+        {
+          "language": "en",
+          "value": "No, I have been coping as well as ever"
+        }
+      ]
+    },
+    {
+      "code": "36ddb04d-7b4d-4a1f-ab1a-8f220550e973",
+      "display": "Kyllä, useimmiten",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, för det mesta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, most of the time"
+        }
+      ]
+    },
+    {
+      "code": "cc8d169c-25ee-42cc-b1b5-dc245d41d512",
+      "display": "Kyllä, toisinaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ibland"
+        },
+        {
+          "language": "en",
+          "value": "Yes, sometimes"
+        }
+      ]
+    },
+    {
+      "code": "06f60657-aa21-4a9d-90fd-aca727810e1e",
+      "display": "Ei, en kovin usein",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, inte så ofta"
+        },
+        {
+          "language": "en",
+          "value": "Not very often"
+        }
+      ]
+    },
+    {
+      "code": "1dc8f305-1e6a-4c58-86da-a0ffa1ab7bb1",
+      "display": "Ei, en ollenkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, inte alls"
+        },
+        {
+          "language": "en",
+          "value": "No, not at all"
+        }
+      ]
+    },
+    {
+      "code": "cea77e00-ff97-41c4-9901-d1daac697b69",
+      "display": "Kyllä, useimmiten",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, för det mesta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, most of the time"
+        }
+      ]
+    },
+    {
+      "code": "8958d327-495f-4179-b030-90f429762333",
+      "display": "Kyllä, melko usein",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ganska ofta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, sometimes"
+        }
+      ]
+    },
+    {
+      "code": "b535ca61-5a45-432d-a320-c04116c47701",
+      "display": "En, kovin usein",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte så ofta"
+        },
+        {
+          "language": "en",
+          "value": "Only occasionally"
+        }
+      ]
+    },
+    {
+      "code": "62330d71-a5d7-4b66-ae6c-25b4cc4099e2",
+      "display": "Ei, en ollenkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, inte alls"
+        },
+        {
+          "language": "en",
+          "value": "No, never"
+        }
+      ]
+    },
+    {
+      "code": "c1655bc3-f7c3-4478-bc3e-eb5de49d40be",
+      "display": "Kyllä, useimmiten",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, för det mesta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, most of the time"
+        }
+      ]
+    },
+    {
+      "code": "8904a763-c8a9-4e64-8f63-426c4e8b219e",
+      "display": "Kyllä, melko usein",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ganska ofta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, quite often"
+        }
+      ]
+    },
+    {
+      "code": "e760fd77-e6ab-466c-867b-09016577dee4",
+      "display": "Vain silloin tällöin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Bara då och då"
+        },
+        {
+          "language": "en",
+          "value": "Only occasionally"
+        }
+      ]
+    },
+    {
+      "code": "f242a6d7-c1fb-4d9f-aa3e-714c94576a24",
+      "display": "Ei, en koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, aldrig"
+        },
+        {
+          "language": "en",
+          "value": "No, never"
+        }
+      ]
+    },
+    {
+      "code": "a7121ccc-5483-432b-9a93-cf14df657d27",
+      "display": "Kyllä, melko usein",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ganska ofta"
+        },
+        {
+          "language": "en",
+          "value": "Yes, quite often"
+        }
+      ]
+    },
+    {
+      "code": "5e6d6cc1-de1d-4ef0-ac02-fc8b278a3eb5",
+      "display": "Joskus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, ibland"
+        },
+        {
+          "language": "en",
+          "value": "Sometimes"
+        }
+      ]
+    },
+    {
+      "code": "fcd63b45-937f-4b4d-85c1-fa99618878ba",
+      "display": "Tuskin koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nästan aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Hardly ever"
+        }
+      ]
+    },
+    {
+      "code": "42e31797-99fa-4650-ba3c-1cf4f4440693",
+      "display": "Ei koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej, aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    }
+  ]
+}

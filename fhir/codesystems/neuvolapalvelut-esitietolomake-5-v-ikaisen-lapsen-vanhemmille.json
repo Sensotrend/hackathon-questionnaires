@@ -1,0 +1,800 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/faa23a83-0b38-4689-8407-ec4cc8fcb1a7",
+  "version": "674b1773-08ec-4b68-bb9b-790b7e8484b6",
+  "name": "MaternityAndChildHealthClinicsBackgroundInformationQuestionnaireForChildrenAged5YearsAnswerOptions",
+  "status": "active",
+  "date": "2025-06-16T12:42:43.312Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/faa23a83-0b38-4689-8407-ec4cc8fcb1a7: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 56,
+  "concept": [
+    {
+      "code": "3232b45a-e997-4517-90e2-083f2c2d6394",
+      "display": "Kotihoito",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Hemvård"
+        },
+        {
+          "language": "en",
+          "value": "Homecare"
+        }
+      ]
+    },
+    {
+      "code": "599d4e9a-0519-4846-b33b-c5c64e814fcd",
+      "display": "Päivähoito",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Dagvård"
+        },
+        {
+          "language": "en",
+          "value": "Daycare"
+        }
+      ]
+    },
+    {
+      "code": "44db99d7-4dc3-4423-88de-67adffcab23f",
+      "display": "Väsymystä tai uniongelmia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "trött eller haft sömnproblem"
+        },
+        {
+          "language": "en",
+          "value": "Fatigue or sleep problems"
+        }
+      ]
+    },
+    {
+      "code": "61d06681-ff0e-4825-bfbf-cdfdc8a6d0b3",
+      "display": "Väkivaltaisuutta, aggressiivisuutta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "våldsam, aggressiv"
+        },
+        {
+          "language": "en",
+          "value": "Violent or aggressive behaviour"
+        }
+      ]
+    },
+    {
+      "code": "0054c361-66f0-4219-9347-308398ca3260",
+      "display": "Pelkoja, ahdistuneisuutta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "rädd, haft ångest"
+        },
+        {
+          "language": "en",
+          "value": "Fears, anxiety"
+        }
+      ]
+    },
+    {
+      "code": "38f2398f-69fc-4586-a42a-6b4c7e066478",
+      "display": "Arkuutta tai jännittyneisyyttä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "blyg eller nervös"
+        },
+        {
+          "language": "en",
+          "value": "Shyness or nervousness"
+        }
+      ]
+    },
+    {
+      "code": "0f5d9250-60ff-496c-9e56-78a2b51cf46c",
+      "display": "Levottomuutta, keskittymisvaikeuksia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "rastlös, haft koncentrationssvårigheter"
+        },
+        {
+          "language": "en",
+          "value": "Restlessness, trouble concentrating"
+        }
+      ]
+    },
+    {
+      "code": "89d2a6a6-604b-4412-ab8a-a8a127d8f53d",
+      "display": "Alakuloisuutta, vetäytyneisyyttä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "nedstämd, tillbakadragen"
+        },
+        {
+          "language": "en",
+          "value": "Low mood, social withdrawal"
+        }
+      ]
+    },
+    {
+      "code": "2fd5971a-046c-4420-b06f-a97e4dfec01b",
+      "display": "Tapaturma",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "råkat ut för olycksfall"
+        },
+        {
+          "language": "en",
+          "value": "Any incidents or accidents"
+        }
+      ]
+    },
+    {
+      "code": "a3f2fa08-ab2d-465d-bdf1-529e11c31708",
+      "display": "Muita oireita, vaivoja tai kipuja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "haft andra symtom, besvär eller smärtor"
+        },
+        {
+          "language": "en",
+          "value": "Any other symptoms, discomforts, or pain"
+        }
+      ]
+    },
+    {
+      "code": "910dc1a0-b21e-41f5-ad7f-5d5de572e9f0",
+      "display": "Ei mitään ylläolevista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "inget av ovanstående"
+        },
+        {
+          "language": "en",
+          "value": "None of the above"
+        }
+      ]
+    },
+    {
+      "code": "5efff1cd-d790-4d97-924c-15c1585f56ee",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "057ead3e-3f33-4039-b6fe-fa8a2b626a12",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "860b3f98-aaa9-49f5-91b2-4e111abf4489",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "c2d1a29a-bef6-4936-9ae5-09b18722b2a4",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "f646b77d-b94a-4e89-8fa4-017bfd900987",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "6773edd7-1124-41dc-bd67-addef4cb7ace",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "02de8aa7-a5fe-4c61-a4cd-324c43c54b6a",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "21aa7346-3b8e-4d72-a290-ebf5e842c928",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "f5a9d0c9-7eda-4d7c-af9a-8758c212d9ac",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "26bcabd0-5dd0-4b2a-b1fc-da2b2a03f063",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "94700ff0-c556-4e68-b12e-1fddcb9b9cb9",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "7e291caa-1e5c-4f88-9fb6-9ab0f51554b6",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "592d257c-2db1-4631-932b-3cf3ea985fbb",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "ef04ede0-b8ec-4c1b-8ad8-86368acbae68",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "4c09a98f-6338-47cb-a4ab-b7d0518840fb",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "32d44a8a-ef5d-4e00-bfb0-ffb1005c7ef0",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "a3e420e9-2751-4fc0-aa5d-a3a6b3a4f9c6",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "d39869a0-6351-4110-8368-9ca25ccae7cc",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "8f275578-f4d3-4a6b-a9e2-539d4f9e4cd9",
+      "display": "Ilmaisee tunteitaan sanallisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Uttrycker sina känslor med ord"
+        },
+        {
+          "language": "en",
+          "value": "Expresses feelings verbally"
+        }
+      ]
+    },
+    {
+      "code": "77f883fc-fb69-4a06-895f-42e5986725a8",
+      "display": "Leikkii mielellään toisten lasten kanssa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Gillar leka med andra barn"
+        },
+        {
+          "language": "en",
+          "value": "Enjoys playing with other children"
+        }
+      ]
+    },
+    {
+      "code": "4fdc7f75-4061-4be8-992c-2817928e87ef",
+      "display": "Ymmärtää tavallista puhetta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Förstår vanligt tilltal"
+        },
+        {
+          "language": "en",
+          "value": "Understands normal speech"
+        }
+      ]
+    },
+    {
+      "code": "5c0c928c-e394-49f1-ad8b-0c3f7889cb10",
+      "display": "Osaa odottaa vuoroaan hetken",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Kan vänta på sin tur en stund"
+        },
+        {
+          "language": "en",
+          "value": "Can wait for their turn for a moment"
+        }
+      ]
+    },
+    {
+      "code": "21f5eee6-f8b5-4ced-8cba-b45c70a7563a",
+      "display": "Leikkii jonkinlaisia roolileikkejä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Leker någon form av rollspel"
+        },
+        {
+          "language": "en",
+          "value": "Engage in some types of role-playing"
+        }
+      ]
+    },
+    {
+      "code": "c61aa1e4-450a-467a-a5d2-6a0549f2dfc1",
+      "display": "Puhe on selkeää lausepuhetta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Pratar i meningar"
+        },
+        {
+          "language": "en",
+          "value": "Speaks in clear sentences"
+        }
+      ]
+    },
+    {
+      "code": "93caf7e8-a52d-4a5d-9b71-8a63f5247eb7",
+      "display": "Osaa huomioida toisia lapsia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Kan ta hänsyn till andra barn"
+        },
+        {
+          "language": "en",
+          "value": "Considers other children in their actions"
+        }
+      ]
+    },
+    {
+      "code": "cf7050c2-3a29-43f5-a276-4eaaf79d12b1",
+      "display": "Leikkii leikin loppuun",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Leker leken till slut"
+        },
+        {
+          "language": "en",
+          "value": "When playing finishes what they start"
+        }
+      ]
+    },
+    {
+      "code": "3e206707-e19d-4c4d-b767-12b841ed2d15",
+      "display": "Jaksaa kuunnella satuja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Orkar lyssna på sagor"
+        },
+        {
+          "language": "en",
+          "value": "Listens to fairytales/stories without losing interest"
+        }
+      ]
+    },
+    {
+      "code": "a2e01195-50b3-4611-afdb-9729768d8856",
+      "display": "Ei mitään ylläolevista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inget av ovanstående"
+        },
+        {
+          "language": "en",
+          "value": "None of the above"
+        }
+      ]
+    },
+    {
+      "code": "dbca97bf-71ae-43a0-8f67-cc1104783c1f",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "40dc4dc5-cb51-4faa-b61b-b9c9494e604b",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "18fdcda6-3c54-4f57-8db2-095e517979e7",
+      "display": "Pitkäaikaissairautta (fyysistä tai psyykkistä)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Långvarig sjukdom (fysisk eller psykisk)"
+        },
+        {
+          "language": "en",
+          "value": "Long term illness (physical or psychological)"
+        }
+      ]
+    },
+    {
+      "code": "a2452d1d-9331-4957-9df3-b0c9474faff6",
+      "display": "Jaksamisvaikeuksia, uupumista tai masennusta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Svårigheter att orka, utmattning, depression"
+        },
+        {
+          "language": "en",
+          "value": "Exhaustion, burnout or depression"
+        }
+      ]
+    },
+    {
+      "code": "c183d0e5-d603-4264-a5b5-56b095976aec",
+      "display": "Turvattomuutta tai väkivaltaisuutta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Otrygghet eller våld"
+        },
+        {
+          "language": "en",
+          "value": "Unsafety or violence"
+        }
+      ]
+    },
+    {
+      "code": "7b333911-2c7d-41b3-9127-0fad409b3045",
+      "display": "Päihdeongelmia tai -riippuvuutta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Missbruksproblem eller beroende"
+        },
+        {
+          "language": "en",
+          "value": "Substance abuse or addiction"
+        }
+      ]
+    },
+    {
+      "code": "bf92ec34-9171-47c5-9a0d-6b97b7fc09d1",
+      "display": "Ongelmia perheenjäsenten välisissä suhteissa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Problem i relationerna mellan familjemedlemmar"
+        },
+        {
+          "language": "en",
+          "value": "Relationship problems among family members"
+        }
+      ]
+    },
+    {
+      "code": "e78c029f-9504-4500-84c3-8b81c7599cb0",
+      "display": "Taloudellisia huolia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ekonomiska bekymmer"
+        },
+        {
+          "language": "en",
+          "value": "Financial concerns"
+        }
+      ]
+    },
+    {
+      "code": "b6201ebf-5c2a-46ca-8d2b-54a153b6e8fa",
+      "display": "Surua tai menetyksiä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Sorg eller förlust"
+        },
+        {
+          "language": "en",
+          "value": "Grief or loss"
+        }
+      ]
+    },
+    {
+      "code": "4e3fbcd2-e02c-4f84-a91f-ca86a17c2070",
+      "display": "Jotain muuta ajankohtaista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Någor annat"
+        },
+        {
+          "language": "en",
+          "value": "Any other concerns"
+        }
+      ]
+    },
+    {
+      "code": "391f01e6-e82b-453b-8c3c-bc6ee0062336",
+      "display": "Ei mitään ylläolevista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inget av ovanstående"
+        },
+        {
+          "language": "en",
+          "value": "None of the above"
+        }
+      ]
+    },
+    {
+      "code": "122b6f94-a818-4467-a7e5-fc28393bebcb",
+      "display": "Isovanhemmilta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mor- och farföräldrar"
+        },
+        {
+          "language": "en",
+          "value": "Grandparents"
+        }
+      ]
+    },
+    {
+      "code": "800e819b-23ef-4f21-9989-928581975264",
+      "display": "Entisiltä puolisoilta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Före detta make/maka"
+        },
+        {
+          "language": "en",
+          "value": "Ex-partners"
+        }
+      ]
+    },
+    {
+      "code": "4d521a7c-57e2-4087-8d44-0d16f43566a8",
+      "display": "Naapureilta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Grannar"
+        },
+        {
+          "language": "en",
+          "value": "Neighbours"
+        }
+      ]
+    },
+    {
+      "code": "8716aabe-65ac-454f-be71-07d8eaa9fad1",
+      "display": "Ystäviltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Vänner"
+        },
+        {
+          "language": "en",
+          "value": "Friends"
+        }
+      ]
+    },
+    {
+      "code": "1f4cf133-df7a-4e17-8977-6dfd43da71dc",
+      "display": "Muilta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Andra"
+        },
+        {
+          "language": "en",
+          "value": "Others"
+        }
+      ]
+    },
+    {
+      "code": "a1e29e33-7078-40aa-830d-e58ed7aa1785",
+      "display": "Ei keneltäkään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ingen"
+        },
+        {
+          "language": "en",
+          "value": "No one"
+        }
+      ]
+    }
+  ]
+}

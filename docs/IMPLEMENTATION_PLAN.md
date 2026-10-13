@@ -73,8 +73,13 @@ converter/                           TypeScript, run with Node (tsx)
   src/convert.ts                     Survey → Questionnaire
   src/convert/                       Survey → Questionnaire
   overrides/<slug>.json              per-questionnaire overrides: codes, structure, retyping, population (§5.6, §7)
-  src/report.ts                      conversion report: warnings and data-quality findings
-fhir/questionnaires/                 GENERATED Questionnaire JSON, one file per questionnaire + index.json
+  src/report.ts                      conversion report: notes and data-quality fixes
+  src/validate.ts                    runs the HL7 FHIR Validator and summarises its result
+fhir/                                GENERATED (§5.7)
+  questionnaires/                    one Questionnaire per survey + index.json
+  codesystems/                       the answer options of each survey
+  definitions/                       the score-interpretation extension
+tools/validator_cli.jar              the HL7 FHIR Validator, downloaded, not committed (README)
 app/                                 Vite + React + TypeScript single-page app
   src/renderer/                      Questionnaire renderer (form state, enableWhen, validation)
   src/response/                      QuestionnaireResponse builder
@@ -200,13 +205,20 @@ Finnish goes in the base element (`text`, `title`, `display`). Swedish and Engli
 }
 ```
 
-The converter validates overrides: an unknown `linkId` or an incompatible retyping fails the build. Data-quality fixes (e.g. the AUDIT title shift) also live here, each with a comment explaining the source error, and the report shows which fixes were applied.
+The converter validates overrides: an unknown `linkId` or an incompatible retyping fails the build. Data-quality fixes also live here, each with a `$comment` explaining the source error, and every applied fix is a note in the conversion report with the original text:
+
+- `scores.{linkId}.title`: score titles (§5.5)
+- `texts.{key}`: any source text, keyed by `name`, `description`, or a category, question or answer id. The value holds new texts per language, and `remove` drops extra languages (fi, sv and en can only be replaced). Applied before conversion. An unknown key, a change to the text it already has, or removing a language that isn't there fails the conversion, so stale overrides can't linger.
+- Control characters (C0 except tab and line breaks, and DEL) are stripped from every text automatically and noted. There's one in the data: a U+0002 inside a Swedish word.
 
 ### 5.7 Output
 
 - `fhir/questionnaires/{slug}.json`, where the slug comes from the source filename without the guid and timestamp, e.g. `masennuskysely-phq-9.json`.
 - `fhir/questionnaires/index.json`: an R4 `Bundle` of type `collection` with all of them, which the app loads.
-- `fhir/conversion-report.md`: per questionnaire, the item counts by type, interleaved categories, score max checks, data-quality findings and applied overrides.
+- `fhir/codesystems/{slug}.json`: a CodeSystem per survey, one concept per answer option (`answerId`) with the Finnish display and sv/en designations. It lets the validator check every answer code and display the Questionnaires use.
+- `fhir/definitions/StructureDefinition-score-interpretation.json`: the definition of the score-band extension (§5.5).
+- `fhir/conversion-report.md`: a table of all questionnaires (groups, questions, follow-ups, scores, notes), the skipped duplicate, and per questionnaire its source, output, identity, item counts, overrides used and every note.
+- `fhir/validation.md`: written by `npm run validate`, not `npm run convert`: the validator's issues grouped by severity and message, each warning with the reason it's accepted, or **not accepted**.
 - `npm run convert` regenerates all of it. A test (`converter/src/output.test.ts`) regenerates everything in memory and fails if the committed output differs, so a converter change without `npm run convert` fails `npm test`.
 
 ## 6. The renderer app
@@ -287,7 +299,7 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
 
 ## 8. Testing & verification summary
 
-- Converter: unit tests per rule with tiny fixture surveys; golden-output tests over all 14 real files (the diff is reviewed on every change); FHIR Validator with zero errors; score max sanity checks.
+- Converter: unit tests per rule with a fixture survey; a freshness test that regenerates everything and compares it with the committed `fhir/`; score expressions evaluated with fhirpath.js; `npm run validate` with zero errors (it needs Java and the downloaded validator, so it isn't part of `npm test`).
 - App: reducer, enableWhen, scoring, QuestionnaireResponse, and population tests in Vitest; a manual browser check for each milestone with screenshots noted in the milestone's "verified" entry.
 - Cross-check: open three representative Questionnaires (PHQ-9, ADHD-RS, maternity) in LHC-Forms and Smart Forms once, in milestone 11.
 
@@ -351,3 +363,25 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - 68 tests pass.
   - Unit tests on the fixture cover both score extensions, the score item, placement in groups, at the end, and flat, title overrides, unknown override keys, and the range and band notes.
   - For all 7 scored questionnaires (12 scores), a test builds QuestionnaireResponses and evaluates each `calculatedExpression` with fhirpath.js 5.2.0. The highest answers give exactly `maxValue`, the lowest give `minValue`, and an empty response gives no value.
+
+### Milestone 5 — Validation & report ✅
+
+- **Validator:** the HL7 FHIR Validator 6.10.4 (SHA-256 checked against GitHub's digest) runs as `npm run validate` with R4 and SDC 3.0.0, plus our CodeSystems and extension definition. It writes `fhir/validation.md` and fails on any error. **Result: 29 files, 0 errors**, 33 warnings, all of two accepted kinds:
+  - no narrative (dom-6, a best-practice recommendation)
+  - no Finnish LOINC display for the four instrument codes
+- **Before the fixes**, the first run reported 8 errors and 1,399 information messages:
+  - the 8 errors: the score-band extension had no definition
+  - the 1,399 messages: the answer code systems couldn't be found, so no answer code was checked
+  - one warning: an illegal control character
+- **New output:** answer CodeSystems, the extension's StructureDefinition, and `fhir/conversion-report.md`.
+- **Checked by breaking copies on purpose:** the validator rejects a band with a missing or unknown part, an unknown answer code and a wrong display. So the zero errors is a real check, not a silent pass.
+- **Data-quality fixes** (text overrides; the translations are ours and should be reviewed by a native speaker):
+  - AUDIT: the three sub-scale category names (sv, en), plus one untranslated sv answer option
+  - Upper-secondary health check: the en texts of the alcohol-portions follow-up and its five options
+  - Low-back physiotherapy: the en description
+  - 5th-grade form: one sv answer option
+  - ADHD-RS: the two en category names
+  - Fagerström: five filler languages dropped from a category name
+  - Upper-secondary health check: the control character (U+0002) stripped automatically from a sv text
+  - Found by scanning all texts for sv or en identical to fi, extra languages, and control characters. The conversion report lists 36 notes in all.
+- Verified: 81 tests pass. New tests cover the fixes (each override form and each rejection), the CodeSystem (also checked against every answer option of every real Questionnaire), the report, the validator output parsing and summary, and the writer, which leaves `validation.md` alone. `npm run validate` passes.

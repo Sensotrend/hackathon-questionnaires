@@ -244,7 +244,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Alkoholin kulutus (keskiarvo, kysymykset 1-3)"
+                "valueString": "Alkoholkonsumtion (summa, frågorna 1–3)"
               }
             ]
           },
@@ -257,7 +257,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Alkoholin kulutus (keskiarvo, kysymykset 1-3)"
+                "valueString": "Alcohol consumption (sum, questions 1–3)"
               }
             ]
           }
@@ -434,7 +434,7 @@
                         },
                         {
                           "url": "content",
-                          "valueString": "2 - 4 kertaa kuukaudessa"
+                          "valueString": "2–4 gånger i månaden"
                         }
                       ]
                     },
@@ -1352,7 +1352,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Alkoholiriippuvuus (keskiarvo, kysymykset 4-6)"
+                "valueString": "Alkoholberoende (summa, frågorna 4–6)"
               }
             ]
           },
@@ -1365,7 +1365,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Alkoholiriippuvuus (keskiarvo, kysymykset 4-6)"
+                "valueString": "Alcohol dependence (sum, questions 4–6)"
               }
             ]
           }
@@ -2411,7 +2411,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Alkoholin haitat (keskiarvo, kysymykset 7-10)"
+                "valueString": "Alkoholrelaterade skador (summa, frågorna 7–10)"
               }
             ]
           },
@@ -2424,7 +2424,7 @@
               },
               {
                 "url": "content",
-                "valueString": "Alkoholin haitat (keskiarvo, kysymykset 7-10)"
+                "valueString": "Alcohol-related harm (sum, questions 7–10)"
               }
             ]
           }

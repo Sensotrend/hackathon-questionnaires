@@ -1,0 +1,2578 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fdb7b3a4-a318-4e0c-9d8b-e63ad1027c2d",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/fdb7b3a4-a318-4e0c-9d8b-e63ad1027c2d",
+  "version": "201825f4-88f6-4bdd-9638-768cc9d22245",
+  "name": "PhysiotherapyLowerBackQuestionnaireAnswerOptions",
+  "status": "active",
+  "date": "2025-12-22T07:07:01.606Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/fdb7b3a4-a318-4e0c-9d8b-e63ad1027c2d: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 183,
+  "concept": [
+    {
+      "code": "5c7d27a6-d529-4fac-b71d-e687f48deee1",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Yes"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "694a9357-4133-4c1b-8e79-e2a51a95d1f6",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "No"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "83ed4160-be80-4072-8992-6ed67ed215f3",
+      "display": "Mies",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Man"
+        },
+        {
+          "language": "en",
+          "value": "Male"
+        }
+      ]
+    },
+    {
+      "code": "77cb4a42-aa0f-4d45-a8ea-d970d1b97b3b",
+      "display": "Nainen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Kvinna"
+        },
+        {
+          "language": "en",
+          "value": "Female"
+        }
+      ]
+    },
+    {
+      "code": "c4c93e54-0b35-4ba2-a411-a4aa3a092654",
+      "display": "Muu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Annat"
+        },
+        {
+          "language": "en",
+          "value": "Other"
+        }
+      ]
+    },
+    {
+      "code": "a43e71b8-65fb-4f80-9dc4-c14124d2e68b",
+      "display": "Minulla ei ole muita sairauksia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har inga andra sjukdomar"
+        },
+        {
+          "language": "en",
+          "value": "I don't have any other diseases"
+        }
+      ]
+    },
+    {
+      "code": "0a82d895-8f34-4d1e-8c81-48b5ff48fe95",
+      "display": "Korkea verenpaine",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Högt blodtryck"
+        },
+        {
+          "language": "en",
+          "value": "High blood pressure"
+        }
+      ]
+    },
+    {
+      "code": "600c8942-fe0e-4dd3-aacd-095a750555e3",
+      "display": "Korkea kolesteroli",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Hög kolesterol"
+        },
+        {
+          "language": "en",
+          "value": "High cholesterol"
+        }
+      ]
+    },
+    {
+      "code": "64c7f06a-52e3-4ce9-9e9e-a27498b9d367",
+      "display": "Reumasairaus (nivelreuma, fibromyalgia, lupus) muu kuin nivelrikko",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Reumatisk sjukdom (ledgångsreumatism, fibromyalgi, lupus) annan än artros"
+        },
+        {
+          "language": "en",
+          "value": "Rheumatic disease (rheumatoid arthritis, fibromyalgia, lupus) other than osteoarthritis"
+        }
+      ]
+    },
+    {
+      "code": "97d2e2bf-7120-49bf-bf95-f3c697195236",
+      "display": "Osteoporoosi",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Osteoporos"
+        },
+        {
+          "language": "en",
+          "value": "Osteoporosis"
+        }
+      ]
+    },
+    {
+      "code": "ca5560df-ad74-4324-bb60-6426649f37a4",
+      "display": "Selkäkipu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ryggsmärta"
+        },
+        {
+          "language": "en",
+          "value": "Back pain"
+        }
+      ]
+    },
+    {
+      "code": "583a22dd-cd7b-47d3-93b0-e41645f5591a",
+      "display": "Käden tai sormien nivelrikko",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Artros i handen eller fingrarna"
+        },
+        {
+          "language": "en",
+          "value": "Osteoarthritis in hand or fingers"
+        }
+      ]
+    },
+    {
+      "code": "21b34019-745b-4dc8-9920-e58edc0f4785",
+      "display": "Krooninen sydämen vajaatoiminta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Kronisk hjärtsvikt"
+        },
+        {
+          "language": "en",
+          "value": "Chronic heart failure"
+        }
+      ]
+    },
+    {
+      "code": "c8eb5c4c-3fe1-404c-b763-2c80bfb957ab",
+      "display": "Iskeeminen sydänsairaus (sepelvaltimotauti, sydänkohtaus, pallolaajennus, ohitusleikkaus)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ischemisk hjärtsjukdom (kranskärlssjukdom, hjärtinfarkt, ballongvidgning, bypassoperation)"
+        },
+        {
+          "language": "en",
+          "value": "Ischaemic heart disease (coronary artery disease, heart attack, balloon angioplasty, coronary artery bypass surgery)"
+        }
+      ]
+    },
+    {
+      "code": "9cee38ec-a74f-453b-8dc2-f0ae8efb501e",
+      "display": "Muu sydänsairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Annan hjärtsjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Other heart disease"
+        }
+      ]
+    },
+    {
+      "code": "9d54172f-6df1-4cb6-8106-83fad4927d68",
+      "display": "Jalkojen verenkierron ongelma (esim. ateroskelroosi)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Problem i benens blodcirkulation (t.ex. ateroskleros)"
+        },
+        {
+          "language": "en",
+          "value": "Problem with circulation in legs (e.g., atherosclerosis)"
+        }
+      ]
+    },
+    {
+      "code": "ab4efc35-5780-456d-9d53-4e4e3d2e5ac6",
+      "display": "Anemia tai muu veritauti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Anemi eller annan blodsjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Anemia or other blood disease"
+        }
+      ]
+    },
+    {
+      "code": "637c377e-2519-48fc-a440-eecb676d5796",
+      "display": "Aivoverenkiertohäiriö",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Hjärncirkulationsstörning"
+        },
+        {
+          "language": "en",
+          "value": "Cerebrovascular disease"
+        }
+      ]
+    },
+    {
+      "code": "4a116dc6-ba7c-430f-9b35-5190090d68bc",
+      "display": "Parkinsonin tauti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Parkinsons sjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Parkinson's disease"
+        }
+      ]
+    },
+    {
+      "code": "d028b611-b253-41b5-a564-d045d08cd0a2",
+      "display": "Muistisairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Demenssjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Memory disorder"
+        }
+      ]
+    },
+    {
+      "code": "d296bd37-d6ed-41d6-9674-3c832efb80e6",
+      "display": "Muu neurologinen sairaus (esim. MS, epilepsia, migreeni)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Annan neurologisk sjukdom (t.ex. MS, epilepsi, migrän)"
+        },
+        {
+          "language": "en",
+          "value": "Other neurological disorder (e.g., MS, epilepsy, migraine)"
+        }
+      ]
+    },
+    {
+      "code": "acac7a69-4b72-4fd0-a6d0-20ac6467b2c5",
+      "display": "1-tyypin diabetes",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Diabetes typ 1"
+        },
+        {
+          "language": "en",
+          "value": "Type 1 diabetes"
+        }
+      ]
+    },
+    {
+      "code": "1ca1617b-e678-4743-8536-3c97bbfbc585",
+      "display": "2-tyypin diabetes",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Diabetes typ 2"
+        },
+        {
+          "language": "en",
+          "value": "Type 2 diabetes"
+        }
+      ]
+    },
+    {
+      "code": "dfdfd4ba-9719-442c-9ea3-06851fc879ad",
+      "display": "Aineenvaihdunnan sairaus (esim. hypo/hypertyreoosi)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Metabol sjukdom (t.ex. hypotyreos eller hypertyreos)"
+        },
+        {
+          "language": "en",
+          "value": "Metabolic disorder (e.g. hypo/hyperthyroidism)"
+        }
+      ]
+    },
+    {
+      "code": "33c762b3-30b9-4572-af63-347c0202b07c",
+      "display": "Munuaissairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Njursjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Kidney disease"
+        }
+      ]
+    },
+    {
+      "code": "ab8d4493-595c-46c6-acb1-b45be7f8027a",
+      "display": "Mahahaava tai muu vatsaongelma kuten refluksi",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Magsår eller annat magbesvär såsom reflux"
+        },
+        {
+          "language": "en",
+          "value": "Gastric ulcer or other abdominal problem such as acid reflux"
+        }
+      ]
+    },
+    {
+      "code": "49ff1791-a9fc-4837-acf6-60bee870c534",
+      "display": "Suolistosairaus (Crohnin tauti, ärtyneen suolen oireyhtymä, krooninen koliitti)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Tarmsjukdom (Crohns sjukdom, irriterade tarmens syndrom, kronisk kolit)"
+        },
+        {
+          "language": "en",
+          "value": "Gastrointestinal disease (Crohn’s disease, irritable bowel syndrome (IBS), chronic colitis)"
+        }
+      ]
+    },
+    {
+      "code": "dd624acc-71b6-463d-9aa2-1710af17e952",
+      "display": "Maksasairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Leversjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Liver disease"
+        }
+      ]
+    },
+    {
+      "code": "658a8eae-c0a7-404f-be06-0037c77f8060",
+      "display": "Keuhkoahtaumatauti (COPD)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Kroniskt obstruktiv lungsjukdom (COPD)"
+        },
+        {
+          "language": "en",
+          "value": "Chronic obstructive pulmonary disease (COPD)"
+        }
+      ]
+    },
+    {
+      "code": "9e0d12d8-2038-484d-ae7b-d14049435888",
+      "display": "Astma/ Muu keuhkosairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Astma/ annan lungsjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Asthma / Other pulmonary disease"
+        }
+      ]
+    },
+    {
+      "code": "11a9c0b4-f1d8-47d1-b47c-ec03fa7145b9",
+      "display": "Syöpä viimeisen 5 vuoden aikana (pl. lievät ihosyövän tyypit)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Cancer under de senaste 5 åren (exklusive lindriga typer av hudcancer)"
+        },
+        {
+          "language": "en",
+          "value": "Cancer in the past 5 years (except for mild types of skin cancer)"
+        }
+      ]
+    },
+    {
+      "code": "d1e16a61-0ff0-49c9-be5e-a95f23bc7a71",
+      "display": "Masennus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Depression"
+        },
+        {
+          "language": "en",
+          "value": "Depression"
+        }
+      ]
+    },
+    {
+      "code": "9af9a308-0134-4d96-81b4-093a2a3351e0",
+      "display": "Ahdistuneisuus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ångest"
+        },
+        {
+          "language": "en",
+          "value": "Anxiety"
+        }
+      ]
+    },
+    {
+      "code": "e6b02769-0a94-4a4d-84e7-2694707eefe5",
+      "display": "Psoriasis",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Psoriasis"
+        },
+        {
+          "language": "en",
+          "value": "Psoriasis"
+        }
+      ]
+    },
+    {
+      "code": "98b01756-32db-42ae-bb06-750dbdcdfc41",
+      "display": "Ylipaino",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Övervikt"
+        },
+        {
+          "language": "en",
+          "value": "Overweight"
+        }
+      ]
+    },
+    {
+      "code": "4f2a0e35-712a-4fad-93b0-bf3b3d10278c",
+      "display": "Krooninen väsymysoireyhtymä, myalginen ensefaliitti (ME)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Kroniskt trötthetssyndrom, myalgisk encefalomyelit (ME)"
+        },
+        {
+          "language": "en",
+          "value": "Chronic fatigue syndrome, myalgic encephalomyelitis (ME)"
+        }
+      ]
+    },
+    {
+      "code": "ed014d1a-b9b3-4fdd-80f9-8beafcf69431",
+      "display": "Muu pitkäaikaissairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Annan långtidssjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Other long-term illness"
+        }
+      ]
+    },
+    {
+      "code": "67602c78-f692-425e-baae-d5cb466c4515",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "ee44072b-a078-4091-8c58-48fc5db4a18e",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "c47f7f21-f2fd-4d60-aace-20f761f0e28b",
+      "display": "Alle 30 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Under 30 min"
+        },
+        {
+          "language": "en",
+          "value": "Less than 30 min"
+        }
+      ]
+    },
+    {
+      "code": "3311d2a1-22fe-4947-8129-5ad2073101a5",
+      "display": "30–60 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "30–60 min"
+        },
+        {
+          "language": "en",
+          "value": "30–60 min"
+        }
+      ]
+    },
+    {
+      "code": "c01a1cac-919d-4b43-8678-d0c493855052",
+      "display": "60-90 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "60-90 min"
+        },
+        {
+          "language": "en",
+          "value": "60-90 min"
+        }
+      ]
+    },
+    {
+      "code": "e71a08c6-d02d-416d-ac38-d611138e15fa",
+      "display": "90–150 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "90–150 min"
+        },
+        {
+          "language": "en",
+          "value": "90–150 min"
+        }
+      ]
+    },
+    {
+      "code": "18b9e7e6-eb60-4f57-aaa0-29838168ead0",
+      "display": "150–300 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "150–300 min"
+        },
+        {
+          "language": "en",
+          "value": "150–300 min"
+        }
+      ]
+    },
+    {
+      "code": "c1606554-9c0b-4be1-b64e-65ee43a49c28",
+      "display": "yli 300 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Över 300 min"
+        },
+        {
+          "language": "en",
+          "value": "More than 300 min"
+        }
+      ]
+    },
+    {
+      "code": "5c141eab-9810-4ecd-b5b6-f208a91f8bea",
+      "display": "Alle 30 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Under 30 min"
+        },
+        {
+          "language": "en",
+          "value": "Less than 30 min"
+        }
+      ]
+    },
+    {
+      "code": "52c1fee4-7223-47ee-9571-1034d5e6d75a",
+      "display": "30–60 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "30–60 min"
+        },
+        {
+          "language": "en",
+          "value": "30–60 min"
+        }
+      ]
+    },
+    {
+      "code": "af2bd42c-5164-4c4c-a0d2-93251579c769",
+      "display": "60-90 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "60-90 min"
+        },
+        {
+          "language": "en",
+          "value": "60-90 min"
+        }
+      ]
+    },
+    {
+      "code": "8bcbb460-aa06-4952-b994-5ab908b1aa0c",
+      "display": "90–150 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "90–150 min"
+        },
+        {
+          "language": "en",
+          "value": "90–150 min"
+        }
+      ]
+    },
+    {
+      "code": "67203fab-5919-49c2-b04b-a4135c2a4d88",
+      "display": "150–300 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "150–300 min"
+        },
+        {
+          "language": "en",
+          "value": "150–300 min"
+        }
+      ]
+    },
+    {
+      "code": "036d9055-a804-47ee-b935-cf39adaf0651",
+      "display": "yli 300 min",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Över 300 min"
+        },
+        {
+          "language": "en",
+          "value": "More than 300 min"
+        }
+      ]
+    },
+    {
+      "code": "7f060390-15d1-4bb0-803b-36ea8f511c26",
+      "display": "En lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Less than 30 min"
+        }
+      ]
+    },
+    {
+      "code": "3dd3fdb1-ce30-4591-8a1c-2e1683c435d5",
+      "display": "1-2",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "1-2"
+        },
+        {
+          "language": "en",
+          "value": "1-2"
+        }
+      ]
+    },
+    {
+      "code": "0c93fec9-9030-40e2-88be-0b244e320cd0",
+      "display": "2-3",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2-3"
+        },
+        {
+          "language": "en",
+          "value": "2-3"
+        }
+      ]
+    },
+    {
+      "code": "d4118190-e3c5-4f0a-a8a9-918e6f9ef75c",
+      "display": "3–4",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "3–4"
+        },
+        {
+          "language": "en",
+          "value": "3–4"
+        }
+      ]
+    },
+    {
+      "code": "aacd2499-01e6-4384-8d8a-0ed03c6ab744",
+      "display": "Yli 4",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Över 4"
+        },
+        {
+          "language": "en",
+          "value": "Yli 4"
+        }
+      ]
+    },
+    {
+      "code": "0d0c227a-43d0-4922-85b0-b0ee8a282b2b",
+      "display": "Peruskoulu/kansakoulu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Grundskola/folkskola"
+        },
+        {
+          "language": "en",
+          "value": "Comprehensive school/elementary school"
+        }
+      ]
+    },
+    {
+      "code": "0ed0fd6a-c6b2-4da4-94cd-6bdae8c20d87",
+      "display": "Ammattikoulu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Yrkesskola"
+        },
+        {
+          "language": "en",
+          "value": "Vocational education"
+        }
+      ]
+    },
+    {
+      "code": "57909934-c24b-4b16-99d0-9304b9f1e28a",
+      "display": "Lukio/Ylioppilas",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Gymnasienivå"
+        },
+        {
+          "language": "en",
+          "value": "General upper secondary education/Matriculation examination"
+        }
+      ]
+    },
+    {
+      "code": "3d712d3d-2272-44ad-93c8-f7c3c8eb60e3",
+      "display": "Opistotason ammatillinen koulutus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Yrkesutbildning på institutnivå"
+        },
+        {
+          "language": "en",
+          "value": "College-level vocational education and training"
+        }
+      ]
+    },
+    {
+      "code": "ee0f9769-220e-4c28-9e3d-d8d4614f1bbc",
+      "display": "Ammattikorkeakoulu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Yrkeshögskola"
+        },
+        {
+          "language": "en",
+          "value": "University of applied sciences"
+        }
+      ]
+    },
+    {
+      "code": "a0072d11-89a7-42b6-a475-0433eb5bfb29",
+      "display": "Korkeakoulu, alemman asteen tutkinto",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Högskola, examen på lägre nivå"
+        },
+        {
+          "language": "en",
+          "value": "University, bachelor’s degree"
+        }
+      ]
+    },
+    {
+      "code": "560ab1c7-eebb-4964-b259-6ab5bfd666cb",
+      "display": "Korkeakoulu, ylemmän asteen tutkinto",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Högskola, examen på högre nivå"
+        },
+        {
+          "language": "en",
+          "value": "University, master’s degree"
+        }
+      ]
+    },
+    {
+      "code": "ccf2af4d-7dee-4c6d-a5bf-adacb215c281",
+      "display": "Johtavassa asemassa toisen palveluksessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ledande ställning i anställning hos någon annan"
+        },
+        {
+          "language": "en",
+          "value": "In a managerial position, employed"
+        }
+      ]
+    },
+    {
+      "code": "aceb332a-7bc6-4b13-8315-2822cf29e363",
+      "display": "Ylempi toimihenkilö",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Högre tjänsteman"
+        },
+        {
+          "language": "en",
+          "value": "Senior salaried employee"
+        }
+      ]
+    },
+    {
+      "code": "fd7464ba-d55c-4837-a898-c867fd2be742",
+      "display": "Alempi toimihenkilö",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Lägre tjänsteman"
+        },
+        {
+          "language": "en",
+          "value": "Lower-level office worker"
+        }
+      ]
+    },
+    {
+      "code": "e6ac24cb-5c46-4054-bcb1-09c77c2e1c4b",
+      "display": "Työntekijä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Arbetstagare"
+        },
+        {
+          "language": "en",
+          "value": "Worker"
+        }
+      ]
+    },
+    {
+      "code": "84a6e74d-e122-4635-a549-51664a36785c",
+      "display": "Yrittäjä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Företagare"
+        },
+        {
+          "language": "en",
+          "value": "Private entrepreneur"
+        }
+      ]
+    },
+    {
+      "code": "a0ae9748-2189-4900-b41e-8e221b8322c1",
+      "display": "Opiskelija",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Studerande"
+        },
+        {
+          "language": "en",
+          "value": "Student"
+        }
+      ]
+    },
+    {
+      "code": "8f732fac-279c-403a-9112-64ff77ad54eb",
+      "display": "Eläkeläinen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Pensionär"
+        },
+        {
+          "language": "en",
+          "value": "Pensioner"
+        }
+      ]
+    },
+    {
+      "code": "4d7bec66-38c7-471e-bc29-e985d9f1385a",
+      "display": "Koti-isä/äiti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Hemmamamma eller -pappa"
+        },
+        {
+          "language": "en",
+          "value": "Stay-at-home mother/father"
+        }
+      ]
+    },
+    {
+      "code": "77ce15b7-b5dd-43e7-b48e-b9d50e93d18b",
+      "display": "Työtön",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Arbetslös"
+        },
+        {
+          "language": "en",
+          "value": "Unemployed"
+        }
+      ]
+    },
+    {
+      "code": "fe1035a7-a4ab-4078-8646-a1ddc838f2aa",
+      "display": "Kokopäivätyössä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Heltidsarbete"
+        },
+        {
+          "language": "en",
+          "value": "In full-time work"
+        }
+      ]
+    },
+    {
+      "code": "1689b0ba-8235-40c0-b46b-cb40b13e581b",
+      "display": "Osa-aikatyössä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Deltidsarbete"
+        },
+        {
+          "language": "en",
+          "value": "In part-time work"
+        }
+      ]
+    },
+    {
+      "code": "4ef45cb5-2a98-4787-8261-70ebefe64b6d",
+      "display": "Työtön",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Arbetslös"
+        },
+        {
+          "language": "en",
+          "value": "Unemployed"
+        }
+      ]
+    },
+    {
+      "code": "9952e62e-73ee-4cf4-abef-f791ad546643",
+      "display": "Opiskelija",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Studerande"
+        },
+        {
+          "language": "en",
+          "value": "Student"
+        }
+      ]
+    },
+    {
+      "code": "3091897c-b10e-4d52-acd1-be04bf7e5e8a",
+      "display": "Eläkkeellä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Pensionstagare"
+        },
+        {
+          "language": "en",
+          "value": "Retired"
+        }
+      ]
+    },
+    {
+      "code": "60f41590-5f29-422e-a1e0-51257cdd5b56",
+      "display": "Varusmies- tai siviilipalveluksessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Bevärings- eller civiltjänst"
+        },
+        {
+          "language": "en",
+          "value": "In military or non-military service"
+        }
+      ]
+    },
+    {
+      "code": "17860079-6fd3-4091-a4e9-8b85296db433",
+      "display": "Eri mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer inte"
+        },
+        {
+          "language": "en",
+          "value": "Disagree"
+        }
+      ]
+    },
+    {
+      "code": "47d6dafe-8947-410f-a8e8-0c361040bc69",
+      "display": "Samaa mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer"
+        },
+        {
+          "language": "en",
+          "value": "Agree"
+        }
+      ]
+    },
+    {
+      "code": "2e480ae8-6b6c-469c-9242-8016c91dbbcd",
+      "display": "Eri mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer inte"
+        },
+        {
+          "language": "en",
+          "value": "Disagree"
+        }
+      ]
+    },
+    {
+      "code": "6ecc6d27-4024-4361-a1fb-060a0fc3876b",
+      "display": "Samaa mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer"
+        },
+        {
+          "language": "en",
+          "value": "Agree"
+        }
+      ]
+    },
+    {
+      "code": "35af7738-2784-4b08-b85d-9e22f9462605",
+      "display": "Eri mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer inte"
+        },
+        {
+          "language": "en",
+          "value": "Disagree"
+        }
+      ]
+    },
+    {
+      "code": "1431cc74-9086-47c6-bd5e-8d5250800915",
+      "display": "Samaa mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer"
+        },
+        {
+          "language": "en",
+          "value": "Agree"
+        }
+      ]
+    },
+    {
+      "code": "48616814-c93c-4104-9634-9cbaba56795d",
+      "display": "Eri mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer inte"
+        },
+        {
+          "language": "en",
+          "value": "Disagree"
+        }
+      ]
+    },
+    {
+      "code": "3d4b6f65-4772-4d22-93bf-dd96bf229043",
+      "display": "Samaa mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer"
+        },
+        {
+          "language": "en",
+          "value": "Agree"
+        }
+      ]
+    },
+    {
+      "code": "8b0642e3-8014-444a-8198-b2ea2ff7cf7b",
+      "display": "Eri mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer inte"
+        },
+        {
+          "language": "en",
+          "value": "Disagree"
+        }
+      ]
+    },
+    {
+      "code": "fb3d3602-1612-477f-8769-35f78be91762",
+      "display": "Samaa mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer"
+        },
+        {
+          "language": "en",
+          "value": "Agree"
+        }
+      ]
+    },
+    {
+      "code": "7f170a22-25b4-40a4-adff-6a7485426ee3",
+      "display": "Eri mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer inte"
+        },
+        {
+          "language": "en",
+          "value": "Disagree"
+        }
+      ]
+    },
+    {
+      "code": "7d2dde66-be73-4a2a-b07a-64964cb05be7",
+      "display": "Samaa mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer"
+        },
+        {
+          "language": "en",
+          "value": "Agree"
+        }
+      ]
+    },
+    {
+      "code": "7d6ffe34-69ef-48d4-aa0a-33d2c1ef49cf",
+      "display": "Eri mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer inte"
+        },
+        {
+          "language": "en",
+          "value": "Disagree"
+        }
+      ]
+    },
+    {
+      "code": "67af01b8-9191-416f-9313-81059e7a75c3",
+      "display": "Samaa mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer"
+        },
+        {
+          "language": "en",
+          "value": "Agree"
+        }
+      ]
+    },
+    {
+      "code": "4f243113-cc01-4ce5-bfef-19609175a9ac",
+      "display": "Eri mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer inte"
+        },
+        {
+          "language": "en",
+          "value": "Disagree"
+        }
+      ]
+    },
+    {
+      "code": "55c4c63c-29d6-467d-9964-11368108549a",
+      "display": "Samaa mieltä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Instämmer"
+        },
+        {
+          "language": "en",
+          "value": "Agree"
+        }
+      ]
+    },
+    {
+      "code": "552b9b9b-adf8-411d-8ea0-0f47b1aecdff",
+      "display": "Ei lainkaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte alls"
+        },
+        {
+          "language": "en",
+          "value": "Not at all"
+        }
+      ]
+    },
+    {
+      "code": "6b5f40e9-7583-4bc0-ab32-9700e38e8f71",
+      "display": "Hieman",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Lätt"
+        },
+        {
+          "language": "en",
+          "value": "Slightly"
+        }
+      ]
+    },
+    {
+      "code": "4e494e26-8ba6-46a6-b2d7-21920a03811a",
+      "display": "Kohtalaisesti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Måttligt"
+        },
+        {
+          "language": "en",
+          "value": "Moderately"
+        }
+      ]
+    },
+    {
+      "code": "5a0e851c-1e1d-401b-a58e-b1fecdb809c4",
+      "display": "Paljon",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Väldigt mycket"
+        },
+        {
+          "language": "en",
+          "value": "Very much"
+        }
+      ]
+    },
+    {
+      "code": "8f7898c3-970f-4be8-a84c-0ed3126c2da2",
+      "display": "Erittäin paljon",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Extremt"
+        },
+        {
+          "language": "en",
+          "value": "Extremely"
+        }
+      ]
+    },
+    {
+      "code": "448a53a9-7566-4e6f-b807-17f410f7ec09",
+      "display": "Minulla ei tällä hetkellä ole kipuja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har ingen smärta för närvarande"
+        },
+        {
+          "language": "en",
+          "value": "I don't have any pain at the moment"
+        }
+      ]
+    },
+    {
+      "code": "e189efea-5749-4d45-82b9-7e60ef95d232",
+      "display": "Kipu on tällä hetkellä hyvin lievää",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har väldigt svag smärta för närvarande"
+        },
+        {
+          "language": "en",
+          "value": "The pain is very mild at the moment"
+        }
+      ]
+    },
+    {
+      "code": "afd40048-da83-46a3-ab59-d10f9b4a90ab",
+      "display": "Kipu on tällä hetkellä kohtalaista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har måttlig smärta för närvarande"
+        },
+        {
+          "language": "en",
+          "value": "The pain is moderate at the moment"
+        }
+      ]
+    },
+    {
+      "code": "dc4f63f5-cb3b-4b27-8dc9-39174ae4a1f5",
+      "display": "Kipu on tällä hetkellä melko voimakasta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har ganska stark smärta för närvarande"
+        },
+        {
+          "language": "en",
+          "value": "The pain is rather strong at the moment"
+        }
+      ]
+    },
+    {
+      "code": "b859f71f-01de-4abc-83e7-5e1276696b38",
+      "display": "Kipu on tällä hetkellä hyvin voimakasta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har väldigt stark smärta för närvarande"
+        },
+        {
+          "language": "en",
+          "value": "The pain is very strong at the moment"
+        }
+      ]
+    },
+    {
+      "code": "8a15e1e7-bcae-4c4d-a67c-6f6c6c4875c7",
+      "display": "Kipu on pahin mahdollinen tällä hetkellä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har helt outhärdlig smärta för närvarande"
+        },
+        {
+          "language": "en",
+          "value": "The pain is the worst possible at the moment"
+        }
+      ]
+    },
+    {
+      "code": "a5dd38f5-0d02-49cf-9804-ca93be72ff46",
+      "display": "Pystyn huolehtimaan itsestäni normaalisti ilman ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag sköter mig själv utan att få mer smärta"
+        },
+        {
+          "language": "en",
+          "value": "I can take care of myself without extra pain"
+        }
+      ]
+    },
+    {
+      "code": "d824c304-e0f7-4ff4-a710-706f0fa3c77f",
+      "display": "Pystyn huolehtimaan itsestäni normaalisti, mutta se on hyvin kivuliasta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag sköter mig själv, men får mer smärta"
+        },
+        {
+          "language": "en",
+          "value": "I can take care of myself normally, but it is very painful"
+        }
+      ]
+    },
+    {
+      "code": "90a1bc95-717c-4c40-93db-778a04c94409",
+      "display": "Itsestä huolehtiminen on kivuliasta ja siksi olen hidas ja varovainen toimissani",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag sköter mig själv, men det gör ont och jag får vara försiktig"
+        },
+        {
+          "language": "en",
+          "value": "Taking care of myself is painful, which is why I am slow and cautious with what I do"
+        }
+      ]
+    },
+    {
+      "code": "c1c27fe9-3e0f-4d6c-afb2-b05a78956c99",
+      "display": "Tarvitsen hieman apua, mutta pystyn suurelta osin huolehtimaan itsestäni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag behöver en viss hjälp, men klarar det mesta själv"
+        },
+        {
+          "language": "en",
+          "value": "I need some help, but can take care of myself to a large extent"
+        }
+      ]
+    },
+    {
+      "code": "318d78dc-f8a9-4f4b-9966-501736058c96",
+      "display": "Tarvitsen päivittäin apua useimmissa itsestäni huolehtimiseen liittyvissä asioissa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag behöver hjälp varje dag med det mesta"
+        },
+        {
+          "language": "en",
+          "value": "I need help daily in most matters related to taking care of myself"
+        }
+      ]
+    },
+    {
+      "code": "b398e07f-6571-4639-ac45-8bc561afb0ee",
+      "display": "En pukeudu, peseydyn vaivalloisesti ja pysyttelen vuoteessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag klär inte på mig, har svårt att tvätta mig och ligger till sängs"
+        },
+        {
+          "language": "en",
+          "value": "I don't get dressed, I wash myself with a lot of effort and stay in bed"
+        }
+      ]
+    },
+    {
+      "code": "aca3dd65-aff5-4b9e-8317-4c7f89a7e32d",
+      "display": "Pystyn nostamaan raskaita taakkoja ilman ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan lyfta tunga saker utan att få ont"
+        },
+        {
+          "language": "en",
+          "value": "I can lift heavy loads without extra pain"
+        }
+      ]
+    },
+    {
+      "code": "958be7ba-f5fd-4087-b5cf-d849e5a7a4d7",
+      "display": "Pystyn nostamaan raskaita taakkoja, mutta se aiheuttaa ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan lyfta tunga saker, men får ont"
+        },
+        {
+          "language": "en",
+          "value": "I can lift heavy loads but it causes extra pain"
+        }
+      ]
+    },
+    {
+      "code": "7edb9e4b-927c-4ff0-a33e-4f8766a58b7a",
+      "display": "Kipu estää minua nostamasta raskaita taakkoja lattialta, mutta pystyn nostamaan, mutta se onnistuu, jos ne on sijoitettu sopivasti, kuten esimerkiksi pöydälle",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "På grund av smärta kan jag inte lyfta tunga saker från golvet, det går bra om de är bra placerade, t ex på ett bord"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from lifting heavy loads from the floor, but I can do it if they have been placed conveniently, such as on a table"
+        }
+      ]
+    },
+    {
+      "code": "adeb1f46-5238-4e5b-bcfc-77cbc684e834",
+      "display": "Kipu estää minua nostamasta raskaita taakkoja, mutta pystyn nostamaan kevyitä tai keskiraskaita taakkoja, jos ne on sijoitettu sopivasti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "På grund av smärta kan jag inte lyfta tunga saker, men klarar lätta och medeltunga saker, om de är bra placerade"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from lifting heavy loads, but I can lift light or medium loads if they have been placed conveniently"
+        }
+      ]
+    },
+    {
+      "code": "e210a585-f902-448b-8aef-38dc5af66c3a",
+      "display": "Pystyn nostamaan vain hyvin kevyitä taakkoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan bara lyfta väldigt lätta saker"
+        },
+        {
+          "language": "en",
+          "value": "I can lift only very light loads"
+        }
+      ]
+    },
+    {
+      "code": "3a1fb4b7-c024-4f10-bf53-e8d64f3916e5",
+      "display": "En pysty nostamaan enkä kantamaan mitään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan inte lyfta eller bära några saker"
+        },
+        {
+          "language": "en",
+          "value": "I cannot lift or carry anything"
+        }
+      ]
+    },
+    {
+      "code": "9082d25a-a7ea-4130-af16-bb59c15b3d66",
+      "display": "Kipu ei rajoita kävelymatkaani",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig inte från att gå hur långt som helst"
+        },
+        {
+          "language": "en",
+          "value": "Pain doesn’t limit my walking distances"
+        }
+      ]
+    },
+    {
+      "code": "630b9876-1adb-4fe7-bf9e-5874ad3cd233",
+      "display": "Kipu estää minua kävelemästä kilometriä pidempiä matkoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att gå mer än 1 km"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from walking distances longer than one kilometre"
+        }
+      ]
+    },
+    {
+      "code": "af80baf2-b06e-4fc2-a439-66cfe35d6a34",
+      "display": "Kipu estää minua kävelemästä 500 metriä pidempiä matkoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att gå mer än 500 m"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from walking distances longer than 500 metres"
+        }
+      ]
+    },
+    {
+      "code": "b1799aa7-0ba3-4fec-b77f-cf7264a61d9c",
+      "display": "Kipu estää minua kävelemästä 100 metriä pidempiä matkoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att gå mer än 100 m"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from walking distances longer than 100 metres"
+        }
+      ]
+    },
+    {
+      "code": "cbac2b22-b209-4fc6-b54c-53b8a122df3a",
+      "display": "Pystyn kävelemään vain keppiä tai kainalosauvoja käyttäen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan bara gå om jag använder käpp eller kryckor"
+        },
+        {
+          "language": "en",
+          "value": "I can walk only with a stick or crutches"
+        }
+      ]
+    },
+    {
+      "code": "d70c1a4f-9956-43cd-b931-0859c5942c70",
+      "display": "Olen enimmäkseen sängyssä ja joudun konttaamaan wc:hen",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag ligger mestadels till sängs och måste krypa till toaletten"
+        },
+        {
+          "language": "en",
+          "value": "I can walk only with a stick or crutches"
+        }
+      ]
+    },
+    {
+      "code": "5fde9eb5-7718-4851-88db-65613900b453",
+      "display": "Pystyn istumaan minkälaisessa tuolissa tahansa niin kauan kuin haluan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan sitta i vilken stol som helst så länge jag vill"
+        },
+        {
+          "language": "en",
+          "value": "I can sit in any kind of chair as long as I want"
+        }
+      ]
+    },
+    {
+      "code": "22efe138-3cec-46d7-ac96-3eb999f00a96",
+      "display": "Pystyn istumaan lempituolissani niin kauan kuin haluan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan sitta i min favoritstol så länge jag vill"
+        },
+        {
+          "language": "en",
+          "value": "I can sit in my favourite chair as long as I want"
+        }
+      ]
+    },
+    {
+      "code": "0c763d22-bab3-4f52-b811-64fe599e6d9d",
+      "display": "Kipu estää minua istumasta tuntia pitempään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att sitta mer än 1 timme"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from sitting longer than an hour"
+        }
+      ]
+    },
+    {
+      "code": "e6aa1ab8-8f7c-4f6a-b306-a8656829dba0",
+      "display": "Kipu estää minua istumasta puolta tuntia pitempään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att sitta mer än 30 minuter"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from sitting longer than half an hour"
+        }
+      ]
+    },
+    {
+      "code": "77d685ea-efa9-48c6-b89c-cc3d7a713d46",
+      "display": "Kipu estää minua istumasta 10 minuuttia pitempään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att sitta mer än 10 minuter"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from sitting longer than 10 minutes"
+        }
+      ]
+    },
+    {
+      "code": "34d608dc-3f67-41e9-9892-8f4ff572a7ab",
+      "display": "Kipu estää minua istumasta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att sitta över huvud taget"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from sitting"
+        }
+      ]
+    },
+    {
+      "code": "42713fdd-6ec4-4a38-863a-be6fe93155b4",
+      "display": "Pystyn seisomaan niin kauan kuin haluan ilman ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan stå så länge jag vill utan att få mer ont"
+        },
+        {
+          "language": "en",
+          "value": "I can stand as long as I want without extra pain"
+        }
+      ]
+    },
+    {
+      "code": "886f92e7-b6ff-47eb-a80b-9f17a61cf7ea",
+      "display": "Pystyn seisomaan niin kauan kuin haluan, mutta se aiheuttaa ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan stå så länge jag vill, men får mer ont"
+        },
+        {
+          "language": "en",
+          "value": "I can stand as long as I want, but it causes extra pain"
+        }
+      ]
+    },
+    {
+      "code": "901b9b4b-acb9-41d1-87df-4c30cf03dc09",
+      "display": "Kipu estää minua seisomasta tuntia pitempään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att stå mer än 1 timme"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from standing longer than an hour"
+        }
+      ]
+    },
+    {
+      "code": "4d92f3b3-f2e3-4094-804d-2737e6811dd2",
+      "display": "Kipu estää minua seisomasta puolta tuntia pitempään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att stå mer än 30 minuter"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from standing longer than half an hour"
+        }
+      ]
+    },
+    {
+      "code": "f9c9286b-b1ae-40cf-9084-79c9b94cedf3",
+      "display": "Kipu estää minua seisomasta 10 minuuttia pitempään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att stå mer än 10 minuter"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from standing longer than 10 minutes"
+        }
+      ]
+    },
+    {
+      "code": "a6dc8435-0904-45d3-9d19-a4abefe2347e",
+      "display": "Kipu estää minua seisomasta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att stå över huvud taget"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from standing"
+        }
+      ]
+    },
+    {
+      "code": "63086fb2-69e9-4b22-8106-b9cdd1dff8db",
+      "display": "Kipu ei koskaan häiritse nukkumistani",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig inte från att sova"
+        },
+        {
+          "language": "en",
+          "value": "Pain never disturbs my sleep"
+        }
+      ]
+    },
+    {
+      "code": "30d997b2-ef16-4b82-95ff-d801f725a4bf",
+      "display": "Kipu häiritsee ajoittain nukkumistani",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig ibland från att sova"
+        },
+        {
+          "language": "en",
+          "value": "Pain occasionally disturbs my sleep"
+        }
+      ]
+    },
+    {
+      "code": "690249db-eaa7-4493-85ca-b87600f9a5b8",
+      "display": "Kivun takia nukun alle kuusi tuntia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "På grund av smärtan sover jag mindre än 6 timmar per natt"
+        },
+        {
+          "language": "en",
+          "value": "Because of the pain, I sleep less than six hours"
+        }
+      ]
+    },
+    {
+      "code": "1c0191ad-7d53-4878-bd77-498ee3da7f65",
+      "display": "Kivun takia nukun alle neljä tuntia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "På grund av smärtan sover jag mindre än 4 timmar per natt"
+        },
+        {
+          "language": "en",
+          "value": "Because of the pain, I sleep less than four hours"
+        }
+      ]
+    },
+    {
+      "code": "c4532e5e-2370-4b62-9633-9ff14677d881",
+      "display": "Kivun takia nukun alle kaksi tuntia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "På grund av smärtan sover jag mindre än 2 timmar per natt"
+        },
+        {
+          "language": "en",
+          "value": "Because of the pain, I sleep less than two hours"
+        }
+      ]
+    },
+    {
+      "code": "2256b208-f041-44e2-a257-abf16b0f3054",
+      "display": "Kipu estää minua nukkumasta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att sova över huvud taget"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from sleeping"
+        }
+      ]
+    },
+    {
+      "code": "489611bf-97d8-40f6-b45e-c19e7e4716a6",
+      "display": "Nykyinen kipuni ei häiritse sukupuolielämääni eikä seksuaalinen toiminta aiheuta ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt sexualliv är normalt och orsakar inte mer smärta"
+        },
+        {
+          "language": "en",
+          "value": "My current pain doesn’t disturb my sex life and sexual activity doesn’t cause extra pain"
+        }
+      ]
+    },
+    {
+      "code": "8c81fb96-aa86-4c9a-b5ce-4eca60428b60",
+      "display": "Nykyinen kipuni ei häiritse sukupuolielämääni, mutta seksuaalisesta toiminnasta aiheutuu hieman ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt sexualliv är normalt men orsakar viss ökad smärta"
+        },
+        {
+          "language": "en",
+          "value": "My current pain doesn’t disturb my sex life, but sexual activity causes some extra pain"
+        }
+      ]
+    },
+    {
+      "code": "1c0aa4c5-36df-4076-97ef-9111b8feff8b",
+      "display": "Nykyinen kipuni ei häiritse sukupuolielämääni, mutta seksuaalisesta toiminnasta aiheutuu paljon kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt sexualliv är nästan normalt men väldigt smärtande"
+        },
+        {
+          "language": "en",
+          "value": "My current pain doesn’t disturb my sex life, but sexual activity causes a lot of pain"
+        }
+      ]
+    },
+    {
+      "code": "a26d9ca5-13b9-46fd-b7bd-fdcaf81a4df9",
+      "display": "Kipu rajoittaa huomattavasti sukupuolielämääni",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt sexualliv är starkt begränsat på grund av smärta"
+        },
+        {
+          "language": "en",
+          "value": "Pain significantly limits my sex life"
+        }
+      ]
+    },
+    {
+      "code": "d3e4071d-32df-4c7d-a9f5-40f91bac7045",
+      "display": "Sukupuolielämäni on lähes olematonta kivun takia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt sexualliv är nästan obefintligt på grund av smärta"
+        },
+        {
+          "language": "en",
+          "value": "My sex life is almost non-existent because of the pain"
+        }
+      ]
+    },
+    {
+      "code": "a16c4f69-2aff-4379-984a-cc50cc3431b1",
+      "display": "Kipu estää minulta kaikenlaisen sukupuolielämän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från sexualliv över huvud taget"
+        },
+        {
+          "language": "en",
+          "value": "Pain prevents me from having any kind of sex life"
+        }
+      ]
+    },
+    {
+      "code": "a4b12d24-5ecb-4221-993c-720eecda0f82",
+      "display": "Sosiaalinen elämäni on normaalia eikä liikkuminen aiheuta minulla ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt sociala liv är normalt och ger ej ökade smärtor"
+        },
+        {
+          "language": "en",
+          "value": "My social life is normal and moving about doesn’t cause me any extra pain"
+        }
+      ]
+    },
+    {
+      "code": "ae113cbe-a4a5-4621-a8e2-133e05321f81",
+      "display": "Sosiaalinen elämäni on normaalia, mutta liikkuminen lisää kivun määrää",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Mitt sociala liv är normalt men ökar smärtan"
+        },
+        {
+          "language": "en",
+          "value": "My social life is normal, but moving about increases the amount of pain"
+        }
+      ]
+    },
+    {
+      "code": "b1384b44-e2ba-4f53-9971-fcf10ab4704b",
+      "display": "Kipu ei vaikuta merkittävästi sosiaaliseen elämääni, paitsi että se rajoittaa toimintoja, jotka ovat fyysisesti rasittavampia, kuten esimerkiksi urheilu jne",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan påverkar inte mitt sociala liv nämnvärt, men förhindrar mig att utföra mer ansträngande aktiviteter, såsom dans, motion och idrott"
+        },
+        {
+          "language": "en",
+          "value": "Pain doesn’t have a significant impact on my social life, except that it restricts activities that are more physically strenuous, such as sports, etc."
+        }
+      ]
+    },
+    {
+      "code": "fe48e0a8-3a4c-4f71-8a99-5e4b0f2e8590",
+      "display": "Kipu on rajoittanut sosiaalista elämääni enkä käy yhtä usein ulkona",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan har begränsat mitt sociala liv och jag går inte ut så ofta"
+        },
+        {
+          "language": "en",
+          "value": "Pain has restricted my social life and I don’t go out as often"
+        }
+      ]
+    },
+    {
+      "code": "00cbe5b5-03fa-4355-8b52-621d72833ca4",
+      "display": "Kivun takia sosiaalinen elämäni on rajoittunut kotiin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan har begränsat mitt sociala liv och jag måste hålla mig hemma"
+        },
+        {
+          "language": "en",
+          "value": "Because of the pain, my social life is limited to my home"
+        }
+      ]
+    },
+    {
+      "code": "f086ff9d-7d41-479d-ae49-961434336653",
+      "display": "Kivun takia minulla ei ole sosiaalista elämää",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har inget socialt liv på grund av smärtan"
+        },
+        {
+          "language": "en",
+          "value": "Because of the pain, I have no social life"
+        }
+      ]
+    },
+    {
+      "code": "92f88718-d937-4cc2-b729-19fa0f59bc6a",
+      "display": "Voin matkustaa minne haluan tuntematta kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan resa vart som helst utan att få mer ont"
+        },
+        {
+          "language": "en",
+          "value": "I can travel anywhere I want without feeling pain"
+        }
+      ]
+    },
+    {
+      "code": "92eba18b-9506-43db-8804-a1a57c8ced5a",
+      "display": "Voin matkustaa minne tahansa, mutta se aiheuttaa ylimääräistä kipua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan resa vart som helst men får mer ont"
+        },
+        {
+          "language": "en",
+          "value": "I can travel anywhere, but it causes extra pain"
+        }
+      ]
+    },
+    {
+      "code": "fc979735-5b8c-4bf2-94d8-17bcf9afa42a",
+      "display": "Kipu on voimakasta, mutta suoriudun yli kahden tunnin pituisista matkoista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan blir svår men jag klarar resor på mer än 2 timmar"
+        },
+        {
+          "language": "en",
+          "value": "The pain is strong, but I manage journeys that are longer than two hours"
+        }
+      ]
+    },
+    {
+      "code": "69bfed35-6e02-47e5-9d84-49b2c9a139b4",
+      "display": "Kipu rajoittaa matkustamiseni alle tunnin kestäviin matkoihin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att göra resor på mer än 1 timme"
+        },
+        {
+          "language": "en",
+          "value": "Pain limits my travelling to journeys lasting less than an hour"
+        }
+      ]
+    },
+    {
+      "code": "622e5475-43c9-44d9-9154-48b265a8921e",
+      "display": "Kipu rajoittaa matkustamiseni alle puoli tuntia kestäviin välttämättömiin matkoihin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig från att göra resor på mer än 1 timme"
+        },
+        {
+          "language": "en",
+          "value": "Pain limits my travelling to necessary journeys lasting less than half an hour"
+        }
+      ]
+    },
+    {
+      "code": "c0464226-fdd7-4c18-ac90-0a2c78aa16e2",
+      "display": "Kivun takia en voi matkustaa minnekään muualle kuin saamaan hoitoa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Smärtan hindrar mig att göra andra resor än för att få behandling"
+        },
+        {
+          "language": "en",
+          "value": "Because of the pain, I cannot travel anywhere else than to get treatment"
+        }
+      ]
+    },
+    {
+      "code": "9b7b217c-4b60-40f8-9763-726bba9ebf9a",
+      "display": "Minulla ei ole vaikeuksia kävelemisessä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag går utan svårigheter"
+        },
+        {
+          "language": "en",
+          "value": "I don’t have any difficulty walking"
+        }
+      ]
+    },
+    {
+      "code": "d63d993f-1e2c-4345-ba07-d4b9ae100a9b",
+      "display": "Minulla on lieviä vaikeuksia kävelemisessä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har lite svårigheter med att gå"
+        },
+        {
+          "language": "en",
+          "value": "I have slight difficulty walking"
+        }
+      ]
+    },
+    {
+      "code": "2d722a57-d08a-4725-ba65-802f769146b5",
+      "display": "Minulla on kohtalaisia vaikeuksia kävelemisessä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har måttliga svårigheter med att gå"
+        },
+        {
+          "language": "en",
+          "value": "I have moderate difficulty walking"
+        }
+      ]
+    },
+    {
+      "code": "a01bdea0-1acd-419f-9691-d120bd440a13",
+      "display": "Minulla on suuria vaikeuksia kävelemisessä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har stora svårigheter med att gå"
+        },
+        {
+          "language": "en",
+          "value": "I have major difficulty walking"
+        }
+      ]
+    },
+    {
+      "code": "93e6d72c-f5aa-4237-90a9-fa23c5e7f8cd",
+      "display": "En kykene kävelemään",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan inte gå"
+        },
+        {
+          "language": "en",
+          "value": "I'm not able to walk"
+        }
+      ]
+    },
+    {
+      "code": "151b7061-7476-4a1a-8a3b-85eab1562bd3",
+      "display": "Minulla ei ole vaikeuksia peseytyä tai pukeutua itse",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har inga svårigheter med att tvätta mig eller klä mig"
+        },
+        {
+          "language": "en",
+          "value": "I don't have any difficulty washing or getting dressed myself"
+        }
+      ]
+    },
+    {
+      "code": "1d1dbe14-46f9-4744-af62-07926c14d754",
+      "display": "Minulla on lieviä vaikeuksia peseytyä tai pukeutua itse",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har lite svårigheter med att tvätta mig eller klä mig"
+        },
+        {
+          "language": "en",
+          "value": "I have slight difficulty washing or getting dressed myself"
+        }
+      ]
+    },
+    {
+      "code": "73a29ba8-ef3c-471c-a7d7-c5079a960201",
+      "display": "Minulla on kohtalaisia vaikeuksia peseytyä tai pukeutua itse",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har måttliga svårigheter med att tvätta mig eller klä mig"
+        },
+        {
+          "language": "en",
+          "value": "I have moderate difficulty washing or getting dressed myself"
+        }
+      ]
+    },
+    {
+      "code": "84885451-e976-4590-be57-5e9e8418db27",
+      "display": "Minulla on suuria vaikeuksia peseytyä tai pukeutua itse",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har stora svårigheter med att tvätta mig eller klä mig"
+        },
+        {
+          "language": "en",
+          "value": "I have major difficulty washing or getting dressed myself"
+        }
+      ]
+    },
+    {
+      "code": "cd83f807-fd7f-482a-8f8c-6d641537a63e",
+      "display": "En kykene peseytymään tai pukeutumaan itse",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag kan inte tvätta mig eller klä mig"
+        },
+        {
+          "language": "en",
+          "value": "I cannot wash or get dressed myself"
+        }
+      ]
+    },
+    {
+      "code": "37868acf-a41a-496a-a3ac-1c7a19abd760",
+      "display": "Minulla ei ole vaikeuksia suorittaa tavanomaisia toimintojani",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har inga svårigheter med att utföra mina normala aktiviteter"
+        },
+        {
+          "language": "en",
+          "value": "I don’t have any difficulty doing my usual activities"
+        }
+      ]
+    },
+    {
+      "code": "1660309a-f29f-4382-a562-c3d6e21ffa13",
+      "display": "Minulla on lieviä vaikeuksia suorittaa tavanomaisia toimintojani",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har lite svårigheter med att utföra mina normala aktiviteter"
+        },
+        {
+          "language": "en",
+          "value": "I have slight difficulty doing my usual activities"
+        }
+      ]
+    },
+    {
+      "code": "516c5350-f935-4596-8da6-4edbe67c371c",
+      "display": "Minulla on kohtalaisia vaikeuksia suorittaa tavanomaisia toimintojani",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har måttliga svårigheter med att utföra mina normala aktiviteter"
+        },
+        {
+          "language": "en",
+          "value": "I have moderate difficulty doing my usual activities"
+        }
+      ]
+    },
+    {
+      "code": "f6212672-ea4c-48d5-a35b-d41ec798344d",
+      "display": "Minulla on suuria vaikeuksia suorittaa tavanomaisia toimintojani",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har stora svårigheter med att utföra mina normala aktiviteter"
+        },
+        {
+          "language": "en",
+          "value": "I have major difficulty doing my usual activities"
+        }
+      ]
+    },
+    {
+      "code": "c77913f0-49ca-41c6-a95e-97758a5eadbd",
+      "display": "Minulla ei ole kipuja tai vaivoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har varken smärtor eller besvär"
+        },
+        {
+          "language": "en",
+          "value": "I don't have any pain or discomfort"
+        }
+      ]
+    },
+    {
+      "code": "f12cbeb7-82a3-4fcc-8396-04702528899e",
+      "display": "Minulla on lieviä kipuja tai vaivoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har lätta smärtor eller besvär"
+        },
+        {
+          "language": "en",
+          "value": "I have slight pain or discomfort"
+        }
+      ]
+    },
+    {
+      "code": "ee351f5b-904a-4ecd-b79d-0e1807684d23",
+      "display": "Minulla on kohtalaisia kipuja tai vaivoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har måttliga smärtor eller besvär"
+        },
+        {
+          "language": "en",
+          "value": "I have moderate pain or discomfort"
+        }
+      ]
+    },
+    {
+      "code": "94489251-591e-439c-a708-271e2a032249",
+      "display": "Minulla on ankaria kipuja tai vaivoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har svåra smärtor eller besvär"
+        },
+        {
+          "language": "en",
+          "value": "I have severe pain or discomfort"
+        }
+      ]
+    },
+    {
+      "code": "15fd7405-85e3-4a6a-9846-119a4a876ba0",
+      "display": "Minulla on äärimmäisiä kipuja tai vaivoja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har oerhörda smärtor eller besvär"
+        },
+        {
+          "language": "en",
+          "value": "I have extreme pain or discomfort"
+        }
+      ]
+    },
+    {
+      "code": "0c47d1cb-aa74-4e97-8b0b-e3d265dce0f0",
+      "display": "En ole ahdistunut tai masentunut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är inte orolig eller depressiv"
+        },
+        {
+          "language": "en",
+          "value": "I am not anxious or depressed"
+        }
+      ]
+    },
+    {
+      "code": "2be59d73-1934-4f76-98e5-9ab4e0dd8e0f",
+      "display": "Olen lievästi ahdistunut tai masentunut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är lite orolig eller depressiv"
+        },
+        {
+          "language": "en",
+          "value": "I am slightly anxious or depressed"
+        }
+      ]
+    },
+    {
+      "code": "ddcfd106-8898-44a6-b311-c78d01d41cab",
+      "display": "Olen melko ahdistunut tai masentunut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är måttligt orolig eller depressiv"
+        },
+        {
+          "language": "en",
+          "value": "I am rather anxious or depressed"
+        }
+      ]
+    },
+    {
+      "code": "c1568cb9-407d-4a9f-b9d8-f4db56157e54",
+      "display": "Olen erittäin ahdistunut tai masentunut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är mycket orolig eller depressiv"
+        },
+        {
+          "language": "en",
+          "value": "I am severely anxious or depressed"
+        }
+      ]
+    },
+    {
+      "code": "ebaed55a-ac1c-4049-989b-8a5fd67ee52d",
+      "display": "Olen äärimmäisen ahdistunut tai masentunut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag är oerhört orolig eller depressiv"
+        },
+        {
+          "language": "en",
+          "value": "I am extremely anxious or depressed"
+        }
+      ]
+    }
+  ]
+}

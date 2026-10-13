@@ -1,19 +1,39 @@
-// Writes the generated Questionnaires (plan §5.7). The output directory is
-// wholly generated: it is emptied first, so removed surveys don't linger.
+// Writes everything under fhir/ that the converter generates (plan §5.7).
+// Each generated directory is emptied first, so removed surveys don't linger.
 
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import type { Bundle, Questionnaire } from "fhir/r4";
+import type { Bundle, CodeSystem, Questionnaire, StructureDefinition } from "fhir/r4";
 
 export const toJson = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`;
 
-export function writeQuestionnaires(dir: string, questionnaires: { slug: string; questionnaire: Questionnaire }[]) {
-  rmSync(dir, { recursive: true, force: true });
-  mkdirSync(dir, { recursive: true });
-  for (const { slug, questionnaire } of questionnaires) {
-    writeFileSync(join(dir, `${slug}.json`), toJson(questionnaire));
+export interface Output {
+  converted: { slug: string; questionnaire: Questionnaire; codeSystem: CodeSystem }[];
+  definitions: StructureDefinition[];
+  report: string;
+}
+
+/** Every generated file, relative to the fhir/ directory, with its content. */
+export function outputFiles({ converted, definitions, report }: Output): Map<string, string> {
+  const files = new Map<string, string>();
+  for (const { slug, questionnaire, codeSystem } of converted) {
+    files.set(`questionnaires/${slug}.json`, toJson(questionnaire));
+    files.set(`codesystems/${slug}.json`, toJson(codeSystem));
   }
-  writeFileSync(join(dir, "index.json"), toJson(indexBundle(questionnaires.map((entry) => entry.questionnaire))));
+  files.set("questionnaires/index.json", toJson(indexBundle(converted.map((entry) => entry.questionnaire))));
+  for (const definition of definitions) files.set(`definitions/StructureDefinition-${definition.id}.json`, toJson(definition));
+  files.set("conversion-report.md", report);
+  return files;
+}
+
+export const GENERATED_DIRS = ["questionnaires", "codesystems", "definitions"];
+
+export function writeOutput(fhirDir: string, output: Output) {
+  for (const dir of GENERATED_DIRS) rmSync(join(fhirDir, dir), { recursive: true, force: true });
+  for (const [path, content] of outputFiles(output)) {
+    mkdirSync(join(fhirDir, path, ".."), { recursive: true });
+    writeFileSync(join(fhirDir, path), content);
+  }
 }
 
 /** All Questionnaires in one collection Bundle, which the app loads. */

@@ -1,0 +1,674 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/dd7998f8-9c5a-408b-ab46-dce7a02f47d9",
+  "version": "5f17a968-1678-4fdd-b4b6-ab42174aa46f",
+  "name": "AlcoholRisksOfUseAUDITAnswerOptions",
+  "status": "active",
+  "date": "2026-05-07T11:00:41.428Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/dd7998f8-9c5a-408b-ab46-dce7a02f47d9: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 47,
+  "concept": [
+    {
+      "code": "674b350f-f11b-43b3-9fb2-0e6269f2c8ec",
+      "display": "En koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "ae8df7cd-e5dc-46c5-bc96-70973eddf0b8",
+      "display": "Kerran kuussa tai harvemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "cirka en gång i månaden eller mer sällan"
+        },
+        {
+          "language": "en",
+          "value": "Monthly or less"
+        }
+      ]
+    },
+    {
+      "code": "7c17b128-1fb5-461b-8120-89c71f47d194",
+      "display": "2 - 4 kertaa kuukaudessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2–4 gånger i månaden"
+        },
+        {
+          "language": "en",
+          "value": "2 - 4 times a month"
+        }
+      ]
+    },
+    {
+      "code": "4e3a9c3e-1fe9-4a2a-bee9-6af30569ea77",
+      "display": "2 - 3 kertaa viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2–3 gånger i veckan"
+        },
+        {
+          "language": "en",
+          "value": "2 - 3 times a week"
+        }
+      ]
+    },
+    {
+      "code": "ffb9b00b-a4a8-4d92-826f-50524222cc2a",
+      "display": "Neljä kertaa viikossa tai useammin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "4 gånger i veckan eller oftare"
+        },
+        {
+          "language": "en",
+          "value": "4 or more times a week"
+        }
+      ]
+    },
+    {
+      "code": "a34af5c3-c6f8-47df-a341-0037bd23b1bc",
+      "display": "1 - 2 annosta päivässä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "1-2 portioner"
+        },
+        {
+          "language": "en",
+          "value": "1 or 2 drinks per day"
+        }
+      ]
+    },
+    {
+      "code": "e88ff9e6-e3f6-4951-a5b9-8ae1f10673ad",
+      "display": "3 - 4 annosta päivässä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "3-4 portioner"
+        },
+        {
+          "language": "en",
+          "value": "3 or 4 drinks per day"
+        }
+      ]
+    },
+    {
+      "code": "8d58c4b2-c01f-4869-90c0-bf1e5ad97abb",
+      "display": "5 - 6 annosta päivässä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "5-6 portioner"
+        },
+        {
+          "language": "en",
+          "value": "5 or 6 drinks per day"
+        }
+      ]
+    },
+    {
+      "code": "cbc12bd7-f01f-49be-8d9d-ac94a0a54eeb",
+      "display": "7 - 9 annosta päivässä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "7-9 portioner"
+        },
+        {
+          "language": "en",
+          "value": "7 to 9 drinks per day"
+        }
+      ]
+    },
+    {
+      "code": "2bf5954f-9666-4187-96c8-90f9a1829f81",
+      "display": "10 annosta/päivä tai enemmän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "10 portioner eller mera"
+        },
+        {
+          "language": "en",
+          "value": "10 or more drinks per day"
+        }
+      ]
+    },
+    {
+      "code": "25c4a5b9-f537-4d85-8769-536438cf5c0d",
+      "display": "En käytä alkoholia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag använder inte alkohol"
+        },
+        {
+          "language": "en",
+          "value": "I don't use alcohol"
+        }
+      ]
+    },
+    {
+      "code": "47bab1c4-da58-4776-a1b1-9c62de63f160",
+      "display": "En koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "57a0c4ef-4283-40a4-8653-5eb92c8a9d8d",
+      "display": "Harvemmin kuin kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "cirka en gång i månaden eller mer sällan"
+        },
+        {
+          "language": "en",
+          "value": "Less than monthly"
+        }
+      ]
+    },
+    {
+      "code": "dd5eb752-bdf6-497e-90ca-2bedea82f6b8",
+      "display": "Kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Monthly"
+        }
+      ]
+    },
+    {
+      "code": "c03bb8e0-34f1-4428-8a39-ac0254348c9b",
+      "display": "Kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "Weekly"
+        }
+      ]
+    },
+    {
+      "code": "f11df044-d3b6-41be-b2da-109583a84064",
+      "display": "Päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "Daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "f0b19774-0096-4db4-a43d-9376ed31c806",
+      "display": "Ei koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "15fcc6d3-5c61-46db-b394-75176170d3a5",
+      "display": "Harvemmin kuin kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan än en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Less than monthly"
+        }
+      ]
+    },
+    {
+      "code": "5e6dd79b-7540-4005-9dde-97410130315d",
+      "display": "Kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Monthly"
+        }
+      ]
+    },
+    {
+      "code": "2a102037-adc7-4c4c-a187-3c745dfb2165",
+      "display": "Kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "Weekly"
+        }
+      ]
+    },
+    {
+      "code": "f6fe21ac-2893-492b-86bb-1ea43d7ff65c",
+      "display": "Päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "Daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "dc39e42a-c653-46b2-afde-87e3e685d340",
+      "display": "Ei koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "cfd8df15-4448-4916-a49a-9b3314ef353d",
+      "display": "Harvemmin kuin kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan än en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Less than monthly"
+        }
+      ]
+    },
+    {
+      "code": "818b239f-45e2-492f-8cb4-2876be5a94b0",
+      "display": "Kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Monthly"
+        }
+      ]
+    },
+    {
+      "code": "74cbe9d5-30f6-43c9-8448-f2d4277a7548",
+      "display": "Kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "Weekly"
+        }
+      ]
+    },
+    {
+      "code": "df80f33b-cf7d-4555-aaa4-308ad27e69b6",
+      "display": "Päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "Daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "4c1e30a1-04c8-421a-8441-ab641319ab76",
+      "display": "En koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "991fd57a-98c1-451b-a0fd-3ef3dcb58f38",
+      "display": "Harvemmin kuin kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan än en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Less than monthly"
+        }
+      ]
+    },
+    {
+      "code": "3e7e0e1c-441a-49ee-9d60-2dcff556342b",
+      "display": "Kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Monthly"
+        }
+      ]
+    },
+    {
+      "code": "8ca01e75-9f06-485c-aaeb-4b73759b105b",
+      "display": "Kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "Weekly"
+        }
+      ]
+    },
+    {
+      "code": "4d0e9025-8685-4d9a-b8b6-1ffe2149d377",
+      "display": "Päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "Daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "038e1ab4-b955-44e2-a3b7-b036cfbe4c84",
+      "display": "En koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "82ed70bf-cb9c-42d5-8af9-07e3e15ba33f",
+      "display": "Harvemmin kuin kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan än en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Less than monthly"
+        }
+      ]
+    },
+    {
+      "code": "708ffb83-3ec1-4cd7-bb4e-f4848210b586",
+      "display": "Kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Monthly"
+        }
+      ]
+    },
+    {
+      "code": "a60d0e73-41c2-4435-9f54-40473d36d01b",
+      "display": "Kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "Weekly"
+        }
+      ]
+    },
+    {
+      "code": "339a4b94-8ce1-4fd6-82ba-7ba5c8925f24",
+      "display": "Päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "Daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "7c222e9e-51eb-4d91-8e74-1f123d6303af",
+      "display": "Ei koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "04346990-4870-464e-85a3-c813e01a44f1",
+      "display": "Harvemmin kuin kerran kuukaudessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "mer sällan än en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Less than monthly"
+        }
+      ]
+    },
+    {
+      "code": "281d4c83-4cbd-495c-9e89-122dd3a98b46",
+      "display": "Kerran kuussa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Monthly"
+        }
+      ]
+    },
+    {
+      "code": "67768bdb-1426-4bb8-9f08-2029fd6fdc86",
+      "display": "Kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "en gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "Weekly"
+        }
+      ]
+    },
+    {
+      "code": "669648fd-3609-4273-bdfb-0b6c72389465",
+      "display": "Päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "Daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "a2135cc2-4c68-49a4-a541-c9e2eff66faf",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "baf5d245-304c-432e-ad5e-3028505b366e",
+      "display": "Kyllä, mutta ei viimeksi kuluneen vuoden aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, men inte under det senaste året"
+        },
+        {
+          "language": "en",
+          "value": "Yes, but not in the last year"
+        }
+      ]
+    },
+    {
+      "code": "1dab0a85-796e-43a6-9627-bcd197f68a0d",
+      "display": "Kyllä, viimeksi kuluneen vuoden aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under det senaste året"
+        },
+        {
+          "language": "en",
+          "value": "Yes, during the last year"
+        }
+      ]
+    },
+    {
+      "code": "0f975b18-a9f1-4c22-b4fa-7c2bcab4663a",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "d648a896-fba0-4cb4-a23b-acedf9585f1e",
+      "display": "Kyllä, mutta ei viimeksi kuluneen vuoden aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, men inte under det senaste året"
+        },
+        {
+          "language": "en",
+          "value": "Yes, but not in the last year"
+        }
+      ]
+    },
+    {
+      "code": "4bf6cb39-6dee-4ec4-b406-cb6079f85822",
+      "display": "Kyllä, viimeksi kuluneen vuoden aikana",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "ja, under det senaste året"
+        },
+        {
+          "language": "en",
+          "value": "Yes, during the last year"
+        }
+      ]
+    }
+  ]
+}

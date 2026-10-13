@@ -1,7 +1,8 @@
 {
   "$comment": [
     "Questionnaire.code checked with CodeSystem/$lookup on tx.fhir.org (LOINC 2.82), 2026-10-13.",
-    "Score titles: in the source the sv titles are shifted by one score (each holds the next score's Finnish category name) and the en titles are Finnish. fi is kept; sv and en are translated here, sv 'Enkätens totalpoäng' as in the PHQ-9 export."
+    "Score titles: in the source the sv titles are shifted by one score (each holds the next score's Finnish category name) and the en titles are Finnish. fi is kept; sv and en are translated here, sv 'Enkätens totalpoäng' as in the PHQ-9 export.",
+    "Texts: the sv and en category names are untranslated Finnish and say 'keskiarvo' (mean) where the fi says 'summa' (sum); one sv answer option is untranslated. sv and en are translated here."
   ],
   "code": [
     {
@@ -38,6 +39,23 @@
         "sv": "Alkoholrelaterade skador",
         "en": "Alcohol-related harm"
       }
+    }
+  },
+  "texts": {
+    "44748566-42d8-4051-90fd-200e0b7464fd": {
+      "sv": "Alkoholkonsumtion (summa, frågorna 1–3)",
+      "en": "Alcohol consumption (sum, questions 1–3)"
+    },
+    "37651d97-7321-4ede-89ae-52b7981fbdb7": {
+      "sv": "Alkoholberoende (summa, frågorna 4–6)",
+      "en": "Alcohol dependence (sum, questions 4–6)"
+    },
+    "16ff59b0-7a45-43b5-a580-31d8584e5b9a": {
+      "sv": "Alkoholrelaterade skador (summa, frågorna 7–10)",
+      "en": "Alcohol-related harm (sum, questions 7–10)"
+    },
+    "7c17b128-1fb5-461b-8120-89c71f47d194": {
+      "sv": "2–4 gånger i månaden"
     }
   }
 }
