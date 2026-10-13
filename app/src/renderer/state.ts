@@ -3,6 +3,7 @@
 // QuestionnaireResponse is derived from this, never the other way round.
 
 import type { QuestionnaireResponseItemAnswer } from "fhir/r4";
+import type { AnswerSource } from "../populate/sources.ts";
 
 export type Answer = QuestionnaireResponseItemAnswer;
 export type Answers = Readonly<Record<string, readonly Answer[]>>;
@@ -11,9 +12,16 @@ export interface FormState {
   answers: Answers;
   /** Items whose field holds text that is no valid answer, e.g. "1.5" for an integer. */
   invalid: Readonly<Record<string, true>>;
+  /** Where filled-in answers came from, by linkId; editing an answer removes its entry. */
+  provenance: Readonly<Record<string, Provenance>>;
 }
 
-export const emptyForm: FormState = { answers: {}, invalid: {} };
+export interface Provenance {
+  method: "observation" | "expression";
+  sources: AnswerSource[];
+}
+
+export const emptyForm: FormState = { answers: {}, invalid: {}, provenance: {} };
 
 export type Action =
   /** Replaces an item's answers; an empty list clears it. */
@@ -22,6 +30,10 @@ export type Action =
   | { type: "toggle"; linkId: string; answer: Answer }
   /** Marks an item's field as holding text that isn't a valid answer, or clears the mark. */
   | { type: "invalid"; linkId: string; invalid: boolean }
+  /** Takes the state pre-population produced, recording where the new answers came from. */
+  | { type: "populated"; state: FormState; provenance: Record<string, Provenance> }
+  /** Goes back to an earlier state, e.g. to undo a fill. */
+  | { type: "restore"; state: FormState }
   | { type: "reset" };
 
 /** A string identifying an answer's value, for comparing answers and options. */
@@ -45,6 +57,7 @@ export function formReducer(state: FormState, action: Action): FormState {
       return {
         answers: action.answers.length === 0 ? answers : { ...answers, [action.linkId]: action.answers },
         invalid: action.answers.length === 0 ? state.invalid : without(state.invalid, action.linkId),
+        provenance: without(state.provenance, action.linkId),
       };
     }
     case "toggle": {
@@ -60,6 +73,10 @@ export function formReducer(state: FormState, action: Action): FormState {
         ...state,
         invalid: action.invalid ? { ...state.invalid, [action.linkId]: true } : without(state.invalid, action.linkId),
       };
+    case "populated":
+      return { ...action.state, provenance: { ...state.provenance, ...action.provenance } };
+    case "restore":
+      return action.state;
     case "reset":
       return emptyForm;
   }

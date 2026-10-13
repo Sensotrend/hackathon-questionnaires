@@ -281,7 +281,7 @@ The patient data is expected to follow the Finnish national FHIR specifications,
 
 ### 7.5 Provenance in the UI
 
-Every pre-filled answer gets a "from record" badge showing the source resource (type, date, display) and the raw JSON on demand. Editing the answer removes the badge. The QuestionnaireResponse records the source with the SDC `itemPopulationContext`-style approach: an `extension` on the answer referencing the source resource.
+Every pre-filled answer gets a "from patient data" badge showing its source resources (display, date) and their raw JSON on demand. Editing the answer removes the badge. The QuestionnaireResponse records each source as the project's `answer-source` extension (a Reference) on the answer, defined in `fhir/definitions/`. Values computed rather than read from a resource (yes for "any active allergies?") cite the records in the variables the expression used.
 
 ### 7.6 Sample data
 
@@ -456,3 +456,30 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
   - 91 converter tests and 65 app tests pass. The new tests cover retyping with unit, limits and translated unit words; string and date retyping; rejected overrides; every schema rule; and in the app, the maternity height question: description, the max error for 1655, `valueDecimal` 165.5 from "165,5", and Swedish unit words.
   - `npm run validate`: 0 errors. The new warnings, no Finnish display for UCUM codes, are accepted like the LOINC ones.
   - In the browser, the maternity form shows units and ranges in Finnish for its retyped top-level questions.
+
+### Milestone 9 — Pre-population engine ✅
+
+- **9a: Finnish profiles and the response.** FinnishCore has no questionnaire profiles. Kanta PHR's Questionnaire profile isn't adopted, and its QuestionnaireResponse profile is followed where possible (§7.3). The response now has `language`, a generated narrative (questions and answers; escaped; `lang`/`xml:lang`), a UUID `identifier` per form (a reset starts a new one), and `subject`/`source` once a patient is chosen.
+- **9b: Patient data** (`app/src/populate/store.ts`, `PatientDataPanel.tsx`):
+  - Files (several at once) or pasted JSON, added to one store. Bundles of any type are flattened, also nested ones. A later copy of a resource replaces the earlier one.
+  - References resolve by `Type/id`, absolute URL, `_history` URL or `urn:uuid` fullUrl. A resource is about a patient when its `subject`/`patient`/`beneficiary` resolves to them.
+  - With several Patients the person picks one. With none the panel says so. The data is kept across questionnaires and can be removed.
+- **9c: The engine** (`populate.ts`, `observation.ts`, `expression.ts`, `query.ts`, `units.ts`):
+  - **Observation-based:** `code` + `observationLinkPeriod` take the latest final/amended/corrected Observation about the patient effective within the period, or a matching component of it. Values: quantities converted between units of the same dimension (length, mass, time; `units.ts`); integers that must be whole; codes mapped to answer options; dates; strings; booleans.
+  - **Expression-based:** `initialExpression` (FHIRPath) with launch context `%patient` and `variable`s (FHIRPath or `x-fhir-query`) on the Questionnaire and on items, inherited by descendants.
+  - **`x-fhir-query`** is answered from the store as a searchset Bundle. It supports `_id`, `patient`, `subject`, `code` (token, comma = or), `status` and `clinical-status`; any other parameter is an error, not a silently wrong answer.
+  - **Answers from expressions:** codings, CodeableConcepts or option codes for choices; quantities converted to the item's unit. A repeating item takes all distinct values; a single-answer item with several values is skipped.
+  - **Sources:** each value is traced to the resource it came from (fhirpath.js internal types).
+  - **Rules:** only enabled, empty, valid items are filled, and never over an answer; it repeats until nothing more fills, so filled answers can enable follow-ups that then fill. Each item that could have been filled but wasn't gets a reason, and launch contexts that aren't available are warned about.
+- **9d: In the form:**
+  - "Fill in from patient data" (disabled until a patient is chosen), a status line with the count, the skipped items with their reasons, and undo (back to the state before filling).
+  - Badges with sources and raw JSON; editing an answer removes its badge.
+  - `answer-source` extensions in the response.
+- **Not yet:** the converted Questionnaires have no population definitions. Codes, `observationLinkPeriod`, launch context, variables and expressions come with the mappings in milestone 10, and so do the sample Bundles.
+- Verified:
+  - 91 converter and 101 app tests pass.
+  - Engine tests use one questionnaire and Bundle that exercise every path and skip reason (latest-in-period, preliminary and other patients' data ignored, m→cm, a component, a date, a code, FHIRPath on the patient, a local query with a computed yes, a follow-up filled in a second round, never overwriting, an unsupported query parameter, a non-integer weight, a missing launch context), plus the query and unit tables.
+  - UI tests: loading, patient choice, filling, badges and source JSON, the response's sources and subject, dropping a badge on edit, undo.
+  - `npm run validate` (30 files with the new definition): 0 errors.
+  - A filled-in response checked separately with the validator found the narrative missing `lang`/`xml:lang`, now fixed. It also confirmed that a SNOMED code with a Finnish display is an error. **For milestone 10:** answer options keep their local codes; national codes go in the matching, not in the answers.
+  - In the browser, the test questionnaire and Bundle were loaded through the file inputs and the patient chosen. The fill gave 9 answers with badges and sources and the 3 expected skips, with no errors.

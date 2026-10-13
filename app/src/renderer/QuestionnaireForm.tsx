@@ -9,9 +9,11 @@ import { enabledAnswers, enabledItems } from "./enable.ts";
 import { focusItem } from "./ids.ts";
 import { issueText } from "./IssueMessage.tsx";
 import { Items } from "./Item.tsx";
+import { itemLabel } from "./labels.ts";
 import { buildResponse } from "./response.ts";
 import { calculateScores } from "./scores.ts";
-import { emptyForm, formReducer } from "./state.ts";
+import { emptyForm, formReducer, type FormState } from "./state.ts";
+import { populate, type PopulateResult } from "../populate/populate.ts";
 import { validate } from "./validation.ts";
 
 export interface QuestionnaireFormProps {
@@ -33,6 +35,8 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
   /** When the response was last completed. */
   const [authored, setAuthored] = useState<string>();
   const [confirmingReset, setConfirmingReset] = useState(false);
+  /** The outcome of the last fill from patient data, and the state before it, for undo. */
+  const [fill, setFill] = useState<{ result: PopulateResult; before: FormState }>();
   /** Identifies this response: one per opened form (a reset starts a new one). */
   const [responseId, setResponseId] = useState(() => crypto.randomUUID());
   const summaryRef = useRef<HTMLDivElement>(null);
@@ -56,7 +60,18 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
     scores,
     id: responseId,
     subject: patient ? patientReference(patient) : undefined,
+    provenance: state.provenance,
   });
+
+  const fillIn = () => {
+    if (!patient) return;
+    const result = populate(questionnaire, patientData, patient, state);
+    const provenance = Object.fromEntries(
+      result.filled.map(({ linkId, method, sources }) => [linkId, { method, sources }]),
+    );
+    setFill({ result, before: state });
+    dispatch({ type: "populated", state: result.state, provenance });
+  };
   const shownIssues = new Map(submitted ? issues.map((issue) => [issue.linkId, issue]) : []);
 
   const title = localized(questionnaire.title ?? questionnaire.name, questionnaire._title, lang);
@@ -96,7 +111,48 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
             onChange={onPatientDataChange}
             patient={patient}
             onSelectPatient={onSelectPatient}
-          />
+          >
+            <div className="fill">
+              <button type="button" className="primary" disabled={!patient} onClick={fillIn}>
+                {t("fill", lang)}
+              </button>
+              {!patient && patientData.resources.length > 0 && <span className="hint">{t("choosePatientFirst", lang)}</span>}
+              {fill && (
+                <div className="fill-result" role="status">
+                  <p>
+                    {fill.result.filled.length > 0
+                      ? t("filledCount", lang).replace("{count}", String(fill.result.filled.length))
+                      : t("filledNone", lang)}{" "}
+                    <button
+                      type="button"
+                      className="link-button"
+                      onClick={() => {
+                        dispatch({ type: "restore", state: fill.before });
+                        setFill(undefined);
+                      }}
+                    >
+                      {t("undoFill", lang)}
+                    </button>
+                  </p>
+                  {fill.result.skipped.length + fill.result.warnings.length > 0 && (
+                    <details>
+                      <summary>{t("skippedCount", lang).replace("{count}", String(fill.result.skipped.length))}</summary>
+                      <ul>
+                        {fill.result.warnings.map((warning) => (
+                          <li key={warning}>{warning}</li>
+                        ))}
+                        {fill.result.skipped.map(({ linkId, reason }) => (
+                          <li key={linkId}>
+                            {itemLabel(questionnaire, linkId, lang)}: <span className="hint">{reason}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
+                </div>
+              )}
+            </div>
+          </PatientDataPanel>
         )}
         <form
           noValidate
@@ -147,6 +203,7 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
                     setAuthored(undefined);
                     setConfirmingReset(false);
                     setResponseId(crypto.randomUUID());
+                    setFill(undefined);
                   }}
                 >
                   {t("reset", lang)}
@@ -175,25 +232,4 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
       </article>
     </FormContext>
   );
-}
-
-/**
- * A short label for an item in the issue summary: its text on one line,
- * shortened. (Neither the first nor the last line is reliably the question:
- * some texts start with a section heading, some end with instructions.)
- */
-function itemLabel(questionnaire: Questionnaire, linkId: string, lang: Lang): string {
-  const find = (items = questionnaire.item ?? []): (typeof items)[number] | undefined => {
-    for (const item of items) {
-      if (item.linkId === linkId) return item;
-      const found = find(item.item ?? []);
-      if (found) return found;
-    }
-    return undefined;
-  };
-  const item = find();
-  const text = localized(item?.text, item?._text, lang);
-  const oneLine = text.replace(/\s+/g, " ").trim();
-  if (oneLine === "") return linkId;
-  return oneLine.length > 90 ? `${oneLine.slice(0, 89)}…` : oneLine;
 }

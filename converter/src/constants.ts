@@ -16,6 +16,8 @@ export const EXT = {
   calculatedExpression: "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
   /** The project's own extension for score bands (plan §5.5). */
   scoreInterpretation: `${BASE}/StructureDefinition/score-interpretation`,
+  /** The project's own extension recording where a pre-populated answer came from (plan §7.5). */
+  answerSource: `${BASE}/StructureDefinition/answer-source`,
 } as const;
 
 export const ITEM_CONTROL_SYSTEM = "http://hl7.org/fhir/questionnaire-item-control";

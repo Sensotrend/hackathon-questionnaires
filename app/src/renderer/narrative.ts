@@ -28,10 +28,10 @@ function list(items: QuestionnaireResponseItem[]): string {
   return `<ul>${entries.join("")}</ul>`;
 }
 
-export function responseNarrative(title: string | undefined, items: QuestionnaireResponseItem[]): Narrative {
+export function responseNarrative(title: string | undefined, items: QuestionnaireResponseItem[], language: string): Narrative {
   const heading = title ? `<p><b>${escape(title)}</b></p>` : "";
   return {
     status: "generated",
-    div: `<div xmlns="http://www.w3.org/1999/xhtml">${heading}${list(items)}</div>`,
+    div: `<div xmlns="http://www.w3.org/1999/xhtml" lang="${escape(language)}" xml:lang="${escape(language)}">${heading}${list(items)}</div>`,
   };
 }

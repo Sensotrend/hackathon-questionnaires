@@ -6,7 +6,7 @@ import type { Questionnaire, QuestionnaireItem, QuestionnaireResponse, Questionn
 import { calculatedExpression } from "../fhir/items.ts";
 import { conditionHolds } from "./enable.ts";
 import { responseNarrative } from "./narrative.ts";
-import type { Answers } from "./state.ts";
+import type { Answers, Provenance } from "./state.ts";
 
 export interface ResponseOptions {
   status: QuestionnaireResponse["status"];
@@ -18,7 +18,11 @@ export interface ResponseOptions {
   id?: string;
   /** The person the answers are about, once known (from patient data). */
   subject?: Reference;
+  /** Where filled-in answers came from, by linkId: recorded on each answer. */
+  provenance?: Readonly<Record<string, Provenance>>;
 }
+
+export const ANSWER_SOURCE = "https://sensotrend.com/fhir/StructureDefinition/answer-source";
 
 /** `answers` must hold only enabled items' answers, and `enabled` the enabled linkIds. */
 export function buildResponse(
@@ -38,7 +42,17 @@ export function buildResponse(
       if (item.type === "group") return children.length > 0 ? [{ ...base, item: children }] : [];
 
       const score = calculatedExpression(item) !== undefined ? scores.get(item.linkId) : undefined;
-      const given = score !== undefined ? [{ valueDecimal: score }] : (answers[item.linkId] ?? []).map((answer) => ({ ...answer }));
+      const sources = options.provenance?.[item.linkId]?.sources ?? [];
+      const sourceExtensions = sources.map((source) => ({
+        url: ANSWER_SOURCE,
+        valueReference: { reference: source.reference, ...(source.display && { display: source.display }) },
+      }));
+      const given =
+        score !== undefined
+          ? [{ valueDecimal: score }]
+          : (answers[item.linkId] ?? []).map((answer) =>
+              sourceExtensions.length > 0 ? { extension: sourceExtensions, ...answer } : { ...answer },
+            );
       if (given.length === 0) return children.length > 0 ? [{ ...base, item: children }] : [];
 
       // Each follow-up goes under the first answer that satisfies its condition on this question.
@@ -62,10 +76,11 @@ export function buildResponse(
   // §7.3): language, narrative, identifier, questionnaire, status, subject
   // (and source) once known, authored once completed.
   const item = toItems(questionnaire.item);
+  const language = questionnaire.language ?? "fi";
   return {
     resourceType: "QuestionnaireResponse",
-    language: questionnaire.language ?? "fi",
-    text: responseNarrative(questionnaire.title, item),
+    language,
+    text: responseNarrative(questionnaire.title, item, language),
     ...(options.id && { identifier: { system: "urn:ietf:rfc:3986", value: `urn:uuid:${options.id}` } }),
     ...(canonical && { questionnaire: canonical }),
     status: options.status,

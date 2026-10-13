@@ -137,7 +137,7 @@ describe("buildResponse", () => {
       .toEqual({
         resourceType: "QuestionnaireResponse",
         language: "fi",
-        text: { status: "generated", div: expect.stringMatching(/^<div xmlns="http:\/\/www.w3.org\/1999\/xhtml">/) },
+        text: { status: "generated", div: expect.stringMatching(/^<div xmlns="http:\/\/www.w3.org\/1999\/xhtml" lang="fi" xml:lang="fi">/) },
         questionnaire: "https://example.org/Questionnaire/q|1",
         status: "in-progress",
         item: [
@@ -184,7 +184,7 @@ describe("buildResponse", () => {
   it("writes every answered question into the narrative, escaped", () => {
     const response = respond({ smoke: [yes], always: [{ valueString: "<b>x & y</b>" }] });
     expect(response.text?.div).toBe(
-      '<div xmlns="http://www.w3.org/1999/xhtml"><ul><li><b>Ryhmä</b><ul><li><b>SMOKE</b>: Kyllä' +
+      '<div xmlns="http://www.w3.org/1999/xhtml" lang="fi" xml:lang="fi"><ul><li><b>Ryhmä</b><ul><li><b>SMOKE</b>: Kyllä' +
         "<ul><li><b>Aina</b>: &lt;b&gt;x &amp; y&lt;/b&gt;</li></ul></li></ul></li></ul></div>",
     );
   });
@@ -211,7 +211,7 @@ describe("validate", () => {
     { linkId: "info", type: "display", text: "x" },
   ]);
   const issues = (answers: Answers, invalid: Record<string, true> = {}) =>
-    validate(form, { answers, invalid }, enabledItems(form, answers));
+    validate(form, { answers, invalid, provenance: {} }, enabledItems(form, answers));
 
   it("reports required questions and groups, in document order", () => {
     expect(issues({})).toEqual([

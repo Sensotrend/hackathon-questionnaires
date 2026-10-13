@@ -50,3 +50,26 @@ describe("answerKey", () => {
     expect(answerKey({ valueString: "1" })).not.toBe(answerKey({ valueInteger: 1 }));
   });
 });
+
+describe("provenance", () => {
+  const source = { reference: "Observation/h", resourceType: "Observation", resource: { resourceType: "Observation" } } as never;
+  const filled = formReducer(emptyForm, {
+    type: "populated",
+    state: { ...emptyForm, answers: { h: [{ valueDecimal: 165 }] } },
+    provenance: { h: { method: "observation", sources: [source] } },
+  });
+
+  it("is recorded with populated answers", () => {
+    expect(filled.answers).toEqual({ h: [{ valueDecimal: 165 }] });
+    expect(filled.provenance.h?.sources).toEqual([source]);
+  });
+
+  it("goes when the person changes the answer", () => {
+    expect(formReducer(filled, { type: "set", linkId: "h", answers: [{ valueDecimal: 170 }] }).provenance).toEqual({});
+  });
+
+  it("goes back with restore and reset", () => {
+    expect(formReducer(filled, { type: "restore", state: emptyForm })).toEqual(emptyForm);
+    expect(formReducer(filled, { type: "reset" })).toEqual(emptyForm);
+  });
+});

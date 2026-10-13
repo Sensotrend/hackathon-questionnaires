@@ -55,4 +55,36 @@ export const scoreInterpretation: StructureDefinition = {
   },
 };
 
-export const definitions: StructureDefinition[] = [scoreInterpretation];
+export const answerSource: StructureDefinition = {
+  resourceType: "StructureDefinition",
+  id: "answer-source",
+  url: EXT.answerSource,
+  version: "0.1.0",
+  name: "AnswerSource",
+  title: "Answer source",
+  status: "draft",
+  description:
+    "A record an answer was filled in from (pre-population), e.g. the Observation a height came from. One extension per record; absent when the person gave the answer.",
+  fhirVersion: "4.0.1",
+  kind: "complex-type",
+  abstract: false,
+  context: [{ type: "element", expression: "QuestionnaireResponse.item.answer" }],
+  type: "Extension",
+  baseDefinition: "http://hl7.org/fhir/StructureDefinition/Extension",
+  derivation: "constraint",
+  differential: {
+    element: [
+      {
+        id: "Extension",
+        path: "Extension",
+        short: "A record the answer was filled in from",
+        definition: "A record the answer was filled in from (pre-population).",
+      },
+      { id: "Extension.extension", path: "Extension.extension", max: "0" },
+      { id: "Extension.url", path: "Extension.url", fixedUri: EXT.answerSource },
+      { id: "Extension.value[x]", path: "Extension.value[x]", min: 1, type: [{ code: "Reference" }] },
+    ],
+  },
+};
+
+export const definitions: StructureDefinition[] = [scoreInterpretation, answerSource];

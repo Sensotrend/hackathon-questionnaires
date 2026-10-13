@@ -18,6 +18,7 @@ import {
 } from "./controls.tsx";
 import { fieldId } from "./ids.ts";
 import { IssueMessage } from "./IssueMessage.tsx";
+import { FromRecord } from "../populate/FromRecord.tsx";
 
 export function Items({ items, depth }: { items: QuestionnaireItem[] | undefined; depth: number }) {
   return (
@@ -60,6 +61,7 @@ export function Item({ item, depth }: { item: QuestionnaireItem; depth: number }
   return (
     <div className={`question question-${item.type}`} data-link-id={item.linkId}>
       {control(item, text)}
+      <FromRecord item={item} />
       <IssueMessage item={item} />
       {item.item && item.item.length > 0 && (
         <div className="follow-ups">
