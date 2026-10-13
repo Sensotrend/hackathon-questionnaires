@@ -286,3 +286,14 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
 - **Finnish profiles and code systems**: used for the input Bundles and the population mappings (§7.3).
 - **Free-text retyping**: free-text fields that hold numbers (height, weight, counts, years) are retyped to numeric items through overrides (§5.6).
 - **Scores**: shown to the patient in every scored questionnaire, with the interpretation band.
+
+## 10. Progress
+
+### Milestone 0 — Repo setup ✅
+
+- Git repository on `main`; the plan, the decisions and the unchanged source exports committed.
+- npm workspace with `converter` (Node + tsx) and `app` (Vite 8 + React 19). Shared `tsconfig.base.json` (strict, `noUncheckedIndexedAccess`) and one flat ESLint config for the repo. Vitest 5 in both workspaces.
+- TypeScript is pinned to `~6.0.3`, because typescript-eslint 8.71 only supports TypeScript below 6.1. Revisit when it supports TypeScript 7.
+- The duplicate export (§2) is noted in the README. The loader deduplicates it by `revisionGuid` in milestone 1.
+- `converter/src/cli.ts` is a placeholder that lists the source files. `app/` renders a placeholder page.
+- Verified: `npm run check` passes (lint clean, both workspaces type-check, the converter's smoke test finds the 15 source files), `npm run convert` runs, `npm run build` produces `app/dist/`, and the dev server serves the page at http://localhost:5173 with no console errors.
