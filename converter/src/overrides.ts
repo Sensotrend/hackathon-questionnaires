@@ -32,31 +32,71 @@ export const TextFix: z.ZodType<TextFix> = z
   })
   .catchall(z.string().min(1)) as z.ZodType<TextFix>;
 
+/** What the patient data must hold for an answer (plan §7.2). */
+export const Evidence = z.strictObject({
+  /** The collection: active conditions, allergies or medications, completed immunizations, final observations. */
+  in: z.enum(["conditions", "allergies", "medications", "immunizations", "observations"]),
+  /**
+   * Codes by system. ICD-10 and ATC codes match as prefixes (E11 matches
+   * E11.9), since both are hierarchical by code; other systems match exactly.
+   */
+  codes: z.record(z.url().or(z.string().startsWith("urn:oid:")), z.array(z.string().regex(/^[A-Za-z0-9.-]+$/)).min(1)).optional(),
+  /** An extra FHIRPath condition on each resource, e.g. `value.value > 0`. */
+  where: z.string().min(1).optional(),
+});
+export type Evidence = z.infer<typeof Evidence>;
+
+/** How a question is filled in from patient data, beyond observation-based population (plan §7.2). */
+export const Populate = z.union([
+  /** A choice question: the option (by its Finnish text) when there is evidence. Nothing when there isn't. */
+  z.strictObject({ answer: z.string().min(1), when: Evidence }),
+  /** A text question: the names of the evidence's resources, comma-separated. */
+  z.strictObject({ list: Evidence }),
+  /** A repeating choice question: each option (by its Finnish text) that has evidence. */
+  z.strictObject({ options: z.record(z.string().min(1), Evidence) }),
+  /** Anything else: a FHIRPath initialExpression over %patient and the collections. */
+  z.strictObject({ expression: z.string().min(1) }),
+]);
+export type Populate = z.infer<typeof Populate>;
+
+const ObservationCoding = z.strictObject({ system: z.string().min(1), code: z.string().min(1), display: z.string().min(1) });
+
 /**
- * A free-text question retyped to what its answers really are, e.g. height
- * in cm as a decimal (plan §5.6). Only free-text questions can be retyped.
+ * Changes to one question (plan §5.6, §7): retyping a free-text question to
+ * what its answers really are, and filling any question in from patient data.
  */
 export const ItemOverride = z
   .strictObject({
     $comment: z.string().optional(),
-    type: z.enum(["integer", "decimal", "string", "date"]),
+    type: z.enum(["integer", "decimal", "string", "date"]).optional(),
     unit: z.enum(Object.keys(UNITS) as [Unit, ...Unit[]]).optional(),
     minValue: z.number().optional(),
     maxValue: z.number().optional(),
+    /** `item.code`, for observation-based population. */
+    code: z.array(ObservationCoding).min(1).optional(),
+    /** How old an Observation may be, e.g. `{ "value": 1, "unit": "a" }`. Needs `code`. */
+    observationLinkPeriod: z.strictObject({ value: z.number().positive(), unit: z.enum(["a", "mo", "wk", "d"]) }).optional(),
+    populate: Populate.optional(),
   })
   .refine((item) => item.minValue === undefined || item.maxValue === undefined || item.minValue < item.maxValue, {
     message: "minValue must be below maxValue",
   })
   .refine(
     (item) =>
-      ["integer", "decimal"].includes(item.type) ||
+      (item.type !== undefined && ["integer", "decimal"].includes(item.type)) ||
       (item.unit === undefined && item.minValue === undefined && item.maxValue === undefined),
     { message: "unit, minValue and maxValue need type integer or decimal" },
   )
   .refine(
     (item) => item.type !== "integer" || [item.minValue, item.maxValue].every((value) => value === undefined || Number.isInteger(value)),
     { message: "an integer item needs whole-number limits" },
-  );
+  )
+  .refine((item) => (item.code === undefined) === (item.observationLinkPeriod === undefined), {
+    message: "code and observationLinkPeriod go together",
+  })
+  .refine((item) => item.type !== undefined || item.code !== undefined || item.populate !== undefined, {
+    message: "an item override needs a type, an observation code or a populate rule",
+  });
 export type ItemOverride = z.infer<typeof ItemOverride>;
 
 export const Overrides = z.strictObject({
@@ -80,7 +120,7 @@ export const Overrides = z.strictObject({
    * category, question or answer id. Applied before conversion.
    */
   texts: z.record(z.string(), TextFix).optional(),
-  /** Retyped free-text questions, keyed by linkId (questionId). */
+  /** Changes to questions, keyed by linkId (questionId): retyping and population. */
   items: z.record(z.string(), ItemOverride).optional(),
 });
 export type Overrides = z.infer<typeof Overrides>;

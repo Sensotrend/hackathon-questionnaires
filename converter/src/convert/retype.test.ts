@@ -55,12 +55,11 @@ describe("item overrides", () => {
   });
 
   it.each([
-    ["a question that isn't free text", id(102)],
-    ["a question that doesn't exist", id(999)],
-  ])("reject %s", (_case, linkId) => {
-    expect(() => convertSurvey(source, { items: { [linkId]: { type: "integer" } } })).toThrow(
-      new RegExp(`don't exist or aren't free text: ${linkId}`),
-    );
+    ["a question that isn't free text", id(102), /is select, not free text, so it can't be retyped/],
+    ["a heading", id(101), /don't exist or are headings/],
+    ["a question that doesn't exist", id(999), /don't exist or are headings/],
+  ])("reject %s", (_case, linkId, error) => {
+    expect(() => convertSurvey(source, { items: { [linkId]: { type: "integer" } } })).toThrow(error);
   });
 
   it.each([
@@ -69,6 +68,8 @@ describe("item overrides", () => {
     [{ type: "integer", maxValue: 2.5 }, /whole-number limits/],
     [{ type: "decimal", unit: "furlong" }, /unit/],
     [{ type: "boolean" }, /type/],
+    [{ $comment: "nothing" }, /needs a type, an observation code or a populate rule/],
+    [{ code: [{ system: "http://loinc.org", code: "8302-2", display: "Body height" }] }, /go together/],
   ])("validate their shape: %j", (override, error) => {
     const result = ItemOverride.safeParse(override);
     expect(result.success).toBe(false);

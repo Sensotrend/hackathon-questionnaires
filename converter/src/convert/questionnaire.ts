@@ -8,6 +8,7 @@ import type { SourceFile } from "../source/loader.ts";
 import type { Category, Question, Survey } from "../source/schema.ts";
 import { answerCodeSystem } from "./codesystem.ts";
 import { fixSurvey } from "./fixes.ts";
+import { populateItem, questionnaireExtensions, type PopulationContext } from "./population.ts";
 import { answerScore, scoreItems } from "./scoring.ts";
 import { localize, PRIMARY_LANGUAGE } from "./text.ts";
 
@@ -51,8 +52,12 @@ export function convertSurvey(source: SourceFile, overrides: Overrides = {}): Co
           ]
         : undefined,
     code: overrides.code,
-    item: convertStructure(survey, overrides, notes),
+    item: [],
   };
+  const population: PopulationContext = { collections: new Set(), usesPatient: { value: false } };
+  questionnaire.item = convertStructure(survey, overrides, notes, population);
+  const extensions = questionnaireExtensions(population);
+  if (extensions.length > 0) questionnaire.extension = extensions;
 
   const result = withoutUndefined(questionnaire);
   return { questionnaire: result, codeSystem: answerCodeSystem(survey, result), notes };
@@ -63,9 +68,13 @@ export function convertSurvey(source: SourceFile, overrides: Overrides = {}): Co
  * (plan §5.3). A category split into several runs gives several groups with
  * the same title; the `flat` override skips groups altogether.
  */
-function convertStructure(survey: Survey, overrides: Overrides, notes: string[]): QuestionnaireItem[] {
-  const retyped = new Set<string>();
-  const context: ItemContext = { survey, items: overrides.items ?? {}, retyped, notes };
+function convertStructure(
+  survey: Survey,
+  overrides: Overrides,
+  notes: string[],
+  population: PopulationContext,
+): QuestionnaireItem[] {
+  const context: ItemContext = { survey, items: overrides.items ?? {}, applied: new Set(), notes, population };
   const toItem = (question: Question) => convertQuestion(question, context);
   const flat = overrides.structure === "flat";
   if (flat) notes.push("No groups (override `structure: flat`): the categories are scoring sub-scales, not sections.");
@@ -131,8 +140,9 @@ interface ItemContext {
   /** Item overrides by linkId. */
   items: Record<string, ItemOverride>;
   /** linkIds of the item overrides applied, to catch overrides that match nothing. */
-  retyped: Set<string>;
+  applied: Set<string>;
   notes: string[];
+  population: PopulationContext;
 }
 
 function convertQuestion(question: Question, context: ItemContext): QuestionnaireItem {
@@ -194,6 +204,8 @@ function convertQuestion(question: Question, context: ItemContext): Questionnair
     });
   }
 
+  applyItemOverride(item, question, context);
+
   // Follow-up questions live under the question they follow, shown only when
   // their answer is chosen (plan §5.5). For a repeating (multiselect) parent,
   // `=` holds when any of the chosen answers matches.
@@ -216,10 +228,9 @@ function convertQuestion(question: Question, context: ItemContext): Questionnair
 }
 
 /** Applies the item override of a free-text question, if there is one (plan §5.6). */
-function retype(item: QuestionnaireItem, { items, retyped, notes }: ItemContext) {
+function retype(item: QuestionnaireItem, { items, notes }: ItemContext) {
   const override = items[item.linkId];
-  if (override === undefined) return;
-  retyped.add(item.linkId);
+  if (override?.type === undefined) return;
   item.type = override.type;
 
   const number = (value: number): Extension =>
@@ -254,10 +265,24 @@ function retype(item: QuestionnaireItem, { items, retyped, notes }: ItemContext)
   );
 }
 
-function checkItemOverrides({ items, retyped }: ItemContext) {
-  const unused = Object.keys(items).filter((linkId) => !retyped.has(linkId));
+/** Applies the population part of an item override, and checks the retyping part fit the question. */
+function applyItemOverride(item: QuestionnaireItem, question: Question, context: ItemContext) {
+  const override = context.items[item.linkId];
+  if (override === undefined) return;
+  context.applied.add(item.linkId);
+  if (override.type !== undefined && question.type !== "freetext") {
+    throw new Error(`question ${item.linkId} is ${question.type}, not free text, so it can't be retyped`);
+  }
+  for (const description of populateItem(item, override, context.population)) {
+    const text = item.text!.replace(/\s+/g, " ");
+    context.notes.push(`Filled in from patient data: "${text.length > 60 ? `${text.slice(0, 59)}…` : text}" ← ${description}.`);
+  }
+}
+
+function checkItemOverrides({ items, applied }: ItemContext) {
+  const unused = Object.keys(items).filter((linkId) => !applied.has(linkId));
   if (unused.length > 0) {
-    throw new Error(`item overrides for questions that don't exist or aren't free text: ${unused.join(", ")}`);
+    throw new Error(`item overrides for questions that don't exist or are headings: ${unused.join(", ")}`);
   }
 }
 

@@ -6,7 +6,8 @@
     "convert": "tsx src/cli.ts",
     "typecheck": "tsc -p .",
     "test": "vitest run",
-    "validate": "tsx src/validate.ts"
+    "validate": "tsx src/validate.ts",
+    "verify-codes": "tsx src/terminology.ts"
   },
   "devDependencies": {
     "@types/fhir": "0.0.44",
