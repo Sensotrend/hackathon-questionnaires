@@ -4,6 +4,7 @@ import { loadBundledQuestionnaires, questionnairesIn } from "./data/questionnair
 import { kindOf, questionCount } from "./fhir/items.ts";
 import { LANGUAGES, localized, type Lang } from "./fhir/text.ts";
 import { LANGUAGE_NAMES, t } from "./i18n.ts";
+import { emptyPatientData, type PatientData } from "./populate/store.ts";
 
 // The form brings fhirpath.js and its R4 model (most of the JavaScript), so
 // it loads when a questionnaire is opened, not with the list.
@@ -51,6 +52,9 @@ export function App() {
   const [lang, setLang] = useState<Lang>(initialLanguage);
   const [bundled, setBundled] = useState<Bundled>({ status: "loading" });
   const [fromFiles, setFromFiles] = useState<Entry[]>([]);
+  // Patient data is kept across questionnaires: load once, fill in several forms.
+  const [patientData, setPatientData] = useState<PatientData>(emptyPatientData);
+  const [patientId, setPatientId] = useState<string>();
   const key = routeKey(useHash());
 
   useEffect(() => {
@@ -118,7 +122,15 @@ export function App() {
             </a>
             {open ? (
               <Suspense fallback={<p>{t("loading", lang)}</p>}>
-                <QuestionnaireForm key={open.key} questionnaire={open.questionnaire} lang={lang} />
+                <QuestionnaireForm
+                  key={open.key}
+                  questionnaire={open.questionnaire}
+                  lang={lang}
+                  patientData={patientData}
+                  onPatientDataChange={setPatientData}
+                  patientId={patientId}
+                  onSelectPatient={setPatientId}
+                />
               </Suspense>
             ) : bundled.status === "loading" ? (
               <p>{t("loading", lang)}</p>

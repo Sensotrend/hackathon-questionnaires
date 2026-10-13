@@ -513,3 +513,72 @@ fieldset[aria-invalid="true"] {
   font-size: 0.8rem;
   white-space: pre;
 }
+
+/* Patient data */
+
+.patient-data {
+  margin: 1rem 0 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.patient-data > summary {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.patient-data > :not(summary) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.patient-data-load {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.patient-data-load .paste {
+  display: grid;
+  gap: 0.25rem;
+  flex: 1 1 14rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.patient-data-load textarea {
+  font: 0.85rem ui-monospace, monospace;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.35rem 0.5rem;
+}
+
+.patient-data button:not(.link-button) {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.patient-data button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.patient-data-summary {
+  padding-bottom: 0.75rem;
+}
+
+.patient {
+  font-weight: 600;
+  margin: 0.25rem 0;
+}

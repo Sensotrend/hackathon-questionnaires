@@ -2,6 +2,8 @@ import type { Questionnaire } from "fhir/r4";
 import { useEffect, useMemo, useReducer, useRef, useState } from "react";
 import { localized, type Lang } from "../fhir/text.ts";
 import { t } from "../i18n.ts";
+import { PatientDataPanel, selectedPatient } from "../populate/PatientDataPanel.tsx";
+import { emptyPatientData, patientReference, type PatientData } from "../populate/store.ts";
 import { FormContext } from "./context.ts";
 import { enabledAnswers, enabledItems } from "./enable.ts";
 import { focusItem } from "./ids.ts";
@@ -12,7 +14,19 @@ import { calculateScores } from "./scores.ts";
 import { emptyForm, formReducer } from "./state.ts";
 import { validate } from "./validation.ts";
 
-export function QuestionnaireForm({ questionnaire, lang }: { questionnaire: Questionnaire; lang: Lang }) {
+export interface QuestionnaireFormProps {
+  questionnaire: Questionnaire;
+  lang: Lang;
+  /** Patient data to fill the form in from; the panel is shown when the handlers are given. */
+  patientData?: PatientData;
+  onPatientDataChange?: (data: PatientData) => void;
+  patientId?: string;
+  onSelectPatient?: (id: string) => void;
+}
+
+export function QuestionnaireForm(props: QuestionnaireFormProps) {
+  const { questionnaire, lang, patientData = emptyPatientData, onPatientDataChange, patientId, onSelectPatient } = props;
+  const patient = selectedPatient(patientData, patientId);
   const [state, dispatch] = useReducer(formReducer, emptyForm);
   /** Set when the person first presses Done: issues are shown from then on. */
   const [submitted, setSubmitted] = useState(false);
@@ -41,6 +55,7 @@ export function QuestionnaireForm({ questionnaire, lang }: { questionnaire: Ques
     authored: completed ? authored : undefined,
     scores,
     id: responseId,
+    subject: patient ? patientReference(patient) : undefined,
   });
   const shownIssues = new Map(submitted ? issues.map((issue) => [issue.linkId, issue]) : []);
 
@@ -74,6 +89,15 @@ export function QuestionnaireForm({ questionnaire, lang }: { questionnaire: Ques
           <h1 className="text">{title}</h1>
           {description && <p className="description text">{description}</p>}
         </header>
+        {onPatientDataChange && onSelectPatient && (
+          <PatientDataPanel
+            lang={lang}
+            data={patientData}
+            onChange={onPatientDataChange}
+            patient={patient}
+            onSelectPatient={onSelectPatient}
+          />
+        )}
         <form
           noValidate
           onSubmit={(event) => {
