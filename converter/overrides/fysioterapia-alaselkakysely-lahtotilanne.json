@@ -387,6 +387,18 @@
           }
         }
       }
+    },
+    "f1c26c96-bbee-43d6-9152-dec77c6fbaac": {
+      "$comment": "Sex: from Patient.gender (male, female, other). Unknown or missing gives no answer.",
+      "populate": {
+        "expression": "iif(%patient.gender = 'male', %questionnaire.repeat(item).where(linkId = 'f1c26c96-bbee-43d6-9152-dec77c6fbaac').answerOption.valueCoding.where(code = '83ed4160-be80-4072-8992-6ed67ed215f3')) | iif(%patient.gender = 'female', %questionnaire.repeat(item).where(linkId = 'f1c26c96-bbee-43d6-9152-dec77c6fbaac').answerOption.valueCoding.where(code = '77cb4a42-aa0f-4d45-a8ea-d970d1b97b3b')) | iif(%patient.gender = 'other', %questionnaire.repeat(item).where(linkId = 'f1c26c96-bbee-43d6-9152-dec77c6fbaac').answerOption.valueCoding.where(code = 'c4c93e54-0b35-4ba2-a411-a4aa3a092654'))"
+      }
+    },
+    "098effd9-e4c3-462d-a5a9-99858d18a925": {
+      "$comment": "Smoking: from the Observation Tobacco smoking status (LOINC 72166-2). A SNOMED smoker value gives 'Kyllä'; a non-smoker or ex-smoker value gives 'En'. A record stating the status is positive evidence for 'En'; no record gives no answer. A smoker value wins over a non-smoker one.",
+      "populate": {
+        "expression": "iif(%observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists()).exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = 'ee44072b-a078-4091-8c58-48fc5db4a18e')) | iif(%observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists()).empty() and %observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '8392000' or code = '266919005' or code = '8517006' or code = '281018007')).exists()).exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = '67602c78-f692-425e-baae-d5cb466c4515'))"
+      }
     }
   }
 }

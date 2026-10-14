@@ -135,6 +135,16 @@ export function QuestionnaireForm(props: QuestionnaireFormProps) {
                       {t("undoFill", lang)}
                     </button>
                   </p>
+                  {fill.result.filled.length > 0 && (
+                    <details>
+                      <summary>{t("filledList", lang)}</summary>
+                      <ul>
+                        {fill.result.filled.map(({ linkId }) => (
+                          <li key={linkId}>{itemLabel(questionnaire, linkId, lang)}</li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
                   {fill.result.skipped.length + fill.result.warnings.length > 0 && (
                     <details>
                       <summary>{t("skippedCount", lang).replace("{count}", String(fill.result.skipped.length))}</summary>

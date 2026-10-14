@@ -630,6 +630,29 @@ fieldset[aria-invalid="true"] {
   font-size: 0.75rem;
 }
 
+.wallet-request {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: start;
+  margin-bottom: 0.75rem;
+}
+
+.wallet-request p {
+  margin: 0;
+}
+
+.qr-code {
+  width: min(16rem, 100%);
+  height: auto;
+  border-radius: 4px;
+}
+
+.wallet-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
 .samples {
   display: flex;
   flex-wrap: wrap;

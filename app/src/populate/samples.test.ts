@@ -128,11 +128,27 @@ describe("the low-back physiotherapy form, filled in from Pekka and from Seppo",
     expect(sources("ae88f684")).toEqual(["pekka-weight"]);
     expect(shown("36c778a4")).toEqual(["Verenpainetauti, Tyypin 2 diabetes, Alaselkäkipu"]);
     expect(shown("c3348bab")).toEqual(["Korkea verenpaine", "Selkäkipu", "2-tyypin diabetes"]);
-    expect(result.filled).toHaveLength(4);
+    expect(shown("f1c26c96")).toEqual(["Mies"]);
+    expect(result.filled).toHaveLength(5);
   });
 
   it("Seppo: a height in inches, in centimetres", () => {
     const { shown } = fill("fysioterapia-alaselkakysely-lahtotilanne", data, "seppo");
     expect(shown("3ac062e0")).toEqual([177.8]);
+  });
+});
+
+describe("the low-back physiotherapy form, filled in from Kaisa", () => {
+  const data = sample("aitiys-kaisa");
+
+  it("takes sex from Patient.gender and smoking from the Observation", () => {
+    const { result, shown } = fill("fysioterapia-alaselkakysely-lahtotilanne", data, "96167f3b-9491-5081-9ff6-33562c55685e");
+    expect(shown("f1c26c96")).toEqual(["Nainen"]);
+    expect(shown("098effd9")).toEqual(["En"]);
+    expect(shown("3ac062e0")).toEqual([168]);
+    expect(shown("ae88f684")).toEqual([70]);
+    expect(shown("36c778a4")).toEqual(["Alaselkäkipu, Astma, Kilpirauhasen vajaatoiminta"]);
+    expect(result.filled).toHaveLength(6);
+    expectNoProblems(result);
   });
 });
