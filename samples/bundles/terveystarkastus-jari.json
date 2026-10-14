@@ -1,0 +1,611 @@
+{
+  "resourceType": "Bundle",
+  "id": "terveystarkastus-jari",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "type": "collection",
+  "timestamp": "2026-10-13T12:00:00+03:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "jari",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+          ]
+        },
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:1.2.246.21",
+            "value": "170479-931L"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Esimerkki",
+            "given": [
+              "Jari"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "040 000 0001"
+          },
+          {
+            "system": "email",
+            "value": "jari.esimerkki@example.com"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1979-04-17",
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "code": "D",
+              "display": "Divorced"
+            }
+          ],
+          "text": "eronnut"
+        },
+        "generalPractitioner": [
+          {
+            "display": "Esimerkkilän terveysasema"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b9088714-2d05-5018-8f1d-2340c815bab1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "jari-weight",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3141-9",
+              "display": "Paino, mitattu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "effectiveDateTime": "2026-09-30",
+        "valueQuantity": {
+          "value": 84.2,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bb57eb49-42bd-5ebd-9104-b8544676080d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "jari-weight-2024",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3141-9",
+              "display": "Paino, mitattu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "effectiveDateTime": "2024-03-02",
+        "valueQuantity": {
+          "value": 79,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:002098b9-67ad-5c3e-bc31-4232a763ce99",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "jari-height",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.96",
+              "code": "3137-7",
+              "display": "Pituus, mitattu"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "effectiveDateTime": "2023-05-10",
+        "valueQuantity": {
+          "value": 178,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4f24b603-9dcc-5e51-8f99-5c108c6b86eb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "jari-smoking-2025",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "effectiveDateTime": "2025-11-04",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "8517006",
+              "display": "Ex-smoker"
+            }
+          ],
+          "text": "Lopettanut"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b84761f4-706e-5313-a3db-607e30be4727",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "jari-smoking",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "effectiveDateTime": "2026-06-01",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "449868002",
+              "display": "Smokes tobacco daily"
+            }
+          ],
+          "text": "Tupakoi päivittäin"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:deb795d7-c07e-51bb-a17a-130d3ace0462",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "jari-depression",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "F32.1",
+              "display": "Keskivaikea masennustila"
+            }
+          ],
+          "text": "Keskivaikea masennus"
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "recordedDate": "2026-02-10"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a240abbf-cf5d-5dea-9c41-8bf64f72fbdb",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "jari-reflux",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+            "valueCoding": {
+              "system": "urn:oid:1.2.246.537.5.40003",
+              "version": "2003",
+              "code": "PYS",
+              "display": "Pysyväisluonteinen"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "K21.9",
+              "display": "Ruokatorven refluksisairaus ilman ruokatorvitulehdusta"
+            }
+          ],
+          "text": "Refluksitauti"
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "recordedDate": "2022-08-15"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aed01c0f-43f3-5787-8cd8-aa70c953011d",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "jari-back-pain",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "M54.5",
+              "display": "Lanneselän kipu"
+            }
+          ],
+          "text": "Alaselkäkipu"
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "recordedDate": "2024-01-20"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e598ddf9-5d15-56a9-856e-7303dc7921d7",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "jari-otitis",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.1",
+              "version": "1999",
+              "code": "H66.9",
+              "display": "Määrittämätön välikorvan tulehdus"
+            }
+          ],
+          "text": "Välikorvatulehdus"
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "recordedDate": "2025-02-03"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a4535eb5-abe5-52b9-8f7f-0465444a5f14",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "jari-sertraline",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "N06AB06",
+              "display": "sertraline"
+            }
+          ],
+          "text": "Sertraliini 50 mg"
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "effectiveDateTime": "2026-02-10"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:19427fc1-7cf0-5db8-91a2-d58154d520ca",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "jari-vitamin-d",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"
+          ]
+        },
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.whocc.no/atc",
+              "code": "A11CC05",
+              "display": "colecalciferol"
+            }
+          ],
+          "text": "D-vitamiini 20 µg"
+        },
+        "subject": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "effectiveDateTime": "2024-10-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:91c538d6-d405-5565-929c-f25bdc2ca4ca",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "jari-td",
+        "meta": {
+          "profile": [
+            "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-immunization"
+          ]
+        },
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.246.537.6.32",
+              "version": "2007",
+              "code": "J07AM51",
+              "display": "tetanus-difteriatoksoidirokote"
+            }
+          ],
+          "text": "dT-rehoste"
+        },
+        "patient": {
+          "reference": "urn:uuid:cb688ed0-8be4-5c34-ba62-972b97ad3e1c"
+        },
+        "occurrenceDateTime": "2018-03-12",
+        "primarySource": false
+      }
+    }
+  ]
+}

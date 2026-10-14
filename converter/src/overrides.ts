@@ -70,8 +70,16 @@ export const Populate = z.union([
   z.strictObject({ list: AnyEvidence }),
   /** A repeating choice question: each option (by its Finnish text) that has evidence. */
   z.strictObject({ options: z.record(z.string().min(1), AnyEvidence) }),
-  /** Anything else: a FHIRPath initialExpression over %patient and the collections. */
-  z.strictObject({ expression: z.string().min(1) }),
+  /**
+   * Anything else: a FHIRPath initialExpression over %patient and the
+   * collections. `{{option:text}}` stands for the Coding of the item's option
+   * with that Finnish text. Item variables, FHIRPath or evidence, come first;
+   * the records an answer came from are those in the variables it uses.
+   */
+  z.strictObject({
+    expression: z.string().min(1),
+    variables: z.record(z.string().regex(/^[a-z][A-Za-z0-9]*$/), z.union([z.string().min(1), AnyEvidence])).optional(),
+  }),
 ]);
 export type Populate = z.infer<typeof Populate>;
 

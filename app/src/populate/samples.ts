@@ -29,6 +29,11 @@ const LABELS: Record<string, Record<Lang, string>> = {
     sv: "Pekka och Seppo (fysioterapi)",
     en: "Pekka and Seppo (physiotherapy)",
   },
+  "terveystarkastus-jari": {
+    fi: "Jari, työtön (terveystarkastus)",
+    sv: "Jari, arbetslös (hälsoundersökning)",
+    en: "Jari, unemployed (health check)",
+  },
 };
 
 export interface Sample {

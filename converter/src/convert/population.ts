@@ -175,10 +175,21 @@ export function populateItem(item: QuestionnaireItem, override: ItemOverride, co
       added.push(initialExpression(parts.join(" | ")));
       described.push(`options ${Object.keys(rule.options).map((display) => `"${display}"`).join(", ")} by evidence`);
     } else {
-      for (const name of Object.keys(COLLECTIONS) as Evidence["in"][]) {
-        if (rule.expression.includes(`%${name}`)) use({ in: name });
+      const options = (text: string) => text.replace(/\{\{option:([^}]+)\}\}/g, (_, display: string) => optionCoding(item, display));
+      const expressions = [rule.expression];
+      for (const [name, value] of Object.entries(rule.variables ?? {})) {
+        if (typeof value === "string") {
+          expressions.push(value);
+          added.push(variable(name, options(value)));
+        } else {
+          use(value);
+          added.push(variable(name, anyEvidenceExpression(value)));
+        }
       }
-      added.push(initialExpression(rule.expression));
+      for (const name of Object.keys(COLLECTIONS) as Evidence["in"][]) {
+        if (expressions.some((expression) => new RegExp(`%${name}\\b`).test(expression))) use({ in: name });
+      }
+      added.push(initialExpression(options(rule.expression)));
       described.push(`the expression ${rule.expression}`);
     }
   }

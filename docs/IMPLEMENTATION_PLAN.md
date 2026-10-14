@@ -584,7 +584,22 @@ Added to the source exports on 2026-10-14: the pre-visit form for an unemployed 
 Also in this change:
 - **List kind:** the app now calls a questionnaire a screening only when at least half of its questions are scored. The new form embeds AUDIT-C (3 of 51 questions) but is a pre-visit form; the classification of the other 14 is unchanged.
 - **Texts:** the text scan found no problems. "Diabetes" and "Astma" are the same words in all three languages.
-- **Not added:** no pre-population mappings or retyped questions. Candidates if wanted: medication use, the illness checklist, vaccinations, the dentist's, eye and hearing checks.
+- **Pre-population** (added on request, same day): 12 answers from a record. They are listed in `converter/overrides/esitietolomake-tyottoman-terveystarkastus.json`, each with its reasoning, and not clinically reviewed:
+  - from the Patient: email, marital status (HL7 v3 codes; cohabiting and registered partnership have none) and the regular care provider (`generalPractitioner`)
+  - weight and height as one text answer ("84.2 kg, 178 cm"): the latest within a year and five years
+  - tobacco and nicotine, by the latest smoking status within a year (LOINC 72166-2), a nicotine medication or F17. A never-smoker status doesn't answer "no", since it says nothing about snus.
+  - vaccinations valid: a diphtheria-tetanus vaccination within 10 years, the form's own example
+  - the illness checklist: diagnoses at any time ("have had or have"), leaving out passing infections that would tick an option for nearly everyone
+  - medications, supplements (A11, A12, B03), and their names
+
+  Not mapped, for want of data: children, education, income, AUDIT-C, drug use, family history, operations, visit dates, sick leave.
+
+  To express these, the `expression` rule gained item `variables` (FHIRPath or evidence) and an `{{option:text}}` placeholder that the converter resolves to the option's Coding, failing on a text the item doesn't have. An answer cites only the records in the variables it uses. A new sample patient, Jari (`samples/bundles/terveystarkastus-jari.json`), exercises every mapping, including a quit-then-relapsed smoking history and a resolved ear infection that must not count. Verified:
+  - 118 converter and 148 app tests pass.
+  - `npm run verify-codes` passes.
+  - The validator reports 37 files and 0 errors.
+  - In the browser, "Fill in" fills 12 answers with their sources.
+  - The SNOMED smoking-status values were looked up in the Finnish edition.
 - **The ADHD-RS export was edited in the source** (corrected English band texts); the conversion picks that up.
 - Verified:
   - 116 converter and 140 app tests pass. New tests cover subcategories, range and leftover scores, and `accessRights`. The new form is included in the real-data tests: rendering in three languages, axe-core, and its AUDIT-C formula evaluated with fhirpath.js (0 to 12).

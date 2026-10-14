@@ -151,11 +151,38 @@ describe("population overrides", () => {
     expect(expressions(result.questionnaire.extension).map(([name]) => name)).toEqual(["conditionSearch", "conditions"]);
   });
 
+  it("give a free expression its variables, evidence or FHIRPath, and options by their text", () => {
+    const result = convert({
+      [id(102)]: {
+        populate: {
+          variables: { nicotine: { in: "medications", codes: { [ATC]: ["N07BA"] } }, latest: "%observations.last()" },
+          expression: "iif(%nicotine.exists() or %latest.exists(), {{option:Kyllä}})",
+        },
+      },
+    });
+    expect(expressions(item(result, 102).extension)).toEqual([
+      ["nicotine", expect.stringMatching(/^%medications\.where\(.*code\.startsWith\('N07BA'\)/)],
+      ["latest", "%observations.last()"],
+      [
+        "initial",
+        `iif(%nicotine.exists() or %latest.exists(), %questionnaire.repeat(item).where(linkId = '${id(102)}').answerOption.valueCoding.where(code = '${id(201)}'))`,
+      ],
+    ]);
+    expect(expressions(result.questionnaire.extension).map(([name]) => name)).toEqual([
+      "medicationStatementSearch",
+      "medicationRequestSearch",
+      "medications",
+      "observationSearch",
+      "observations",
+    ]);
+  });
+
   it.each([
     [id(104), { answer: "Astma", when: { in: "allergies" } }, /"answer" needs a single-choice question/],
     [id(102), { answer: "Ehkä", when: { in: "allergies" } }, /has 0 options "Ehkä"; it has "Kyllä", "Ei"/],
     [id(102), { list: { in: "allergies" } }, /"list" needs a text question/],
     [id(102), { options: { Kyllä: { in: "allergies" } } }, /"options" needs a repeating choice question/],
+    [id(102), { expression: "{{option:Ehkä}}" }, /has 0 options "Ehkä"/],
   ] as const)("reject a rule that doesn't fit the question: %#", (linkId, populate, error) => {
     expect(() => convert({ [linkId]: { populate } as never })).toThrow(error);
   });

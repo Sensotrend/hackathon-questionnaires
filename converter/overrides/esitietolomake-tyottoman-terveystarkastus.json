@@ -1,0 +1,358 @@
+{
+  "$comment": [
+    "Population: only positive evidence fills an answer; an absence of records never answers 'no'. Codes are checked with npm run verify-codes (fhir/terminology-check.md). The mappings are reasonable but not clinically reviewed.",
+    "Not mapped, for want of data in the collections: children, education and income, AUDIT-C (the record holds at most the total score), drug use, family history (no FamilyMemberHistory), operations (no Procedures), the dates of the last visits, sick leave and rehabilitation."
+  ],
+  "items": {
+    "a0b3d169-3aab-4fb8-b343-598fb127bc5f": {
+      "$comment": "Email address: the patient's own",
+      "populate": {
+        "expression": "%patient.telecom.where(system = 'email').value.first()"
+      }
+    },
+    "679f79cb-c7c4-4a79-85de-37878aad3b93": {
+      "$comment": "Marital status, from Patient.maritalStatus (HL7 v3 MaritalStatus). Not mapped: cohabiting and registered partnership, which have no code of their own there (T, domestic partner, could be either).",
+      "populate": {
+        "expression": "%patient.maritalStatus.coding.where(system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').code.first().select(iif($this = 'S', {{option:Naimaton}}) | iif($this = 'M', {{option:Avioliitossa}}) | iif($this = 'D', {{option:Eronnut}}) | iif($this = 'L', {{option:Asumuserossa}}) | iif($this = 'W', {{option:Leski}}))"
+      }
+    },
+    "72595235-532b-431f-a813-f1a08ba0dbdb": {
+      "$comment": "Supplements or vitamins: an active vitamin (A11), mineral (A12) or iron, B12 or folic acid (B03) medication",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "A11",
+              "A12",
+              "B03"
+            ]
+          }
+        }
+      }
+    },
+    "9e8f1c96-98af-4d0d-9d81-f3ce0e304da4": {
+      "$comment": "Which supplements",
+      "populate": {
+        "list": {
+          "in": "medications",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "A11",
+              "A12",
+              "B03"
+            ]
+          }
+        }
+      }
+    },
+    "5a0ef412-11be-4d71-87ee-3045e8155ab8": {
+      "$comment": "Weight and height (a free-text question): the latest weight within a year and height within five years, as in the physiotherapy form, e.g. '91.4 kg, 182 cm'",
+      "populate": {
+        "variables": {
+          "weights": {
+            "in": "observations",
+            "codes": {
+              "http://loinc.org": [
+                "29463-7"
+              ],
+              "urn:oid:1.2.246.537.6.96": [
+                "29463-7",
+                "3141-9",
+                "3142-7"
+              ]
+            },
+            "where": "value.ofType(Quantity).exists() and effective.ofType(dateTime).toString().substring(0, 10) >= (today() - 1 year).toString()"
+          },
+          "weight": "%weights.aggregate(iif($total.empty() or $this.effective.ofType(dateTime).toString() > $total.effective.ofType(dateTime).toString(), $this, $total))",
+          "heights": {
+            "in": "observations",
+            "codes": {
+              "http://loinc.org": [
+                "8302-2"
+              ],
+              "urn:oid:1.2.246.537.6.96": [
+                "8302-2",
+                "3137-7",
+                "3138-5"
+              ]
+            },
+            "where": "value.ofType(Quantity).exists() and effective.ofType(dateTime).toString().substring(0, 10) >= (today() - 5 years).toString()"
+          },
+          "height": "%heights.aggregate(iif($total.empty() or $this.effective.ofType(dateTime).toString() > $total.effective.ofType(dateTime).toString(), $this, $total))"
+        },
+        "expression": "iif(%weight.exists() or %height.exists(), (%weight | %height).value.ofType(Quantity).select(value.toString() + ' ' + (unit | code).first()).join(', '))"
+      }
+    },
+    "a5a5d696-4f4d-4cb0-8cc5-2013a0c09e46": {
+      "$comment": "Tobacco and nicotine: 'uses' when the latest smoking status within a year (LOINC 72166-2) is a current smoker, or there is an active nicotine medication (N07BA, a nicotine product too) or nicotine dependence (F17); 'has quit' when that status is ex-smoker and there's nothing current. Not 'no' from a never-smoker status: it says nothing of snus or other nicotine products.",
+      "populate": {
+        "variables": {
+          "smokingStatus": {
+            "in": "observations",
+            "codes": {
+              "http://loinc.org": [
+                "72166-2"
+              ]
+            },
+            "where": "effective.ofType(dateTime).toString().substring(0, 10) >= (today() - 1 year).toString()"
+          },
+          "latestStatus": "%smokingStatus.aggregate(iif($total.empty() or $this.effective.ofType(dateTime).toString() > $total.effective.ofType(dateTime).toString(), $this, $total))",
+          "smokes": "%latestStatus.where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '230059006')).exists())",
+          "quit": "%latestStatus.where(value.coding.where(system = 'http://snomed.info/sct' and (code = '8517006')).exists())",
+          "nicotine": [
+            {
+              "in": "medications",
+              "codes": {
+                "urn:oid:1.2.246.537.6.32": [
+                  "N07BA"
+                ]
+              }
+            },
+            {
+              "in": "conditions",
+              "codes": {
+                "urn:oid:1.2.246.537.6.1": [
+                  "F17"
+                ]
+              }
+            }
+          ]
+        },
+        "expression": "iif(%smokes.exists() or %nicotine.exists(), {{option:Käytän yhtä tai useampaa nikotiinituotetta}}, iif(%quit.exists(), {{option:Olen lopettanut}}))"
+      }
+    },
+    "d2665248-f82d-47bb-8d74-70871d207679": {
+      "$comment": "Vaccinations valid, by the form's example: a vaccination against diphtheria and tetanus (J07AM51, the dTap J07AJ52, or a combined J07CA) within the 10 years a booster lasts",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "immunizations",
+          "codes": {
+            "urn:oid:1.2.246.537.6.32": [
+              "J07AM51",
+              "J07AJ52",
+              "J07CA"
+            ]
+          },
+          "where": "occurrence.ofType(dateTime).toString().substring(0, 10) >= (today() - 10 years).toString()"
+        }
+      }
+    },
+    "73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1": {
+      "$comment": "Illnesses or injuries diagnosed now or in the past: by diagnoses at any time that aren't refuted (ICD-10), and active allergies. Acute illnesses that pass are left out where they'd tick an option for nearly everyone (colds, ear and eye infections). Not mapped: injuries (any sprain would count), operations (no Procedures), 'other', and 'none of these' (never filled from an absence of records).",
+      "populate": {
+        "options": {
+          "Tapaturmavamma tai tuki- ja liikuntaelinten sairaus": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "M"
+              ]
+            }
+          },
+          "Sydänsairaus, verenkiertohäiriö tai korkea verenpaine": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "I",
+                "Q20",
+                "Q21",
+                "Q22",
+                "Q23",
+                "Q24"
+              ]
+            }
+          },
+          "Psyykkinen sairaus, mielenterveyden häiriö, masennus": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "F2",
+                "F3",
+                "F4",
+                "F5",
+                "F6"
+              ]
+            }
+          },
+          "Epilepsia, kouristuksia tai tajunnanhäiriö, migreeni, usein toistuva päänsärky": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "G40",
+                "G41",
+                "G43",
+                "G44",
+                "R56"
+              ]
+            }
+          },
+          "Hengityselinten sairaus, esim. astma": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "J30",
+                "J31",
+                "J32",
+                "J33",
+                "J35",
+                "J37",
+                "J41",
+                "J42",
+                "J43",
+                "J44",
+                "J45",
+                "J46",
+                "J47",
+                "J84"
+              ]
+            }
+          },
+          "Huimausta, tasapainohäiriöitä tai pyörtymistä, ruuansulatuselinten sairaus": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "H81",
+                "R42",
+                "R55",
+                "K2",
+                "K3",
+                "K4",
+                "K5",
+                "K6",
+                "K7",
+                "K8",
+                "K9"
+              ]
+            }
+          },
+          "Aistielinsairauksia (näkö, kuulo)": [
+            {
+              "in": "conditions",
+              "codes": {
+                "urn:oid:1.2.246.537.6.1": [
+                  "H"
+                ]
+              }
+            },
+            {
+              "in": "conditionHistory",
+              "codes": {
+                "urn:oid:1.2.246.537.6.1": [
+                  "H25",
+                  "H26",
+                  "H40",
+                  "H80",
+                  "H90",
+                  "H91",
+                  "H93.1"
+                ]
+              }
+            }
+          ],
+          "Tarkkaavaisuuteen, keskittymiskykyyn tai muistiin vaikuttava sairaus": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "F00",
+                "F01",
+                "F02",
+                "F03",
+                "F06.7",
+                "F90",
+                "F98.8",
+                "G30",
+                "G31"
+              ]
+            }
+          },
+          "Sukuelinten sairaus": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "N4",
+                "N50",
+                "N51",
+                "N7",
+                "N8",
+                "N9"
+              ]
+            }
+          },
+          "Allergia": [
+            {
+              "in": "allergies"
+            },
+            {
+              "in": "conditionHistory",
+              "codes": {
+                "urn:oid:1.2.246.537.6.1": [
+                  "J30",
+                  "T78.4"
+                ]
+              }
+            }
+          ],
+          "Diabetes": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "E10",
+                "E11",
+                "E12",
+                "E13",
+                "E14"
+              ]
+            }
+          },
+          "Työstä aiheutuneita sairauksia (altisteet, esim. asbesti, meluvamma)": {
+            "in": "conditionHistory",
+            "codes": {
+              "urn:oid:1.2.246.537.6.1": [
+                "J60",
+                "J61",
+                "J62",
+                "J63",
+                "J64",
+                "J65",
+                "J66",
+                "H83.3"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "e0045feb-62f1-4599-b70d-b1c97b0d474f": {
+      "$comment": "Medicines or natural products: any active medication",
+      "populate": {
+        "answer": "Kyllä",
+        "when": {
+          "in": "medications"
+        }
+      }
+    },
+    "9ceff7c4-13ca-4289-839d-de1cf440dbbe": {
+      "$comment": "Which medicines",
+      "populate": {
+        "list": {
+          "in": "medications"
+        }
+      }
+    },
+    "542dcf68-ccf7-498a-8b2c-4440d5b57283": {
+      "$comment": "A regular care provider: the patient's nominated primary care provider (Patient.generalPractitioner)",
+      "populate": {
+        "expression": "iif(%patient.generalPractitioner.exists(), {{option:Kyllä}})"
+      }
+    },
+    "863addd8-5f72-4fab-848a-d1dc6e0636a2": {
+      "$comment": "Which provider: its name",
+      "populate": {
+        "expression": "%patient.generalPractitioner.display.first()"
+      }
+    }
+  }
+}

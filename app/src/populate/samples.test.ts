@@ -4,7 +4,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Patient } from "fhir/r4";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { emptyForm } from "../renderer/state.ts";
 import { bySlug } from "../test/questionnaires.ts";
 import { populate, type PopulateResult } from "./populate.ts";
@@ -134,5 +134,71 @@ describe("the low-back physiotherapy form, filled in from Pekka and from Seppo",
   it("Seppo: a height in inches, in centimetres", () => {
     const { shown } = fill("fysioterapia-alaselkakysely-lahtotilanne", data, "seppo");
     expect(shown("3ac062e0")).toEqual([177.8]);
+  });
+});
+
+describe("the unemployed person's health check, filled in from Jari", () => {
+  // The vaccination and smoking-status periods count back from today().
+  vi.useFakeTimers({ toFake: ["Date"] });
+  vi.setSystemTime(NOW);
+  const { result, shown, sources } = fill("esitietolomake-tyottoman-terveystarkastus", sample("terveystarkastus-jari"), "jari");
+  vi.useRealTimers();
+
+  it("takes the email, marital status and care provider from the Patient", () => {
+    expect(shown("a0b3d169")).toEqual(["jari.esimerkki@example.com"]);
+    expect(shown("679f79cb")).toEqual(["Eronnut"]);
+    expect(sources("679f79cb")).toEqual(["jari"]);
+    expect(shown("542dcf68")).toEqual(["Kyllä"]);
+    expect(shown("863addd8")).toEqual(["Esimerkkilän terveysasema"]);
+  });
+
+  it("writes the latest weight and height as text, citing only those two", () => {
+    expect(shown("5a0ef412")).toEqual(["84.2 kg, 178 cm"]);
+    expect(sources("5a0ef412")).toEqual(["jari-weight", "jari-height"]);
+  });
+
+  it("goes by the latest smoking status: smokes again after quitting", () => {
+    expect(shown("a5a5d696")).toEqual(["Käytän yhtä tai useampaa nikotiinituotetta"]);
+    expect(sources("a5a5d696")).toEqual(["jari-smoking"]);
+  });
+
+  it("counts a diphtheria-tetanus booster within 10 years as valid vaccinations", () => {
+    expect(shown("d2665248")).toEqual(["Kyllä"]);
+    expect(sources("d2665248")).toEqual(["jari-td"]);
+  });
+
+  it("ticks illnesses diagnosed now or before, but not a passing ear infection", () => {
+    expect(shown("73d97f6f")).toEqual([
+      "Tapaturmavamma tai tuki- ja liikuntaelinten sairaus",
+      "Psyykkinen sairaus, mielenterveyden häiriö, masennus",
+      "Huimausta, tasapainohäiriöitä tai pyörtymistä, ruuansulatuselinten sairaus",
+    ]);
+    expect(sources("73d97f6f")).toEqual(["jari-back-pain", "jari-depression", "jari-reflux"]);
+  });
+
+  it("lists the medications, and the supplements among them", () => {
+    expect(shown("e0045feb")).toEqual(["Kyllä"]);
+    expect(shown("9ceff7c4")).toEqual(["Sertraliini 50 mg, D-vitamiini 20 µg"]);
+    expect(shown("72595235")).toEqual(["Kyllä"]);
+    expect(shown("9e8f1c96")).toEqual(["D-vitamiini 20 µg"]);
+  });
+
+  it("fills 12 answers without problems", () => {
+    expect(result.filled).toHaveLength(12);
+    expect(result.skipped).toEqual([]);
+    expectNoProblems(result);
+  });
+});
+
+describe("the unemployed person's health check, filled in from Maija", () => {
+  it("leaves out an old smoking status, and vaccinations over 10 years old", () => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(NOW);
+    const { shown } = fill("esitietolomake-tyottoman-terveystarkastus", sample("aitiysneuvola-maija"), "maija");
+    vi.useRealTimers();
+    expect(shown("d2665248")).toBeUndefined();
+    expect(shown("a5a5d696")).toBeUndefined();
+    expect(shown("679f79cb")).toBeUndefined();
+    expect(shown("5a0ef412")).toEqual(["166 cm"]);
   });
 });
