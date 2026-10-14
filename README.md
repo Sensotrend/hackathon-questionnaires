@@ -4,7 +4,7 @@ Fifteen Finnish pre-visit and screening questionnaires (*esitietolomakkeet*), ex
 
 - **Converter**: Lunna export → FHIR R4 Questionnaire, with translations, sections, follow-up questions (`enableWhen`), scores (`calculatedExpression`), units, and SDC pre-population definitions. Validated with the HL7 FHIR Validator.
 - **App**: lists the questionnaires and renders them. It handles follow-ups, validation, live scores, a print view and the QuestionnaireResponse (JSON, downloadable), and checks clean with axe-core.
-- **Pre-population**: load FHIR Bundles (FinnishCore-shaped data; synthetic sample patients included) and fill in what the record says: measurements, diagnoses (Finnish ICD-10), medications and vaccinations (ATC), allergies, the contact person. Each filled answer shows where it came from. Only positive evidence fills an answer: a missing record never answers "no".
+- **Pre-population**: load FHIR Bundles (FinnishCore-shaped data or IPS patient summaries; synthetic sample patients included) and fill in what the record says: measurements, diagnoses (Finnish ICD-10), medications and vaccinations (ATC), allergies, the contact person. Each filled answer shows where it came from. Only positive evidence fills an answer: a missing record never answers "no".
 - **Interoperability**: the same Questionnaires render, score and pre-populate in LHC-Forms, and render and score in CSIRO Smart Forms (see `crosscheck/`).
 
 The plan, every decision and what was verified at each milestone are in [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md).
@@ -89,7 +89,7 @@ With `npm run dev` running, open `http://localhost:5173/@fs/<absolute path to th
 ## Known limits
 
 - **Clinical review is needed.** The pre-population mappings and the corrected translations are reasonable but not clinically reviewed; in particular, which diagnoses count for each illness option. They're all in `converter/overrides/`, each with a comment.
-- **Long-term illness** relies on FinnishCore's `condition-permanence` mark (or the problem list). Medications given as a `medicationReference` aren't resolved. SNOMED CT isn't used for matching, since Finnish diagnosis data is ICD-10.
+- **Long-term illness** relies on FinnishCore's `condition-permanence` mark (or the problem list). Medications given as a `medicationReference` are matched through the Medication the search includes (`_include`); the LHC-Forms cross-check's mock client doesn't include them, so there they match by name only. SNOMED CT isn't used for matching, since Finnish diagnosis data is ICD-10.
 - **The samples' dates are around 2026-10-13.** As time passes, the observation-based answers fall outside their periods. The tests use a fixed date.
 - **Other renderers** show UCUM unit codes (e.g. "wk") where this app shows the unit words (*viikkoa*). LHC-Forms doesn't fill date questions from `valueDateTime` Observations.
 - **No persistence and no server:** answers stay in the page until downloaded.

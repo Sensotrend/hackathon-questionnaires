@@ -35,11 +35,24 @@ export const TextFix: z.ZodType<TextFix> = z
 /** What the patient data must hold for an answer (plan §7.2). */
 export const Evidence = z.strictObject({
   /**
-   * The collection: active conditions, every condition but refuted ones
-   * (conditionHistory, for "have you had …"), active allergies and
-   * medications, completed immunizations, final observations.
+   * The collection: active conditions (by their clinical status, or without
+   * one, listed in a document's Problems section); every condition but refuted ones (conditionHistory, for "have
+   * you had …"); active allergies, and apart from them the statements of no
+   * known allergies (noKnownAllergies); active medications; completed
+   * immunizations and procedures; final observations. Statements of an
+   * absence (no known allergy, no information) are in none but
+   * noKnownAllergies.
    */
-  in: z.enum(["conditions", "conditionHistory", "allergies", "medications", "immunizations", "observations"]),
+  in: z.enum([
+    "conditions",
+    "conditionHistory",
+    "allergies",
+    "noKnownAllergies",
+    "medications",
+    "immunizations",
+    "observations",
+    "procedures",
+  ]),
   /**
    * Codes by system. ICD-10 and ATC codes match as prefixes (E11 matches
    * E11.9), since both are hierarchical by code; other systems match exactly.

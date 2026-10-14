@@ -606,6 +606,31 @@ Also in this change:
   - `npm run validate`: 36 files, 0 errors.
   - In the browser: the list shows 15 forms, the new one as "Esitietolomake" with 70 questions; AUDIT-C is a group inside the substance-use section with a live score; 5 sliders.
 
+### IPS patient summaries: Mikko ✅
+
+Added on 2026-10-14 after a sample IPS document for an imaginary patient, Mikko Virtanen (`samples/bundles/mikko-virtanen.json`, by the user). The collections now read an IPS as its author meant it:
+
+- **Statements of an absence aren't records of something.** "No known allergy" (SNOMED CT 716186003, and the drug, food and environmental variants), "no current problems" and the IPS absent-unknown codes are left out of every collection. They're kept apart in a new `noKnownAllergies` collection, read in their scope. Mikko's statement is scoped to medications (`category: medication`; the text says "No known medication allergies"), and he has food and pollen allergies. So it must not answer a general "any allergies?" with "no", and before this change it even answered "yes" there.
+  - The three general allergy questions (upper secondary, 8th grade, 5th grade) now answer "no" only from an unscoped no-known-allergy statement.
+  - None of the forms asks about medication allergies alone. A question that did could answer "no" from Mikko's statement.
+- **Current or past problems.** An explicit clinical status decides, as the user specified: Mikko's myopia is active although the document lists it under History of Past Problems, a summary that still matters but isn't a current concern. The Composition's sections decide only for a Condition without a status: Problems (LOINC 11450-4) makes it current, and otherwise it's past. `recurrence` and `relapse` count as active.
+- **Medications by reference.** The medication searches `_include` the Medication, so ATC codes match through it. Names fall back to the reference's display and are listed once, though IPS has both a statement and a request for each.
+- **Procedures.** A new `procedures` collection answers the unemployed form's "operations or other procedures".
+- **The local search answers as a server would:** `_include`, a Composition search, and references in `Type/id` form, as a server stores a document it has received.
+
+Mapping changes:
+- The unemployed form's checklist counts fractures (S02–S92 by region, T02–T12) as injuries.
+- Its vaccination question counts any tetanus vaccine (J07AM).
+- The physiotherapy form's smoking question (added by Samuel) now cites only the smoking-status Observations, not every Observation.
+
+Mikko's own data fills 5 answers in the unemployed form, among them the illness checklist (6 options, with fractures, pulmonary embolism, the operation) and his medication names. It also gives the physiotherapy form sex, smoking and diagnoses, and fills the allergy and medication questions of the school forms.
+
+The merge of Samuel's branch (`625f0ab`) had dropped his test changes for Pekka and Kaisa from `samples.test.ts`. They are restored.
+
+Validation and codes:
+- `npm run validate` now loads IPS 2.0.0, EU base 2.0.0 and EU EPS 1.0.0-ballot. With them, Mikko's errors fall from about 280 to 4, and all 4 come from one place: the urine albumin Observation's code carries `extension-inline-sec-label`, which no loaded package defines (not even the DS4P package, `hl7.fhir.uv.security-label-ds4p#1.0.0`), so the Observation fails its EU profile, and the Composition and Bundle checks fail in turn. This is left to the user, as it's their data.
+- `npm run verify-codes` now looks up Finnish ICD-10 asterisk codes (H36.00*) by search, since THL's server refuses a `*` in the path. One finding remains in Mikko's data: the H36.00* display adds "(Molemminpuolinen)" to THL's "Diabeettinen taustaretinopatia".
+
 ## 11. Open items
 
 Things the project knowingly leaves for someone to decide or do:

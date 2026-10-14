@@ -30,40 +30,85 @@ const ALIASES: Record<string, string[]> = {
 export const PERMANENCE = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence";
 export const PERMANENCE_SYSTEM = "urn:oid:1.2.246.537.5.40003";
 
+/** The coded element of each kind of record. */
+const CODE = "(code | medicationCodeableConcept | vaccineCode)";
+
+export const SNOMED = "http://snomed.info/sct";
+export const IPS_ABSENT = "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips";
+/**
+ * SNOMED CT codes that state an absence: no known allergy (of any kind, or to
+ * drugs, food or environmental substances), no current problems.
+ */
+export const SNOMED_ABSENT = ["716186003", "409137002", "429625007", "428607008", "160245001"];
+/**
+ * Records that state an absence, like the IPS's "No known allergy" or "No
+ * information about medications": they are evidence of nothing being there,
+ * never of something.
+ */
+const STATES_ABSENCE =
+  `${CODE}.coding.where(system = '${IPS_ABSENT}' or ` +
+  `(system = '${SNOMED}' and (${SNOMED_ABSENT.map((code) => `code = '${code}'`).join(" or ")}))).exists()`;
+const notRefuted = "verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty()";
+/**
+ * References to the problems a document (an IPS) lists as current ones, in
+ * its Problems section. An explicit clinical status decides whether a
+ * problem is current; where there is none, the section does.
+ */
+const CURRENT_PROBLEMS =
+  "%compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference";
+/** Active, or one of its kinds: a recurrence or relapse. */
+const ACTIVE = "clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists()";
+
 /** The searches behind each collection, and the FHIRPath that takes the resources out of them. */
 const COLLECTIONS: Record<Evidence["in"], { searches: Record<string, string>; resources: string }> = {
   conditions: {
-    searches: { conditionSearch: "Condition?patient={{%patient.id}}&clinical-status=active" },
-    resources: "%conditionSearch.entry.resource",
+    searches: {
+      conditionSearch: "Condition?patient={{%patient.id}}",
+      compositionSearch: "Composition?patient={{%patient.id}}",
+    },
+    resources:
+      `%conditionSearch.entry.resource.where(${notRefuted} and (${STATES_ABSENCE}).not() and ` +
+      `(${ACTIVE} or (clinicalStatus.empty() and ('Condition/' + id) in ${CURRENT_PROBLEMS})))`,
   },
   conditionHistory: {
     searches: { conditionHistorySearch: "Condition?patient={{%patient.id}}" },
-    resources:
-      "%conditionHistorySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty())",
+    resources: `%conditionHistorySearch.entry.resource.where(${notRefuted} and (${STATES_ABSENCE}).not())`,
   },
   allergies: {
     searches: { allergySearch: "AllergyIntolerance?patient={{%patient.id}}&clinical-status=active" },
-    resources: "%allergySearch.entry.resource",
+    resources: `%allergySearch.entry.resource.where(${notRefuted} and (${STATES_ABSENCE}).not())`,
+  },
+  noKnownAllergies: {
+    searches: { allergySearch: "AllergyIntolerance?patient={{%patient.id}}&clinical-status=active" },
+    resources: `%allergySearch.entry.resource.where(${notRefuted} and ${STATES_ABSENCE})`,
   },
   medications: {
     searches: {
-      medicationStatementSearch: "MedicationStatement?patient={{%patient.id}}&status=active",
-      medicationRequestSearch: "MedicationRequest?patient={{%patient.id}}&status=active",
+      medicationStatementSearch:
+        "MedicationStatement?patient={{%patient.id}}&status=active&_include=MedicationStatement:medication",
+      medicationRequestSearch: "MedicationRequest?patient={{%patient.id}}&status=active&_include=MedicationRequest:medication",
     },
-    resources: "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource",
+    resources:
+      `(%medicationStatementSearch.entry.resource.ofType(MedicationStatement) | ` +
+      `%medicationRequestSearch.entry.resource.ofType(MedicationRequest)).where((${STATES_ABSENCE}).not())`,
   },
   immunizations: {
     searches: { immunizationSearch: "Immunization?patient={{%patient.id}}&status=completed" },
-    resources: "%immunizationSearch.entry.resource",
+    resources: `%immunizationSearch.entry.resource.where((${STATES_ABSENCE}).not())`,
   },
   observations: {
     searches: { observationSearch: "Observation?patient={{%patient.id}}&status=final,amended,corrected" },
     resources: "%observationSearch.entry.resource",
   },
+  procedures: {
+    searches: { procedureSearch: "Procedure?patient={{%patient.id}}&status=completed" },
+    resources: `%procedureSearch.entry.resource.where((${STATES_ABSENCE}).not())`,
+  },
 };
 
-/** The coded element of each kind of record. */
-const CODE = "(code | medicationCodeableConcept | vaccineCode)";
+/** The Medications that the medication searches included, for medications given by reference. */
+const INCLUDED_MEDICATIONS =
+  "(%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication)";
 
 const variable = (name: string, expression: string, language = "text/fhirpath"): Extension => ({
   url: SDC.variable,
@@ -92,7 +137,11 @@ export function evidenceExpression(evidence: Evidence): string {
       const systems = [system, ...(ALIASES[system] ?? [])].map((uri) => `system = ${quote(uri)}`);
       return `((${systems.join(" or ")}) and (${test.join(" or ")}))`;
     });
-    expression += `.where(${CODE}.coding.where(${clauses.join(" or ")}).exists())`;
+    const coded = `${CODE}.coding.where(${clauses.join(" or ")}).exists()`;
+    expression +=
+      evidence.in === "medications"
+        ? `.where(${coded} or medicationReference.reference in ${INCLUDED_MEDICATIONS}.where(${coded}).select('Medication/' + id))`
+        : `.where(${coded})`;
   }
   if (evidence.longTerm) {
     const permanence = `extension.where(url = ${quote(PERMANENCE)})`;
@@ -161,7 +210,7 @@ export function populateItem(item: QuestionnaireItem, override: ItemOverride, co
       added.push(variable("evidence", anyEvidenceExpression(rule.list)));
       added.push(
         initialExpression(
-          `iif(%evidence.exists(), %evidence.select((${CODE}.text | ${CODE}.coding.display).first()).join(', '))`,
+          `iif(%evidence.exists(), %evidence.select((${CODE}.text | ${CODE}.coding.display | medicationReference.display).first()).distinct().join(', '))`,
         ),
       );
       described.push(`the names of the ${evidenceList(rule.list).map((one) => one.in).join(" and ")}`);
@@ -211,10 +260,13 @@ export function questionnaireExtensions(context: PopulationContext): Extension[]
       ],
     },
   ];
+  const declared = new Set<string>();
   for (const name of Object.keys(COLLECTIONS) as Evidence["in"][]) {
     if (!context.collections.has(name)) continue;
     const { searches, resources } = COLLECTIONS[name];
     for (const [search, query] of Object.entries(searches)) {
+      if (declared.has(search)) continue;
+      declared.add(search);
       extensions.push(variable(search, query, "application/x-fhir-query"));
     }
     extensions.push(variable(name, resources));
