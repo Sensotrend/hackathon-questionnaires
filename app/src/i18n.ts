@@ -86,6 +86,39 @@ const strings = {
   addFiles: { fi: "Lisää tiedostoja…", sv: "Lägg till filer…", en: "Add files…" },
   pasteJson: { fi: "Tai liitä JSON tähän", sv: "Eller klistra in JSON här", en: "Or paste JSON here" },
   add: { fi: "Lisää", sv: "Lägg till", en: "Add" },
+  fromWallet: { fi: "Hae lompakosta…", sv: "Hämta från plånboken…", en: "Get from wallet…" },
+  wallet: { fi: "Digitaalinen lompakko", sv: "Digital plånbok", en: "Digital wallet" },
+  walletHelp: {
+    fi: "Skannaa QR-koodi digitaalisella lompakolla ja hyväksy terveystietojen yhteenvedon (IPS) jakaminen.",
+    sv: "Skanna QR-koden med din digitala plånbok och godkänn att patientöversikten (IPS) delas.",
+    en: "Scan the QR code with your digital wallet and approve sharing your patient summary (IPS).",
+  },
+  walletQr: { fi: "QR-koodi lompakolle", sv: "QR-kod för plånboken", en: "QR code for the wallet" },
+  walletOpenApp: {
+    fi: "Tai avaa lompakko tällä laitteella",
+    sv: "Eller öppna plånboken på den här enheten",
+    en: "Or open the wallet on this device",
+  },
+  walletCreating: { fi: "Luodaan pyyntöä…", sv: "Skapar begäran…", en: "Creating the request…" },
+  walletWaiting: { fi: "Odotetaan lompakkoa…", sv: "Väntar på plånboken…", en: "Waiting for the wallet…" },
+  walletScanned: {
+    fi: "Koodi luettu. Odotetaan hyväksyntää lompakossa…",
+    sv: "Koden lästes. Väntar på godkännande i plånboken…",
+    en: "Code scanned. Waiting for approval in the wallet…",
+  },
+  walletReceived: { fi: "Tiedot vastaanotettu.", sv: "Uppgifterna mottogs.", en: "Data received." },
+  walletDeclined: {
+    fi: "tietoja ei jaettu",
+    sv: "uppgifterna delades inte",
+    en: "the data was not shared",
+  },
+  walletExpired: { fi: "pyyntö vanheni", sv: "begäran gick ut", en: "the request expired" },
+  walletError: {
+    fi: "Tietoja ei saatu lompakosta",
+    sv: "Uppgifterna kunde inte hämtas från plånboken",
+    en: "Could not get the data from the wallet",
+  },
+  walletRetry: { fi: "Yritä uudelleen", sv: "Försök igen", en: "Try again" },
   clearData: { fi: "Poista potilastiedot", sv: "Ta bort patientuppgifterna", en: "Remove patient data" },
   noPatient: {
     fi: "Tiedoissa ei ole Patient-resurssia, joten niistä ei voi täyttää lomaketta.",
@@ -109,6 +142,7 @@ const strings = {
     sv: "Patientuppgifterna gav inget att fylla i.",
     en: "Nothing in the patient data could be filled in.",
   },
+  filledList: { fi: "Täytetyt kohdat", sv: "Ifyllda svar", en: "Fields that were filled in" },
   skippedCount: {
     fi: "{count} kohtaa jäi täyttämättä",
     sv: "{count} svar kunde inte fyllas i",

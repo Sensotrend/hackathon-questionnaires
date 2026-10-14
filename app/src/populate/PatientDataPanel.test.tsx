@@ -1,7 +1,7 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { useState } from "react";
-import { describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { QuestionnaireForm } from "../renderer/QuestionnaireForm.tsx";
 import { emptyPatientData, type PatientData } from "./store.ts";
 
@@ -78,6 +78,72 @@ describe("the patient data panel", () => {
     await user.click(screen.getByRole("button", { name: "Poista potilastiedot" }));
     expect(screen.queryByText(/Maija Meikäläinen/)).toBeNull();
     expect(responseJson().subject).toBeUndefined();
+  });
+});
+
+describe("the wallet", () => {
+  const proof = { id: "p-1", url: "openid4vp://?request_uri=https%3A%2F%2Fexample.org%2Fr" };
+  const status = (state: string, fullData?: string) => ({
+    id: proof.id,
+    state,
+    proofInputs: [{ claims: [{ path: "Text", value: "…" }, { path: "FullData", ...(fullData && { value: fullData }) }] }],
+  });
+  const serve = (...states: object[]) => {
+    const fetch = vi.fn(async (url: string) =>
+      Response.json(url.endsWith("/verify") ? proof : (states.length > 1 ? states.shift() : states[0])),
+    );
+    vi.stubGlobal("fetch", fetch);
+    return fetch;
+  };
+
+  beforeEach(() => vi.useFakeTimers({ shouldAdvanceTime: true }));
+  afterEach(() => {
+    vi.useRealTimers();
+    vi.unstubAllGlobals();
+  });
+
+  it("shows a QR code, polls the verifier and loads the presented IPS", async () => {
+    const fetch = serve(status("PENDING"), status("REQUESTED"), status("ACCEPTED", bundle(maija)));
+    const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime });
+    render(<Harness />);
+    await user.click(screen.getByRole("button", { name: "Hae lompakosta…" }));
+    expect(await screen.findByRole("img", { name: "QR-koodi lompakolle" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Tai avaa lompakko tällä laitteella" })).toHaveAttribute("href", proof.url);
+    expect(fetch).toHaveBeenCalledWith("/ips-verifier/verify", expect.objectContaining({ method: "POST" }));
+
+    await act(() => vi.advanceTimersByTimeAsync(2000));
+    expect(screen.getByRole("status")).toHaveTextContent("Odotetaan lompakkoa…");
+    await act(() => vi.advanceTimersByTimeAsync(2000));
+    expect(screen.getByRole("status")).toHaveTextContent("Koodi luettu");
+    await act(() => vi.advanceTimersByTimeAsync(2000));
+    expect(screen.getByText("Maija Meikäläinen, syntynyt 1990-01-01, 010190-900A")).toBeInTheDocument();
+    expect(screen.queryByRole("img", { name: "QR-koodi lompakolle" })).toBeNull();
+    expect(responseJson().subject).toEqual({ reference: "Patient/p1", display: "Maija Meikäläinen" });
+  });
+
+  it("says when the holder declines, and can try again", async () => {
+    const fetch = serve(status("REJECTED"));
+    const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime });
+    render(<Harness />);
+    await user.click(screen.getByRole("button", { name: "Hae lompakosta…" }));
+    await screen.findByRole("img", { name: "QR-koodi lompakolle" });
+    await act(() => vi.advanceTimersByTimeAsync(2000));
+    expect(screen.getByRole("alert")).toHaveTextContent("Tietoja ei saatu lompakosta: tietoja ei jaettu");
+    await user.click(screen.getByRole("button", { name: "Yritä uudelleen" }));
+    await screen.findByRole("img", { name: "QR-koodi lompakolle" });
+    expect(fetch.mock.calls.filter(([url]) => url.endsWith("/verify"))).toHaveLength(2);
+    await user.click(screen.getByRole("button", { name: "Peruuta" }));
+    expect(screen.getByRole("button", { name: "Hae lompakosta…" })).toBeInTheDocument();
+  });
+
+  it("reports a credential without FHIR data", async () => {
+    serve(status("ACCEPTED"));
+    const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime });
+    render(<Harness />);
+    await user.click(screen.getByRole("button", { name: "Hae lompakosta…" }));
+    await screen.findByRole("img", { name: "QR-koodi lompakolle" });
+    await act(() => vi.advanceTimersByTimeAsync(2000));
+    expect(screen.getByRole("alert")).toHaveTextContent(/FullData/);
   });
 });
 

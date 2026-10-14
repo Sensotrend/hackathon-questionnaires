@@ -1,0 +1,1620 @@
+{
+  "id": "b04fe93d-4b27-5b5e-848c-757c1b4154f3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
+    ]
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:2c1678b7-fc4f-5107-ba36-ac6750a0c67c",
+      "resource": {
+        "id": "2c1678b7-fc4f-5107-ba36-ac6750a0c67c",
+        "date": "2026-10-14T04:50:41+00:00",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"
+          ],
+          "security": [
+            {
+              "code": "AIAST",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "display": "Artificial Intelligence asserted"
+            }
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Patient Summary</b> — status: final (human-reviewed); attested by: the patient; at: 2026-10-14T04:50:41+00:00; AI: artificial intelligence was used to create this summary; date: 2026-10-14T04:50:41+00:00</p></div>",
+          "status": "generated"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "60591-5",
+              "system": "http://loinc.org",
+              "display": "Patient summary Document"
+            }
+          ]
+        },
+        "title": "Patient Summary",
+        "author": [
+          {
+            "reference": "urn:uuid:da70ed63-c058-5b28-8e75-025791e7e31b"
+          }
+        ],
+        "status": "final",
+        "section": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "11450-4",
+                  "system": "http://loinc.org",
+                  "display": "Problem list - Reported"
+                }
+              ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><b>Raskaus todettu</b> — note: rv 24+1</li><li><b>Alaselkäkipu</b> — onset: 2026-09</li><li><b>Astma</b></li><li><b>Kilpirauhasen vajaatoiminta</b></li></ul></div>",
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:c0677c98-56c7-42a2-89bb-aa2255a28e92"
+              },
+              {
+                "reference": "urn:uuid:ee7926ac-3d09-4e7b-aad1-5a4ff34ff976"
+              },
+              {
+                "reference": "urn:uuid:71fa49bc-6171-44bf-9e28-54c49b449d6c"
+              },
+              {
+                "reference": "urn:uuid:b506c7fd-bf61-463b-9375-1159710ed26a"
+              }
+            ],
+            "title": "Problem List"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "48765-2",
+                  "system": "http://loinc.org",
+                  "display": "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><b>Penisilliini</b> — status: active; type: allergy; category: medication; criticality: high; onset: 2015; reaction: anafylaksia (severe)</li></ul></div>",
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:d5222bca-b065-4ad4-91d2-61011ae664f8"
+              }
+            ],
+            "title": "Allergies and Intolerances"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "10160-0",
+                  "system": "http://loinc.org",
+                  "display": "History of Medication use Narrative"
+                }
+              ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><b>Levotyroksiini 75 mikrog tabl</b> — dosage: 1 x 1 aamulla; status: active</li><li><b>Budesonidi/formoteroli 160/4,5 mikrog inh</b> — dosage: 1 annos x 2; status: active</li><li><b>Salbutamoli 0,1 mg/annos inh</b> — dosage: 1-2 annosta tarv.; status: active</li><li><b>Foolihappo 0,4 mg tabl</b> — dosage: 1 x 1; status: active</li><li><b>Kolekalsiferoli 20 mikrog tabl</b> — dosage: 1 x 1; status: active</li><li><b>Rauta 100 mg tabl</b> — dosage: 1 x 1; status: active</li><li><b>EpiPen 300 mikrog adrenaliinikynä</b> — dosage: käytetään anafylaksiassa; status: active</li></ul></div>",
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:814163c2-d842-4d64-bf38-f391b4c1bdfe"
+              },
+              {
+                "reference": "urn:uuid:6c4b0da9-4051-45df-8683-b9b1f2854761"
+              },
+              {
+                "reference": "urn:uuid:15543841-8d63-490f-b97b-01cacb0debcf"
+              },
+              {
+                "reference": "urn:uuid:262cea6d-4d03-4ed3-a91a-a8138842f690"
+              },
+              {
+                "reference": "urn:uuid:7d271bd8-147e-4d61-85a7-b75c0a10506c"
+              },
+              {
+                "reference": "urn:uuid:a8846e3d-da2d-4e0f-b3ee-47349ad00e5a"
+              },
+              {
+                "reference": "urn:uuid:1fe93695-9884-492f-a0d4-efd0630dcb3e"
+              }
+            ],
+            "title": "Medication Summary"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "11369-6",
+                  "system": "http://loinc.org",
+                  "display": "History of Immunization note"
+                }
+              ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><b>MPR-rokote</b> — status: completed; date: 1996</li><li><b>MPR-rokote</b> — status: completed; date: 2001</li><li><b>influenssarokote</b> — status: completed; date: 2026-10</li><li><b>DTaP-rokote</b> — status: completed; date: 2023</li></ul></div>",
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:46ede99e-a8e2-4e67-bdff-91a7f6db03eb"
+              },
+              {
+                "reference": "urn:uuid:a7df6883-63e1-4bc1-8106-793e454f11da"
+              },
+              {
+                "reference": "urn:uuid:222e1add-658f-471f-b3e5-e2ef3409e420"
+              },
+              {
+                "reference": "urn:uuid:7f31ae32-9b69-4a97-98cc-44998ad440dc"
+              }
+            ],
+            "title": "Immunizations"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "11348-0",
+                  "system": "http://loinc.org",
+                  "display": "History of Past illness note"
+                }
+              ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><b>Äkillinen pyelonefriitti</b> — status: resolved; onset: 2024</li></ul></div>",
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:eac4d2a7-e9e7-4be0-944a-2c89e09fab79"
+              }
+            ],
+            "title": "History of Past Illness"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "10162-6",
+                  "system": "http://loinc.org",
+                  "display": "History of pregnancies Narrative"
+                }
+              ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><b>Pregnancy status: Pregnant</b> — date: 2026-10-12</li><li><b>Expected delivery date: 2027-01-31</b></li><li><b>Number of deliveries: 1</b></li><li><b>Last menstrual period: 2026-04-26</b></li><li><b>Number of pregnancies: 2</b></li></ul></div>",
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:a7e73130-7361-4cf7-9c9d-6889e7512db4"
+              },
+              {
+                "reference": "urn:uuid:be4ff104-3ee2-415c-b6f3-fae5f6a66a35"
+              },
+              {
+                "reference": "urn:uuid:b9698775-fbb4-455f-af0e-ecdf4778990f"
+              },
+              {
+                "reference": "urn:uuid:aa914e4e-ea2a-5ca9-ba6a-fb7ed6ba5254"
+              },
+              {
+                "reference": "urn:uuid:f9e88c2b-5a59-5ee0-8eb0-a5b2e8b3bb79"
+              }
+            ],
+            "title": "History of Pregnancy"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "29762-2",
+                  "system": "http://loinc.org",
+                  "display": "Social history note"
+                }
+              ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><b>Tobacco use</b> — status: non_smoker; as written: Ei tupakoi</li><li><b>Alcohol use</b> — as written: Ei alkoholia</li></ul></div>",
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:eaeebd74-157b-4cd1-869d-6ae058bf050c"
+              }
+            ],
+            "title": "Social History"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8716-3",
+                  "system": "http://loinc.org",
+                  "display": "Vital signs note"
+                }
+              ]
+            },
+            "text": {
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><b>Blood pressure: 114/70 mmHg</b> — date: 2026-10-12</li><li><b>Heart rate: 84 /min</b> — date: 2026-10-12</li><li><b>Body temperature: 36.8 °C</b> — date: 2026-10-12</li><li><b>Oxygen saturation: 98 %</b> — date: 2026-10-12</li><li><b>Body height: 168 cm</b> — date: not stated</li><li><b>Body weight: 62 kg</b> — date: not stated; note: ennen raskautta</li><li><b>Body weight: 70 kg</b> — date: not stated</li></ul></div>",
+              "status": "generated"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:248b575a-69da-4c9b-9cb1-55732a4d7f7f"
+              },
+              {
+                "reference": "urn:uuid:69dbf7d7-bb91-41a6-9a95-b495910ce07e"
+              },
+              {
+                "reference": "urn:uuid:d69a3a83-1baf-476a-8c9a-2df1b06f1f1b"
+              },
+              {
+                "reference": "urn:uuid:680e92fb-c8b2-428c-8043-cfabbbc63c6d"
+              },
+              {
+                "reference": "urn:uuid:d511a600-8fc4-5dec-961c-9467ec8771a8"
+              },
+              {
+                "reference": "urn:uuid:59ff9a30-7b97-553f-83ee-870a31764714"
+              },
+              {
+                "reference": "urn:uuid:b2cc09ec-d68b-53c3-a0c9-c91eee43f3fb"
+              }
+            ],
+            "title": "Vital Signs"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "attester": [
+          {
+            "mode": "personal",
+            "time": "2026-10-14T04:50:41+00:00",
+            "party": {
+              "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+            }
+          }
+        ],
+        "resourceType": "Composition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e",
+      "resource": {
+        "id": "96167f3b-9491-5081-9ff6-33562c55685e",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
+          ]
+        },
+        "name": [
+          {
+            "text": "AHONEN-TESTI, Kaisa Johanna",
+            "given": [
+              "Kaisa",
+              "Johanna"
+            ],
+            "family": "AHONEN-TESTI"
+          }
+        ],
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>AHONEN-TESTI, Kaisa Johanna</b> — birth date: 1994-04-18; gender: female; Henkilötunnus: 180494-913J; contact (puoliso): Teemu Ahonen-Testi, 040 000 0005</p></div>",
+          "status": "generated"
+        },
+        "gender": "female",
+        "contact": [
+          {
+            "name": {
+              "text": "Teemu Ahonen-Testi"
+            },
+            "telecom": [
+              {
+                "value": "040 000 0005",
+                "system": "phone"
+              }
+            ],
+            "relationship": [
+              {
+                "text": "puoliso"
+              }
+            ]
+          }
+        ],
+        "birthDate": "1994-04-18",
+        "identifier": [
+          {
+            "type": {
+              "text": "Henkilötunnus"
+            },
+            "value": "180494-913J",
+            "system": "urn:oid:1.2.246.21"
+          }
+        ],
+        "resourceType": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:da70ed63-c058-5b28-8e75-025791e7e31b",
+      "resource": {
+        "id": "da70ed63-c058-5b28-8e75-025791e7e31b",
+        "note": [
+          {
+            "text": "Artificial intelligence (a large language model) extracts the facts from the source document; FHIR resources and codes are built by deterministic software."
+          }
+        ],
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>IPS Generator extraction pipeline</b> — version: 0.1.0; intermediate schema: 1.2.0</p></div>",
+          "status": "generated"
+        },
+        "status": "active",
+        "version": [
+          {
+            "type": {
+              "text": "software"
+            },
+            "value": "0.1.0"
+          },
+          {
+            "type": {
+              "text": "intermediate schema"
+            },
+            "value": "1.2.0"
+          }
+        ],
+        "deviceName": [
+          {
+            "name": "IPS Generator extraction pipeline",
+            "type": "model-name"
+          }
+        ],
+        "resourceType": "Device"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c0677c98-56c7-42a2-89bb-aa2255a28e92",
+      "resource": {
+        "id": "c0677c98-56c7-42a2-89bb-aa2255a28e92",
+        "code": {
+          "text": "Raskaus todettu"
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "note": [
+          {
+            "text": "rv 24+1"
+          }
+        ],
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Raskaus todettu</b> — note: rv 24+1</p></div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ee7926ac-3d09-4e7b-aad1-5a4ff34ff976",
+      "resource": {
+        "id": "ee7926ac-3d09-4e7b-aad1-5a4ff34ff976",
+        "code": {
+          "text": "Alaselkäkipu",
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "M54.5",
+              "display": "Low back pain"
+            }
+          ]
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Alaselkäkipu</b> — onset: 2026-09</p></div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "Condition",
+        "onsetDateTime": "2026-09",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:71fa49bc-6171-44bf-9e28-54c49b449d6c",
+      "resource": {
+        "id": "71fa49bc-6171-44bf-9e28-54c49b449d6c",
+        "code": {
+          "text": "Astma",
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "J45.9",
+              "display": "Asthma, unspecified"
+            }
+          ]
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Astma</b></p></div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "Condition",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b506c7fd-bf61-463b-9375-1159710ed26a",
+      "resource": {
+        "id": "b506c7fd-bf61-463b-9375-1159710ed26a",
+        "code": {
+          "text": "Kilpirauhasen vajaatoiminta",
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified"
+            }
+          ]
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Kilpirauhasen vajaatoiminta</b></p></div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "Condition",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d5222bca-b065-4ad4-91d2-61011ae664f8",
+      "resource": {
+        "id": "d5222bca-b065-4ad4-91d2-61011ae664f8",
+        "code": {
+          "text": "Penisilliini"
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Penisilliini</b> — status: active; type: allergy; category: medication; criticality: high; onset: 2015; reaction: anafylaksia (severe)</p></div>",
+          "status": "generated"
+        },
+        "type": "allergy",
+        "patient": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "category": [
+          "medication"
+        ],
+        "reaction": [
+          {
+            "severity": "severe",
+            "manifestation": [
+              {
+                "text": "anafylaksia"
+              }
+            ]
+          }
+        ],
+        "criticality": "high",
+        "resourceType": "AllergyIntolerance",
+        "onsetDateTime": "2015",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "display": "Active"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:814163c2-d842-4d64-bf38-f391b4c1bdfe",
+      "resource": {
+        "id": "814163c2-d842-4d64-bf38-f391b4c1bdfe",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Levotyroksiini 75 mikrog tabl</b> — dosage: 1 x 1 aamulla; status: active</p></div>",
+          "status": "generated"
+        },
+        "dosage": [
+          {
+            "text": "1 x 1 aamulla",
+            "timing": {
+              "repeat": {
+                "period": 1,
+                "frequency": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "unit": "tabl",
+                  "value": 1
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "MedicationStatement",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "text": "Levotyroksiini 75 mikrog tabl"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6c4b0da9-4051-45df-8683-b9b1f2854761",
+      "resource": {
+        "id": "6c4b0da9-4051-45df-8683-b9b1f2854761",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Budesonidi/formoteroli 160/4,5 mikrog inh</b> — dosage: 1 annos x 2; status: active</p></div>",
+          "status": "generated"
+        },
+        "dosage": [
+          {
+            "text": "1 annos x 2",
+            "timing": {
+              "repeat": {
+                "period": 1,
+                "frequency": 2,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "unit": "annos",
+                  "value": 1
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "MedicationStatement",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "text": "Budesonidi/formoteroli 160/4,5 mikrog inh"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:15543841-8d63-490f-b97b-01cacb0debcf",
+      "resource": {
+        "id": "15543841-8d63-490f-b97b-01cacb0debcf",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Salbutamoli 0,1 mg/annos inh</b> — dosage: 1-2 annosta tarv.; status: active</p></div>",
+          "status": "generated"
+        },
+        "dosage": [
+          {
+            "text": "1-2 annosta tarv.",
+            "asNeededBoolean": true
+          }
+        ],
+        "status": "active",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "MedicationStatement",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "text": "Salbutamoli 0,1 mg/annos inh"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:262cea6d-4d03-4ed3-a91a-a8138842f690",
+      "resource": {
+        "id": "262cea6d-4d03-4ed3-a91a-a8138842f690",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Foolihappo 0,4 mg tabl</b> — dosage: 1 x 1; status: active</p></div>",
+          "status": "generated"
+        },
+        "dosage": [
+          {
+            "text": "1 x 1",
+            "timing": {
+              "repeat": {
+                "period": 1,
+                "frequency": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "unit": "tabl",
+                  "value": 1
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "MedicationStatement",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "text": "Foolihappo 0,4 mg tabl"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7d271bd8-147e-4d61-85a7-b75c0a10506c",
+      "resource": {
+        "id": "7d271bd8-147e-4d61-85a7-b75c0a10506c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Kolekalsiferoli 20 mikrog tabl</b> — dosage: 1 x 1; status: active</p></div>",
+          "status": "generated"
+        },
+        "dosage": [
+          {
+            "text": "1 x 1",
+            "timing": {
+              "repeat": {
+                "period": 1,
+                "frequency": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "unit": "tabl",
+                  "value": 1
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "MedicationStatement",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "text": "Kolekalsiferoli 20 mikrog tabl"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8846e3d-da2d-4e0f-b3ee-47349ad00e5a",
+      "resource": {
+        "id": "a8846e3d-da2d-4e0f-b3ee-47349ad00e5a",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Rauta 100 mg tabl</b> — dosage: 1 x 1; status: active</p></div>",
+          "status": "generated"
+        },
+        "dosage": [
+          {
+            "text": "1 x 1",
+            "timing": {
+              "repeat": {
+                "period": 1,
+                "frequency": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "unit": "tabl",
+                  "value": 1
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "MedicationStatement",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "text": "Rauta 100 mg tabl"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1fe93695-9884-492f-a0d4-efd0630dcb3e",
+      "resource": {
+        "id": "1fe93695-9884-492f-a0d4-efd0630dcb3e",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>EpiPen 300 mikrog adrenaliinikynä</b> — dosage: käytetään anafylaksiassa; status: active</p></div>",
+          "status": "generated"
+        },
+        "dosage": [
+          {
+            "text": "käytetään anafylaksiassa",
+            "asNeededBoolean": true
+          }
+        ],
+        "status": "active",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "MedicationStatement",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "medicationCodeableConcept": {
+          "text": "EpiPen 300 mikrog adrenaliinikynä"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:46ede99e-a8e2-4e67-bdff-91a7f6db03eb",
+      "resource": {
+        "id": "46ede99e-a8e2-4e67-bdff-91a7f6db03eb",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>MPR-rokote</b> — status: completed; date: 1996</p></div>",
+          "status": "generated"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "vaccineCode": {
+          "text": "MPR-rokote",
+          "coding": [
+            {
+              "code": "J07BD52",
+              "system": "http://www.whocc.no/atc",
+              "display": "measles, combinations with mumps and rubella, live attenuated"
+            }
+          ]
+        },
+        "resourceType": "Immunization",
+        "occurrenceDateTime": "1996"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a7df6883-63e1-4bc1-8106-793e454f11da",
+      "resource": {
+        "id": "a7df6883-63e1-4bc1-8106-793e454f11da",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>MPR-rokote</b> — status: completed; date: 2001</p></div>",
+          "status": "generated"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "vaccineCode": {
+          "text": "MPR-rokote",
+          "coding": [
+            {
+              "code": "J07BD52",
+              "system": "http://www.whocc.no/atc",
+              "display": "measles, combinations with mumps and rubella, live attenuated"
+            }
+          ]
+        },
+        "resourceType": "Immunization",
+        "occurrenceDateTime": "2001"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:222e1add-658f-471f-b3e5-e2ef3409e420",
+      "resource": {
+        "id": "222e1add-658f-471f-b3e5-e2ef3409e420",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>influenssarokote</b> — status: completed; date: 2026-10</p></div>",
+          "status": "generated"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "vaccineCode": {
+          "text": "influenssarokote",
+          "coding": [
+            {
+              "code": "J07BB",
+              "system": "http://www.whocc.no/atc",
+              "display": "Influenza vaccines"
+            }
+          ]
+        },
+        "resourceType": "Immunization",
+        "occurrenceDateTime": "2026-10"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7f31ae32-9b69-4a97-98cc-44998ad440dc",
+      "resource": {
+        "id": "7f31ae32-9b69-4a97-98cc-44998ad440dc",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>DTaP-rokote</b> — status: completed; date: 2023</p></div>",
+          "status": "generated"
+        },
+        "status": "completed",
+        "patient": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "vaccineCode": {
+          "text": "DTaP-rokote"
+        },
+        "resourceType": "Immunization",
+        "occurrenceDateTime": "2023"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eac4d2a7-e9e7-4be0-944a-2c89e09fab79",
+      "resource": {
+        "id": "eac4d2a7-e9e7-4be0-944a-2c89e09fab79",
+        "code": {
+          "text": "Äkillinen pyelonefriitti"
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Äkillinen pyelonefriitti</b> — status: resolved; onset: 2024</p></div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "Condition",
+        "onsetDateTime": "2024",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Resolved"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a7e73130-7361-4cf7-9c9d-6889e7512db4",
+      "resource": {
+        "id": "a7e73130-7361-4cf7-9c9d-6889e7512db4",
+        "code": {
+          "coding": [
+            {
+              "code": "82810-3",
+              "system": "http://loinc.org",
+              "display": "Pregnancy status"
+            }
+          ]
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Pregnancy status: Pregnant</b> — date: 2026-10-12</p></div>",
+          "status": "generated"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "hasMember": [
+          {
+            "reference": "urn:uuid:be4ff104-3ee2-415c-b6f3-fae5f6a66a35"
+          }
+        ],
+        "resourceType": "Observation",
+        "effectiveDateTime": "2026-10-12",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "77386006",
+              "system": "http://snomed.info/sct",
+              "display": "Pregnant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:be4ff104-3ee2-415c-b6f3-fae5f6a66a35",
+      "resource": {
+        "id": "be4ff104-3ee2-415c-b6f3-fae5f6a66a35",
+        "code": {
+          "coding": [
+            {
+              "code": "11778-8",
+              "system": "http://loinc.org",
+              "display": "Delivery date Estimated"
+            }
+          ]
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Expected delivery date: 2027-01-31</b></p></div>",
+          "status": "generated"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "Observation",
+        "valueDateTime": "2027-01-31",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b9698775-fbb4-455f-af0e-ecdf4778990f",
+      "resource": {
+        "id": "b9698775-fbb4-455f-af0e-ecdf4778990f",
+        "code": {
+          "coding": [
+            {
+              "code": "11640-0",
+              "system": "http://loinc.org",
+              "display": "[#] Births total"
+            }
+          ]
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Number of deliveries: 1</b></p></div>",
+          "status": "generated"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "resourceType": "Observation",
+        "valueQuantity": {
+          "code": "1",
+          "value": 1,
+          "system": "http://unitsofmeasure.org"
+        },
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eaeebd74-157b-4cd1-869d-6ae058bf050c",
+      "resource": {
+        "id": "eaeebd74-157b-4cd1-869d-6ae058bf050c",
+        "code": {
+          "coding": [
+            {
+              "code": "72166-2",
+              "system": "http://loinc.org",
+              "display": "Tobacco smoking status"
+            }
+          ]
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Tobacco use</b> — status: non_smoker; as written: Ei tupakoi</p></div>",
+          "status": "generated"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "social-history",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Social History"
+              }
+            ]
+          }
+        ],
+        "resourceType": "Observation",
+        "_effectiveDateTime": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "unknown"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "text": "Ei tupakoi",
+          "coding": [
+            {
+              "code": "8392000",
+              "system": "http://snomed.info/sct",
+              "display": "Non-smoker"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:248b575a-69da-4c9b-9cb1-55732a4d7f7f",
+      "resource": {
+        "id": "248b575a-69da-4c9b-9cb1-55732a4d7f7f",
+        "code": {
+          "coding": [
+            {
+              "code": "85354-9",
+              "system": "http://loinc.org",
+              "display": "Blood pressure panel with all children optional"
+            }
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Blood pressure: 114/70 mmHg</b> — date: 2026-10-12</p></div>",
+          "status": "generated"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8480-6",
+                  "system": "http://loinc.org",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "unit": "mmHg",
+              "value": 114,
+              "system": "http://unitsofmeasure.org"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8462-4",
+                  "system": "http://loinc.org",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "unit": "mmHg",
+              "value": 70,
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ],
+        "resourceType": "Observation",
+        "effectiveDateTime": "2026-10-12"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:69dbf7d7-bb91-41a6-9a95-b495910ce07e",
+      "resource": {
+        "id": "69dbf7d7-bb91-41a6-9a95-b495910ce07e",
+        "code": {
+          "coding": [
+            {
+              "code": "8867-4",
+              "system": "http://loinc.org",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Heart rate: 84 /min</b> — date: 2026-10-12</p></div>",
+          "status": "generated"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "resourceType": "Observation",
+        "valueQuantity": {
+          "code": "/min",
+          "unit": "/min",
+          "value": 84,
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2026-10-12"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d69a3a83-1baf-476a-8c9a-2df1b06f1f1b",
+      "resource": {
+        "id": "d69a3a83-1baf-476a-8c9a-2df1b06f1f1b",
+        "code": {
+          "coding": [
+            {
+              "code": "8310-5",
+              "system": "http://loinc.org",
+              "display": "Body temperature"
+            }
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Body temperature: 36.8 °C</b> — date: 2026-10-12</p></div>",
+          "status": "generated"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "resourceType": "Observation",
+        "valueQuantity": {
+          "code": "Cel",
+          "unit": "°C",
+          "value": 36.8,
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2026-10-12"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:680e92fb-c8b2-428c-8043-cfabbbc63c6d",
+      "resource": {
+        "id": "680e92fb-c8b2-428c-8043-cfabbbc63c6d",
+        "code": {
+          "coding": [
+            {
+              "code": "2708-6",
+              "system": "http://loinc.org",
+              "display": "Oxygen saturation in Arterial blood"
+            },
+            {
+              "code": "59408-5",
+              "system": "http://loinc.org",
+              "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+            }
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Oxygen saturation: 98 %</b> — date: 2026-10-12</p></div>",
+          "status": "generated"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "resourceType": "Observation",
+        "valueQuantity": {
+          "code": "%",
+          "unit": "%",
+          "value": 98,
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2026-10-12"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aa914e4e-ea2a-5ca9-ba6a-fb7ed6ba5254",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "aa914e4e-ea2a-5ca9-ba6a-fb7ed6ba5254",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8665-2",
+              "display": "Last menstrual period start date"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "valueDateTime": "2026-04-26"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f9e88c2b-5a59-5ee0-8eb0-a5b2e8b3bb79",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f9e88c2b-5a59-5ee0-8eb0-a5b2e8b3bb79",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11977-6",
+              "display": "[#] Parity"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "valueInteger": 1
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d511a600-8fc4-5dec-961c-9467ec8771a8",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d511a600-8fc4-5dec-961c-9467ec8771a8",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "valueQuantity": {
+          "value": 168,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:59ff9a30-7b97-553f-83ee-870a31764714",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "59ff9a30-7b97-553f-83ee-870a31764714",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "56077-1",
+              "display": "Body weight --pre current pregnancy"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "valueQuantity": {
+          "value": 62,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b2cc09ec-d68b-53c3-a0c9-c91eee43f3fb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b2cc09ec-d68b-53c3-a0c9-c91eee43f3fb",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:96167f3b-9491-5081-9ff6-33562c55685e"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "valueQuantity": {
+          "value": 70,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "timestamp": "2026-10-14T04:50:41+00:00",
+  "identifier": {
+    "value": "urn:uuid:b04fe93d-4b27-5b5e-848c-757c1b4154f3",
+    "system": "urn:ietf:rfc:3986"
+  },
+  "resourceType": "Bundle"
+}

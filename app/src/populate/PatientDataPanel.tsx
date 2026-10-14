@@ -7,6 +7,7 @@ import type { Lang } from "../fhir/text.ts";
 import { t } from "../i18n.ts";
 import { SAMPLES } from "./samples.ts";
 import { addDocument, HETU, patientName, patients, type PatientData } from "./store.ts";
+import { WalletRequest } from "./WalletRequest.tsx";
 
 export interface PatientDataProps {
   lang: Lang;
@@ -21,6 +22,7 @@ export interface PatientDataProps {
 export function PatientDataPanel({ lang, data, onChange, patient, onSelectPatient, children }: PatientDataProps) {
   const [error, setError] = useState<string>();
   const [pasted, setPasted] = useState("");
+  const [wallet, setWallet] = useState(false);
   const all = patients(data);
 
   const add = (texts: { name: string; text: string }[]) => {
@@ -79,7 +81,19 @@ export function PatientDataPanel({ lang, data, onChange, patient, onSelectPatien
         >
           {t("add", lang)}
         </button>
+        {!wallet && (
+          <button type="button" onClick={() => setWallet(true)}>
+            {t("fromWallet", lang)}
+          </button>
+        )}
       </div>
+      {wallet && (
+        <WalletRequest
+          lang={lang}
+          onData={(text) => add([{ name: t("wallet", lang), text }]) && setWallet(false)}
+          onCancel={() => setWallet(false)}
+        />
+      )}
       <div className="samples">
         <span className="hint">{t("samples", lang)}</span>
         {SAMPLES.map((sample) => (
