@@ -1039,7 +1039,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
               }
             }
           ]
@@ -2558,10 +2558,34 @@
               }
             },
             {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "status",
+                "language": "text/fhirpath",
+                "expression": "%observations.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'http://loinc.org') and (code = '72166-2'))).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "smoker",
+                "language": "text/fhirpath",
+                "expression": "%status.where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists())"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/variable",
+              "valueExpression": {
+                "name": "nonSmoker",
+                "language": "text/fhirpath",
+                "expression": "%status.where(value.coding.where(system = 'http://snomed.info/sct' and (code = '8392000' or code = '266919005' or code = '8517006' or code = '281018007')).exists())"
+              }
+            },
+            {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "iif(%observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists()).exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = 'ee44072b-a078-4091-8c58-48fc5db4a18e')) | iif(%observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists()).empty() and %observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '8392000' or code = '266919005' or code = '8517006' or code = '281018007')).exists()).exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = '67602c78-f692-425e-baae-d5cb466c4515'))"
+                "expression": "iif(%smoker.exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = 'ee44072b-a078-4091-8c58-48fc5db4a18e'), iif(%nonSmoker.exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = '67602c78-f692-425e-baae-d5cb466c4515')))"
               }
             }
           ],
@@ -9807,7 +9831,15 @@
       "valueExpression": {
         "name": "conditionSearch",
         "language": "application/x-fhir-query",
-        "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+        "expression": "Condition?patient={{%patient.id}}"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+      "valueExpression": {
+        "name": "compositionSearch",
+        "language": "application/x-fhir-query",
+        "expression": "Composition?patient={{%patient.id}}"
       }
     },
     {
@@ -9815,7 +9847,7 @@
       "valueExpression": {
         "name": "conditions",
         "language": "text/fhirpath",
-        "expression": "%conditionSearch.entry.resource"
+        "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
       }
     },
     {

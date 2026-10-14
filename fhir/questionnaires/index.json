@@ -12054,7 +12054,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('B03BB')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('B03BB')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('B03BB')))).exists()).select('Medication/' + id))"
                     }
                   },
                   {
@@ -12194,7 +12194,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists()).select('Medication/' + id))"
                     }
                   },
                   {
@@ -12334,7 +12334,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A12AA')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A12AA')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A12AA')))).exists()).select('Medication/' + id))"
                     }
                   },
                   {
@@ -12474,7 +12474,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('B03BA')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('B03BA')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('B03BA')))).exists()).select('Medication/' + id))"
                     }
                   },
                   {
@@ -12614,7 +12614,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11A') or code.startsWith('A11B')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11A') or code.startsWith('A11B')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11A') or code.startsWith('A11B')))).exists()).select('Medication/' + id))"
                     }
                   },
                   {
@@ -17013,7 +17013,15 @@
             "valueExpression": {
               "name": "conditionSearch",
               "language": "application/x-fhir-query",
-              "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "compositionSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Composition?patient={{%patient.id}}"
             }
           },
           {
@@ -17021,7 +17029,7 @@
             "valueExpression": {
               "name": "conditions",
               "language": "text/fhirpath",
-              "expression": "%conditionSearch.entry.resource"
+              "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
             }
           },
           {
@@ -17037,7 +17045,7 @@
             "valueExpression": {
               "name": "conditionHistory",
               "language": "text/fhirpath",
-              "expression": "%conditionHistorySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty())"
+              "expression": "%conditionHistorySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -17053,7 +17061,7 @@
             "valueExpression": {
               "name": "allergies",
               "language": "text/fhirpath",
-              "expression": "%allergySearch.entry.resource"
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -17061,7 +17069,7 @@
             "valueExpression": {
               "name": "medicationStatementSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationStatement?patient={{%patient.id}}&status=active"
+              "expression": "MedicationStatement?patient={{%patient.id}}&status=active&_include=MedicationStatement:medication"
             }
           },
           {
@@ -17069,7 +17077,7 @@
             "valueExpression": {
               "name": "medicationRequestSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationRequest?patient={{%patient.id}}&status=active"
+              "expression": "MedicationRequest?patient={{%patient.id}}&status=active&_include=MedicationRequest:medication"
             }
           },
           {
@@ -17077,7 +17085,7 @@
             "valueExpression": {
               "name": "medications",
               "language": "text/fhirpath",
-              "expression": "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource"
+              "expression": "(%medicationStatementSearch.entry.resource.ofType(MedicationStatement) | %medicationRequestSearch.entry.resource.ofType(MedicationRequest)).where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -17093,7 +17101,7 @@
             "valueExpression": {
               "name": "immunizations",
               "language": "text/fhirpath",
-              "expression": "%immunizationSearch.entry.resource"
+              "expression": "%immunizationSearch.entry.resource.where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -18846,7 +18854,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -18912,16 +18920,24 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/variable",
                     "valueExpression": {
-                      "name": "evidence",
+                      "name": "allergies",
                       "language": "text/fhirpath",
                       "expression": "%allergies"
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/variable",
+                    "valueExpression": {
+                      "name": "noneKnown",
+                      "language": "text/fhirpath",
+                      "expression": "%noKnownAllergies.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'http://snomed.info/sct') and (code = '716186003'))).exists()).where(category.empty())"
                     }
                   },
                   {
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = 'bc4e7413-ee4f-4a50-b97b-9d7d5f13e0f7').answerOption.valueCoding.where(code = '5e3b3a82-b11c-45df-944f-7cf0e13f5b6a'))"
+                      "expression": "iif(%allergies.exists(), %questionnaire.repeat(item).where(linkId = 'bc4e7413-ee4f-4a50-b97b-9d7d5f13e0f7').answerOption.valueCoding.where(code = '5e3b3a82-b11c-45df-944f-7cf0e13f5b6a'), iif(%noneKnown.exists(), %questionnaire.repeat(item).where(linkId = 'bc4e7413-ee4f-4a50-b97b-9d7d5f13e0f7').answerOption.valueCoding.where(code = '760b512c-e2fd-4a8d-ab76-8e54dc5f33ba')))"
                     }
                   }
                 ],
@@ -19051,7 +19067,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -19256,7 +19272,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -26239,7 +26255,15 @@
             "valueExpression": {
               "name": "conditionSearch",
               "language": "application/x-fhir-query",
-              "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "compositionSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Composition?patient={{%patient.id}}"
             }
           },
           {
@@ -26247,7 +26271,7 @@
             "valueExpression": {
               "name": "conditions",
               "language": "text/fhirpath",
-              "expression": "%conditionSearch.entry.resource"
+              "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
             }
           },
           {
@@ -26263,7 +26287,15 @@
             "valueExpression": {
               "name": "allergies",
               "language": "text/fhirpath",
-              "expression": "%allergySearch.entry.resource"
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "noKnownAllergies",
+              "language": "text/fhirpath",
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and (code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists())"
             }
           },
           {
@@ -26271,7 +26303,7 @@
             "valueExpression": {
               "name": "medicationStatementSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationStatement?patient={{%patient.id}}&status=active"
+              "expression": "MedicationStatement?patient={{%patient.id}}&status=active&_include=MedicationStatement:medication"
             }
           },
           {
@@ -26279,7 +26311,7 @@
             "valueExpression": {
               "name": "medicationRequestSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationRequest?patient={{%patient.id}}&status=active"
+              "expression": "MedicationRequest?patient={{%patient.id}}&status=active&_include=MedicationRequest:medication"
             }
           },
           {
@@ -26287,7 +26319,7 @@
             "valueExpression": {
               "name": "medications",
               "language": "text/fhirpath",
-              "expression": "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource"
+              "expression": "(%medicationStatementSearch.entry.resource.ofType(MedicationStatement) | %medicationRequestSearch.entry.resource.ofType(MedicationRequest)).where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           }
         ]
@@ -28840,7 +28872,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11') or code.startsWith('A12') or code.startsWith('B03')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11') or code.startsWith('A12') or code.startsWith('B03')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11') or code.startsWith('A12') or code.startsWith('B03')))).exists()).select('Medication/' + id))"
                     }
                   },
                   {
@@ -28970,14 +29002,14 @@
                         "valueExpression": {
                           "name": "evidence",
                           "language": "text/fhirpath",
-                          "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11') or code.startsWith('A12') or code.startsWith('B03')))).exists())"
+                          "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11') or code.startsWith('A12') or code.startsWith('B03')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11') or code.startsWith('A12') or code.startsWith('B03')))).exists()).select('Medication/' + id))"
                         }
                       },
                       {
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -29263,7 +29295,7 @@
                     "valueExpression": {
                       "name": "nicotine",
                       "language": "text/fhirpath",
-                      "expression": "(%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('N07BA')))).exists())) | (%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('F17')))).exists()))"
+                      "expression": "(%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('N07BA')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('N07BA')))).exists()).select('Medication/' + id))) | (%conditions.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('F17')))).exists()))"
                     }
                   },
                   {
@@ -32203,7 +32235,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%immunizations.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('J07AM51') or code.startsWith('J07AJ52') or code.startsWith('J07CA')))).exists()).where(occurrence.ofType(dateTime).toString().substring(0, 10) >= (today() - 10 years).toString())"
+                      "expression": "%immunizations.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('J07AM') or code.startsWith('J07AJ52') or code.startsWith('J07CA')))).exists()).where(occurrence.ofType(dateTime).toString().substring(0, 10) >= (today() - 10 years).toString())"
                     }
                   },
                   {
@@ -32418,7 +32450,7 @@
                     "valueExpression": {
                       "name": "evidence1",
                       "language": "text/fhirpath",
-                      "expression": "%conditionHistory.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('M')))).exists())"
+                      "expression": "(%conditionHistory.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('M')))).exists())) | (%conditionHistory.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('S02') or code.startsWith('S12') or code.startsWith('S22') or code.startsWith('S32') or code.startsWith('S42') or code.startsWith('S52') or code.startsWith('S62') or code.startsWith('S72') or code.startsWith('S82') or code.startsWith('S92') or code.startsWith('T02') or code.startsWith('T08') or code.startsWith('T10') or code.startsWith('T12')))).exists()))"
                     }
                   },
                   {
@@ -32506,6 +32538,14 @@
                     "valueExpression": {
                       "name": "evidence12",
                       "language": "text/fhirpath",
+                      "expression": "%procedures"
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/variable",
+                    "valueExpression": {
+                      "name": "evidence13",
+                      "language": "text/fhirpath",
                       "expression": "%conditionHistory.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.1' or system = 'http://hl7.org/fhir/sid/icd-10') and (code.startsWith('J60') or code.startsWith('J61') or code.startsWith('J62') or code.startsWith('J63') or code.startsWith('J64') or code.startsWith('J65') or code.startsWith('J66') or code.startsWith('H83.3')))).exists())"
                     }
                   },
@@ -32513,7 +32553,7 @@
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence1.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'dc2c41b7-af92-43d2-8d79-55b9f242f33d')) | iif(%evidence2.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'a90f9a29-cefb-4002-837c-6f876f07b2ad')) | iif(%evidence3.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '4abbdc9d-9ced-431a-982e-b8a9506484db')) | iif(%evidence4.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'd3f655e4-66ea-4691-a3a0-c725ab74defb')) | iif(%evidence5.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '1944677d-b081-4c2b-9bcf-4d7a95f5cc7c')) | iif(%evidence6.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'dac844ca-b723-442c-bc62-b352b34263cd')) | iif(%evidence7.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'd86cdc00-9d3d-4c92-aad2-a5cd1ea91a71')) | iif(%evidence8.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '1d31b7ed-522a-4298-9c20-8a6aab66599f')) | iif(%evidence9.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'ed64560f-7073-4710-ada9-8e83d6070889')) | iif(%evidence10.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '50d0d44c-041d-48cd-9617-7669499ab8f4')) | iif(%evidence11.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '94fffb6d-d7b4-4221-baad-4ef65763dcff')) | iif(%evidence12.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'e5959d14-7067-409b-9750-129cb49e66ac'))"
+                      "expression": "iif(%evidence1.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'dc2c41b7-af92-43d2-8d79-55b9f242f33d')) | iif(%evidence2.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'a90f9a29-cefb-4002-837c-6f876f07b2ad')) | iif(%evidence3.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '4abbdc9d-9ced-431a-982e-b8a9506484db')) | iif(%evidence4.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'd3f655e4-66ea-4691-a3a0-c725ab74defb')) | iif(%evidence5.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '1944677d-b081-4c2b-9bcf-4d7a95f5cc7c')) | iif(%evidence6.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'dac844ca-b723-442c-bc62-b352b34263cd')) | iif(%evidence7.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'd86cdc00-9d3d-4c92-aad2-a5cd1ea91a71')) | iif(%evidence8.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '1d31b7ed-522a-4298-9c20-8a6aab66599f')) | iif(%evidence9.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'ed64560f-7073-4710-ada9-8e83d6070889')) | iif(%evidence10.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '50d0d44c-041d-48cd-9617-7669499ab8f4')) | iif(%evidence11.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '94fffb6d-d7b4-4221-baad-4ef65763dcff')) | iif(%evidence12.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = '8c390877-d124-4051-86a4-3754ae58437a')) | iif(%evidence13.exists(), %questionnaire.repeat(item).where(linkId = '73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1').answerOption.valueCoding.where(code = 'e5959d14-7067-409b-9750-129cb49e66ac'))"
                     }
                   }
                 ],
@@ -33955,7 +33995,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -35136,7 +35176,15 @@
             "valueExpression": {
               "name": "conditionSearch",
               "language": "application/x-fhir-query",
-              "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "compositionSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Composition?patient={{%patient.id}}"
             }
           },
           {
@@ -35144,7 +35192,7 @@
             "valueExpression": {
               "name": "conditions",
               "language": "text/fhirpath",
-              "expression": "%conditionSearch.entry.resource"
+              "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
             }
           },
           {
@@ -35160,7 +35208,7 @@
             "valueExpression": {
               "name": "conditionHistory",
               "language": "text/fhirpath",
-              "expression": "%conditionHistorySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty())"
+              "expression": "%conditionHistorySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -35176,7 +35224,7 @@
             "valueExpression": {
               "name": "allergies",
               "language": "text/fhirpath",
-              "expression": "%allergySearch.entry.resource"
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -35184,7 +35232,7 @@
             "valueExpression": {
               "name": "medicationStatementSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationStatement?patient={{%patient.id}}&status=active"
+              "expression": "MedicationStatement?patient={{%patient.id}}&status=active&_include=MedicationStatement:medication"
             }
           },
           {
@@ -35192,7 +35240,7 @@
             "valueExpression": {
               "name": "medicationRequestSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationRequest?patient={{%patient.id}}&status=active"
+              "expression": "MedicationRequest?patient={{%patient.id}}&status=active&_include=MedicationRequest:medication"
             }
           },
           {
@@ -35200,7 +35248,7 @@
             "valueExpression": {
               "name": "medications",
               "language": "text/fhirpath",
-              "expression": "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource"
+              "expression": "(%medicationStatementSearch.entry.resource.ofType(MedicationStatement) | %medicationRequestSearch.entry.resource.ofType(MedicationRequest)).where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -35216,7 +35264,7 @@
             "valueExpression": {
               "name": "immunizations",
               "language": "text/fhirpath",
-              "expression": "%immunizationSearch.entry.resource"
+              "expression": "%immunizationSearch.entry.resource.where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -35233,6 +35281,22 @@
               "name": "observations",
               "language": "text/fhirpath",
               "expression": "%observationSearch.entry.resource"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "procedureSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Procedure?patient={{%patient.id}}&status=completed"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "procedures",
+              "language": "text/fhirpath",
+              "expression": "%procedureSearch.entry.resource.where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           }
         ]
@@ -36281,7 +36345,7 @@
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                     }
                   }
                 ]
@@ -37800,10 +37864,34 @@
                     }
                   },
                   {
+                    "url": "http://hl7.org/fhir/StructureDefinition/variable",
+                    "valueExpression": {
+                      "name": "status",
+                      "language": "text/fhirpath",
+                      "expression": "%observations.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'http://loinc.org') and (code = '72166-2'))).exists())"
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/variable",
+                    "valueExpression": {
+                      "name": "smoker",
+                      "language": "text/fhirpath",
+                      "expression": "%status.where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists())"
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/variable",
+                    "valueExpression": {
+                      "name": "nonSmoker",
+                      "language": "text/fhirpath",
+                      "expression": "%status.where(value.coding.where(system = 'http://snomed.info/sct' and (code = '8392000' or code = '266919005' or code = '8517006' or code = '281018007')).exists())"
+                    }
+                  },
+                  {
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists()).exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = 'ee44072b-a078-4091-8c58-48fc5db4a18e')) | iif(%observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists()).empty() and %observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '8392000' or code = '266919005' or code = '8517006' or code = '281018007')).exists()).exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = '67602c78-f692-425e-baae-d5cb466c4515'))"
+                      "expression": "iif(%smoker.exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = 'ee44072b-a078-4091-8c58-48fc5db4a18e'), iif(%nonSmoker.exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = '67602c78-f692-425e-baae-d5cb466c4515')))"
                     }
                   }
                 ],
@@ -45049,7 +45137,15 @@
             "valueExpression": {
               "name": "conditionSearch",
               "language": "application/x-fhir-query",
-              "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "compositionSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Composition?patient={{%patient.id}}"
             }
           },
           {
@@ -45057,7 +45153,7 @@
             "valueExpression": {
               "name": "conditions",
               "language": "text/fhirpath",
-              "expression": "%conditionSearch.entry.resource"
+              "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
             }
           },
           {
@@ -46978,7 +47074,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -47090,16 +47186,24 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/variable",
                     "valueExpression": {
-                      "name": "evidence",
+                      "name": "allergies",
                       "language": "text/fhirpath",
                       "expression": "%allergies"
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/variable",
+                    "valueExpression": {
+                      "name": "noneKnown",
+                      "language": "text/fhirpath",
+                      "expression": "%noKnownAllergies.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'http://snomed.info/sct') and (code = '716186003'))).exists()).where(category.empty())"
                     }
                   },
                   {
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '05d7eeee-ccb3-462b-b255-095fdba81336').answerOption.valueCoding.where(code = 'b48863f0-9f97-432f-ac82-29aa10152ab5'))"
+                      "expression": "iif(%allergies.exists(), %questionnaire.repeat(item).where(linkId = '05d7eeee-ccb3-462b-b255-095fdba81336').answerOption.valueCoding.where(code = 'b48863f0-9f97-432f-ac82-29aa10152ab5'), iif(%noneKnown.exists(), %questionnaire.repeat(item).where(linkId = '05d7eeee-ccb3-462b-b255-095fdba81336').answerOption.valueCoding.where(code = 'bc73547f-11f7-45da-a5ef-7bb774206886')))"
                     }
                   }
                 ],
@@ -47229,7 +47333,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -47607,7 +47711,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -57383,7 +57487,15 @@
             "valueExpression": {
               "name": "conditionSearch",
               "language": "application/x-fhir-query",
-              "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "compositionSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Composition?patient={{%patient.id}}"
             }
           },
           {
@@ -57391,7 +57503,7 @@
             "valueExpression": {
               "name": "conditions",
               "language": "text/fhirpath",
-              "expression": "%conditionSearch.entry.resource"
+              "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
             }
           },
           {
@@ -57407,7 +57519,15 @@
             "valueExpression": {
               "name": "allergies",
               "language": "text/fhirpath",
-              "expression": "%allergySearch.entry.resource"
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "noKnownAllergies",
+              "language": "text/fhirpath",
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and (code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists())"
             }
           },
           {
@@ -57415,7 +57535,7 @@
             "valueExpression": {
               "name": "medicationStatementSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationStatement?patient={{%patient.id}}&status=active"
+              "expression": "MedicationStatement?patient={{%patient.id}}&status=active&_include=MedicationStatement:medication"
             }
           },
           {
@@ -57423,7 +57543,7 @@
             "valueExpression": {
               "name": "medicationRequestSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationRequest?patient={{%patient.id}}&status=active"
+              "expression": "MedicationRequest?patient={{%patient.id}}&status=active&_include=MedicationRequest:medication"
             }
           },
           {
@@ -57431,7 +57551,7 @@
             "valueExpression": {
               "name": "medications",
               "language": "text/fhirpath",
-              "expression": "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource"
+              "expression": "(%medicationStatementSearch.entry.resource.ofType(MedicationStatement) | %medicationRequestSearch.entry.resource.ofType(MedicationRequest)).where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           }
         ]
@@ -60680,7 +60800,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -61105,16 +61225,24 @@
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/variable",
                     "valueExpression": {
-                      "name": "evidence",
+                      "name": "allergies",
                       "language": "text/fhirpath",
                       "expression": "%allergies"
+                    }
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/variable",
+                    "valueExpression": {
+                      "name": "noneKnown",
+                      "language": "text/fhirpath",
+                      "expression": "%noKnownAllergies.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'http://snomed.info/sct') and (code = '716186003'))).exists()).where(category.empty())"
                     }
                   },
                   {
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence.exists(), %questionnaire.repeat(item).where(linkId = '7806e00f-02a1-4e2e-a958-ad8325e99fd8').answerOption.valueCoding.where(code = 'd42c9d28-937e-4db4-9049-8dfe6964e160'))"
+                      "expression": "iif(%allergies.exists(), %questionnaire.repeat(item).where(linkId = '7806e00f-02a1-4e2e-a958-ad8325e99fd8').answerOption.valueCoding.where(code = 'd42c9d28-937e-4db4-9049-8dfe6964e160'), iif(%noneKnown.exists(), %questionnaire.repeat(item).where(linkId = '7806e00f-02a1-4e2e-a958-ad8325e99fd8').answerOption.valueCoding.where(code = '224060e2-8130-4708-a00b-ae6ffeca5edc')))"
                     }
                   }
                 ],
@@ -61244,7 +61372,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/fhirpath",
-                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                          "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                         }
                       }
                     ],
@@ -71847,7 +71975,15 @@
             "valueExpression": {
               "name": "conditionSearch",
               "language": "application/x-fhir-query",
-              "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "compositionSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Composition?patient={{%patient.id}}"
             }
           },
           {
@@ -71855,7 +71991,7 @@
             "valueExpression": {
               "name": "conditions",
               "language": "text/fhirpath",
-              "expression": "%conditionSearch.entry.resource"
+              "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
             }
           },
           {
@@ -71871,7 +72007,15 @@
             "valueExpression": {
               "name": "allergies",
               "language": "text/fhirpath",
-              "expression": "%allergySearch.entry.resource"
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "noKnownAllergies",
+              "language": "text/fhirpath",
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and (code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists())"
             }
           }
         ]
@@ -88434,7 +88578,7 @@
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                     }
                   }
                 ]
@@ -88487,7 +88631,7 @@
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                     }
                   }
                 ]
@@ -89215,7 +89359,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists()).select('Medication/' + id))"
                     }
                   },
                   {
@@ -91531,7 +91675,15 @@
             "valueExpression": {
               "name": "conditionSearch",
               "language": "application/x-fhir-query",
-              "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "compositionSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Composition?patient={{%patient.id}}"
             }
           },
           {
@@ -91539,7 +91691,7 @@
             "valueExpression": {
               "name": "conditions",
               "language": "text/fhirpath",
-              "expression": "%conditionSearch.entry.resource"
+              "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
             }
           },
           {
@@ -91555,7 +91707,7 @@
             "valueExpression": {
               "name": "allergies",
               "language": "text/fhirpath",
-              "expression": "%allergySearch.entry.resource"
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -91563,7 +91715,7 @@
             "valueExpression": {
               "name": "medicationStatementSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationStatement?patient={{%patient.id}}&status=active"
+              "expression": "MedicationStatement?patient={{%patient.id}}&status=active&_include=MedicationStatement:medication"
             }
           },
           {
@@ -91571,7 +91723,7 @@
             "valueExpression": {
               "name": "medicationRequestSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationRequest?patient={{%patient.id}}&status=active"
+              "expression": "MedicationRequest?patient={{%patient.id}}&status=active&_include=MedicationRequest:medication"
             }
           },
           {
@@ -91579,7 +91731,7 @@
             "valueExpression": {
               "name": "medications",
               "language": "text/fhirpath",
-              "expression": "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource"
+              "expression": "(%medicationStatementSearch.entry.resource.ofType(MedicationStatement) | %medicationRequestSearch.entry.resource.ofType(MedicationRequest)).where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           }
         ]
@@ -92214,7 +92366,7 @@
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                     }
                   }
                 ]
@@ -92267,7 +92419,7 @@
                     "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                     "valueExpression": {
                       "language": "text/fhirpath",
-                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))"
+                      "expression": "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | (code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))"
                     }
                   }
                 ]
@@ -92995,7 +93147,7 @@
                     "valueExpression": {
                       "name": "evidence",
                       "language": "text/fhirpath",
-                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists())"
+                      "expression": "%medications.where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists() or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where((code | medicationCodeableConcept | vaccineCode).coding.where(((system = 'urn:oid:1.2.246.537.6.32' or system = 'http://www.whocc.no/atc') and (code.startsWith('A11CC')))).exists()).select('Medication/' + id))"
                     }
                   },
                   {
@@ -95720,7 +95872,15 @@
             "valueExpression": {
               "name": "conditionSearch",
               "language": "application/x-fhir-query",
-              "expression": "Condition?patient={{%patient.id}}&clinical-status=active"
+              "expression": "Condition?patient={{%patient.id}}"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/variable",
+            "valueExpression": {
+              "name": "compositionSearch",
+              "language": "application/x-fhir-query",
+              "expression": "Composition?patient={{%patient.id}}"
             }
           },
           {
@@ -95728,7 +95888,7 @@
             "valueExpression": {
               "name": "conditions",
               "language": "text/fhirpath",
-              "expression": "%conditionSearch.entry.resource"
+              "expression": "%conditionSearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not() and (clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference)))"
             }
           },
           {
@@ -95744,7 +95904,7 @@
             "valueExpression": {
               "name": "allergies",
               "language": "text/fhirpath",
-              "expression": "%allergySearch.entry.resource"
+              "expression": "%allergySearch.entry.resource.where(verificationStatus.coding.where(code = 'refuted' or code = 'entered-in-error').empty() and ((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           },
           {
@@ -95752,7 +95912,7 @@
             "valueExpression": {
               "name": "medicationStatementSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationStatement?patient={{%patient.id}}&status=active"
+              "expression": "MedicationStatement?patient={{%patient.id}}&status=active&_include=MedicationStatement:medication"
             }
           },
           {
@@ -95760,7 +95920,7 @@
             "valueExpression": {
               "name": "medicationRequestSearch",
               "language": "application/x-fhir-query",
-              "expression": "MedicationRequest?patient={{%patient.id}}&status=active"
+              "expression": "MedicationRequest?patient={{%patient.id}}&status=active&_include=MedicationRequest:medication"
             }
           },
           {
@@ -95768,7 +95928,7 @@
             "valueExpression": {
               "name": "medications",
               "language": "text/fhirpath",
-              "expression": "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource"
+              "expression": "(%medicationStatementSearch.entry.resource.ofType(MedicationStatement) | %medicationRequestSearch.entry.resource.ofType(MedicationRequest)).where(((code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003' or code = '409137002' or code = '429625007' or code = '428607008' or code = '160245001'))).exists()).not())"
             }
           }
         ]

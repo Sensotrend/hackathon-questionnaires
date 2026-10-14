@@ -9,7 +9,21 @@ import type { Bundle, OperationOutcome, OperationOutcomeIssue } from "fhir/r4";
 import { FHIR_DIR, SAMPLES_DIR, VALIDATOR_JAR } from "./paths.ts";
 
 export const VALIDATOR_VERSION = "6.10.4";
-export const VALIDATOR_ARGS = ["-version", "4.0.1", "-ig", "hl7.fhir.uv.sdc#3.0.0", "-ig", "hl7.fhir.fi.base#2.0.0"];
+// IPS and the EU base and EPS packages are for the IPS documents in samples/.
+export const VALIDATOR_ARGS = [
+  "-version",
+  "4.0.1",
+  "-ig",
+  "hl7.fhir.uv.sdc#3.0.0",
+  "-ig",
+  "hl7.fhir.fi.base#2.0.0",
+  "-ig",
+  "hl7.fhir.uv.ips#2.0.0",
+  "-ig",
+  "hl7.fhir.eu.base#2.0.0",
+  "-ig",
+  "hl7.fhir.eu.eps#1.0.0-ballot",
+];
 const SEVERITIES = ["fatal", "error", "warning", "information"] as const;
 
 /** Why accepted warnings are accepted, matched against the message. */

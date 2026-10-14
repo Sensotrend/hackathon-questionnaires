@@ -395,9 +395,21 @@
       }
     },
     "098effd9-e4c3-462d-a5a9-99858d18a925": {
-      "$comment": "Smoking: from the Observation Tobacco smoking status (LOINC 72166-2). A SNOMED smoker value gives 'Kyllä'; a non-smoker or ex-smoker value gives 'En'. A record stating the status is positive evidence for 'En'; no record gives no answer. A smoker value wins over a non-smoker one.",
+      "$comment": "Smoking: from the Observation Tobacco smoking status (LOINC 72166-2). A SNOMED smoker value gives 'Kyllä'; a non-smoker or ex-smoker value gives 'En'. A record stating the status is positive evidence for 'En'; no record gives no answer. A smoker value wins over a non-smoker one. The answer cites only the smoking-status Observations.",
       "populate": {
-        "expression": "iif(%observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists()).exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = 'ee44072b-a078-4091-8c58-48fc5db4a18e')) | iif(%observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists()).empty() and %observations.where(code.coding.where(system = 'http://loinc.org' and code = '72166-2').exists()).where(value.coding.where(system = 'http://snomed.info/sct' and (code = '8392000' or code = '266919005' or code = '8517006' or code = '281018007')).exists()).exists(), %questionnaire.repeat(item).where(linkId = '098effd9-e4c3-462d-a5a9-99858d18a925').answerOption.valueCoding.where(code = '67602c78-f692-425e-baae-d5cb466c4515'))"
+        "variables": {
+          "status": {
+            "in": "observations",
+            "codes": {
+              "http://loinc.org": [
+                "72166-2"
+              ]
+            }
+          },
+          "smoker": "%status.where(value.coding.where(system = 'http://snomed.info/sct' and (code = '77176002' or code = '65568007' or code = '449868002' or code = '428041000124106')).exists())",
+          "nonSmoker": "%status.where(value.coding.where(system = 'http://snomed.info/sct' and (code = '8392000' or code = '266919005' or code = '8517006' or code = '281018007')).exists())"
+        },
+        "expression": "iif(%smoker.exists(), {{option:Kyllä}}, iif(%nonSmoker.exists(), {{option:En}}))"
       }
     }
   }

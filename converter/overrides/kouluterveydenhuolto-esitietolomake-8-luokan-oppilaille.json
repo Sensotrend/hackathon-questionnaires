@@ -76,12 +76,23 @@
       }
     },
     "7806e00f-02a1-4e2e-a958-ad8325e99fd8": {
-      "$comment": "Allergies: any active allergy",
+      "$comment": "Allergies: 'yes' when there is an active allergy; 'no' when the record states no known allergy of any kind (SNOMED CT 716186003 without a category). A statement scoped to one kind, like the IPS's no known medication allergy (716186003 with category medication), says nothing of the others, so it answers nothing here.",
       "populate": {
-        "answer": "Kyllä",
-        "when": {
-          "in": "allergies"
-        }
+        "variables": {
+          "allergies": {
+            "in": "allergies"
+          },
+          "noneKnown": {
+            "in": "noKnownAllergies",
+            "codes": {
+              "http://snomed.info/sct": [
+                "716186003"
+              ]
+            },
+            "where": "category.empty()"
+          }
+        },
+        "expression": "iif(%allergies.exists(), {{option:Kyllä}}, iif(%noneKnown.exists(), {{option:Ei}}))"
       }
     },
     "88051b2a-6a14-467d-b6c0-94e4fa521aed": {

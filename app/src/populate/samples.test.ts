@@ -128,12 +128,28 @@ describe("the low-back physiotherapy form, filled in from Pekka and from Seppo",
     expect(sources("ae88f684")).toEqual(["pekka-weight"]);
     expect(shown("36c778a4")).toEqual(["Verenpainetauti, Tyypin 2 diabetes, Alaselkäkipu"]);
     expect(shown("c3348bab")).toEqual(["Korkea verenpaine", "Selkäkipu", "2-tyypin diabetes"]);
-    expect(result.filled).toHaveLength(4);
+    expect(shown("f1c26c96")).toEqual(["Mies"]);
+    expect(result.filled).toHaveLength(5);
   });
 
   it("Seppo: a height in inches, in centimetres", () => {
     const { shown } = fill("fysioterapia-alaselkakysely-lahtotilanne", data, "seppo");
     expect(shown("3ac062e0")).toEqual([177.8]);
+  });
+});
+
+describe("the low-back physiotherapy form, filled in from Kaisa", () => {
+  const data = sample("aitiys-kaisa");
+
+  it("takes sex from Patient.gender and smoking from the Observation", () => {
+    const { result, shown } = fill("fysioterapia-alaselkakysely-lahtotilanne", data, "96167f3b-9491-5081-9ff6-33562c55685e");
+    expect(shown("f1c26c96")).toEqual(["Nainen"]);
+    expect(shown("098effd9")).toEqual(["En"]);
+    expect(shown("3ac062e0")).toEqual([168]);
+    expect(shown("ae88f684")).toEqual([70]);
+    expect(shown("36c778a4")).toEqual(["Alaselkäkipu, Astma, Kilpirauhasen vajaatoiminta"]);
+    expect(result.filled).toHaveLength(6);
+    expectNoProblems(result);
   });
 });
 
@@ -200,5 +216,110 @@ describe("the unemployed person's health check, filled in from Maija", () => {
     expect(shown("a5a5d696")).toBeUndefined();
     expect(shown("679f79cb")).toBeUndefined();
     expect(shown("5a0ef412")).toEqual(["166 cm"]);
+  });
+});
+
+describe("an IPS patient summary: Mikko", () => {
+  const ips = JSON.parse(readFileSync(resolve(process.cwd(), "../samples/bundles/mikko-virtanen.json"), "utf8"));
+  const MIKKO = "b4ac89c5-6589-417f-beef-d3fb1ef9c70f";
+  /** Mikko's document with some resources changed or left out. */
+  const variant = (change: (resources: Record<string, unknown>[]) => Record<string, unknown>[]) => {
+    const copy = structuredClone(ips);
+    copy.entry = change(copy.entry.map((entry: { resource: unknown }) => entry.resource)).map((resource) => ({
+      ...copy.entry.find((entry: { resource: { id?: string } }) => entry.resource.id === resource.id),
+      resource,
+    }));
+    return addDocument(emptyPatientData, copy, "variant");
+  };
+  const byText = (text: string) => (resource: Record<string, unknown>) => (resource.code as { text?: string } | undefined)?.text === text;
+  const run = (slug: string, data: PatientData = addDocument(emptyPatientData, ips, "mikko")) => {
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(NOW);
+    const filled = fill(slug, data, MIKKO);
+    vi.useRealTimers();
+    const cited = (prefix: string) =>
+      filled.result.filled.find((entry) => entry.linkId.startsWith(prefix))?.sources.map((source) => source.display);
+    return { ...filled, cited };
+  };
+
+  it("fills the unemployed person's health check from the document", () => {
+    const { result, shown, cited } = run("esitietolomake-tyottoman-terveystarkastus");
+    expect(shown("a0b3d169")).toEqual(["mikko.virtanen@example.com"]);
+    expect(shown("679f79cb")).toEqual(["Avioliitossa"]);
+    expect(shown("73d97f6f")).toEqual([
+      "Tapaturmavamma tai tuki- ja liikuntaelinten sairaus",
+      "Sydänsairaus, verenkiertohäiriö tai korkea verenpaine",
+      "Aistielinsairauksia (näkö, kuulo)",
+      "Allergia",
+      "Diabetes",
+      "Leikkauksia tai muita toimenpiteitä",
+    ]);
+    // Fractures count as injuries, and the operation as a procedure.
+    expect(cited("73d97f6f")).toEqual(expect.arrayContaining(["Fracture of left collarbone", "Operation on bone injury of fingers"]));
+    // Medications given by reference, named once though both a statement and a request list them.
+    expect(shown("9ceff7c4")).toEqual(["Insulin NovoRapid 100 units/ml, Rosuvastatin 10 mg, Ezetimibe 10 mg"]);
+    // A tetanus booster from 2015 is over 10 years old; a never-smoker status says nothing of snus.
+    expect(shown("d2665248")).toBeUndefined();
+    expect(shown("a5a5d696")).toBeUndefined();
+    expect(result.filled).toHaveLength(5);
+    expectNoProblems(result);
+  });
+
+  it("reads the no known allergy in its scope: medications only", () => {
+    const { shown, cited } = run("esitietolomake-toisen-asteen-terveystarkastukseen-opiskeluterveydenhuolto");
+    expect(shown("bc4e7413")).toEqual(["Kyllä"]);
+    expect(cited("bc4e7413")).toEqual(["Allergy to apple", "Allergy to nut", "Allergy to pollen, birch at least."]);
+    // Without the food and pollen allergies, no known medication allergy doesn't answer "any allergies?".
+    const allergic = new Set(["Allergy to apple", "Allergy to nut", "Allergy to pollen, birch at least."]);
+    const none = variant((resources) => resources.filter((resource) => !allergic.has((resource.code as { text?: string } | undefined)?.text ?? "")));
+    expect(run("esitietolomake-toisen-asteen-terveystarkastukseen-opiskeluterveydenhuolto", none).shown("bc4e7413")).toBeUndefined();
+    // Unscoped, it does: no known allergy of any kind.
+    const unscoped = variant((resources) =>
+      resources
+        .filter((resource) => !allergic.has((resource.code as { text?: string } | undefined)?.text ?? ""))
+        .map((resource) => (resource.resourceType === "AllergyIntolerance" ? { ...resource, category: undefined } : resource)),
+    );
+    const { shown: unscopedShown, cited: unscopedCited } = run(
+      "esitietolomake-toisen-asteen-terveystarkastukseen-opiskeluterveydenhuolto",
+      unscoped,
+    );
+    expect(unscopedShown("bc4e7413")).toEqual(["Ei"]);
+    expect(unscopedCited("bc4e7413")).toEqual(["No known medication allergies"]);
+  });
+
+  it("takes a problem's clinical status over its section, and the section where there is no status", () => {
+    // Myopia is active, though listed in the Past Problems section.
+    const withoutRetinopathy = variant((resources) => resources.filter((resource) => !byText("Diabetic retinopathy")(resource)));
+    const { cited } = run("esitietolomake-tyottoman-terveystarkastus", withoutRetinopathy);
+    expect(cited("73d97f6f")).toContain("Myopia");
+    // Without a status: current if in the Problems section, not if in Past Problems.
+    const statusless = variant((resources) =>
+      resources
+        .filter((resource) => !byText("Diabetic retinopathy")(resource))
+        .map((resource) =>
+          byText("Hypercholesterolemia")(resource) || byText("Myopia")(resource) ? { ...resource, clinicalStatus: undefined } : resource,
+        ),
+    );
+    expect(run("fysioterapia-alaselkakysely-lahtotilanne", statusless).shown("c3348bab")).toEqual(["Korkea kolesteroli", "1-tyypin diabetes"]);
+    expect(run("esitietolomake-tyottoman-terveystarkastus", statusless).cited("73d97f6f")).not.toContain("Myopia");
+  });
+
+  it("matches a medication given by reference by the Medication's code", () => {
+    const vitaminD = variant((resources) =>
+      resources.map((resource) =>
+        resource.resourceType === "Medication" && (resource.code as { text?: string }).text === "Ezetimibe"
+          ? { ...resource, code: { coding: [{ system: "http://www.whocc.no/atc", code: "A11CC05", display: "colecalciferol" }], text: "D-vitamiini" } }
+          : resource,
+      ),
+    );
+    const { shown, cited } = run("esitietolomake-tyottoman-terveystarkastus", vitaminD);
+    expect(shown("72595235")).toEqual(["Kyllä"]);
+    expect(cited("72595235")).toEqual(["Ezetimibe 10 mg", "Ezetimibe 10 mg"]);
+  });
+
+  it("answers smoking in the physiotherapy form from the smoking status alone", () => {
+    const { shown, sources } = run("fysioterapia-alaselkakysely-lahtotilanne");
+    expect(shown("098effd9")).toEqual(["En"]);
+    expect(sources("098effd9")).toEqual(["ec8d3ccb-d68c-433f-8db7-5bf1fcaf0328"]);
   });
 });

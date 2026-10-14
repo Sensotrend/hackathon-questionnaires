@@ -95,6 +95,18 @@ export async function lookup(system: string, code: string, exact = false): Promi
     if (system.startsWith("urn:oid:1.2.246.537.6.") || system.startsWith("urn:oid:1.2.246.537.5.")) {
       const classification = system.slice("urn:oid:".length);
       const source = "THL code server";
+      if (code.includes("*")) {
+        // The server refuses a * in the path (Finnish ICD-10 asterisk codes,
+        // like H36.00*), so such a code is looked up by search.
+        const search = await getJson(
+          `${THL}/${classification}/conceptcodes?qfield=conceptCodeId&qvalue=${encodeURIComponent(code)}&pageSize=100`,
+        );
+        const concept = ((search.body as { conceptCodes?: { conceptCodeId: string }[] }).conceptCodes ?? []).find(
+          (candidate) => candidate.conceptCodeId === code,
+        );
+        if (concept) return { found: true, display: thlName(concept), source };
+        if (exact) return { found: false, source, error: `HTTP ${search.status}, and no code ${code} found by search` };
+      }
       const { status, body } = await getJson(`${THL}/${classification}/conceptcodes/${encodeURIComponent(code)}`);
       if (status === 200) return { found: true, display: thlName(body), source };
       if (exact || !PREFIX_SYSTEMS.has(system)) return { found: false, source, error: `HTTP ${status}` };

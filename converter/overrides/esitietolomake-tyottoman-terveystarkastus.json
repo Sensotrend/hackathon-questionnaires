@@ -124,14 +124,14 @@
       }
     },
     "d2665248-f82d-47bb-8d74-70871d207679": {
-      "$comment": "Vaccinations valid, by the form's example: a vaccination against diphtheria and tetanus (J07AM51, the dTap J07AJ52, or a combined J07CA) within the 10 years a booster lasts",
+      "$comment": "Vaccinations valid, by the form's example: a vaccination against tetanus (J07AM, alone or with diphtheria, the dTap J07AJ52, or a combined J07CA) within the 10 years a booster lasts",
       "populate": {
         "answer": "Kyllä",
         "when": {
           "in": "immunizations",
           "codes": {
             "urn:oid:1.2.246.537.6.32": [
-              "J07AM51",
+              "J07AM",
               "J07AJ52",
               "J07CA"
             ]
@@ -141,17 +141,40 @@
       }
     },
     "73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1": {
-      "$comment": "Illnesses or injuries diagnosed now or in the past: by diagnoses at any time that aren't refuted (ICD-10), and active allergies. Acute illnesses that pass are left out where they'd tick an option for nearly everyone (colds, ear and eye infections). Not mapped: injuries (any sprain would count), operations (no Procedures), 'other', and 'none of these' (never filled from an absence of records).",
+      "$comment": "Illnesses or injuries diagnosed now or in the past: by diagnoses at any time that aren't refuted (ICD-10), active allergies, and completed procedures. Injuries are fractures (S02–S92 by body region, T02–T12): other injuries, like any sprain, would tick it for nearly everyone, as would acute illnesses that pass (colds, ear and eye infections), which are left out. Not mapped: 'other', and 'none of these' (never filled from an absence of records).",
       "populate": {
         "options": {
-          "Tapaturmavamma tai tuki- ja liikuntaelinten sairaus": {
-            "in": "conditionHistory",
-            "codes": {
-              "urn:oid:1.2.246.537.6.1": [
-                "M"
-              ]
+          "Tapaturmavamma tai tuki- ja liikuntaelinten sairaus": [
+            {
+              "in": "conditionHistory",
+              "codes": {
+                "urn:oid:1.2.246.537.6.1": [
+                  "M"
+                ]
+              }
+            },
+            {
+              "in": "conditionHistory",
+              "codes": {
+                "urn:oid:1.2.246.537.6.1": [
+                  "S02",
+                  "S12",
+                  "S22",
+                  "S32",
+                  "S42",
+                  "S52",
+                  "S62",
+                  "S72",
+                  "S82",
+                  "S92",
+                  "T02",
+                  "T08",
+                  "T10",
+                  "T12"
+                ]
+              }
             }
-          },
+          ],
           "Sydänsairaus, verenkiertohäiriö tai korkea verenpaine": {
             "in": "conditionHistory",
             "codes": {
@@ -306,6 +329,9 @@
                 "E14"
               ]
             }
+          },
+          "Leikkauksia tai muita toimenpiteitä": {
+            "in": "procedures"
           },
           "Työstä aiheutuneita sairauksia (altisteet, esim. asbesti, meluvamma)": {
             "in": "conditionHistory",

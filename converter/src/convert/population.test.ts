@@ -94,10 +94,33 @@ describe("population overrides", () => {
       extension: [{ url: "name", valueCoding: { code: "patient" } }, { url: "type", valueCode: "Patient" }, { url: "description" }],
     });
     expect(expressions(extensions)).toEqual([
-      ["medicationStatementSearch", "MedicationStatement?patient={{%patient.id}}&status=active"],
-      ["medicationRequestSearch", "MedicationRequest?patient={{%patient.id}}&status=active"],
-      ["medications", "%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource"],
+      ["medicationStatementSearch", "MedicationStatement?patient={{%patient.id}}&status=active&_include=MedicationStatement:medication"],
+      ["medicationRequestSearch", "MedicationRequest?patient={{%patient.id}}&status=active&_include=MedicationRequest:medication"],
+      ["medications", expect.stringMatching(/^\(%medicationStatementSearch\.entry\.resource\.ofType\(MedicationStatement\) \| /)],
     ]);
+    // A medication given by reference matches by the code of the Medication the search included.
+    expect(expressions(item(result, 102).extension)[0]![1]).toContain(
+      "or medicationReference.reference in (%medicationStatementSearch.entry.resource | %medicationRequestSearch.entry.resource).ofType(Medication).where(",
+    );
+  });
+
+  it("leave statements of an absence out of every collection but noKnownAllergies", () => {
+    const result = convert({
+      [id(102)]: { populate: { answer: "Kyllä", when: [{ in: "allergies" }, { in: "noKnownAllergies" }, { in: "conditions" }] } },
+    });
+    const collections = Object.fromEntries(expressions(result.questionnaire.extension));
+    const absence = "(code | medicationCodeableConcept | vaccineCode).coding.where(system = 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' or (system = 'http://snomed.info/sct' and (code = '716186003'";
+    expect(collections.allergies).toContain(`and (${absence}`);
+    expect(collections.allergies).toMatch(/\)\.exists\(\)\)\.not\(\)\)$/);
+    expect(collections.noKnownAllergies).toMatch(/\)\)\)\.exists\(\)\)$/);
+    // One search serves both allergy collections.
+    expect(Object.keys(collections).filter((name) => name === "allergySearch")).toHaveLength(1);
+    // Current conditions: by clinical status, or without one, by a document's Problems section.
+    expect(collections.conditionSearch).toBe("Condition?patient={{%patient.id}}");
+    expect(collections.compositionSearch).toBe("Composition?patient={{%patient.id}}");
+    expect(collections.conditions).toContain(
+      "(clinicalStatus.coding.where(code = 'active' or code = 'recurrence' or code = 'relapse').exists() or (clinicalStatus.empty() and ('Condition/' + id) in %compositionSearch.entry.resource.repeat(section).where(code.coding.where(system = 'http://loinc.org' and code = '11450-4').exists()).entry.reference))",
+    );
   });
 
   it("accept evidence of several kinds", () => {
@@ -116,6 +139,7 @@ describe("population overrides", () => {
     expect(evidence![1]).toMatch(/^\(%immunizations\.where\(.*'J07BK'.*\)\) \| \(%conditions\.where\(.*'B01'.*\)\)$/);
     expect(expressions(result.questionnaire.extension).map(([name]) => name)).toEqual([
       "conditionSearch",
+      "compositionSearch",
       "conditions",
       "immunizationSearch",
       "immunizations",
@@ -129,7 +153,7 @@ describe("population overrides", () => {
       [
         "initial",
         "iif(%evidence.exists(), %evidence.select(((code | medicationCodeableConcept | vaccineCode).text | " +
-          "(code | medicationCodeableConcept | vaccineCode).coding.display).first()).join(', '))",
+          "(code | medicationCodeableConcept | vaccineCode).coding.display | medicationReference.display).first()).distinct().join(', '))",
       ],
     ]);
   });
@@ -148,7 +172,7 @@ describe("population overrides", () => {
   it("take a free expression and declare the collections it uses", () => {
     const result = convert({ [id(103)]: { populate: { expression: "%conditions.count().toString()" } } });
     expect(expressions(item(result, 103).extension)).toEqual([["initial", "%conditions.count().toString()"]]);
-    expect(expressions(result.questionnaire.extension).map(([name]) => name)).toEqual(["conditionSearch", "conditions"]);
+    expect(expressions(result.questionnaire.extension).map(([name]) => name)).toEqual(["conditionSearch", "compositionSearch", "conditions"]);
   });
 
   it("give a free expression its variables, evidence or FHIRPath, and options by their text", () => {
