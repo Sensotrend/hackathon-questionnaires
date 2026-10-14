@@ -1914,12 +1914,12 @@
       "summaries": [
         {
           "title": {
-            "en": "Tulos",
+            "en": "Inattention scores",
             "fi": "Tarkkaamattomuuspisteet",
             "sv": "Ouppmärksamhetspoäng"
           },
           "description": {
-            "en": "Tulos",
+            "en": "Uneven questions",
             "fi": "parittomat kysymykset",
             "sv": "frågor med udda tal"
           },
@@ -1972,7 +1972,7 @@
             "sv": "Sammanlagda poäng"
           },
           "description": {
-            "en": "Tulos",
+            "en": "Result",
             "fi": "Tulos",
             "sv": "Resultat"
           },

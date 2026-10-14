@@ -3,7 +3,7 @@
 // question type may use. All of them hold for the known exports; the
 // converter relies on them.
 
-import type { Question, Survey } from "./schema.ts";
+import { allCategories, isAnswerScore, type Question, type Survey } from "./schema.ts";
 
 const CHOICE_TYPES = new Set(["select", "multiselect"]);
 const RANGE_FIELDS = ["minValue", "maxValue", "minValueOrUnder", "maxValueOrOver"] as const;
@@ -11,7 +11,7 @@ const RANGE_FIELDS = ["minValue", "maxValue", "minValueOrUnder", "maxValueOrOver
 /** Returns one message per problem found, each prefixed with the path to the offending item. */
 export function checkIntegrity(survey: Survey): string[] {
   const problems: string[] = [];
-  const categoryIds = new Set(survey.categories.map((category) => category.categoryId));
+  const categoryIds = new Set(allCategories(survey.categories).map((category) => category.categoryId));
   const questionIds = new Set<string>();
   const answerIds = new Set<string>();
 
@@ -41,13 +41,16 @@ export function checkIntegrity(survey: Survey): string[] {
     }
 
     const ownAnswerIds = question.answers.map((answer) => answer.answerId);
-    const scoredAnswerIds = question.scores.map((score) => score.answerId);
+    const scoredAnswerIds = question.scores.filter(isAnswerScore).map((score) => score.answerId);
+    const rangeScores = question.scores.filter((score) => !isAnswerScore(score));
+    if (rangeScores.length > 0 && question.type !== "number") report(`range scores on a ${question.type} question`);
     if (question.scoringEnabled) {
       if (question.type !== "select") report(`scoring is enabled on a ${question.type} question`);
       const missing = ownAnswerIds.filter((id) => !scoredAnswerIds.includes(id));
       if (missing.length > 0) report(`answers without a score: ${missing.join(", ")}`);
-    } else if (question.scores.length > 0) {
-      report("has scores but scoringEnabled is false");
+    } else if (question.scores.some((score) => score.points !== 0)) {
+      // Zero-point scores on an unscored question are editor leftovers, and harmless.
+      report("has non-zero scores but scoringEnabled is false");
     }
     const foreign = scoredAnswerIds.filter((id) => !ownAnswerIds.includes(id));
     if (foreign.length > 0) report(`scores refer to answers of another question: ${foreign.join(", ")}`);

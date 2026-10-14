@@ -573,6 +573,24 @@ Each mapped item gets a test asserting the value it receives from the sample Bun
 - **11d: README.** Rewritten as a complete guide: what the project does, getting started (including pre-populating from a sample), the repository, the scripts, how the pieces fit, the validator, the cross-check, and the known limits.
 - Verified: `npm run check` (111 converter and 138 app tests) and `npm run validate` (34 files, 0 errors) pass; axe finds no violations in the tests or in the browser.
 
+### A fifteenth questionnaire: Esitietolomake - Työttömän terveystarkastus ✅
+
+Added to the source exports on 2026-10-14: the pre-visit form for an unemployed person's health check. The strict loader stopped on three things no earlier export used, now supported:
+
+- **`accessRights`** (who may see the form in Lunna): system metadata like `createdBy`, so not mapped.
+- **Subcategories.** AUDIT-C is a subcategory of "Päihteiden käyttö ja riippuvuudet" (substance use and addictions). A subcategory's questions become a group inside their section, and a score calculated over the subcategory goes at the end of that group. A category's score now also covers its subcategories' questions.
+- **Scores on unscored questions.** 33 questions carry zero-point scores although scoring is off, editor leftovers; on number questions they are range scores (`{min, max, points}`). They're accepted and ignored with a note. Non-zero scores on an unscored question, or range scores outside number questions, still stop the conversion.
+
+Also in this change:
+- **List kind:** the app now calls a questionnaire a screening only when at least half of its questions are scored. The new form embeds AUDIT-C (3 of 51 questions) but is a pre-visit form; the classification of the other 14 is unchanged.
+- **Texts:** the text scan found no problems. "Diabetes" and "Astma" are the same words in all three languages.
+- **Not added:** no pre-population mappings or retyped questions. Candidates if wanted: medication use, the illness checklist, vaccinations, the dentist's, eye and hearing checks.
+- **The ADHD-RS export was edited in the source** (corrected English band texts); the conversion picks that up.
+- Verified:
+  - 116 converter and 140 app tests pass. New tests cover subcategories, range and leftover scores, and `accessRights`. The new form is included in the real-data tests: rendering in three languages, axe-core, and its AUDIT-C formula evaluated with fhirpath.js (0 to 12).
+  - `npm run validate`: 36 files, 0 errors.
+  - In the browser: the list shows 15 forms, the new one as "Esitietolomake" with 70 questions; AUDIT-C is a group inside the substance-use section with a live score; 5 sliders.
+
 ## 11. Open items
 
 Things the project knowingly leaves for someone to decide or do:

@@ -1,0 +1,1682 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "3d6e67bf-6526-4084-b5a2-f10fc40c541c",
+  "language": "fi",
+  "url": "https://sensotrend.com/fhir/CodeSystem/3d6e67bf-6526-4084-b5a2-f10fc40c541c",
+  "version": "4c11b0c4-8c02-4e72-9c96-537325339b19",
+  "name": "BackgroundInformationFormHealthExaminationForTheUnemployedAnswerOptions",
+  "status": "active",
+  "date": "2026-08-28T10:53:36.900Z",
+  "description": "Answer options of the Questionnaire https://sensotrend.com/fhir/Questionnaire/3d6e67bf-6526-4084-b5a2-f10fc40c541c: one code per answer option, as identified in the source export.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 119,
+  "concept": [
+    {
+      "code": "d1bc4c3c-e650-48a6-92a3-2303a0f8888d",
+      "display": "Naimaton",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ogift"
+        },
+        {
+          "language": "en",
+          "value": "Single"
+        }
+      ]
+    },
+    {
+      "code": "6a436572-7b03-4407-870c-084838e2a8d6",
+      "display": "Avoliitossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Samboende"
+        },
+        {
+          "language": "en",
+          "value": "Cohabiting"
+        }
+      ]
+    },
+    {
+      "code": "54a2f6f5-e231-4c2a-ab7f-d51b252d702b",
+      "display": "Avioliitossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Gift"
+        },
+        {
+          "language": "en",
+          "value": "Married"
+        }
+      ]
+    },
+    {
+      "code": "035c2a5b-e90f-4941-879f-7581f89c8288",
+      "display": "Rekisteröidyssä parisuhteessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "I registrerad partnerskap"
+        },
+        {
+          "language": "en",
+          "value": "Registered partnership"
+        }
+      ]
+    },
+    {
+      "code": "055f2130-2fce-43a7-b1d2-a81e34ba49b1",
+      "display": "Eronnut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Frånskild"
+        },
+        {
+          "language": "en",
+          "value": "Divorced"
+        }
+      ]
+    },
+    {
+      "code": "892b0fb2-6a89-4e77-afb2-8f1b655a441f",
+      "display": "Asumuserossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "I hemskillnad"
+        },
+        {
+          "language": "en",
+          "value": "Separated"
+        }
+      ]
+    },
+    {
+      "code": "525864c7-a95e-415b-bd12-15ce9b90b5a9",
+      "display": "Leski",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Änka eller änkling"
+        },
+        {
+          "language": "en",
+          "value": "Widowed"
+        }
+      ]
+    },
+    {
+      "code": "2a102780-8736-487f-965f-a40576917ccc",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "4ad32170-f05f-4047-9543-0c7a815dad0c",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "a215de13-9324-4f64-a9e1-d2aa157eba6a",
+      "display": "Peruskoulu tai kansakoulu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Grundskola eller folkskola"
+        },
+        {
+          "language": "en",
+          "value": "Primary education or Elementary school (\"kansakoulu\")"
+        }
+      ]
+    },
+    {
+      "code": "1647a533-8c74-4dba-8880-2205169941fb",
+      "display": "Lukio tai ammatillinen koulutus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Gymnasium/studentexamen/yrkesutbildning"
+        },
+        {
+          "language": "en",
+          "value": "General upper secondary education (\"lukio\") or Vocational education (ammatillinen koulutus)"
+        }
+      ]
+    },
+    {
+      "code": "498804f1-a3e1-4199-8428-fff43b0fb1db",
+      "display": "Korkeakoulu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Högskoleutbildning"
+        },
+        {
+          "language": "en",
+          "value": "University degree or equivalent"
+        }
+      ]
+    },
+    {
+      "code": "00812a33-37a1-4c01-a614-14acf510a9bd",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "ce72325d-d35f-48ea-9db1-6d72a9cdf076",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "7b03c3de-916d-429a-90e7-2980902a6419",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "dc593fab-ca58-4cb8-8b94-8daaf9594d41",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "ae625e55-d6dd-4da6-8a36-8d8b7d8eb097",
+      "display": "Suoritettu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Genomförd"
+        },
+        {
+          "language": "en",
+          "value": "Completed"
+        }
+      ]
+    },
+    {
+      "code": "d6a7472d-81da-4164-8c67-0a8bb8a049f3",
+      "display": "Suorittamatta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inte genomförd"
+        },
+        {
+          "language": "en",
+          "value": "Not completed"
+        }
+      ]
+    },
+    {
+      "code": "6876de1e-a6fc-494d-a040-1677d035dba6",
+      "display": "Lykkäys",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Uppskjuten"
+        },
+        {
+          "language": "en",
+          "value": "Postponed"
+        }
+      ]
+    },
+    {
+      "code": "8c7ccde8-504a-4b04-ae4d-edb00e8f8013",
+      "display": "Vapautettu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Befriad"
+        },
+        {
+          "language": "en",
+          "value": "Exempt"
+        }
+      ]
+    },
+    {
+      "code": "2802bb3e-35ca-4306-9359-d9228c23d72c",
+      "display": "Kysymys ei koske minua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Gäller inte mig"
+        },
+        {
+          "language": "en",
+          "value": "This question does not apply to me"
+        }
+      ]
+    },
+    {
+      "code": "d2923856-5278-4854-b9b2-f64ff60cb0b1",
+      "display": "Alle 6 kk",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Under 6 månader"
+        },
+        {
+          "language": "en",
+          "value": "Under 6 months"
+        }
+      ]
+    },
+    {
+      "code": "782830f4-9585-4c53-b9bf-172bdb09d18f",
+      "display": "6–12 kk",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "6-12 månader"
+        },
+        {
+          "language": "en",
+          "value": "6–12 months"
+        }
+      ]
+    },
+    {
+      "code": "b0aad9d3-42f2-42a6-92d1-a766be77073b",
+      "display": "Yli 1 vuosi",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Över 1 år"
+        },
+        {
+          "language": "en",
+          "value": "Over 1 year"
+        }
+      ]
+    },
+    {
+      "code": "e6136d48-228e-4787-8bd4-29ac4dcb7ada",
+      "display": "Yli 5 vuotta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Över 5 år"
+        },
+        {
+          "language": "en",
+          "value": "Over 5 years"
+        }
+      ]
+    },
+    {
+      "code": "92b772f1-2b57-4474-9921-eb16a0fc8cf7",
+      "display": "Ansiosidonnainen päiväraha tai työttömyyspäiväraha",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inkomstrelaterad dagpennin eller Arbetslöshetsdagpenning"
+        },
+        {
+          "language": "en",
+          "value": "Earnings-related daily allowance or daily allowance for unemployment"
+        }
+      ]
+    },
+    {
+      "code": "e6ce6322-7f84-4df7-8b9e-79d572bdad68",
+      "display": "Työmarkkinatuki",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Arbetsmarknadsstöd"
+        },
+        {
+          "language": "en",
+          "value": "Labour market subsidy"
+        }
+      ]
+    },
+    {
+      "code": "44792792-5703-4729-8e18-ab11b6feca39",
+      "display": "Asumistuki",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Bostadsbidrag"
+        },
+        {
+          "language": "en",
+          "value": "Housing allowance"
+        }
+      ]
+    },
+    {
+      "code": "b67b3409-a9e0-4bd7-b0d5-824bd3f0fcd0",
+      "display": "Toimeentulotuki",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Utkomststöd"
+        },
+        {
+          "language": "en",
+          "value": "Social assistance"
+        }
+      ]
+    },
+    {
+      "code": "3f327445-4424-4dea-a924-f15b37d4514c",
+      "display": "Sairauspäiväraha tai kuntoutustuki",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Sjukdagpenning eller Rehabiliteringsstöd"
+        },
+        {
+          "language": "en",
+          "value": "Sickness allowance/rehabilitation subsidy"
+        }
+      ]
+    },
+    {
+      "code": "f10286dc-0e01-449a-ac29-626ac1180af5",
+      "display": "Ei tuloja",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inga inkomster"
+        },
+        {
+          "language": "en",
+          "value": "No income"
+        }
+      ]
+    },
+    {
+      "code": "d8a7003d-67eb-4604-ae0f-23e52e66daec",
+      "display": "Muu tulo",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Annan inkomst"
+        },
+        {
+          "language": "en",
+          "value": "Other income"
+        }
+      ]
+    },
+    {
+      "code": "d2626949-8d14-4006-a965-482dd54683de",
+      "display": "Ei mikään näistä vaihtoehdoista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inget av ovanstående alternativ"
+        },
+        {
+          "language": "en",
+          "value": "None of these options"
+        }
+      ]
+    },
+    {
+      "code": "c8e7521a-e946-4053-9726-ee56dd56fbc6",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "58ba1e07-c71f-49aa-a234-b895e8960274",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "dcac3e34-804a-46d2-ac5d-69de5ddb3a8e",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "904eb9b4-b06f-4330-9096-2900f2c2ddd0",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "84089549-0945-4dc9-a167-b849ad111aa0",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "9bec025f-e860-4c2b-9db8-dc4c5a292558",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "4360aff2-29da-48db-8266-83a679577121",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "d78f4a48-68c2-4f19-84ec-21026be2b727",
+      "display": "Olen lopettanut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har slutat"
+        },
+        {
+          "language": "en",
+          "value": "I have quit"
+        }
+      ]
+    },
+    {
+      "code": "ccf18a37-aacc-4fbd-908e-740111ff28de",
+      "display": "Käytän yhtä tai useampaa nikotiinituotetta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag använder något av dessa"
+        },
+        {
+          "language": "en",
+          "value": "I use one or more nicotine products"
+        }
+      ]
+    },
+    {
+      "code": "f65bd395-2e86-4e38-be9b-72ee9e696738",
+      "display": "En koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "fd25e404-58bd-4fdc-9aec-9fd27b8459d5",
+      "display": "Noin kerran kuukaudessa tai harvemmin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Cirka en gång i månaden eller mer sällan"
+        },
+        {
+          "language": "en",
+          "value": "Monthly or less"
+        }
+      ]
+    },
+    {
+      "code": "af367f5c-ec1d-4656-bd36-c5cfcecc11c8",
+      "display": "2–4 kertaa kuukaudessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2–4 gånger i månaden"
+        },
+        {
+          "language": "en",
+          "value": "2 - 4 times a month"
+        }
+      ]
+    },
+    {
+      "code": "2b7b4f45-a35c-40b3-ac00-df2a9745ed3b",
+      "display": "2–3 kertaa viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "2–3 gånger i veckan"
+        },
+        {
+          "language": "en",
+          "value": "2 - 3 times a week"
+        }
+      ]
+    },
+    {
+      "code": "2cd7a210-4786-4a10-b38d-38aefb0faac8",
+      "display": "4 kertaa viikossa tai useammin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "4 gånger i veckan eller oftare"
+        },
+        {
+          "language": "en",
+          "value": "4 or more times a week"
+        }
+      ]
+    },
+    {
+      "code": "805cc784-3839-4119-b2f9-d72bbd1948e8",
+      "display": "1–2 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "1-2 portioner"
+        },
+        {
+          "language": "en",
+          "value": "1 or 2 servings"
+        }
+      ]
+    },
+    {
+      "code": "e8bc40b8-b7d9-44e5-816a-67135d4089d5",
+      "display": "3–4 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "3-4 portioner"
+        },
+        {
+          "language": "en",
+          "value": "3 or 4 servings"
+        }
+      ]
+    },
+    {
+      "code": "46a5d392-50c8-41d4-bbeb-13055f5a2b90",
+      "display": "5–6 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "5-6 portioner"
+        },
+        {
+          "language": "en",
+          "value": "5 or 6 servings"
+        }
+      ]
+    },
+    {
+      "code": "4e7c58a6-c5ee-4f16-b83e-ae835aed96ff",
+      "display": "7–9 annosta",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "7-9 portioner"
+        },
+        {
+          "language": "en",
+          "value": "7 to 9 servings"
+        }
+      ]
+    },
+    {
+      "code": "3f046f60-85b1-4259-ac2f-3a0fa8cebb79",
+      "display": "10 annosta tai enemmän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "10 portioner eller mera"
+        },
+        {
+          "language": "en",
+          "value": "10 or more servings"
+        }
+      ]
+    },
+    {
+      "code": "908857a9-5e58-4f71-921b-bc5eaf739b5a",
+      "display": "En käytä alkoholia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag använder inte alkohol"
+        },
+        {
+          "language": "en",
+          "value": "I don't use alcohol"
+        }
+      ]
+    },
+    {
+      "code": "2c39b63a-3e96-42ab-ad0e-c19f50cc3a96",
+      "display": "En koskaan",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Aldrig"
+        },
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ]
+    },
+    {
+      "code": "2008072d-7be2-4176-97dd-9a4658454ba1",
+      "display": "Harvemmin kuin kerran kuukaudessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Cirka en gång i månaden eller mer sällan"
+        },
+        {
+          "language": "en",
+          "value": "Less than monthly"
+        }
+      ]
+    },
+    {
+      "code": "ae2a017d-7e36-4598-ba6e-c2e4c62302f3",
+      "display": "Kerran kuukaudessa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "En gång i månaden"
+        },
+        {
+          "language": "en",
+          "value": "Monthly"
+        }
+      ]
+    },
+    {
+      "code": "88f654e3-0332-40c8-87b4-a1fe147359ea",
+      "display": "Kerran viikossa",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "En gång i veckan"
+        },
+        {
+          "language": "en",
+          "value": "Weekly"
+        }
+      ]
+    },
+    {
+      "code": "305eaf8a-a10f-4910-be87-1cbc7e340611",
+      "display": "Päivittäin tai lähes päivittäin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Dagligen eller nästan dagligen"
+        },
+        {
+          "language": "en",
+          "value": "Daily or almost daily"
+        }
+      ]
+    },
+    {
+      "code": "da599833-2a35-4777-bf4a-bfe5a8ac4efe",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "b3da4832-b41d-4608-80cc-b0f7a22d5078",
+      "display": "Olen kokeillut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har provat"
+        },
+        {
+          "language": "en",
+          "value": "I have experimented"
+        }
+      ]
+    },
+    {
+      "code": "190a6f79-6c17-46b9-8618-4c344d54a02e",
+      "display": "Olen lopettanut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har slutat"
+        },
+        {
+          "language": "en",
+          "value": "I have quit"
+        }
+      ]
+    },
+    {
+      "code": "4c6de0b0-c077-4b18-bcaa-bc4a3cc0207e",
+      "display": "Käytän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, jag använder"
+        },
+        {
+          "language": "en",
+          "value": "I use"
+        }
+      ]
+    },
+    {
+      "code": "cb140111-8134-43d5-8f44-bdcf434a17ef",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "a71f35e4-fd29-464e-912d-d14ca026cf0f",
+      "display": "Olen kokeillut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har provat"
+        },
+        {
+          "language": "en",
+          "value": "I have experimented"
+        }
+      ]
+    },
+    {
+      "code": "367178df-e77f-4c62-8151-d0dff33470ca",
+      "display": "Olen lopettanut",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag har slutat"
+        },
+        {
+          "language": "en",
+          "value": "I have quit"
+        }
+      ]
+    },
+    {
+      "code": "48b4ac7e-8bda-4abe-b16e-c51478b55c0c",
+      "display": "Käytän",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja, jag använder"
+        },
+        {
+          "language": "en",
+          "value": "I use"
+        }
+      ]
+    },
+    {
+      "code": "cbbb893e-de60-4551-9e17-201a922d539f",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "91a7fd01-7bb4-478d-9815-aa870ff8d815",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "865531a4-838c-45d5-8d83-675851d4c7c6",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "526b91b8-7a75-495b-b2ec-110469002b03",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "457db63d-c1c8-40e4-baa9-7cbc0539ecac",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "6607667d-e5c9-421a-9c9e-a0598aa9f49d",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "4ba057ee-cdae-4516-850b-0acc2f04ea42",
+      "display": "Tuskin",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Knappast"
+        },
+        {
+          "language": "en",
+          "value": "Unlikely"
+        }
+      ]
+    },
+    {
+      "code": "6459fc6b-c782-4520-9751-dfeb8125388e",
+      "display": "En ole varma",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Vet inte"
+        },
+        {
+          "language": "en",
+          "value": "I am unsure"
+        }
+      ]
+    },
+    {
+      "code": "486efd6f-dcf7-4614-b7cd-f0e935d65da0",
+      "display": "Melko varmasti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Antagligen"
+        },
+        {
+          "language": "en",
+          "value": "Fairly likely"
+        }
+      ]
+    },
+    {
+      "code": "fa5f201a-7284-4966-9969-26cc1e1ad881",
+      "display": "Varmasti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Säkert"
+        },
+        {
+          "language": "en",
+          "value": "Definitely"
+        }
+      ]
+    },
+    {
+      "code": "2c7b0286-efb5-4e34-a575-6f40d081bb41",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "77e065ae-76a9-4cd7-9200-29df3e9ea2a0",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "9b58583c-bd9e-4ae7-acce-462095f7eb21",
+      "display": "En tiedä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag vet inte"
+        },
+        {
+          "language": "en",
+          "value": "I don't know"
+        }
+      ]
+    },
+    {
+      "code": "dc2c41b7-af92-43d2-8d79-55b9f242f33d",
+      "display": "Tapaturmavamma tai tuki- ja liikuntaelinten sairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Olycksfallsskada sjukdom i stöd- och rörelseorganen"
+        },
+        {
+          "language": "en",
+          "value": "Accident‑related injuries or musculoskeletal disorders"
+        }
+      ]
+    },
+    {
+      "code": "a90f9a29-cefb-4002-837c-6f876f07b2ad",
+      "display": "Sydänsairaus, verenkiertohäiriö tai korkea verenpaine",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Hjärtsjukdom, cirkulationsstörning eller högt blodtryck"
+        },
+        {
+          "language": "en",
+          "value": "Heart or circulatory disease or hypertension"
+        }
+      ]
+    },
+    {
+      "code": "4abbdc9d-9ced-431a-982e-b8a9506484db",
+      "display": "Psyykkinen sairaus, mielenterveyden häiriö, masennus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Psykisk sjukdom, mental ohälsa, depression"
+        },
+        {
+          "language": "en",
+          "value": "Mental‑health disorders or depression"
+        }
+      ]
+    },
+    {
+      "code": "d3f655e4-66ea-4691-a3a0-c725ab74defb",
+      "display": "Epilepsia, kouristuksia tai tajunnanhäiriö, migreeni, usein toistuva päänsärky",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Epilepsi, kramper eller förändrad medvetenhetsnivå migrän, ofta återkommande huvudvärk"
+        },
+        {
+          "language": "en",
+          "value": "Epilepsy, seizures, or loss of consciousness, migraine or frequent headaches"
+        }
+      ]
+    },
+    {
+      "code": "1944677d-b081-4c2b-9bcf-4d7a95f5cc7c",
+      "display": "Hengityselinten sairaus, esim. astma",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Sjukdom i andningsorganen, t.ex. astma"
+        },
+        {
+          "language": "en",
+          "value": "Respiratory diseases (e.g., asthma)"
+        }
+      ]
+    },
+    {
+      "code": "dac844ca-b723-442c-bc62-b352b34263cd",
+      "display": "Huimausta, tasapainohäiriöitä tai pyörtymistä, ruuansulatuselinten sairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Yrsel, balansstörningar eller svimning, sjukdomar i matsmältningsorganen"
+        },
+        {
+          "language": "en",
+          "value": "Dizziness, balance problems, or fainting or gastro‑intestinal diseases"
+        }
+      ]
+    },
+    {
+      "code": "d86cdc00-9d3d-4c92-aad2-a5cd1ea91a71",
+      "display": "Aistielinsairauksia (näkö, kuulo)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Sjukdomar i sinnesorgan (syn, hörsel)"
+        },
+        {
+          "language": "en",
+          "value": "Sensory disorders (vision, hearing)"
+        }
+      ]
+    },
+    {
+      "code": "1d31b7ed-522a-4298-9c20-8a6aab66599f",
+      "display": "Tarkkaavaisuuteen, keskittymiskykyyn tai muistiin vaikuttava sairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Sjukdom som påverkar uppmärksamhet, koncentrationsförmåga eller minne"
+        },
+        {
+          "language": "en",
+          "value": "Conditions affecting attention, concentration or memory"
+        }
+      ]
+    },
+    {
+      "code": "ed64560f-7073-4710-ada9-8e83d6070889",
+      "display": "Sukuelinten sairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Könssjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Genital diseases"
+        }
+      ]
+    },
+    {
+      "code": "50d0d44c-041d-48cd-9617-7669499ab8f4",
+      "display": "Allergia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Allergi"
+        },
+        {
+          "language": "en",
+          "value": "Allergies"
+        }
+      ]
+    },
+    {
+      "code": "94fffb6d-d7b4-4221-baad-4ef65763dcff",
+      "display": "Diabetes",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Diabetes"
+        },
+        {
+          "language": "en",
+          "value": "Diabetes"
+        }
+      ]
+    },
+    {
+      "code": "8c390877-d124-4051-86a4-3754ae58437a",
+      "display": "Leikkauksia tai muita toimenpiteitä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Operationer eller andra ingrepp"
+        },
+        {
+          "language": "en",
+          "value": "Surgeries or other procedures"
+        }
+      ]
+    },
+    {
+      "code": "e5959d14-7067-409b-9750-129cb49e66ac",
+      "display": "Työstä aiheutuneita sairauksia (altisteet, esim. asbesti, meluvamma)",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Yrkessjukdomar (exponeringar, t.ex. asbest, bullerskada)"
+        },
+        {
+          "language": "en",
+          "value": "Occupational diseases  or exposures (e.g. asbestos, noise injury)"
+        }
+      ]
+    },
+    {
+      "code": "492de30b-5c6e-4d95-a618-759fa3a11e61",
+      "display": "Muu sairaus tai vamma",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Annan sjukdom eller skada"
+        },
+        {
+          "language": "en",
+          "value": "Other illness or disability"
+        }
+      ]
+    },
+    {
+      "code": "a7097d71-cce0-40ff-8434-3033f85a0b3f",
+      "display": "Ei mitään edellä mainituista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inget av ovanstående"
+        },
+        {
+          "language": "en",
+          "value": "None of the above"
+        }
+      ]
+    },
+    {
+      "code": "84702b88-d311-422c-8def-2042b40ab7c7",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "fe128ef6-e2cc-4cc1-9ae0-fee95c875048",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "fd0ae999-b167-4ef4-97da-2d06ff07e5d1",
+      "display": "Allergia",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Allergi"
+        },
+        {
+          "language": "en",
+          "value": "Allergies"
+        }
+      ]
+    },
+    {
+      "code": "0153023a-2377-4bc3-8d31-b36875bf44f9",
+      "display": "Astma",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Astma"
+        },
+        {
+          "language": "en",
+          "value": "Asthma"
+        }
+      ]
+    },
+    {
+      "code": "457df0e3-4bc5-4c3b-b10f-800d28ad44a3",
+      "display": "Diabetes",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Diabetes"
+        },
+        {
+          "language": "en",
+          "value": "Diabetes"
+        }
+      ]
+    },
+    {
+      "code": "18633538-48fe-4acb-b1fd-609ee6225713",
+      "display": "Verenpainetauti",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Högt blodtryck"
+        },
+        {
+          "language": "en",
+          "value": "Hypertension"
+        }
+      ]
+    },
+    {
+      "code": "5801d146-ed8f-42e2-a0c2-0eb0591ff458",
+      "display": "Aivohalvaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Stroke"
+        },
+        {
+          "language": "en",
+          "value": "Stroke"
+        }
+      ]
+    },
+    {
+      "code": "42f99cd7-650f-4b5f-9c7e-9336e7df812b",
+      "display": "Sydänsairaus",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Hjärtsjukdom"
+        },
+        {
+          "language": "en",
+          "value": "Heart disease"
+        }
+      ]
+    },
+    {
+      "code": "3c25f63d-2092-453a-bd37-4da0bae600b0",
+      "display": "Syöpä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Cancer"
+        },
+        {
+          "language": "en",
+          "value": "Cancer"
+        }
+      ]
+    },
+    {
+      "code": "e7d3be8b-98a0-4918-b25c-af73caf022c7",
+      "display": "Jokin muu",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Någon annan sykdom"
+        },
+        {
+          "language": "en",
+          "value": "Other illness or disability"
+        }
+      ]
+    },
+    {
+      "code": "d0589728-094d-4353-bb3f-8323e12bef56",
+      "display": "En tiedä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Jag vet inte"
+        },
+        {
+          "language": "en",
+          "value": "I don't know"
+        }
+      ]
+    },
+    {
+      "code": "a2592d49-a51a-4cf1-82b9-21c851c2ab7d",
+      "display": "Ei mitään edellä mainituista",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Inget av ovanstående"
+        },
+        {
+          "language": "en",
+          "value": "None of the above"
+        }
+      ]
+    },
+    {
+      "code": "dcf87cbf-0982-4f90-9ea5-e3f6ded77f9e",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "c3c13fe4-361d-4c0f-b46f-1044c069b662",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "40aad33c-3849-4cd7-a3d9-f6336a35db85",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "07b83329-83cd-4551-a126-02ae2b206013",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "af0698c0-be74-4901-9ff7-d0249e00793e",
+      "display": "Tämä kysymys ei koske minua",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Den här frågan gäller inte mig"
+        },
+        {
+          "language": "en",
+          "value": "This question doesn't apply for me"
+        }
+      ]
+    },
+    {
+      "code": "f5f77dfb-33a7-4aa6-9e51-c48851d7976c",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "00778bc1-ae22-4353-8276-287da9967853",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "29485802-eb19-48db-8e1e-1a4367dbcd16",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "ee643471-09e9-47bd-9978-dcb73b73c3f8",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "6e35efb4-3f60-40bd-8470-75474dab3baf",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "0f6545a6-c3d2-4e94-8f4b-9c40e87c35c6",
+      "display": "En",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    },
+    {
+      "code": "0131a24b-2f02-4bcc-b0e9-e3a7176a34c9",
+      "display": "Kyllä",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Ja"
+        },
+        {
+          "language": "en",
+          "value": "Yes"
+        }
+      ]
+    },
+    {
+      "code": "302a8789-2778-415f-a02d-7e993a059515",
+      "display": "Ei",
+      "designation": [
+        {
+          "language": "sv",
+          "value": "Nej"
+        },
+        {
+          "language": "en",
+          "value": "No"
+        }
+      ]
+    }
+  ]
+}

@@ -58,13 +58,25 @@ export function bands(item: QuestionnaireItem): Band[] {
 
 export type Kind = "screening" | "previsit" | "careplan";
 
-/** How the list presents a questionnaire: care plan (from useContext), screening (has scores), or pre-visit. */
+const ITEM_WEIGHT = "http://hl7.org/fhir/StructureDefinition/itemWeight";
+
+/**
+ * How the list presents a questionnaire: care plan (from useContext);
+ * screening when at least half of its questions are scored (a pre-visit form
+ * may embed a short scored instrument, like AUDIT-C); pre-visit otherwise.
+ */
 export function kindOf(questionnaire: Questionnaire): Kind {
   const careplan = questionnaire.useContext?.some(
     (context) => context.code.code === "task" && context.valueCodeableConcept?.text === "careplan",
   );
   if (careplan) return "careplan";
-  return allItems(questionnaire.item).some((item) => calculatedExpression(item) !== undefined) ? "screening" : "previsit";
+  const questions = allItems(questionnaire.item).filter(
+    (item) => item.type !== "group" && item.type !== "display" && calculatedExpression(item) === undefined,
+  );
+  const scored = questions.filter((item) =>
+    item.answerOption?.some((option) => option.extension?.some((extension) => extension.url === ITEM_WEIGHT)),
+  );
+  return scored.length > 0 && scored.length * 2 >= questions.length ? "screening" : "previsit";
 }
 
 export function allItems(items: QuestionnaireItem[] = []): QuestionnaireItem[] {

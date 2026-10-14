@@ -3,7 +3,7 @@
 
 import type { Extension, QuestionnaireItem } from "fhir/r4";
 import { EXT } from "../constants.ts";
-import type { LocalizedText, Question, ScoreCalculation, Survey } from "../source/schema.ts";
+import { allCategories, type LocalizedText, type Question, type ScoreCalculation, type Survey } from "../source/schema.ts";
 import { localize } from "./text.ts";
 
 export const TOTAL_SCORE_LINK_ID = "score-total";
@@ -62,9 +62,9 @@ export function scoreItems(survey: Survey, titleFixes: Record<string, ScoreTitle
   const uninterpreted: string[] = [];
   const items = survey.scoreCalculations.map((calculation) => {
     const linkId = scoreLinkId(calculation);
-    const inScope = scored.filter(
-      (question) => calculation.categoryId === undefined || question.categoryId === calculation.categoryId,
-    );
+    // A category's score covers its subcategories' questions too.
+    const scope = calculation.categoryId === undefined ? undefined : categoryAndBelow(survey, calculation.categoryId);
+    const inScope = scored.filter((question) => scope === undefined || scope.has(question.categoryId));
     const fix = titleFixes[linkId];
     const title = localize(fix?.title ?? calculation.title, `score ${linkId}`);
     const name = title.value;
@@ -132,3 +132,9 @@ const describe = (text: LocalizedText) =>
   Object.entries(text)
     .map(([lang, value]) => `${lang} "${value}"`)
     .join(", ");
+
+/** A category's id and those of all its subcategories. */
+function categoryAndBelow(survey: Survey, categoryId: string): Set<string> {
+  const category = allCategories(survey.categories).find((candidate) => candidate.categoryId === categoryId);
+  return new Set(category ? allCategories([category]).map((each) => each.categoryId) : [categoryId]);
+}

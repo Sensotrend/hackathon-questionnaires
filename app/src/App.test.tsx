@@ -25,7 +25,7 @@ describe("App", () => {
     const phq9 = await screen.findByRole("link", { name: /Masennuskysely \(PHQ-9\)/ });
     expect(phq9).toHaveTextContent("Seulontakysely");
     expect(phq9).toHaveTextContent("10 kysymystä");
-    expect(screen.getAllByRole("listitem")).toHaveLength(14);
+    expect(screen.getAllByRole("listitem")).toHaveLength(15);
   });
 
   it("opens a questionnaire and goes back", async () => {
@@ -35,7 +35,7 @@ describe("App", () => {
     expect(await screen.findByRole("heading", { level: 1, name: "Masennuskysely (PHQ-9)" })).toBeInTheDocument();
     expect(window.location.hash).toBe(`#/q/${bySlug("masennuskysely-phq-9").id}`);
     await user.click(screen.getByRole("link", { name: /Kaikki lomakkeet/ }));
-    expect(await screen.findAllByRole("listitem")).toHaveLength(14);
+    expect(await screen.findAllByRole("listitem")).toHaveLength(15);
   });
 
   it("switches and remembers the language", async () => {

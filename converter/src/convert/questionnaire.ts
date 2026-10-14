@@ -5,7 +5,7 @@ import { answerSystem, BASE, EXT, ITEM_CONTROL_SYSTEM, USAGE_CONTEXT_TYPE_SYSTEM
 import type { ItemOverride, Overrides } from "../overrides.ts";
 import { UCUM, UNITS } from "../units.ts";
 import type { SourceFile } from "../source/loader.ts";
-import type { Category, Question, Survey } from "../source/schema.ts";
+import { allCategories, isAnswerScore, type Category, type Question, type Survey } from "../source/schema.ts";
 import { answerCodeSystem } from "./codesystem.ts";
 import { fixSurvey } from "./fixes.ts";
 import { populateItem, questionnaireExtensions, type PopulationContext } from "./population.ts";
@@ -54,6 +54,18 @@ export function convertSurvey(source: SourceFile, overrides: Overrides = {}): Co
     code: overrides.code,
     item: [],
   };
+  const leftovers: Question[] = [];
+  const collect = (questions: Question[]) =>
+    questions.forEach((question) => {
+      if (!question.scoringEnabled && question.scores.length > 0) leftovers.push(question);
+      question.answers.forEach((answer) => collect(answer.question));
+    });
+  collect(survey.questions);
+  if (leftovers.length > 0) {
+    notes.push(
+      `Ignored zero-point scores on ${leftovers.length} questions that aren't scored (scoringEnabled false): leftovers of the form editor.`,
+    );
+  }
   const population: PopulationContext = { collections: new Set(), usesPatient: { value: false } };
   questionnaire.item = convertStructure(survey, overrides, notes, population);
   const extensions = questionnaireExtensions(population);
@@ -86,49 +98,89 @@ function convertStructure(
     return items;
   }
 
-  const runs: { category: Category; questions: Question[] }[] = [];
-  for (const question of survey.questions) {
-    const last = runs.at(-1);
-    if (last?.category.categoryId === question.categoryId) {
-      last.questions.push(question);
-    } else {
-      // The loader has checked that every categoryId exists.
-      const category = survey.categories.find((candidate) => candidate.categoryId === question.categoryId)!;
-      runs.push({ category, questions: [question] });
+  // A subcategory (e.g. AUDIT-C) belongs to its top-level category's section,
+  // as a group of its own inside it.
+  const categories = allCategories(survey.categories);
+  const byId = new Map(categories.map((category) => [category.categoryId, category]));
+  const topOf = new Map<string, Category>();
+  const index = (top: Category, category: Category) => {
+    topOf.set(category.categoryId, top);
+    category.subcategories.forEach((sub) => index(top, sub));
+  };
+  survey.categories.forEach((category) => index(category, category));
+
+  /** Consecutive questions of one category: the unit that becomes a group. */
+  const runsOf = <T,>(entries: T[], key: (entry: T) => string) => {
+    const runs: { key: string; entries: T[] }[] = [];
+    for (const entry of entries) {
+      const last = runs.at(-1);
+      if (last?.key === key(entry)) last.entries.push(entry);
+      else runs.push({ key: key(entry), entries: [entry] });
     }
-  }
+    return runs;
+  };
 
   const seen = new Map<string, number>();
-  const groups: QuestionnaireItem[] = runs.map(({ category, questions }) => {
-    const count = (seen.get(category.categoryId) ?? 0) + 1;
-    seen.set(category.categoryId, count);
-    const text = localize(category.name, `category ${category.categoryId}`);
+  // The loader has checked that every categoryId exists.
+  const group = (categoryId: string, item: QuestionnaireItem[]): QuestionnaireItem => {
+    const category = byId.get(categoryId)!;
+    const count = (seen.get(categoryId) ?? 0) + 1;
+    seen.set(categoryId, count);
+    const text = localize(category.name, `category ${categoryId}`);
     return withoutUndefined<QuestionnaireItem>({
-      linkId: count === 1 ? category.categoryId : `${category.categoryId}-${count}`,
+      linkId: count === 1 ? categoryId : `${categoryId}-${count}`,
       text: text.value,
       _text: text.element,
       type: "group",
-      item: questions.map(toItem),
+      item,
     });
-  });
+  };
+
+  const groups: QuestionnaireItem[] = runsOf(survey.questions, (question) => topOf.get(question.categoryId)!.categoryId).map(
+    (run) =>
+      group(
+        run.key,
+        runsOf(run.entries, (question) => question.categoryId).flatMap((inner) =>
+          inner.key === run.key ? inner.entries.map(toItem) : [group(inner.key, inner.entries.map(toItem))],
+        ),
+      ),
+  );
 
   for (const [categoryId, count] of seen) {
     if (count > 1) {
-      const name = survey.categories.find((category) => category.categoryId === categoryId)!.name.fi;
+      const name = byId.get(categoryId)!.name.fi;
       notes.push(`Category "${name}" is split into ${count} runs, so it became ${count} groups with the same title.`);
     }
   }
-  for (const category of survey.categories) {
+  for (const category of categories) {
     if (!seen.has(category.categoryId)) notes.push(`Category "${category.name.fi}" has no questions and was dropped.`);
+  }
+  for (const category of categories) {
+    const parent = categories.find((candidate) => candidate.subcategories.includes(category));
+    if (parent && seen.has(category.categoryId)) {
+      notes.push(`Subcategory "${category.name.fi}" is a group inside "${parent.name.fi}".`);
+    }
   }
 
   // A category's score goes at the end of its (last) group, right after its
-  // questions; whole-survey scores go at the end.
+  // questions, also when that group is a subcategory's inside a section;
+  // whole-survey scores go at the end.
+  const lastGroup = (categoryId: string): QuestionnaireItem | undefined => {
+    let found: QuestionnaireItem | undefined;
+    const visit = (items: QuestionnaireItem[] = []) =>
+      items.forEach((item) => {
+        if (item.type !== "group") return;
+        if (item.linkId === categoryId || item.linkId.startsWith(`${categoryId}-`)) found = item;
+        visit(item.item);
+      });
+    visit(groups);
+    return found;
+  };
   const atEnd: QuestionnaireItem[] = [];
   for (const { categoryId, item } of scores) {
-    const lastRun = runs.findLastIndex((run) => run.category.categoryId === categoryId);
-    if (categoryId === undefined || lastRun === -1) atEnd.push(item);
-    else groups[lastRun]!.item!.push(item);
+    const target = categoryId === undefined ? undefined : lastGroup(categoryId);
+    if (target) target.item!.push(item);
+    else atEnd.push(item);
   }
 
   checkItemOverrides(context);
@@ -195,7 +247,7 @@ function convertQuestion(question: Question, context: ItemContext): Questionnair
       });
       // The loader has checked that a scored question scores every answer.
       const points = question.scoringEnabled
-        ? question.scores.find((score) => score.answerId === answer.answerId)!.points
+        ? question.scores.filter(isAnswerScore).find((score) => score.answerId === answer.answerId)!.points
         : undefined;
       if (points === undefined) return { valueCoding } satisfies QuestionnaireItemAnswerOption;
       const score = answerScore(points);

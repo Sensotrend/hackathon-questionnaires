@@ -108,6 +108,35 @@ describe("convertSurvey", () => {
     expect(notes).toEqual(['Category "Ohje" is split into 2 runs, so it became 2 groups with the same title.']);
   });
 
+  it("nests a subcategory's questions as a group inside its section, with its score at the end", () => {
+    const json = fixture();
+    const sub = "00000000-0000-4000-8000-000000000013";
+    json.categories[1].subcategories.push({ categoryId: sub, name: { fi: "Ala", sv: "Under", en: "Sub" }, subcategories: [] });
+    // The smoking question (and its follow-up) move into the subcategory; the next questions stay in the section.
+    json.questions[1].categoryId = sub;
+    json.questions[1].answers[0].question[0].categoryId = sub;
+    json.scoreCalculations[0].categoryId = sub;
+    const { questionnaire, notes } = convertSurvey(source(json));
+    const section = questionnaire.item?.[1];
+    expect(section?.item?.map((item) => [item.linkId, item.type])).toEqual([
+      [sub, "group"],
+      [id(104), "choice"],
+      [id(105), "integer"],
+      [id(106), "date"],
+    ]);
+    expect(section?.item?.[0]?.text).toBe("Ala");
+    expect(section?.item?.[0]?.item?.map((item) => item.linkId)).toEqual([id(102), `score-${sub}`]);
+    expect(notes).toContain('Subcategory "Ala" is a group inside "Kysymykset".');
+  });
+
+  it("notes ignored zero-point scores on unscored questions", () => {
+    const json = fixture();
+    json.questions[3].scores.push({ points: 0, min: 0, max: 10 });
+    expect(convertSurvey(source(json)).notes).toContain(
+      "Ignored zero-point scores on 1 questions that aren't scored (scoringEnabled false): leftovers of the form editor.",
+    );
+  });
+
   it("notes a category without questions", () => {
     const json = fixture();
     json.categories.push({ ...json.categories[0], categoryId: id(13) });

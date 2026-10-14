@@ -1,6 +1,6 @@
 # Pre-visit questionnaires as FHIR
 
-Fourteen Finnish pre-visit and screening questionnaires (*esitietolomakkeet*), exported from the Lunna survey tool, converted into HL7 FHIR R4 Questionnaires. A small web app fills them in, in Finnish, Swedish or English, and can pre-populate them from a patient's FHIR data.
+Fifteen Finnish pre-visit and screening questionnaires (*esitietolomakkeet*), exported from the Lunna survey tool, converted into HL7 FHIR R4 Questionnaires. A small web app fills them in, in Finnish, Swedish or English, and can pre-populate them from a patient's FHIR data.
 
 - **Converter**: Lunna export → FHIR R4 Questionnaire, with translations, sections, follow-up questions (`enableWhen`), scores (`calculatedExpression`), units, and SDC pre-population definitions. Validated with the HL7 FHIR Validator.
 - **App**: lists the questionnaires and renders them. It handles follow-ups, validation, live scores, a print view and the QuestionnaireResponse (JSON, downloadable), and checks clean with axe-core.
@@ -27,7 +27,7 @@ Then open http://localhost:5173. Pick a questionnaire. To pre-populate, open "Po
 
 | Path | What it is |
 |---|---|
-| `Esitieto_lomakkeet_hackathon_json/` | The source exports, a public data set kept unchanged. 15 files, 14 questionnaires: the two `esitietolomake-toisen-asteen-terveystarkastukseen-…` files are identical exports. |
+| `Esitieto_lomakkeet_hackathon_json/` | The source exports, a public data set kept unchanged. 16 files, 15 questionnaires: the two `esitietolomake-toisen-asteen-terveystarkastukseen-…` files are identical exports. |
 | `converter/` | The converter (TypeScript on Node, run with tsx). |
 | `converter/overrides/` | **The only hand-maintained input**: per questionnaire, LOINC codes, structure, text corrections, retyped questions, and pre-population mappings, each with a `$comment` on why. |
 | `fhir/` | **Generated; don't edit.** `questionnaires/` (one per survey, plus `index.json`, a Bundle of all), `codesystems/` (the answer options), `definitions/` (the project's two extensions), and the reports `conversion-report.md`, `validation.md` and `terminology-check.md`. |

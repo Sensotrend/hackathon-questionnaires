@@ -62,11 +62,25 @@ export interface Question {
   maxValueOrOver?: false;
 }
 
-export const Score = z.strictObject({
+/** Points for one answer option of a choice question. */
+export const AnswerScore = z.strictObject({
   answerId: z.guid(),
   points: z.number(),
 });
-export type Score = z.infer<typeof Score>;
+export type AnswerScore = z.infer<typeof AnswerScore>;
+
+/** Points for a range of a number question's values. */
+export const RangeScore = z.strictObject({
+  min: z.number(),
+  max: z.number(),
+  points: z.number(),
+});
+export type RangeScore = z.infer<typeof RangeScore>;
+
+export const Score = z.union([AnswerScore, RangeScore]);
+export type Score = AnswerScore | RangeScore;
+
+export const isAnswerScore = (score: Score): score is AnswerScore => "answerId" in score;
 
 export const Answer: z.ZodType<Answer> = z.strictObject({
   answerId: z.guid(),
@@ -97,12 +111,25 @@ export const Question: z.ZodType<Question> = z.strictObject({
   maxValueOrOver: z.literal(false, unsupported("maxValueOrOver: true")).optional(),
 });
 
-export const Category = z.strictObject({
+export interface Category {
+  categoryId: string;
+  name: LocalizedText;
+  /** Categories inside this one, e.g. AUDIT-C inside "Päihteiden käyttö ja riippuvuudet". */
+  subcategories: Category[];
+}
+
+export const Category: z.ZodType<Category> = z.strictObject({
   categoryId: z.guid(),
   name: LocalizedText,
-  subcategories: EmptyArray("subcategories"),
+  get subcategories() {
+    return z.array(Category);
+  },
 });
-export type Category = z.infer<typeof Category>;
+
+/** Every category, subcategories included, depth first. */
+export function allCategories(categories: Category[]): Category[] {
+  return categories.flatMap((category) => [category, ...allCategories(category.subcategories)]);
+}
 
 export const ScoreSummary = z.strictObject({
   min: z.number(),
@@ -144,6 +171,8 @@ export const Survey = z.strictObject({
     })
     .optional(),
   showOnTasks: z.boolean(),
+  /** Who may see the form in Lunna: system metadata, not mapped. */
+  accessRights: z.strictObject({ permission: z.string(), usergroups: z.array(z.string()) }).optional(),
   categories: z.array(Category),
   questions: z.array(Question),
   scoringEnabled: z.boolean(),

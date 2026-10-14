@@ -4689,7 +4689,7 @@
                       },
                       {
                         "url": "content",
-                        "valueString": "Tulos"
+                        "valueString": "Inattention scores"
                       }
                     ]
                   }
@@ -4723,7 +4723,7 @@
                       },
                       {
                         "url": "content",
-                        "valueString": "Tulos"
+                        "valueString": "Uneven questions"
                       }
                     ]
                   }
@@ -4991,7 +4991,7 @@
                       },
                       {
                         "url": "content",
-                        "valueString": "Tulos"
+                        "valueString": "Result"
                       }
                     ]
                   }

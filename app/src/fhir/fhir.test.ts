@@ -31,6 +31,8 @@ describe("the real questionnaires", () => {
       "alkoholin-kayton-riskit-kysely-audit": "screening",
       "esitietolomake-aitiysneuvola": "previsit",
       "esitietolomake-toisen-asteen-terveystarkastukseen-opiskeluterveydenhuolto": "previsit",
+      // Embeds AUDIT-C (3 scored questions of 51), but is a pre-visit form.
+      "esitietolomake-tyottoman-terveystarkastus": "previsit",
       "fysioterapia-alaselkakysely-lahtotilanne": "careplan",
       "kouluterveydenhuolto-esitietolomake-5-luokkalaisten-vanhemmille": "previsit",
       "kouluterveydenhuolto-esitietolomake-8-luokan-oppilaille": "previsit",

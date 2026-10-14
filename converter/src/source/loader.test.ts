@@ -64,7 +64,6 @@ describe("parseSurvey", () => {
     ["tags", (json: ReturnType<typeof fixture>) => json.questions[0].tags.push("x")],
     ["tags", (json: ReturnType<typeof fixture>) => json.questions[1].answers[1].tags.push("x")],
     ["numericTagConditions", (json: ReturnType<typeof fixture>) => json.questions[3].numericTagConditions.push({})],
-    ["subcategories", (json: ReturnType<typeof fixture>) => json.categories[0].subcategories.push({})],
     ["minValueOrUnder", (json: ReturnType<typeof fixture>) => (json.questions[3].minValueOrUnder = true)],
   ])("rejects a non-empty %s, which the converter has no mapping for", (field, mutate) => {
     const json = fixture();
@@ -128,9 +127,37 @@ describe("parseSurvey", () => {
       json.questions[2].scores.push({ points: 1, answerId: json.questions[1].answers[1].answerId });
       expect(problemsOf(json)).toEqual([
         expect.stringMatching(/^questions\[1\]: answers without a score/),
-        expect.stringMatching(/^questions\[2\]: has scores but scoringEnabled is false/),
+        expect.stringMatching(/^questions\[2\]: has non-zero scores but scoringEnabled is false/),
         expect.stringMatching(/^questions\[2\]: scores refer to answers of another question/),
       ]);
+    });
+
+    it("accepts zero-point leftovers on unscored questions, and range scores on number questions only", () => {
+      const json = fixture();
+      json.questions[2].scores.push({ points: 0, answerId: json.questions[2].answers[0].answerId });
+      json.questions[3].scores.push({ points: 0, min: 0, max: 10 });
+      expect(problemsOf(json)).toEqual([]);
+      json.questions[4].scores.push({ points: 0, min: 0, max: 10 });
+      expect(problemsOf(json)).toEqual([expect.stringMatching(/^questions\[4\]: range scores on a date question/)]);
+    });
+
+    it("accepts questions and score calculations in subcategories", () => {
+      const json = fixture();
+      json.categories[1].subcategories.push({
+        categoryId: "00000000-0000-4000-8000-000000000013",
+        name: { fi: "Ala", sv: "Under", en: "Sub" },
+        subcategories: [],
+      });
+      json.questions[1].categoryId = "00000000-0000-4000-8000-000000000013";
+      json.questions[1].answers[0].question[0].categoryId = "00000000-0000-4000-8000-000000000013";
+      json.scoreCalculations[0].categoryId = "00000000-0000-4000-8000-000000000013";
+      expect(problemsOf(json)).toEqual([]);
+    });
+
+    it("accepts accessRights", () => {
+      const json = fixture();
+      json.accessRights = { permission: "usergroup", usergroups: ["SEC_ADMIN"] };
+      expect(problemsOf(json)).toEqual([]);
     });
 
     it("requires score calculations exactly when scoring is enabled", () => {
@@ -206,8 +233,8 @@ describe("loadSources", () => {
 describe("the real source exports", () => {
   const result = loadSources();
 
-  it("load as 14 surveys and one duplicate", () => {
-    expect(result.surveys).toHaveLength(14);
+  it("load as 15 surveys and one duplicate", () => {
+    expect(result.surveys).toHaveLength(15);
     expect(result.duplicates).toEqual([
       {
         file: "esitietolomake-toisen-asteen-terveystarkastukseen-opiskeluterveydenhuolto-survey-344967ec-df47-4c57-8c44-aa20a3e6b786-2026-10-07-13-31-34.json",
@@ -223,6 +250,7 @@ describe("the real source exports", () => {
       "alkoholin-kayton-riskit-kysely-audit",
       "esitietolomake-aitiysneuvola",
       "esitietolomake-toisen-asteen-terveystarkastukseen-opiskeluterveydenhuolto",
+      "esitietolomake-tyottoman-terveystarkastus",
       "fysioterapia-alaselkakysely-lahtotilanne",
       "kouluterveydenhuolto-esitietolomake-5-luokkalaisten-vanhemmille",
       "kouluterveydenhuolto-esitietolomake-8-luokan-oppilaille",

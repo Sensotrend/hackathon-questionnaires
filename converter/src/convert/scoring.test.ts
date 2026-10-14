@@ -187,9 +187,9 @@ describe("the score expressions of the real questionnaires, evaluated with fhirp
     .surveys.filter((source) => source.survey.scoringEnabled)
     .map((source) => ({ slug: source.slug, ...convertSurvey(source, loadOverrides(source.slug)) }));
 
-  it("cover the seven scored questionnaires and their twelve scores", () => {
-    expect(scored).toHaveLength(7);
-    expect(scored.flatMap(({ questionnaire }) => evaluateScores(questionnaire, respond(questionnaire, (weights) => Math.max(...weights))))).toHaveLength(12);
+  it("cover the eight scored questionnaires and their thirteen scores", () => {
+    expect(scored).toHaveLength(8);
+    expect(scored.flatMap(({ questionnaire }) => evaluateScores(questionnaire, respond(questionnaire, (weights) => Math.max(...weights))))).toHaveLength(13);
   });
 
   it.each(scored.map(({ slug, questionnaire }) => [slug, questionnaire] as const))(
