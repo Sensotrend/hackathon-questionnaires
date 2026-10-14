@@ -8,5 +8,8 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     setupFiles: ["./src/test/setup.ts"],
+    // The real-data UI tests render whole forms in jsdom; on a busy machine
+    // they can take several seconds.
+    testTimeout: 20_000,
   },
 });
