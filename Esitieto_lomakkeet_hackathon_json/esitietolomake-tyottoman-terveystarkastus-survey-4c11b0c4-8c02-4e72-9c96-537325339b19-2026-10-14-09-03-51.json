@@ -1,0 +1,4140 @@
+{
+  "revisionGuid": "4c11b0c4-8c02-4e72-9c96-537325339b19",
+  "surveyGuid": "3d6e67bf-6526-4084-b5a2-f10fc40c541c",
+  "draft": false,
+  "name": {
+    "en": "Background Information Form – Health Examination for the Unemployed",
+    "fi": "Esitietolomake - Työttömän terveystarkastus",
+    "sv": "Förhandsuppgifter – Hälsokontroll för arbetslösa"
+  },
+  "description": {
+    "en": "This form should be completed before the health check. All information related to your health is confidential and will be used only by healthcare professionals.",
+    "fi": "Tällä lomakkeella kerätään terveystietojasi terveystarkastusta varten. Lomake tulee täyttää ennen tarkastusta. Kaikki antamasi tiedot ovat luottamuksellisia ja ne ovat vain terveydenhuollon henkilöstön käytettävissä.",
+    "sv": "Denna blankett används för att samla in dina hälsouppgifter inför en hälsoundersökning. Blanketten ska fyllas i före undersökningen. Alla uppgifter du lämnar är konfidentiella och endast tillgängliga för hälso- och sjukvårdspersonal"
+  },
+  "createdDt": "2026-08-28T10:53:36.900Z",
+  "createdBy": {
+    "upn": "teo.mustakari@luvn.fi",
+    "name": "Teo Mustakari",
+    "practitionerId": 19
+  },
+  "questions": [
+    {
+      "questionId": "77f43a08-45f3-4d3f-af7f-7681bb0b2af2",
+      "questionText": {
+        "en": "The change to acting on behalf of another person will affect the visibility of responses to forms and surveys in Lunna from 27 August 2026 onwards. After the change, responses will be visible both to the person on whose behalf services are being used and to all individuals acting on their behalf. If the person completes the survey or form themselves, the responses will still be visible only to the person and the professional. Responses to forms and surveys completed before the change will only be visible to the person who completed them and to professionals.\n\nThe information you provide will be stored on a digital platform, but please note that the form will not automatically be reviewed by a professional, nor does filling out the form serve as a contact channel. Please contact a professional if necessary.",
+        "fi": "Puolesta-asioinnin muutos vaikuttaa Lunnassa lomakkeiden ja kyselyiden vastausten näkyvyyteen 27.8.2026 alkaen. Muutoksen jälkeen vastaukset näkyvät henkilölle, jonka puolesta asioidaan, sekä kaikille hänen puolestaan asioiville henkilöille. Jos henkilö täyttää kyselyn tai lomakkeen itse, vastaukset näkyvät edelleen vain hänelle ja ammattilaiselle. Ennen muutosta täytettyjen lomakkeiden ja kyselyiden vastaukset näkyvät vain ne täyttäneelle henkilölle ja ammattilaiselle.\n\nAntamasi tiedot tallentuvat digialustalle, mutta huomioithan että lomake ei automaattisesti päädy ammattilaisen tarkasteltavaksi, eikä lomakkeen täyttäminen toimi yhteydenottokanavana. Olethan tarvittaessa yhteydessä ammattilaiseen, ellei sinulla ole jo kontakti sovittuna, ja sinua on pyydetty täyttämään lomake ennen vastaanottokäyntiä.",
+        "sv": "Ändringen i ärendehantering för annans räkning påverkar synligheten av svar på formulär och enkäter i Lunna från och med 27.8.2026. Efter ändringen visas svaren både för personen vars ärenden sköts och för alla personer som sköter ärenden för personens räkning. Om personen själv fyller i en enkät eller ett formulär syns svaren fortfarande endast för personen och yrkespersonen. Svar på formulär och enkäter som har fyllts i före ändringen visas endast för den person som fyllt i dem samt för yrkespersoner.\n\nDe uppgifter du lämnat sparas på den digitala plattformen, men observera att blanketten inte automatiskt skickas till en yrkesperson för granskning och att ifyllandet av blanketten inte fungerar som en kontaktkanal. Vänligen kontakta en yrkesperson vid behov."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "heading",
+      "categoryId": "3436c31f-218c-41e0-9d31-5b35c633e4a3",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a0b3d169-3aab-4fb8-b343-598fb127bc5f",
+      "questionText": {
+        "en": "Your e-mail address:",
+        "fi": "Sähköpostiosoitteesi",
+        "sv": "Din E-postadress:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "6e1838c9-340f-4352-b5ce-46e338efad19",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "679f79cb-c7c4-4a79-85de-37878aad3b93",
+      "questionText": {
+        "en": "Your marital status:",
+        "fi": "Sivilisäätysi",
+        "sv": "Civilstånd"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "d1bc4c3c-e650-48a6-92a3-2303a0f8888d",
+          "answerText": {
+            "en": "Single",
+            "fi": "Naimaton",
+            "sv": "Ogift"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6a436572-7b03-4407-870c-084838e2a8d6",
+          "answerText": {
+            "en": "Cohabiting ",
+            "fi": "Avoliitossa",
+            "sv": "Samboende"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "54a2f6f5-e231-4c2a-ab7f-d51b252d702b",
+          "answerText": {
+            "en": "Married",
+            "fi": "Avioliitossa",
+            "sv": "Gift"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "035c2a5b-e90f-4941-879f-7581f89c8288",
+          "answerText": {
+            "en": "Registered partnership ",
+            "fi": "Rekisteröidyssä parisuhteessa",
+            "sv": "I registrerad partnerskap"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "055f2130-2fce-43a7-b1d2-a81e34ba49b1",
+          "answerText": {
+            "en": "Divorced ",
+            "fi": "Eronnut",
+            "sv": "Frånskild"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "892b0fb2-6a89-4e77-afb2-8f1b655a441f",
+          "answerText": {
+            "en": " Separated ",
+            "fi": "Asumuserossa",
+            "sv": "I hemskillnad"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "525864c7-a95e-415b-bd12-15ce9b90b5a9",
+          "answerText": {
+            "en": "Widowed",
+            "fi": "Leski",
+            "sv": "Änka eller änkling"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "6e1838c9-340f-4352-b5ce-46e338efad19",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "d1bc4c3c-e650-48a6-92a3-2303a0f8888d"
+        },
+        {
+          "points": 0,
+          "answerId": "6a436572-7b03-4407-870c-084838e2a8d6"
+        },
+        {
+          "points": 0,
+          "answerId": "54a2f6f5-e231-4c2a-ab7f-d51b252d702b"
+        },
+        {
+          "points": 0,
+          "answerId": "035c2a5b-e90f-4941-879f-7581f89c8288"
+        },
+        {
+          "points": 0,
+          "answerId": "055f2130-2fce-43a7-b1d2-a81e34ba49b1"
+        },
+        {
+          "points": 0,
+          "answerId": "892b0fb2-6a89-4e77-afb2-8f1b655a441f"
+        },
+        {
+          "points": 0,
+          "answerId": "525864c7-a95e-415b-bd12-15ce9b90b5a9"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "458f602a-67e1-47ee-9154-c550c50c4b87",
+      "questionText": {
+        "en": "Describe your family relationships, close circle, and social connections.",
+        "fi": "Kuvaile perhesuhteitasi, lähipiiriäsi ja sosiaalisia suhteitasi.",
+        "sv": "Beskriv dina familjerelationer och närmaste kretsen samt sociala relationer."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "6e1838c9-340f-4352-b5ce-46e338efad19",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "43790a82-3e17-4b3e-a8d6-8d35f64279ac",
+      "questionText": {
+        "en": "Do you have any dependent children?",
+        "fi": "Onko sinulla huollettavia lapsia? ",
+        "sv": "Är du vårdnadshavare för barn?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "2a102780-8736-487f-965f-a40576917ccc",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "652b9283-51aa-42ef-8299-759437670c88",
+              "questionText": {
+                "en": "Number of dependent children?",
+                "fi": "Huollettavien lasten lukumäärä? ",
+                "sv": "Hur många barn är du vårdnadshavare för?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "6e1838c9-340f-4352-b5ce-46e338efad19",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "4ad32170-f05f-4047-9543-0c7a815dad0c",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "6e1838c9-340f-4352-b5ce-46e338efad19",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "2a102780-8736-487f-965f-a40576917ccc"
+        },
+        {
+          "points": 0,
+          "answerId": "4ad32170-f05f-4047-9543-0c7a815dad0c"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "564c478c-9e28-4ac3-b4ca-9380f8f693f0",
+      "questionText": {
+        "en": "Education, Occupation & Livelihood \n\nSelect your highest level of education.",
+        "fi": "Koulutus\n\nValitse korkein koulutusasteesi",
+        "sv": "Utbildning, yrke ock försörjning\n\nVälj din högsta utbildningsnivå."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "a215de13-9324-4f64-a9e1-d2aa157eba6a",
+          "answerText": {
+            "en": "Primary education or Elementary school (\"kansakoulu\") ",
+            "fi": "Peruskoulu tai kansakoulu",
+            "sv": "Grundskola eller folkskola"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1647a533-8c74-4dba-8880-2205169941fb",
+          "answerText": {
+            "en": "General upper secondary education (\"lukio\") or Vocational education (ammatillinen koulutus) ",
+            "fi": "Lukio tai ammatillinen koulutus",
+            "sv": "Gymnasium/studentexamen/yrkesutbildning"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "498804f1-a3e1-4199-8428-fff43b0fb1db",
+          "answerText": {
+            "en": "University degree or equivalent",
+            "fi": "Korkeakoulu",
+            "sv": "Högskoleutbildning"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "a215de13-9324-4f64-a9e1-d2aa157eba6a"
+        },
+        {
+          "points": 0,
+          "answerId": "1647a533-8c74-4dba-8880-2205169941fb"
+        },
+        {
+          "points": 0,
+          "answerId": "498804f1-a3e1-4199-8428-fff43b0fb1db"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "57f9eeba-788a-47e0-97d4-98585b41fcca",
+      "questionText": {
+        "en": "Do you have any other education or courses?",
+        "fi": "Oletko suorittanut muita koulutuksia / kursseja? ",
+        "sv": "Har du andra utbildning eller kurs?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "00812a33-37a1-4c01-a614-14acf510a9bd",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "4871b8ec-82dc-4452-8ea3-33320bf87ff7",
+              "questionText": {
+                "en": "Please specify which other education or courses.",
+                "fi": "Mikä koulutus / kurssi? ",
+                "sv": "Vilken annan utbildning eller kurs?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "ce72325d-d35f-48ea-9db1-6d72a9cdf076",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "00812a33-37a1-4c01-a614-14acf510a9bd"
+        },
+        {
+          "points": 0,
+          "answerId": "ce72325d-d35f-48ea-9db1-6d72a9cdf076"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "c8a0ba70-7f8f-444e-8cf3-593607298361",
+      "questionText": {
+        "en": "Do you have any interrupted or unfinished studies?",
+        "fi": "Onko sinulla keskeytyneitä koulutuksia?",
+        "sv": "Har du avbruten eller avbrutna utbildningar?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "7b03c3de-916d-429a-90e7-2980902a6419",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "dc593fab-ca58-4cb8-8b94-8daaf9594d41",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "7b03c3de-916d-429a-90e7-2980902a6419"
+        },
+        {
+          "points": 0,
+          "answerId": "dc593fab-ca58-4cb8-8b94-8daaf9594d41"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "71035dbc-f008-4092-955b-f8cbd356382f",
+      "questionText": {
+        "en": "Have you completed your military service?",
+        "fi": "Oletko suorittanut asevelvollisuuden?",
+        "sv": "Har du genomförd värnplikten?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "ae625e55-d6dd-4da6-8a36-8d8b7d8eb097",
+          "answerText": {
+            "en": "Completed ",
+            "fi": "Suoritettu",
+            "sv": "Genomförd"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d6a7472d-81da-4164-8c67-0a8bb8a049f3",
+          "answerText": {
+            "en": "Not completed ",
+            "fi": "Suorittamatta",
+            "sv": "Inte genomförd"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6876de1e-a6fc-494d-a040-1677d035dba6",
+          "answerText": {
+            "en": "Postponed",
+            "fi": "Lykkäys",
+            "sv": "Uppskjuten"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8c7ccde8-504a-4b04-ae4d-edb00e8f8013",
+          "answerText": {
+            "en": "Exempt",
+            "fi": "Vapautettu",
+            "sv": "Befriad"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2802bb3e-35ca-4306-9359-d9228c23d72c",
+          "answerText": {
+            "en": "This question does not apply to me",
+            "fi": "Kysymys ei koske minua",
+            "sv": "Gäller inte mig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "ae625e55-d6dd-4da6-8a36-8d8b7d8eb097"
+        },
+        {
+          "points": 0,
+          "answerId": "d6a7472d-81da-4164-8c67-0a8bb8a049f3"
+        },
+        {
+          "points": 0,
+          "answerId": "6876de1e-a6fc-494d-a040-1677d035dba6"
+        },
+        {
+          "points": 0,
+          "answerId": "8c7ccde8-504a-4b04-ae4d-edb00e8f8013"
+        },
+        {
+          "points": 0,
+          "answerId": "2802bb3e-35ca-4306-9359-d9228c23d72c"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "805670d7-3ec2-4683-bb41-a7658bb34e86",
+      "questionText": {
+        "en": "How long have you been unemployed for?",
+        "fi": "Kuinka kauan nykyinen työttömyysjaksosi on kestänyt?",
+        "sv": "Hur länge har du varit arbetslös?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "d2923856-5278-4854-b9b2-f64ff60cb0b1",
+          "answerText": {
+            "en": "Under 6 months",
+            "fi": "Alle 6 kk",
+            "sv": "Under 6 månader"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "782830f4-9585-4c53-b9bf-172bdb09d18f",
+          "answerText": {
+            "en": "6–12 months",
+            "fi": "6–12 kk",
+            "sv": "6-12 månader"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b0aad9d3-42f2-42a6-92d1-a766be77073b",
+          "answerText": {
+            "en": "Over 1 year",
+            "fi": "Yli 1 vuosi",
+            "sv": "Över 1 år"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e6136d48-228e-4787-8bd4-29ac4dcb7ada",
+          "answerText": {
+            "en": "Over 5 years",
+            "fi": "Yli 5 vuotta",
+            "sv": "Över 5 år"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "d2923856-5278-4854-b9b2-f64ff60cb0b1"
+        },
+        {
+          "points": 0,
+          "answerId": "782830f4-9585-4c53-b9bf-172bdb09d18f"
+        },
+        {
+          "points": 0,
+          "answerId": "b0aad9d3-42f2-42a6-92d1-a766be77073b"
+        },
+        {
+          "points": 0,
+          "answerId": "e6136d48-228e-4787-8bd4-29ac4dcb7ada"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "0bdf244f-a52e-44dc-9af4-2cd8b7fd56f4",
+      "questionText": {
+        "en": "Most recent job:\n \nDuration, reason for leaving, main duties:\n",
+        "fi": "Viimeisin työsuhde:\n \nTyösuhteen kesto, päättymissyy, kuvaus tehtävistä",
+        "sv": "Ditt senaste anställningsförhållande:\n \nAnställningsförhållandets längd, varför det har upphört, beskrivning av uppgifter:\n"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f5cac45c-55d9-456b-816f-66ccd48efb87",
+      "questionText": {
+        "en": "What is your current sources of income?",
+        "fi": "Toimeentuloni koostuu tällä hetkellä",
+        "sv": "Min försörjning består för närvarande av: "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "92b772f1-2b57-4474-9921-eb16a0fc8cf7",
+          "answerText": {
+            "en": "Earnings-related daily allowance or daily allowance for unemployment",
+            "fi": "Ansiosidonnainen päiväraha tai työttömyyspäiväraha",
+            "sv": "Inkomstrelaterad dagpennin eller Arbetslöshetsdagpenning "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e6ce6322-7f84-4df7-8b9e-79d572bdad68",
+          "answerText": {
+            "en": "Labour market subsidy",
+            "fi": "Työmarkkinatuki",
+            "sv": "Arbetsmarknadsstöd"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "44792792-5703-4729-8e18-ab11b6feca39",
+          "answerText": {
+            "en": "Housing allowance",
+            "fi": "Asumistuki",
+            "sv": "Bostadsbidrag"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b67b3409-a9e0-4bd7-b0d5-824bd3f0fcd0",
+          "answerText": {
+            "en": " Social assistance",
+            "fi": "Toimeentulotuki ",
+            "sv": "Utkomststöd "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3f327445-4424-4dea-a924-f15b37d4514c",
+          "answerText": {
+            "en": "Sickness allowance/rehabilitation subsidy",
+            "fi": "Sairauspäiväraha tai kuntoutustuki",
+            "sv": "Sjukdagpenning eller Rehabiliteringsstöd"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "f10286dc-0e01-449a-ac29-626ac1180af5",
+          "answerText": {
+            "en": " No income",
+            "fi": "Ei tuloja",
+            "sv": "Inga inkomster"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d8a7003d-67eb-4604-ae0f-23e52e66daec",
+          "answerText": {
+            "en": "Other income",
+            "fi": "Muu tulo",
+            "sv": "Annan inkomst"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "eab93957-24c3-477e-9372-afda508b6fd0",
+              "questionText": {
+                "en": "You selected other income, please spesify: ",
+                "fi": "Vastasit muu tulo, mikä? ",
+                "sv": "Du svarade annan inkomst, vad? "
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "d2626949-8d14-4006-a965-482dd54683de",
+          "answerText": {
+            "en": "None of these options",
+            "fi": "Ei mikään näistä vaihtoehdoista",
+            "sv": "Inget av ovanstående alternativ"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "92b772f1-2b57-4474-9921-eb16a0fc8cf7"
+        },
+        {
+          "points": 0,
+          "answerId": "e6ce6322-7f84-4df7-8b9e-79d572bdad68"
+        },
+        {
+          "points": 0,
+          "answerId": "44792792-5703-4729-8e18-ab11b6feca39"
+        },
+        {
+          "points": 0,
+          "answerId": "b67b3409-a9e0-4bd7-b0d5-824bd3f0fcd0"
+        },
+        {
+          "points": 0,
+          "answerId": "3f327445-4424-4dea-a924-f15b37d4514c"
+        },
+        {
+          "points": 0,
+          "answerId": "f10286dc-0e01-449a-ac29-626ac1180af5"
+        },
+        {
+          "points": 0,
+          "answerId": "d8a7003d-67eb-4604-ae0f-23e52e66daec"
+        },
+        {
+          "points": 0,
+          "answerId": "d2626949-8d14-4006-a965-482dd54683de"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "4197cc6d-1e74-4f58-8366-60cf3a798bbb",
+      "questionText": {
+        "en": "The following questions aim to assess your lifestyle, health habits, and overall health. \n\nDo you eat a warm meal every day?",
+        "fi": "Seuraavissa kysymyksissä kartoitetaan elintapojasi, terveystottumuksiasi ja terveydentilaasi.\n\nSyötkö lämpimän aterian päivittäin?",
+        "sv": "I följande frågor kartläggs dina levnadsvanor, hälsovanor och hälsotillstånd. \n\nÄter du en varm måltid dagligen?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "c8e7521a-e946-4053-9726-ee56dd56fbc6",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "58ba1e07-c71f-49aa-a234-b895e8960274",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "c8e7521a-e946-4053-9726-ee56dd56fbc6"
+        },
+        {
+          "points": 0,
+          "answerId": "58ba1e07-c71f-49aa-a234-b895e8960274"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "5c05709e-11f0-43b3-8ab6-ba6367c96044",
+      "questionText": {
+        "en": "Describe your meal pattern (for example, number of meals and intervals between eating).",
+        "fi": "Kuvaile ateriarytmiäsi (esimerkiksi aterioiden määrä ja ruokailuvälit). ",
+        "sv": "Beskriv din måltidsrytm (till exempel antal måltider och matintervall)."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "f7b8fe06-a613-4df1-b92f-325a37b2254a",
+      "questionText": {
+        "en": "Do you follow a special diet?",
+        "fi": "Noudatatko erityisruokavaliota?",
+        "sv": "Följer du en specialdiet?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "dcac3e34-804a-46d2-ac5d-69de5ddb3a8e",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "904eb9b4-b06f-4330-9096-2900f2c2ddd0",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "2ed0dc87-6a7f-4e9c-b41e-badd7a2d0e89",
+              "questionText": {
+                "en": "Which special diet do you follow, and why?",
+                "fi": "Vastasit että noudatat erityisruokavaliota, mitä? Miksi?",
+                "sv": "Du svarade att du följer en specialdiet – vilken? Varför?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "dcac3e34-804a-46d2-ac5d-69de5ddb3a8e"
+        },
+        {
+          "points": 0,
+          "answerId": "904eb9b4-b06f-4330-9096-2900f2c2ddd0"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "72595235-532b-431f-a813-f1a08ba0dbdb",
+      "questionText": {
+        "en": "Do you use dietary supplements or vitamins, such as vitamin D?",
+        "fi": "Käytätkö lisäravinteita tai vitamiineja, kuten d-vitamiinia?",
+        "sv": "Använder du kosttillskott eller vitaminer, till exempel D-vitamin?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "84089549-0945-4dc9-a167-b849ad111aa0",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9bec025f-e860-4c2b-9db8-dc4c5a292558",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "9e8f1c96-98af-4d0d-9d81-f3ce0e304da4",
+              "questionText": {
+                "en": "What dietary supplements or vitamins do you use?",
+                "fi": "Mitä lisäravinteita tai vitamiineja käytät?",
+                "sv": "Vilka kosttillskott eller vitaminer använder du?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "84089549-0945-4dc9-a167-b849ad111aa0"
+        },
+        {
+          "points": 0,
+          "answerId": "9bec025f-e860-4c2b-9db8-dc4c5a292558"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "5a0ef412-11be-4d71-87ee-3045e8155ab8",
+      "questionText": {
+        "en": "Body-mass index:\n\nMeasured or estimated weight and height?",
+        "fi": "Painosi ja pituutesi (mitattu tai arvioitu)?",
+        "sv": "Kroppsmasseindex (BMI):\n\nUppskattad eller uppmätt vikt och längd?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "26133b98-f063-45b0-b24f-c22ebf2e673c",
+      "questionText": {
+        "en": "Physical activity and hobbies: \n\nOn average, how many days per week do you exercise or engage in brisk activity for at least 30 minutes (enough to sweat or feel short of breath)? ",
+        "fi": "Kuinka monta kertaa viikossa keskimäärin harrastat kunto- tai hyötyliikuntaa vähintään puoli tuntia kerrallaan siten, että hengästyt ja hikoilet? ",
+        "sv": "Motion och hobbyer\n\nHur ofta ägnar du dig i genomsnitt under en vecka åt konditionsträning eller vardagsmotion i minst en halv timme åt gången, så att du blir andfådd och svettas?  \n"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "297ffe5c-a1ee-4709-9d6b-13a188465a06",
+      "questionText": {
+        "en": "What are your hobbies?",
+        "fi": "Millaisia harrastuksia sinulla on?",
+        "sv": "Hurdana hobbyer har du?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a5a5d696-4f4d-4cb0-8cc5-2013a0c09e46",
+      "questionText": {
+        "en": "The following questions concern substance use and addictions: \n\nDo you smoke, vape, or use snus or other nicotine products?",
+        "fi": "Seuraavissa kysymyksissä käsitellään päihteiden käyttöä ja riippuvuuksia:\n\nTupakoitko, sähkötupakoitko tai käytätkö nuuskaa tai muita nikotiinivalmisteita?",
+        "sv": "I de följande frågorna behandlas användning av rusmedel och beroenden.\n\nRöker du, använder du vejp, snus eller andra nikotinprodukter?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "4360aff2-29da-48db-8266-83a679577121",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d78f4a48-68c2-4f19-84ec-21026be2b727",
+          "answerText": {
+            "en": " I have quit ",
+            "fi": "Olen lopettanut",
+            "sv": "Jag har slutat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ccf18a37-aacc-4fbd-908e-740111ff28de",
+          "answerText": {
+            "en": "I use one or more nicotine products",
+            "fi": "Käytän yhtä tai useampaa nikotiinituotetta",
+            "sv": "Jag använder något av dessa"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "3c3a6edc-f355-4966-94c0-7072f2b779c7",
+              "questionText": {
+                "en": "You answered that you use tobacco or nicotine products. How much snus do you use / how many cigarettes do you smoke per day?",
+                "fi": "Vastasit käyttäväsi tupakka- tai nikotiinituotteita, kuinka paljon nuuskaa/kuinka monta tupakkaa vuorokaudessa?",
+                "sv": "Du svarade att du använder nikotinprodukter – hur mycket snus använder du per dygn, eller hur många cigaretter röker du?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "d7824ab6-0e3c-4d0e-b3b7-25892e05f2f2",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d7824ab6-0e3c-4d0e-b3b7-25892e05f2f2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "4360aff2-29da-48db-8266-83a679577121"
+        },
+        {
+          "points": 0,
+          "answerId": "d78f4a48-68c2-4f19-84ec-21026be2b727"
+        },
+        {
+          "points": 0,
+          "answerId": "ccf18a37-aacc-4fbd-908e-740111ff28de"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "56f80d23-bc61-4456-a8dc-01103f4f8020",
+      "questionText": {
+        "en": "How often do you drink beer, wine, or other alcoholic beverages? Include also the times when you drink only small amounts, such as a bottle of medium-strength beer or a splash of wine.",
+        "fi": "Kuinka usein juot olutta, viiniä tai muita alkoholijuomia? Ota mukaan myös ne kerrat, jolloin nautit vain pieniä määriä, esimerkiksi pullon keskiolutta tai tilkan viiniä. ",
+        "sv": "Hur ofta dricker du öl, vin eller andra alkoholdrycker? Räkna också med de gånger då du endast dricker små mängder, till exempel en flaska mellanöl eller lite vin."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "f65bd395-2e86-4e38-be9b-72ee9e696738",
+          "answerText": {
+            "en": "Never",
+            "fi": "En koskaan",
+            "sv": "Aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fd25e404-58bd-4fdc-9aec-9fd27b8459d5",
+          "answerText": {
+            "en": "Monthly or less",
+            "fi": "Noin kerran kuukaudessa tai harvemmin",
+            "sv": "Cirka en gång i månaden eller mer sällan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "af367f5c-ec1d-4656-bd36-c5cfcecc11c8",
+          "answerText": {
+            "en": "2 - 4 times a month",
+            "fi": "2–4 kertaa kuukaudessa",
+            "sv": "2–4 gånger i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2b7b4f45-a35c-40b3-ac00-df2a9745ed3b",
+          "answerText": {
+            "en": "2 - 3 times a week",
+            "fi": "2–3 kertaa viikossa",
+            "sv": "2–3 gånger i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2cd7a210-4786-4a10-b38d-38aefb0faac8",
+          "answerText": {
+            "en": "4 or more times a week",
+            "fi": "4 kertaa viikossa tai useammin",
+            "sv": "4 gånger i veckan eller oftare"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4116df8e-1053-434c-9485-b1641c47a453",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "f65bd395-2e86-4e38-be9b-72ee9e696738"
+        },
+        {
+          "points": 1,
+          "answerId": "fd25e404-58bd-4fdc-9aec-9fd27b8459d5"
+        },
+        {
+          "points": 2,
+          "answerId": "af367f5c-ec1d-4656-bd36-c5cfcecc11c8"
+        },
+        {
+          "points": 3,
+          "answerId": "2b7b4f45-a35c-40b3-ac00-df2a9745ed3b"
+        },
+        {
+          "points": 4,
+          "answerId": "2cd7a210-4786-4a10-b38d-38aefb0faac8"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "44727da1-9911-46af-822e-60ae1b849387",
+      "questionText": {
+        "en": "How many servings of alcohol have you typically consumed on the days you drank alcohol? \n\n(1 serving = 12 cl of mild wine, 8 cl of strong wine, 4 cl of spirits or other strong drink. 1.25 servings = a bottle of A-beer, a bottle of Alko cider, or a bottle of long drink.)",
+        "fi": "Kuinka monta annosta alkoholia yleensä olet ottanut niinä päivinä, jolloin käytit alkoholia?\n\n(1 annos = 12 cl mietoa viiniä, 8 cl väkevää viiniä, 4 cl viinaa tai muuta väkevää juomaa. 1.25 annos = pullo A-olutta, pullo Alkon siideriä tai pullo long drinkkiä.)",
+        "sv": "Hur många portioner alkohol har du vanligen druckit de dagar då du använt alkohol?\n\n(1 portion = 12 cl svagvin, 8 cl starkvin, 4 cl sprit. 1.25 portion = en flaska mellanöl, en flaska Alkos cider, en flaska long drink.)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "805cc784-3839-4119-b2f9-d72bbd1948e8",
+          "answerText": {
+            "en": "1 or 2 servings",
+            "fi": "1–2 annosta",
+            "sv": "1-2 portioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e8bc40b8-b7d9-44e5-816a-67135d4089d5",
+          "answerText": {
+            "en": "3 or 4 servings",
+            "fi": "3–4 annosta",
+            "sv": "3-4 portioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "46a5d392-50c8-41d4-bbeb-13055f5a2b90",
+          "answerText": {
+            "en": "5 or 6 servings",
+            "fi": "5–6 annosta",
+            "sv": "5-6 portioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4e7c58a6-c5ee-4f16-b83e-ae835aed96ff",
+          "answerText": {
+            "en": "7 to 9 servings",
+            "fi": "7–9 annosta",
+            "sv": "7-9 portioner"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3f046f60-85b1-4259-ac2f-3a0fa8cebb79",
+          "answerText": {
+            "en": "10 or more servings",
+            "fi": "10 annosta tai enemmän",
+            "sv": "10 portioner eller mera"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "908857a9-5e58-4f71-921b-bc5eaf739b5a",
+          "answerText": {
+            "en": "I don't use alcohol",
+            "fi": "En käytä alkoholia",
+            "sv": "Jag använder inte alkohol"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4116df8e-1053-434c-9485-b1641c47a453",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "805cc784-3839-4119-b2f9-d72bbd1948e8"
+        },
+        {
+          "points": 1,
+          "answerId": "e8bc40b8-b7d9-44e5-816a-67135d4089d5"
+        },
+        {
+          "points": 2,
+          "answerId": "46a5d392-50c8-41d4-bbeb-13055f5a2b90"
+        },
+        {
+          "points": 3,
+          "answerId": "4e7c58a6-c5ee-4f16-b83e-ae835aed96ff"
+        },
+        {
+          "points": 4,
+          "answerId": "3f046f60-85b1-4259-ac2f-3a0fa8cebb79"
+        },
+        {
+          "points": 0,
+          "answerId": "908857a9-5e58-4f71-921b-bc5eaf739b5a"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "bf2a9770-2a4b-4405-90bb-0a55427f88f2",
+      "questionText": {
+        "en": "How often do you have six or more drinks on one occasion?",
+        "fi": "Kuinka usein olet juonut kerralla kuusi tai useampia annoksia?",
+        "sv": "Hur ofta har du druckit sex alkoholportioner eller mer på gång?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "2c39b63a-3e96-42ab-ad0e-c19f50cc3a96",
+          "answerText": {
+            "en": "Never",
+            "fi": "En koskaan",
+            "sv": "Aldrig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "2008072d-7be2-4176-97dd-9a4658454ba1",
+          "answerText": {
+            "en": "Less than monthly",
+            "fi": "Harvemmin kuin kerran kuukaudessa",
+            "sv": "Cirka en gång i månaden eller mer sällan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ae2a017d-7e36-4598-ba6e-c2e4c62302f3",
+          "answerText": {
+            "en": "Monthly",
+            "fi": "Kerran kuukaudessa",
+            "sv": "En gång i månaden"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "88f654e3-0332-40c8-87b4-a1fe147359ea",
+          "answerText": {
+            "en": "Weekly",
+            "fi": "Kerran viikossa",
+            "sv": "En gång i veckan"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "305eaf8a-a10f-4910-be87-1cbc7e340611",
+          "answerText": {
+            "en": "Daily or almost daily",
+            "fi": "Päivittäin tai lähes päivittäin",
+            "sv": "Dagligen eller nästan dagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "4116df8e-1053-434c-9485-b1641c47a453",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": true,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "2c39b63a-3e96-42ab-ad0e-c19f50cc3a96"
+        },
+        {
+          "points": 1,
+          "answerId": "2008072d-7be2-4176-97dd-9a4658454ba1"
+        },
+        {
+          "points": 2,
+          "answerId": "ae2a017d-7e36-4598-ba6e-c2e4c62302f3"
+        },
+        {
+          "points": 3,
+          "answerId": "88f654e3-0332-40c8-87b4-a1fe147359ea"
+        },
+        {
+          "points": 4,
+          "answerId": "305eaf8a-a10f-4910-be87-1cbc7e340611"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "1d33c85d-bb41-4926-93a5-dd3b89ec2ed7",
+      "questionText": {
+        "en": "Do you use illicit drugs?",
+        "fi": "Käytätkö huumausaineita? ",
+        "sv": "Använder du narkotika? "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "da599833-2a35-4777-bf4a-bfe5a8ac4efe",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "b3da4832-b41d-4608-80cc-b0f7a22d5078",
+          "answerText": {
+            "en": "I have experimented",
+            "fi": "Olen kokeillut",
+            "sv": "Jag har provat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "190a6f79-6c17-46b9-8618-4c344d54a02e",
+          "answerText": {
+            "en": "I have quit",
+            "fi": "Olen lopettanut",
+            "sv": "Jag har slutat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4c6de0b0-c077-4b18-bcaa-bc4a3cc0207e",
+          "answerText": {
+            "en": "I use",
+            "fi": "Käytän",
+            "sv": "Ja, jag använder"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "0a4c7b71-9e55-4cbc-9063-5995af91e415",
+              "questionText": {
+                "en": "You answered that you use drugs. Please spesify:",
+                "fi": "Vastasit käyttäväsi huumausaineita. \n\nKerro tarkemmin: ",
+                "sv": "Du har svarat att du använder narkotika. Kan du precisera din användning?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "d7824ab6-0e3c-4d0e-b3b7-25892e05f2f2",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d7824ab6-0e3c-4d0e-b3b7-25892e05f2f2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "da599833-2a35-4777-bf4a-bfe5a8ac4efe"
+        },
+        {
+          "points": 0,
+          "answerId": "b3da4832-b41d-4608-80cc-b0f7a22d5078"
+        },
+        {
+          "points": 0,
+          "answerId": "190a6f79-6c17-46b9-8618-4c344d54a02e"
+        },
+        {
+          "points": 0,
+          "answerId": "4c6de0b0-c077-4b18-bcaa-bc4a3cc0207e"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "8a8eb73c-7c1e-437b-8885-f5aba5a3bbdb",
+      "questionText": {
+        "en": "Do you use medications for non‑medical purposes? ",
+        "fi": "Käytätkö lääkkeitä muuhun, kuin sairauden hoitoon?",
+        "sv": "Använder du läkemedel för annat ändamål än behandling av en sjukdom?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "cb140111-8134-43d5-8f44-bdcf434a17ef",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a71f35e4-fd29-464e-912d-d14ca026cf0f",
+          "answerText": {
+            "en": "I have experimented",
+            "fi": "Olen kokeillut",
+            "sv": "Jag har provat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "367178df-e77f-4c62-8151-d0dff33470ca",
+          "answerText": {
+            "en": "I have quit",
+            "fi": "Olen lopettanut",
+            "sv": " Jag har slutat"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "48b4ac7e-8bda-4abe-b16e-c51478b55c0c",
+          "answerText": {
+            "en": "I use",
+            "fi": "Käytän",
+            "sv": "Ja, jag använder"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d7824ab6-0e3c-4d0e-b3b7-25892e05f2f2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "cb140111-8134-43d5-8f44-bdcf434a17ef"
+        },
+        {
+          "points": 0,
+          "answerId": "a71f35e4-fd29-464e-912d-d14ca026cf0f"
+        },
+        {
+          "points": 0,
+          "answerId": "367178df-e77f-4c62-8151-d0dff33470ca"
+        },
+        {
+          "points": 0,
+          "answerId": "48b4ac7e-8bda-4abe-b16e-c51478b55c0c"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "46d0098d-dfcf-4fa6-bd60-fd4c73a338c7",
+      "questionText": {
+        "en": "Do you consider yourself to be addicted to something (e.g., internet/gambling)? ",
+        "fi": "Tunnetko olevasi riippuvainen jostakin, esim. netti/rahapelit?",
+        "sv": "Känner du att du är beroende av något, t.ex. internet/penningspel?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "cbbb893e-de60-4551-9e17-201a922d539f",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "91a7fd01-7bb4-478d-9815-aa870ff8d815",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "a0c1abbe-646f-488a-8625-c45401c72766",
+              "questionText": {
+                "en": "Please spesify, what addiction do you have?",
+                "fi": "Vastasit olevasi riippuvainen jostakin, mistä? ",
+                "sv": "Du har svarat att du är beroende av något – vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "d7824ab6-0e3c-4d0e-b3b7-25892e05f2f2",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "d7824ab6-0e3c-4d0e-b3b7-25892e05f2f2",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "cbbb893e-de60-4551-9e17-201a922d539f"
+        },
+        {
+          "points": 0,
+          "answerId": "91a7fd01-7bb4-478d-9815-aa870ff8d815"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "b948677b-3bb9-4433-b2e2-c3066807794d",
+      "questionText": {
+        "en": "Mood \n\nHow would you rate your overall mood recently? \n\nOn a scale from 0 to 10, where 0 is the worst imaginable and 10 is the best imaginable. ",
+        "fi": "Mieliala\n\nMillainen mielialasi on ollut viime aikoina?\n\nAsteikolla 0-10, jossa 0 on huonoin mahdollinen ja 10 on paras kuviteltavissa oleva. ",
+        "sv": "Sinnesstämning \n\nHur har ditt humör varit under den senaste tiden?\n\nPå en skala på 0–10, där 0 är det sämsta möjliga och 10 är det bästa tänkbara. "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "5b9d0644-b321-444e-b48f-f8522105e104",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    },
+    {
+      "questionId": "3ccaa8d3-7610-424b-b0b6-2c3390b09a18",
+      "questionText": {
+        "en": "How satisfied are you with the number and quality of your close personal relationships?\n\nOn a scale from 0 to 10, where 0 is the worst imaginable and 10 is the best imaginable. ",
+        "fi": "Miten tyytyväinen olet läheisten ihmissuhteidesi määrään ja laatuun?\n\nAsteikolla 0-10, jossa 0 on huonoin mahdollinen ja 10 on paras kuviteltavissa oleva. ",
+        "sv": "Hur nöjd är du med mängden och kvaliteten på dina människorelationer ?\n\nPå en skala på 0–10, där 0 är det sämsta möjliga och 10 är det bästa tänkbara."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "5b9d0644-b321-444e-b48f-f8522105e104",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    },
+    {
+      "questionId": "025ed36b-0575-4d60-8056-696a46a11e55",
+      "questionText": {
+        "en": "How is your sleep? Please describe your usual sleep–wake pattern:",
+        "fi": "Miten nukut yösi? Millainen vuorokausirytmisi on?",
+        "sv": "Hur sover du om nätterna? Hurudan är din dygnsrytm?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "5b9d0644-b321-444e-b48f-f8522105e104",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a8f10ed4-f7c4-4ddc-94cf-801419e82938",
+      "questionText": {
+        "en": "Would you like to share more about your mood?",
+        "fi": "Haluatko kertoa lisää mielialastasi?",
+        "sv": "Vil du berätta mer om ditt humör?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "865531a4-838c-45d5-8d83-675851d4c7c6",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "649bdc2e-2773-4347-b8df-d33deec92662",
+              "questionText": {
+                "en": "Please tell more about your mood:",
+                "fi": "Kerro lisää mielialastasi:",
+                "sv": "Berätta mer om ditt humör:"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "5b9d0644-b321-444e-b48f-f8522105e104",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "526b91b8-7a75-495b-b2ec-110469002b03",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "5b9d0644-b321-444e-b48f-f8522105e104",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "865531a4-838c-45d5-8d83-675851d4c7c6"
+        },
+        {
+          "points": 0,
+          "answerId": "526b91b8-7a75-495b-b2ec-110469002b03"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "b1b6e106-bd63-49a2-a1a8-2808d7341e58",
+      "questionText": {
+        "en": "Health and work ability \n\nHow would you rate your current physical health? \n\nOn a scale from 0 to 10, where 0 is the worst imaginable and 10 is the best imaginable. ",
+        "fi": "Terveydentila ja työkyky\n\nMiten arvioit tämänhetkisen fyysisen terveydentilasi?\n\nAsteikolla 0-10, jossa 0 on huonoin mahdollinen ja 10 on paras kuviteltavissa oleva.",
+        "sv": "Hälsotillstånd och arbetsförmåga \n\nHur bedömer du ditt nuvarande fysiska hälsotillstånd?\n\nPå en skala på 0–10, där 0 är det sämsta möjliga och 10 är det bästa tänkbara."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    },
+    {
+      "questionId": "652400ba-2eb3-4f66-b022-d793cf697c03",
+      "questionText": {
+        "en": "How would you rate your current mental health?\n\nOn a scale from 0 to 10, where 0 is the worst imaginable and 10 is the best imaginable. ",
+        "fi": "Miten arvioit tämänhetkisen psyykkisen terveydentilasi?\n\nAsteikolla 0-10, jossa 0 on huonoin mahdollinen ja 10 on paras kuviteltavissa oleva.",
+        "sv": "Hur bedömer du ditt nuvarande psykiska hälsotillstånd?\n\nPå en skala på 0–10, där 0 är det sämsta möjliga och 10 är det bästa tänkbara."
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    },
+    {
+      "questionId": "1e6b98c0-1740-4299-93d5-c46173bd30e0",
+      "questionText": {
+        "en": "What factors influenced your assessment of your physical and mental health?",
+        "fi": "Mitkä asiat vaikuttivat arvioosi fyysisestä ja psyykkisestä terveydentilastasi?",
+        "sv": "Vilka faktorer påverkade din bedömning av din fysiska och psykiska hälsa?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "27a7836a-c15b-4d07-b07c-3a804e9310bd",
+      "questionText": {
+        "en": "Do you have any health concerns you're worried about? ",
+        "fi": "Oletko huolissasi jostain terveydentilaasi liittyvästä asiasta?",
+        "sv": "Är du orolig över något som har med ditt hälsotillstånd att göra:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "457db63d-c1c8-40e4-baa9-7cbc0539ecac",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "95be36cf-9860-4c5e-a4b0-977697ad4922",
+              "questionText": {
+                "en": "What health concerns are you worried about?",
+                "fi": "Mistä terveydentilaasi liittyvästä asiasta olet huolissasi?",
+                "sv": "Vad i din hälsa oroar dig just nu?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "6607667d-e5c9-421a-9c9e-a0598aa9f49d",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "457db63d-c1c8-40e4-baa9-7cbc0539ecac"
+        },
+        {
+          "points": 0,
+          "answerId": "6607667d-e5c9-421a-9c9e-a0598aa9f49d"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "89492476-f9fa-4369-b86c-4447eb05321f",
+      "questionText": {
+        "en": "How would you rate your present work ability in relation to the job you are seeking?\n\n(0= entirely unable to work ja 10 = my work ability is as good as it gets)",
+        "fi": "Miten arvioit tämänhetkistä työkykyäsi verrattuna työhön, jota tällä hetkellä olet etsimässä\n\n(0= täysin työkyvytön ja 10 = työkyky parhaimmillaan)",
+        "sv": "Hur bedömer du din nuvarande arbetsförmåga i förhållande till det arbete du för närvarande söker: \n\n(0= helt arbetsoförmögen och 10 = bästa möjliga arbetsförmåga)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "number",
+      "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "minValue": 0,
+      "maxValue": 10,
+      "minValueOrUnder": false,
+      "maxValueOrOver": false,
+      "isOptional": false
+    },
+    {
+      "questionId": "f8dd094e-1fb0-4a51-a4a3-ec45aa5da7a1",
+      "questionText": {
+        "en": "Please spesiify your assessment of your current work ability:",
+        "fi": "Perustele arviosi tämänhetkisestä työkyvystäsi:",
+        "sv": "Motivera din bedömning av din nuvarande arbetsförmåga:"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "05e78cee-4f3d-4864-8f7b-40cb42369259",
+      "questionText": {
+        "en": "Looking ahead two years, do you believe your health will allow you to work in the same occupation or in  the job you are seeking? ",
+        "fi": "Uskotko, että terveytesi puolesta pystyt työskentelemään nykyisessä ammatissa tai siinä työssä, jota nyt haet vielä kahden vuoden kuluttua?",
+        "sv": "Tror du att du, med hänsyn till din hälsa, fortfarande kommer att kunna arbeta i ditt nuvarande yrke, eller med det arbete du nu söker, om två år?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "4ba057ee-cdae-4516-850b-0acc2f04ea42",
+          "answerText": {
+            "en": "Unlikely",
+            "fi": "Tuskin",
+            "sv": "Knappast"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "6459fc6b-c782-4520-9751-dfeb8125388e",
+          "answerText": {
+            "en": "I am unsure",
+            "fi": "En ole varma",
+            "sv": "Vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "486efd6f-dcf7-4614-b7cd-f0e935d65da0",
+          "answerText": {
+            "en": "Fairly likely",
+            "fi": "Melko varmasti",
+            "sv": "Antagligen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "fa5f201a-7284-4966-9969-26cc1e1ad881",
+          "answerText": {
+            "en": "Definitely",
+            "fi": "Varmasti",
+            "sv": "Säkert"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "4ba057ee-cdae-4516-850b-0acc2f04ea42"
+        },
+        {
+          "points": 0,
+          "answerId": "6459fc6b-c782-4520-9751-dfeb8125388e"
+        },
+        {
+          "points": 0,
+          "answerId": "486efd6f-dcf7-4614-b7cd-f0e935d65da0"
+        },
+        {
+          "points": 0,
+          "answerId": "fa5f201a-7284-4966-9969-26cc1e1ad881"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "d2665248-f82d-47bb-8d74-70871d207679",
+      "questionText": {
+        "en": "Vaccinations \n\nAre your vaccinations up to date? (e.g., diphtheria & tetanus)  ",
+        "fi": "Rokotukset\n\nOvatko rokotuksesi voimassa (esim. kurkkumätä ja jäykkäkouristus)?",
+        "sv": "Vaccineringar \n\nÄr dina vaccinationer i kraft: (t.ex. difteri och stelkramp)?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "2c7b0286-efb5-4e34-a575-6f40d081bb41",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "77e065ae-76a9-4cd7-9200-29df3e9ea2a0",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "9b58583c-bd9e-4ae7-acce-462095f7eb21",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": "Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "6fc89300-69e2-476d-b93e-6aca6529b933",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "2c7b0286-efb5-4e34-a575-6f40d081bb41"
+        },
+        {
+          "points": 0,
+          "answerId": "77e065ae-76a9-4cd7-9200-29df3e9ea2a0"
+        },
+        {
+          "points": 0,
+          "answerId": "9b58583c-bd9e-4ae7-acce-462095f7eb21"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "73d97f6f-b3d3-4ec2-bd8e-b0e793093ed1",
+      "questionText": {
+        "en": "Medical History & Medications \n\nHave you had, or do you currently have, any of the following doctor-diagnosed illnesses or injuries?",
+        "fi": "Sairaudet ja lääkitys\n\nOnko sinulla ollut tai onko sinulla nyt jokin seuraavista lääkärin toteamista sairauksista tai vammoista?",
+        "sv": "Sjukdomar och medicinering \n\nHar du haft eller har du nu några sjukdomar eller skador/funktionsnedsättningar som en läkare har konstaterat?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "dc2c41b7-af92-43d2-8d79-55b9f242f33d",
+          "answerText": {
+            "en": "Accident‑related injuries or musculoskeletal disorders",
+            "fi": "Tapaturmavamma tai tuki- ja liikuntaelinten sairaus ",
+            "sv": "Olycksfallsskada sjukdom i stöd- och rörelseorganen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a90f9a29-cefb-4002-837c-6f876f07b2ad",
+          "answerText": {
+            "en": "Heart or circulatory disease or hypertension",
+            "fi": "Sydänsairaus, verenkiertohäiriö tai korkea verenpaine",
+            "sv": "Hjärtsjukdom, cirkulationsstörning eller högt blodtryck "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "4abbdc9d-9ced-431a-982e-b8a9506484db",
+          "answerText": {
+            "en": "Mental‑health disorders or depression",
+            "fi": "Psyykkinen sairaus, mielenterveyden häiriö, masennus",
+            "sv": "Psykisk sjukdom, mental ohälsa, depression "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d3f655e4-66ea-4691-a3a0-c725ab74defb",
+          "answerText": {
+            "en": "Epilepsy, seizures, or loss of consciousness, migraine or frequent headaches ",
+            "fi": "Epilepsia, kouristuksia tai tajunnanhäiriö, migreeni, usein toistuva päänsärky ",
+            "sv": "Epilepsi, kramper eller förändrad medvetenhetsnivå migrän, ofta återkommande huvudvärk"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1944677d-b081-4c2b-9bcf-4d7a95f5cc7c",
+          "answerText": {
+            "en": "Respiratory diseases (e.g., asthma) ",
+            "fi": "Hengityselinten sairaus, esim. astma",
+            "sv": "Sjukdom i andningsorganen, t.ex. astma"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "dac844ca-b723-442c-bc62-b352b34263cd",
+          "answerText": {
+            "en": "Dizziness, balance problems, or fainting or gastro‑intestinal diseases ",
+            "fi": "Huimausta, tasapainohäiriöitä tai pyörtymistä, ruuansulatuselinten sairaus",
+            "sv": "Yrsel, balansstörningar eller svimning, sjukdomar i matsmältningsorganen"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "d86cdc00-9d3d-4c92-aad2-a5cd1ea91a71",
+          "answerText": {
+            "en": "Sensory disorders (vision, hearing)",
+            "fi": "Aistielinsairauksia (näkö, kuulo)",
+            "sv": "Sjukdomar i sinnesorgan (syn, hörsel) "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "1d31b7ed-522a-4298-9c20-8a6aab66599f",
+          "answerText": {
+            "en": "Conditions affecting attention, concentration or memory ",
+            "fi": "Tarkkaavaisuuteen, keskittymiskykyyn tai muistiin vaikuttava sairaus ",
+            "sv": "Sjukdom som påverkar uppmärksamhet, koncentrationsförmåga eller minne "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "ed64560f-7073-4710-ada9-8e83d6070889",
+          "answerText": {
+            "en": "Genital diseases ",
+            "fi": "Sukuelinten sairaus ",
+            "sv": "Könssjukdom "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "50d0d44c-041d-48cd-9617-7669499ab8f4",
+          "answerText": {
+            "en": "Allergies",
+            "fi": "Allergia",
+            "sv": "Allergi"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "94fffb6d-d7b4-4221-baad-4ef65763dcff",
+          "answerText": {
+            "en": "Diabetes",
+            "fi": "Diabetes",
+            "sv": "Diabetes"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "8c390877-d124-4051-86a4-3754ae58437a",
+          "answerText": {
+            "en": "Surgeries or other procedures",
+            "fi": "Leikkauksia tai muita toimenpiteitä ",
+            "sv": "Operationer eller andra ingrepp"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e5959d14-7067-409b-9750-129cb49e66ac",
+          "answerText": {
+            "en": "Occupational diseases  or exposures (e.g. asbestos, noise injury)",
+            "fi": "Työstä aiheutuneita sairauksia (altisteet, esim. asbesti, meluvamma)",
+            "sv": "Yrkessjukdomar (exponeringar, t.ex. asbest, bullerskada) "
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "492de30b-5c6e-4d95-a618-759fa3a11e61",
+          "answerText": {
+            "en": "Other illness or disability",
+            "fi": "Muu sairaus tai vamma",
+            "sv": "Annan sjukdom eller skada"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "4777fd9b-9df9-4bac-b88d-4ccab897fd53",
+              "questionText": {
+                "en": "Please spesify, what other illness or disability do you have?",
+                "fi": "Mikä muu sairaus tai vamma?",
+                "sv": "Vilken annan sjukdom eller skada har du?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "a7097d71-cce0-40ff-8434-3033f85a0b3f",
+          "answerText": {
+            "en": "None of the above",
+            "fi": "Ei mitään edellä mainituista",
+            "sv": "Inget av ovanstående"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "dc2c41b7-af92-43d2-8d79-55b9f242f33d"
+        },
+        {
+          "points": 0,
+          "answerId": "a90f9a29-cefb-4002-837c-6f876f07b2ad"
+        },
+        {
+          "points": 0,
+          "answerId": "4abbdc9d-9ced-431a-982e-b8a9506484db"
+        },
+        {
+          "points": 0,
+          "answerId": "d3f655e4-66ea-4691-a3a0-c725ab74defb"
+        },
+        {
+          "points": 0,
+          "answerId": "1944677d-b081-4c2b-9bcf-4d7a95f5cc7c"
+        },
+        {
+          "points": 0,
+          "answerId": "dac844ca-b723-442c-bc62-b352b34263cd"
+        },
+        {
+          "points": 0,
+          "answerId": "d86cdc00-9d3d-4c92-aad2-a5cd1ea91a71"
+        },
+        {
+          "points": 0,
+          "answerId": "1d31b7ed-522a-4298-9c20-8a6aab66599f"
+        },
+        {
+          "points": 0,
+          "answerId": "ed64560f-7073-4710-ada9-8e83d6070889"
+        },
+        {
+          "points": 0,
+          "answerId": "50d0d44c-041d-48cd-9617-7669499ab8f4"
+        },
+        {
+          "points": 0,
+          "answerId": "94fffb6d-d7b4-4221-baad-4ef65763dcff"
+        },
+        {
+          "points": 0,
+          "answerId": "8c390877-d124-4051-86a4-3754ae58437a"
+        },
+        {
+          "points": 0,
+          "answerId": "e5959d14-7067-409b-9750-129cb49e66ac"
+        },
+        {
+          "points": 0,
+          "answerId": "492de30b-5c6e-4d95-a618-759fa3a11e61"
+        },
+        {
+          "points": 0,
+          "answerId": "a7097d71-cce0-40ff-8434-3033f85a0b3f"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "528ce8ac-2222-482a-ba23-72556f7ff50d",
+      "questionText": {
+        "en": "Do you experience any symptoms or suspected conditions you would like assessed?",
+        "fi": "Onko sinulla tällä hetkellä vaivoja, oireita tai epäily jostakin sairaudesta, johon toivoisit apua?",
+        "sv": "Har du för närvarande besvär, symtom eller misstanke om någon sjukdom som du vill att utreds?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "84702b88-d311-422c-8def-2042b40ab7c7",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "87f45741-c483-472b-9b77-4dbf0bd3c0b9",
+              "questionText": {
+                "en": "What kind of ailments, symptoms, or illnesses do you suspect?",
+                "fi": "Millaisia vaivoja, oireita, tai mitä sairautta epäilet?",
+                "sv": "Vilka besvär, symtom eller sjukdomar misstänker du att du har?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "fe128ef6-e2cc-4cc1-9ae0-fee95c875048",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "84702b88-d311-422c-8def-2042b40ab7c7"
+        },
+        {
+          "points": 0,
+          "answerId": "fe128ef6-e2cc-4cc1-9ae0-fee95c875048"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "a3cdda01-0863-4ff5-aa28-a957ddb3160c",
+      "questionText": {
+        "en": "Has any of your close relatives experienced any of the following conditions?",
+        "fi": "Onko lähisuvussasi esiintynyt seuraavia sairauksia?",
+        "sv": "Har någon av följande sjukdomar förekommit i din nära släkt?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "fd0ae999-b167-4ef4-97da-2d06ff07e5d1",
+          "answerText": {
+            "en": "Allergies",
+            "fi": "Allergia",
+            "sv": "Allergi"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "0153023a-2377-4bc3-8d31-b36875bf44f9",
+          "answerText": {
+            "en": "Asthma",
+            "fi": "Astma",
+            "sv": "Astma"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "457df0e3-4bc5-4c3b-b10f-800d28ad44a3",
+          "answerText": {
+            "en": "Diabetes",
+            "fi": "Diabetes",
+            "sv": "Diabetes"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "18633538-48fe-4acb-b1fd-609ee6225713",
+          "answerText": {
+            "en": "Hypertension",
+            "fi": "Verenpainetauti",
+            "sv": "Högt blodtryck"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "5801d146-ed8f-42e2-a0c2-0eb0591ff458",
+          "answerText": {
+            "en": "Stroke ",
+            "fi": "Aivohalvaus",
+            "sv": "Stroke"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "42f99cd7-650f-4b5f-9c7e-9336e7df812b",
+          "answerText": {
+            "en": "Heart disease",
+            "fi": "Sydänsairaus",
+            "sv": "Hjärtsjukdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "3c25f63d-2092-453a-bd37-4da0bae600b0",
+          "answerText": {
+            "en": "Cancer",
+            "fi": "Syöpä",
+            "sv": "Cancer"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "e7d3be8b-98a0-4918-b25c-af73caf022c7",
+          "answerText": {
+            "en": "Other illness or disability",
+            "fi": "Jokin muu",
+            "sv": "Någon annan sykdom"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "65e4424d-6286-451a-b9bf-27ea92249998",
+              "questionText": {
+                "en": "Please spesify, what other illness or disability does your close relative have?",
+                "fi": "Vastasit jokin muu, mikä?",
+                "sv": "Du svarade någon annan sykdom, vad?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "d0589728-094d-4353-bb3f-8323e12bef56",
+          "answerText": {
+            "en": "I don't know",
+            "fi": "En tiedä",
+            "sv": " Jag vet inte"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "a2592d49-a51a-4cf1-82b9-21c851c2ab7d",
+          "answerText": {
+            "en": "None of the above",
+            "fi": "Ei mitään edellä mainituista",
+            "sv": "Inget av ovanstående"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "multiselect",
+      "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "fd0ae999-b167-4ef4-97da-2d06ff07e5d1"
+        },
+        {
+          "points": 0,
+          "answerId": "0153023a-2377-4bc3-8d31-b36875bf44f9"
+        },
+        {
+          "points": 0,
+          "answerId": "457df0e3-4bc5-4c3b-b10f-800d28ad44a3"
+        },
+        {
+          "points": 0,
+          "answerId": "18633538-48fe-4acb-b1fd-609ee6225713"
+        },
+        {
+          "points": 0,
+          "answerId": "5801d146-ed8f-42e2-a0c2-0eb0591ff458"
+        },
+        {
+          "points": 0,
+          "answerId": "42f99cd7-650f-4b5f-9c7e-9336e7df812b"
+        },
+        {
+          "points": 0,
+          "answerId": "3c25f63d-2092-453a-bd37-4da0bae600b0"
+        },
+        {
+          "points": 0,
+          "answerId": "e7d3be8b-98a0-4918-b25c-af73caf022c7"
+        },
+        {
+          "points": 0,
+          "answerId": "d0589728-094d-4353-bb3f-8323e12bef56"
+        },
+        {
+          "points": 0,
+          "answerId": "a2592d49-a51a-4cf1-82b9-21c851c2ab7d"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "e0045feb-62f1-4599-b70d-b1c97b0d474f",
+      "questionText": {
+        "en": "Do you use medications or herbal supplements regularly or as-needed?",
+        "fi": "Käytätkö lääkkeitä tai luontaistuotteita säännöllisesti tai tarvittaessa?",
+        "sv": "Använder du läkemedel eller naturläkemedel använder regelbundet eller vid behov?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "dcf87cbf-0982-4f90-9ea5-e3f6ded77f9e",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "9ceff7c4-13ca-4289-839d-de1cf440dbbe",
+              "questionText": {
+                "en": "What medications or herbal supplements do you use regularly or as-needed?",
+                "fi": "Mitä lääkkeitä tai luontaistuotteita käytät?",
+                "sv": "Vilka läkemedel eller naturläkemedel använder du regelbundet eller vid behov?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "c3c13fe4-361d-4c0f-b46f-1044c069b662",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "dcf87cbf-0982-4f90-9ea5-e3f6ded77f9e"
+        },
+        {
+          "points": 0,
+          "answerId": "c3c13fe4-361d-4c0f-b46f-1044c069b662"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "4f79802d-6935-4fb8-8ccd-6666efd4358f",
+      "questionText": {
+        "en": "Use of Health Services & Expectations \n\nWhen or in which year did you last visit a doctor, nurse, or undergo a medical examination?",
+        "fi": "Terveyspalvelujen käyttö ja omat odotukset\n\nMilloin/minä vuonna olet viimeksi ollut lääkärin tai terveydenhoitajan vastaanotolla tai tutkimuksissa?",
+        "sv": "Användning av hälsovårdstjänster och egna förväntningar \n\nNär/vilket år har du senast varit på mottagning eller på undersökningar hos läkare/hälsovårdare?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "a7ca33dd-72b0-44b5-ac79-5ef3e4ab1c90",
+      "questionText": {
+        "en": "When or in which year did you last visit a dentist or dental hygienist for an appointment or examination?",
+        "fi": "Milloin/minä vuonna olet viimeksi ollut hammaslääkärin tai suuhygienistin vastaanotolla tai tutkimuksissa?",
+        "sv": "När/vilket år har du senast varit på mottagning eller på undersökningar hos tandläkare/munhygienist?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "72ea59e8-1435-4570-adf1-e63ab1db2ccb",
+      "questionText": {
+        "en": "When or in which year did you last have an eye examination?",
+        "fi": "Milloin/minä vuonna olet viimeksi ollut näöntutkimuksessa?",
+        "sv": "När/vilket år har du senast varit på synundersökning?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "abad8ea8-55e3-4ea7-a4e8-7721a92d72be",
+      "questionText": {
+        "en": "When or in which year did you last have a hearing test?",
+        "fi": "Milloin/minä vuonna olet viimeksi ollut kuulotutkimuksessa?",
+        "sv": "När/vilket år har du senast varit på hörselundersökning?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "28379757-42ef-486e-a91f-059e203a7c0b",
+      "questionText": {
+        "en": "Have you had a gynecological examination, smear test or a mammogram?",
+        "fi": "Oletko ollut gynekologin tarkastuksessa/papakokeessa/mammografiassa?",
+        "sv": "Har du varit på gynekologisk undersökning, cellprov (PAPA-test) eller mammografi?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "40aad33c-3849-4cd7-a3d9-f6336a35db85",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "a6f83f8e-4413-4999-b3e2-8aec3d23d729",
+              "questionText": {
+                "en": "When or in which year did you last have a gynecological examination, smear test or mammogram?",
+                "fi": "Milloin/minä vuonna olet ollut gynekologin tarkastuksessa/papakokeessa/mammografiassa?",
+                "sv": "När/vilket år har du senast varit på gynekologisk undersökning, cellprov (PAPA-test) eller mammografi?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "07b83329-83cd-4551-a126-02ae2b206013",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        },
+        {
+          "answerId": "af0698c0-be74-4901-9ff7-d0249e00793e",
+          "answerText": {
+            "en": "This question doesn't apply for me",
+            "fi": "Tämä kysymys ei koske minua",
+            "sv": "Den här frågan gäller inte mig"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "40aad33c-3849-4cd7-a3d9-f6336a35db85"
+        },
+        {
+          "points": 0,
+          "answerId": "07b83329-83cd-4551-a126-02ae2b206013"
+        },
+        {
+          "points": 0,
+          "answerId": "af0698c0-be74-4901-9ff7-d0249e00793e"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "2d179ebc-abb6-4b47-83ac-76bd2adb91d0",
+      "questionText": {
+        "en": "What other treatments or therapies (e.g. psychotherapy, physiotherapy, or similar) have you received recently?",
+        "fi": "Mitä muuta hoitoa tai terapiaa (esim. psykoterapia, fysioterapia, tai muu vastaava) olet saanut lähiaikoina?",
+        "sv": "Vilken andra behandlingar har du nyligen fått (psykoterapi, fysioterapi eller något liknande)"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [],
+      "type": "freetext",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [],
+      "isOptional": false
+    },
+    {
+      "questionId": "542dcf68-ccf7-498a-8b2c-4440d5b57283",
+      "questionText": {
+        "en": "Do you have a regular care provider?",
+        "fi": "Onko sinulla vakinaista hoitavaa tahoa?",
+        "sv": "Har du en fast vårdkontakt?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "f5f77dfb-33a7-4aa6-9e51-c48851d7976c",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "863addd8-5f72-4fab-848a-d1dc6e0636a2",
+              "questionText": {
+                "en": "Please spesify your regular care provider?",
+                "fi": "Mikä on hoitava tahosi?",
+                "sv": "Vilken är din vårdkontakt?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "00778bc1-ae22-4353-8276-287da9967853",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "f5f77dfb-33a7-4aa6-9e51-c48851d7976c"
+        },
+        {
+          "points": 0,
+          "answerId": "00778bc1-ae22-4353-8276-287da9967853"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "822ee2c0-4179-4047-9020-5f37c809ebf2",
+      "questionText": {
+        "en": "Have you been on sick leave in the past 12 months? ",
+        "fi": "Oletko ollut sairaslomalla viimeksi kuluneen 12 kuukauden aikana?",
+        "sv": "Har du varit sjukskriven under de senaste 12 månaderna: "
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "29485802-eb19-48db-8e1e-1a4367dbcd16",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "b19726be-426c-4874-9976-f5d5e2df1a1e",
+              "questionText": {
+                "en": "Please provide additional information about your sick leave.",
+                "fi": "Anna lisätietoa sairaslomastasi:",
+                "sv": "Ge mer information om din sjukskrivning."
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "ee643471-09e9-47bd-9978-dcb73b73c3f8",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "29485802-eb19-48db-8e1e-1a4367dbcd16"
+        },
+        {
+          "points": 0,
+          "answerId": "ee643471-09e9-47bd-9978-dcb73b73c3f8"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "645c91c4-ed6c-40f4-891e-36639a7f3c74",
+      "questionText": {
+        "en": "Have you taken part in rehabilitation or rehabilitation assessment?",
+        "fi": "Oletko ollut kuntoutuksessa tai kuntoutustutkimuksessa?",
+        "sv": "Har du varit på rehabilitering eller rehabiliteringsundersökning?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "6e35efb4-3f60-40bd-8470-75474dab3baf",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "70f06256-a027-410b-9944-1ea16861b90d",
+              "questionText": {
+                "en": "Please spesify, where and when have you taken part in rehabilitation or rehabilitation assessment?",
+                "fi": "Missä ja milloin olet ollut kuntoutuksessa tai kuntoutustutkimuksessa?",
+                "sv": "Var och när har du varit på rehabilitering eller rehabiliteringsundersökning?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "0f6545a6-c3d2-4e94-8f4b-9c40e87c35c6",
+          "answerText": {
+            "en": "No",
+            "fi": "En",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "6e35efb4-3f60-40bd-8470-75474dab3baf"
+        },
+        {
+          "points": 0,
+          "answerId": "0f6545a6-c3d2-4e94-8f4b-9c40e87c35c6"
+        }
+      ],
+      "isOptional": false
+    },
+    {
+      "questionId": "b3a67496-0bfa-41f5-b7a8-93dbb6c38eb6",
+      "questionText": {
+        "en": "Is there anything else you would like to discuss with the health nurse?",
+        "fi": "Onko sinulla muita asioita, joista haluaisit keskustella terveydenhoitajan kanssa?",
+        "sv": "Har du andra ärenden som du vill diskutera med hälsovårdaren?"
+      },
+      "printText": {
+        "en": "",
+        "fi": "",
+        "sv": ""
+      },
+      "answers": [
+        {
+          "answerId": "0131a24b-2f02-4bcc-b0e9-e3a7176a34c9",
+          "answerText": {
+            "en": "Yes",
+            "fi": "Kyllä",
+            "sv": "Ja"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [
+            {
+              "questionId": "acaf4d8e-2f6e-4b7f-ad78-cec00196f529",
+              "questionText": {
+                "en": "What would you like to talk about with the nurse?",
+                "fi": "Mistä haluaisit keskustella terveydenhoitajan kanssa?",
+                "sv": "Vilka ärenden du vill diskutera med hälsovårdaren?"
+              },
+              "printText": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "description": {
+                "en": "",
+                "fi": "",
+                "sv": ""
+              },
+              "answers": [],
+              "type": "freetext",
+              "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+              "numericTagConditions": [],
+              "tags": [],
+              "scoringEnabled": false,
+              "scores": [],
+              "isOptional": false
+            }
+          ],
+          "tags": []
+        },
+        {
+          "answerId": "302a8789-2778-415f-a02d-7e993a059515",
+          "answerText": {
+            "en": "No",
+            "fi": "Ei",
+            "sv": "Nej"
+          },
+          "printText": {
+            "en": "",
+            "fi": "",
+            "sv": ""
+          },
+          "question": [],
+          "tags": []
+        }
+      ],
+      "type": "select",
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "numericTagConditions": [],
+      "tags": [],
+      "scoringEnabled": false,
+      "scores": [
+        {
+          "points": 0,
+          "answerId": "0131a24b-2f02-4bcc-b0e9-e3a7176a34c9"
+        },
+        {
+          "points": 0,
+          "answerId": "302a8789-2778-415f-a02d-7e993a059515"
+        }
+      ],
+      "isOptional": false
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": "6e1838c9-340f-4352-b5ce-46e338efad19",
+      "name": {
+        "en": "Personal Details ",
+        "fi": "Henkilö- ja yhteystiedot",
+        "sv": "Person ock kontaktuppgifter"
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "338e3955-9a6a-4039-b55a-6fe4e34dbf1c",
+      "name": {
+        "en": "Education, Occupation & Livelihood",
+        "fi": "Koulutus, ammatti ja toimeentulo",
+        "sv": "Utbildning, yrke och försörjning "
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "72df7fb4-0e56-4c91-88bd-4727c2a59899",
+      "name": {
+        "en": "Lifestyle, Habits, and General Health ",
+        "fi": "Elintavat, terveystottumukset ja terveydentila",
+        "sv": "Levnadssätt, hälsovanor och hälsotillstånd "
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "d7824ab6-0e3c-4d0e-b3b7-25892e05f2f2",
+      "name": {
+        "en": "Substance use and addictions ",
+        "fi": "Päihteiden käyttö ja riippuvuudet",
+        "sv": "Berusningsmedel och beroenden: "
+      },
+      "subcategories": [
+        {
+          "categoryId": "4116df8e-1053-434c-9485-b1641c47a453",
+          "name": {
+            "en": "AUDIT C",
+            "fi": "AUDIT-C",
+            "sv": "AUDIT C"
+          },
+          "subcategories": []
+        }
+      ]
+    },
+    {
+      "categoryId": "5b9d0644-b321-444e-b48f-f8522105e104",
+      "name": {
+        "en": "Mood",
+        "fi": "Mieliala",
+        "sv": "Sinnesstämning "
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "fbfdc246-985e-45c3-861f-fa7e2ee118a6",
+      "name": {
+        "en": "Health and work ability ",
+        "fi": "Terveydentila ja työkyky",
+        "sv": "Hälsotillstånd och arbetsförmåga "
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "6fc89300-69e2-476d-b93e-6aca6529b933",
+      "name": {
+        "en": "Vaccinations ",
+        "fi": "Rokotukset",
+        "sv": "Vaccineringar "
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "bf258ac8-36a0-45ef-949d-bd6230ab3fac",
+      "name": {
+        "en": "Medical History & Medications ",
+        "fi": "Sairaudet ja lääkitys",
+        "sv": "Sjukdomar och medicinering "
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "526a5400-a885-4ff3-bb62-739f0c33113d",
+      "name": {
+        "en": "Use of Health Services & Expectations ",
+        "fi": "Terveyspalvelujen käyttö ja omat odotukset",
+        "sv": "Användning av hälsovårdstjänster och egna förväntningar "
+      },
+      "subcategories": []
+    },
+    {
+      "categoryId": "3436c31f-218c-41e0-9d31-5b35c633e4a3",
+      "name": {
+        "en": "Instruction",
+        "fi": "Ohje",
+        "sv": "Instruktion"
+      },
+      "subcategories": []
+    }
+  ],
+  "schemaVersion": "1.2.0",
+  "type": "form",
+  "meta": {
+    "owners": []
+  },
+  "scoringEnabled": true,
+  "scoreCalculations": [
+    {
+      "calculationFunction": "sum",
+      "min": 0,
+      "max": 12,
+      "title": {
+        "en": "AUDIT-C, total points",
+        "fi": "AUDIT-C, yhteispisteet",
+        "sv": "AUDIT-C, totalpoäng"
+      },
+      "categoryId": "4116df8e-1053-434c-9485-b1641c47a453",
+      "summaries": []
+    }
+  ],
+  "accessRights": {
+    "permission": "usergroup",
+    "usergroups": [
+      "fd025233-c536-443a-a9de-efb8a51633ec",
+      "SEC_PRACTITIONER",
+      "ad62560e-c5a2-42ef-80d8-5f71d68c7731",
+      "SEC_ADMIN",
+      "3f228032-a7da-4131-bfca-ca6c7636372e"
+    ]
+  },
+  "showOnTasks": false,
+  "tenant": "00000000-0000-0000-0000-000000000000",
+  "restrictions": {
+    "type": "disabled_from",
+    "companies": [
+      {
+        "companyId": 6,
+        "companyPayerType": "primary-healthcare",
+        "internalName": "Anonymous"
+      }
+    ]
+  }
+}
